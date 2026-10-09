@@ -1,0 +1,67 @@
+name: Sync Figma documentation
+
+on:
+  schedule:
+    # Polls for a new named Figma version; designers publish by saving a version
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Regenerate even if the Figma version is unchanged
+        type: boolean
+        default: false
+
+concurrency:
+  group: figma-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Compare Figma version with frontmatter
+        id: check
+        continue-on-error: true
+        run: npm run check
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+
+      - name: Fail on API errors
+        if: steps.check.outcome == 'failure' && steps.check.outputs.outdated == ''
+        run: exit 1
+
+      - name: Regenerate Markdown and images
+        if: steps.check.outputs.outdated == 'true' || inputs.force == true
+        run: npm run sync
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+
+      - name: Open pull request
+        if: steps.check.outputs.outdated == 'true' || inputs.force == true
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: sync/figma-${{ steps.check.outputs.version }}
+          delete-branch: true
+          commit-message: 'docs: sync Figma documentation (${{ steps.check.outputs.label }})'
+          title: 'docs: sync Figma documentation (${{ steps.check.outputs.label }})'
+          body: |
+            Regenerated from the latest named Figma version.
+
+            - Version label: `${{ steps.check.outputs.label }}`
+            - Version id: `${{ steps.check.outputs.version }}`
+            - Created in Figma: `${{ steps.check.outputs.createdAt }}`
+            - Trigger: `${{ github.event_name }}`
+          labels: figma-sync
