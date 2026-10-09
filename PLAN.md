@@ -103,16 +103,16 @@ FINDINGS.md
 ## Acceptance criteria (from the ticket)
 
 - [x] New repository exists
-- [ ] Extraction script and generated Accordion Markdown are in the repository
-- [ ] Extraction is reproducible (one command / CI job regenerates the file from Figma)
-- [ ] Documented decision on change detection (webhook vs. polling) including a working prototype
-- [ ] Documented decision on image handling including at least one exported image referenced from the Accordion Markdown
-- [ ] Short write-up of findings, limitations and next steps towards the MCP server
+- [x] Extraction script and generated Accordion Markdown are in the repository
+- [x] Extraction is reproducible (one command / CI job regenerates the file from Figma)
+- [x] Documented decision on change detection (webhook vs. polling) including a working prototype (named-version polling, relay rejected)
+- [x] Documented decision on image handling including at least one exported image referenced from the Accordion Markdown
+- [x] Short write-up of findings, limitations and next steps towards the MCP server
 
 ## Open questions
 
 - Which Figma file and pages contain the documentation, and who owns the Figma access token (personal token vs. OAuth app)?
-- Hosting for the webhook relay: Cloudflare Worker (fastest prototype), Azure Function (closer to STIHL infrastructure), or documentation only.
-- Trigger event: `FILE_UPDATE` (automatic, includes every intermediate change) vs. `FILE_VERSION_UPDATE` (designer deliberately creates a named version).
+- ~~Hosting for the webhook relay~~: resolved, no relay. Polling the named versions covers the use case, see `docs/decisions/001-change-detection.md`.
+- ~~Trigger event~~: resolved, the latest named version is the trigger (equivalent of `FILE_VERSION_UPDATE`, without a webhook).
 - Which Figma nodes count as images: heuristic by node type (`INSTANCE` / `FRAME` without text descendants) vs. a naming convention for designers (e.g. prefix `img/`).
 - Sample `Accordion.md` by Patrick Wiesenhuetter, approval by Kathrin Koehler: once available, it becomes the blueprint for the Markdown structure.
