@@ -1,0 +1,21 @@
+{
+  "fileKey": "qXldpLO6gxHJNLdcXIPxYt",
+  "headingLevels": {
+    "64": 2,
+    "48": 3,
+    "24": 4
+  },
+  "imageExport": {
+    "format": "png",
+    "scale": 2
+  },
+  "components": [
+    {
+      "id": "accordion",
+      "title": "Accordion",
+      "nodeId": "17260:166",
+      "output": "docs/accordion.md",
+      "imageDir": "docs/accordion"
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renderMarkdown > renders the Accordion fixture to a stable document 1`] = `
+"---
+component: accordion
+title: Accordion
+figmaFileKey: FILEKEY
+figmaNodeId: 17260:166
+figmaVersion: "123"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-10-07T09:00:47Z
+syncedAt: 2026-10-09T00:00:00.000Z
+sourceUrl: https://www.figma.com/design/FILEKEY?node-id=17260-166
+---
+
+# Accordion
+
+## Accordion single
+
+Overview:
+
+- An accordion component helps to organize content into collapsible sections.
+- The header area can be filled with a summary (also known as label or title) and a custom hint.
+   - Use the custom hint ares for additional text, icons, badges or tags.
+   - Images are not allowed in the custom hint area.
+- Avoid placing important information in the content area.
+- Ensure its discoverability and usability by testing with users.
+- An accordion group should always guarantee an overview, avoid long lists.
+- A variation of the single accordion is called ‘expandable section’, place the icon left of the title.
+
+![Accordion single](accordion/17260:2298.png)
+
+#### Further guidelines
+
+[Storybook documentation](https://main--63440bbb95889041542a5ba3.chromatic.com/?path=/docs/components-accordion--documentation)
+
+#### Related elements
+
+[Drawer](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt/Pattern-Library-%F0%9F%96%A5-Web-1.0?node-id=16282-9317)
+
+[Fieldset](https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV/Web-Pattern-Library?node-id=8-154)
+
+[Typography](https://www.figma.com/design/d9wrOp4aCplDsV9AVC87Xn/Typography-%F0%9F%85%B0%EF%B8%8F?m=auto&t=ENDkSmRI4RwAfDs4-6)
+
+[Iconography](https://www.figma.com/design/U218NNP4OsipaHOtv5flns/Iconography-%E2%9E%A1%EF%B8%8F?m=auto)
+
+#### Contribute
+
+Contribute to improving this component by sharing your feedback, asking questions, or suggesting features [here](https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj/Onboarding-%F0%9F%93%96?node-id=446-868&t=zKmRu4kAkxMeRDmK-4).
+
+## Accordion Group
+
+![Accordion Group](accordion/18841:16422.png)
+
+## Formatting and Construction
+
+### Anatomy
+
+#### Accordion item
+
+1. **Header**
+   1. **Summary**
+   1. **Hint**
+   1. **Expansion Indicator** depending on the use-case chevron or caret
+   1. **Number Indicator** minimized or used to displaying a number
+1. **Content**
+
+![Accordion item](accordion/17351:6880.png)
+
+#### Custom hint area
+
+If you want to display a unique element, use the hint as a custom element. **(1)**
+
+It is meant for icons, badges and flags. **(2)**
+
+![Custom hint area](accordion/17351:12519.png)
+
+#### Accordion group
+
+1. **Accordion item**
+1. **Divider (border)**
+
+**Note:** This is a Figma only component.
+
+![Accordion group](accordion/17301:2507.png)
+
+#### Chevron vs. Caret Usage
+
+Use indicators consistently to signal expand/collapse behavior. The position and purpose of the element determine whether a chevron or caret should be used.
+
+1. **Chevron** Use a chevron icon when the indicator is placed on the right side of the element. Best suited for progressive disclosure in content-heavy layouts. Use when:
+   - You’re revealing additional content inside a grouped accordion
+   - Accordion items are part of a content group
+   - You want to minimize visual overload and guide users step-by-step
+1. **Caret** Use a caret icon when the indicator is placed on the left side of the element. Ideal for navigational structures and single expandable sections. Use when:
+   - You’re expanding navigation levels (e.g., sidebar menus)
+   - It’s an expandable section (standalone accordion item)
+
+![Chevron vs. Caret Usage](accordion/17260:2423.png)
+
+#### Size Variants
+
+Three sizes are available, to fit any lay-out and use case.
+
+All variants can be used mobile and desktop.
+
+![Size Variants](accordion/18814:10559.png)
+
+### Sizing
+
+#### Maximum width
+
+The maximum width follows the size of [content grid narrow](https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ/Grid-%26-Spacing-%F0%9F%A7%AE?node-id=1-132) , for both smaller and bigger viewports.
+
+![Maximum width](accordion/17260:2428.png)
+
+#### Minimum width
+
+The minimum size, based on the [documented breakpoints and content placement](https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ/Grid-%26-Spacing-%F0%9F%A7%AE?node-id=1-132):
+
+- **on viewports greater than or equal to 1024px (1)**
+   - “first quarter”
+   - use case: filter on a product overview page on a desktop or big tablet.
+- **on viewports smaller than 1024px (2)**
+   - “first third”
+   - use case: content list on a mobile phone, tablet or in a split screen.
+
+![Minimum width](accordion/18428:22228.png)
+
+### Alignment
+
+#### Flush alignment
+
+When designing for smaller spaces on a page, such as side drawers, panels or sidebars, use flush alignment to ensure better text alignment with other content elements.
+
+![Flush alignment](accordion/17351:11042.png)
+
+### Status
+
+#### Default is closed
+
+By default the accordion is closed.
+
+More than one accordion can be open at the same time.
+
+![Default is closed](accordion/17993:7543.png)
+
+### Motion
+
+[→ Motion Styles](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?node-id=1-148)
+
+#### Hover animation
+
+**Animation type:** fade: background color opacity (0-100%) (color: transparent-hover) **Duration:** 100ms **Easing:** linear
+
+![Hover animation](accordion/17645:7620.png)
+
+#### Opening animation
+
+**Animation type:** expand: height (0-100%) fade: opacity content in content area (0-100%) rotation: chevron 0°-180° (counter-clockwise) **Duration:** 250ms **Easing:** motion-functional-ease-out **Note:** easing and duration also applies to the icon rotation
+
+![Opening animation](accordion/17268:2455.png)
+
+#### Closing animation
+
+**Animation type:** expand: height (100-0%) fade: opacity content in content area (100-0%) rotation: chevron 180°-0° (clockwise) **Duration:** 250ms **Easing:** motion-functional-ease-in
+
+**Note:** easing and duration also applies to the icon rotation
+
+![Closing animation](accordion/17351:12563.png)
+
+## Content and Assets
+
+#### Accessible copy
+
+- Keep summaries and hint short and simple.
+- It is recommended to avoid abbreviations.
+- Test the understandability of the copy in the header area at all times.
+
+![Accessible copy](accordion/17268:2465.png)
+
+### Accordion title
+
+#### Header recommendations
+
+You can customize the title using various text heading styles, with or without a subtitle.
+
+**Formatting examples:**
+
+1. Text M with subtitle in regular, do guarantee a clear hierarchy.
+1. Text M bold, use with maximum 2 lines.
+1. Heading L, keep the title as short as possible
+
+![Header recommendations](accordion/18443:19280.png)
+
+#### Header warnings
+
+You can customize the header using various text heading styles, with or without a subtitle
+
+**Formatting examples:**
+
+1. Text M with subtitle/hint in bold, does not guarantee a clear hierarchy.
+1. Uppercase isn’t as legible for all users.
+1. Heading L can’t be long and covering two lines.
+
+![Header warnings](accordion/18443:6348.png)
+
+#### Maximum Text width
+
+Please make sure the Header summary and text elements inside the accordion do not exeed **the maximum text width to 34em**, based on the font sized used
+
+[Typography →](https://www.figma.com/design/pQUiJaNuWrGzPaeMrEHf6N/DS-1117-Design-%7C-34em?node-id=2645-515)
+
+![Maximum Text width](accordion/36292:38568.png)
+
+### Custom hint area
+
+#### Hint
+
+Populate the hint area with content or functions, referencing the content in the accordion or as the subtitle.
+
+Additionally, it can function as a status display, for example, reflecting the filter set or sorting rules.
+
+![Hint](accordion/17993:7605.png)
+
+#### Icons, status and more
+
+Use the custom hint area for additional information.
+
+Maximum 2 icons in the header area, keep it simple to reduce visual clutter.
+
+![Icons, status and more](accordion/18443:6402.png)
+
+#### Do not use images
+
+Photos and content icons in the custom hint area are not allowed.
+
+![Do not use images](accordion/18842:10884.png)
+
+#### Number Indicator
+
+Use case: Filter lists. The number indicator shows how many filter items are selected.
+
+The number indicator is placed on the left to the chevron icon.
+
+A number indicator signals dynamic or countable content.
+
+Only use the number indicator when necessary to keep the visual load low. Avoid using it for content elements.
+
+[→ Number Indicator](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt/Core-Components-%F0%9F%92%A0?m=auto&node-id=24240-47126&t=kmFbhfUplK9oMbc8-1)
+
+![Number Indicator](accordion/26774:5677.png)
+
+#### Minimized number Indicator
+
+Although the minimal selection indicator is **technically supported** in the component, its use is **not recommended**. The indicator uses an **orange highlight**, which is primarily reserved for important notifications or alerts. Using it in this context can reduce its visual impact and make the layout feel overly busy. **Do not combine** it with a **number indicator** in the same section.
+
+![Minimized number Indicator](accordion/35782:2824.png)
+
+#### Don't combine the number indicator and hint.
+
+Avoid overcrowding the component and keep the visual load low.
+
+Decide to use either a hint or a number indicator.
+
+When applying a filter as an accordion, only use the number indicator since it provides information about the count of filters the user sets.
+
+**Avoid displaying all active filter statuses in the hint area.**
+
+![Don't combine the number indicator and hint.](accordion/26774:5692.png)
+
+#### Don't use number indicator for content accordions.
+
+Avoid using a number indicator if the accordion content is static or cannot be quantified. It becomes irrelevant if users cannot change actionable content.
+
+**Static Content:** When accordion content remains the same and does not involve quantities or states (e.g., text-only information).
+
+**Unquantifiable Content:** The content within the accordion cannot logically be represented as a countable or dynamic value (e.g., descriptive text or general information).
+
+![Don't use number indicator for content accordions.](accordion/26774:5710.png)
+
+### Custom content area
+
+#### Layout and elements
+
+You can display any layout within the content area.
+
+Insert data tables, images and forms inside an accordion if needed.
+
+**Attention:** Ensure the content is easily findable and usable.
+
+![Layout and elements](accordion/17260:2348.png)
+
+### Accordion group
+
+#### Tip: open first accordion
+
+On content pages, it is common to have the first accordion of a group open and the rest closed.
+
+It immediately gives users a sense of what information is available in the accordion group. It improves clarity, encourages interaction, and aligns with user expectations.
+
+![Tip: open first accordion](accordion/17993:7590.png)
+
+#### Amount of accordion elements
+
+Make sure the overview of the list is given, especially on mobile. Avoid long lists that exceed a viewport (in closed status).
+
+Users must easily navigate through open and closed accordions as content switches.
+
+![Amount of accordion elements](accordion/17993:7585.png)
+
+#### Don’t combine sizes.
+
+Don't combine small and medium accordions in the same group.
+
+Ideally, it is not even within the same viewport or page.
+
+![Don’t combine sizes.](accordion/18428:22293.png)
+
+#### Don’t nest accordions
+
+Nesting accordions within other accordions is not allowed.
+
+![Don’t nest accordions](accordion/18428:22298.png)
+
+#### Layout type: content-heavy
+
+Incorporating at least three accordions.
+
+Add a compelling headline above to convey the purpose of the accordion group.
+
+![Layout type: content-heavy](accordion/17462:2282.png)
+
+### Accordion single
+
+#### Expandable section
+
+A variation of the single accordion is called an 'expandable section'; place the icon on the left of the title.
+
+Mainly, use it when you have an extended content area but the title is very short.
+
+![Expandable section](accordion/18722:8816.png)
+
+#### Layout type: content-heavy
+
+Avoid using a single accordion in a text-heavy layout. It is crucial to ensure that this design choice is not overlooked.
+
+![Layout type: content-heavy](accordion/18842:13688.png)
+
+#### Edge case: notification
+
+Use with care.
+
+Especially with warnings or errors, as information can be crucial.
+
+![Edge case: notification](accordion/18443:9645.png)
+
+### Navigation
+
+#### Sidebar Navigation
+
+A single accordion can be used in the sidebar to expand and reveal the next level of navigation.
+
+![Sidebar Navigation](accordion/35782:5263.png)
+
+## Behavior
+
+#### Avoid system feedback
+
+Avoid system feedback above or inside the accordion element that corresponds to elements in the content area.
+
+![Avoid system feedback](accordion/18443:16974.png)
+
+#### Focus management
+
+Elements within the header are not focusable. The whole header has one focus.
+
+![Focus management](accordion/18443:9584.png)
+
+#### The user is in control
+
+The user must click/tap proactively to change the state. The system or system settings can’t trigger the status.
+
+![The user is in control](accordion/17260:2438.png)
+
+## Examples/Variants
+
+#### SaaS (Software as a Service)
+
+Accordions in portals and platforms are great to reduce the visual clutter. The user controls what part of the interface is visible.
+
+![SaaS (Software as a Service)](accordion/18443:9640.png)
+
+#### Content articles
+
+Use accordions for step-by-step guides and other lists with additional details.
+
+![Content articles](accordion/17993:7600.png)
+
+#### Filter
+
+A common use case for accordions is group filters in a [drawer component](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt/Pattern-Library-%F0%9F%96%A5-Web-1.0?node-id=16282-9317).
+
+![Filter](accordion/17993:7595.png)
+
+#### Extra spacing for drawers
+
+Ensure enough room for the click area. The user can skim and read the titles faster.
+
+Use extra spacing on the top and bottom. In this example, use the medium accordion.
+
+[→ Spacing Styles](https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ/Grid-%26-Spacing-%F0%9F%A7%AE?node-id=1-1253)
+
+![Extra spacing for drawers](accordion/17611:7090.png)
+"
+`;
