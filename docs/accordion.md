@@ -3,10 +3,10 @@ component: accordion
 title: Accordion
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 17260:166
-figmaVersion: "2402788951429361536"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-09-24T13:20:53Z
-syncedAt: 2026-10-09T10:29:06.953Z
+figmaVersion: "2410594530540876016"
+figmaVersionLabel: DS-1426 | Docu | Selectable Card
+figmaVersionCreatedAt: 2026-10-15T14:18:30Z
+syncedAt: 2026-10-15T14:30:12.451Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=17260-166
 ---
 
