@@ -23,12 +23,12 @@ The template cannot be produced by extraction alone. Roughly half of its section
 
 ### Layer 1: extracted design documentation (this repository, generated)
 
-- One file per document at `docs/<category>/<id>.md`, categories `components/`, `patterns/`, `foundations/`. Images in `docs/<category>/<id>/`. The category mirrors the Figma library split (Core Components, Pattern Library, Styles) and the `Category` field of the template.
+- One file per document at `docs/<category>/<id>.md`, categories `foundations/`, `components/`, `patterns/`, `guidelines/`. Images in `docs/<category>/<id>/`. The categories mirror the four projects of the Figma team "Design System" (01. Fundamentals, 02. Core Components, 03. Platform Libraries, 04. Guidelines, Onboarding, Processes) and the `Category` field of the template. Each document records its source file and project in the frontmatter (`figmaFile`, `figmaProject`).
 - `#` is the document title. `##` chapters are the Figma boards, `###` and `####` the sections inside them. The board names (`Formatting and Construction`, `Content and Assets`, `Behavior`, `Examples/Variants`) come from the designers' documentation template and are therefore stable across components without any mapping in code.
 - **Heading levels never skip.** Figma boards often go from a board title straight to a section title (H2 to H4). The renderer closes those gaps so an agent can split the file by heading and always gets a well formed tree. Sibling relations are preserved (an H3 following a promoted H4 stays an H3).
-- **Frontmatter is the metadata table.** `component`, `title`, `category`, `importName`, `package`, `keywords`, the Figma source (`figmaFileKey`, `figmaNodeId`, `sourceUrl`) and the published state (`figmaVersion`, `figmaVersionLabel`, `figmaVersionCreatedAt`). `importName` is the key an agent uses to look the component up in Storybook; `keywords` are search aliases. Both are config, not extracted.
-- **Images stay relative** with the section title as alt text, so the text remains meaningful for an agent that does not render images ([002](002-image-handling.md)).
-- **`docs/index.md` is the generated entry point.** It explains the conventions, lists every document grouped by category with its code component, keywords, Figma version and a linked outline of H2/H3 chapters (GitHub style anchors, deduplicated like GitHub does). An agent reads this one file to decide what to fetch next. It is rebuilt from all documents on disk on every sync, so a partial `--component` run keeps it complete.
+- **Frontmatter is the metadata table.** `id`, `title`, `category`, `importNames`, `package`, `keywords`, the Figma source (`figmaFile`, `figmaProject`, `figmaFileKey`, `figmaNodeId`, `sourceUrl`) and the published state (`figmaVersion`, `figmaVersionLabel`, `figmaVersionCreatedAt`). `importNames` are the keys an agent uses to look the code components up in Storybook; a Figma page often documents several (Button covers `DSButton`, `DSButtonRound` and `DSFloatingActionButton`). `keywords` are search aliases. Both are config, not extracted.
+- **Images stay relative** with the section title as alt text, so the text remains meaningful for an agent that does not render images ([002](002-image-handling.md)). Designers' callouts (instances of the `notification` component) become blockquotes, so warnings and notes are distinguishable from body text.
+- **`docs/index.md` is the generated entry point.** It explains the conventions, lists every document grouped by category with its code components, keywords, source file, Figma version and a linked outline of H2/H3 chapters (GitHub style anchors, deduplicated like GitHub does). An agent reads this one file to decide what to fetch next. It is rebuilt from all documents on disk on every sync, so a partial `--document` run keeps it complete.
 - Content is never rewritten, reordered or summarised. What designers write in Figma is what ends up in the file.
 
 ### Layer 2: curated AI guideline (out of scope here)
@@ -37,7 +37,7 @@ The 18 section template is the target shape for a document that combines design 
 
 | Template section                     | Fed from layer 1                                                                       |
 | ------------------------------------ | -------------------------------------------------------------------------------------- |
-| 1 Metadata                           | frontmatter (`importName`, `package`, `keywords`, `sourceUrl`, `figmaVersionCreatedAt`) |
+| 1 Metadata                           | frontmatter (`importNames`, `package`, `keywords`, `sourceUrl`, `figmaVersionCreatedAt`) |
 | 2 Purpose, 3 Semantic Role           | overview board (first `##`), editorial                                                 |
 | 4 When to Use, 5 When NOT to Use     | `Examples/Variants`, do and don't sections in `Content and Assets`                     |
 | 6 Anatomy, 7 Variants                | `Formatting and Construction` (Anatomy, Size Variants, Chevron vs. Caret)              |
@@ -64,6 +64,6 @@ Figma Specs ([DS-1537](https://andreasstihl.atlassian.net/browse/DS-1537)) could
 ## Consequences
 
 - The MCP server (or the main repository importing these files) can treat `docs/index.md` as the catalogue and split documents by `##` without parsing Figma specific structure.
-- Adding a component is one config entry (`id`, `title`, `category`, `importName`, `keywords`, `nodeId`, `output`, `imageDir`); the index updates itself.
-- `importName` and `keywords` are maintained by hand in `components.config.json`. If the main repository later publishes a component manifest, they can be derived from it.
+- Adding a document is one config entry (`id`, `title`, `source`, `category`, `nodeId`, optional `importNames` and `keywords`); output paths derive from category and id, and the index updates itself. Adding a Figma file is one `sources` entry; versions are resolved per file.
+- `importNames` and `keywords` are maintained by hand in `components.config.json`. If the main repository later publishes a component manifest, they can be derived from it.
 - Heading normalisation changes levels, not text, so Figma deep links and anchors stay stable when designers do start using H3 titles.
