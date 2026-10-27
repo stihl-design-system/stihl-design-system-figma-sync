@@ -1,20 +1,23 @@
 ---
-component: accordion
+id: accordion
 title: Accordion
 category: component
-importName: DSAccordion
+importNames:
+  - DSAccordion
 package: "@stihl-design-system/components"
 keywords:
   - accordion
   - disclosure
   - expandable section
   - details
+figmaFile: Core Components
+figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 17260:166
 figmaVersion: "2410599903007017519"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-10-15T14:34:29Z
-syncedAt: 2026-10-27T09:36:10.714Z
+syncedAt: 2026-10-27T12:27:32.771Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=17260-166
 ---
 
