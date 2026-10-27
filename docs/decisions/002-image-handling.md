@@ -17,7 +17,7 @@ Options considered:
 
 **Option 3: PNG files in the repository, relative references.**
 
-- `src/images/exportImages.ts` asks for all image nodes in one Images call (PNG, scale 2), downloads each URL immediately and writes `docs/<component>/<slug>-<nodeId>.png`. The slug is the title of the surrounding section, so the file name is readable; the node id makes it unique and stable across renames.
+- `src/images/exportImages.ts` asks for all image nodes in one Images call (PNG, scale 2), downloads each URL immediately and writes `docs/<category>/<id>/<slug>-<nodeId>.png`. The slug is the title of the surrounding section, so the file name is readable; the node id makes it unique and stable across renames.
 - Stale PNGs in the image directory are deleted on every sync, so the folder mirrors the current Figma state.
 - Alt text is the section title (the node name `Frame For Specs` carries no meaning).
 - Exports are deterministic: two consecutive runs produce byte-identical files, so a sync without Figma changes creates no diff.

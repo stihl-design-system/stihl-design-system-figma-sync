@@ -8,7 +8,7 @@ Proof of concept that the Design System documentation can be extracted from Figm
 
 ## Summary
 
-A TypeScript CLI (`npm run sync`) reads the Accordion documentation via the Figma REST API, renders it to `docs/accordion.md` (frontmatter plus stable headings) and exports referenced images as PNG next to the Markdown. A GitHub Actions workflow detects Figma changes (polling as baseline, webhook relay as prototype) and opens a pull request with the regenerated files. Tooling mirrors the main Design System repository (Node 24.9.0, npm, tsx, vitest, Prettier config).
+A TypeScript CLI (`npm run sync`) reads the Accordion documentation via the Figma REST API, renders it to `docs/components/accordion.md` (frontmatter plus stable headings) and exports referenced images as PNG next to the Markdown. A GitHub Actions workflow detects Figma changes (polling as baseline, webhook relay as prototype) and opens a pull request with the regenerated files. Tooling mirrors the main Design System repository (Node 24.9.0, npm, tsx, vitest, Prettier config).
 
 ### Research findings so far
 
@@ -50,8 +50,8 @@ A TypeScript CLI (`npm run sync`) reads the Accordion documentation via the Figm
    - Tables: `TABLE` / `TABLE_CELL` nodes, fallback for frames following a naming convention.
    - Images: non-text frames and instances (do/don't examples, component visuals) become image blocks with their node id.
 8. `src/markdown/renderMarkdown.ts`: blocks to Markdown. Frontmatter: `component`, `title`, `figmaFileKey`, `figmaNodeId`, `figmaVersion`, `figmaLastModified`, `syncedAt`, `sourceUrl`. Headings normalised (H1 = component, H2 from Figma below), stable section names, no HTML.
-9. `src/images/exportImages.ts`: Images endpoint (PNG, scale 2; SVG optional), download temporary URLs immediately to `docs/accordion/<slug>-<nodeId>.png`, relative reference in Markdown, alt text from node name.
-10. `src/cli/sync.ts`: `npm run sync -- --component accordion` (without flag: all components from config), writes `docs/accordion.md`, idempotent (second run produces no diff). `src/cli/checkVersion.ts`: compares remote `version` with frontmatter, exit code 0/1 for CI.
+9. `src/images/exportImages.ts`: Images endpoint (PNG, scale 2; SVG optional), download temporary URLs immediately to `docs/components/accordion/<slug>-<nodeId>.png`, relative reference in Markdown, alt text from node name.
+10. `src/cli/sync.ts`: `npm run sync -- --component accordion` (without flag: all components from config), writes `docs/components/accordion.md` and rebuilds `docs/index.md`, idempotent (second run produces no diff). `src/cli/checkVersion.ts`: compares remote `version` with frontmatter, exit code 0/1 for CI.
 
 ### Phase 3: Tests (parallel to steps 8 to 10)
 
@@ -76,15 +76,19 @@ src/
   figma/client.ts
   extract/collectBlocks.ts
   markdown/renderMarkdown.ts
+  markdown/renderIndex.ts
   images/exportImages.ts
   cli/sync.ts
   cli/checkVersion.ts
 test/fixtures/accordion-nodes.json
 docs/
-  accordion.md
-  accordion/*.png
+  index.md                  (generated catalogue)
+  components/accordion.md
+  components/accordion/*.png
   decisions/001-change-detection.md
   decisions/002-image-handling.md
+  decisions/003-markdown-structure.md
+  templates/ai-guidelines-template.md
 relay/                      (stretch: webhook relay prototype)
 .github/workflows/sync.yml
 FINDINGS.md
@@ -93,7 +97,7 @@ FINDINGS.md
 ## Verification
 
 1. `npm run sync` twice in a row: `git status` shows no diff after the second run (reproducibility).
-2. `docs/accordion.md` contains frontmatter with `figmaVersion` and at least one `![...](accordion/....png)`; the image exists in the repository.
+2. `docs/components/accordion.md` contains frontmatter with `figmaVersion` and at least one `![...](accordion/....png)`; the image exists in the repository.
 3. `CI=true npm run test:unit` passes (fixture tests for blocks and Markdown).
 4. `npm run check` exits 0 on the current state; after manually changing `figmaVersion` in the frontmatter it exits 1.
 5. `workflow_dispatch` on GitHub opens a pull request with regenerated Markdown.
@@ -115,4 +119,4 @@ FINDINGS.md
 - ~~Hosting for the webhook relay~~: resolved, no relay. Polling the named versions covers the use case, see `docs/decisions/001-change-detection.md`.
 - ~~Trigger event~~: resolved, the latest named version is the trigger (equivalent of `FILE_VERSION_UPDATE`, without a webhook).
 - Which Figma nodes count as images: heuristic by node type (`INSTANCE` / `FRAME` without text descendants) vs. a naming convention for designers (e.g. prefix `img/`).
-- Sample `Accordion.md` by Patrick Wiesenhuetter, approval by Kathrin Koehler: once available, it becomes the blueprint for the Markdown structure.
+- ~~Sample `Accordion.md` by Patrick Wiesenhuetter~~: resolved. The sample is an 18 section AI guideline that mixes Figma guidance with Storybook API knowledge, so it is the target for a curated second layer, not for extraction. The extracted layer keeps the Figma structure, see `docs/decisions/003-markdown-structure.md`.
