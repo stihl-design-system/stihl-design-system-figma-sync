@@ -22,7 +22,8 @@ export type Block =
   | { type: 'heading'; level: number; text: string; nodeId: string }
   | { type: 'paragraph'; inlines: Inline[]; nodeId: string }
   | { type: 'list'; items: ListItem[]; nodeId: string }
-  | { type: 'image'; nodeId: string; alt: string };
+  | { type: 'image'; nodeId: string; alt: string }
+  | { type: 'note'; inlines: Inline[]; nodeId: string };
 
 export interface CollectOptions {
   fileKey: string;
@@ -30,20 +31,30 @@ export interface CollectOptions {
   headingLevels: Record<string, number>;
   /** Container names (trimmed, case-insensitive) that are exported as images */
   imageFrameNames?: string[];
+  /** Instance names whose text is a documentation callout (rendered as a quote) */
+  noteInstanceNames?: string[];
   /** Exact text content that is template noise and gets dropped */
   skipTexts?: string[];
-  /** Container names that never contain documentation */
-  skipFrameNames?: string[];
 }
 
 const DEFAULTS = {
   imageFrameNames: ['Frame For Specs'],
+  noteInstanceNames: ['notification'],
   skipTexts: ['Link TO →'],
-  skipFrameNames: ['logo', 'divider'],
 };
 
 const Y_TOLERANCE = 8;
 const BOLD_WEIGHT = 600;
+const MAX_HEADING_LENGTH = 120;
+const MAX_HEADING_WORD_LENGTH = 30;
+
+/** Titles are short and made of words; sentences and font specimens are not titles. */
+function looksLikeTitle(text: string): boolean {
+  return (
+    text.length <= MAX_HEADING_LENGTH &&
+    text.split(/\s+/).every((word) => word.length <= MAX_HEADING_WORD_LENGTH)
+  );
+}
 
 type ChildNode = SubcanvasNode;
 
@@ -83,6 +94,26 @@ function containsVisibleText(node: Node): boolean {
     return node.characters.trim().length > 0;
   }
   return hasChildren(node) && node.children.some(containsVisibleText);
+}
+
+function isHeading(node: TextNode, options: CollectOptions): boolean {
+  return (
+    options.headingLevels[String(node.style.fontSize)] !== undefined &&
+    (node.style.fontWeight ?? 400) >= BOLD_WEIGHT
+  );
+}
+
+/** Documentation blocks built as components (e.g. "contribute") carry a heading; UI instances do not. */
+function containsHeading(node: Node, options: CollectOptions): boolean {
+  if ((node as { visible?: boolean }).visible === false) {
+    return false;
+  }
+  if (node.type === 'TEXT') {
+    return isHeading(node, options) && node.characters.trim().length > 0;
+  }
+  return (
+    hasChildren(node) && node.children.some((c) => containsHeading(c, options))
+  );
 }
 
 function hyperlinkToHref(
@@ -159,12 +190,17 @@ function textToBlocks(
     return [];
   }
 
-  const headingLevel = options.headingLevels[String(node.style.fontSize)];
-  if (headingLevel !== undefined) {
+  // Heading sizes set in regular weight are lead paragraphs, not titles;
+  // heading sized sentences longer than a title are lead paragraphs too (they stay bold)
+  if (isHeading(node, options)) {
+    const headingLevel = options.headingLevels[String(node.style.fontSize)]!;
     const text = characters.replace(/\s+/g, ' ').trim();
-    return text
-      ? [{ type: 'heading', level: headingLevel, text, nodeId: node.id }]
-      : [];
+    if (!text) {
+      return [];
+    }
+    if (looksLikeTitle(text)) {
+      return [{ type: 'heading', level: headingLevel, text, nodeId: node.id }];
+    }
   }
 
   const blocks: Block[] = [];
@@ -225,6 +261,42 @@ function trimInlines(inlines: Inline[]): Inline[] {
   return result.filter((i) => i.text.length > 0);
 }
 
+/** All visible text of a container as one inline run per text node, in reading order. */
+function collectTextInlines(
+  node: Node,
+  options: Required<CollectOptions>
+): Inline[] {
+  const inlines: Inline[] = [];
+  const visit = (current: Node): void => {
+    if ((current as { visible?: boolean }).visible === false) {
+      return;
+    }
+    if (current.type === 'TEXT') {
+      const text = current.characters.trim();
+      if (!text || options.skipTexts.includes(text)) {
+        return;
+      }
+      if (inlines.length > 0) {
+        inlines.push({ text: ' ' });
+      }
+      // Raw characters keep the style override offsets aligned; the renderer collapses whitespace
+      inlines.push(
+        ...trimInlines(
+          lineToInlines(current, current.characters, 0, options.fileKey)
+        )
+      );
+      return;
+    }
+    if (hasChildren(current)) {
+      for (const child of sortByReadingOrder(current.children)) {
+        visit(child);
+      }
+    }
+  };
+  visit(node);
+  return inlines;
+}
+
 /**
  * Transforms the node tree of a documentation page or section into a flat list of blocks.
  * Headings are detected by font size, lists via Figma line types, images via container names.
@@ -235,17 +307,17 @@ export function collectBlocks(
 ): Block[] {
   const options: Required<CollectOptions> = { ...DEFAULTS, ...userOptions };
   const imageNames = new Set(options.imageFrameNames.map(normalizeName));
-  const skipNames = new Set(options.skipFrameNames.map(normalizeName));
+  const noteNames = new Set(options.noteInstanceNames.map(normalizeName));
   const blocks: Block[] = [];
   let lastHeading = '';
 
-  const visit = (node: Node, depth: number): void => {
+  const visit = (node: Node, parent: Node | undefined): void => {
     if ((node as { visible?: boolean }).visible === false) {
       return;
     }
     if (node.type === 'TEXT') {
-      // Loose text directly on the canvas is scratch content, not documentation
-      if (depth === 1 && root.type === 'CANVAS') {
+      // Loose text directly on the canvas or in a section is scratch content, not documentation
+      if (parent?.type === 'CANVAS' || parent?.type === 'SECTION') {
         return;
       }
       for (const block of textToBlocks(node, options)) {
@@ -259,8 +331,19 @@ export function collectBlocks(
     if (!hasChildren(node)) {
       return;
     }
+    // Component definitions on the page are the component itself, not its documentation
+    if (node.type === 'COMPONENT' || node.type === 'COMPONENT_SET') {
+      return;
+    }
     const name = normalizeName(node.name);
-    if (skipNames.has(name)) {
+    if (node.type === 'INSTANCE' && noteNames.has(name)) {
+      const inlines = collectTextInlines(node, options);
+      if (inlines.length > 0) {
+        blocks.push({ type: 'note', inlines, nodeId: node.id });
+      }
+      return;
+    }
+    if (node.type === 'INSTANCE' && !containsHeading(node, options)) {
       return;
     }
     if (imageNames.has(name)) {
@@ -271,14 +354,14 @@ export function collectBlocks(
       });
       return;
     }
-    if (depth > 0 && !containsVisibleText(node)) {
+    if (parent && !containsVisibleText(node)) {
       return;
     }
     for (const child of sortByReadingOrder(node.children)) {
-      visit(child, depth + 1);
+      visit(child, node);
     }
   };
 
-  visit(root, 0);
+  visit(root, undefined);
   return blocks;
 }

@@ -23,7 +23,7 @@ A TypeScript CLI (`npm run sync`) reads the Accordion documentation via the Figm
 - Repository: `stihl-design-system/stihl-design-system-figma-sync` (private), local checkout as sibling of `stihl-design-system`.
 - Regenerated Markdown is delivered via pull request (`peter-evans/create-pull-request`), not committed directly to `main`.
 - Figma types come from `@figma/rest-api-spec`; no custom type set.
-- Only Accordion is extracted, but the mapping is config driven (component to file key / node id) so further components only need config entries.
+- Only Accordion was extracted in the first iteration, but the mapping is config driven (`sources` = Figma files, `documents` = pages with category and node id) so further pages only need config entries. All documented Core Components pages followed in the second iteration; the other three Figma projects (Fundamentals, Platform Libraries, Guidelines) are configured the same way.
 - Markdown structure is designed freely (frontmatter plus stable headings). If a sample `Accordion.md` is provided and approved, only the renderer is adapted.
 - Out of scope: MCP server implementation, integration into the main repository, OAuth app.
 
@@ -51,7 +51,7 @@ A TypeScript CLI (`npm run sync`) reads the Accordion documentation via the Figm
    - Images: non-text frames and instances (do/don't examples, component visuals) become image blocks with their node id.
 8. `src/markdown/renderMarkdown.ts`: blocks to Markdown. Frontmatter: `component`, `title`, `figmaFileKey`, `figmaNodeId`, `figmaVersion`, `figmaLastModified`, `syncedAt`, `sourceUrl`. Headings normalised (H1 = component, H2 from Figma below), stable section names, no HTML.
 9. `src/images/exportImages.ts`: Images endpoint (PNG, scale 2; SVG optional), download temporary URLs immediately to `docs/components/accordion/<slug>-<nodeId>.png`, relative reference in Markdown, alt text from node name.
-10. `src/cli/sync.ts`: `npm run sync -- --component accordion` (without flag: all components from config), writes `docs/components/accordion.md` and rebuilds `docs/index.md`, idempotent (second run produces no diff). `src/cli/checkVersion.ts`: compares remote `version` with frontmatter, exit code 0/1 for CI.
+10. `src/cli/sync.ts`: `npm run sync -- --document accordion` (without flag: all documents from config), writes `docs/components/accordion.md` and rebuilds `docs/index.md`, idempotent (second run produces no diff). `src/cli/checkVersion.ts`: compares remote `version` with frontmatter, exit code 0/1 for CI.
 
 ### Phase 3: Tests (parallel to steps 8 to 10)
 
@@ -83,8 +83,11 @@ src/
 test/fixtures/accordion-nodes.json
 docs/
   index.md                  (generated catalogue)
-  components/accordion.md
-  components/accordion/*.png
+  foundations/<id>.md       (01. Fundamentals)
+  components/<id>.md        (02. Core Components)
+  components/<id>/*.png
+  patterns/<id>.md          (03. Platform Libraries)
+  guidelines/<id>.md        (04. Guidelines, Onboarding, Processes)
   decisions/001-change-detection.md
   decisions/002-image-handling.md
   decisions/003-markdown-structure.md

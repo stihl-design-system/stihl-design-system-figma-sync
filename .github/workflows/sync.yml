@@ -53,15 +53,16 @@ jobs:
         if: steps.check.outputs.outdated == 'true' || inputs.force == true
         uses: peter-evans/create-pull-request@v7
         with:
-          branch: sync/figma-${{ steps.check.outputs.version }}
+          # One open sync PR at a time; a newer version updates the same branch
+          branch: sync/figma
           delete-branch: true
-          commit-message: 'docs: sync Figma documentation (${{ steps.check.outputs.label }})'
-          title: 'docs: sync Figma documentation (${{ steps.check.outputs.label }})'
+          commit-message: 'docs: sync Figma documentation'
+          title: 'docs: sync Figma documentation'
           body: |
-            Regenerated from the latest named Figma version.
+            Regenerated from the latest named version of each outdated Figma file.
 
-            - Version label: `${{ steps.check.outputs.label }}`
-            - Version id: `${{ steps.check.outputs.version }}`
-            - Created in Figma: `${{ steps.check.outputs.createdAt }}`
+            - Outdated files: ${{ steps.check.outputs.summary || 'none (forced run)' }}
             - Trigger: `${{ github.event_name }}`
+
+            Version ids and labels per document are in the frontmatter of the changed files.
           labels: figma-sync

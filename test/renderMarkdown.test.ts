@@ -8,12 +8,14 @@ import {
 } from '../src/markdown/renderMarkdown.ts';
 
 const frontmatter: Frontmatter = {
-  component: 'accordion',
+  id: 'accordion',
   title: 'Accordion',
   category: 'component',
-  importName: 'DSAccordion',
+  importNames: ['DSAccordion'],
   package: '@stihl-design-system/components',
   keywords: ['accordion', 'disclosure'],
+  figmaFile: 'Core Components',
+  figmaProject: '02. Core Components',
   figmaFileKey: 'FILEKEY',
   figmaNodeId: '17260:166',
   figmaVersion: '123',
@@ -62,14 +64,17 @@ describe('renderMarkdown', () => {
 
     expect(markdown).toMatchInlineSnapshot(`
       "---
-      component: accordion
+      id: accordion
       title: Accordion
       category: component
-      importName: DSAccordion
+      importNames:
+        - DSAccordion
       package: "@stihl-design-system/components"
       keywords:
         - accordion
         - disclosure
+      figmaFile: Core Components
+      figmaProject: 02. Core Components
       figmaFileKey: FILEKEY
       figmaNodeId: 17260:166
       figmaVersion: "123"

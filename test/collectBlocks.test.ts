@@ -172,4 +172,70 @@ describe('collectBlocks on synthetic nodes', () => {
     ]);
     expect(sorted.map((n) => n.id)).toEqual(['a', 'b', 'c']);
   });
+
+  it('skips component definitions and UI instances, keeps callouts and documentation components', () => {
+    const container = (
+      type: string,
+      name: string,
+      children: Node[],
+      id = '9:9'
+    ): Node => ({ id, name, type, children }) as unknown as Node;
+    const heading = text({
+      characters: 'Contribute',
+      style: { fontSize: 24, fontWeight: 700 } as TextNode['style'],
+    });
+    const blocks = collectBlocks(
+      frame(
+        [
+          container('COMPONENT_SET', 'button', [text({ characters: 'Label' })]),
+          container('INSTANCE', 'flag', [text({ characters: 'Flag' })]),
+          container('INSTANCE', 'contribute', [
+            heading,
+            text({ characters: 'Share feedback' }),
+          ]),
+          container(
+            'INSTANCE',
+            'notification',
+            [text({ characters: 'Use only\nthe tokens.' })],
+            '5:5'
+          ),
+        ],
+        'section'
+      ),
+      options
+    );
+    expect(blocks).toEqual([
+      { type: 'heading', level: 4, text: 'Contribute', nodeId: '1:1' },
+      {
+        type: 'paragraph',
+        nodeId: '1:1',
+        inlines: [{ text: 'Share feedback' }],
+      },
+      {
+        type: 'note',
+        nodeId: '5:5',
+        inlines: [{ text: 'Use only\nthe tokens.' }],
+      },
+    ]);
+  });
+
+  it('ignores loose text directly inside sections and treats 24px regular text as a paragraph', () => {
+    const lead = text({
+      characters: 'A lead sentence.',
+      style: { fontSize: 24, fontWeight: 400 } as TextNode['style'],
+    });
+    const section = {
+      id: '2:2',
+      name: 'Button',
+      type: 'SECTION',
+      children: [text({ characters: 'Value' }), frame([lead])],
+    } as unknown as Node;
+    expect(collectBlocks(section, options)).toEqual([
+      {
+        type: 'paragraph',
+        nodeId: '1:1',
+        inlines: [{ text: 'A lead sentence.' }],
+      },
+    ]);
+  });
 });

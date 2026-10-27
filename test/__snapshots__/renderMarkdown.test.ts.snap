@@ -2,14 +2,17 @@
 
 exports[`renderMarkdown > renders the Accordion fixture to a stable document 1`] = `
 "---
-component: accordion
+id: accordion
 title: Accordion
 category: component
-importName: DSAccordion
+importNames:
+  - DSAccordion
 package: "@stihl-design-system/components"
 keywords:
   - accordion
   - disclosure
+figmaFile: Core Components
+figmaProject: 02. Core Components
 figmaFileKey: FILEKEY
 figmaNodeId: 17260:166
 figmaVersion: "123"

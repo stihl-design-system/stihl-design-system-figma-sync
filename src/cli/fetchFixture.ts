@@ -1,9 +1,9 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import type { Node } from '@figma/rest-api-spec';
-import { loadConfig, selectComponents } from '../config.ts';
+import { loadConfig, selectDocuments } from '../config.ts';
 import { createFigmaClient, requireToken } from '../figma/client.ts';
-import { loadEnv, parseArgs, resolveTargetVersion } from './shared.ts';
+import { createVersionResolver, loadEnv, parseArgs } from './shared.ts';
 
 const IMAGE_FRAMES = ['frame for specs'];
 const NODE_KEYS = [
@@ -56,19 +56,20 @@ function prune(node: AnyNode): AnyNode {
 async function main(): Promise<void> {
   loadEnv();
   const config = loadConfig();
-  const { components, latest } = parseArgs(process.argv.slice(2));
+  const { documents, latest } = parseArgs(process.argv.slice(2));
   const client = createFigmaClient(requireToken());
-  const target = await resolveTargetVersion(client, config.fileKey, latest);
+  const resolveVersion = createVersionResolver(client, latest);
 
-  for (const component of selectComponents(config, components)) {
+  for (const document of selectDocuments(config, documents)) {
+    const target = await resolveVersion(document.file);
     const response = await client.getNodes(
-      config.fileKey,
-      [component.nodeId],
+      document.file.fileKey,
+      [document.nodeId],
       target.id
     );
-    const node = response.nodes[component.nodeId];
+    const node = response.nodes[document.nodeId];
     if (!node) {
-      throw new Error(`Node ${component.nodeId} not found`);
+      throw new Error(`Node ${document.nodeId} not found`);
     }
     const fixture = {
       name: response.name,
@@ -76,14 +77,14 @@ async function main(): Promise<void> {
       versionLabel: target.label,
       versionCreatedAt: target.createdAt,
       nodes: {
-        [component.nodeId]: {
+        [document.nodeId]: {
           document: prune(
             node.document as unknown as AnyNode
           ) as unknown as Node,
         },
       },
     };
-    const path = `test/fixtures/${component.id}-nodes.json`;
+    const path = `test/fixtures/${document.id}-nodes.json`;
     await mkdir(dirname(path), { recursive: true });
     await writeFile(path, JSON.stringify(fixture, null, 2) + '\n');
     console.log(`wrote ${path}`);

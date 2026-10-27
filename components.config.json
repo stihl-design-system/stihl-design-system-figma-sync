@@ -1,5 +1,4 @@
 {
-  "fileKey": "qXldpLO6gxHJNLdcXIPxYt",
   "headingLevels": {
     "64": 2,
     "48": 3,
@@ -7,19 +6,574 @@
   },
   "imageExport": {
     "format": "png",
-    "scale": 2
+    "scale": 1
   },
+  "docsDir": "docs",
   "indexOutput": "docs/index.md",
-  "components": [
+  "sources": [
+    {
+      "id": "typography",
+      "name": "Typography",
+      "project": "01. Fundamentals",
+      "fileKey": "d9wrOp4aCplDsV9AVC87Xn"
+    },
+    {
+      "id": "iconography",
+      "name": "Iconography",
+      "project": "01. Fundamentals",
+      "fileKey": "U218NNP4OsipaHOtv5flns"
+    },
+    {
+      "id": "grid-spacing",
+      "name": "Grid & Spacing",
+      "project": "01. Fundamentals",
+      "fileKey": "JyyYtoCYbtJrzqHs38OXSQ"
+    },
+    {
+      "id": "styles",
+      "name": "Styles",
+      "project": "01. Fundamentals",
+      "fileKey": "UYHZEckQObDvLuuRoMP8ps"
+    },
+    {
+      "id": "core-components",
+      "name": "Core Components",
+      "project": "02. Core Components",
+      "fileKey": "qXldpLO6gxHJNLdcXIPxYt"
+    },
+    {
+      "id": "web-pattern-library",
+      "name": "Web Pattern Library",
+      "project": "03. Platform Libraries",
+      "fileKey": "Ie2r0R9QwjEc7O3nrFbXhV"
+    },
+    {
+      "id": "onboarding",
+      "name": "Onboarding",
+      "project": "04. Guidelines, Onboarding, Processes",
+      "fileKey": "lLmw7PfIdKjFG4uT3B2Hyj",
+      "allowUnpublished": true,
+      "headingLevels": {
+        "80": 2,
+        "48": 3,
+        "40": 3,
+        "32": 4,
+        "24": 4
+      }
+    }
+  ],
+  "documents": [
+    {
+      "id": "font-families",
+      "title": "Font Families",
+      "source": "typography",
+      "category": "foundation",
+      "keywords": ["typography", "font", "font family", "typeface"],
+      "nodeId": "2154:910"
+    },
+    {
+      "id": "typography-tokens",
+      "title": "Typography Tokens",
+      "source": "typography",
+      "category": "foundation",
+      "keywords": ["typography", "tokens", "font size", "line height"],
+      "nodeId": "2154:911"
+    },
+    {
+      "id": "maximum-text-width",
+      "title": "Maximum Text Width",
+      "source": "typography",
+      "category": "foundation",
+      "keywords": [
+        "typography",
+        "text width",
+        "measure",
+        "34em",
+        "readability"
+      ],
+      "nodeId": "2645:515"
+    },
+    {
+      "id": "text-styles-web",
+      "title": "Text Styles: Web",
+      "source": "typography",
+      "category": "foundation",
+      "importNames": ["DSHeading", "DSText", "DSTextUtility"],
+      "keywords": [
+        "typography",
+        "text styles",
+        "heading",
+        "text",
+        "utility",
+        "web"
+      ],
+      "nodeId": "1:132"
+    },
+    {
+      "id": "text-styles-app",
+      "title": "Text Styles: App",
+      "source": "typography",
+      "category": "foundation",
+      "keywords": [
+        "typography",
+        "text styles",
+        "heading",
+        "text",
+        "app",
+        "mobile"
+      ],
+      "nodeId": "50:576"
+    },
+    {
+      "id": "iconography-guidelines",
+      "title": "Iconography Guidelines",
+      "source": "iconography",
+      "category": "foundation",
+      "importNames": ["DSIcon"],
+      "keywords": ["iconography", "icons", "icon usage", "icon sizes"],
+      "nodeId": "9857:3242"
+    },
+    {
+      "id": "grid-app",
+      "title": "Grid Styles: App",
+      "source": "grid-spacing",
+      "category": "foundation",
+      "keywords": ["grid", "layout", "columns", "app", "mobile"],
+      "nodeId": "56:73"
+    },
+    {
+      "id": "grid-web",
+      "title": "Grid Styles: Web",
+      "source": "grid-spacing",
+      "category": "foundation",
+      "keywords": [
+        "grid",
+        "layout",
+        "columns",
+        "breakpoints",
+        "content placement",
+        "web"
+      ],
+      "nodeId": "1:132"
+    },
+    {
+      "id": "spacing",
+      "title": "Spacing Styles",
+      "source": "grid-spacing",
+      "category": "foundation",
+      "keywords": ["spacing", "tokens", "padding", "margin", "gap"],
+      "nodeId": "1:1253"
+    },
+    {
+      "id": "border-width",
+      "title": "Border Width",
+      "source": "styles",
+      "category": "foundation",
+      "keywords": ["border", "border width", "stroke", "tokens"],
+      "nodeId": "2106:37"
+    },
+    {
+      "id": "radius",
+      "title": "Radius",
+      "source": "styles",
+      "category": "foundation",
+      "keywords": ["radius", "border radius", "corner", "tokens"],
+      "nodeId": "59:2801"
+    },
+    {
+      "id": "motion",
+      "title": "Motion",
+      "source": "styles",
+      "category": "foundation",
+      "keywords": ["motion", "animation", "easing", "duration"],
+      "nodeId": "1:148"
+    },
+    {
+      "id": "transitions",
+      "title": "Transitions",
+      "source": "styles",
+      "category": "foundation",
+      "keywords": ["motion", "transition", "page transition"],
+      "nodeId": "24:2508"
+    },
+    {
+      "id": "shadows",
+      "title": "Shadows",
+      "source": "styles",
+      "category": "foundation",
+      "keywords": ["shadow", "elevation", "box shadow", "tokens"],
+      "nodeId": "7:9014"
+    },
     {
       "id": "accordion",
       "title": "Accordion",
+      "source": "core-components",
       "category": "component",
-      "importName": "DSAccordion",
+      "importNames": ["DSAccordion"],
       "keywords": ["accordion", "disclosure", "expandable section", "details"],
-      "nodeId": "17260:166",
-      "output": "docs/components/accordion.md",
-      "imageDir": "docs/components/accordion"
+      "nodeId": "17260:166"
+    },
+    {
+      "id": "button",
+      "title": "Button",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSButton", "DSButtonRound", "DSFloatingActionButton"],
+      "keywords": [
+        "button",
+        "round button",
+        "fab",
+        "floating action button",
+        "cta"
+      ],
+      "nodeId": "162:126"
+    },
+    {
+      "id": "breadcrumb",
+      "title": "Breadcrumb",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSBreadcrumb"],
+      "keywords": ["breadcrumb", "navigation path", "hierarchy"],
+      "nodeId": "23527:3393"
+    },
+    {
+      "id": "card",
+      "title": "Card",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSLinkCard", "DSActionCard", "DSActionCardGroup"],
+      "keywords": [
+        "card",
+        "link card",
+        "action card",
+        "product card",
+        "selectable card",
+        "tile"
+      ],
+      "nodeId": "26075:11591"
+    },
+    {
+      "id": "carousel",
+      "title": "Carousel",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSCarousel"],
+      "keywords": ["carousel", "slider", "slideshow", "gallery"],
+      "nodeId": "26075:11524"
+    },
+    {
+      "id": "checkbox",
+      "title": "Checkbox",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSCheckbox", "DSCheckboxGroup"],
+      "keywords": ["checkbox", "checkbox group", "multi select", "form"],
+      "nodeId": "1017:2316"
+    },
+    {
+      "id": "chip-group",
+      "title": "Chip Group",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSChipGroup", "DSChip"],
+      "keywords": ["chip", "chip group", "filter chip", "tag"],
+      "nodeId": "18691:978"
+    },
+    {
+      "id": "combobox",
+      "title": "Combobox",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSCombobox"],
+      "keywords": [
+        "combobox",
+        "autocomplete",
+        "typeahead",
+        "searchable select"
+      ],
+      "nodeId": "2659:3954"
+    },
+    {
+      "id": "divider",
+      "title": "Divider",
+      "source": "core-components",
+      "category": "component",
+      "keywords": ["divider", "separator", "rule", "border"],
+      "nodeId": "26075:11725"
+    },
+    {
+      "id": "dialog",
+      "title": "Dialog",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSDialog"],
+      "keywords": ["dialog", "modal", "overlay", "confirmation"],
+      "nodeId": "14115:4051"
+    },
+    {
+      "id": "drawer",
+      "title": "Drawer",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSDrawer"],
+      "keywords": ["drawer", "side panel", "off-canvas", "sheet"],
+      "nodeId": "16282:9317"
+    },
+    {
+      "id": "flag",
+      "title": "Flag",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSFlag"],
+      "keywords": ["flag", "badge", "label", "status marker"],
+      "nodeId": "19511:2443"
+    },
+    {
+      "id": "input",
+      "title": "Input",
+      "source": "core-components",
+      "category": "component",
+      "importNames": [
+        "DSInput",
+        "DSInputPassword",
+        "DSInputSearch",
+        "DSInputNumber",
+        "DSSlider"
+      ],
+      "keywords": [
+        "input",
+        "text field",
+        "password",
+        "search",
+        "number",
+        "slider",
+        "form"
+      ],
+      "nodeId": "1591:2"
+    },
+    {
+      "id": "link",
+      "title": "Link",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSLink", "DSLinkButton"],
+      "keywords": [
+        "link",
+        "inline link",
+        "standalone link",
+        "link button",
+        "anchor"
+      ],
+      "nodeId": "26711:8034"
+    },
+    {
+      "id": "logo",
+      "title": "Logo",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSLogo"],
+      "keywords": ["logo", "brand", "favicon", "100 year logo"],
+      "nodeId": "9050:2"
+    },
+    {
+      "id": "notification",
+      "title": "Notification",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSNotification"],
+      "keywords": [
+        "notification",
+        "alert",
+        "inline message",
+        "system feedback"
+      ],
+      "nodeId": "7251:8"
+    },
+    {
+      "id": "pagination",
+      "title": "Pagination",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSPagination"],
+      "keywords": ["pagination", "pager", "page navigation"],
+      "nodeId": "26075:11456"
+    },
+    {
+      "id": "popover",
+      "title": "Popover",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSPopover"],
+      "keywords": ["popover", "flyout", "contextual overlay"],
+      "nodeId": "35223:10505"
+    },
+    {
+      "id": "radio-group",
+      "title": "Radio Group",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSRadioGroup", "DSRadio"],
+      "keywords": [
+        "radio",
+        "radio group",
+        "radio with image",
+        "single select",
+        "form"
+      ],
+      "nodeId": "860:2728"
+    },
+    {
+      "id": "select",
+      "title": "Select",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSSelect"],
+      "keywords": ["select", "dropdown", "form"],
+      "nodeId": "8139:4888"
+    },
+    {
+      "id": "skeleton",
+      "title": "Skeleton",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSSkeleton"],
+      "keywords": ["skeleton", "loading placeholder", "shimmer"],
+      "nodeId": "49465:7294"
+    },
+    {
+      "id": "skip-link",
+      "title": "Skip Link",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSSkipToContent"],
+      "keywords": [
+        "skip link",
+        "skip to content",
+        "accessibility",
+        "keyboard navigation"
+      ],
+      "nodeId": "16333:2371"
+    },
+    {
+      "id": "spinner",
+      "title": "Spinner",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSSpinner"],
+      "keywords": ["spinner", "loading indicator", "progress"],
+      "nodeId": "26:3"
+    },
+    {
+      "id": "stepper",
+      "title": "Stepper",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSStepper"],
+      "keywords": ["stepper", "wizard", "progress steps", "multi step"],
+      "nodeId": "26075:10497"
+    },
+    {
+      "id": "switch",
+      "title": "Switch",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSSwitch"],
+      "keywords": ["switch", "toggle", "on off"],
+      "nodeId": "513:2"
+    },
+    {
+      "id": "tabs",
+      "title": "Tabs",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSTabs", "DSNavigationTabs"],
+      "keywords": ["tabs", "in-page tabs", "navigation tabs", "tab bar"],
+      "nodeId": "24564:312"
+    },
+    {
+      "id": "textarea",
+      "title": "Textarea",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSTextarea"],
+      "keywords": ["textarea", "multiline input", "form"],
+      "nodeId": "4937:4402"
+    },
+    {
+      "id": "tooltip",
+      "title": "Tooltip",
+      "source": "core-components",
+      "category": "component",
+      "keywords": ["tooltip", "hint", "info bubble"],
+      "nodeId": "36194:1244"
+    },
+    {
+      "id": "toast",
+      "title": "Toast",
+      "source": "core-components",
+      "category": "component",
+      "importNames": ["DSToast", "DSToastProvider"],
+      "keywords": ["toast", "snackbar", "transient message", "system feedback"],
+      "nodeId": "8844:4923"
+    },
+    {
+      "id": "banner",
+      "title": "Banner",
+      "source": "web-pattern-library",
+      "category": "pattern",
+      "importNames": ["DSBanner"],
+      "keywords": ["banner", "announcement", "page level message"],
+      "nodeId": "7171:9055"
+    },
+    {
+      "id": "navigation",
+      "title": "Navigation",
+      "source": "web-pattern-library",
+      "category": "pattern",
+      "importNames": ["DSHeader", "DSMegaMenu", "DSTopBar"],
+      "keywords": [
+        "navigation",
+        "header",
+        "mega menu",
+        "dropdown menu",
+        "top bar",
+        "mobile navigation"
+      ],
+      "nodeId": "5381:18"
+    },
+    {
+      "id": "fieldset",
+      "title": "Fieldset",
+      "source": "web-pattern-library",
+      "category": "pattern",
+      "importNames": ["DSFieldset"],
+      "keywords": ["fieldset", "form group", "legend", "form"],
+      "nodeId": "8:154"
+    },
+    {
+      "id": "title",
+      "title": "Title",
+      "source": "web-pattern-library",
+      "category": "pattern",
+      "importNames": ["DSTitle"],
+      "keywords": ["title", "page title", "headline", "subtitle"],
+      "nodeId": "7:19"
+    },
+    {
+      "id": "introduction",
+      "title": "STIHL Design System Introduction",
+      "source": "onboarding",
+      "category": "guideline",
+      "keywords": [
+        "onboarding",
+        "introduction",
+        "process",
+        "contribution",
+        "figma file structure",
+        "getting started"
+      ],
+      "nodeId": "356:1729"
     }
   ]
 }

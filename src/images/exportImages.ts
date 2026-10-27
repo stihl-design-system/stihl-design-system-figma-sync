@@ -3,6 +3,9 @@ import { join, relative, dirname } from 'node:path';
 import type { FigmaClient } from '../figma/client.ts';
 import type { Block } from '../extract/collectBlocks.ts';
 
+const MAX_DOWNLOAD_RETRIES = 3;
+const IMAGE_BATCH_SIZE = 20;
+
 export interface ExportImagesOptions {
   client: FigmaClient;
   fileKey: string;
@@ -14,6 +17,8 @@ export interface ExportImagesOptions {
   scale: number;
   /** Figma version id to render; omitted = current file state */
   version?: string;
+  /** Keep files that already exist; exports are deterministic per version */
+  reuseExisting?: boolean;
 }
 
 export function slugify(text: string): string {
@@ -32,6 +37,25 @@ export function imageFileName(
 ): string {
   const slug = slugify(block.alt) || 'image';
   return `${slug}-${block.nodeId.replace(/[^0-9A-Za-z]+/g, '-')}.${format}`;
+}
+
+async function downloadWithRetry(url: string, nodeId: string): Promise<Buffer> {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      const download = await fetch(url);
+      if (!download.ok) {
+        throw new Error(`status ${download.status}`);
+      }
+      return Buffer.from(await download.arrayBuffer());
+    } catch (error) {
+      if (attempt >= MAX_DOWNLOAD_RETRIES) {
+        throw new Error(
+          `Image download failed for ${nodeId}: ${(error as Error).message}`
+        );
+      }
+      await new Promise((resolve) => setTimeout(resolve, 2 ** attempt * 1000));
+    }
+  }
 }
 
 /**
@@ -53,41 +77,54 @@ export async function exportImages(
 
   await mkdir(options.imageDir, { recursive: true });
 
-  const response = await options.client.getImages(
-    options.fileKey,
-    imageBlocks.map((b) => b.nodeId),
-    { format: options.format, scale: options.scale, version: options.version }
-  );
-  if (response.err) {
-    throw new Error(`Figma image export failed: ${response.err}`);
+  const keep = new Set<string>();
+  const relativePath = (fileName: string): string =>
+    relative(dirname(options.markdownPath), join(options.imageDir, fileName))
+      .split('\\')
+      .join('/');
+
+  const existing = new Set(await readdir(options.imageDir));
+  const pending = imageBlocks.filter((block) => {
+    const fileName = imageFileName(block, options.format);
+    if (options.reuseExisting && existing.has(fileName)) {
+      keep.add(fileName);
+      paths.set(block.nodeId, relativePath(fileName));
+      return false;
+    }
+    return true;
+  });
+
+  // Figma renders synchronously; large batches exceed the request timeout
+  const images: Record<string, string | null> = {};
+  for (let i = 0; i < pending.length; i += IMAGE_BATCH_SIZE) {
+    const batch = pending.slice(i, i + IMAGE_BATCH_SIZE);
+    const response = await options.client.getImages(
+      options.fileKey,
+      batch.map((b) => b.nodeId),
+      { format: options.format, scale: options.scale, version: options.version }
+    );
+    if (response.err) {
+      throw new Error(`Figma image export failed: ${response.err}`);
+    }
+    Object.assign(images, response.images);
   }
 
-  const keep = new Set<string>();
-  for (const block of imageBlocks) {
-    const url = response.images[block.nodeId];
+  for (const block of pending) {
+    const url = images[block.nodeId];
     if (!url) {
       console.warn(`No image rendered for node ${block.nodeId} (${block.alt})`);
       continue;
     }
     const fileName = imageFileName(block, options.format);
     const target = join(options.imageDir, fileName);
-    const download = await fetch(url);
-    if (!download.ok) {
-      throw new Error(
-        `Image download failed (${download.status}) for ${block.nodeId}`
-      );
-    }
-    await writeFile(target, Buffer.from(await download.arrayBuffer()));
+    await writeFile(target, await downloadWithRetry(url, block.nodeId));
     keep.add(fileName);
-    paths.set(
-      block.nodeId,
-      relative(dirname(options.markdownPath), target).split('\\').join('/')
-    );
+    paths.set(block.nodeId, relativePath(fileName));
   }
 
-  for (const existing of await readdir(options.imageDir)) {
-    if (existing.endsWith(`.${options.format}`) && !keep.has(existing)) {
-      await rm(join(options.imageDir, existing));
+  for (const file of existing) {
+    if (file.endsWith(`.${options.format}`) && !keep.has(file)) {
+      await rm(join(options.imageDir, file));
     }
   }
 

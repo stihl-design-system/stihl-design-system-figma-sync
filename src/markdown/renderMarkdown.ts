@@ -3,12 +3,14 @@ import type { DocCategory } from '../config.ts';
 import type { Block, Inline } from '../extract/collectBlocks.ts';
 
 export interface Frontmatter {
-  component: string;
+  id: string;
   title: string;
   category: DocCategory;
-  importName?: string;
+  importNames?: string[];
   package?: string;
   keywords?: string[];
+  figmaFile: string;
+  figmaProject: string;
   figmaFileKey: string;
   figmaNodeId: string;
   figmaVersion: string;
@@ -76,6 +78,8 @@ function renderBlock(block: Block, options: RenderOptions): string | undefined {
       return `${'#'.repeat(Math.min(6, block.level))} ${escapeText(block.text)}`;
     case 'paragraph':
       return renderInlines(block.inlines);
+    case 'note':
+      return `> ${renderInlines(block.inlines)}`;
     case 'list': {
       const minLevel = Math.min(...block.items.map((item) => item.level));
       // 3 spaces nest correctly under both "- " and "1. " markers

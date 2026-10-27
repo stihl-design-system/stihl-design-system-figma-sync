@@ -7,12 +7,14 @@ import {
 import type { Frontmatter } from '../src/markdown/renderMarkdown.ts';
 
 const frontmatter: Frontmatter = {
-  component: 'accordion',
+  id: 'accordion',
   title: 'Accordion',
   category: 'component',
-  importName: 'DSAccordion',
+  importNames: ['DSAccordion', 'DSAccordionGroup'],
   package: '@stihl-design-system/components',
   keywords: ['accordion', 'disclosure'],
+  figmaFile: 'Core Components',
+  figmaProject: '02. Core Components',
   figmaFileKey: 'FILEKEY',
   figmaNodeId: '17260:166',
   figmaVersion: '123',
@@ -69,12 +71,14 @@ describe('renderIndex', () => {
         {
           frontmatter: {
             ...frontmatter,
-            component: 'grid',
+            id: 'grid',
             title: 'Grid',
             category: 'foundation',
-            importName: undefined,
+            importNames: undefined,
             package: undefined,
             keywords: undefined,
+            figmaFile: 'Grid & Spacing',
+            figmaProject: '01. Fundamentals',
             figmaVersionLabel: '',
           },
           path: 'docs/foundations/grid.md',
@@ -85,30 +89,30 @@ describe('renderIndex', () => {
     );
 
     expect(index).toContain('## How to use these files');
-    expect(index.slice(index.indexOf('## Components'))).toMatchInlineSnapshot(`
-      "## Components
+    expect(index.slice(index.indexOf('## Foundations'))).toMatchInlineSnapshot(`
+      "## Foundations
+
+      ### Grid
+
+      - Document: [foundations/grid.md](foundations/grid.md)
+      - Figma: [Grid & Spacing](https://www.figma.com/design/FILEKEY?node-id=17260-166) (unpublished state, 2026-10-07)
+      - Chapters:
+        - [Breakpoints](foundations/grid.md#breakpoints)
+
+      ## Components
 
       ### Accordion
 
-      \`DSAccordion\` from \`@stihl-design-system/components\`. Keywords: accordion, disclosure.
+      \`DSAccordion\`, \`DSAccordionGroup\` from \`@stihl-design-system/components\`. Keywords: accordion, disclosure.
 
       - Document: [components/accordion.md](components/accordion.md)
-      - Figma: [Accordion](https://www.figma.com/design/FILEKEY?node-id=17260-166) (version "Components published", 2026-10-07)
+      - Figma: [Core Components](https://www.figma.com/design/FILEKEY?node-id=17260-166) (version "Components published", 2026-10-07)
       - Chapters:
         - [Accordion single](components/accordion.md#accordion-single)
         - [Content and Assets](components/accordion.md#content-and-assets)
           - [Custom hint area](components/accordion.md#custom-hint-area)
         - [Usage](components/accordion.md#usage)
           - [Custom hint area](components/accordion.md#custom-hint-area-1)
-
-      ## Foundations
-
-      ### Grid
-
-      - Document: [foundations/grid.md](foundations/grid.md)
-      - Figma: [Grid](https://www.figma.com/design/FILEKEY?node-id=17260-166) (unpublished state, 2026-10-07)
-      - Chapters:
-        - [Breakpoints](foundations/grid.md#breakpoints)
       "
     `);
   });

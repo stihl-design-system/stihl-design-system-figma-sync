@@ -46,13 +46,31 @@ export function createFigmaClient(token: string): FigmaClient {
     }
 
     for (let attempt = 0; ; attempt++) {
-      const response = await fetch(url, {
-        headers: { 'X-Figma-Token': token },
-      });
-      if (response.status === 429 && attempt < MAX_RETRIES) {
+      let response: Response;
+      try {
+        response = await fetch(url, {
+          headers: { 'X-Figma-Token': token },
+        });
+      } catch (error) {
+        if (attempt >= MAX_RETRIES) {
+          const cause = (error as { cause?: { message?: string } }).cause;
+          throw new Error(
+            `Figma API request failed for ${url.pathname}: ${cause?.message ?? (error as Error).message}`
+          );
+        }
+        console.warn(`Network error for ${url.pathname}, retrying`);
+        await new Promise((resolve) =>
+          setTimeout(resolve, 2 ** attempt * 1000)
+        );
+        continue;
+      }
+      const transient = response.status === 429 || response.status >= 500;
+      if (transient && attempt < MAX_RETRIES) {
         const retryAfter = Number(response.headers.get('Retry-After') ?? '0');
         const delayMs = (retryAfter > 0 ? retryAfter : 2 ** attempt) * 1000;
-        console.warn(`Figma rate limit hit, retrying in ${delayMs / 1000}s`);
+        console.warn(
+          `Figma API ${response.status} for ${url.pathname}, retrying in ${delayMs / 1000}s`
+        );
         await new Promise((resolve) => setTimeout(resolve, delayMs));
         continue;
       }

@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { parse } from 'yaml';
+import type { SourceConfig } from '../config.ts';
 import type { FigmaClient } from '../figma/client.ts';
 import type { Frontmatter } from '../markdown/renderMarkdown.ts';
 
@@ -10,29 +11,29 @@ export function loadEnv(): void {
 }
 
 export interface CliArgs {
-  components: string[];
+  documents: string[];
   /** Use the current file state instead of the latest named version */
   latest: boolean;
 }
 
 export function parseArgs(argv: string[]): CliArgs {
-  const components: string[] = [];
+  const documents: string[] = [];
   let latest = false;
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
-    if (arg === '--component' || arg === '-c') {
+    if (arg === '--document' || arg === '-d') {
       const value = argv[++i];
       if (!value) {
-        throw new Error('--component requires a value');
+        throw new Error('--document requires a value');
       }
-      components.push(value);
-    } else if (arg?.startsWith('--component=')) {
-      components.push(arg.slice('--component='.length));
+      documents.push(value);
+    } else if (arg?.startsWith('--document=')) {
+      documents.push(arg.slice('--document='.length));
     } else if (arg === '--latest') {
       latest = true;
     }
   }
-  return { components, latest };
+  return { documents, latest };
 }
 
 export interface TargetVersion {
@@ -47,24 +48,26 @@ export interface TargetVersion {
  */
 export async function resolveTargetVersion(
   client: FigmaClient,
-  fileKey: string,
+  file: SourceConfig,
   latest: boolean
 ): Promise<TargetVersion> {
-  if (latest) {
-    const meta = await client.getFileMeta(fileKey);
-    return { id: meta.version, label: '', createdAt: meta.lastModified };
+  if (!latest) {
+    const named = await client.getLatestNamedVersion(file.fileKey);
+    if (named) {
+      return {
+        id: named.id,
+        label: named.label ?? '',
+        createdAt: named.created_at,
+      };
+    }
+    if (!file.allowUnpublished) {
+      throw new Error(
+        `File ${file.fileKey} (${file.name}) has no named version. Create one in Figma (File > Save to version history), set allowUnpublished on the source, or run with --latest.`
+      );
+    }
   }
-  const named = await client.getLatestNamedVersion(fileKey);
-  if (!named) {
-    throw new Error(
-      `File ${fileKey} has no named version. Create one in Figma (File > Save to version history) or run with --latest.`
-    );
-  }
-  return {
-    id: named.id,
-    label: named.label ?? '',
-    createdAt: named.created_at,
-  };
+  const meta = await client.getFileMeta(file.fileKey);
+  return { id: meta.version, label: '', createdAt: meta.lastModified };
 }
 
 export function readFrontmatter(
@@ -75,4 +78,20 @@ export function readFrontmatter(
   }
   const match = readFileSync(path, 'utf8').match(/^---\n([\s\S]*?)\n---\n/);
   return match?.[1] ? (parse(match[1]) as Partial<Frontmatter>) : undefined;
+}
+
+/** Resolves the target version once per Figma file; documents share it. */
+export function createVersionResolver(
+  client: FigmaClient,
+  latest: boolean
+): (file: SourceConfig) => Promise<TargetVersion> {
+  const cache = new Map<string, Promise<TargetVersion>>();
+  return (file) => {
+    let pending = cache.get(file.fileKey);
+    if (!pending) {
+      pending = resolveTargetVersion(client, file, latest);
+      cache.set(file.fileKey, pending);
+    }
+    return pending;
+  };
 }

@@ -1,45 +1,50 @@
 import { appendFileSync } from 'node:fs';
-import { loadConfig, selectComponents } from '../config.ts';
+import { loadConfig, selectDocuments } from '../config.ts';
 import { createFigmaClient, requireToken } from '../figma/client.ts';
 import {
+  createVersionResolver,
   loadEnv,
   parseArgs,
   readFrontmatter,
-  resolveTargetVersion,
+  type TargetVersion,
 } from './shared.ts';
 
 /**
- * Compares the target Figma version (latest named version by default) with the
- * version recorded in the Markdown frontmatter.
+ * Compares the target Figma version (latest named version by default) of every
+ * source file with the version recorded in the Markdown frontmatter.
  * Exit code 0 = up to date, 1 = outdated (or never synced), 2 = error.
  */
 async function main(): Promise<void> {
   loadEnv();
   const config = loadConfig();
-  const { components, latest } = parseArgs(process.argv.slice(2));
+  const { documents, latest } = parseArgs(process.argv.slice(2));
   const client = createFigmaClient(requireToken());
-  const target = await resolveTargetVersion(client, config.fileKey, latest);
+  const resolveVersion = createVersionResolver(client, latest);
 
-  let outdated = false;
-  for (const component of selectComponents(config, components)) {
-    const local = readFrontmatter(component.output)?.figmaVersion;
+  const outdatedFiles = new Map<string, TargetVersion>();
+  for (const document of selectDocuments(config, documents)) {
+    const target = await resolveVersion(document.file);
+    const local = readFrontmatter(document.output)?.figmaVersion;
     const state = local === target.id ? 'up to date' : 'outdated';
     console.log(
-      `${component.id}: local ${local ?? 'none'}, target ${target.id} "${target.label}" (${state})`
+      `${document.id}: local ${local ?? 'none'}, target ${target.id} "${target.label}" from ${document.file.name} (${state})`
     );
-    outdated ||= state === 'outdated';
+    if (state === 'outdated') {
+      outdatedFiles.set(document.file.name, target);
+    }
   }
 
+  const outdated = outdatedFiles.size > 0;
   if (process.env.GITHUB_OUTPUT) {
+    const summary = [...outdatedFiles]
+      .map(
+        ([name, target]) =>
+          `${name}: ${target.label.replace(/\r?\n/g, ' ') || target.id}`
+      )
+      .join('; ');
     appendFileSync(
       process.env.GITHUB_OUTPUT,
-      [
-        `outdated=${outdated}`,
-        `version=${target.id}`,
-        `label=${target.label.replace(/\r?\n/g, ' ')}`,
-        `createdAt=${target.createdAt}`,
-        '',
-      ].join('\n')
+      [`outdated=${outdated}`, `summary=${summary}`, ''].join('\n')
     );
   }
   process.exit(outdated ? 1 : 0);
