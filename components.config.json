@@ -9,13 +9,17 @@
     "format": "png",
     "scale": 2
   },
+  "indexOutput": "docs/index.md",
   "components": [
     {
       "id": "accordion",
       "title": "Accordion",
+      "category": "component",
+      "importName": "DSAccordion",
+      "keywords": ["accordion", "disclosure", "expandable section", "details"],
       "nodeId": "17260:166",
-      "output": "docs/accordion.md",
-      "imageDir": "docs/accordion"
+      "output": "docs/components/accordion.md",
+      "imageDir": "docs/components/accordion"
     }
   ]
 }

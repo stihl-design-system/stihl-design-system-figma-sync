@@ -1,10 +1,19 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
-import { loadConfig, selectComponents } from '../config.ts';
+import { loadConfig, selectComponents, type SyncConfig } from '../config.ts';
 import { createFigmaClient, requireToken } from '../figma/client.ts';
 import { collectBlocks } from '../extract/collectBlocks.ts';
 import { exportImages } from '../images/exportImages.ts';
-import { figmaNodeUrl, renderMarkdown } from '../markdown/renderMarkdown.ts';
+import {
+  parseHeadings,
+  renderIndex,
+  type IndexEntry,
+} from '../markdown/renderIndex.ts';
+import {
+  figmaNodeUrl,
+  renderMarkdown,
+  type Frontmatter,
+} from '../markdown/renderMarkdown.ts';
 import {
   loadEnv,
   parseArgs,
@@ -12,8 +21,39 @@ import {
   resolveTargetVersion,
 } from './shared.ts';
 
+const PACKAGE_NAME = '@stihl-design-system/components';
+
 function withoutSyncedAt(markdown: string): string {
   return markdown.replace(/^syncedAt: .*$/m, '');
+}
+
+/** Rebuilds the index from every document on disk, not only the ones synced in this run. */
+async function writeIndex(config: SyncConfig): Promise<void> {
+  const entries: IndexEntry[] = [];
+  for (const component of config.components) {
+    const markdown = await readFile(component.output, 'utf8').catch(
+      () => undefined
+    );
+    const frontmatter = readFrontmatter(component.output);
+    if (!markdown || !frontmatter) {
+      continue;
+    }
+    entries.push({
+      frontmatter: frontmatter as Frontmatter,
+      path: component.output,
+      headings: parseHeadings(markdown),
+    });
+  }
+  const index = renderIndex(entries, config.indexOutput);
+  const existing = await readFile(config.indexOutput, 'utf8').catch(
+    () => undefined
+  );
+  if (existing === index) {
+    return;
+  }
+  await mkdir(dirname(config.indexOutput), { recursive: true });
+  await writeFile(config.indexOutput, index);
+  console.log(`  wrote ${config.indexOutput} (${entries.length} documents)`);
 }
 
 async function main(): Promise<void> {
@@ -63,6 +103,10 @@ async function main(): Promise<void> {
       frontmatter: {
         component: component.id,
         title: component.title,
+        category: component.category,
+        importName: component.importName,
+        package: component.importName ? PACKAGE_NAME : undefined,
+        keywords: component.keywords,
         figmaFileKey: config.fileKey,
         figmaNodeId: component.nodeId,
         figmaVersion: target.id,
@@ -89,6 +133,8 @@ async function main(): Promise<void> {
       `  wrote ${component.output} (${blocks.length} blocks, ${imagePaths.size} images)`
     );
   }
+
+  await writeIndex(config);
 }
 
 main().catch((error: unknown) => {

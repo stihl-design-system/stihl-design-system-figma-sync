@@ -1,12 +1,20 @@
 ---
 component: accordion
 title: Accordion
+category: component
+importName: DSAccordion
+package: "@stihl-design-system/components"
+keywords:
+  - accordion
+  - disclosure
+  - expandable section
+  - details
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 17260:166
-figmaVersion: "2402788951429361536"
+figmaVersion: "2410599903007017519"
 figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-09-24T13:20:53Z
-syncedAt: 2026-10-09T10:29:06.953Z
+figmaVersionCreatedAt: 2026-10-15T14:34:29Z
+syncedAt: 2026-10-27T09:36:10.714Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=17260-166
 ---
 
@@ -27,11 +35,11 @@ Overview:
 
 ![Accordion single](accordion/accordion-single-17260-2298.png)
 
-#### Further guidelines
+### Further guidelines
 
 [Storybook documentation](https://main--63440bbb95889041542a5ba3.chromatic.com/?path=/docs/components-accordion--documentation)
 
-#### Related elements
+### Related elements
 
 [Drawer](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt/Pattern-Library-%F0%9F%96%A5-Web-1.0?node-id=16282-9317)
 
@@ -41,7 +49,7 @@ Overview:
 
 [Iconography](https://www.figma.com/design/U218NNP4OsipaHOtv5flns/Iconography-%E2%9E%A1%EF%B8%8F?m=auto)
 
-#### Contribute
+### Contribute
 
 Contribute to improving this component by sharing your feedback, asking questions, or suggesting features [here](https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj/Onboarding-%F0%9F%93%96?node-id=446-868&t=zKmRu4kAkxMeRDmK-4).
 
@@ -168,7 +176,7 @@ More than one accordion can be open at the same time.
 
 ## Content and Assets
 
-#### Accessible copy
+### Accessible copy
 
 - Keep summaries and hint short and simple.
 - It is recommended to avoid abbreviations.
@@ -362,19 +370,19 @@ A single accordion can be used in the sidebar to expand and reveal the next leve
 
 ## Behavior
 
-#### Avoid system feedback
+### Avoid system feedback
 
 Avoid system feedback above or inside the accordion element that corresponds to elements in the content area.
 
 ![Avoid system feedback](accordion/avoid-system-feedback-18443-16974.png)
 
-#### Focus management
+### Focus management
 
 Elements within the header are not focusable. The whole header has one focus.
 
 ![Focus management](accordion/focus-management-18443-9584.png)
 
-#### The user is in control
+### The user is in control
 
 The user must click/tap proactively to change the state. The system or system settings can’t trigger the status.
 
@@ -382,25 +390,25 @@ The user must click/tap proactively to change the state. The system or system se
 
 ## Examples/Variants
 
-#### SaaS (Software as a Service)
+### SaaS (Software as a Service)
 
 Accordions in portals and platforms are great to reduce the visual clutter. The user controls what part of the interface is visible.
 
 ![SaaS (Software as a Service)](accordion/saas-software-as-a-service-18443-9640.png)
 
-#### Content articles
+### Content articles
 
 Use accordions for step-by-step guides and other lists with additional details.
 
 ![Content articles](accordion/content-articles-17993-7600.png)
 
-#### Filter
+### Filter
 
 A common use case for accordions is group filters in a [drawer component](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt/Pattern-Library-%F0%9F%96%A5-Web-1.0?node-id=16282-9317).
 
 ![Filter](accordion/filter-17993-7595.png)
 
-#### Extra spacing for drawers
+### Extra spacing for drawers
 
 Ensure enough room for the click area. The user can skim and read the titles faster.
 

@@ -10,6 +10,10 @@ import {
 const frontmatter: Frontmatter = {
   component: 'accordion',
   title: 'Accordion',
+  category: 'component',
+  importName: 'DSAccordion',
+  package: '@stihl-design-system/components',
+  keywords: ['accordion', 'disclosure'],
   figmaFileKey: 'FILEKEY',
   figmaNodeId: '17260:166',
   figmaVersion: '123',
@@ -60,6 +64,12 @@ describe('renderMarkdown', () => {
       "---
       component: accordion
       title: Accordion
+      category: component
+      importName: DSAccordion
+      package: "@stihl-design-system/components"
+      keywords:
+        - accordion
+        - disclosure
       figmaFileKey: FILEKEY
       figmaNodeId: 17260:166
       figmaVersion: "123"
@@ -96,6 +106,38 @@ describe('renderMarkdown', () => {
       { frontmatter, imagePaths: new Map() }
     );
     expect(markdown).toContain('Use \\*asterisks\\* and \\[brackets\\]');
+  });
+
+  it('closes gaps in the heading hierarchy without flattening siblings', () => {
+    const heading = (level: number, text: string): Block => ({
+      type: 'heading',
+      level,
+      text,
+      nodeId: text,
+    });
+    const markdown = renderMarkdown(
+      [
+        heading(2, 'Behavior'),
+        heading(4, 'Focus management'),
+        heading(2, 'Content'),
+        heading(4, 'Accessible copy'),
+        heading(3, 'Title'),
+        heading(4, 'Recommendations'),
+      ],
+      { frontmatter, imagePaths: new Map() }
+    );
+    expect(markdown.split('\n').filter((line) => line.startsWith('#')))
+      .toMatchInlineSnapshot(`
+        [
+          "# Accordion",
+          "## Behavior",
+          "### Focus management",
+          "## Content",
+          "### Accessible copy",
+          "### Title",
+          "#### Recommendations",
+        ]
+      `);
   });
 
   it('renders the Accordion fixture to a stable document', () => {

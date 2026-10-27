@@ -1,9 +1,14 @@
 import { stringify } from 'yaml';
+import type { DocCategory } from '../config.ts';
 import type { Block, Inline } from '../extract/collectBlocks.ts';
 
 export interface Frontmatter {
   component: string;
   title: string;
+  category: DocCategory;
+  importName?: string;
+  package?: string;
+  keywords?: string[];
   figmaFileKey: string;
   figmaNodeId: string;
   figmaVersion: string;
@@ -45,6 +50,26 @@ function renderInlines(inlines: Inline[]): string {
     .replace(/\s+/g, ' ');
 }
 
+/**
+ * Figma sections often jump from a board title (H2) straight to a section title (H4).
+ * Closes those gaps so every heading is at most one level below its parent.
+ */
+export function normalizeHeadingLevels(blocks: Block[]): Block[] {
+  const open: { source: number; rendered: number }[] = [];
+  return blocks.map((block) => {
+    if (block.type !== 'heading') {
+      return block;
+    }
+    while (open.length > 0 && open.at(-1)!.source >= block.level) {
+      open.pop();
+    }
+    const parentLevel = open.at(-1)?.rendered ?? 1;
+    const rendered = Math.min(block.level, parentLevel + 1);
+    open.push({ source: block.level, rendered });
+    return { ...block, level: rendered };
+  });
+}
+
 function renderBlock(block: Block, options: RenderOptions): string | undefined {
   switch (block.type) {
     case 'heading':
@@ -79,7 +104,7 @@ export function renderMarkdown(
   const frontmatter = stringify(options.frontmatter).trimEnd();
   const body = [`# ${escapeText(options.frontmatter.title)}`];
 
-  for (const block of blocks) {
+  for (const block of normalizeHeadingLevels(blocks)) {
     const rendered = renderBlock(block, options);
     if (rendered !== undefined && rendered.trim().length > 0) {
       body.push(rendered);

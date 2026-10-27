@@ -1,9 +1,16 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
+export type DocCategory = 'component' | 'pattern' | 'foundation';
+
 export interface ComponentConfig {
   id: string;
   title: string;
+  category: DocCategory;
+  /** Exported React name, links the design docs to the code component (e.g. DSAccordion) */
+  importName?: string;
+  /** Search terms and aliases for agents and the index */
+  keywords?: string[];
   nodeId: string;
   output: string;
   imageDir: string;
@@ -14,6 +21,8 @@ export interface SyncConfig {
   /** fontSize (as string key) to Markdown heading level */
   headingLevels: Record<string, number>;
   imageExport: { format: 'png' | 'svg'; scale: number };
+  /** Generated discovery index listing all documents and their sections */
+  indexOutput: string;
   components: ComponentConfig[];
 }
 
