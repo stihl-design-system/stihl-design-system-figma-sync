@@ -1,0 +1,39 @@
+name: Deploy MCP server
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'mcp/**'
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy-mcp.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-mcp
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run mcp:build
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy -c mcp/wrangler.jsonc
+      - name: Smoke test
+        run: mcp/smoke.sh https://design-docs.stihl-design-system.workers.dev/mcp

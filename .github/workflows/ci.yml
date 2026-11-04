@@ -21,3 +21,5 @@ jobs:
       - run: npm run test:unit
         env:
           CI: 'true'
+      - name: Bundle the MCP worker (no upload)
+        run: npm run mcp:build && npx wrangler deploy -c mcp/wrangler.jsonc --dry-run
