@@ -3,7 +3,16 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['node_modules', '.tmp', 'docs', 'test/fixtures'] },
+  {
+    ignores: [
+      'node_modules',
+      '.tmp',
+      'docs',
+      'test/fixtures',
+      'mcp/public',
+      '.wrangler',
+    ],
+  },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {

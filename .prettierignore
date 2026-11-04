@@ -1,5 +1,7 @@
 node_modules
 .tmp
+mcp/public
+.wrangler
 docs/**/*.md
 docs/**/*.png
 test/fixtures/*.json
