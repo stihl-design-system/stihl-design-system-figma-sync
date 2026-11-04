@@ -1,0 +1,49 @@
+name: Describe documentation images
+
+on:
+  schedule:
+    # Backfills captions for images the Workers AI free quota did not cover yet
+    - cron: '23 4 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: figma-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  captions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Describe images without a cached caption
+        # Images of the synced version are reused, so this only reads nodes and calls Workers AI
+        run: npm run sync
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: sync/captions
+          delete-branch: true
+          commit-message: 'docs: describe documentation images'
+          title: 'docs: describe documentation images'
+          body: |
+            Vision captions (Workers AI) for documentation images that had none yet. Captions are cached per image content in `captions.json` next to the images and rendered as `_Figure: ..._` under each image.
+
+            - Trigger: `${{ github.event_name }}`
+          labels: figma-sync

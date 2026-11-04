@@ -48,6 +48,9 @@ jobs:
         run: npm run sync
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          # Workers AI describes new images; without these the structural fallback is used
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
       - name: Open pull request
         if: steps.check.outputs.outdated == 'true' || inputs.force == true
@@ -64,5 +67,5 @@ jobs:
             - Outdated files: ${{ steps.check.outputs.summary || 'none (forced run)' }}
             - Trigger: `${{ github.event_name }}`
 
-            Version ids and labels per document are in the frontmatter of the changed files.
+            Version ids and labels per document are in the frontmatter of the changed files. New or changed images were described by Workers AI (`captions.json` next to the images); images the quota did not cover carry a structural description and are picked up by the daily captions run.
           labels: figma-sync
