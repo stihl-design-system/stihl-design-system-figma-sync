@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 9050:2
-figmaVersion: "2410599903007017519"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-10-15T14:34:29Z
-syncedAt: 2026-10-27T13:35:01.150Z
+figmaVersion: "2418018269838839666"
+figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
+figmaVersionCreatedAt: 2026-11-04T14:25:56Z
+syncedAt: 2026-11-04T14:45:40.191Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=9050-2
 ---
 
@@ -32,6 +32,8 @@ Overview:
 - The focus state is constructed the same way as the focus for [buttons](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=162-126).
 
 ![Logo](logo/logo-9050-5860.png)
+
+_Figure: Text in the figure: "Main", "Sub-Connected", "Sub-MY STIHL", "Sub-iMow", "Default", "Reduced"._
 
 ### Further guidelines
 
@@ -52,11 +54,15 @@ When the logo is used as an interactive element (i.e. as a link to the homepage 
 
 ![Size for clickable logos](logo/size-for-clickable-logos-9763-111.png)
 
+_Figure: Shows logo (type=default, logos=main). Measurements: 50px, 70px._
+
 ### Focus State
 
 The focus state uses the same styling as for buttons. A 2px wide border in the color grey-deep **(1)** with 2px distance **(2)** between the border an the component.
 
 ![Focus State](logo/focus-state-9050-881.png)
+
+_Figure: Shows logo (type=default, logos=main). Callouts 1, 2. Text in the figure: "original", "zoomed"._
 
 ## Favicon
 
@@ -68,6 +74,8 @@ Overview:
 
 ![Favicon](logo/favicon-9050-6243.png)
 
+_Figure: Measurements: 16px, 32px, 128px, 180px, 192px, 512px. Text in the figure: "STIHL", "Connected", "My STIHL", "iMOw"._
+
 ## 100 Year Logo
 
 Overview:
@@ -76,6 +84,8 @@ Overview:
 - In digital applications, the logo will primarily appear in the top bar, as well as in teaser assets or within custom components designed for the anniversary campaign.
 
 ![100 Year Logo](logo/100-year-logo-36951-4223.png)
+
+_Figure: Text in the figure: "date: false", "date: true", "black", "orange", "white"._
 
 **Additional Information:**
 
@@ -91,11 +101,15 @@ The 100-year logo must be at least **80 px wide** in digital applications.
 
 ![Minimum Size](logo/minimum-size-36986-4695.png)
 
+_Figure: Shows 100-years-logo (color=orange, date=false). Measurements: 80px._
+
 ### Save Zone
 
 For print applications, the safe zone is defined as 2% of the shorter side of the format in which the logo is placed. **In digital contexts**, where layouts and page sizes are dynamic, the safe zone should be **at least 1/4 of the logo’s height (x)** on all sides.
 
 ![Save Zone](logo/save-zone-36986-4720.png)
+
+_Figure: Shows 100-years-logo (color=orange, date=false); 100-years-logo (color=orange, date=true). Text in the figure: "1/4x", "X"._
 
 ## Usage
 
@@ -112,3 +126,5 @@ The 100-year logo can be integrated into components and digital assets. When doi
 In the top bar, use the **black logo without the date in its minimum size version (80 px width)**. It is placed in the designated add-on slot of the top bar logo component. In development, this will be provided as a predefined property for the brand add-on and doesn’t need to be inserted manually
 
 ![Example: Top Bar Logo add on](logo/example-top-bar-logo-add-on-37209-1371.png)
+
+_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=true, number areas=1); top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1). Text in the figure: "Label"._

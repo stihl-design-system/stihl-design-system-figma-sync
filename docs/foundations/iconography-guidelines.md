@@ -17,7 +17,7 @@ figmaNodeId: 9857:3242
 figmaVersion: "2413526403511462978"
 figmaVersionLabel: Moccu – Final Icon Design Status (Handover)
 figmaVersionCreatedAt: 2026-10-23T11:49:01Z
-syncedAt: 2026-10-27T13:32:47.321Z
+syncedAt: 2026-11-04T14:13:32.037Z
 sourceUrl: https://www.figma.com/design/U218NNP4OsipaHOtv5flns?node-id=9857-3242
 ---
 
@@ -39,6 +39,8 @@ All other categories can be found in the [STIHL Brand Portal](https://brandporta
 
 ![About STIHL Icons](iconography-guidelines/about-stihl-icons-9863-45.png)
 
+_Figure: Three icons: a speedometer, a speedometer with a prohibition sign over it, and a cloud with raindrops. These icons are examples of Functional Icons from the STIHL Design System. The speedometer icon represents speed or velocity, the speedometer with a prohibition sign indicates a restriction or limitation on speed, and the cloud with raindrops signifies rain or wet conditions._
+
 ### Functional Icons
 
 Functional Icons are used across STIHL’s digital products — websites, apps, and digital tools.
@@ -48,6 +50,8 @@ They feature a minimal, low-detail style to ensure legibility at small sizes and
 Use Functional Icons for all UI components and digital interfaces.
 
 ![Functional Icons](iconography-guidelines/functional-icons-9899-619.png)
+
+_Figure: Six Functional Icons arranged in two rows of three. Each icon features a minimal, low-detail style for use in UI components and digital interfaces. The icons from left to right, top to bottom, are: search, download, shopping cart, user, pencil, and email._
 
 ### Design Specifications
 
@@ -83,6 +87,8 @@ Icons should appear clean, balanced, and visually consistent with STIHL’s bran
 
 ![Design Specifications](iconography-guidelines/design-specifications-9867-83.png)
 
+_Figure: A magnifying glass icon with a default size of 16 pixels by 16 pixels. The measurement labels indicate the width and height of the icon, both of which are 16 pixels. This icon is part of the Iconography Guidelines in the STIHL Design System and adheres to the specified design specifications, including a minimal style, low detail, and a square shape with a 1:1 aspect ratio. Measurements in the figure: 16px._
+
 ### Usage Guidelines
 
 #### Scaling
@@ -99,6 +105,8 @@ Recommended sizes:
 
 ![Scaling](iconography-guidelines/scaling-9863-51.png)
 
+_Figure: A magnifying glass icon at five different sizes, scaled proportionally. Each size represents different recommended dimensions for use in various UI components. The measurements 16 × 16px, 24 × 24px, 12 × 12px, 10 × 10px, and 8 × 8px refer to the pixel dimensions for default components, larger use cases, and small detailed use cases respectively. The text advises to always scale icons proportionally to maintain line consistency and to avoid overly large sizes to prevent icons from appearing coarse._
+
 #### Protected Area
 
 Maintain a clear space equal to **½ the icon’s size** around it.
@@ -106,6 +114,8 @@ Maintain a clear space equal to **½ the icon’s size** around it.
 E.g., for a 16px icon, keep an 8px distance from adjacent elements.
 
 ![Protected Area](iconography-guidelines/protected-area-9899-675.png)
+
+_Figure: A button with the text "Search", an outline variant, enabled state, medium size, and an icon positioned to the left. The measurements "x" and "½ x" refer to the size of the icon and the required clear space around it, respectively. The clear space is maintained equally around the icon to ensure proper visibility and usability._
 
 ### Need a Specific Icon?
 
@@ -118,6 +128,8 @@ If the icon you need is not available in the library, follow this process:
 1. **Update your designs** Replace your temporary icon once the approved version is available.
 
 ![Need a Specific Icon?](iconography-guidelines/need-a-specific-icon-9899-682.png)
+
+_Figure: An infinity symbol icon with blue dots around its perimeter. The blue dots likely indicate anchor points or nodes used for editing the icon's shape. The icon is filled with a solid black color and is set against a white background._
 
 ### Complete Icon Guidelines
 

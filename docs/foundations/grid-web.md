@@ -16,7 +16,7 @@ figmaNodeId: 1:132
 figmaVersion: "2315997626726619921"
 figmaVersionLabel: DS-1185 Docu | Global | Add Connected Contact to the disclaimer of Sidebar Grid
 figmaVersionCreatedAt: 2026-02-02T16:02:45Z
-syncedAt: 2026-10-27T13:33:26.598Z
+syncedAt: 2026-11-04T14:14:00.985Z
 sourceUrl: https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ?node-id=1-132
 ---
 
@@ -35,6 +35,8 @@ Overview
 
 ![Grid Web](grid-web/grid-web-1-236.png)
 
+_Figure: The Grid Web layout system with four breakpoints: Breakpoint S, Breakpoint M, Breakpoint L, and Breakpoint XL. Each breakpoint specifies the most used screen size, the range of screen sizes it applies to, the usage context, gutter width, margin, and number of columns. Breakpoint S is for mobile devices with a most used screen size of 360px, a range of 320-767px, a gutter of 16px, a margin of 24px, and 8 columns. Breakpoint M is for tablets with a most used screen size of 768px, a range of 768-1023px, a gutter of 24px, a margin of 36px, and 12 columns. Breakpoint L is for small desktops with a most used screen size of 1024px, a range of 1024-1535px, a gutter of 24px, a margin of 50px..._
+
 ### Contribute
 
 Contribute to improving these styles by sharing your feedback, asking questions, or suggesting features [here](https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj/Onboarding-%F0%9F%93%96?node-id=446-868&t=zKmRu4kAkxMeRDmK-4).
@@ -51,6 +53,8 @@ Contribute to improving these styles by sharing your feedback, asking questions,
 
 ![Anatomy](grid-web/anatomy-1-623.png)
 
+_Figure: The layout of a grid system with various components and their measurements. Callout 1 points to the margin on the left edge of the grid, callout 2 points to a column, callout 3 points to a gutter, callout 4 points to a closed sidebar, and callout 5 points to an open sidebar. Margins separate the grid from the edges and change with breakpoints, columns define content areas and vary in width, gutters are fixed spaces between columns, and sidebars have fixed widths when open or closed._
+
 ### Grid types
 
 #### Web Grid
@@ -59,11 +63,15 @@ The default grid for all use cases, providing a responsive, center-aligned layou
 
 ![Web Grid](grid-web/web-grid-1-680.png)
 
+_Figure: The Web Grid, which is a responsive, center-aligned layout used for all use cases in the STIHL Design System. This grid expands up to 1536 pixels in width and features alternating pink and white vertical stripes to visually represent the grid columns. The pink stripes indicate the column boundaries, while the white stripes represent the column content areas._
+
 #### Web Grid Sidebar
 
 Used only in combination with a Sidebar Menu, this responsive grid reserves space for a left-aligned sidebar while following the same margins and gutters as the Web Grid.
 
 ![Web Grid Sidebar](grid-web/web-grid-sidebar-1-702.png)
+
+_Figure: The Web Grid Sidebar layout, which is used in conjunction with a Sidebar Menu. This layout reserves space for a left-aligned sidebar and maintains consistent margins and gutters as specified in the Web Grid. The image shows a light blue area representing the sidebar space, followed by a series of alternating pink and white vertical stripes indicating the main content area._
 
 ### ⚠️ Avoiding decimal pixel values
 
@@ -74,6 +82,8 @@ Used only in combination with a Sidebar Menu, this responsive grid reserves spac
 
 ![⚠️ Avoiding decimal pixel values](grid-web/avoiding-decimal-pixel-values-1-723.png)
 
+_Figure: A web grid layout with a sidebar, highlighting the use of margins and gutters. The measurement labeled 50px refers to the intended right margin in the code for the large (L) variant. The text "58px (instead of 50px)" indicates that in Figma, the right margin is set to 58px to avoid decimal column widths, which Figma does not support when stretching columns with sidebar menus._
+
 ### Responsive behavior
 
 #### Responsive columns, fixed margins and gutters
@@ -82,12 +92,16 @@ The grid adapts fluidly to the viewport: margins and gutters stay fixed at defin
 
 ![Responsive columns, fixed margins and gutters](grid-web/responsive-columns-fixed-margins-and-gutters-1-778.png)
 
+_Figure: A responsive grid layout for web design. It shows columns that expand to fill the available space while margins and gutters remain fixed at defined breakpoints. The grid includes six columns with consistent margins and gutters between them, all within a container that adjusts fluidly to the viewport size._
+
 #### Grid widths
 
 1. **Web Grid** Expands with the viewport up to a maximum width of 1408px
 1. **Web Grid Sidebar** Expands to the full viewport width
 
 ![Grid widths](grid-web/grid-widths-1-810.png)
+
+_Figure: Two grid layouts for a web design system. Callout 1 points to a grid with a maximum width of 1408px, indicating that it expands with the viewport up to this limit. Callout 2 points to a grid that expands to the full viewport width._
 
 ## Grid Web: Content Placement
 
@@ -103,6 +117,8 @@ These areas define how content and modules can be placed within the grid:
 
 ![Content areas](grid-web/content-areas-1-866.png)
 
+_Figure: The layout of content areas within a grid system across four breakpoints: Breakpoint S, Breakpoint M, Breakpoint L, and Breakpoint XL. Each breakpoint specifies different screen sizes, with Breakpoint S ranging from a minimum of 320px to a maximum of 767px, Breakpoint M from 768px to 1023px, Breakpoint L from 1024px to 1535px, and Breakpoint XL starting at 1536px and shown at an example size of 2560px. The content areas include Full, Extended, Main, halves, thirds, and quarters, demonstrating how content can be arranged within these grid constraints._
+
 ### Text behavior within the gird / content areas
 
 To maintain optimal readability, text should not exceed 80 characters per line. It is recommended to set **the maximum text width to 34em**, which corresponds to 34 times the used font size. This maximum width should be defined within each module.
@@ -112,6 +128,8 @@ To maintain optimal readability, text should not exceed 80 characters per line. 
 [Further reading on Baymard Insitute →](https://baymard.com/blog/line-length-readability)
 
 ![Text behavior within the gird / content areas](grid-web/text-behavior-within-the-gird-content-areas-3568-16519.png)
+
+_Figure: Text behavior within grid content areas, showing a block of text with a maximum width of 34em based on the font size. The measurement of 34em refers to the recommended maximum text width to ensure optimal readability, which corresponds to 34 times the used font size. The text within the figure demonstrates how text should be laid out to not exceed 80 characters per line._
 
 #### Maximum Width within Content Areas
 
@@ -125,6 +143,8 @@ This ensures text always respects both layout constraints and optimal readabilit
 [Further Guidelines: Typography and Text width →](https://www.figma.com/design/pQUiJaNuWrGzPaeMrEHf6N/DS-1117-Design-%7C-34em?node-id=2645-515)
 
 ![Maximum Width within Content Areas](grid-web/maximum-width-within-content-areas-3568-16534.png)
+
+_Figure: The application of maximum text width within content areas for two different viewport widths: 1024px and 1440px. Callout 1 points to a viewport of 1024px where the container width is smaller than the maximum text width, so the container width is used. Callout 2 points to a viewport of 1440px where the container width is larger than the maximum text width, so the text is capped at its maximum allowed width to ensure optimal readability._
 
 ## Grid Web: Content Placement Examples
 
@@ -732,6 +752,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris t
 
 ![Grid Web Sidebar](grid-web/grid-web-sidebar-1-346.png)
 
+_Figure: The Grid Web Sidebar, highlighting two grid types: a center-aligned grid and a grid with a Sidebar Menu. It details four breakpoints (S, M, L, XL) with specific measurements for gutters, margins, and columns, indicating their usage contexts such as mobile, tablet, and desktop. The callout explains the difference in the right margin between Figma and code, noting that in Figma, the right margin with the Sidebar Menu open is 220px, while in code, it is 256px. The warning notification indicates that there are steps to keep the column sizes and gutters consistent across different breakpoints._
+
 ### Contribute
 
 Contribute to improving these styles by sharing your feedback, asking questions, or suggesting features [here](https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj/Onboarding-%F0%9F%93%96?node-id=446-868&t=zKmRu4kAkxMeRDmK-4).
@@ -752,6 +774,8 @@ An emerging pattern in this context is the Split View (see below for details).
 
 ![No content areas for Web Grid Sidebar](grid-web/no-content-areas-for-web-grid-sidebar-3493-8254.png)
 
+_Figure: A UI design system with a top-bar in the full variant for the xl breakpoint, including a brand add-on and one numbered area. The sidebar-menu is expandable and does not have overflow. The layout includes a sidebar with various menu items such as "Fleet Management", "Equipment", "Connected Hub", "Energy Evaluation", "Organization", "Contact", and "Legal Information". The main content area shows a detailed view of an equipment item with a map, condition status, and runtime information. The sidebar-menu includes items like "Connected", "STIHL World", and "MM" at the top. The design allows for flexible content placement without predefined content areas..._
+
 ### Split View
 
 #### Concept
@@ -764,6 +788,8 @@ Split View is a layout pattern that divides the screen into two areas:
 This pattern is especially useful for dashboards, data-heavy screens, and workflows where users need to browse and view details side by side.
 
 ![Concept](grid-web/concept-3493-8367.png)
+
+_Figure: The Split View layout pattern, which divides the screen into two areas: a primary area for navigation or selection on the left and a secondary area for displaying details of the selected item on the right. Callout 1 points to the sidebar-menu\_expandable component, which includes options like Fleet Management, Organization, and Contact. Callout 2 points to the detailed view area showing information about an item labeled "001 PLACEHOLDER" with its condition, location, and maintenance details. The top-bar component is in the full variant with a brand add-on and includes the text "Connected" and "STIHL World"._
 
 #### Split View in the Web Grid Sidebar
 
@@ -779,6 +805,8 @@ There are two ways to create a Split View inside a layout:
 
 ![Split View in the Web Grid Sidebar](grid-web/split-view-in-the-web-grid-sidebar-3497-8037.png)
 
+_Figure: Two ways to create a Split View in a web grid sidebar using the STIHL Design System. The first callout shows a layout where both the primary and secondary areas are dynamic, scaling with different breakpoints. The second callout depicts a layout where the primary area is fixed and the secondary area is dynamic, expanding with the viewport. The components include a top-bar with a full variant, a brand add-on, and one numbered area, along with a sidebar-menu\_expandable without overflow. The annotations highlight the differences in how the grid columns and panes are divided and scaled._
+
 ## Grid Web Sidebar: Content Placement Examples
 
 > The use case examples shown feature the new navigation concept and do not reflect the current state of the product.
@@ -791,8 +819,12 @@ The sidebar provides fast access to categories and search functions, supporting 
 
 ![Grid Web Sidebar: Content Placement Examples](grid-web/grid-web-sidebar-content-placement-examples-3526-10591.png)
 
+_Figure: A web interface of the STIHL Service Communication tool, featuring a sidebar with various action items and a main content area. The sidebar includes components like action-item labels such as Parts Lists, Documents, Repair Times, Service Packages, and Special Tools, each with specific states and indicators. The top-bar includes a search function and navigation links like Catalogue, Bar & Chain Finders, Utilities, and Support News. The main content area shows a grid of assemblies for the MS 180 product, with categories like Muffler, Rewind Starter, and Carburetor. The layout is designed for quick access to categories and search functions, supporting a high-frequency workflow._
+
 **Connected Portal**
 
 A logged-in user portal designed to navigate between tools and manage STIHL products. The sidebar supports quick orientation and task switching.
 
 ![Grid Web Sidebar: Content Placement Examples](grid-web/grid-web-sidebar-content-placement-examples-3526-10736.png)
+
+_Figure: A web interface of the Connected Portal, featuring a top-bar with the variant full, breakpoint xl, and a brand add-on. The sidebar-menu\_expandable is shown without overflow, containing navigation items such as Fleet Management, Equipment, Connected Hub, and Energy Evaluation. The sidebar supports quick orientation and task switching, with sections like Organization, Teams, Employees, and settings for organization and maintenance. The main content area lists equipment details including nickname, model, category, drive, and serial number._

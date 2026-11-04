@@ -15,7 +15,7 @@ figmaNodeId: 2645:515
 figmaVersion: "2256555008264774628"
 figmaVersionLabel: DS-1117 Design | 34em
 figmaVersionCreatedAt: 2025-08-26T11:13:29Z
-syncedAt: 2026-10-27T13:32:35.450Z
+syncedAt: 2026-11-04T14:13:21.093Z
 sourceUrl: https://www.figma.com/design/d9wrOp4aCplDsV9AVC87Xn?node-id=2645-515
 ---
 
@@ -29,6 +29,8 @@ To maintain optimal readability, text should not exceed 80 characters per line. 
 
 ![Maximum Text Width](maximum-text-width/maximum-text-width-2645-528.png)
 
+_Figure: The concept of Maximum Text Width in a UI design system. It shows a block of text with a maximum width of 34em, which is based on the font size used. The text block demonstrates that to maintain optimal readability, the text should not exceed 80 characters per line._
+
 ### Calculation examples
 
 1. **Heading L Uppercase** Font size: 26px Max length: 26px × 34em = **884px**
@@ -36,6 +38,8 @@ To maintain optimal readability, text should not exceed 80 characters per line. 
 1. **Utility XS Demi** Font size: 12px Max length: 12px × 34em = **408px**
 
 ![Calculation examples](maximum-text-width/calculation-examples-2645-547.png)
+
+_Figure: Maximum text widths for different font sizes in the STIHL Design System. Callout 1 points to a heading in Uppercase with a font size of 26px, showing a maximum length of 884px. Callout 2 points to a text in Text M with a font size of 16px, showing a maximum length of 544px. Callout 3 points to a text in Utility XS Demi with a font size of 12px, showing a maximum length of 408px. Each measurement refers to the maximum length calculated as font size multiplied by 34em._
 
 ### Content-Heavy Pages (Reading-Focused)
 
@@ -50,6 +54,8 @@ This creates a harmonious reading experience by preventing oversized headlines f
 
 ![Content-Heavy Pages (Reading-Focused)](maximum-text-width/content-heavy-pages-reading-focused-2646-1020.png)
 
+_Figure: The layout for Content-Heavy Pages (Reading-Focused) in the STIHL Design System. It shows a headline and body text both constrained to a maximum width of 544 pixels, which is derived from a font size of 16 pixels multiplied by 34 em units. This alignment ensures visual consistency and a harmonious reading experience by preventing oversized headlines from disrupting the text rhythm. The body text is labeled as Text M with a font size of 16px, and the heading is labeled as Heading L, both adhering to the same maximum width._
+
 ### Maximum Width within Content Areas
 
 When text elements are placed inside Content Areas, the following rules apply:
@@ -62,3 +68,5 @@ This ensures text always respects both layout constraints and optimal readabilit
 [Grid and Content areas →](https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ/Grid---Spacing-%F0%9F%A7%AE?node-id=1-132)
 
 ![Maximum Width within Content Areas](maximum-text-width/maximum-width-within-content-areas-2646-1413.png)
+
+_Figure: The concept of maximum text width within content areas using two viewport examples: one at 1024px and another at 1440px. Callout 1 points to a viewport of 1024px where the container width is smaller than the maximum text width, so the container width is used. Callout 2 points to a viewport of 1440px where the container width is larger than the maximum text width, so the text is capped at its maximum allowed width to ensure optimal readability._

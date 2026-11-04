@@ -14,7 +14,7 @@ figmaNodeId: 1:148
 figmaVersion: "2402427732341939128"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-09-23T14:01:21Z
-syncedAt: 2026-10-27T13:34:22.939Z
+syncedAt: 2026-11-04T14:14:36.273Z
 sourceUrl: https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps?node-id=1-148
 ---
 
@@ -33,9 +33,13 @@ Basic motion buildings blocks and tokens. Motion is divided in functional motion
 
 ![Animation types](motion/animation-types-3-3827.png)
 
+_Figure: The figure is a table detailing different animation types used in the STIHL Design System. The table includes columns labeled "Type", "Description", "Purpose", "Usage examples", and "Example". Each row describes an animation type: fade, move, expand, rotate, and zoom, along with their descriptions, purposes, and usage examples. The "Usage examples" column lists specific UI elements that utilize each type of animation._
+
 ### Duration
 
 ![Duration](motion/duration-3-3871.png)
+
+_Figure: The figure is a table detailing different durations for UI transitions in the STIHL Design System. Each row in the table specifies a duration name, its purpose, usage examples, value in milliseconds, and an example visual. The measurements 100ms, 250ms, 400ms, 700ms, 1100ms, and 1600ms refer to the duration values for various types of UI transitions. The table includes durations named duration-100, duration-250, duration-400, duration-700, duration-1100, and duration-1600, each with specific purposes and usage examples for different UI components and effects._
 
 #### Contribute
 
@@ -50,6 +54,8 @@ Functional motion is used to create responsiveness (reactivity), while remaining
 ### Easing
 
 ![Easing](motion/easing-3-3916.png)
+
+_Figure: The figure is a table that outlines different easing types for motion in a UI design system. It includes columns labeled "Type", "Description", "Purpose", "Usage examples", "Value", and "Example". Each row describes a specific easing type: motion-functional-linear, motion-functional-ease-in, motion-functional-ease-out, and motion-functional-ease-in-out, detailing their characteristics, purposes, usage examples, and corresponding values. The table provides specific cubic-bezier values for ease-in, ease-out, and ease-in-out types, and lists examples of UI elements where each easing type should be used._
 
 #### Contribute
 

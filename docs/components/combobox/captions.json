@@ -1,0 +1,112 @@
+{
+  "0148b4c700045980f7601ff8c2f4b347f8ce4d7d60d7ef7e939fd8e4df07f560": {
+    "nodeId": "8472:30050",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Do\" example of a combobox component with different item amounts in the list. The numbered callouts point to a radio-group component labeled \"Form of address\" with three options: \"Mr.\", \"Mrs.\", and \"other\" (1), a combobox labeled \"Options\" with a dropdown menu showing four items (2), and another combobox labeled \"Country\" with a dropdown menu showing four items and a partially typed input \"B|\" (3). The text describes guidelines for the number of items in a combobox list: using a radio group for fewer than 5 items, a standard dropdown for 5 to 20 items, and a filtered dropdown for more than 20 items after the user types at least one character."
+  },
+  "1bf285979802e63878329b0c054cd1e02d1aa3d1c6f954591bb5973abcd7957c": {
+    "nodeId": "8196:33782",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in single select mode, showcasing two variants: one for typing to filter options and another for opening a dropdown list. Callout 1 points to the combobox with a placeholder text \"Type to filter\", recommended for lists with more than 20 items, and callout 2 points to the combobox with a placeholder text \"Select\", recommended for lists with approximately 5-20 items. The dropdown state is shown with options labeled \"Label\", \"Option 3\", and \"Option 1\". The combobox in the first variant does not visually hint at the presence of selectable options, while the second variant includes a chevron to indicate the select function."
+  },
+  "2994ad786b5cf1108ad8a8ff3237dc317bca761f39dec39532958a424a728f23": {
+    "nodeId": "9039:21118",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two types of combobox components: a single select and a multi select, both in an active/focus state. Callout 1 points to the single select combobox with a Label and a selected Label 1, while callout 2 points to the multi select combobox with a Label and multiple checkboxes under Group Label (optional). The single select combobox allows choosing one option, whereas the multi select combobox allows choosing multiple options using checkboxes."
+  },
+  "34da979e6693aa0d9736b9ae9587e56e168d1d8f141868a15183a097acfeafa3": {
+    "nodeId": "9039:21277",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in an active or focused state, with no results found. The combobox includes a label at the top, an input field with the text \"Inp|\", and a close button represented by an \"X\". Below the input field, there is a message area with the label \"Label\" indicating where the \"No options found\" copy would be shown when there are no matching results."
+  },
+  "381f1bb3615a7ae980098046162ee59d4526efcd6e64b2fa0d00ede9b555f6af": {
+    "nodeId": "39621:13615",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Combobox component with an Info Button next to the label \"Machine Number.\" The Info Button triggers a popover that provides additional information about where to find the Machine Number. The input field includes a clear button and is shown in the default state and medium size, with no validation errors indicated. The cursor is shown as a pointer, indicating that the Info Button is interactive."
+  },
+  "46150942555d83e31eb94bba911506300d4613899a29c6fa832c51c041c89f3b": {
+    "nodeId": "9390:3252",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three combobox components in the default state, each with different placeholder text. The first combobox has no placeholder text and is labeled \"Country,\" while the second and third comboboxes have placeholders labeled \"Search machine\" and \"Type to filter,\" respectively. The numbered callout 1 points to the first combobox labeled \"Country,\" indicating that while the default placeholder can be empty, it is recommended to use specific placeholder text like \"Search machine\" or \"Type to filter."
+  },
+  "498a24f54339cad6e793f46c226383ad84f02cbf9f2dff9058bf302fd84b55ab": {
+    "nodeId": "8196:33759",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in an active/focus state, labeled \"Country\" and \"Options.\" The \"Country\" combobox shows a filtered list after typing \"B|,\" displaying \"Label,\" \"Bangladesh,\" and other labels. The \"Options\" combobox is open and ready for selection with items \"Label,\" \"Label,\" \"Option 3,\" and \"Label.\" This example is marked as a \"Do\" because it demonstrates effective filtering after typing one character, avoiding long scrolling, and providing a user-friendly dropdown experience."
+  },
+  "6df804de71527c04b2ee2db07dd5d9fb87d0e758dbfeb03d65e9df7191379ec5": {
+    "nodeId": "8196:33772",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in an active/focus state with valid entries. It shows two comboboxes labeled \"Country\" with different selected items, \"United Kingdom of Great Britain\" and \"United States of America,\" and one combobox labeled \"Colors\" with selected items \"Beige\" and \"Peanutbutter Brown.\" The text specifies that ideally, all labels should fit within one line, with a maximum of two lines."
+  },
+  "706ef20757ee20669d4c8d1044a2a2833b6616fe209d2cb6c49f5160c6a7aabb": {
+    "nodeId": "9039:20916",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The anatomy of a combobox component in an active/focus state, showing a dropdown menu with valid input. The first callout points to a Group Label, which is optional and describes the category of grouped items, and cannot be clicked. The second callout points to a List item, which represents clickable items presented to the user. The combobox includes a Label at the top, a text input field with placeholder text \"Inp|\", and an \"X\" icon for clearing the input."
+  },
+  "753947efe2d3a7141552db7b8b07792c552e7ae7f262613af474f2d0e3807f4d": {
+    "nodeId": "9039:21682",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in an active/focus state with a valid input. The chosen items in the dropdown list are shown as an enumeration separated by commas, and the list is truncated with an ellipsis when it exceeds a certain length. The text \"Label\" appears above the combobox, and inside the combobox, the text reads \"Label 1, Label 2, Label 3, Label 4, Lab...\" indicating truncation."
+  },
+  "7c8b8725575dfec2c102a73e4829c7fe5e9093f826a3c8b635720dd3107e452b": {
+    "nodeId": "8480:3195",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in an active or focus state, showing a dropdown menu with three items labeled \"Options\", \"Option 1\", \"Label\", and \"Option 3\". Icons are optionally used next to each item in the dropdown, appearing only if the combobox is of a single select type. The first item, \"Option 1\", is selected and marked with a checkmark."
+  },
+  "8047e76029ac4839e18ef1131a59e00bd7e01a95855e758d2d66fddd5812e755": {
+    "nodeId": "9039:21450",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A layout example marked as a \"Do\" example, illustrating the use of a radio-group component and a button component. The radio-group has a horizontal orientation, includes a legend labeled \"Radio Group Legend,\" and contains two radio labels. The maximum width of input fields is demonstrated, with a recommendation of approximately 650px, which corresponds to 8 columns in a grid system. The layout shows a combination of input fields and labels, ensuring optimal legibility and adherence to the grid structure."
+  },
+  "88f779cf4926fc999b1f96b75333a74965298f5d0b744b3e8d1c85b17be79d79": {
+    "nodeId": "9411:3055",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in a multi-select variant, showing two different interaction states: one that opens on click and another that allows filtering by typing. The combobox labeled with callout 3 is in an active/focus state with a dropdown menu displaying options, and the placeholder text is \"Select\". The combobox labeled with callout 4 shows a search functionality with the placeholder text \"Search\". Both comboboxes include a clear function to delete all input at once. Callout 3d points to the selected options displayed in the combobox, and callout 4c points to the filtered options in the dropdown menu."
+  },
+  "893d10e4058915c98251539b6e0faca02fa132e554a7b64c04f05193477798c8": {
+    "nodeId": "5671:19983",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Various states and layouts of a combobox component from the STIHL Design System. It shows the combobox in different states such as default, hover, active/focus, disabled, and invalid, with both single-select and multi-select item lists. The combobox consists of an input field and a dropdown list, which can be short, medium, or long, and can open on click or after typing. The text next to the figure provides guidelines for using the combobox, such as specifying placeholder text and handling different list lengths."
+  },
+  "952ff07ad0a95a5af925cb1014d30e1a80bd8a407458a330a2f8d0a0b3f544cf": {
+    "nodeId": "39621:13634",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Don't\" example of a combobox component with a popover. The combobox has a label \"Product Name,\" an info button, a clear button, and input text displaying \"FSA 45, FSA 70, FSA 50.\" The popover, positioned below the combobox, contains the text \"Select max. 3 different products.\" The example is marked as incorrect because it uses the popover for information that should not be hidden; instead, a hint should be used for critical information."
+  },
+  "986f17c32d48942689a1f46dcb45a15088c4cf054e4c650c85ed08c59e345383": {
+    "nodeId": "38133:4971",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Don't\" example of a Combobox component with grouped and ungrouped items. Callout 1 points to individual list-items with the variant single-select, default state, medium size, and either selected or unselected status. Callout 2 points to list-items with the variant multi-select, default state, medium size, and either selected or unselected status. The example is marked as incorrect because it mixes grouped and ungrouped items within the same list, which should be avoided to maintain clarity and consistency. The grouped items are organized under optional group labels."
+  },
+  "9fe758d4b623f6e7faad05aa78120ad24482e720adca465dd717374e28a59ab7": {
+    "nodeId": "9039:21287",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a combobox component in an active/focus state, labeled as medium and small input. Callout 1 points to the medium variant, and callout 2 points to the small variant. The medium variant is recommended by default, while the small variant is suggested for designs with limited space. Both variants include a Label, an input field labeled \"Inp|\", and an optional Group Label."
+  },
+  "a65facbf05e81d628710d63ac724edfd8fe58b783ae55a6896d416ad2b723d48": {
+    "nodeId": "9039:21484",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Don't\" example of a combobox component layout. It includes two comboboxes with \"Label\" and \"Input\" text, each having a maximum width. The example is marked as incorrect because it does not keep the click path between the label and action short, which is necessary to reduce the time it takes for the mouse to reach the target according to Fitt’s Law."
+  },
+  "b03f7adebb7105fa6a95332e445ff6fb03319214c7ad13a13f2fac4cfe29be18": {
+    "nodeId": "30853:6788",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in its default state within a \"Content area Narrow\" layout. The measurements indicate the \"Container Width\" and the \"recommended max. width 544px\" for the combobox. The text explains that while the combobox can adjust to fit its container, it should not exceed 544px in width for better readability, which is calculated based on the font size."
+  },
+  "c033414bca4449d07636302595f33aa05711faafbdb40616def59f5ece55792f": {
+    "nodeId": "8472:30091",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in an active/focus state with the label \"Salutation\". The combobox has three items in the list: \"Label\", \"Label\", and \"Other\". Callout 1 points to the selected item labeled \"Select\". This is marked as a \"Don't\" example, indicating that this layout or design choice is incorrect, although the specific reason is not provided in the image."
+  },
+  "c2ba5ebb594a2ecaf057c5d4f4b43fce62d3f82bc4006e50e435fe2e9cfe0b13": {
+    "nodeId": "8196:33741",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The anatomy of a combobox component in a UI design system, showing both default and invalid states. The combobox consists of a select field and a dropdown menu. Callout 1 points to the Label, callout 2 points to the Hint, callout 3 points to the Field, callout 4 points to the area where the dropdown appears, callout 5 points to the System feedback message, callout 6 points to the Input area, callout 7 points to the clear icon, callout 8 points to the dropdown indicator, and callout 9 points to the Label with an info icon. The select field is styled like an input component and opens a dropdown upon user interaction..."
+  },
+  "e0467106e195df945a0fede258664fc2007e77655afa3505c814b079cb758a0e": {
+    "nodeId": "19703:2118",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A combobox component in an active state with two dropdown menus labeled \"Country\" and \"Colors\". The \"Country\" dropdown displays options including \"Label\", \"United States of...\", and \"Uruguay\", while the \"Colors\" dropdown lists \"Beige\", \"Peanutbutter BronLabel\", and \"Burgundy\". The example is marked as a \"Don't\" because it uses truncation, which is not legible and therefore not accessible."
+  }
+}

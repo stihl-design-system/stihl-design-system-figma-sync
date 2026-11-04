@@ -1,0 +1,72 @@
+{
+  "04f7df2540a10358e8cee2430d256fdf1ede781c7666207452d02d455010ce28": {
+    "nodeId": "2:2012",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The syntax structure for spacing tokens in a UI design system, breaking it down into three main areas: Namespace, Type, and Modifiers. The Namespace can include system, theme, or domain, Type refers specifically to the property such as spacing, and Modifiers include variants and scales. The example token $ds-subbrand-web-spacing-dynamic-m demonstrates this structure, where \"subbrand\" is the theme, \"web\" is the domain, \"spacing\" is the property, \"dynamic\" is the variant, and \"m\" is the scale. The figure also indicates that some components like category, concept, state, and mode are not relevant for spacing."
+  },
+  "0fc3ca765fcd3aba76a8f09639045ad1c95faa741530cadcdb7982b9b978c601": {
+    "nodeId": "2:5279",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The use of spacing tokens in a UI design system, comparing core tokens and semantic tokens. Callout 1 shows horizontal spacing of 24 pixels using the dynamic token spacing-dynamic-xs on small desktop screens, which shifts to 16 pixels vertical spacing on mobile screens. Callout 2 demonstrates the same dynamic token applied vertically with multiple elements. The core token spacing-24 is shown as a static vertical spacing of 24 pixels."
+  },
+  "10aadcd49549f7fc00b32df4bd5aaecca16379a862c5077f0912721d74f59315": {
+    "nodeId": "2:5213",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The use of vertical spacing core tokens ranging from spacing-32 to spacing-160. These spacings are used for the largest elements and layout, specifically for space between elements inside a bigger pattern or on a page, such as between modules and buttons. The components in the figure are spacers of type core token, arranged in a vertical direction."
+  },
+  "2799241874e58e86aa8bbf5de05af0451af16eda240e5560314d588076f95081": {
+    "nodeId": "2:2071",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A screenshot of the Figma plugin named \"variables2json.\" The plugin interface includes three tabs labeled Variables, Composites, and Settings. Under the Variables tab, there are categories for Colors, Numbers, Strings, and Booleans, with the Colors category containing 82 items and the others showing 0 items. The interface also includes icons for importing and exporting variables, as well as a toggle for viewing variables in JSON format."
+  },
+  "475fe07f8bed4743d5abb489b99db42be23afa27912576204101d82c3605ed02": {
+    "nodeId": "2:2086",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A spacing system with a base unit of 8px, displaying a horizontal ruler with measurements marked at intervals of 8px. Each measurement label, such as 8px, 16px, 24px, and so on up to 104px, represents a spacing value that is a multiple of the base unit. The ruler extends from 0px to 104px, indicating the defined spacings within the system."
+  },
+  "56ba373771c0354a9f82319a2c294db0729f02551643fe8fc04831520df16c7c": {
+    "nodeId": "166:3459",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The inspection of spacing variables in a UI design system. Callout 1 shows a list of spacing variables available in the design tool, with \"s\" selected, indicating a spacing value of 24. Callout 2 highlights a selected element in the design interface, displaying its dimensions and padding values directly. Callout 3 demonstrates the right-side panel in the design tool where spacing specifications, including padding and gap values, are shown for a selected element, with specific references to \"spacing-dynamic/m\", \"spacing-dynamic/s\", and \"spacing-16\"."
+  },
+  "604ed8449a575468712a5fdbd5da7d880856e4e103e5b97e2ba4d2b285a862e8": {
+    "nodeId": "2:2240",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Various spacing styles within the STIHL Design System, demonstrating how different components are spaced using core and dynamic tokens. Measurements such as 24px refer to the spacing between UI elements, with labels like \"Core Spacing\" and \"Dynamic Spacing\" indicating static and dynamic spacing tokens respectively. The figure includes components like buttons, input fields, links, and titles, each with specified variants and states, arranged to show spacing at different breakpoints such as \"Breakpoint S: 320px\" and \"Breakpoint XL: 1536px."
+  },
+  "7ec578111603a1a2b14c25c468b5f95f5e54088619d98a5e3895acaff268681e": {
+    "nodeId": "2:1913",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A table of spacing core tokens used in the STIHL Design System. Each row in the table lists a token name, its corresponding pixel value, and a visual example. The pixel values range from 0px to 160px, with each token name indicating its specific pixel value, such as spacing-2 representing 2 pixels. The table includes tokens like spacing-0, spacing-2, spacing-4, up to spacing-160, and notes that spacing-0 and spacing-56 are new and not yet added to the Figma components. The examples visually represent the spacing values to provide a clear understanding of each token's application."
+  },
+  "a75617dec5413402a0ccac93a761a67be80a1799967f8d38038ec32f68aa1043": {
+    "nodeId": "2:5166",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A button labeled \"Button\" with an outline variant, enabled state, small size, and no icon. It also shows a checkbox labeled \"Checkbox Label\" in the default state, unchecked, and not invalid. Additionally, there is an input field labeled \"Label\" with a hint text \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\" The layout includes vertical spacing between these components, illustrating the use of static spacing tokens for small and compact elements such as padding within smaller components and spacing between labels and elements inside a component."
+  },
+  "b9266c98347635e12539df7d31ea4980215ebe781c17ec01811d9e9053bfc3a6": {
+    "nodeId": "2:5190",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The use of medium spacing styles within UI components. It shows a toast with the text \"All files lorem ipsum\" and an info icon, and a fieldset with the label \"Label.\" The medium spacing, ranging from spacing-12 to spacing-24, is used for padding within larger components like toasts and for vertical and horizontal spacing between elements inside components or patterns, such as fieldsets."
+  },
+  "c1cd120813cdb55bec2b74c934c6315a9ba397d967eec82a16b3de603b2e9598": {
+    "nodeId": "2:1975",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The categorization of spacing tokens into four layers: Values, Core Tokens, Semantic Tokens, and Component Tokens. The measurement 8px refers to a raw pixel unit under Values. The label spacing-8 is an example of Core Tokens, which store raw pixel units, while spacing-dynamic-m is an example of Semantic Tokens that reference core tokens and suggest a general intent. Padding-between-buttons is an example of Component Tokens, which define specific contexts of use, although it is noted that component tokens are not currently used. The figure also indicates that specificity increases from Values to Component Tokens."
+  },
+  "cca842d46ccfc99e948ceb633523cca7ef7877cadc9825b965874d40c1ae31de": {
+    "nodeId": "2:4618",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A basic web template for the STIHL Design System, illustrating spacing styles across different breakpoints and viewports. It includes components such as a logo, title, spacers, button, input, and link, each with specified variants and states. The measurements refer to spacing tokens, both dynamic and core, used to maintain consistent spacing throughout the design. The breakpoints are labeled as S: 320px, M: 768px, L: 1024px, XL: 1536px, and 1668px, indicating responsive design adjustments for different screen sizes. The title component is shown in both mobile and desktop viewports, with various spacing tokens like spacing-dynamic-xl, spacing-16, and spacing-24 applied to different elements."
+  },
+  "d82a46d97117329ade9de34298fd1371f824cbfae802ba9ff8aca49c38127607": {
+    "nodeId": "2:5245",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The use of semantic tokens for dynamic spacings in a UI design system. It shows a layout with vertical spacings between elements, including a dialog with text and buttons. The dialog contains a button labeled \"Add service\" with a ghost variant, enabled state, small size, no icon, hidden label, and non-flush alignment, and another button labeled \"Cancel\". The spacings adapt based on the breakpoint and are used for padding within the dialog and spacing between layout elements."
+  },
+  "e42fd2eda900e6a23917e12cd565db5654ecbed30ef86f6573f0006921201e8e": {
+    "nodeId": "2:1944",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A table of semantic tokens for spacing styles in the STIHL Design System, detailing how spacing values adapt across different breakpoints. Each row in the table lists a semantic token name and its corresponding spacing values for breakpoints labeled Breakpoint S: 320px, Breakpoint M: 768px, Breakpoint L: 1024px, Breakpoint XL: 1536px, and Breakpoint XXL: 1668px. A warning notification indicates that the Breakpoint XXL is not included in Figma Variables due to license limitations. The table includes tokens such as spacing-dynamic-xs, spacing-dynamic-s, spacing-dynamic-m, spacing-dynamic-l, spacing-dynamic-xl, and spacing-dynamic-xxl, each with specific spacing values like spacing-16..."
+  }
+}

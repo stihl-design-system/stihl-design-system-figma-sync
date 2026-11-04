@@ -1,0 +1,22 @@
+{
+  "251577d1005fddcc25de4aaf30205970eae4cb1bce29b593c4c409cf5e6650cf": {
+    "nodeId": "2645:528",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The concept of Maximum Text Width in a UI design system. It shows a block of text with a maximum width of 34em, which is based on the font size used. The text block demonstrates that to maintain optimal readability, the text should not exceed 80 characters per line."
+  },
+  "4053964a226eb05f2d533ac30e70b0b9032700b6c6158ed172a8a1177d52c8b1": {
+    "nodeId": "2645:547",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Maximum text widths for different font sizes in the STIHL Design System. Callout 1 points to a heading in Uppercase with a font size of 26px, showing a maximum length of 884px. Callout 2 points to a text in Text M with a font size of 16px, showing a maximum length of 544px. Callout 3 points to a text in Utility XS Demi with a font size of 12px, showing a maximum length of 408px. Each measurement refers to the maximum length calculated as font size multiplied by 34em."
+  },
+  "59889748f4582e61accaa77691f60d1b6b33e8289d75f1824199d6fe24d781c8": {
+    "nodeId": "2646:1413",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The concept of maximum text width within content areas using two viewport examples: one at 1024px and another at 1440px. Callout 1 points to a viewport of 1024px where the container width is smaller than the maximum text width, so the container width is used. Callout 2 points to a viewport of 1440px where the container width is larger than the maximum text width, so the text is capped at its maximum allowed width to ensure optimal readability."
+  },
+  "e52181595dcad1d21c656a657973a927fb350799aa2e0c0dd61463b57c5cd708": {
+    "nodeId": "2646:1020",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The layout for Content-Heavy Pages (Reading-Focused) in the STIHL Design System. It shows a headline and body text both constrained to a maximum width of 544 pixels, which is derived from a font size of 16 pixels multiplied by 34 em units. This alignment ensures visual consistency and a harmonious reading experience by preventing oversized headlines from disrupting the text rhythm. The body text is labeled as Text M with a font size of 16px, and the heading is labeled as Heading L, both adhering to the same maximum width."
+  }
+}

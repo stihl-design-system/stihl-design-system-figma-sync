@@ -1,0 +1,147 @@
+{
+  "223049479768611d09950a0a4a22abedc7848f35e30988caf70c6a0b0c496924": {
+    "nodeId": "54222:11448",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An action-card-vertical component with a media slot, medium padding, and hug content sizing. It includes four flag variants: \"New\" labeled with a success status, \"Needs check\" with a warning status, \"Rejected\" with an error status, and \"Enrolled\" with an info status. The example is marked as a \"Do\" because it uses separate sections for each flag variant, making the content easier to scan and understand. The card also contains text elements including \"Seasonal Tune-Up\", \"Maintenance\", \"Seasonal\", and \"Express Available\"."
+  },
+  "314c261ced54c4dab0880382e8e0e30da2f8dd73bbb665d856959c137db149e4": {
+    "nodeId": "54222:11737",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The correct usage of dedicated STIHL battery system logos, specifying four variants: ai, ak-system, ap-system, and as-system. It also displays four status indicators: \"New\" in green, \"In assessment\" in yellow, \"Rejected\" in red, and \"Enrolled\" in blue. The board is marked as a \"Do\" example, indicating the correct use of these logos."
+  },
+  "351a8d0dce625a4f9a0aab786c721f54276a02f6332da5495e26826b8e3f836c": {
+    "nodeId": "52929:21249",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two sets of icons labeled with different statuses and actions, each set numbered 1 and 2. Callout 1 points to icons labeled Approved, Plan cancels soon, Rejected, In review, Discount, and Promotion, each with distinct colors and icons. Callout 2 points to icons labeled Confirmed, In assessment, Rejected, and In review, also with distinct colors and icons. The icons represent various states such as Approved, Rejected, In review, and others, each with specific colors indicating their status like success, warning, error, info, and promo."
+  },
+  "4340df33e937881d5e663ea8aa99af28a152d35cd5e979829ff965a3f892ebbd": {
+    "nodeId": "53310:12673",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An action-card-vertical component with padding set to medium and content sizing set to hug. It displays two Promo Flags labeled \"Best Seller\" and \"New,\" along with two tabs labeled \"Maintenance\" and \"Seasonal.\" The text \"Seasonal Tune-Up\" and \"Our most popular service for longer life and reliable power\" is also present. This example is marked as a \"Don't\" because it demonstrates that Promo Flags should not be used multiple times within a group as they should stand out and not compete with one another."
+  },
+  "5e7d1e393256721d837c9c7e427dfbba5c5be2a00c01c0360aadb63cbd52f16e": {
+    "nodeId": "19711:50",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a flag component used in the STIHL Design System. The first flag is labeled \"Flag Short\" and the second flag is labeled \"Flag content with a long text or description,\" both in the info status color. The width of each flag adjusts to the length of its respective label, demonstrating how the component scales with varying text lengths."
+  },
+  "6f68ac60436a785aca1d01d74eab63ce5d4000e033187ffd80a17fe84af92aef": {
+    "nodeId": "19713:120",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Corporate STIHL Journal section with multiple Link Cards. Each Link Card contains a Flag component at the top to indicate categories. The layout shows a grid of Link Cards, each with an image, title, and description, and the Flags are used to categorize the content within each card."
+  },
+  "71903e3dca698282f3ad035fdfc5616c2695e0370d0b77b91a60010303e0f98e": {
+    "nodeId": "19836:286",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A table from the STIHL Service Communication (SSC) section, titled \"SUPPORT NEWS,\" which includes multiple functions and uses Status Flags. The table contains columns labeled Title, Type, Product affiliation, Published on, and Add to bookmark, with rows listing various news items and their details. Each row includes a Status Flag indicating the type of news, such as \"Required,\" \"Dealer news,\" \"Recall notice,\" and \"Confirmed.\" The table also features filters for types, time periods, and sorting options, along with pagination controls at the bottom."
+  },
+  "71aacd09c9eb292c55ceaf06229110aa7d3ac5f8f07a97874870df6c46fe5652": {
+    "nodeId": "19511:2452",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Flag component, which has two variants: Status and Promo. The Status variant includes four states labeled success, warning, error, and info, each with a different colored background. The Promo variant includes two states labeled neutral and highlight, each with a distinct background color. The layout shows each Flag with an icon and the text \"Flag\" next to it."
+  },
+  "83a99122a085b57c59eaf0d2448976cfd7cdd8b88df60fa3bb42c55f22caa303": {
+    "nodeId": "53360:17048",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A component named \"Flag\" with four variants, each indicating a different status: Success, Warning, Error, and Info. Each numbered callout points to a Flag icon with a specific color representing its status: Callout 1 is labeled \"Flag\" with the color status: success, Callout 2 is labeled \"Flag\" with the color status: warning, Callout 3 is labeled \"Flag\" with the color status: error, and Callout 4 is labeled \"Flag\" with no specific status color."
+  },
+  "92183071efe5276ff967b3705276a6ef5f44fa77e6f500e8689d32b22aaec142": {
+    "nodeId": "19711:94",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two flag components with labels \"Document denied\" and \"Document pending\". The \"Document denied\" flag is colored status: error, and the \"Document pending\" flag is colored status: warning. The example is marked as a \"Don't\" because it repeats the subject in flag labels, creating unnecessary length."
+  },
+  "9bb328cb739bc8561d8176f8c90dc138f976453a107af8dfd82608991888c24c": {
+    "nodeId": "20082:317",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A screenshot of a Timbersports Article with multiple Flags used to indicate categories. The text \"Home / News / World Trophy 2023 in Rotterdam\" shows a breadcrumb navigation, and the text \"Nachrichten Ergebnis\" represents tabs for different sections. The main headline reads \"Mit Weltrekord: Neuseeländer Jack Jordan verteidigt härtesten Sportholzfäller-Titel der Welt,\" with a date and location noted as \"10. Jun 2023 Niederlande · Global.\" The article includes an image of a person holding trophies with fireworks in the background."
+  },
+  "a0b3dedb5ee2dfafd4d4e38a9e4294d742f4be9d141e41756303230278110447": {
+    "nodeId": "19655:22",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The anatomy of a Flag component in a UI design system. The numbered callout 1 points to a circle on the left side of the Flag component, and the numbered callout 2 points to a circle on the right side of the Flag component. The Flag component includes an optional Icon and a Label named \"Flag\" with a color status of info."
+  },
+  "a19ed5e1856a21342d38187ff3209557d0741131d42bbb44f1617205f5ba8134": {
+    "nodeId": "52929:20369",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two examples of flag components with consistent icon usage within each variant. The first callout points to a flag labeled \"Required\" with no icon, indicating it is a Status Info flag. The second callout points to a flag labeled \"New\" with an icon, indicating it is a Promo flag. Both flags also include additional text labels such as \"Product information,\" \"Seasonal,\" and \"Battery-Powered Only.\" The example demonstrates correct usage by maintaining consistency in icon presence within each flag variant."
+  },
+  "b1ec5cc0260a7b0221b3bc3fe075166526919d97dc882bddf6c667fc0a2e7929": {
+    "nodeId": "54222:11619",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An action-card-vertical component with medium padding and hug content sizing. It displays two Promo Flags: one highlighted as \"Best Seller\" and another neutral labeled \"New\". The card includes categories \"Maintenance\" and \"Seasonal\", with a title \"Seasonal Tune-Up\" and description \"Our most popular service for longer life and reliable power.\" The board is marked as a \"Do\" example, indicating correct usage of a maximum of two Promo Flags per group, with one highlighted and the other neutral."
+  },
+  "b43cd3ba79526d2429835b7167b827fcbadcc132d8a66095b2ed2a1567172ebb": {
+    "nodeId": "53251:11339",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An action-card-vertical component with a media slot, medium padding, and hug content sizing. It displays a \"Seasonal Tune-Up\" card with multiple flag variants including \"New\", \"Maintenance\", \"Seasonal\", \"Express Available\", \"Needs check\", and \"Rejected\". This is marked as a \"Don't\" example because combining too many different flag variants in one section makes scanning and comprehension more difficult; it is recommended to use a maximum of two flag types per section."
+  },
+  "c33a923a5481163f3e8143e0499b50941acf59b4de389df0d52da7624913848e": {
+    "nodeId": "52929:20005",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two instances of a flag component. The first flag is labeled \"Status Info\" with a color designated as status: info. The second flag is labeled \"Status Info Custom\" and also has a color designated as status: info, but it appears in three different custom colors. The text labels in both flags are in grey-ultra-deep color."
+  },
+  "c4247d8fc7c57cb843231ee4240d8607554262023c5df37ef9eab112e160cff0": {
+    "nodeId": "52929:19872",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two action-card-vertical components with medium padding and content sizing set to hug. The first card is labeled \"Seasonal Tune-Up\" and includes flags such as \"Battery Health,\" \"Maintenance,\" \"Seasonal,\" and \"Express Available.\" The second card is labeled \"RZ Financing Program\" and includes flags such as \"Required,\" \"Product information,\" and \"Battery-Powered Only.\" Additionally, the \"Seasonal Tune-Up\" card is marked as a \"Best Seller\" and includes a description and a call-to-action button labeled \"Make an appointment.\" The layout demonstrates how multiple flags can be combined within a single section, each group having a clear and distinguishable purpose."
+  },
+  "c50fe4f1d523dc77d2e670c907328a66b07fb3116758e27ceff5b1e791a9ab8a": {
+    "nodeId": "52869:26154",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The \"Flag\" component with its two variants: Status and Promo. The Status variant includes four states: success, warning, error, and info, while the Promo variant includes two states: neutral and highlight. Each numbered callout points to a specific example of the Flag component with its respective label and color: 1a is Flag with color status: success, 1b is Flag with color status: warning, 1c is Flag with color status: error, 1d is Flag with color status: info, 2a is Flag with color promo: neutral, and 2b is Flag with color promo: highlight."
+  },
+  "c8c3de02ce7ab1affba9b4b3995baad318e13341c1e4eaace02291b73738a18e": {
+    "nodeId": "19713:126",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Four flag components labeled AI-System, AK-System, AP-System, and AS-System, each with different colors: promo highlight, status warning, status info, and status success, respectively. The board is marked as a \"Don't\" example, indicating that custom-colored flags should not be used for the STIHL battery systems. Each flag represents a different system, but the use of custom colors is advised against in this context."
+  },
+  "cbff7023dd01f0c49e6966cbd76d96dcb9aa6e0f4ddf906aa4d9044438a6c30e": {
+    "nodeId": "53360:17021",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Don't\" example of a flag component labeled \"12\" with the color status: error. This example is incorrect because it uses a flag with a number only. Instead, a number indicator component should be used for such cases."
+  },
+  "d48397e5031e340a7e6c90e4c8efe97e2e27a2f2848b02efa16009c6fd8b2246": {
+    "nodeId": "19819:198",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The figure compares three different UI components: Status Flag, System Feedback, and Notification. Each component is shown with various states such as \"Confirmed\", \"Needs review\", \"Rejected\", \"In review\", \"Connector linked successfully\", \"Connector not found\", \"Connector unknown\", \"Success\", \"Warning\", \"Error\", and \"Note\". The numbered callouts point to examples of these components as follows: 1 points to Status Flags with labels \"Confirmed\", \"Needs review\", \"Rejected\", and \"In review\". 2 points to System Feedback examples with labels \"Connector linked successfully\", \"Connector not found\", and \"Connector unknown\"..."
+  },
+  "d49a92785a705855739aa90cbb6b389b63741766c173db1b27556f07c1c23c7a": {
+    "nodeId": "53360:16955",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Do\" example for pairing numbers with a label when displaying counts in a UI design system. It shows a component with various states: \"New\" in green, \"In assessment\" in yellow with an icon, \"Rejected\" in red with and without an icon, and \"Enrolled\" in blue. The label \"Rejected (12)\" uses brackets to indicate a secondary count, which is the correct approach as specified in the documentation."
+  },
+  "d4a138fd4624729da5d1e665b986c53d774b8b6a04272636b8a4bf2fabb9483a": {
+    "nodeId": "53360:15528",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Product Overview Page with four Product Cards, each featuring a Promo Flag. Each Product Card includes an image of a chainsaw, the product name, rating, description, price, and a compare checkbox. The Promo Flag is an orange circle with a white number inside, indicating the number of items available. The layout is a grid with two rows and two columns, each card having the same structure and design elements."
+  },
+  "d6e4870a51efa0c1e3b0365b96e2380429203d50b988a576bbbbce7926133d42": {
+    "nodeId": "19711:76",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A UI component called a \"Flag\" within the STIHL Design System. The spacing between multiple flags placed together is 8px, both horizontally and vertically. The text elements shown include \"Tipps\", \"Gerätepflege\", \"Arbeitstechnik\", \"Akku-Pflege\", \"Lithium-Ionen-Akkus richtig lagern\", and a paragraph starting with \"Der richtige Umgang mit einem Akku ist entscheidend für eine lange Lebensdauer...\"."
+  },
+  "dac09c47ff3ed551011d0e506194d8b6d63c8841cbea45afe4a7a8aedabf271c": {
+    "nodeId": "19819:458",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Flag\" component with four variants, each showing an icon paired with a label and a specific color indicating its status. The variants are \"Approved\" with a checkmark icon and green color, \"Plan cancels soon\" with a clock icon and yellow color, \"Rejected\" with an 'X' icon and red color, and \"In assessment\" with a square icon and grey color. Icons are used to support quick visual recognition and should be used sparingly to avoid unnecessary cognitive load."
+  },
+  "dc6eb64d617ff4c9fbf83b0fd111c6f26d41834c0d0b699a715f55c8d5e6a082": {
+    "nodeId": "53310:1922",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two flags labeled \"Rejected\" and \"Declined\", both with the color status of error. This is marked as a \"Don't\" example because it demonstrates the use of similar or synonymous terms across flags, which should be avoided. The flags are placed one above the other in the center of the image."
+  },
+  "e86228e78aa214b2a06fd5f16d1ce0b594632a9f9e5a23e1ce2743e7d1175f4d": {
+    "nodeId": "53310:1856",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Flag\" component with various states, each using concise labels. The states shown are \"Offer\" in promo highlight color, \"Enrolled\" in status info color, \"Rejected\" in status error color, and \"Accepted\" in status success color. The example is marked as a \"Do\" because it uses short, simple words that are easy to understand and avoids abbreviations for better accessibility."
+  },
+  "fc085e7057bd038bc4e0c694d18bb6c56c6f0daa7b10a02ca00010fc2c5e3687": {
+    "nodeId": "53360:17091",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a Flag component used in a promo section. Callout 1 points to the Flag with the label \"Flag\" and color \"promo: highlight,\" while callout 2 points to the Flag with the label \"Flag\" and color \"promo: neutral.\" These flags are used based on the context of whether a primary button or a highlight button is present."
+  },
+  "fd3be355d700f4cc0758b6ebe9faaf12be525d1d399fca73f894c95638d638e6": {
+    "nodeId": "52929:20679",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three flags in a row, all with the color status: success. The first flag has the label Completed, the second flag has the label Approved, and the third flag has an icon and the label Checked. The example is marked as a \"Don't\" because it mixes flags with and without icons within the same variant, which creates inconsistency and reduces clarity."
+  }
+}

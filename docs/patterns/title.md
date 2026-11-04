@@ -17,7 +17,7 @@ figmaNodeId: 7:19
 figmaVersion: "2370898144407684143"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-06-30T14:44:46Z
-syncedAt: 2026-10-27T13:40:49.056Z
+syncedAt: 2026-11-04T14:53:02.922Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7-19
 ---
 
@@ -31,6 +31,8 @@ Overview:
 - The stand line is a special character implemented in the STIHL Contraface Digital Display Title font.
 
 ![Title](title/title-7-87.png)
+
+_Figure: Text in the figure: "viewports: desktop-large, desktop-medium, desktop-small", "viewports: tablet, mobile", "Title Component", "ƒ", "Font-styling: Heading XL", "Font-styling: Heading L"._
 
 ### Related elements
 
@@ -51,6 +53,8 @@ In the component the two elements are separate to ensure proper function in Figm
 
 ![Anatomy](title/anatomy-7-119.png)
 
+_Figure: Shows title (title text=Title Component, size=xl, viewport=desktop); annotation-cirlce (line=on, position=right); annotation-cirlce (line=on, position=top). Callouts 1, 2. Text in the figure: "Title Component", "ƒ"._
+
 ### Stand Line
 
 As the brand’s definitive typographical distinguishing feature, primary, emotional headlines are always presented in as large a format as possible in STIHL Contraface Digital Display Title.
@@ -62,6 +66,8 @@ The stand line is a special character implemented in the STIHL Contraface Digita
 Mac: Alt + F PC: Alt + 0131 More guidelines can be found in the [STIHL Brand Portal](https://brandportal.stihl.com/de/basiselemente/typografie)
 
 ![Stand Line](title/stand-line-7-128.png)
+
+_Figure: Text in the figure: "SPECIAL CHARACTER", "Mac: Alt + F PC: Alt + 0131"._
 
 ### Spacing Guidelines
 
@@ -85,5 +91,7 @@ Spacing **below** the Title
 The exact spacing depends on context — always prioritize clarity and readability.
 
 ![Spacing Guidelines](title/spacing-guidelines-9322-53.png)
+
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=1); spacer (type=core token, direction=vertical); breadcrumb (level 6, level 5, level 4, level 3, level 2, expanded=false); spacer (type=dynamic token, direction=vertical); title (title text=Title Component, size=xl, viewport=desktop); annotation-circle (number=2, type=center, color=blue). Measurements: 0px. Callouts 1, 2. Text in the figure: "Home", "/", "...", "Previous level", "Current", "Title Component", "ƒ", "spacing-24", "spacing-dynamic-m", "spacing-0", "spacing-dynamic-xs", "spacing-dynamic-l"._
 
 ## Examples

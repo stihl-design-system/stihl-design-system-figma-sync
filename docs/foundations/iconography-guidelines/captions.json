@@ -1,0 +1,32 @@
+{
+  "1e2f692ed904536943d3e1cafffe1ec056940a83bfba7f8876dec7a6f7bcca8a": {
+    "nodeId": "9899:675",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A button with the text \"Search\", an outline variant, enabled state, medium size, and an icon positioned to the left. The measurements \"x\" and \"½ x\" refer to the size of the icon and the required clear space around it, respectively. The clear space is maintained equally around the icon to ensure proper visibility and usability."
+  },
+  "1eeb1cb47c1d28f46495ede29212ec60298532fbca4e3ed41ab2777dc7f30a0c": {
+    "nodeId": "9863:51",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A magnifying glass icon at five different sizes, scaled proportionally. Each size represents different recommended dimensions for use in various UI components. The measurements 16 × 16px, 24 × 24px, 12 × 12px, 10 × 10px, and 8 × 8px refer to the pixel dimensions for default components, larger use cases, and small detailed use cases respectively. The text advises to always scale icons proportionally to maintain line consistency and to avoid overly large sizes to prevent icons from appearing coarse."
+  },
+  "47fd80c1de121357cbbe100f27c8394b696e87a14755395999cd0a2e5a2c4b8f": {
+    "nodeId": "9899:682",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An infinity symbol icon with blue dots around its perimeter. The blue dots likely indicate anchor points or nodes used for editing the icon's shape. The icon is filled with a solid black color and is set against a white background."
+  },
+  "577dfe1c5be1d29dbacd58868b6b4a18bf3804ce11cdc66ae8a5334604828361": {
+    "nodeId": "9899:619",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Six Functional Icons arranged in two rows of three. Each icon features a minimal, low-detail style for use in UI components and digital interfaces. The icons from left to right, top to bottom, are: search, download, shopping cart, user, pencil, and email."
+  },
+  "6682d80c06e49f15aef86a555d14e03ab7ae08059a9003e88b54e4b96e32d315": {
+    "nodeId": "9863:45",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three icons: a speedometer, a speedometer with a prohibition sign over it, and a cloud with raindrops. These icons are examples of Functional Icons from the STIHL Design System. The speedometer icon represents speed or velocity, the speedometer with a prohibition sign indicates a restriction or limitation on speed, and the cloud with raindrops signifies rain or wet conditions."
+  },
+  "f264f07c07007c859d80c5a5ab53244bb06158db6efbf478db3ac91b55d29a34": {
+    "nodeId": "9867:83",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A magnifying glass icon with a default size of 16 pixels by 16 pixels. The measurement labels indicate the width and height of the icon, both of which are 16 pixels. This icon is part of the Iconography Guidelines in the STIHL Design System and adheres to the specified design specifications, including a minimal style, low detail, and a square shape with a 1:1 aspect ratio."
+  }
+}

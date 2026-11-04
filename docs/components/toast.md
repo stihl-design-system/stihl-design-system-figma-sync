@@ -15,10 +15,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 8844:4923
-figmaVersion: "2410599903007017519"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-10-15T14:34:29Z
-syncedAt: 2026-10-27T13:08:29.461Z
+figmaVersion: "2418018269838839666"
+figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
+figmaVersionCreatedAt: 2026-11-04T14:25:56Z
+syncedAt: 2026-11-04T14:52:30.286Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=8844-4923
 ---
 
@@ -36,6 +36,8 @@ Overview:
 - The toast notification is triggered by a user and gives additional feedback about an action.
 
 ![Toast](toast/toast-8844-5324.png)
+
+_Figure: Shows close-button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); toast (text=All files lorem ipsum, icon, type=success); toast (text=All files lorem ipsum, type=success). Text in the figure: "All files lorem ipsum", "Show Icon: True", "Show Icon: false"._
 
 ### Further guidelines
 
@@ -135,6 +137,8 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](toast/anatomy-8844-5342.png)
 
+_Figure: Shows toast (text=All files updated, icon, type=success). Callouts 1, 2, 3. Text in the figure: "All files updated"._
+
 #### Types
 
 1. **Success** Inform the user that an action was completed.
@@ -142,6 +146,8 @@ Contribute to improving this component by sharing your feedback, asking question
 1. **Info** Provide informational messages that do not require immediate action.
 
 ![Types](toast/types-8844-5377.png)
+
+_Figure: Shows toast (text=All files updated, icon, type=success); toast (text=You have unsaved changes, icon, type=warning); toast (text=A new update is available, icon, type=info). Callouts 1, 2, 3. Text in the figure: "All files updated", "You have unsaved changes", "A new update is available"._
 
 #### Width and height
 
@@ -152,6 +158,8 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Width and height](toast/width-and-height-20741-2994.png)
 
+_Figure: Shows close-button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "It looks", "It looks like your network connection is", "max. 400px", "min. 16px"._
+
 #### Enter animation
 
 **Animation type:** move-in (bottom up) fade-in (opacity) **Duration:** 400ms **Easing:** motion-functional-ease-out (cubic-bezier (0, 0, 0.5, 1)
@@ -159,6 +167,8 @@ Contribute to improving this component by sharing your feedback, asking question
 [Motion guidelines →](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?node-id=1-148)
 
 ![Enter animation](toast/enter-animation-12546-404.png)
+
+_Figure: Shows toast (text=All files updated, icon, type=success). Text in the figure: "All files updated", "move-in from bottom up", "fade-in: 0% \> 100% Opacity"._
 
 #### Exit animation
 
@@ -168,6 +178,8 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Exit animation](toast/exit-animation-13808-1514.png)
 
+_Figure: Shows toast (text=All files updated, icon, type=success). Text in the figure: "All files updated", "fade-out: 100% \> 0% Opacity"._
+
 #### Placement
 
 The toast message appears from the bottom center of the viewport.
@@ -175,6 +187,8 @@ The toast message appears from the bottom center of the viewport.
 The default offset from the bottom edge is 64px.
 
 ![Placement](toast/placement-13494-206.png)
+
+_Figure: Measurements: 64px._
 
 #### Dismissible
 
@@ -184,6 +198,8 @@ If the user does not interact with the toast, the notification disappears.
 
 ![Dismissible](toast/dismissible-12546-419.png)
 
+_Figure: Shows toast (text=An update is ready for installation, icon, type=info). Text in the figure: "An update is ready for installation"._
+
 #### Limited time visible
 
 Given the reading speed, it is recommended to display the notification for 10 seconds if it contains 15 words.
@@ -191,6 +207,8 @@ Given the reading speed, it is recommended to display the notification for 10 se
 **Beware: a toast notification**, that is limited time visible and therefore **not accessible.**
 
 ![Limited time visible](toast/limited-time-visible-12546-409.png)
+
+_Figure: Shows toast (text=All files updated, icon, type=success). Text in the figure: "All files updated", "10 sec"._
 
 ## Content and Assets
 
@@ -204,11 +222,15 @@ Given the reading speed, it is recommended to display the notification for 10 se
 
 ![⚠️ Accessibility issue](toast/accessibility-issue-12521-397.png)
 
+_Figure: Don't example. Shows toast (Copy=Some required fields are left empty, show icon, intention=error, show close=true, show action=false). Text in the figure: "Some required fields are left empty"._
+
 ### Conversational language
 
 The copy presented by a digital product to a human is a dialogue, use conversational language.
 
 ![Conversational language](toast/conversational-language-12666-8815.png)
+
+_Figure: Shows toast (text=You have unsaved changes, icon, type=warning). Text in the figure: "You have unsaved changes"._
 
 ### Copy must be as concise as possible
 
@@ -218,11 +240,15 @@ Toast messages are meant to be very short, because they disappear.
 
 ![Copy must be as concise as possible](toast/copy-must-be-as-concise-as-possible-12517-265.png)
 
+_Figure: Do example. Shows toast (text=A new update is available, icon, type=info). Text in the figure: "A new update is available"._
+
 ### Localization
 
 Languages other than english are approximately 20% longer. Test your copy at all times.
 
 ![Localization](toast/localization-12521-344.png)
+
+_Figure: Shows toast (text=Il semble que votre connexion réseau soit instable., icon, type=warning). Text in the figure: "Il semble que votre connexion réseau soit instable."._
 
 ### Use icons with purpose
 
@@ -232,11 +258,15 @@ Remove the icon to reduce visual clutter and cognitive load.
 
 ![Use icons with purpose](toast/use-icons-with-purpose-12521-363.png)
 
+_Figure: Shows toast (text=Number copied to clipboard, type=info). Text in the figure: "Number copied to clipboard"._
+
 ### Images
 
 Do not use images in toast notifications.
 
 ![Images](toast/images-12521-379.png)
+
+_Figure: Don't example. Shows close-button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Susie sent you a personal message"._
 
 ## Behavior
 
@@ -246,11 +276,15 @@ The toast notification is triggered by the user handling the interface and gives
 
 ![Trigger](toast/trigger-8844-5356.png)
 
+_Figure: Do example. Shows button (button text=Copy number, variant=filled, state=hover / pressed, size=medium, icon position=right, hide label=off, flush alignment=off); toast (text=Number copied to clipboard, type=info). Text in the figure: "Copy number", "Number copied to clipboard"._
+
 ### Dismissed by the user
 
 In case the user closes the toast, the exit animation is triggered immediately.
 
 ![Dismissed by the user](toast/dismissed-by-the-user-12517-315.png)
+
+_Figure: Shows toast (text=A new update is available, icon, type=info). Text in the figure: "A new update is available"._
 
 ### Queue instead of stack
 
@@ -264,7 +298,11 @@ Alternative components are [notification](https://www.figma.com/design/qXldpLO6g
 
 ![Queue instead of stack](toast/queue-instead-of-stack-12517-288.png)
 
+_Figure: Do example. Shows toast (text=File A successfully updated , icon, type=info). Text in the figure: "Queue: visible one at a time", "File A successfully updated"._
+
 ![Queue instead of stack](toast/queue-instead-of-stack-12985-203.png)
+
+_Figure: Don't example. Shows toast (text=File A successfully updated , icon, type=info); toast (text=File B successfully updated , icon, type=info); toast (text=File C successfully updated , icon, type=info). Text in the figure: "Stack: all visible at the same time", "File A successfully updated", "File B successfully updated", "File C successfully updated"._
 
 ## Usage Guidelines
 
@@ -280,6 +318,8 @@ Components are chosen based on their level of urgency:
 
 ![Functionality & Priority](toast/functionality-priority-40483-6373.png)
 
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=desktop); footer-dialog (first button, second button, third button, viewport=desktop, direction=horizontal, primary position=left); annotation-circle (number=3, type=center, color=blue); notification (action, close button, type=info, icon=True); toast (text=All files lorem ipsum, icon, type=info); banner (variant=default, viewport=m, content=promo, close-button=true). Callouts 1, 3. Text in the figure: "Heading", "❖ Placeholder", "Button", "This is a notification message that guides the user.", "All files lorem ipsum", "Promo Banner Link"._
+
 ### Use Cases
 
 #### System / Mandatory
@@ -291,6 +331,8 @@ Components are chosen based on their level of urgency:
 
 ![System / Mandatory](toast/system-mandatory-40483-6391.png)
 
+_Figure: Shows header-dialog (heading, viewport=desktop); placeholder: text + image; footer-dialog (first button, third button, viewport=desktop, direction=horizontal, primary position=left); notification (close button, type=info, icon=True); toast (text=Settings have been saved., icon, type=success); notification (type=warning, icon=True). Text in the figure: "Cookies help us improve your experience.", "By clicking “Accept all,” you agree to the use of cookies as described in our...", "Accept all", "Manage preferences", "The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.", "Settings have been saved.", "Recall notice: Product XY has been recalled. Please visit www.example.com for..."._
+
 #### Marketing / Engagement
 
 - **Sales & promotions** → Banner
@@ -300,12 +342,16 @@ Components are chosen based on their level of urgency:
 
 ![Marketing / Engagement](toast/marketing-engagement-40483-6405.png)
 
+_Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=false); banner (variant=highlight, viewport=m, content=promo, close-button=false). Text in the figure: "Join our Newsletter", "Up to 40% off all Chainsaw models", "Versandkostenfreie ab 49€", "Lieferung oder Abholung vor Ort", "30 Tage Rückgaberecht"._
+
 #### Informational
 
 - **Product / feature updates (non-critical)** → Banner
 - **Tips, nudges, reminders** → Banner
 
 ![Informational](toast/informational-40483-6413.png)
+
+_Figure: Shows banner (variant=secondary, viewport=m, content=promo, close-button=false). Text in the figure: "We’ve just rolled out something new! Check out the latest updates and improve..."._
 
 ## Examples/Variants
 
@@ -314,3 +360,5 @@ Components are chosen based on their level of urgency:
 The user can copy the machine number with one click and the toast message appears.
 
 ![STIHL Service Communication Platform (SSC)](toast/stihl-service-communication-platform-ssc-8844-5387.png)
+
+_Figure: Shows toast (text=Number copied to clipboard, type=info). Text in the figure: "Number copied to clipboard"._

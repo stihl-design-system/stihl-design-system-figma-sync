@@ -16,7 +16,7 @@ figmaNodeId: 356:1729
 figmaVersion: "2414601641067527736"
 figmaVersionLabel: ""
 figmaVersionCreatedAt: 2026-10-26T09:28:34Z
-syncedAt: 2026-10-27T13:41:48.089Z
+syncedAt: 2026-11-04T14:53:05.855Z
 sourceUrl: https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj?node-id=356-1729
 ---
 
@@ -27,6 +27,8 @@ sourceUrl: https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj?node-id=356-1729
 ### Introduction
 
 ![Introduction](introduction/introduction-384-1311.png)
+
+_Figure: Shows color-swatch (type=minimal). Text in the figure: "Primary", "STIHL Orange Light", "100", "#FEE2CD", "STIHL Orange Mid", "300", "#F7A669", "STIHL Orange Base", "500", "#F37A1F", "STIHL Orange Dark", "700", "#E9640C", "STIHL Orange Deep", "900", "#D9480F", "Neutrals", "Grey Ultra Light", "50", "#F8F8F8", "Grey Light", "#EDEDED", "Grey Mid", "#DADADA"._
 
 ### What is a Design System?
 
@@ -60,11 +62,15 @@ Libraries containing foundational design principles applicable across all platfo
 
 ![01. Fundamentals](introduction/01-fundamentals-371-203.png)
 
+_Figure: Shows cover-thumbnails (type=miscellaneous); cover-thumbnails (type=library). Text in the figure: "Archive 📁", "Fundamentals", "Archive 📁 Fundamentals", "Archived fundamentals exploration", "Playground 🏐", "Playground 🏐 Fundamentals", "Ongoing fundamentals exploration", "Color 🌈", "Color system and tokens", "Grid & Spacing 🧮", "Grid styles and spacing tokens", "Iconography ➡️", "Icon library", "Styles 🪭", "Motion and shadow styles", "Typography 🅰️", "Typescale sytles and tokens"._
+
 ### 02. Core Components
 
 A library with core components built on the fundamentals and accompanied by documentation, applicable to all platforms, teams, and products.
 
 ![02. Core Components](introduction/02-core-components-371-572.png)
+
+_Figure: Shows cover-thumbnails (type=miscellaneous); cover-thumbnails (type=library). Text in the figure: "Archive 📁", "Core Components", "Archive 📁 Core Components", "Archived core components exploration", "Playground 🏐", "Playground 🏐 Core Components", "Ongoing core components exploration", "Core Components 💠", "Core components for all platforms, teams & products"._
 
 ### 03. Platform Libraries
 
@@ -72,11 +78,15 @@ Platform-specific libraries with tailored components and modules designed for th
 
 ![03. Platform Libraries](introduction/03-platform-libraries-371-708.png)
 
+_Figure: Shows cover-thumbnails (type=library); cover-thumbnails (type=miscellaneous). Text in the figure: "App Pattern Library", "Platform Libraries", "🗓️", "Coming soon", "Components and modules tailored to app interfaces", "Web Pattern Library", "Components and modules tailored to web interfaces", "E-Mail Patterns", "👁️️", "Visual guideline", "Components and modules tailored to e-mail interfaces", "Archive 📁", "Archive 📁 Platform Libraries", "Archived platform libraries exploration", "Playground 🏐", "Playground 🏐 Platform Libraries", "Ongoing platform libraries exploration"._
+
 ### 04. Guidelines, Onboarding, Process
 
 Files containing guidelines, onboarding ressources, process documentation and more.
 
 ![04. Guidelines, Onboarding, Process](introduction/04-guidelines-onboarding-process-371-787.png)
+
+_Figure: Shows cover-thumbnails (type=guidelines); cover-thumbnails (type=moccu helper); cover-thumbnails (type=miscellaneous). Text in the figure: "Onboarding 📖", "Structure, guidance and process", "A resource hub for using the design system and working with Figma files", "Accessibility Introduction", "Based on WCAG 2.2", "Summary of relevant WCAG requirements", "Helper", "Moccu Helper 🟠", "Userful elements for a better Figma file organization", "Archive 📁", "Guidelines, Onboarding, Process", "Archive 📁 Guidelines, Onboarding, Process", "Archived guidelines, onboarding and process exploration", "Playground 🏐", "Playground 🏐 Guidelines, Onboarding, Process", "Ongoing guidelines, onboarding and process exploration"._
 
 ## How to ...
 

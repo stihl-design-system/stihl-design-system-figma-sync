@@ -1,0 +1,347 @@
+{
+  "094b71a35e3e1243d0e9ef9897ff33c820f16a3fff9a8f6eb93776ceb2911978": {
+    "nodeId": "62565:16979",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two examples of an image carousel component from the STIHL Design System. The first carousel is labeled \"XL-L\" and shows a single visible item with a peek slot, designed for larger breakpoints. The second carousel is labeled \"M-S\" and also shows a single visible item with a peek slot, designed for smaller breakpoints. Both carousels are variants of the single item type and illustrate the component's adaptability to different screen sizes."
+  },
+  "09fde8ea4f5639e022d070612974ce4c817a49931403d76731e81c219bce680c": {
+    "nodeId": "61435:2233",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Carousel component with various aspect ratios for different device breakpoints. For Desktop, the recommended aspect ratio is 16:9. For Tablet, the recommended aspect ratios are 4:3, 3:2, and 16:9. For Mobile, the recommended aspect ratios are 3:4, 1:1, and 16:9. Each aspect ratio is shown within a single item variant of the carousel, demonstrating how the items appear on different screen sizes."
+  },
+  "09ffe66defbfa2cb0c113ebac56aa7c89b114a94be7b5595192fa6a3193b16d7": {
+    "nodeId": "60750:43802",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The design of a Carousel component, including various states and variants of navigation controls and scrollmarkers. It shows round navigation controls in small size with states such as enabled, hover/pressed, focus, disabled, and disabled focus. The scrollmarker building elements are depicted with standard and overflow dots, and the layout includes examples of single item building blocks with placeholder items. The numbered callouts point to different states of the carousel items, indicating active and enabled states. The figure also illustrates the scrollmarker behavior for both light and dark backgrounds, and different variants like filled, inverse, and ghost."
+  },
+  "0a8b35aff4cc2fd81ccfd5e53fe237c78487357c3367763730b722a9fcce7364": {
+    "nodeId": "62753:23460",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a carousel component used for page-based navigation. The first variant, labeled \"single item,\" displays one item per page, while the second variant, labeled \"multi item,\" displays multiple items per page. Each navigation step in both variants moves exactly one complete page. The first callout points to the single-item carousel, and the second callout points to the multi-item carousel. The text \"Page\" indicates the current page being viewed, and \"Item 1,\" \"Item 2,\" \"Item 3,\" and \"Item 4\" label the individual items within the carousel."
+  },
+  "0cb2cf4cd0f54176fd27a368a03341b71ad93eabd7a06a6bc1977fa8c661213e": {
+    "nodeId": "62646:101704",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a multi-item variant with three visible items and a peek at adjacent items. The carousel includes navigation controls and three numbered callouts: 3a points to the \"Next Navigation Control\" indicating that pressing Enter moves to the next page while retaining focus, 3b points to arrows indicating that Arrow Left or Arrow Right moves to the previous or next pages, and 3c points to a scrollmarker indicating that pressing Tab moves focus to it. The carousel shows three products: a chainsaw labeled \"MS 261 C-M,\" a brush cutter labeled \"MSA 300 without battery and charger,\" and a lawn mower labeled \"MS 162,\" each with a rating, description, availability status..."
+  },
+  "179282c580d45ddb4545234ce0a7b26d9b436a3e577334145c283a00860838b4": {
+    "nodeId": "60750:43799",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Carousel component with its Single-Item and Multi-Item variants. It displays different layouts and configurations, including various positions for scrollmarkers and navigation controls, such as \"Scrollmarker position: outside\" and \"navigation control position: outside.\" The figure also shows breakpoints labeled as XL, L, M, and S, indicating responsive design adjustments for different screen sizes. The carousel items are represented by \"❖ Placeholder Item\" labels, and navigation controls are depicted with left and right chevrons, showing states like \"disabled\" and \"enabled."
+  },
+  "206a52f875b2541b49c3caf37e4c299153a8d0d74540f5160d1081cf7e2cf02c": {
+    "nodeId": "61435:2275",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component in the single item variant with two visible items and a peek of the next item. Both Item 1 and Item 2 are the same height, which is correct because keeping all items the same height prevents layout shifts during navigation. This creates a stable, predictable browsing experience."
+  },
+  "236a2a2a2fe7e7d4e8a306f662087900166756a1f5fc7be2a663c5afc8ee9bfa": {
+    "nodeId": "62565:16968",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component with the Single-Item Navigation Control Variant. It shows two states: one for the XL-L breakpoint where navigation controls are visible inside the carousel, and another for the M-S breakpoint where the navigation controls are hidden. The layout is grid-based and responsive, with navigation controls visible from breakpoint L and hidden below L. The carousel includes a single item per view and per navigation step, placed in the main content area. The specifications indicate different behaviors for pointer and touch interactions, such as tap zones, drag, swipe, and peek functionalities."
+  },
+  "24dc6c6091ddbeebaef2d30983d8dfb83f3981b25ec036395b5e83a500de3373": {
+    "nodeId": "62581:20768",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two carousel components with clear navigation feedback. The left carousel uses only the Scrollmarker variant, showing a single item with the label \"Placeholder Item.\" The right carousel combines Peek and Scrollmarker, displaying multiple items labeled \"Placeholder Item 1\" through \"Placeholder Item 4,\" indicating additional content is available. Both carousels illustrate how users can understand their current position and navigate through the content."
+  },
+  "252135cbe438b9b37afe93f01bab69ea0e9bba28ee597180e38abe459aa5865d": {
+    "nodeId": "61435:1736",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the single item variant, displaying one item at a time. The item content includes a clear primary message: \"Win a Trip to Canada, Range Rover, and More!\" with a secondary message and a call-to-action button labeled \"Participate now.\" This example is marked as a \"Do\" because it effectively communicates a single idea or call to action, helping users quickly understand the content."
+  },
+  "25678693faf2d260eac85c897511396ae7d2c9542169e0af7f0e06578b64989f": {
+    "nodeId": "61695:2600",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Carousel component in the Single-Item Navigation variant, showing both hidden and visible states of the scrollmarker. The layout is a grid view for product cards, with each card containing elements such as Productname, rating, Categorie, Short description of the product, availability, price, and a Compare option. The specifications indicate that the scrollmarker is filled and positioned inside, with drag and swipe functionalities enabled for touch interactions, and no peek functionality. The items per view and per navigation step are set to 1, and the placement is defined by the parent component or layout. The labels \"XL-L\" and \"M-S\" refer to different screen size variants..."
+  },
+  "2791a313018b8109db50a16ded0f5469dfd1ea6022b0374a6aba09e487448d94": {
+    "nodeId": "62524:12709",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a UI design system, specifically the \"multi-item\" variant on smaller breakpoints. The measurements 450px, 288px, and 136px refer to the widths of the visible items and the peek item within the carousel. The text explains that the width of the item within the peek needs to be manually adjusted to match the width of the other items, as it does not adapt automatically when the carousel width changes or items are added/deleted. The figure demonstrates the need for manual adjustment to ensure a consistent responsive layout."
+  },
+  "2b0b1378df3c1ca135a72c762831fe488227dd1ffdfc40c84b629131bd5d974e": {
+    "nodeId": "62753:23523",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the single item variant at the l breakpoint. It shows the end behaviour where navigation stops at the last page, and the navigation controls are disabled but still focusable. The visible items slot contains one item, and the peek slot shows part of the next item."
+  },
+  "2cf88f41ba4465d3a9b998a991d95ffe71c4eea2b1c713ac7dc251f91b976f62": {
+    "nodeId": "62524:14825",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the multi-item variant with navigation controls, displaying three visible items in a layout suitable for a large breakpoint. The numbered callouts indicate the tab navigation order: 1a points to the instruction for moving to the next focusable item using the Tab key, 1b points to the instruction for moving to the previous navigation control, and 1c indicates the starting point for tab navigation within the carousel items. The carousel includes items such as \"MS 261 C-M\" chainsaw, \"MSA 300 without battery and charger\" brush cutter, and \"MS 162\" lawn mower, each with details like ratings, descriptions, availability, and prices including VAT."
+  },
+  "30f61f66a6ee4902ca82fbb80a698065e0915cb1f19c507e8be8d6923cc24370": {
+    "nodeId": "61435:1960",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the single item variant, showing the drag motion interaction. It illustrates the state where the track follows the pointer movement directly during dragging, with a settling transition of 700ms after the drag is released. Surrounding UI elements remain fixed, and the track settles on the appropriate page, \"Item 1\", using the defined Carousel easing."
+  },
+  "32a16490013d1051dec0e0863ae92fd60749e25f09372af1f93fd6875e154b76": {
+    "nodeId": "62753:23487",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the single item variant with three items labeled \"Item 1\", \"Item 2\", and \"Item 3\". Navigation controls are shown on either side of the visible item, allowing sequential navigation to the previous or next page. These controls become disabled at the beginning and end of the carousel but remain focusable. The layout includes a peek at adjacent items on either side of the visible item."
+  },
+  "33ee75733a59f511400563b8ffadcce896a8648744cd153a87053b0d909f35bd": {
+    "nodeId": "62646:102180",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a multi-item variant without navigation controls. The carousel shows three visible items, with the first two items being fully visible and the third item partially visible. The first callout, labeled \"1a\", points to the tab navigation moving to the next focusable item within the visible items in reading order. The second callout, labeled \"1b\", points to the tab navigation moving to the scrollmarker from the last visible interactive element. The carousel includes items such as a chainsaw, a brush cutter, and a lawn mower, each with details like product name, rating, description, availability, and price."
+  },
+  "36aaa398735b4a080461f277ca2257f31b62e86912523570f9ded2b8cf47aee9": {
+    "nodeId": "62753:23547",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component in the single item variant, displaying Page 2 and Page 3 with Placeholder Items. The layout includes Navigation Controls on the left and right sides of each page and a Scrollmarker at the bottom of Page 3. The example is marked as a \"Don't\" because it switches the placement of the Navigation Control and Scrollmarker within the same Carousel, which is inconsistent."
+  },
+  "3c96a9a9085825064f5bf29ff5352daddc287acb0f2bf291d86b51e20e94a914": {
+    "nodeId": "61435:2304",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Multi-Item Carousel component with the variant \"multi item\" at the \"l\" breakpoint. It shows four visible items labeled \"Item 1\" through \"Item 4\" within the viewport, each occupying \"1/x Viewport width.\" The remaining items labeled \"Item 5 (hidden)\" through \"Item 9 (hidden)\" are outside the viewport and not visible. The items are arranged to evenly fill the available viewport width."
+  },
+  "4138f69ec4b5e69a9799dab350f699a2dda68f7acf15f55da6f5b8072d46f233": {
+    "nodeId": "62581:18965",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in its multi-item variant for mobile devices, displaying the layout and key elements. The numbered callouts point to specific parts: 1 and 2 indicate the Previous and Next navigation controls, 3 points to the Scrollmarker, and 5 points to the Tap zones. The figure shows one visible item labeled \"Item 1\" and several hidden items labeled \"Item 2 (hidden)\" through \"Item 5 (hidden).\" The annotations \"3a\" and \"3b\" mark the boundaries of the viewport, while \"4a\" and \"4b\" indicate the boundaries of the track. The peek area is optional and recommended for touch devices, allowing users to see part of the next item. Users should be able to view all items with 1–2 rotations."
+  },
+  "422a448db27fd6d412c8d95449dec58e538fa7f31aeef3e02bf5a678f1ebe13e": {
+    "nodeId": "61818:3150",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the multi-item variant, demonstrating its layout across different breakpoints: xl, l, m, and s. Each breakpoint shows how the number of visible items adapts, with item width calculated automatically to evenly divide the available viewport width, and spacing between items following breakpoint-specific spacing tokens. The items within each carousel maintain consistent dimensions, as defined by the embedded component, such as a Card or Media Tile."
+  },
+  "44b9710c07c3d7c803a7eb0bc3a9c48bc6d7349db7a649f2d57588c0da49c7cd": {
+    "nodeId": "62524:12755",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the multi-item variant and small breakpoint, demonstrating how peek items are represented in Figma using an overlay. The first part shows an overlay added to the component for display purposes, indicating that the overflow of peek items is not visible on the component itself. The second part shows the component inside an artboard, where the overflow is hidden. The text labels \"Placeholder Item 1,\" \"Placeholder Item 2,\" \"Placeholder Item 3,\" and \"Placeholder Item 4\" indicate different items within the carousel."
+  },
+  "4b8c73410c1a9a0f879455d4c124695fdc8a9878fa10a9f7cb3422ec4431bd63": {
+    "nodeId": "62753:23534",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component in the single item variant, displaying two pages labeled \"Page 2\" and \"Page 3\". Each page contains a \"Placeholder Item\" and has consistent navigation styles, indicated by the same dots at the bottom for page selection. This example is marked as a \"Do\" because it demonstrates the consistent use of one navigation style throughout the Carousel."
+  },
+  "517dac73b3bf59b3181b933dbf611753e9e62a98f17f449e75d6c11a317422aa": {
+    "nodeId": "62581:20508",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a single item variant, illustrating large touch targets for interactive elements. The measurement of 48px refers to the width of the Tap Zones on either side of the visible item, while 24px refers to the width of the Scrollmarker at the bottom. The figure emphasizes that interactive elements should have sufficiently large touch targets to support comfortable and accurate interaction, even if the visible size of an element is smaller."
+  },
+  "51e5a7cfe848eaa0df0e16e9b5fe70eacdf17a08ded56ddafe64209b00657bb0": {
+    "nodeId": "61435:1726",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the single item variant, showcasing an item content layout. The layout includes an image on the right side, a content block on the left with text that reads \"Win a Trip to Canada, Range Rover, and More!\", \"As a thank you for registering your products, we’re giving you the chance to...\", and a button labeled \"Participate now\". The carousel supports rich and flexible content, including images, media, content blocks, and complex layouts. The visible items are displayed one at a time, with navigation arrows on either side and a breakpoint labeled \"l\"."
+  },
+  "51ef8a94118fc757e375144a90984e1b8ac6be86af0e83668edcf6227da391af": {
+    "nodeId": "62524:14316",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component in the multi-item variant, with a layout showing three visible items and a peek at additional items. Each item includes details such as product names \"MS 261 C-M\", \"MSA 300 without battery and charger\", and \"MS 162\", along with their descriptions, availability, and prices. The keyboard requirements ensure that all interactive elements within the Carousel are accessible via keyboard, providing visible focus indicators and appropriate accessible names, roles, and values, while preventing keyboard focus from moving to hidden items or automatically navigating between pages."
+  },
+  "535d761bd586bf82c780737dcdaf30fd216c75067a643f84a406c98473963efc": {
+    "nodeId": "62064:22400",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a carousel track component: Single-Item variant and Multi-Item variant. In the Single-Item variant, only one item is visible at a time, with adjacent items being hidden. In the Multi-Item variant, multiple items are visible within the viewport, while others are hidden. The track manages the horizontal arrangement of items and moves in response to user navigation."
+  },
+  "5639540f66097d2375952726eb16c2785308aedfd0ef916a97a203713785b03b": {
+    "nodeId": "61653:2312",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the single item variant, with a visible item and a peek item on either side. The layout includes a navigation control and scrollmarker positioned outside the visible items. The first callout points to a carousel item promoting a contest with text \"Win a Trip to Canada, Range Rover, and More!\" and a button labeled \"Participate now\". The second callout points to a carousel item with placeholder text \"Lorem ipsum dolor\". The example demonstrates content consistency by maintaining a similar structure across different carousel items, helping users focus on the changing content."
+  },
+  "5677c47d89cfa8ca4d3ad98ca1236eb11beb01a67495e46d5bb81d46d2c3d86f": {
+    "nodeId": "61435:1861",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in its single item variant. It shows a placeholder item within the visible items slot, with a peek slot indicated by dashed lines. A hand icon demonstrates the primary interaction method, which is swipe gestures for navigation on touch devices."
+  },
+  "5a15ba7e791f9b123c7475511878c717ddb2f28add2175a2f172457a80541706": {
+    "nodeId": "61435:2285",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the single item variant with two items, Item 1 and Item 2, of different heights. The layout includes a peek slot and visible items slot, and it is marked as a \"Don't\" example. Items with varying heights cause layout shifts, reduce visual consistency, and disrupt the browsing experience."
+  },
+  "5c3ba5f3a27adf0c7f588cec04c5bfc9b5433caa465fde204473d613056fa082": {
+    "nodeId": "62524:14322",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component in the multi-item variant, showing four visible items out of twelve total items. Each item is labeled as \"❖ Placeholder Item\" followed by its number, and the text \"Items 1 – 4 of 12\" indicates the current range of items displayed. The carousel includes navigation controls on either side and a set of dots below for additional navigation."
+  },
+  "5f0c73a89fd7c172dfd1bb75d5588d2659bdb184ef946c1f7eb4de21642f72b6": {
+    "nodeId": "62524:14393",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a multi-item variant with navigation controls hidden. It displays three items: a chainsaw labeled \"MS 261 C-M\" with a price of \"11.199,00 € incl. VAT\", a brush cutter labeled \"MSA 300 without battery and charger\", and a lawn mower labeled \"MS 162\". The example is marked as a \"Don't\" because it makes hidden items unreachable using keyboard navigation and does not expose them to assistive technologies, which is incorrect as it limits accessibility."
+  },
+  "62e96e7925abfd2aa7cc514b9751fa28f0bb366458e0f8602372abe647189e58": {
+    "nodeId": "61695:2715",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Carousel component in the Multi-Item Navigation Control Variant. It shows two states: one for the XL-L breakpoint where the Navigation Controls are visible and positioned outside the main content area, and another for the M-S breakpoint where the Navigation Controls are hidden and placed in the extended content area. The carousel displays items labeled \"Item 1\", \"Item 2\", \"Item 3\", and \"Item 4\", with different layouts and configurations based on the breakpoint."
+  },
+  "645fa0f5f112a5367eab90533dbbc9c5cd8cc3a08dc71254fd3229c433ba5f57": {
+    "nodeId": "62581:18823",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Single-Item Variant of a Carousel component designed for mobile devices. The layout includes a Container holding a Viewport with a Track that displays one visible item and has additional hidden items. Callout 1 points to the Container, callout 2 points to the visible item labeled \"Item 1,\" callout 3 points to the hidden items labeled \"Item 2 (hidden)\" and \"Item 3 (hidden),\" and callout 4 points to the Scrollmarker. The Tap zones for touch devices are labeled \"5a\" and \"5b,\" with \"5a\" indicating the Previous navigation and \"5b\" indicating the Next navigation. The annotations \"3a\" and \"3b\" highlight specific parts of the hidden items."
+  },
+  "66fef96764f2048f2f4f5b79e335824ffcff6e2e2baea59fb7e65719449d307d": {
+    "nodeId": "62489:12106",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a multi-item variant, showing three visible items with a peek at the next item. Each item in the carousel has a consistent layout, including product names such as \"MS 261 C-M\", \"MSA 300 without battery and charger\", and \"MS 162\". Each product listing contains a rating, product type, short description, availability status, and price including VAT. The layout ensures that users can focus on the changing content of each product without adapting to different compositions."
+  },
+  "6ac920d88d11d5b42c306df1036d77524f38db3e861b13fa94d2aa82b7e8d630": {
+    "nodeId": "62753:23501",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the single item variant with a scrollmarker. The scrollmarker indicates the current page and allows direct navigation to specific pages, such as Page 6, Page 3, and the next page, which is Page 2. The carousel has six items, with the current page marked and options to navigate directly to other pages."
+  },
+  "6ee0494eaaf6c82d08209a37452760bcfbdb563b27788488ec67936aa40a65f8": {
+    "nodeId": "62939:27758",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the drag variant, showing three items labeled \"Item 1,\" \"Item 2,\" and \"Item 3.\" The carousel allows users to navigate by dragging horizontally with pointer input, moving to the previous or next item based on the drag direction. The visible items are centered, with navigation controls and scroll markers positioned outside the carousel. The hand icons indicate the direction of dragging to navigate between items."
+  },
+  "7bb9fdaac8dd0849599c420a8c7b409f2ed24e3f8a9addcf7bbd7ca9ec892e32": {
+    "nodeId": "61435:1746",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the single item variant with a visible item and a peek item. The carousel contains an item with two competing calls to action: \"Participate now\" and \"Find out more\". This is marked as a \"Don't\" example because combining multiple competing messages within a single item reduces clarity and makes the content more difficult to scan."
+  },
+  "839795787a120e336f7dd1f2b9026a64f8487dca5a496a058c752ffc319515b6": {
+    "nodeId": "61435:2324",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the multi-item variant with a breakpoint labeled as \"l\". It displays five visible items labeled \"Item 1\" through \"Item 4\" and \"Item 5 (hidden)\" through \"Item 9 (hidden)\", indicating that some items are not fully visible. The example is marked as a \"Don't\" because it mixes items with different heights, which causes layout shifts, reduces visual consistency, and disrupts the browsing experience. The callouts point to the items within the carousel, highlighting the inconsistency in their heights."
+  },
+  "84b88b90430bd9b5804e0f58921d94d6c655d40ba6d7420afcb80f6b12a8a3fe": {
+    "nodeId": "61435:2335",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a multi-item variant, showing a peek feature on a touch device. The peek partially reveals the next item at the right edge of the viewport, occupying approximately 10% of the container width. The measurement label \"10%\" indicates the width of the peek area, which is the portion of the next item visible at the right edge. The text \"❖ Placeholder Item 1\" represents the currently visible item, while \"❖ Placeholder Item 2\", \"❖ Placeholder Item 3\", and \"❖ Placeholder Item 4\" are subsequent items in the carousel."
+  },
+  "85cb5b5c2c35b2298a5c6add639e83406246e72de5127d11a4f8fdb0666f7197": {
+    "nodeId": "62641:98804",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Single-Item Carousel component with two states: \"Default (for less than 6 pages)\" and \"Overflow (for more than 6 pages).\" The Default state shows a carousel with three visible dots representing pages, while the Overflow state shows six dots, indicating more than six pages. The carousel is designed to keep the total number of pages low to reduce navigation effort, ensuring users can reach all content without excessive navigation. The Overflow variant is optimized for Carousels with more than six pages using a Scrollmarker."
+  },
+  "8a5cd8f06c2bebd046da03c096a50dd973b75b911263a5a54631ec110158c709": {
+    "nodeId": "62646:100836",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component from the STIHL Design System, specifically the multi-item variant with navigation controls. It shows three visible items and a peek at items on either side, with a layout designed for a large breakpoint. Callout 2a points to the previous navigation control, indicating that pressing \"Enter\" moves to the previous page while retaining focus on the control. Callout 2b highlights the navigation arrows, showing that \"Arrow left\" and \"Arrow right\" move to the previous and next pages, respectively. Callout 2c points to the tab navigation, indicating that pressing \"Tab\" moves to the next navigation control. The carousel includes items such as \"MS 261 C-M\" chainsaw..."
+  },
+  "91007994b4abee63836dab34a31466471c77a9c402d8829460cf5f21461ccf3a": {
+    "nodeId": "62064:22158",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a carousel component: the Single-Item variant and the Multi-Item variant. In the Single-Item variant, only one item, labeled \"Item 1,\" is visible, while \"Item 2\" is hidden. In the Multi-Item variant, four items, labeled \"Item 1\" through \"Item 4,\" are visible, and items labeled \"Item 5\" through \"Item 10\" are hidden. The viewport defines the visible area of the carousel, clipping content outside this area and determining the number of items visible at a time."
+  },
+  "935b01cbfd507068e556299937ffbc5ce892bca62d3702efd8ff2c40a4eb5778": {
+    "nodeId": "61695:2633",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component example from the STIHL Design System, showing a product grid layout with two different content sizing variants: \"hug\" and \"fill\". The text \"XL-L\" and \"M-S\" indicate different size categories for the product cards. Each product card includes an image, product name such as \"MS 261 C-M\", a rating of \"3.5\" out of 5 with \"(80)\" reviews, product type like \"Chainsaw\", a short description, availability status \"Available now\", and price \"11.199,00 €\". The figure also includes examples of different product types such as \"Lawn mower\", \"Brush cutter\", and \"Socks STRIPES 3-pack Black / White / Grey\"."
+  },
+  "950892a8f16cad87453c2a0d2ddfb06597781c3d2b48c455434212025472feae": {
+    "nodeId": "60833:7849",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Single-Item Variant of a carousel component for desktop use, showing one visible item and hidden items. Callout 1 points to the Container, 2 points to the Viewport, 3 points to the Track, 4a points to the Previous Navigation Control, 4b points to the Next Navigation Control, and 5 points to the Scrollmarker. The visible item is labeled \"Item 1,\" while a hidden item is labeled \"Item 2 (hidden).\" The annotations 3a and 3b indicate the positions of the visible and hidden items within the Track."
+  },
+  "9b4b1685b0a946ee01bb7754eb69ec7ae2b42fa27c3fdc4572c56ea73e356414": {
+    "nodeId": "62753:23563",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Don't\" example of a Carousel component with the variant \"multi item\" and breakpoint \"s\". It displays multiple items including \"Productname\", \"Categorie\", \"Short description of the product\", \"Available now\", \"11.199,00 € incl. VAT\", and \"Compare\". Nested swipe behavior is discouraged because it is technically unstable and can cause issues, particularly on mobile devices, so Carousels should not be placed inside horizontally swipeable containers."
+  },
+  "a0732a6459dfdb2b9c7b7e3a563a510353baa41c34bb4e59349c04df12703435": {
+    "nodeId": "61435:2265",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Single-Item Carousel component in its single item variant. It shows one visible item labeled \"Item 1\" occupying the full width of the viewport, while \"Item 2\" is hidden. The viewport width measurement indicates the full width available for displaying the carousel item."
+  },
+  "a18d0b8b0f463140d36ecf9ad4817f03ed9b190792a67bb596b941aa14165cea": {
+    "nodeId": "61435:1806",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Multi-Item Carousel component with two states: \"Default (for less than 6 pages)\" and \"Overflow (for more than 6 pages).\" In both states, the carousel displays 2–4 visible Items per page. The Default state shows four visible items with a scrollmarker indicating additional pages, while the Overflow state also shows four visible items but includes an optimized scrollmarker for navigating more than six pages. The layout ensures that the total number of pages is kept low to reduce navigation effort."
+  },
+  "a2f0032b3c5dd791213ae06b5b488f9a1dd5f534c3826066b9b65a9391352881": {
+    "nodeId": "62646:101937",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a multi-item variant with three visible items and a peek at additional items. The carousel includes navigation controls with enabled states for the first and third items. The numbered callouts indicate the following: 4a points to the arrow keys, which move to the next or previous pages and focus on the new active marker, 4b points to the tab key, which moves focus to the first visible item or interactive element after using the arrow keys, and 4c points to the tab key, which leaves the carousel when used without prior arrow key navigation."
+  },
+  "a5d508bd74fc226b8d07cebbd87d271a40386fdc0f017ff10f1d72704415b053": {
+    "nodeId": "61435:1979",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a Carousel component: the Single-Item variant and the Multi-Item variant. Each variant is shown at two different breakpoints labeled Desktop (XL) and Desktop (L), illustrating responsive behavior. The Single-Item variant shows one item at a time, while the Multi-Item variant shows four items. The left nav control is disabled, indicated by the state=disabled, and the right nav control is enabled, indicated by the state=enabled. The scrollmarker is set to 6=false. The containers define the overall layout and boundaries of the Carousel, positioning navigation elements either outside the viewport or inside as overlays."
+  },
+  "af13822329f7b4f627655e1760dd7c2d9974b258763b36aeaa26ee276f70bb67": {
+    "nodeId": "61435:2249",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component with a single item visible, in a layout where the minimum width is specified. The measurement label of 176px refers to the minimum supported width for the Carousel, indicating that it is not usable below this width due to insufficient space for a proper browsing experience. The component is shown in a state where it adheres to this minimum width requirement."
+  },
+  "b1a07814c113b29b1267dbb924b2f19dedf3957e4c387dc2d088ce331d7fa465": {
+    "nodeId": "61435:2092",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two examples of a carousel component used for Hero stages, Campaigns, Promotions, and Marketing messages. The first carousel is labeled \"XL-L\" and shows a single item variant with a larger layout, while the second carousel is labeled \"M-S\" and shows a single item variant with a smaller layout. Both carousels include text that reads \"Win a Trip to Canada, Range Rover, and More!\", \"As a thank you for registering your products, we’re giving you the chance to...\", and a button labeled \"Participate now\"."
+  },
+  "b4b5e5160fe0146a315c4123076930f0ed3e64eafd8f1a042a084bcb7502f7e5": {
+    "nodeId": "61818:3135",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component in the single item variant with a layout that pushes the content and Scrollmarkers below the fold. The aspect ratio of the Carousel item is too tall, causing the content to extend beyond the visible area of the screen. This is marked as a \"Don't\" example because it violates the guideline of not pushing the Carousel content or Scrollmarkers below the fold."
+  },
+  "b5b9081388dbd98ee196a8efb190c117c0ff53686ea5cfd4c441f92bb18cb7ba": {
+    "nodeId": "61435:2314",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the multi-item variant with a consistent height for all items. Items 1 through 4 are visible, while Items 5 through 9 are hidden. The text next to the figure indicates that keeping all items the same height is a recommended practice to prevent layout shifts during navigation and to create a stable, predictable browsing experience. The board is marked as a \"Do\" example, signifying that this layout is correct."
+  },
+  "b607003b5e4db5a5f934fd3feebfe6c76358dad3ac169ff12aeb466fefa119dd": {
+    "nodeId": "61767:2955",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a single-item embedded configuration with navigation controls hidden and a scrollmarker inside. The layout is shown for two different screen sizes, \"XL-L\" and \"M-S\". Each view features a product-card in grid view with the content sizing set to \"hug\", showing details such as \"Productname\", rating \"3.5 (80)\", \"Categorie\", \"Short description of the product\", \"Available now\", price \"11.199,00 € incl. VAT\", and a \"Compare\" option."
+  },
+  "bddd4aa23da7253efd8e4c4263758ba3545ce170580a0ac6de9a38209e3562a2": {
+    "nodeId": "61695:2748",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two examples of a carousel component in a UI design system. The first carousel, labeled \"XL-L\", shows three visible items with a peek at additional items, suitable for larger screens. The second carousel, labeled \"M-S\", shows one visible item with a peek at additional items, suitable for smaller screens. Each carousel includes product categories and recommendations, such as \"IPX 5\", \"AS System\", and \"AI Range\", with brief descriptions like \"IPX 5 Certified & Reliable Starts down to -20°C\" and \"Battery-operated machines are ideal for small household\"."
+  },
+  "c0d13d77a6618e59bb392c21e879719d46f16bc08ff057d3201ddaa18bc4c907": {
+    "nodeId": "61435:2043",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component in the single item variant, displaying a placeholder item. The Carousel has invisible touch targets on the left and right sides, referred to as Tap Zones, which allow users on touch devices to navigate to the previous or next page by tapping either side. These Tap Zones are not keyboard focusable and are not announced by assistive technologies."
+  },
+  "d3881f5c00a13b1f56cdeb56fdfea814807dff0fab8cba0dcc76145fa369518e": {
+    "nodeId": "61767:3041",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a multi-item variant with navigation controls positioned outside and a scrollmarker outside. The layout is shown for two breakpoints: XL-L, where four items are visible, and M-S, where one item is visible with a peek at the next item. The number of visible items and hidden items adapts based on the breakpoint and total number of items."
+  },
+  "d74ef7ab800d060fd4f85e2e811bd598b85297770777a5d4967ae8253de776b4": {
+    "nodeId": "61695:2340",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component in the Single-Item variant with Filled Navigation Controls. The navigation controls are positioned outside the carousel for the XL-L breakpoint and are hidden for the M-S breakpoint. The layout is grid-based and responsive, with navigation controls visible from breakpoint L and hidden below L. The main content area contains a single item labeled \"Item 1\" and the text \"main\" indicates the main content area."
+  },
+  "d84964d7f6ddc580a791efae326fedbad9abe44e8c32d828d40dab44eaef0fa6": {
+    "nodeId": "62581:20534",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component with two secondary navigation methods: Tap Zones and Scrollmarker. The Tap Zones are vertical areas on the left and right sides of the carousel, allowing touch interaction to navigate to the previous or next page. The Scrollmarker is a horizontal indicator at the bottom of the carousel, showing the user's current position and enabling direct navigation to specific pages. The carousel is in a single item variant and includes a placeholder item labeled \"❖ Placeholder Item\"."
+  },
+  "db04b56bff8b3bd9f69f395ea32743c9327d2acc73d6adf1081e9da0bd95a25d": {
+    "nodeId": "62646:103102",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a multi-item variant with three enabled items. The carousel shows products including a chainsaw, a brush cutter, and a lawn mower. Callout 4a indicates that the arrow left or arrow right keys move to the next or previous pages and focus on the new active marker. Callout 4b shows that pressing the tab key after using the arrow keys moves focus to the first interactive element of the active item. Callout 4c indicates that pressing the tab key without using the arrow keys leaves the carousel."
+  },
+  "e24ae4648adc4558c9f9ab02ee6554242b41a8f7b1a79bec36af0f4f0adabb13": {
+    "nodeId": "62565:18667",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component in the Single-Item variant with Navigation Controls Inside and Scrollmarker Inside. The layout is shown for two breakpoints: XL-L and M-S, referring to different screen sizes. Each example shows a single item per view with no peek, and the navigation controls and scrollmarker are positioned inside the carousel."
+  },
+  "e28f537d2068dcd0f671ac587ed1aacf861be25343894d62bd9700551d88f0cd": {
+    "nodeId": "61435:2019",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Carousel component with two visible items, labeled \"Page 2\" and \"Page 3.\" The example is marked as a \"Don't\" because it mixes different Navigation Control variants within the same Carousel, which is inconsistent and should be avoided. The Carousel uses the single item variant and is in a layout for the large breakpoint."
+  },
+  "ebad24232ddc28530d27c5e952881fa435a0e1d49fc7cf61fec5bb15d0b8bec2": {
+    "nodeId": "61435:2196",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Carousel component in the Single-Item variant with Navigation Controls Outside and Scrollmarker Outside. The layout is shown for two breakpoints: XL-L and M-S, where XL-L refers to extra-large to large screens and M-S refers to medium to small screens. Each example shows a single item per view with no peek, and the navigation controls and scrollmarker are positioned outside the carousel."
+  },
+  "f4d13efa5283c761aba17f9f0fed0702915aae09f7b0dee4dfdc90ba10b546d2": {
+    "nodeId": "61435:1775",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in the multi-item variant with three visible items, designed for a layout breakpoint labeled \"l\". Each item in the carousel supports compact, repeatable content and includes elements such as cards and media tiles. The items contain titles, descriptions, and categorized tags like \"People and Stories\", \"Backstage\", and \"Corporate Development\", along with specific labels such as \"Interview\" and \"Background Story\"."
+  },
+  "f75d37d52617fd8123880a69f729d7202949eee89c55103af2a33641ea02fa93": {
+    "nodeId": "62581:20794",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component in a single item variant, with a placeholder item visible. It illustrates the need to avoid gesture conflicts by ensuring that horizontal swipe interactions within the carousel do not interfere with vertical page scrolling. The figure shows a hand gesture indicating a horizontal swipe on the carousel, with arrows demonstrating the potential conflict with vertical scrolling."
+  },
+  "f85b13c37e82937da99e8581f253023ad8ac2397a5ae8e8503a72ffd854699d3": {
+    "nodeId": "61435:2013",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Navigation Controls component for a Carousel, showing two variants: Filled and Inverse. Each variant is depicted in five states: enabled, hover/pressed, focus, disabled, and disabled focus. The layout includes left and right chevron icons for each state and variant. Callout 1 points to the Filled variant, which is the default for navigation controls positioned outside the viewport. Callout 2 points to the Inverse variant, used when controls are overlaid on media, imagery, or a dark canvas."
+  },
+  "fd16c9156cd3cfc043e827feffa0d851bf417158e0ef8a846589bb7fdc5b4aa3": {
+    "nodeId": "62039:21422",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Multi-Item Variant of a Carousel component, showing both visible and hidden items. Callout 1 points to the left edge of the Container, callout 2 points to the center of the Container, callout 3 points to the bottom edge of the hidden items, and callout 5 points to the Previous Navigation Control. The layout includes a Container holding a Viewport with a Track that displays 2-4 visible items and additional hidden items. The Navigation Controls include Previous and Next buttons, with a Scrollmarker indicating progress. The figure recommends that users should not need more than 1–2 rotations to view all items."
+  },
+  "fd708ef6b7e6611defd62767f93f0b89741e6bbdf5824c97061fb04774192472": {
+    "nodeId": "61435:2032",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Scrollmarker component with three variants: Ghost, Filled, and Inverse. Each variant shows different states, including the active slide being the first, middle, or last. The numbered callouts point to the Ghost variant (1), the Filled variant (2), and the Inverse variant (3). The figure also includes an example of an Overflow indicator, showing that more than five pages are available."
+  }
+}

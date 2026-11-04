@@ -1,0 +1,87 @@
+{
+  "0717759fc4c93e1d54a5939ebd9c9c1f6b5ad9e7010a40486235f949291782bb": {
+    "nodeId": "694:1151",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A toast notification component with the text \"All files updated\" and a success icon, indicating a successful system feedback message. The toast notification is marked as a \"Do\" example, signifying it is a correct implementation. The layout includes a green checkmark icon, the text message, and a close button on the right side."
+  },
+  "0b34c59b21cbeefb5c6b29674d74ba5eb1c5f52b948d66a32120e639c65cf54b": {
+    "nodeId": "1430:4323",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A checkbox component used in a form design, marked as a \"Do\" example. The text next to the checkbox reads \"Hiermit stimme ich den Allgemeinen Geschäftsbedingungen von STIHL Vertriebszentrale AG & Co. KG zu.\" This example illustrates the correct use of a checkbox instead of a switch in a form, as a switch is not an input element."
+  },
+  "0fb0605a690eaf59c34bc40de39019e557ce011349c3b57f66377a69c6be5e96": {
+    "nodeId": "694:1126",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A switch component in its loading state, labeled \"Label\". The switch is unchecked and cannot be interacted with while in this state. The loading state is indicated by three dots that appear to the right of the label."
+  },
+  "2de55bd3f2ee6ca0db81f2378ea0e1d6ae87597674feda06198a6597e711c2a3": {
+    "nodeId": "641:312",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A switch component with two states: an inactive state on the left and an active state on the right. Both states feature an unlock icon within the switch. The inactive state is smaller and lighter in color, while the active state is larger and more prominent. The text next to the figure advises careful consideration before using a custom icon, recommending the check-icon as the standard for the switch component."
+  },
+  "3af5a52f6e474be156aff04d6e31219927652f15cc47ac9751b6363c09bfcd83": {
+    "nodeId": "23696:10175",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A switch component with the labels \"Label left & right\", \"cm\", and \"inch\". The example is marked as a \"Don't\" because it incorrectly uses two labels, \"cm\" and \"inch\", on both sides of the switch at the same time. The design documentation advises using only one label at a time for a switch."
+  },
+  "400d945183624653d366ff5dad511b518f016de3f149b73bae850bd078bb1def": {
+    "nodeId": "1430:4337",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A dialog component for desktop viewports, designed to confirm significant changes that require user action. The dialog has a title \"Change settings\" and a message stating \"The setting changes you made require a restart of the app. Do you want to proceed?\" with a button labeled \"Restart now.\" This example is marked as a \"Do\" example, indicating it is a recommended approach for handling major changes that may need confirmation from the user."
+  },
+  "4396ed87b9ec49863af103bf41013abfa0435c51bc18a6d8710d39cb4f9eb924": {
+    "nodeId": "641:272",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A group of switches under the heading \"General.\" There are three switches labeled \"High contrast mode,\" \"Location awareness,\" and another \"Location awareness.\" The first two switches are in the enabled state but unchecked, while the third switch is also enabled and checked. The layout shows how switches can be grouped and labeled for quick user evaluation."
+  },
+  "4563ef1c15809f553e3baa3d007d0c69a743abf9041ba74cc0e6bf7f4beeab3c": {
+    "nodeId": "694:1171",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A list of settings with switch components meant for mobile use, including labels for Tracking, Darkmode, and Notification. Each switch is enabled but only the Notification switch is checked. The switches are aligned to the right of their respective labels, Settings, Tracking, Darkmode, and Notification."
+  },
+  "46515ed4d000fa9674ed4d5caf9059d068325f2e6484f63552022c3f0e8207ea": {
+    "nodeId": "641:261",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two switch components, each with a label. The first switch is labeled \"Airplane mode\" and is in the unchecked state, while the second switch is labeled \"Show on home screen\" and is in the checked state. Both switches are enabled and follow the guideline to keep the label to a minimum, around 2-4 words."
+  },
+  "585750b102626e6964063c0e53041f8ff3f19b9e55a9ef58fe7561e9e83e7aa5": {
+    "nodeId": "694:1135",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Don't\" example of error handling with a switch component. The switch is labeled \"High contrast mode\" and is in the disabled state, even though the toggle is set to \"on.\" There is an error message \"High contrast mode can’t be enabled\" above the switch. This example is incorrect because it combines an error message with the switch and does not keep the switch in its former state when its function does not execute."
+  },
+  "5cbafe733fe864bc2e36b3ac43df51b9a3abdd08cad9af987814c0d0ddaaa6ab": {
+    "nodeId": "641:222",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A group of switches under a section titled \"Section Title.\" There are three switches, each labeled \"Label,\" with the first two switches in the unchecked state and the third switch in the checked state. The third switch is highlighted in orange with a checkmark, indicating it is selected. The layout demonstrates how to group multiple switches clearly under a section title."
+  },
+  "696bf2eb792f083748968bfc37cbce5f29798a9e9f7fa66839d662eef4cc7d18": {
+    "nodeId": "641:198",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two switch components with the Label \"Label\". The first switch, marked with callout 1, is stretched and aligned horizontally, while the second switch, marked with callout 2, is in the default alignment. The stretched alignment is recommended for use-cases like settings on small viewports and narrow columns."
+  },
+  "75e3dbb5dbc98ddbd35a942724d9cc5e56a0494f25ab25b6d789ab52617fe2a6": {
+    "nodeId": "641:292",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three switch components under a \"General\" heading. Each switch has a label: \"High contrast mode\" and \"Location awareness\" are unchecked, while \"Photo album\" is checked and highlighted with an orange background and a checkmark. The \"Photo album\" switch includes an aria label that reads \"Photo album access,\" demonstrating how to clarify the function of a switch through an aria label."
+  },
+  "a97b49873ff4c8f3ad7d167afcf947b519bd95af194a0d54e659ab4eeeceda93": {
+    "nodeId": "641:181",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a switch component with different label placements. The first switch has the label \"Label\" placed to the left, and the second switch has the label \"Label\" placed to the right. Both switches are in the enabled state and are unchecked. The text \"Label left\" and \"Label right\" indicate the label placement for each switch. The default label placement is on the left due to reading direction."
+  },
+  "da730cb69b4cdd917ccf508aacbe51cacac998e1ec426884549bafbf1342e07f": {
+    "nodeId": "641:161",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a switch component, each with a label \"Label Utility M,\" and shows both the unchecked and checked states. The measurement of 8px refers to the space between the label and the switch, while 16px refers to the vertical space between the two switches. Callout 1 points to the switch in the unchecked state, callout 2 points to the label, and callout 3 points to the switch in the checked state with a visible thumb and checkmark."
+  },
+  "dd095cf48ffbbfbd8d7340964775936d02315acbd6e04567def5615605072bde": {
+    "nodeId": "694:1113",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two switch components, each labeled \"Label\". The first switch is in a focus state but unchecked, while the second switch is in a focus state and checked. The focus is set on the switch element itself, not the label, and the selected state can be toggled by pressing the space bar."
+  },
+  "dd7ca334c76a1eb92a850c1d11c78fd25687b393cd22481c4e9a668dfaf5e8e0": {
+    "nodeId": "513:166",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Switch component with various states and interactions. It shows the switch in enabled, hover/pressed, focus, disabled, and loading states, both for checked false and checked true conditions. Each variant includes a label and visual representations of the switch in different user interaction scenarios."
+  }
+}

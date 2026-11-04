@@ -1,0 +1,22 @@
+{
+  "0a571f802728092b2ff962ff8fb45906800bcdd5c32611d93e856288704bbd66": {
+    "nodeId": "7:13445",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An overview of shadows in the STIHL Design System, detailing three shadow variants: shadow-m, shadow-m-hover, and shadow-l. Each variant lists usage examples, box-shadow values, and visual representations. The box-shadow values specify horizontal offset, vertical offset, blur radius, spread radius, and color with opacity. Shadow-m is used for elements above content, shadow-m-hover for link card hover states, and shadow-l for elements over or moving the content."
+  },
+  "4a0b9db70446a2aa79508bfa7edbe1df9bb36ca50f489cc590120f137d55ce95": {
+    "nodeId": "7:13649",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The use of Shadow L in a UI design system, specifically highlighting a sidebar component. Shadow L is applied to elements that are elevated above the main content or overlay other content. The sidebar in the image demonstrates this shadow effect, with a visible shadow around its edges to indicate elevation. The measurements refer to the shadow's spread and blur, emphasizing the visual separation from the main content layer."
+  },
+  "56ca238210245ceef04c2010bb593b72ce8513fd447895d99ffb839e403a49ae": {
+    "nodeId": "485:64",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A UI design system example featuring a card component with a hover state. The card is highlighted with a purple annotation circle at the bottom, indicating the area where the Shadow M hover style is applied. Callout 1 points to the card that demonstrates the hover effect, which is used to enhance interactive elements that cannot rely solely on fill color changes."
+  },
+  "57f4799e157c5e889fab4d9d638f3ada5824e49b822252fb83bfbe759828fabe": {
+    "nodeId": "7:13574",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Shadow M variant from the STIHL Design System, which is applied to elements like Toast Notifications to give them a slightly elevated appearance. The shadow helps in providing subtle visual emphasis without causing visual clutter. The example shown is a Toast Notification with a message \"You're not allowed bar & chain finders\" indicating restricted access."
+  }
+}

@@ -17,7 +17,7 @@ figmaNodeId: 8:154
 figmaVersion: "2370898144407684143"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-06-30T14:44:46Z
-syncedAt: 2026-10-27T13:40:38.603Z
+syncedAt: 2026-11-04T14:53:02.043Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=8-154
 ---
 
@@ -32,6 +32,8 @@ Overview:
 - It is possible to nest field sets, if the content thematically fit together.
 
 ![Fieldset](fieldset/fieldset-8-2331.png)
+
+_Figure: Shows annotation-panel (show bubble=true, bubble left=true, bubble right=false, color=yellow); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false); fieldset (legend=Fieldset Legend Default Style, description=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Variation: Input, size=medium, state=enabled, invalid=false); fieldset (legend=Variation: Heading Style Utility M, description=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, description). Callouts 1. Text in the figure: "Main Component", "This fieldset is a container component. The component provided in Figma is a...", "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Label", "Examples of content variations", "Variation: Input", "Variation: Heading Style M", "Variation: Radio Group", "Radio Label", "Variation: Checkbox", "Variation: Heading Style Utility M"._
 
 ### Further guidelines
 
@@ -75,6 +77,8 @@ Common components used in a fields can be:
 
 ![Anatomy](fieldset/anatomy-8-2588.png)
 
+_Figure: Shows annotation-cirlce (line=on, position=bottom); info-button (button text=Label, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); system-feedback (type=error); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); annotation-cirlce (line=on, position=right). Callouts 1, 2, 3, 4, 5. Text in the figure: "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Overall field set system feedback message", "Label", "Radio Group Legend", "Radio Label", "Checkbox Label"._
+
 ### Legend styling
 
 #### Default vs. heading style
@@ -90,6 +94,8 @@ The field set legend can be styled customary:
 
 ![Default vs. heading style](fieldset/default-vs-heading-style-8-2607.png)
 
+_Figure: Shows annotation-cirlce (line=on, position=bottom); fieldset (legend=Fieldset Legend Default Style, description=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, description). Measurements: 2px, 6px. Callouts 1, 2. Text in the figure: "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Label"._
+
 ### Spacing recommendations
 
 #### Adjusted spacing depending on content
@@ -97,6 +103,8 @@ The field set legend can be styled customary:
 **Complex field sets profit from wider spacing** to clarify structure and clearer visual hierarchy.
 
 ![Adjusted spacing depending on content](fieldset/adjusted-spacing-depending-on-content-8-2628.png)
+
+_Figure: Do example. Shows building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false). Text in the figure: "Fieldset Legend Heading Style", "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "Label", "Checkbox Label", "24"._
 
 #### Do not use compact spacing in complex field sets.
 
@@ -108,6 +116,8 @@ The checkbox group is a variation of the field set.
 
 ![Do not use compact spacing in complex field sets.](fieldset/do-not-use-compact-spacing-in-complex-field-sets-8-2681.png)
 
+_Figure: Don't example. Shows building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false). Text in the figure: "Fieldset Legend Heading Style", "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "Label", "Checkbox Label", "16"._
+
 #### Combination of input fields
 
 Do not mix ‘size small’ and ‘size medium’ input fields in one fieldset in the same viewport.
@@ -115,6 +125,8 @@ Do not mix ‘size small’ and ‘size medium’ input fields in one fieldset i
 Note: It is okay to mix sizes in different steps, in e.g. a wizard, as long as they’re not in the same step.
 
 ![Combination of input fields](fieldset/combination-of-input-fields-8-2734.png)
+
+_Figure: Don't example. Shows input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false). Text in the figure: "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Label"._
 
 ### Sizing
 
@@ -128,6 +140,8 @@ In the Figma component, the maximum width is set to the recommended 544px. ([Lin
 
 ![Maximum width](fieldset/maximum-width-3442-2932.png)
 
+_Figure: Shows fieldset (legend=Fieldset Legend Default Style, description=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, description). Text in the figure: "Content area Narrow", "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Label", "recommended max. width 544px", "Container Width"._
+
 #### Maximum width of text container
 
 To ensure good readability the maximum width of the legend text container and description text container should not exceed 476px (14px\*34 calculation based on the font size).
@@ -136,9 +150,13 @@ To ensure good readability the maximum width of the legend text container and de
 
 ![Maximum width of text container](fieldset/maximum-width-of-text-container-8-2752.png)
 
+_Figure: Do example. Shows fieldset (legend=Fieldset Legend Default Style, description=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, description). Text in the figure: "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Label", "max. 476px (14px\*34)"._
+
 Do not exceed 476px, even when the module or grid is wider.
 
 ![Maximum width of text container](fieldset/maximum-width-of-text-container-8-2772.png)
+
+_Figure: Don't example. Shows input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false). Text in the figure: "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Label", "greater than 476px"._
 
 ### Mobile behavior
 
@@ -150,6 +168,8 @@ In both cases the elements are positioned within the narrow grid, that is optimi
 
 ![Mobile behavior](fieldset/mobile-behavior-8-2811.png)
 
+_Figure: Shows building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Label, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false); building-element/select-field\_medium (Show Placeholder Text, Show System Feedback, state=default, Invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Addition to address (optional), input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Please enter the phone in the following format (e.g. +49013909023), hint, label=Phone Number (optional), input, size=medium, state=enabled, invalid=false); button (button text=Send From, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "desktop-small (1024-1535px)", "mobile (320-767px)", "Legend", "Radio Group Legend", "Radio Label", "Label", "Select", "Addition to address (optional)", "Phone Number (optional)", "Please enter the phone in the following format (e.g. +49013909023)", "Send From"._
+
 ## Content and Assets
 
 ### Simple text
@@ -159,6 +179,8 @@ In both cases the elements are positioned within the narrow grid, that is optimi
 - Test the understandability of the copy in the form at all times.
 
 ![Simple text](fieldset/simple-text-8-2877.png)
+
+_Figure: Shows input (system feedback, hint=For example: MS 170, input=XXXX  XXXX  XXXX  XXXX, hint, label=Machine number, size=medium, state=enabled, invalid=false). Text in the figure: "Machine number", "For example: MS 170"._
 
 ### Nesting fieldsets
 
@@ -172,11 +194,15 @@ Examples
 
 ![Nesting fieldsets](fieldset/nesting-fieldsets-8-2885.png)
 
+_Figure: Shows input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false); annotation-cirlce (line=on, position=right). Callouts 1, 2. Text in the figure: "Fieldset Legend Heading Style", "Label", "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._
+
 ### Required indicator
 
 The whole field set can be set to required. In order to communicate this an **asterisk (1)** is shown next to the legend. When using the code component the asterisk will be shown automatically when component is set to required.
 
 ![Required indicator](fieldset/required-indicator-8-2910.png)
+
+_Figure: Shows building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false); annotation-cirlce (line=on, position=left). Callouts 1. Text in the figure: "Fieldset Legend Default Style\*", "Radio Group", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "Label", "Checkbox Label"._
 
 ### Inline link in the description
 
@@ -185,6 +211,8 @@ A fieldset description can contain an inline link **(1)**, depending on the use-
 [Inline Links→](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=168-6140)
 
 ![Inline link in the description](fieldset/inline-link-in-the-description-8-2925.png)
+
+_Figure: Shows building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false); link-inline (label=Inline Link., variant=neutral, state=enabled, type=external link, size=text S); annotation-cirlce (line=on, position=left). Callouts 1. Text in the figure: "Fieldset Legend Heading Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Group Legend", "Radio Label", "Label", "Checkbox Label", "Inline Link."._
 
 ## Behavior
 
@@ -199,6 +227,8 @@ If a fieldset contains invalid inputs, System Feedback should be shown in two wa
 1. **Input-specific System Feedback** – messages shown next to each invalid input, explaining the exact issue.
 
 ![Fieldset Validation](fieldset/fieldset-validation-8-2374.png)
+
+_Figure: Shows system-feedback (type=error); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Label, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false); input (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Label, system feedback, input, size=medium, state=enabled, invalid=true); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "Legende", "Description (Optional) Lorem ipsum dolor sit amet, consectetur adipiscing eli...", "Overall fieldset system feedback message", "Radio Group Legend", "Radio Label", "Label", "System feedback message"._
 
 #### Overall System Feedback Variations
 
@@ -220,6 +250,8 @@ While both variations are supported, the **Notification Error Summary** is the p
 
 ![Overall System Feedback Variations](fieldset/overall-system-feedback-variations-8-2412.png)
 
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); fieldset (legend=Fieldset Legend Default Style, description=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, system feedback); notification (text=Invalid entries.  Please check the details below., anchor link 02, anchor links, type=error); fieldset (legend=Fieldset Legend Default Style, description=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend). Callouts 1, 2. Text in the figure: "Fieldset Legend Default Style", "Invalid entries in your registration form. Please check the details below.", "Identification number", "12309856709", "System feedback message", "Name", "Branch", "Invalid entries. Please check the details below.", "Identification number not recognised.", "Name is missing."._
+
 ## Examples
 
 ### Checkout form
@@ -227,3 +259,5 @@ While both variations are supported, the **Notification Error Summary** is the p
 This is an example of four following field sets, in a checkout form.
 
 ![Checkout form](fieldset/checkout-form-8-2468.png)
+
+_Figure: Shows title (title text=Order Process, size=xl, viewport=desktop); building-element-radio (label=Mr., label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (label=Mrs., label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (label=other, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Surname\*, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Name\*, input, size=medium, state=enabled, invalid=false); building-element/select-field\_medium (Show Input Text, Show System Feedback, state=default, Invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=ZIP-Code\*, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=City\*, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Street name\*, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Street number\*, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Addition to address (optional), input, size=medium, state=enabled, invalid=false). Text in the figure: "desktop-small (1024-1535px)", "mobile (320-767px)", "Order Process", "ƒ", "\*Mandatory Information", "Billing Address", "I am a business client", "Title\*", "Mr.", "Mrs.", "other", "Surname\*", "Name\*", "Country\*", "Input", "ZIP-Code\*", "City\*", "Street name\*", "Street number\*", "Addition to address (optional)", "Phone Number (optional)", "Please enter the phone in the following format (e.g. +49013909023)", "Delivery Address", "Billing Address and Delivery Adress are Identical"._

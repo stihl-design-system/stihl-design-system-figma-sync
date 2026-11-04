@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 26075:10497
-figmaVersion: "2410599903007017519"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-10-15T14:34:29Z
-syncedAt: 2026-10-27T13:35:14.194Z
+figmaVersion: "2418018269838839666"
+figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
+figmaVersionCreatedAt: 2026-11-04T14:25:56Z
+syncedAt: 2026-11-04T14:49:58.500Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-10497
 ---
 
@@ -32,7 +32,11 @@ sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-104
 
 ![Stepper](stepper/stepper-38478-3834.png)
 
+_Figure: Shows step\_1 (hint=Hint opt., label=Label, ℹ️ show hint, status=current, state=enabled, orientation=horizontal); step\_2 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=horizontal); step\_3 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=horizontal); step\_4 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=horizontal); step\_5 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=horizontal); step\_6 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=horizontal); step\_1 (hint=Hint opt., label=Label, ℹ️ show hint, status=current, state=enabled, orientation=vertical); step\_2 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=vertical); step\_3 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=vertical); step\_4 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=vertical); step\_5 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=vertical); step\_6 (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=vertical). Text in the figure: "Main Component", "Horizontal", "Vertical", "1", "Label", "Hint opt.", "2", "3", "4", "5", "6"._
+
 ![Stepper](stepper/stepper-39102-23480.png)
+
+_Figure: Shows step-inidcator (number=1, status=incomplete); step-inidcator (number=1, status=current); step-inidcator (number=1, status=complete). Text in the figure: "Building Blocks", "Step Indicator", "1", "Steps", "Alignment: horizontal", "Alignment: vertical", "enabled", "hover", "focus", "Label", "Hint opt.", "incomplete", "current", "Min width 128px", "completed"._
 
 ### Further guidelines
 
@@ -67,6 +71,8 @@ Steps are the core building blocks of the Stepper. Each step combines visual ind
 
 ![Steps](stepper/steps-39030-15018.png)
 
+_Figure: Shows annotation-circle (number=2, type=top, color=blue); annotation-circle (number=1, type=top, color=blue); annotation-circle (number=4, type=right, color=blue); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=current, state=enabled, orientation=horizontal); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=current, state=enabled, orientation=vertical); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=3, type=bottom, color=blue); annotation-circle (number=4, type=left, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "horizontal", "vertical", "1", "Label", "Hint opt."._
+
 #### Stepper
 
 The stepper serves as the container that groups all individual step elements. It visually connects the steps and communicates progress through their arrangement. Two orientation variants are available:
@@ -77,6 +83,8 @@ The stepper serves as the container that groups all individual step elements. It
 allowing the component to adapt to different viewports and use cases.
 
 ![Stepper](stepper/stepper-38478-3914.png)
+
+_Figure: Shows annotation-circle (number=1, type=left, color=blue); stepper (orientation=horizontal); stepper (orientation=vertical). Callouts 1. Text in the figure: "1", "Label", "Hint opt.", "2", "3", "4", "5", "6"._
 
 #### Pattern
 
@@ -91,6 +99,8 @@ Each step must include:
 The step controls handle step progression and validation, and are also an accessibility requirement, ensuring that keyboard and assistive technology users can move through the process.
 
 ![Pattern](stepper/pattern-39095-22140.png)
+
+_Figure: Shows stepper (orientation=horizontal); button (button text=Back, variant=outline, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Next, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=1, type=top, color=blue); annotation-circle (number=2, type=top, color=blue); stepper (orientation=vertical); button (button text=Button, variant=outline, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Button, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Callouts 1, 2, 3. Text in the figure: "horizontal", "1", "Label", "Hint opt.", "2", "3", "❖ Placeholder", "Back", "Next", "vertical", "Button"._
 
 ### State & Status
 
@@ -113,6 +123,8 @@ Similar to button behavior, each step can display the following interaction stat
 
 ![Interaction States](stepper/interaction-states-38478-5049.png)
 
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); annotation-circle (number=2, type=top, color=blue); annotation-circle (number=3, type=top, color=blue); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=completed, state=enabled, orientation=horizontal); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=completed, state=hover, orientation=horizontal); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=completed, state=focus, orientation=horizontal); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=completed, state=enabled, orientation=vertical); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=completed, state=hover, orientation=vertical); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=completed, state=focus, orientation=vertical). Callouts 1, 2, 3. Text in the figure: "Label", "Hint opt.", "horizontal", "vertical"._
+
 #### Step Status
 
 Each step also reflects its role in the overall flow using one of the following statuses:
@@ -122,6 +134,8 @@ Each step also reflects its role in the overall flow using one of the following 
 1. **Completed** The step has been successfully finished.
 
 ![Step Status](stepper/step-status-38478-5062.png)
+
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); annotation-circle (number=2, type=top, color=blue); annotation-circle (number=3, type=top, color=blue); steps (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=horizontal); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=current, state=enabled, orientation=horizontal); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=completed, state=enabled, orientation=horizontal); steps (label=Label, hint=Hint opt., ℹ️ show hint, status=incomplete, state=enabled, orientation=vertical); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=current, state=enabled, orientation=vertical); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=completed, state=enabled, orientation=vertical). Callouts 1, 2, 3. Text in the figure: "1", "Label", "Hint opt.", "horizontal", "vertical"._
 
 ### Orientation
 
@@ -133,6 +147,8 @@ The Stepper supports two layout orientations:
 > Whenever possible, prefer the vertical layout for improved flexibility and readability.
 
 ![Orientation](stepper/orientation-38478-3942.png)
+
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); stepper (orientation=horizontal); annotation-circle (number=2, type=center, color=blue); stepper (orientation=vertical). Callouts 1, 2. Text in the figure: "1", "Label", "Hint opt.", "2", "3", "4", "5", "6"._
 
 ### Sizing
 
@@ -147,6 +163,8 @@ The Stepper supports two layout orientations:
 
 ![Horizontal Orientation](stepper/horizontal-orientation-38478-5074.png)
 
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); stepper (orientation=horizontal). Callouts 1, 2. Text in the figure: "Stepper Width: fixed (aligned to Grid)", "Stepper Height: hug contents", "1", "Label", "2", "3", "Step Height: hug contents min. 46px max. 104px", "Step Width: fill container min. 128px"._
+
 #### Vertical Orientation
 
 1. **Stepper**
@@ -158,6 +176,8 @@ The Stepper supports two layout orientations:
 
 ![Vertical Orientation](stepper/vertical-orientation-38478-5111.png)
 
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); stepper (orientation=vertical). Callouts 1, 2. Text in the figure: "Stepper Width: fixed (aligned to Grid)", "Stepper Height: hug contents", "1", "Label", "2", "3", "Step Height: hug contents min. 52px max. 96px", "Step Width: fill container min. 128px max. 312px"._
+
 ### Spacing
 
 #### Distance
@@ -165,6 +185,8 @@ The Stepper supports two layout orientations:
 Regardless of orientation, the spacing between individual stepper elements is set to **4 px.**
 
 ![Distance](stepper/distance-38864-14420.png)
+
+_Figure: Shows stepper (orientation=horizontal); stepper (orientation=vertical). Measurements: 6px. Text in the figure: "1", "Label", "2", "3", "horizontal", "vertical"._
 
 ### Placement
 
@@ -180,6 +202,8 @@ Placing the stepper above the content follows the natural reading flow and is re
 
 ![Stepper above the Content](stepper/stepper-above-the-content-38918-14928.png)
 
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue). Callouts 1, 2, 3._
+
 #### Stepper beside the Content
 
 Only the **Vertical Stepper** can be placed beside the content.
@@ -191,6 +215,8 @@ Placing the stepper beside the content works well when a persistent overview of 
 
 ![Stepper beside the Content](stepper/stepper-beside-the-content-39026-14604.png)
 
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue). Callouts 1, 2._
+
 #### Placement of Stepper within the Grid
 
 Both stepper variants — **Horizontal (1) and Vertical (2)** — can be placed freely within the grid and span the number of columns required by the layout.
@@ -199,6 +225,8 @@ Choose the number of columns carefully — ensure lthe Stepper has sufficient sp
 
 ![Placement of Stepper within the Grid](stepper/placement-of-stepper-within-the-grid-39207-17402.png)
 
+_Figure: Text in the figure: "1a", "1b", "2a", "2b"._
+
 #### Placement of Step Controls (Button Group)
 
 The step controls are always placed below the content, with the **Next button on the right** and the **Back button on the left**.
@@ -206,6 +234,8 @@ The step controls are always placed below the content, with the **Next button on
 This serves as the recommended guideline but may be adjusted as needed to suit specific layouts.
 
 ![Placement of Step Controls (Button Group)](stepper/placement-of-step-controls-button-group-39207-17653.png)
+
+_Figure: Text in the figure: "Back", "Next"._
 
 ### Alignment
 
@@ -228,6 +258,8 @@ The Stepper is designed to guide users through a process within the same interfa
 
 ![Buttons](stepper/buttons-38478-5320.png)
 
+_Figure: Shows steps (hint=Hint opt., label=Label, ℹ️ show hint, status=current, state=enabled, orientation=horizontal); steps (hint=Hint opt., label=Label, ℹ️ show hint, status=current, state=enabled, orientation=vertical). Text in the figure: "1", "Label", "Hint opt."._
+
 ### Process
 
 #### Linear Flow
@@ -243,6 +275,8 @@ This approach ensures a controlled forward progression while maintaining the fle
 
 ![Linear Flow](stepper/linear-flow-38478-5344.png)
 
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); annotation-circle (number=3, type=top, color=blue); stepper (orientation=horizontal); cursor (type=not-allowed); cursor (type=pointer); button (button text=Next, variant=filled, state=hover / pressed, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Back, variant=outline, state=hover / pressed, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Next, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); annotation-circle (number=2, type=bottom, color=blue); annotation-circle (number=4, type=bottom, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "1", "Current step", "2", "Following Step", "3", "Previous Step", "❖ Placeholder", "Next", "Back"._
+
 #### Initial State
 
 When the Stepper is first displayed, the first step should be set to **“current”** by default.
@@ -251,6 +285,8 @@ This clearly indicates the starting point and provides a consistent entry for us
 
 ![Initial State](stepper/initial-state-39065-16884.png)
 
+_Figure: Shows stepper (orientation=horizontal). Text in the figure: "1", "Current step", "2", "Following Step", "3"._
+
 **Validation**
 
 #### Current Step Validation
@@ -258,6 +294,8 @@ This clearly indicates the starting point and provides a consistent entry for us
 Validation occurs when the user selects the Next button to move to the following step. If errors are detected in the current step — such as missing or invalid input — the step cannot be marked as complete. All validation and error handling take place within the corresponding fieldset or form.
 
 ![Current Step Validation](stepper/current-step-validation-39066-14525.png)
+
+_Figure: Shows top-bar (grid variant=full, breakpoint=xl, brand add-on=false, number areas=1); stepper (orientation=horizontal); notification (type=error, icon=True); building-element-radio (label=Mr., label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Mrs., label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (label=other, label, type=label, state=enabled, checked=false, invalid=false); input (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Name\*, system feedback, input, size=medium, state=enabled, invalid=true); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Phone number (optional), input, size=medium, state=enabled, invalid=false); button (button text=Back, variant=outline, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Next, variant=filled, state=disabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Secure Checkout-Process", "1", "Details", "2", "Payment", "3", "Confirmation", "Please fill in all mandatory information", "Title\*", "Mr.", "Mrs.", "other", "Name\*", "System feedback message", "Phone number (optional)", "Back", "Next"._
 
 ### Responsive behavior
 
@@ -271,6 +309,8 @@ The horizontal Stepper adapts to available screen space and adjusts its layout b
 
 ![Stepper above content](stepper/stepper-above-content-39065-17223.png)
 
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3a, type=center, color=blue); annotation-circle (number=3b, type=center, color=blue). Callouts 1, 2. Text in the figure: "3a", "3b"._
+
 #### Stepper beside content
 
 The vertical Stepper maintains a consistent orientation but adjusts its placement based on screen size:
@@ -280,6 +320,8 @@ The vertical Stepper maintains a consistent orientation but adjusts its placemen
 1. **Breakpoint S (Mobile):** The Stepper stays vertical and is placed above the content, ensuring all steps remain visible and accessible. As with the horizontal layout, it can appear as a **standard vertical Stepper (a)** or be nested **within a sticky accordion (b)** (see below).
 
 ![Stepper beside content](stepper/stepper-beside-content-39066-16793.png)
+
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3a, type=center, color=blue); annotation-circle (number=3b, type=center, color=blue). Callouts 1, 2. Text in the figure: "3a", "3b"._
 
 #### Stepper in an Accordion
 
@@ -302,6 +344,8 @@ This approach ensures that the Stepper remains accessible without taking up exce
 
 ![Stepper in an Accordion](stepper/stepper-in-an-accordion-38478-5325.png)
 
+_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=1); accordion-single (hint=\[object Object\], children=\[object Object\], hint, state=enabled, size=medium, expansion-indicator=right, expanded=false, flush=false); steps (hint=Hint opt., label=Fläche, status=completed, state=enabled, orientation=vertical); steps (hint=Hint opt., label=Steigung, status=current, state=enabled, orientation=vertical); steps (label=Hindernisse, hint=Hint opt.); steps (label=Bedienung, hint=Hint opt.); steps (label=Empfehlung, hint=Hint opt.); steps (label=Installation, hint=Hint opt.). Text in the figure: "Label", "2. Steigung", "Schritt 2 von 6", "Bild zu klein - mobile", "Warum fragen wir nach der Maximalfläche?", "Die iMOW® Mähroboter-Modelle sind für unterschiedliche Flächenleistungen ausg...", "Fläche", "2", "Steigung", "3", "Hindernisse", "4", "Bedienung", "5", "Empfehlung", "6", "Installation", "¡Mow® Berater ƒ", "1.", "0 - 250 m²", "250 - 500 m²", "500 - 750 m²", "750 - 1000 m²", "1000 - 1500 m²"._
+
 ## Accessiblity
 
 ### Focus order
@@ -317,6 +361,8 @@ This ensures a predictable and accessible navigation experience for keyboard use
 
 ![Focus order](stepper/focus-order-38488-8220.png)
 
+_Figure: Shows stepper (orientation=horizontal); stepper (orientation=vertical); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=1, type=bottom, color=blue); annotation-circle (number=2, type=bottom, color=blue); annotation-circle (number=3, type=bottom, color=blue); annotation-circle (number=4, type=bottom, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=left, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "horizontal", "vertical", "Label", "Hint opt.", "4", "5", "6"._
+
 ### Keyboard Navigation
 
 #### Keyboard Navigation
@@ -329,6 +375,8 @@ Users can interact with the Stepper using the following keyboard actions:
 
 ![Keyboard Navigation](stepper/keyboard-navigation-38488-8250.png)
 
+_Figure: Shows stepper (orientation=horizontal). Text in the figure: "Space", "Enter", "Open Step with:", "or", "Label", "Hint opt.", "4", "5", "6", "Tab", "Move to next focusable element:", "Shift", "Move to previous focusable element:", "+"._
+
 ### Step Controls (Button Group)
 
 **The Stepper should not be the only way to navigate through a multi-step process.** To ensure accessibility and usability.
@@ -339,6 +387,8 @@ This ensures that all users, including those relying on screen readers or keyboa
 
 ![Step Controls (Button Group)](stepper/step-controls-button-group-38488-8706.png)
 
+_Figure: Shows stepper (orientation=vertical); button (button text=Back, variant=outline, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Next, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "1", "Label", "Hint opt.", "2", "3", "❖ Placeholder", "Back", "Next"._
+
 ## Examples
 
 ### Checkout Process
@@ -347,11 +397,15 @@ Example of the new version of the stepper guides users through the checkout flow
 
 ![Checkout Process](stepper/checkout-process-38478-4252.png)
 
+_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=1); stepper (orientation=horizontal); local/page header (Viewport=desktop); Local/address form (state=default, version=desktop); local/button bar (button grouping=step 1). Text in the figure: "Secure Checkout-Process", "1", "Address", "2", "Payment", "3", "Confirmation", "Address information", "ƒ", "Billing Address", "I am a business customer.", "Title (optional)", "Mr.", "Mrs.", "Other", "Not specified", "First name\*", "Last name\*", "Country\*", "Postal code\*", "City\*", "Street and house number\*", "Please enter a valid street name with a maximum of 35 characters. Please note...", "Addition to address (optional)"._
+
 ### Product Advisors
 
 Example how the stepper could be adapted in product advisor tools, helping users progress through a guided sequence of questions and recommendations while showing how many steps remain.
 
 ![Product Advisors](stepper/product-advisors-38478-4262.png)
+
+_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); breadcrumb (expanded=true); steps (hint=250 - 500 m², label=Area, ℹ️ show hint, status=current, state=enabled, orientation=vertical); steps (label=Slope, hint=Hint option.); steps (label=Obstacles, hint=Hint option.); steps (label=Operation, hint=Hint option.); steps (label=Recommendation, hint=Hint option.); steps (label=Installation, hint=Hint option.); buttons (Property 1=text + icon right); radio (state=off); radio (state=on). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Home", "/", "Product Advisors", "iMow Advisor", "1", "Area", "250 - 500 m²", "2", "Slope", "Obstacles", "4"._
 
 ## Content and Assets
 
@@ -364,6 +418,8 @@ A Stepper should contain
 
 ![Number of steps](stepper/number-of-steps-38478-5386.png)
 
+_Figure: Shows stepper (orientation=horizontal). Text in the figure: "1", "Label", "Hint opt.", "2", "3", "4", "5", "6"._
+
 ### Label Wording
 
 Keep step labels short, clear, and action-oriented — **ideally one to two words.**
@@ -374,6 +430,8 @@ Avoid long phrases, punctuation, or unnecessary verbs to maintain readability an
 
 ![Label Wording](stepper/label-wording-39030-15170.png)
 
+_Figure: Shows stepper (orientation=horizontal). Text in the figure: "1", "Details", "2", "Payment Methods", "3", "Confirmation"._
+
 ### Maximum Character Count
 
 1. **Step labels** should not exceed 25 characters and should fit within two lines maximum.
@@ -383,6 +441,8 @@ Avoid long phrases, punctuation, or unnecessary verbs to maintain readability an
 
 ![Maximum Character Count](stepper/maximum-character-count-38478-4239.png)
 
+_Figure: Shows stepper (orientation=horizontal). Text in the figure: "1", "Label with a max. 25 char.", "Hint with a maximum of 48 characters", "2", "Label", "Hint opt.", "3"._
+
 ### Overflow Behavior
 
 When the number of steps exceeds the available horizontal space, the Scroller component is used to navigate between steps.
@@ -390,6 +450,8 @@ When the number of steps exceeds the available horizontal space, the Scroller co
 There is no overflow behavior in the vertical orientation.
 
 ![Overflow Behavior](stepper/overflow-behavior-38488-5564.png)
+
+_Figure: Shows stepper (overflow-right, orientation=horizontal). Text in the figure: "1", "Label", "2", "3", "4", "5", "6"._
 
 ### Don’t truncate labels
 
@@ -401,6 +463,8 @@ Whenever possible, allow labels to wrap to a second line rather than cutting off
 
 ![Don’t truncate labels](stepper/don-t-truncate-labels-39030-15199.png)
 
+_Figure: Don't example. Shows stepper (orientation=horizontal). Text in the figure: "1", "Lieferoptionen", "2", "Adressen", "3", "Zahlungsmethode", "4", "Überprüfen & Bezahlen"._
+
 ### Don’t use substeps
 
 Do not nest or layer sub-steps within a Stepper.
@@ -408,6 +472,8 @@ Do not nest or layer sub-steps within a Stepper.
 Each step should represent a single, clear stage in the overall process.
 
 ![Don’t use substeps](stepper/don-t-use-substeps-38864-15842.png)
+
+_Figure: Don't example. Shows stepper (orientation=vertical); steps (hint=Hint opt., label=2.1 Label, status=current, state=enabled, orientation=vertical); steps (label=2.2 Label, hint=Hint opt.); steps (label=2.3Label, hint=Hint opt.). Text in the figure: "Label", "2", "2.1 Label", "2.2 Label", "2.3Label", "3"._
 
 ### Don’t mix variants (with and without hint)
 
@@ -419,6 +485,8 @@ If only one step requires additional explanation, place that information directl
 
 ![Don’t mix variants (with and without hint)](stepper/don-t-mix-variants-with-and-without-hint-38882-14651.png)
 
+_Figure: Don't example. Shows stepper (orientation=horizontal). Text in the figure: "1", "Label", "2", "Hint opt.", "3"._
+
 ### Don’t use redundant labels
 
 Do not use redundant labels such as “Step 1”, “Step 2”, etc.
@@ -426,6 +494,8 @@ Do not use redundant labels such as “Step 1”, “Step 2”, etc.
 The Stepper’s visual structure already communicates order — labels should instead focus on **descriptive** names that clarify the purpose of each step (e.g Details, Payment Method and Condirmation
 
 ![Don’t use redundant labels](stepper/don-t-use-redundant-labels-39421-15638.png)
+
+_Figure: Don't example. Shows stepper (orientation=horizontal). Text in the figure: "1", "Step 1", "2", "Step 2", "3", "Step 3"._
 
 ## Stepper: Pattern
 
@@ -436,3 +506,5 @@ The Stepper’s visual structure already communicates order — labels should in
 - These pattern promote consistency across implementations while allowing for easy customization and flexibility to suit specific needs.
 
 ![Stepper: Pattern](stepper/stepper-pattern-38918-14104.png)
+
+_Figure: Shows stepper (orientation=horizontal); button (button text=Button, variant=outline, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Button, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); stepper (orientation=vertical); accordion-single (hint=\[object Object\], children=\[object Object\], hint, state=enabled, size=medium, expansion-indicator=right, expanded=true, flush=false). Text in the figure: "Above content / horizontal", "Above content / vertical", "Above content / Accordion", "1", "Label", "Hint opt.", "2", "3", "4", "5", "6", "❖ Placeholder", "Button", "Steps", "Step 1 of 6", "Beside content / vertical"._

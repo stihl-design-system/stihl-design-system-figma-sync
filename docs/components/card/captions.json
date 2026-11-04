@@ -1,0 +1,637 @@
+{
+  "00b4b34a0fd757f2c60258546a04ca3e46d2e8c1403475fb0bc382786cda3f5a": {
+    "nodeId": "47366:8349",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An Action Card component, specifically the action-card-vertical variant. This card includes a media slot at the top with medium padding and content sizing set to hug. The Accessible Label, which is mandatory, is shown as \"Charging and energy management in the STIHL AP system.\" Below the heading, there is additional descriptive text and a button labeled \"Continue with this Action.\" The Heading identifies the card and provides context for its actions, ensuring it is descriptive and meaningful out of context."
+  },
+  "04a9239da4acd20a2631bc2f02ce05ee507fcffc4971ade2aee3423e741d7b34": {
+    "nodeId": "66439:54667",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Five link-card-vertical components arranged horizontally, each with different content structures and layouts. Each card has a heading \"Charging and energy management in the STIHL AP system\" and a description starting with \"Benefit now from the expertise of our experts...\". The cards vary in their inclusion of a media area, graphic area, flags, description, metadata, and footer. The example is marked as a \"Don't\" because it mixes different content structures within a group of related cards, which is inconsistent and can hinder scanning and comparison."
+  },
+  "0836777c26f4dddee05f9c11e153a369f0450ee0721fc09916cf441b0f744231": {
+    "nodeId": "54990:22500",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a Product Card component: \"Grid View\" and \"List View\". The \"Grid View\" shows a compact layout with essential details, while the \"List View\" provides a more detailed layout with additional information. Both views include elements such as \"Promo Flag\", \"Productname\", rating \"3.5 (80)\", \"Categorie\", \"Short description of the product\", availability status \"Available now\", \"Set Price\" with original and discounted prices, a \"Compare\" checkbox, and an \"Add to cart\" button. The example illustrates a recommended content density for maintaining scannability, ease of understanding, and adaptability to smaller screens."
+  },
+  "0b2502c55660c22535ff5526fd4bd38a204c73f3599cdd6fc4f75484b9617e15": {
+    "nodeId": "55002:27988",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A product card component in list view, showing two different button text labels based on screen size. The longer label \"Add to cart\" is used when the screen width is between 765 and 540 pixels, with a maximum of 18 characters. For narrower screens, the label shortens to \"Add,\" with a maximum of 10 characters, to prevent visual compression. The example illustrates how the button text adapts to different screen sizes to maintain clarity and usability."
+  },
+  "0bb9e0cad53a15e2d61446929b225825b9a1f263ef65ae8d420c37cfc74ac923": {
+    "nodeId": "62140:18172",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A grid layout of product cards in a UI design system, demonstrating two different content sizing variants: \"hug\" and \"fill\". Each card includes elements such as product name, rating, description, availability, and price. The example marked as a \"Do\" indicates that within the same set of cards, the same media type should be used, ensuring consistency in visual presentation. The cards display various states such as \"Offer\", \"New\", and availability statuses like \"Available now\" and \"In stock within 2–3 weeks\"."
+  },
+  "0d0235ccbb8bd3576f0399c71f521641491430b089ff8f33812d464fb74c94d2": {
+    "nodeId": "66560:35321",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two orientation variants of the Card component in the STIHL Design System: Vertical Content and Horizontal Content. Callout 1 points to the Vertical Content variant, where the Media Slot is on the left, the Header Slot and Footer Slot are stacked vertically on the right, and the Supplementary Slot is below. Callout 2 points to the Horizontal Content variant, where the Media Slot, Header Slot, and Footer Slot are placed side by side, with the Header Slot taking up 2/3 of the container grid and the Footer Slot taking up 1/3, and the Supplementary Slot is below. The Figma Component Panel shows settings for padding, alignment, and content orientation for each variant."
+  },
+  "0dfc2fe396b9b053ed54525d47d9b6a19fffc8f71363d271e8a3acee93cc7eff": {
+    "nodeId": "54975:18248",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of the Link Card component: Vertical Orientation and Horizontal Orientation. Each card includes a Promo Flag at the top, a media area, heading text, description text, metadata, and footer with flags. The numbered callouts point to the Promo Flag areas (number 1) and the bottom flags (number 2) in both orientations. The cards follow shared guidelines for heading styles, graphic area sizes, image aspect ratio, and text overflow."
+  },
+  "0e758a0b65c5382c15da10fc047a5450b501809b9f30518364dc0566467ec069": {
+    "nodeId": "55296:37837",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a product-card component in list view, illustrating changes based on media query ranges. The first variant, for a media query range of 1192px to 766px, shows key specs as a bullet list with detailed descriptions. The second variant, for a media query range of 765px to 272px, condenses the key specs to reduce vertical space usage. Each product-card includes elements such as \"Productname,\" rating, \"Categorie,\" description, price, availability status, \"Add to cart\" button, and a \"Compare\" checkbox."
+  },
+  "10aee1aeec234ab8a56ee6afbc2d07f748a8b7f63aeefa4c973f2ab1bb7f8e7e": {
+    "nodeId": "55002:27538",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a product-card component: \"Grid View\" and \"List View.\" The \"Grid View\" shows a product card with content limited to three lines for both the product name and description to maintain scannability and consistent card heights. The \"List View\" allows for a description with up to six bullet points to support detailed product information and structured comparison. The text \"Max. Content Default Rule\" advises against using text-based content that exceeds three lines, except for the \"List View Description,\" which can have up to six bullet points."
+  },
+  "11db1d9c00d32a53740eca27c749dbdf70b827e16a8dd61215950052170bbc58": {
+    "nodeId": "66439:55209",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"Don't\" example of using a Selectable Card when options only require a Heading. Instead, it suggests using standard Radio Buttons or Checkboxes. The figure includes a Selectable Card with a checkbox and a Radio Button labeled \"Radio Label\". The text \"use a radio button instead\" indicates the recommended alternative."
+  },
+  "15f9be902afa7463b58ee1e50477e49be41a848d1350796993943fee63b002e2": {
+    "nodeId": "44964:12860",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Various layouts of a Link Card component from the STIHL Design System, each containing a heading and at least one additional element. The elements include media area, graphic area, description, heading icon, metadata, flags, and decorative link. Each card has medium padding and content sizing set to hug, with content orientation being vertical in some horizontal layouts. The heading is mandatory for accessibility, serving as the label for screen readers, while other elements are optional."
+  },
+  "1b6187d627ac7c43f766e99dfb8e8adc0ee3b2c17a3936016a79f817b07bdb05": {
+    "nodeId": "56949:32341",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A List variant of the Card component in a UI design system, shown in both desktop and mobile layouts. The cards include a media-area with a 4:3 aspect ratio. This layout is used when additional horizontal space is available and higher information density is required, prioritizing readability, comparison, and structured information."
+  },
+  "1bda95269d608babf2373a11121f6c4ffa2a575c87409d6c6ba0c1ea2c2c88a2": {
+    "nodeId": "48813:9929",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a link-card component with a heading icon, specifically a chevron, indicating navigation. Callout 1 points to a vertical link-card with a heading only, while callout 2 points to both a vertical and a horizontal link-card that include a heading, image, and additional content. The heading icon is used to signify that these cards lead to categories or overview pages."
+  },
+  "1ffee533e0618b60ad5b9862144c1386522a6129a2a0024e85c1a092d5e673f0": {
+    "nodeId": "44898:28733",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three layout variants of a Link Card component in a UI design system. Each numbered callout points to a different content orientation: 1 indicates Vertical Content orientation where the Media Area is on the left and the Header and Footer are stacked vertically on the right, 2 shows Horizontal Content orientation with Footer where Media Area, Header, and Footer are side by side with specific width ratios, and 3 depicts Horizontal Content orientation without Footer where the Footer is removed and the Header uses the full available content area. The Figma Component Panel shows the content orientation options: vertical, horizontal with footer, and horizontal without footer."
+  },
+  "235976536f87728e0089982b5e97854da1f8f73fe3bb518a6a2de02711c08227": {
+    "nodeId": "57309:22319",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a card component in the STIHL Design System: link-card-vertical and link-card-horizontal. Both variants use a secondary background to increase visual separation between cards and surrounding content. The link-card-vertical variant shows cards arranged in a vertical orientation with a medium padding and content sizing set to hug. The link-card-horizontal variant shows cards arranged in a horizontal orientation, also with medium padding and content sizing set to hug, and includes a vertical content orientation. Each card contains a media area, heading, description, flags, metadata, and a footer..."
+  },
+  "23b1213f7b9db55f1d1ee9a862c479d1b8b93dc61f0d75bd5331ba221dc5102d": {
+    "nodeId": "66439:55932",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Selectable-card-vertical components with a checkbox selection control, medium padding, and a media slot, illustrating various states and variants. The cards are shown in outlined and elevated styles across different states such as enabled, hover/pressed, focus, disabled, and enabled + invalid. Each state demonstrates how the card appears when selected, hovered, focused, or invalid, with visual distinctions to indicate interaction availability and selection status. The text and layout remain consistent across states, with variations in border, background color, and focus indicators to convey interactivity and selection clearly."
+  },
+  "264fc8e57d6976969dc3327b10a6e6edcf66579baa4830a57f9ee35ef9ec3e3c": {
+    "nodeId": "66439:55226",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three selectable-card-vertical components with a checkbox selection control, medium padding, and a media slot. Each card has a consistent structure: a title, a description, and a price note. The cards are laid out horizontally, demonstrating a \"Do\" example of maintaining a consistent content structure across selectable cards within the same group to support scanning and comparison. The first card is highlighted with an \"Our recommended service\" label."
+  },
+  "27532979933a8dcf7bdbc83ba270cd978e36d3ee8ade8d1f6c9ba7703df6d77e": {
+    "nodeId": "66439:55054",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A selectable-card-group component with a horizontal orientation and radio buttons for selection control. It includes a legend labeled \"Delivery Method\" and three cards: \"Pickup\" with details \"Ready in: 2 hours\" and \"Free,\" \"Delivery\" with the note \"No dealer available,\" and \"Shipping\" with details \"Arrives by: Thu, May 24\" and \"Shipping: $50.\" This example is marked as a \"Do\" because it provides a clear legend that describes what users are selecting."
+  },
+  "2d0ec50495d41d107df113f11b3e29f3300d802fa4bd1d18d9601ca0c5c02cb7": {
+    "nodeId": "66439:54759",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Selectable Card Group component in both horizontal and vertical orientations. In the horizontal orientation, cards are arranged side by side and wrap to additional rows when space is insufficient. In the vertical orientation, cards are stacked vertically and switch to a vertical layout when the container width is too narrow. The component includes a legend labeled \"Selectable Card Group Legend\" and a hint text starting with \"Lorem ipsum dolor sit amet\". The selection control is a radio button, and the component is shown in a valid state."
+  },
+  "2f61bf34b5d2eb17360294934ec0b0caf3d69ebe152843afe13c094c0d98e569": {
+    "nodeId": "54990:20583",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A grid layout of product cards on a STIHL Website Product Overview Page, showing two variants of the product-card component: one with content sizing set to \"hug\" and another with content sizing set to \"fill\". Each card includes details such as product name (e.g., \"MS 261 C-M\"), rating (e.g., \"3.5 (80)\"), product type (e.g., \"Chainsaw\"), description, availability status (e.g., \"Available now\"), price (e.g., \"11.199,00 € incl. VAT\"), and special offers (e.g., \"Save 50,00 € (14%)\"). Some cards have additional labels like \"Offer\", \"New\", or \"In-store only\"."
+  },
+  "3760c42c188a20ac197b267aa2834355597b9bf946d3b9272a1a935fa8361982": {
+    "nodeId": "66439:55155",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A vertical stepper component with a selectable-card-group labeled \"1 Gerätekategorien\" and a hint text asking users to select all relevant tool categories. The selectable-card-group includes three cards with radio buttons for selection, each representing different types of tools such as \"MSA Motorsägen,\" \"HLA Heckenschneider,\" and \"HSA Heckenscheren.\" The numbered callouts on the right side, labeled \"1\" through \"6,\" point to placeholder labels with an optional hint, indicating where additional labels and hints can be added."
+  },
+  "3b400df7944688b0e2bb84f9cd2e3ddeb1c3d2e66049dde8ae5f4799a7d16f25": {
+    "nodeId": "57176:28915",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Orientation changes for a Card component in the STIHL Design System, showing both vertical and horizontal layouts. The measurements indicate the minimum and maximum width constraints for switching orientations: \"Link Card Vertical Minimum width: 134px\" and \"Link Card Vertical Maximum width: 719px\" for the vertical orientation, and \"Link Card Horizontal Content Orientation: Vertical Minimum width: 688px\" and \"Link Card Horizontal Content Orientation: Vertical Minimum width: 859px\" for the horizontal orientation. The figure demonstrates how the card's orientation changes based on its width, independent of viewport breakpoints or content length..."
+  },
+  "3c9a53739ea9f30d0d78cc2ac328283e79b1e9dfdb90138be6cbdacafb34e734": {
+    "nodeId": "55002:26547",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A product-card component in grid view with two variants: one where rated is false and one where rated is true. The card includes elements such as \"Productname,\" \"Categorie,\" \"Short description of the product,\" \"Available now,\" price \"11.199,00 € incl. VAT,\" and a \"Compare\" option. The rating section shows \"0.0 (0)\" for rated false and \"3.5 (80)\" for rated true, demonstrating how ratings can be displayed to support user trust and influence conversion."
+  },
+  "3f7ab9ebe0c85343d1bb2076aafc5bcddd5d2d8f5c25ec49b7e7931f547a731a": {
+    "nodeId": "57309:24474",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two layouts of the link-card component: one for mobile in a vertical orientation and one for tablet in a horizontal orientation. Each card includes a media area, heading copy \"Charging and energy management in the STIHL AP system,\" description copy, metadata, footer, and flags. The cards have medium padding and content sizing set to hug. The text \"Avoid Swipe Conflicts\" indicates that swipe interactions within the card content should not conflict with gestures of the parent container, especially when cards are inside carousels."
+  },
+  "41bd46483e3962e023e6814c2ac7fe8578547ed589bdb2ae51dba9b29426f20c": {
+    "nodeId": "56651:18034",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a link-card component: vertical orientation and horizontal orientation. Each card includes a promo flag, heading, description, metadata with flags, a decorative link, and a media area. The cards are designed to be fully operable using a keyboard, meaning the entire card is a single focusable element that navigates to its destination when Enter is pressed. The padding is medium, and the content sizing is set to hug the content. The best practice is to avoid placing additional focusable elements inside a link card, ensuring all content within the card belongs to a single navigation target."
+  },
+  "439ae1cfaf33bb08c69f7e3998287c7900b9669cfaad5643bf2a9a8546679dea": {
+    "nodeId": "57166:24569",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a card component: link-card-vertical and link-card-horizontal, both in the outlined state. Each card includes a graphic area, heading, description, metadata, footer, and flags, with medium padding and content sizing set to hug. The link-card-vertical has a vertical content orientation, while the link-card-horizontal has a vertical content orientation with the graphic area positioned to the left. The text \"Promo Flag\" is shown in both cards. The circled callouts highlight areas where additional details or flags are located."
+  },
+  "43c531ebb7d14f1352a85150fa2f40ddf496df99051442d3d8c1b80812e115f3": {
+    "nodeId": "49138:47624",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of an Action Card component: \"action-card-vertical\" and \"action-card-horizontal\". Both variants include a supplementary slot, media slot, medium padding, and content sizing set to hug. The vertical orientation stacks elements vertically, while the horizontal orientation arranges elements side by side with content oriented vertically. The text \"Charging and energy management in the STIHL AP system\" and \"Benefit now from the expertise of our experts - because you deserve advice an...\" is shown within both card variants. Each card contains interactive elements such as \"Button\" and \"Accordion copy\". By default, the cards are non-interactive..."
+  },
+  "44b03c4208b460f9db467ea39ac5c6bc09e3f60d97c83f25956dfaae5837603a": {
+    "nodeId": "57309:23431",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two orientations of a Card component: Vertical Orientation and Horizontal Orientation. It shows how the Content Sizing property in Figma affects the Card's height, with options for \"hug\" and \"fill.\" The \"hug\" setting makes the card height determined by its content, while \"fill\" adapts the card to the available height. The figure includes examples of link-card-vertical and link-card-horizontal components with specified properties such as padding, content sizing, and content orientation. The Figma Component Panel indicates settings like padding and content sizing."
+  },
+  "45213c96dfeaf1a679de34ddc2db23a7bb4f9f8899f4867ae756bcd939c22e81": {
+    "nodeId": "56725:21257",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The anatomy of an Action Card component in both vertical and horizontal orientations, detailing its slot-based structure. Each numbered callout points to specific slots within the card: 1 points to the entire Card container, 2 points to the Media Slot, 3 points to the Header Slot, 4 points to the Footer Slot, and 5 points to the Supplementary Slot. The figure shows the recommended content structure for each slot, including elements like the Promo Flag, Header Slot content, Footer Slot content, and Accordion copy."
+  },
+  "45751a7320d7097f973e86dbd4641dde68a3db5ae16ca6941a4233057e4d9121": {
+    "nodeId": "47366:8418",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Selectable Card component from the STIHL Design System, specifically a product-card in grid view with content sizing set to hug. This card includes elements such as \"Promo Flag\", \"Productname\", \"3.5\", \"(80)\", \"Categorie\", \"Short description of the product\", \"Available now\", \"11.199,00 €\", \"incl. VAT\", and \"Compare\". The entire card is interactive, serving as a single selection target, and does not support additional independent interactive elements."
+  },
+  "46cbe0ad4690ec5d9cbfbf421a535f596fca4c0463eed464dc03620f8e908105": {
+    "nodeId": "66439:55897",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A vertical selectable card component from the STIHL Design System. The entire card acts as the touch target, not just the visible checkbox control. The card includes a title \"STIHL Servicing\", a description \"Includes checking device functionality, replacing parts, and cleaning\", and a price note \"Price on request\". The card has a media slot with an image at the top, medium padding, and content sizing set to hug."
+  },
+  "4a62c5a90efef1c6e2453f1707e490ce32c9ec14602d0895355237383e3204a6": {
+    "nodeId": "66680:42230",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of the \"action-card-horizontal\" component with a horizontal content orientation. The minimum width of 450px applies to minimal card variants with up to three content elements, while the maximum width is 1435px. The first card has small padding and includes a header with text and a button, while the second card has medium padding, includes an image, header text, metadata, two buttons, and an accordion."
+  },
+  "4bffa5d92d1735cc4baba60a6ec9501f456d5662fc388dad12c784b78dabdb71": {
+    "nodeId": "54990:20846",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The \"product-card\" component in a \"list view\" variant, showing two different width states. The minimum width of 272px and the maximum width of 1435px refer to the container sizes for this component. The component includes elements such as \"Promo Flag\", \"Productname\", rating \"3.5 (80)\", \"Categorie\", description text, price \"11.199,00 € incl. VAT\", availability status \"Available now\", and action buttons \"Add\" or \"Add to cart\"."
+  },
+  "4d0da8a46d18995757cff01446f26d75fdb4b5eb70f8ecb68930c2634f60abfa": {
+    "nodeId": "55243:29329",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The layout and optimization of a Product Card image container within a UI design system. The image container uses a fixed 4:3 aspect ratio, as indicated by the label \"Image Format: 4:3\". Callout 1 points to a placeholder image demonstrating this aspect ratio. Callout 2 shows current product assets in their original formats, including horizontal, vertical, and square images. Callout 3 demonstrates balanced visuals where product imagery is aligned and art-directed to appear proportionally similar, ensuring a consistent presentation across collections and grids."
+  },
+  "4f1a5341387fd5ff392bae2db26cc229df517bb31bf003fc3d0c2975ce311beb": {
+    "nodeId": "54990:22574",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two layouts, Grid View and List View, for a product card component, detailing how images behave in each. Callout 1 points to the Grid View, where images maintain a locked aspect ratio and scale proportionally to fill the card width. Callout 2 points to the List View, where images have fixed dimensions that adapt to the layout width, with supported sizes labeled as large, medium, and small, each with specific pixel ranges."
+  },
+  "55ca6b52847e8441be8c200ecc1e79693e09b48972ed39f3e022bec791698c21": {
+    "nodeId": "66439:55144",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three vertical selectable cards labeled \"STIHL Servicing,\" \"STIHL Check,\" and \"STIHL Pro Servicing,\" each with a checkbox for selection. Each card includes an image, a title, a brief description, and a \"Price on request\" button. The card for \"STIHL Pro Servicing\" has an additional label \"Our recommended service.\" The cards have medium padding and content sizing that hugs the content."
+  },
+  "565de7b2e23eaf58a75f10c965019a873bf1ed02b9b49f8e843d22ab515dce27": {
+    "nodeId": "66439:55239",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three instances of the selectable-card-vertical component, each with a checkbox control, hug content sizing, medium padding, and a media slot. Each card has a Heading that identifies the selectable option: \"Pickup,\" \"Delivery,\" and \"Shipping.\" The cards include additional text such as \"Ready in: 2 hours,\" \"Free,\" \"No dealer available,\" \"Arrives by: Thu, May 24,\" and \"Shipping: $50.\" The first card is highlighted with a bold border, indicating it is selected."
+  },
+  "576406c901c13173af7c832ac7028f2d7aca2b1ed617ee2a915591e3bb42a8e6": {
+    "nodeId": "54990:21452",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The height behavior of a card component in different layouts and states. The card component, in an outlined variant and enabled state, demonstrates how its height can either hug its content or be user-defined to fill available vertical space. The figure compares cards on their own and cards placed alongside other cards in both grid view and list view, showing how the height adjusts based on the layout and content."
+  },
+  "5a97a4de1ccc9fc27bed88aaec78928231b9bed2e863283f28271a7073e5b35c": {
+    "nodeId": "54990:21065",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The width behavior of a card component in different layouts, specifically grid view and list view. The card component shown is in the outlined variant and enabled state, featuring a media slot with an image, a button labeled \"Add to cart\" in the highlight variant and small size, and a favorites icon in the enabled and unselected state. The measurements labeled \"Fill\" indicate the width of each card within its container, while \"Container width\" refers to the total width of the container holding the cards. When a card is on its own, it can either fill the container width or have a user-defined width. When placed in a grid or list, cards evenly fill the available space."
+  },
+  "5c37bd21d8f3c70478573722507c74ae29a9fafb6f9c9cf8d1551be2f9f94d72": {
+    "nodeId": "55002:26533",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two layouts, Grid View and List View, of a product-card component. Each product-card includes elements such as a Promo Flag, Productname, rating, Categorie, a Short description of the product, availability status, price including VAT, a Compare checkbox, and an Add-to-Favorites button. The Add-to-Favorites button is shown in two states: selected: false and selected: true. The measurements refer to the container query sizes for the List View, specifically 1435 - 766px, and content sizing set to hug."
+  },
+  "5e40478a3e8769d37adf27ade6efb54893a4684724dc291af6125badd5ed5b79": {
+    "nodeId": "47366:8396",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"link-card-vertical\" component from the STIHL Design System, which is used to group related content and media. This card type includes a \"Promo Flag\" at the top, a media area with a placeholder image, a heading labeled \"Charging and energy management in the STIHL AP system,\" a description starting with \"Benefit now from the expertise of our experts,\" metadata labeled \"Metadata,\" and three \"Flag\" elements in the footer. The card has medium padding and content sizing set to \"hug."
+  },
+  "5feaa59902c5149d8bb4e815438fa9911a98706291665ffe22d6e24b461d7ea7": {
+    "nodeId": "44431:13715",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Link Cards in both vertical and horizontal orientations, showcasing their interactive states: enabled, hover/pressed, and focus. It includes outlined and elevated surface variants, with each card featuring a graphic area, heading, description, metadata, and footer. The cards are interactive by default, with visual feedback for hover/pressed and focus states, and support both outlined and elevated appearances. The padding is medium, and content sizing is set to hug. The cursor type is pointer, indicating that the cards are clickable for navigation."
+  },
+  "630abcb5587816fe514fd82968d78154351ddd397a3fc1bccd3795a4d19ba78c": {
+    "nodeId": "54990:22507",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a Product Card component: \"Grid View\" and \"List View.\" The \"Grid View\" shows a product image, product name, rating, status, and price. The \"List View\" includes all of these elements plus a description. The measurements refer to the container query range for the list view and the content sizing for both views. The text provides examples of required and strongly recommended elements for the Product Card component."
+  },
+  "674216d1b411d2a633e29f71fa563217ddbdb90df81f62c5c86936482fc4f540": {
+    "nodeId": "66439:55070",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"selectable-card-group\" component with the legend \"Delivery Method\" and a hint text. It includes three selectable cards labeled \"Pickup,\" \"Delivery,\" and \"Shipping,\" each with specific details such as \"Ready in: 2 hours,\" \"No dealer available,\" and \"Arrives by: Thu, May 24.\" The board is marked as a \"Don't\" example, indicating that the legend should not be removed from the accessibility tree when hiding it visually."
+  },
+  "6826e98a7f9299deb4cd0686b1449c19307efe8ddef5421d3565dbab1426bae9": {
+    "nodeId": "66439:55219",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A vertical variant of a selectable card component with a checkbox control and medium padding. The numbered callouts point to the following elements: 1 refers to the main content area with a title and description, 2 points to the media slot containing an image placeholder, 3 indicates a promo flag in the top right corner, 4 highlights the title and description text, and 5 points to the metadata section at the bottom with flags. The card includes additional content such as a description, media content, a promo flag, a graphic area, and metadata to help users understand, distinguish, or evaluate the available options."
+  },
+  "687231514084146c7c0cb6aa2c939cdc898d035bd00b9d0eba5cf9fd8c1bbb69": {
+    "nodeId": "55296:38098",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The responsive behavior of the product-card component in list view, showing different layouts based on screen width. Each measurement refers to the viewport width in pixels, indicating how the layout adapts within specific ranges: 1435px – 766px, 765px – 540px, 539px – 420px, and 419px – 272px. The figure demonstrates how the image and content are displayed side by side or stacked depending on the available width, optimizing for both structured comparison and readability on smaller viewports."
+  },
+  "6a16eaa1ff2103c269871f2fc4f3ebc1aa2051fccaed7503a34953c5c0656205": {
+    "nodeId": "55002:27270",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A product-card component in a grid view layout with two variants: one where the compare checkbox is unselected (Selected = false) and one where it is selected (Selected = true). The product-card includes elements such as \"Productname\", rating \"3.5 (80)\", \"Categorie\", \"Short description of the product\", availability status \"Available now\", price \"11.199,00 € incl. VAT\", and a compare checkbox labeled \"Compare\". The best practice advises against implementing the comparison functionality on mobile devices due to limited screen space, which can reduce usability."
+  },
+  "6c0b8522cf1ecdc4729695f408300523eed1efe25261c66f5844165d51ffcb6a": {
+    "nodeId": "44974:29810",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A section of the STIHL Career page titled \"Stellenangebote\" featuring a list of job openings presented as Link Cards. Each Link Card is a horizontal component with a heading, description, flags, footer, medium padding, content sizing set to hug, and a horizontal content orientation with a footer. The top of the page includes a top-bar in the grid variant for the main breakpoint without the brand add-on, and a nav-bar in the main variant for the main breakpoint. The cards include job titles such as \"Praktikum Group Compliance Management\" and locations like \"Waiblingen\" and \"Dieburg."
+  },
+  "6c36c0fb8d36589294c25ea33ddaf85cfcb4cbb8b5d9cd4faa1999e8e5ccffab": {
+    "nodeId": "47366:8361",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of an Action Card component: one with a vertical orientation and the other with a horizontal orientation. Both variants include a supplementary slot, a media slot, medium padding, and content sizing set to hug. The vertical orientation has content arranged in a column, while the horizontal orientation arranges content in a row with vertical content orientation. The text elements include a \"Promo Flag,\" a title \"Charging and energy management in the STIHL AP system,\" descriptive text, \"Metadata,\" \"Flag,\" \"Button,\" and \"Accordion copy.\" The documentation advises against overcrowding the card to maintain scannability and adaptability to smaller screens."
+  },
+  "6c80477cb82607dd5e268ecf5aca2e7a8c142299966347cb0bbae23bf4981b08": {
+    "nodeId": "55296:40755",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A product-card in grid view layout with content sizing set to fill. The product-card includes a \"Promo Flag\", the Product Name \"MSA 300 ohne Akku und Ladegerät\", a rating of \"3.5\" out of 5 with \"80\" reviews, a \"Categorie\" label, a \"Short description of the product\", an \"In-store only\" label, and a price of \"11.199,00 € incl. VAT\". The Product Name is mandatory and serves as the accessible label for screen readers, ensuring the card’s destination is clearly described."
+  },
+  "6cfe005cf02199034ea8d1ed9f1957eabf03f462cf11afc46cd9ff23b0e2c9bb": {
+    "nodeId": "66560:36325",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two padding variants for card components in a UI design system: Medium (default) and Small. Callout 1 points to the Medium padding variant, which has a bottom padding of 24px, while callout 2 points to the Small padding variant, which has a bottom padding of 16px. The 32px measurement refers to the bottom padding of the Medium horizontal card. These padding options are used to adapt to different content densities and layout contexts, such as content-rich layouts for Medium and compact layouts like dashboards for Small."
+  },
+  "72b5603c97d5cdac496c929b6ae7510b6b8d5a6c5c739a830b2771e95a694519": {
+    "nodeId": "54990:22034",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Different layout contexts for Product Cards in the STIHL Design System, including Standalone, Grid, and Carousel views. Each numbered callout points to examples of these views: 1 points to the Standalone view, 2 points to the Grid view, 3 points to the Carousel view, and 4 points to the List view. The components shown include card surfaces, media slots, round indicators, buttons, and favorites icons, each in various states and sizes. The layouts demonstrate how Product Cards can be used in different browsing and decision-making experiences."
+  },
+  "72ec8c294f47e5378ec31fba455dac877e6a91ce19a35d0d6e49276041307491": {
+    "nodeId": "47366:8408",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An Action Card component variant named selectable-card-vertical. This card includes a checkbox control, content sizing set to hug, medium padding, and a media slot. The card features a promo flag, a title \"Charging and energy management in the STIHL AP system,\" a description, metadata section, and three flags labeled \"Flag.\" The layout is vertical with interactive elements such as buttons or accordions for explicit user actions."
+  },
+  "742a9a6f9e097862cd74f1038cb97481dc251c805314d923b76a86e382bcaf57": {
+    "nodeId": "66439:54841",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A selectable-card-group component in a horizontal orientation, showing its layout at two different breakpoints: Breakpoint XL and Breakpoint M. The cards are spaced dynamically based on the active Variable Mode, not the container width. Each card includes a radio button for selection, a title \"Charging and energy management in the STIHL AP system\", and a description starting with \"Benefit now from the expertise of our experts - because you deserve advice an...\". The legend above the cards reads \"Selectable Card Group Legend\" and includes a hint text starting with \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...\"."
+  },
+  "747709a5e55337205fa11c196b92aa70950503f279abf15d1707ec3006c36640": {
+    "nodeId": "66439:54458",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The sizing and constraints of a Selectable Card Group component, demonstrating how it adapts to the width of its parent container. Callout 1 points to the Selectable Card Group evenly distributing within a row and filling the available space. Callout 2 shows the cards respecting their defined minimum width of 186px, while callout 3 indicates the cards reaching their maximum width of 719px and remaining left-aligned within the group. The labels \"fill\", \"container width\", \"fill (max.719px)\", and \"fill (min.186px)\" refer to the flexible sizing constraints of the cards within the group."
+  },
+  "76bde9a99165908dde6ba6846f12cf1f3bd5ac16b3225f6fa28fcdb73c335a8a": {
+    "nodeId": "66439:54694",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of the Selectable Card Group component: Radio and Checkbox. Each variant shows four cards in a horizontal layout, with the Radio variant allowing single selection and the Checkbox variant allowing multiple selections. The Radio variant has one card selected, indicated by an orange dot, while the Checkbox variant has three cards selected, indicated by checkmarks. Each card contains the text \"Charging and energy management in the STIHL AP system\" and a hint text \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\" The legend text \"Selectable Card Group Legend\" is shown above the cards."
+  },
+  "772cacef6a9ae7caad4aedf0bbb1490a73ec2d317cf118f3f0e48e0a3b5511d3": {
+    "nodeId": "66439:55115",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three Checkbox Selectable Cards in a horizontal layout, each representing a selectable-card-vertical component with a checkbox selection control, medium padding, and a media slot. The cards are labeled \"Charging and energy management in the STIHL AP system\" and include additional text and flags. The first card is highlighted to indicate it is focused. The text explains that the Tab key moves focus between the cards, and the Space key toggles the selection state of the focused card. Arrow keys do not navigate between the cards."
+  },
+  "783b15546e94e4fbfa9fcda4f7d7aa0cd9d43c3a324c827620d968a9635a4c2e": {
+    "nodeId": "64762:38167",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Selectable Card Group component, showcasing both horizontal and vertical orientations with radio and checkbox controls. It displays various states such as valid and invalid, and includes elements like system feedback messages and promo flags. The measurements refer to properties like content sizing, padding, and the presence of media slots. Each card variant is labeled with specific attributes such as control type, content sizing, padding, and content orientation."
+  },
+  "79b637a8706e25f8612416c544f685b18d2b40217c0c03de3dd0c060948260cb": {
+    "nodeId": "66560:37174",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The link-card-vertical component with varying heading styles labeled as headline s, headline m (default), headline l, and headline xl. Each card contains the same text: \"Charging and energy management in the STIHL AP system\" as the heading and \"Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances.\" as the description. The cards have medium padding and content sizing set to hug."
+  },
+  "7afbd98d52a977d860b0ea274aadd5a04652e71acba571537473cb35cf59adc9": {
+    "nodeId": "54990:20824",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A product-card component in a grid view layout, showing both minimum and maximum width constraints. The minimum width of 148px refers to the smallest size the card can be resized to while maintaining functionality, and the maximum width of 719px refers to the largest size the card can be resized to. The card includes elements such as \"Promo Flag\", \"Productname\", rating \"3.5 (80)\", \"Categorie\", \"Short description of the product\", \"Available now\", price \"11.199,00 € incl. VAT\", and a \"Compare\" checkbox."
+  },
+  "7bbdbe4345c9038dd64e420f2ffb6f64da19b8baec0261c82a30f27200a55180": {
+    "nodeId": "66439:55402",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The anatomy of a Selectable Card component in both vertical and horizontal orientations, detailing its structure and various slots. The numbered callouts point to specific parts of the card: 1 indicates the Card Container, 2 points to the Control Indicator, 3 highlights the Media Slot, 4 refers to the Header Slot, and 5 indicates the Footer Slot. The figure also shows different states and content sizing options, such as the checkbox selection control and the hug content sizing, with medium padding and a media slot included."
+  },
+  "7e9ce83133c83f4d473c110add515b666c4d2b63729615cc104da7ad50663458": {
+    "nodeId": "54990:22517",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Grid View layout of a product card component with two media types: Image and Carousel. Callout 1 points to a product card displaying a single Image, while callout 2 points to a product card displaying a Carousel with multiple images. Each product card includes the product name, rating, availability status, and price labeled as \"11.199,00 €\"."
+  },
+  "7f822c9486ad84bdab930cfdde152df54b72ef0a8a615dbc681b2795bba73e93": {
+    "nodeId": "66560:37612",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Different variants of the Card component with a Media Slot, illustrating various aspect ratios for both vertical and horizontal orientations. The measurements 16:9, 4:3, 3:4, and 1:1 refer to the aspect ratios of the images within the cards, indicating how much visual emphasis is placed on the image versus the content. The vertical orientation cards include ratios 16:9, 4:3, and 3:4, while the horizontal orientation cards include ratios 3:4 and 1:1. Each card contains a title \"Charging and energy management in the STIHL AP system,\" descriptive text, and two buttons labeled \"Button."
+  },
+  "7fd211133f15a961fe8007d0e72ee30762a6c6131363e2fbdf7b4bdb7f4a3b4a": {
+    "nodeId": "66560:37760",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of an action card component: a vertical layout labeled with annotation-circle number 1 and a horizontal layout labeled with annotation-circle number 2. The vertical layout demonstrates text overflow with a heading truncated to three lines and metadata truncated to two lines, as indicated by the \"Figma Sidebar\" settings. The horizontal layout shows a full view of the content without truncation. The text examples illustrate proper text sizing and wrapping within the specified limits for headings, descriptions, and metadata."
+  },
+  "8100e1d9d1b2dc9816758beca8a6283c533b80474a7180df0a7fc57201beb0e2": {
+    "nodeId": "66439:55915",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a vertical Selectable Card component: one with a Radio selection control and the other with a Checkbox selection control. Both cards have a \"Promo Flag\" at the top, an image placeholder, a title \"Charging and energy management in the STIHL AP system,\" a description starting with \"Benefit now from the expertise of our experts,\" and a section labeled \"Metadata\" with tags labeled \"Flag.\" The cards have medium padding and the content size is set to hug the content. The cursor type is pointer, indicating interactivity. The entire card acts as a single selection target, changing its selection state when clicked or tapped."
+  },
+  "8219e060c635a138737f43df0b8d9cad7dd3d0058138fcbd702d8295a464e6ce": {
+    "nodeId": "64762:37030",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Various layouts and states of a \"Selectable Card Horizontal\" component from the STIHL Design System. It shows cards with different content orientations (vertical and horizontal with footer), padding sizes (medium and small), content sizing (hug and fill), and control types (checkbox and radio). Each card includes a media slot, a promo flag, a title, a description, metadata, and flags, illustrating how these elements are arranged based on the specified parameters."
+  },
+  "823677c0eaa9f9bc0a47ea125d59e42cd113a074ff2fea99bb6a52be4adf21be": {
+    "nodeId": "56949:32326",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A standalone card component in two different layouts, one for a desktop and one for a mobile device. The card includes a placeholder for an image with an aspect ratio of 4:3, labeled as \"image\" and \"media-area\". This variant is used to highlight a single card that requires focused attention, suitable for featured content, high-priority information, or isolated tasks or actions."
+  },
+  "83358c06c462466d2e5058bd0a759e7e4a9b5325c0a666cb5d7ee1a394e5e4e1": {
+    "nodeId": "47366:8402",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Link Card component from the STIHL Design System, specifically the \"action-card-vertical\" variant. This card includes a \"Promo Flag\" at the top, a media slot with an image, a title \"Charging and energy management in the STIHL AP system,\" a description, metadata section with \"Flag\" labels, two \"Button\" elements, and an \"Accordion copy\" section at the bottom. The card is designed for navigation, where the entire card acts as a single link to another page or destination. The layout has medium padding and content sizing set to \"hug."
+  },
+  "84d2e1e64eeae410764355451de681e48c2b19fa8cad877e8deefdbeb4ecb8f5": {
+    "nodeId": "44961:12404",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Various styles of a Decorative Link component used in a UI design system. It shows different combinations of variants (filled and ghost), sizes (medium and small), and icon positions (none, left, right). Each button is labeled with its specific configuration, such as \"filled medium\" for a filled variant with a medium size and no icon, or \"ghost small\" for a ghost variant with a small size and an icon on the right."
+  },
+  "84e3cdc46ca1f355b0ebd5153f5058adf6e16b1b27b874678482653fd0b62237": {
+    "nodeId": "66439:54413",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The anatomy of a Selectable Card Group component in a horizontal layout, highlighting its structure and various elements. Callout 1 points to the legend labeled \"Selectable Card Group Legend,\" which identifies the group's purpose. Callout 2 points to the optional info button, which opens additional information. Callout 3 indicates the hint text, providing supporting guidance. Callout 4 shows the system feedback message area, and callout 5 points to the individual selectable cards within the group, each containing a promo flag, title, description, metadata, and flags. The group includes four selectable cards with radio buttons for selection, and the group is marked as invalid."
+  },
+  "8587f3815d2cdeb145bda8599cd5d8dbafafce57ebc5f175e1d88cafd8132caa": {
+    "nodeId": "66560:37472",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two orientations of an action card component: Vertical Orientation and Horizontal Orientation. The numbered callouts point to specific areas within these orientations: callout 1 highlights the Promo Flag area, callout 2 indicates the Top Flags area, and callout 3 marks the Bottom Flags area. The figure demonstrates how the Flag Elements, including the Promo Flag, Top Flags, and Bottom Flags, are positioned within the action card for both vertical and horizontal layouts."
+  },
+  "85ac7e1688a8906851aaf617f8e09d4e1cc54ea478358a337a4abdecfce6ba9e": {
+    "nodeId": "56821:19622",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An action-card-vertical component with a vertical layout, featuring a supplementary slot, a media slot, medium padding, and content sizing set to hug. The card includes a title \"Charging and energy management in the STIHL AP system\", a description \"Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-perf...\", two buttons labeled \"Button\", and an accordion element labeled \"Accordion copy\". The figure emphasizes that action cards must be fully operable using a keyboard, with interactive elements independently focusable and following the visual reading order..."
+  },
+  "889b9d5722e0083e6823fc0021771870d70ae3140ae181c86e468c7023611ec5": {
+    "nodeId": "66439:55302",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A vertical orientation selectable-card-group with four selectable cards, each containing an image, text, and a radio button for selection control. Each card includes a title and description, with the images following shared card image proportions. The group is labeled \"sägen und schneiden (6)\" at the top. The text next to the figure advises consistent use of images within the same selectable card group and notes that mixing cards with and without images can reduce visual consistency and comparability."
+  },
+  "88f738d7d5ddc8f3c3eab141f05a54728955a44325ccc4308f34bf755fd0280a": {
+    "nodeId": "47366:8368",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An action-card-vertical component with padding set to medium and content sizing set to hug. It includes a heading that reads \"Charging and energy management in the STIHL AP system\" and a button labeled \"Button text.\" The heading is mandatory for accessibility, serving as the label for screen readers, while the button is an example of an action element."
+  },
+  "89fa0a49659d24d481b4e5b77ddebb7a20e4b605ecef5c065aedd95265bcd720": {
+    "nodeId": "55002:27739",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two product-card components in a grid view layout with different price-related elements. Callout 1 points to the product name, callout 2a points to the set price, callout 2b points to the original price, callout 3 points to the save amount and percentage, callout 4 points to the VAT information, and callout 5 points to the discounted price. The components illustrate price variations, including set price, discounted price, and VAT information, to support flexible pricing scenarios and maintain a consistent user experience across STIHL platforms."
+  },
+  "8c84e42155f87f1174deb8ad380c7f895dc2e3de5d3c717c379cfbdafefd536f": {
+    "nodeId": "66439:54725",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a selectable-card-group component: one using radio buttons and the other using checkboxes, both in an invalid state with a horizontal orientation. The radio group is labeled \"Radio\" and indicates an error message \"Select an option\" because no option is selected. The checkbox group is labeled \"Checkbox\" and shows an error message \"Select no more than 3 options\" because the selection exceeds the defined maximum. Each card within the groups has a title \"Charging and energy management in the STIHL AP system\" and a subtitle \"Benefit now from the expertise of our experts - because you deserve advice an...\"..."
+  },
+  "8fccc17fa54ea2d4fdde2ff3289da0cada9b707358093d13cf493d44778409b8": {
+    "nodeId": "57309:23770",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Card component in the STIHL Design System, demonstrating both vertical and horizontal orientations. It shows how the card stretches to fill the available vertical space defined by its container, with the header anchored to the top and the footer to the bottom. The figure includes examples of content sizing set to \"fill,\" ensuring consistent card height across items, which is useful for grids or structured collections to improve visual alignment, readability, and comparison. The Figma Component Panel indicates settings like padding set to \"medium\" and content sizing set to \"fill,\" with an option for content orientation set to \"vertical."
+  },
+  "90122fd740068490d3351eccd27d4023ade60b216099372168f94b28285d5c65": {
+    "nodeId": "66680:42184",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The vertical orientation of a card component in a UI design system, specifically the action-card-vertical variant. The minimum width of 134px is for minimal card variants with up to two content elements, while the maximum width is 719px. The figure shows two examples: one with a small padding and hug content sizing, and another with medium padding and hug content sizing, both including a media slot and supplementary slot."
+  },
+  "902f21d7b1908af6d289f5179884abf96176c0018010ca507ef2f7912e425d75": {
+    "nodeId": "55180:25794",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A product card in list view layout from the STIHL Design System. The numbered callouts indicate specific elements within the card: 1a points to the Media Slot containing an Image and a Battery Logo, 1b points to the Header Slot, 2 points to the Promo Flag, 2a points to the Product Name, 2b points to the Rating, 2c points to the Product Category, 2d points to the Description, 2e points to the Footer Slot, 3 points to the Price Information, 3a points to the Status, 3b points to the Add-to-Cart Button, 3c points to the Add-to-Favorite Button, 3d points to the Compare Checkbox, and 3e points to the Compare Checkbox label..."
+  },
+  "90e84755467539f5f3d23ba3879d6687e56c9d870fbf448feba8fbb8b6ea59ef": {
+    "nodeId": "66439:55199",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a Selectable Card component in a vertical layout. The first card includes a checkbox control, a heading, and description text, while the second card includes a checkbox control, a heading, and an image. Callout 1 points at the checkbox control, callout 2 points at the heading, and callout 3 points at the additional element, which is either description text or an image. The cards demonstrate the minimum number of elements required for a Selectable Card, which are a control, a heading, and at least one additional element to provide context."
+  },
+  "91e5767cb793c7dc63f749f5d9cfa846ac9cd96a35cd468956e83d59d8818875": {
+    "nodeId": "48944:13201",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Various layouts of an Action Card component, specifically the \"action-card-vertical\" and \"action-card-horizontal\" variants. It illustrates two main layout options: \"Non-stretch (default)\" and \"Stretch,\" each showing different configurations of buttons within the card's footer slot. The cards include elements such as headings, flag elements, graphic areas, and text overflow, with buttons that either wrap or stretch based on available space. The \"Non-stretch\" layout shows buttons keeping their intrinsic width and wrapping when space is insufficient, while the \"Stretch\" layout shows buttons stretching to fill available space..."
+  },
+  "952b235fcb85fe9b3dc9bff82465a08e32d63fb6272e8c37aba71fdb056262ac": {
+    "nodeId": "66560:35291",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two orientation variants of a Card component: Vertical Orientation (Default) and Horizontal Orientation. Callout 1 points to the Vertical Orientation, where slots are stacked vertically, and callout 2 points to the Horizontal Orientation, where slots are arranged horizontally. Each orientation includes a Media Slot, Header Slot, Footer Slot, and Supplementary Slot. The Figma Component Panel shows the component names xx-card-vertical and xx-card-horizontal, with settings for padding and content sizing."
+  },
+  "978e659f0631a4c70e23a06e1985c01427b9344bd39133c91c7063d14aa4a74f": {
+    "nodeId": "44431:13650",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The anatomy of a Card component in both vertical and horizontal orientations. Each numbered callout points to specific parts of the card: 1 points to the Card Container, 2 points to the Media Area, 3 points to the Header, and 4 points to the Footer. The vertical orientation includes detailed annotations for the Promo Flag, Media Content, Graphic Area, Heading, Description, Metadata, and Decorative Link, while the horizontal orientation shows a similar structure but laid out horizontally."
+  },
+  "983f4cdec3b8b6eceb155ade34df64157b61e6cdc066282b36c6760fe63a2163": {
+    "nodeId": "54975:19134",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Card component on the My STIHL Website Product Details Page. It includes three product price cards with different availability statuses: \"Available now,\" \"In stock within 2-3 weeks,\" and \"Out of stock.\" Each price card shows a price and an orange arrow button. Below the price cards, there is a section for scheduling service appointments and a list of service protocols with PDF icons and creation dates. The service appointment section includes a photo of a technician, a description, a next service date, and two buttons labeled \"Make an appointment\" and \"Set or change reminder.\" The service protocols section lists two protocols with titles and creation dates."
+  },
+  "99b9668ece397bc1eb5cc30c79eaffd8913e899d0db5ea3ec400a53119fa049b": {
+    "nodeId": "66560:37239",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A vertical card component labeled as selectable-card-vertical with a checkbox control, content sizing set to hug, medium padding, and a media slot. The card contains an image with the text \"Our recommended service\", a heading \"STIHL Pro Servicing\", a description \"Ensures safety compliance, preventive parts replacement, and thorough cleaning\", and three buttons labeled \"Flag\". The board is marked as a \"Don't\" example because it uses uppercase text, which reduces readability and scannability."
+  },
+  "9b6a4b94337c5a169968a3b915985fcd35314ab6213ffd303257ec45a005d883": {
+    "nodeId": "57285:25731",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A product-card component in a grid view layout with two variants, illustrating keyboard navigation. Each variant shows the same product-card with elements such as \"Promo Flag\", \"Productname\", \"3.5\", \"(80)\", \"Categorie\", \"Short description of the product\", \"Available now\", \"11.199,00 €\", \"incl. VAT\", and \"Compare\". The callouts indicate the focusable areas, including the heart icon, rating stars, price, and compare button, demonstrating the focus order and accessibility requirements for secondary actions."
+  },
+  "a1927760e18dbc0aef2dc7880bbcebe617eb13b16d6e4ec5ed02c14ffe820e57": {
+    "nodeId": "66560:37291",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"link-card-vertical\" component with two different sizes of a Graphic Area, which is a placeholder for images. The measurements 32px and 48px refer to the dimensions of the Graphic Area, both of which use a 1:1 aspect ratio. The component includes a heading titled \"Charging and energy management in the STIHL AP system\" and a description starting with \"Benefit now from the expertise of our experts\"."
+  },
+  "a1c98ec44787e0362e54fa0bf5a5512e4d0f47922aa0e48834abe6b69feb77f4": {
+    "nodeId": "44615:15160",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Link Card component variant named link-card-vertical. It includes a mandatory Accessible Label as the Heading, which is \"Charging and energy management in the STIHL AP system.\" The component has a description that reads, \"Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances.\" The card has medium padding and content sizing set to hug. The Heading provides a clear and descriptive name for screen readers, ensuring the card is accessible."
+  },
+  "a34168f14b9c9126c8d2364b5605b9e5ab344d75d0b5c36846e3b729e1a3dbb8": {
+    "nodeId": "61290:16722",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Product-card components in both grid view and list view layouts, illustrating different states based on the presence of battery logos: no logo, one logo, and two logos. The grid view shows content sizing set to hug, while the list view shows content sizing set to fill within a container query range of 1435 to 766 pixels. Each card includes elements such as Promo Flag, Productname, rating, Categorie, Short description of the product, availability status, price including VAT, a Compare checkbox, and an Add to cart button. Battery logos, when present, are positioned in the top-left corner of the card within the Media Slot."
+  },
+  "a4cd24c4c740d33d909963f8704f249829edd0a339ab6e5eef836bd771e22aa9": {
+    "nodeId": "66439:55886",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a selectable-card-vertical component, illustrating the \"Focus\" and \"Selected + Focus\" states. The \"Focus\" variant shows a card with a focus indicator, while the \"Selected + Focus\" variant shows a card with both a selection indicator and a focus indicator. The cards have a medium padding, hug content sizing, and include a media slot. The text next to the figure explains that focus and selection communicate different states and must remain visually distinguishable, with the selected styling not replacing or obscuring the focus indicator."
+  },
+  "a95e79f1556a21a9c92d4ed51977ef997e2adf10a4cab0576c73631feb658bbd": {
+    "nodeId": "55193:27720",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a product card component in a grid view layout. Callout 1 points to a product card where the product name \"MS 261 C-M\" is separate from the category \"Chainsaw.\" Callout 2 points to a product card where the product name \"MS 261 C-M Chainsaw\" combines both the product name and category. Each card includes details such as rating \"3.5 (80)\", description \"Powerful for chopping firewood\", availability \"Available now\", price \"11.199,00 € incl. VAT\", and an option to \"Compare\"."
+  },
+  "a9b491778148f9b028a4d7ea57e804061f56a8a11089751863a171ca27f0e93b": {
+    "nodeId": "44431:13753",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The vertical orientation layout of a Link Card component named link-card-vertical. This layout stacks the fixed content areas vertically, including a Media Area, Header, and Footer, with medium padding and content sizing set to hug. The Figma Component Panel shows the component's properties, including options to toggle the Footer on or off."
+  },
+  "ab16750f72201929fe120f0830571e3d7ac2452baa6d245e58e3a4841c8eda11": {
+    "nodeId": "66439:55734",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two vertical selectable cards, one with a media slot and one without. The default minimum width for the vertical selectable card with a media slot is 186 pixels, while the global minimum width for cards without images is 134 pixels. The reduced minimum width should only be used for cards without images to prevent the selection control from covering too much of the image."
+  },
+  "ac5030b594591a66c83d876b895c62b96d53508cb7d10216dc3f8904b36288c3": {
+    "nodeId": "56949:32336",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A carousel component with a layout of four cards, each containing a media-area with a 4:3 aspect ratio. There are two round buttons, one in a disabled state and the other in an enabled state, both of small size and filled variant. The scrollmarker labeled 6=false indicates the absence of a scroll marker. The carousel is designed for horizontal browsing, allowing users to explore content without displaying all items at once."
+  },
+  "ac71cdf7ca2b823fff55384dd687999fb084311a0af8ed1e9e5920c368240ba8": {
+    "nodeId": "55272:30240",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Product Card component in a grid view layout with content sizing set to \"hug.\" The numbered callouts point to specific elements on the card: Callout 1 points to the \"Promo Flag,\" Callout 2 points to the \"Productname\" and \"Categorie,\" and Callout 3 points to the \"Short description of the product.\" The card includes interactive elements such as \"Add to Cart,\" \"Add to Favorites,\" and \"Compare,\" which perform actions without navigating to the Product Detail Page. The card also displays the price \"11.199,00 € incl. VAT\" and the availability status \"Available now."
+  },
+  "adc15535f795664a50f0d3944110bda693904c171346c50deb31119ddd7eaf95": {
+    "nodeId": "44615:15179",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a Link Card component: one in vertical orientation and the other in horizontal orientation. Both variants include a Promo Flag, media area, heading titled \"Charging and energy management in the STIHL AP system,\" a description, metadata with flags, a decorative link, and a footer. The decorative link is visually indicated with a pointer cursor, reinforcing that the entire card is clickable and navigates to another destination. The horizontal variant has medium padding, content sizing set to hug, and content orientation set to vertical. The decorative link is used to enhance the recognition of the card's clickability..."
+  },
+  "aea4936f6d5c111dca852c2c04f9f6a58a3cfc0e9ceb482eb11b727127544e5b": {
+    "nodeId": "66439:54809",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A \"selectable-card-group\" component in a horizontal orientation with a legend titled \"Selectable Card Group Legend\" and a hint text. Callout 1 points to the first group of cards with two layout helpers visible, while callout 2 points to another group of cards with one layout helper visible. The layout helpers, labeled \"📐 layout helper 1\" and \"📐 layout helper 2,\" ensure that cards maintain their size when wrapping, especially when card positions remain empty."
+  },
+  "af51f0321a8c7b53b369553b894124ed56e198487ac4ec5fc52ec140220b5d4d": {
+    "nodeId": "66439:55867",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three selectable-card-vertical components, each with a checkbox selection control, medium padding, and a media slot. Each card includes a heading, description, and price information. The headings are \"STIHL Pro Servicing,\" \"STIHL Servicing,\" and \"STIHL Check,\" which serve as the accessible names for the underlying checkboxes. The first card has an additional label \"Our recommended service.\" The content sizing is set to hug, meaning the content determines the size of the card."
+  },
+  "afa93e13c7f6a7d6ef87005567125860334e114debc0b22ef32b57bd97dbecd3": {
+    "nodeId": "55161:21932",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The product-card component in list view, showing two different layouts: one for desktop and one for mobile. The desktop layout is optimized for a container query between 1435px and 766px with content sizing set to fill, while the mobile layout is for a container query between 419px and 272px with content sizing set to hug. Each card includes elements such as \"Promo Flag,\" \"Productname,\" rating, \"Categorie,\" description, price, availability status, \"Add to cart\" button, and a \"Compare\" checkbox. The list view is designed to increase information density, support side-by-side evaluation, and is best suited for detailed product comparison and decision-making."
+  },
+  "b020dda74fd06c81b26938eda1f30964cf6287a69550ddaf2c5da39bdc3719e7": {
+    "nodeId": "66439:55879",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A selectable-card-vertical component with visible focus. The Card has a checkbox for selection control, medium padding, and includes a media slot at the top. The focus indicator highlights the entire Card, indicating which option currently has keyboard focus. The text \"Focus\" at the top signifies the focus state, and the Card includes content such as \"STIHL Check\" and \"Price on request\". The focus must remain visible in all states, including when the Card is selected or invalid."
+  },
+  "b0c18890d15ee91a7e8faf1498b6342110118bb480a34b47045d0968877218a0": {
+    "nodeId": "44615:15227",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a Link Card component: one with a vertical orientation and the other with a horizontal orientation. Each card includes a Promo Flag, Media Area, Graphic Area, Heading, Description, Metadata, Flags, and a Decorative Link. The vertical orientation card is laid out with elements stacked vertically, while the horizontal orientation card arranges elements side by side. The Heading is mandatory for accessibility, serving as the label for screen readers. The cards demonstrate the maximum number of elements allowed, including up to six Flags and two lines of Metadata."
+  },
+  "b45d6f0e802d62b8cabbe927189343d0b94b9ffbde629af3519fc6a68b734284": {
+    "nodeId": "66439:54431",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two orientations for the Selectable Card Group component: Horizontal and Vertical. In the Horizontal orientation, Selectable Cards are arranged side by side, each using a Vertical layout to support comparison. In the Vertical orientation, Selectable Cards are stacked one below the other, each using a Horizontal layout. Both orientations use radio buttons for selection control and include a legend and hint text labeled \"Selectable Card Group Legend\" and \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\" respectively. Each card contains an image, title, description, metadata, and flags."
+  },
+  "b966fb0e5c95aba5186cdcd51c16572ef22231d1c6dd58b4f16365a7918852da": {
+    "nodeId": "57292:24205",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of an Action Card component: \"Vertical Orientation\" and \"Horizontal Orientation.\" Each variant includes a header slot with a heading copy \"Charging and energy management in the STIHL AP system,\" a description copy \"Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances,\" a graphic area, and flags at the top. Both variants have a supplementary slot, media slot, medium padding, and content sizing set to hug. The vertical orientation has content orientation set to horizontal, while the horizontal orientation has it set to vertical..."
+  },
+  "c09212793af5b1adec578cffab48b27088ba4c757a3dd259f4ba9b8d86ca45e4": {
+    "nodeId": "66680:42207",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a card component with horizontal orientation and vertical content layout. The minimum width of 292px is for minimal card variants with up to two content elements, while the maximum width is 1435px. The first card has a small padding and includes an image, text labeled \"Management,\" and a \"Button.\" The second card has a medium padding and includes an image, a heading \"Charging and energy management in the STIHL AP system,\" a subheading starting with \"Benefit now from the expertise of our experts,\" two buttons labeled \"Button,\" and an accordion element labeled \"Accordion copy."
+  },
+  "c0fd5f15dcfa2a979baba3ab3088f9c181cc35532df47986fa8097e9b8e756d3": {
+    "nodeId": "54990:22427",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The responsive behavior of the product-card component in both grid view and list view across different breakpoints: Breakpoint XL, Breakpoint L, Breakpoint M, and Breakpoint S. Each breakpoint demonstrates how the product-card scales responsively within the available grid layout, maintaining defined minimum and maximum widths, and ensuring product imagery and content scale proportionally. The product-card includes elements such as the Promo Flag, Productname, model number (e.g., 3.5), customer rating (e.g., (80)), Categorie, Short description of the product, availability status (Available now), price (e.g., 11.199,00 € incl. VAT), and a Compare option."
+  },
+  "c4f4d274857e6898c6472b758d536fc7db2233442d4619e76e4696e869e23116": {
+    "nodeId": "66439:55095",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The keyboard navigation for the selectable-card-vertical component in the STIHL Design System, which uses checkboxes for selection control, hugs content sizing, has medium padding, and includes a media slot. It shows three Radio Selectable Cards with the focus moving between them using the arrow left or arrow right keys, automatically selecting the focused option. The text describes how navigation works, specifying that arrow keys move focus between cards and replace the previous selection."
+  },
+  "c5cdb988af46d13c2759eb89b9b5bbd90ca7be782411c4e2c52b12f1b24b7e1b": {
+    "nodeId": "48944:13226",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of an action card component: one with vertical orientation and one with horizontal orientation. Both variants include a supplementary slot, a media slot, medium padding, and content sizing set to hug. The vertical orientation shows the action card with an accordion component that expands vertically to reveal additional content when activated. The horizontal orientation shows the action card with an accordion component that expands to the right to reveal additional content. The text \"Charging and energy management in the STIHL AP system\" is used as an example title, and \"Button text\" and \"Button\" are placeholders for action buttons..."
+  },
+  "c790484c1d4ee199df76a5437e0951da0e34f9490c6481a18a987ebd9905aac1": {
+    "nodeId": "55296:40861",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A list view of product cards for STIHL iMOW lawn mower robots on the STIHL website. Each product card includes details such as the product name, rating, price, availability, and specifications. The layout is designed for a container query between 1435 and 766 pixels, with content sizing set to hug the container. The product cards shown are for iMOW® 4, iMOW® 3, and iMOW® 6, each with varying specifications and prices."
+  },
+  "c861a725f144149350e1f344bb7b6d761f3ac22c037d6b9d6fe59efb887d1d2c": {
+    "nodeId": "54990:20630",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The anatomy of a product card component in Grid View, illustrating the available elements and their positioning. The numbered callouts indicate specific areas: 1 points to the Media Slot, which can be an Image (i) or Carousel (ii), 2 points to the Product Information section including Promo Flag, Productname, Rating, Product Category, Description, and Status, and 3 points to the Footer Slot containing Price Information, Add-to-Cart Button, and Compare Checkbox. The annotations highlight different parts of the card, showing how elements are positioned within the Grid View layout."
+  },
+  "c8f9c83b83a6aba76272d05105a18ba807723a291141c0641802613ae84fe627": {
+    "nodeId": "62140:18182",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A grid layout of product cards, illustrating two different content sizing variants: \"hug\" and \"fill.\" The \"Don't\" example shows a mix of different media types within the same set of cards, which is incorrect because it leads to inconsistent presentation. Each card contains elements such as product name, rating, description, availability, and price, with specific cards labeled as \"Offer,\" \"New,\" or having special notes like \"In stock within 2–3 weeks\" or \"In-store only."
+  },
+  "d0e69695e665d21019a9fc2fbcc7942c732f4a3fd25394952971e7cd001c48d0": {
+    "nodeId": "64762:37057",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Various configurations and states of a \"Selectable Card\" component from the STIHL Design System. It includes different aspect ratios for images such as 16:9, 4:3, and 1:1, and shows components like the \"graphic-area,\" \"flag,\" \"card-surface,\" \"media-slot,\" and \"building-element-radio.\" Each layout demonstrates how these elements are arranged within the card, including header and footer slots, and different states like enabled, hover, disabled, and invalid for the radio control. The measurements refer to the size of graphic areas and aspect ratios of image placeholders. The figure also highlights the use of flags with labels like \"Flag\" and \"Promo Flag,\" and their respective colors."
+  },
+  "d1460a3b649462c503c89d9e75d09ccfe7a96b2de95940d895fa5aa3f53cc137": {
+    "nodeId": "67169:48192",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Figma property panel of the Selectable Card Component, specifically the selectable-card-xx variant. It shows various configurable properties such as control type, content sizing, padding, and media slot, as well as internal properties labeled \"⛔️ Internal (do not modify)\" which should not be altered. The example is marked as a \"Don't\" because it demonstrates properties that are internally managed and should not be modified to ensure the component functions correctly."
+  },
+  "d45bde31995e39a7e1f5bb3a0d505b0430a0a5ad4f7faba93c076241fc7c319c": {
+    "nodeId": "64762:37015",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Various layouts and states of a Selectable Card component from the STIHL Design System. It shows cards with and without a media slot, different content sizing options (hug and fill), and two control types (checkbox and radio). The figure illustrates padding variations (medium and small) and demonstrates how the entire card acts as an interaction target, with no additional interactive elements like buttons or accordions. Each card structure includes a footer slot and is shown in an enabled, unselected, and valid state. The \"Promo Flag\" and \"Charging and energy management in the STIHL AP system\" text are used as examples within the cards."
+  },
+  "da04300a30b78ce5415834ad7c9c356017f72c51875e397273a5f0a98d393121": {
+    "nodeId": "66439:54867",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The placement of the Selectable Card Group component within different Grid Content Areas. Callout 1 points to the Main area, which is used for spacious layouts. Callout 2 points to the Narrow Left area, which is used for more compact layouts. Callout 3 points to the Two Thirds area, commonly used when a Stepper is positioned to the left or right of the main content."
+  },
+  "da9e3a2759421962a427c95a7069bc1924161799c1a54e4878efeb330672f26d": {
+    "nodeId": "62140:17233",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A comparison between two layouts of a product card component: \"List View\" and \"Carousel\". The numbered callout 1 points at the \"List View\" layout, which supports images only and is optimized for product comparison and decision-making. The numbered callout 2 points at the \"Carousel\" layout, which is crossed out to indicate it is not supported. The \"List View\" layout includes elements such as \"Productname\", rating \"3.5 (80)\", \"Categorie\", description text starting with \"Lorem ipsum dolor sit amet consectetur.\", price \"11.199,00 € incl. VAT\", availability status \"Available now\", \"Add to cart\" button, and a \"Compare\" checkbox."
+  },
+  "dcb1cf97c138a73234ab983b0202a1c5695cd02148727d7d1cf8671f1634463d": {
+    "nodeId": "57309:21214",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a card component in the STIHL Design System: link-card-vertical and link-card-horizontal. Both variants include a media area, heading, description, flags, metadata, and footer. The link-card-vertical variant is shown in a horizontal layout with medium padding and content sizing set to hug, while the link-card-horizontal variant is shown in a vertical layout with the same padding and content sizing. The text \"Primary Background\" indicates that by default, cards should be placed on a background color labeled as primary."
+  },
+  "e500dc8555133e846f9156b23839a9dc9188769781877098acc8e11830600ce4": {
+    "nodeId": "54990:20903",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two layouts for Product Cards: Grid View and List View. Callout 1 points to the Grid View, which shows cards with larger heights to emphasize product imagery, and callout 2 points to the List View, which shows cards with compact heights to maximize information density. Both views illustrate consistent heights within their respective collections, with the Grid View supporting varied heights based on content and image proportions, and the List View preferring consistent heights for efficient comparison."
+  },
+  "e673322b325df722fa955bace53cf26864c751ac93cb3efbfce3c5bec1f741aa": {
+    "nodeId": "56949:32331",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A grid layout of card components, each containing a media-area with a 4:3 aspect ratio. The grid layout is shown on both a desktop and a mobile device, demonstrating how multiple cards are arranged in a structured collection. The layout supports scanning, comparison, and efficient use of available space, making it suitable for content collections, dashboards, product listings, and overview pages."
+  },
+  "e72ea7c8df053a18023962a337baa5ce611e195ff90029a2646cc0134f5a3767": {
+    "nodeId": "66439:55139",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A selectable-card-group component for choosing a delivery method during the checkout process on the STIHL Website. This component includes three radio buttons labeled \"Pickup,\" \"Delivery,\" and \"Shipping,\" arranged horizontally. The \"Pickup\" option is selected and indicates it is ready in 2 hours for free, while the \"Delivery\" option is unavailable, and the \"Shipping\" option arrives by Thursday, May 24, with a cost of $50."
+  },
+  "e9eca575edb272a275afe5beed70df0dc3da3ea77bd57188c4c2f2e348018df5": {
+    "nodeId": "66439:55376",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Correct and incorrect usage of interactive content within cards in a UI design system. The \"Don't\" example shows a card-surface with an outlined variant and enabled state, containing a switch labeled \"Label\" which is incorrect because a switch should not be used in place of a control for selection. Instead, the correct usage is shown with a selectable-card-vertical using a radio button or checkbox for selection, and an action card with a checkbox labeled \"Checkbox Label\". The layout includes a media slot with a 16:9 aspect ratio, a header slot with descriptive text and heading, and a card-button-group..."
+  },
+  "ede69654eb77b0d124f63b5d4bc66469fb82d2a4563e8eb9d0e0f8b4632d07c9": {
+    "nodeId": "54990:20687",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Product Card component in a grid view layout, showing both desktop and mobile variants. The grid view emphasizes product imagery with reduced information density, including elements like Promo Flag, Productname, rating, Categorie, a short description, availability status, price including VAT, and a Compare checkbox. The grid view is optimized for browsing and exploratory experiences, supporting quick scanning across multiple products."
+  },
+  "ef2adbfb41b9cdd2ad120f0ffed954ac737ce052455f1c93c542391850582259": {
+    "nodeId": "66439:55846",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a Card component: one with a radio button and another with a checkbox. Each card has a label \"Charging and energy management in the STIHL AP system\" and additional text describing benefits. The radio button card includes a \"Radio Label\" and the checkbox card includes a \"Checkbox Label.\" The radio button and checkbox preserve their native semantics and states, ensuring that the card presentation does not alter the expected behavior of these controls."
+  },
+  "f26f3962da88131adf99a27bc0309d81a6f7044cf9f8d63923ccfbe37b6c10c7": {
+    "nodeId": "57166:24630",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a card component in an elevated state, which includes a shadow to visually highlight the cards. The first card is a vertical link-card with a heading \"Charging and energy management in the STIHL AP system,\" a description, metadata, and flags. The second card is a horizontal link-card with the same heading and description, also including metadata and flags. Both cards have a medium padding and content sizing set to hug. The text \"Promo Flag\" is shown on both cards."
+  },
+  "f634425dbefe3778f7c25c83158dfba4202870c113fc1cb1bc4cbe281a51662a": {
+    "nodeId": "44615:15304",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A grid of Link Card Vertical components used in the Corporate STIHL Journal to showcase editorial articles. Each Link Card Vertical includes a media area, description, footer, and has medium padding with content sizing set to either hug or fill. The layout features a top-bar in the grid variant with two areas and a nav-bar in the main variant, both at the xl breakpoint. The text elements include headings, descriptions, and flags within each card, with navigation options like \"Search Site,\" \"Contact,\" and \"English\" in the top-bar."
+  },
+  "f66020d36c3436657d2497a8efc0096d4354ea391f91240caa0daa8a8d1eabe2": {
+    "nodeId": "55002:26554",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A grid layout of product cards, each representing different product availability statuses: \"Available\", \"Out of stock\", \"In stock soon\", and \"In store only\". Each card includes elements such as \"Productname\", rating, category, short description, price, and a \"Compare\" checkbox. The status labels indicate the product's availability, with recommendations to include a \"Notify me\" button for \"Out of stock\" or \"In stock soon\" products to allow users to receive updates."
+  },
+  "f7be44d35cfeca92c994a120b90772212f12ee13326a9c7544b2ae729480814a": {
+    "nodeId": "66439:55263",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a selectable card component: one with a vertical orientation and the other with a horizontal orientation. Each card includes a checkbox for selection control, a promo flag, a heading titled \"Charging and energy management in the STIHL AP system,\" a description providing additional information, metadata, and three flag labels. The vertical orientation has content sizing set to hug and medium padding, while the horizontal orientation has content sizing set to hug, medium padding, and a vertical content orientation."
+  },
+  "ffae76e7dae4f824778c6fcf73904eb352b4b93c2d2c3640bf3ab6f14fed9585": {
+    "nodeId": "66439:55024",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a selectable-card-group component with a legend labeled \"Delivery Method.\" The first variant shows the legend as visible by default, while the second variant shows the legend hidden but still accessible to screen readers. Each card within the group represents different delivery options: \"Pickup,\" \"Delivery,\" and \"Shipping,\" each with its own details and selection control via radio buttons. The legend provides context for the selection field and is programmatically associated with all selectable cards."
+  }
+}

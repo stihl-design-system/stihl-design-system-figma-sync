@@ -1,0 +1,212 @@
+{
+  "07fb7dff55beccee612d55954e3f7bd443bc4f97e6b031c3bbaad6832302b57c": {
+    "nodeId": "17993:7605",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with a medium size, non-flush layout, and expansion indicators positioned to the right. It includes four sections labeled \"Length\", \"Drive link gauge\", \"Saw chain pitch\", and \"Guide bars\", each with a dropdown arrow, and the \"Length\" section shows a value of \"120cm\". The hint area can be used to provide additional content or functions related to the accordion's sections, or to display status information such as filter settings or sorting rules."
+  },
+  "085c8e5281695dd68bdce57e23dcd01f985aaedea20a6d5ae012f8f84aea450b": {
+    "nodeId": "17351:12563",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The closing animation of an accordion component in the STIHL Design System. The accordion-single component, in a medium size with the expansion indicator on the right, transitions from an expanded to a collapsed state. The animation involves three key actions: the content area height reduces from 100% to 0%, the opacity of the content within the content area fades from 100% to 0%, and the chevron icon rotates clockwise from 180° to 0°. The duration of this animation is 250ms with an easing function labeled motion-functional-ease-in."
+  },
+  "1325ef3a32874dbd7b6156d32b45ec00ba0ccde640122436058413e6c3f53f50": {
+    "nodeId": "26774:5677",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in a medium size, with the expansion indicator positioned to the right and in a non-expanded state. It includes four filter list items labeled \"Category\", \"Price\", \"User Groups\", and \"Area of usage\", with \"Category\" showing \"5\" and \"Area of usage\" showing \"10\" as number indicators. The number indicators show how many filter items are selected within each category."
+  },
+  "19c92f95e0e6d1be2d1aeab9f5b5db1192f7cd37978fe9a0f0f4231688ad0d7a": {
+    "nodeId": "18814:10559",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Three size variants of an accordion component: medium, small, and extra-small. Each variant is shown with a flush value of false and an expansion indicator on the right. The text \"Summary of the accordion content\" is used to represent the content summary for each accordion item in all three sizes."
+  },
+  "1a22d4f3736bed8016eeaf6a06697b38f2dedcf2cb16ee0e8a853751fb21e64f": {
+    "nodeId": "17260:2348",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An Accordion component with three sections, each in an open state. Each section contains a header with a dropdown arrow and a content area that can include various layouts such as single large items, two smaller items side by side, or three smaller items in a row. The text mentions that any layout can be used within the content area, including data tables, images, and forms, and emphasizes the importance of ensuring the content is easily findable and usable."
+  },
+  "246697832fb7cf4482ecf8d8ca9116f40bca839410a88e971c9d59cc3048a6ea": {
+    "nodeId": "17993:7585",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in a vertical layout on a mobile viewport. It shows multiple accordion elements in a closed state, demonstrating how they appear in a list. The text emphasizes keeping the list overview clear on mobile, avoiding long lists that exceed the viewport when closed, and ensuring easy navigation between open and closed accordions."
+  },
+  "285325ea363f23b31fa086b6ba264c8060f749093d03e9ba63a3bb7fa1565d8a": {
+    "nodeId": "26774:5692",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with two variants, both in the enabled state and medium size, with the expansion indicator on the right and not expanded. The first variant includes a subtitle or hint and a number indicator, while the second variant only includes the number indicator. The example demonstrates a \"Don't\" by combining the number indicator and hint, which is advised against to avoid overcrowding the component and keeping the visual load low. The text labels include \"Category\", \"5\", \"Hint with a subtitle\", \"Price\", \"User Groups\", and \"Area of usage\"."
+  },
+  "2d348a65b2d28f25ff3aa8527ea25f1f4767ad2c98cb182d9966b5745f1fcf61": {
+    "nodeId": "17462:2282",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An example of the Accordion component in the content-heavy layout type, marked as a \"Do\" example. It includes at least three accordions with a headline above them. This layout is recommended for conveying the purpose of the accordion group effectively."
+  },
+  "457e184ca1da2fe6d568062836a63f7c0664c5172a3ba33a4c99e12efcf010ca": {
+    "nodeId": "17993:7595",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component used for filtering options within a drawer. It includes various buttons with different variants, states, and sizes, such as a ghost button, a filled button labeled \"Show results (34)\", an outline button labeled \"Clear selection\", and a number-indicator. The layout features a search bar at the top, a list of filter categories like \"Length\", \"Drive link gauge\", \"Saw chain pitch\", and \"Guide bars\", along with navigation links and product information for the MS 180 chain saw. The number-indicator \"34\" next to \"Show results\" indicates the count of filtered results. The \"Clear selection\" button is disabled, suggesting no filters have been applied yet."
+  },
+  "4666b0271a6be53b947847b5f8cceb0781bee253ae8d75121fb06ed2005d6266": {
+    "nodeId": "17993:7600",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in a medium size, with the expansion indicator on the right, and it is not expanded or flush. The accordion is used in a content article for a step-by-step guide titled \"Content articles: Use accordions for step-by-step guides and other lists with additional details.\" Each numbered callout points to a step in the guide: \"01. Bretter zurechtsägen,\" \"02. Teile ölen,\" \"03. Seitenteile zusammenschrauben,\" \"04. Rahmen verschrauben,\" \"05. Aussteifungen anbringen,\" \"06. Latten anschrauben,\" \"07. Erste Seitenwand festschrauben,\" \"08. Bodenleiste festschrauben,\" \"09. Zweite Seitenwand festschrauben.\" The text next to \"02. Teile ölen\" reads..."
+  },
+  "497221909170dae3fa61f6c647372aa332a1567e9281b017d01fcffaef7b910a": {
+    "nodeId": "17268:2465",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in the enabled state, medium size, with the expansion indicator positioned to the right, and it is not expanded or flush. The text \"Summary of features and fixes\" is shown as an example of accessible copy for the accordion header. The accessible copy guidelines recommend keeping summaries and hints short and simple, avoiding abbreviations, and ensuring the header text is understandable."
+  },
+  "4ab86c9be9d8cd6568f7129aef0969f139aef4bcbe1242af831108700332d27a": {
+    "nodeId": "17645:7620",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two instances of an accordion component in the medium size, with the expansion indicator on the right. The first accordion is in the enabled state, while the second is in the hover state, both are not expanded and not flush. The hover animation for the accordion involves a fade effect, changing the background color opacity from transparent to hover over 100 milliseconds with linear easing. The text \"Summary of the accordion content\" is shown on both accordion components."
+  },
+  "4c962ad49734dae49f763eb6db2824cad6cc364fd64cc337893e4b9b53dc63e4": {
+    "nodeId": "18443:16974",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in a medium size, with the expansion indicator on the left, not expanded, and not flush. The accordion displays a warning message \"Some required fields are left empty\" above the accordion summary titled \"Summary of the accordion content\". This is marked as a \"Don't\" example because it shows system feedback above the accordion element, which is advised against in the design system guidelines."
+  },
+  "522f88e99a512241a39402d92730f500baf50f7735b009340113a04b659b8809": {
+    "nodeId": "17611:7090",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in the STIHL Design System, specifically the medium variant. It illustrates extra spacing for drawers, showing measurements for the top and bottom spacing to ensure a sufficient click area. The layout includes a list of filter and sort options on the right side, with each option having ample space around it. The example demonstrates proper spacing to enhance readability and usability, ensuring users can skim and read the titles faster."
+  },
+  "5b06ec092fca473da0d1ac8faf4b5ece941f8b6f192b3e8bad7a3ffbae2597fe": {
+    "nodeId": "18443:6402",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with the variant \"accordion-single\" in an enabled state, medium size, and right expansion indicator. It is not expanded and is not flush. The header area includes two icons: one for system feedback of type error and another indicating a connected status. The accordion contains sections labeled \"Smart connector\", \"Details\", \"Documents\", \"My dealer\", and \"Technical informations\", with additional information such as \"SN: 9834657865\" and \"Connected\" under \"Smart connector\". The design guideline suggests using the custom hint area for additional information and limiting the header area to a maximum of two icons to keep it simple and reduce visual clutter."
+  },
+  "608a02a419cbdb256a81d5571a4a236c5bb05457fcafd1b1d01bc28db7dbb7f7": {
+    "nodeId": "17268:2455",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The opening animation of an accordion component in the STIHL Design System. It shows two states of an accordion-single component, one collapsed and one expanded, both in the enabled and medium size with the expansion indicator on the right. The animation involves expanding the height of the content area from 0 to 100%, fading the opacity of the content in the content area from 0 to 100%, and rotating the chevron from 0° to 180° counter-clockwise. The duration of the animation is 250ms with an easing type of motion-functional-ease-out, which also applies to the icon rotation."
+  },
+  "63d0513bf6bdda182177aae46c27407ce7afe16f55ff82eb3d8101268f17a9b3": {
+    "nodeId": "18722:8816",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An \"expandable section,\" a variant of the single accordion component. The accordion is in an enabled state, medium size, with the expansion indicator positioned to the left of the title and is not expanded. The title is short, and the content area is extended. The example is marked as a \"Do\" because it correctly places the icon on the left of the title for an expandable section with a short title and extended content area. The text \"Technical details\" is shown as the title of the accordion."
+  },
+  "6da4493f09893d96f6a21e40648ecc6f85a68ac9886e217e9fa1034aebec227b": {
+    "nodeId": "18443:19280",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with three header recommendations, each demonstrating different text styles and layouts. Callout 1 points to \"Text M Bold\" with a subtitle \"Hint with a subtitle,\" showing a medium-sized accordion with a subtitle and an enabled state. Callout 2 points to \"Text M Bold long accordion title that breaks in to two lines,\" illustrating a bold text title that spans two lines, also in a medium-sized, enabled state. Callout 3 points to \"Heading L,\" which is a large heading kept short, in a medium-sized, enabled state. The recommendations suggest using \"Text M\" with a subtitle for clear hierarchy, \"Text M bold\" for titles with a maximum of two lines..."
+  },
+  "7f2a076be45549535e3d063fd3fe2e09b0e9d39d8f552fea43a34a63dae67eae": {
+    "nodeId": "18443:9645",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An edge case of an accordion component in a notification layout. It includes a close-button of variant ghost, state enabled, size small, with no icon and hidden label, aligned flush. The accordion-single is of state enabled, size medium, with the expansion indicator on the left, not expanded, and flush alignment. There are two buttons: one labeled \"Update now\" of variant outline, state enabled, size small, and not flush aligned, and another labeled \"Update later\" of variant ghost, state enabled, size small, and not flush aligned. The notification text mentions that a new update is required, including essential features and fixes, with options to view a summary of features and fixes..."
+  },
+  "81eda12935330bc7c3090f10683ef5d2c435cf3f655c2e5a52926db63b3a055c": {
+    "nodeId": "17260:2298",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Accordion single component in a UI design system, displaying various sizes (medium, small, extra-small) and states (enabled, hover, focus) with different expansion indicators (right or left, flush or not, expanded or not). Each measurement refers to the size of the accordion component. The text \"Summary of the accordion content\" indicates the area for the summary or title, while \"❖ Placeholder\" marks the custom hint area for additional text, icons, badges, or tags. The do's and don'ts mention that important information should not be placed in the content area and that images are not allowed in the custom hint area."
+  },
+  "85e8da6b6afae79deaa01b487db9e89f92d2dead36b943d4933d8a3c27e773b8": {
+    "nodeId": "17993:7590",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with three sections, where the first section is open and the others are closed. The open section is labeled \"01. Teile ölen\" and contains text instructions. The other sections are labeled \"02. Seitenteile zusammenschrauben\" and \"03. Rahmen verschrauben\". The accordion is in the medium size, has the expansion indicator on the right, is not flush, and is in the enabled state. The open first accordion provides users with an immediate sense of the available information, improving clarity and encouraging interaction."
+  },
+  "8db08ca9824289884d65a1ed6100fd2a885dcb69f49ea7bb3e4f41600587987f": {
+    "nodeId": "18842:13688",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An example labeled \"Don't\" for the Accordion component in a content-heavy layout type. It illustrates a single accordion in a text-heavy layout, which is advised against. The text next to the figure emphasizes avoiding this design choice to prevent overlooking crucial information."
+  },
+  "8fa75525be539496aedce3c8abaa31e2becfcb8434d2d3709e4f6a42de50d5e4": {
+    "nodeId": "18443:9640",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An Accordion component in a SaaS (Software as a Service) layout. It shows multiple collapsible sections with visible and hidden content, controlled by the user to manage interface visibility. The accordion includes expand and collapse indicators, with some sections expanded and others collapsed to reduce visual clutter."
+  },
+  "a676328c3c37e8563a93a1034e89599b58eecfaa36dac91de54c1a680c0597ea": {
+    "nodeId": "17351:12519",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with a custom hint area, showing two accordion items. The first callout points at a content-placeholder within the accordion, indicating where icons, badges, and flags can be placed. The second callout highlights a system-feedback element labeled \"Connected.\" The text \"Title of accordion\" is used for both accordion headers, and the first accordion contains a placeholder text \"❖ Placeholder - Replace this content."
+  },
+  "a689c3eed45f8648e0de280a87ca789e578265b0938a1823cb1e0af8428f8d74": {
+    "nodeId": "18428:22298",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An example of nested accordions, which is marked as a \"Don't\" example. It includes two accordion-single components, one with the expansion-indicator on the right and the other on the left. The first accordion is not expanded and contains another accordion within its content, demonstrating improper nesting. The text \"Don't nest accordions\" indicates that nesting accordions within other accordions is not allowed."
+  },
+  "a773425ff221c19e2478346af2fad67a1c3c60c210a876ccb01c478d81ea2665": {
+    "nodeId": "35782:5263",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A sidebar navigation component with an accordion in two states: expanded and collapsed. The accordion is labeled \"Fleet Management\" and contains items such as \"Equipment,\" \"Connected Hub,\" and \"Energy Evaluation.\" When expanded, the \"Equipment\" section reveals \"Filtered lists\" with options \"List 1,\" \"List 2,\" \"List 3,\" and an \"Add filtered list\" button. The collapsed state shows a condensed view of these items. The numbers indicate the count of filtered lists."
+  },
+  "aa0ac1302d426aaebf0b232c4569fdade6b6a8745e28128697d07d64c59d2c80": {
+    "nodeId": "17993:7543",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in its default closed state. Each accordion item has the text \"Summary of the accordion content\" and an expansion indicator on the right. The accordion-group is of medium size, not flush, and allows more than one accordion to be open simultaneously."
+  },
+  "aa7009a894c1e95afdc64939a9150d3ae8eb48a4d40ae8274187a866d1a1d81a": {
+    "nodeId": "18428:22228",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The minimum width requirements for the accordion component in the STIHL Design System. Callout 1 points to an accordion labeled \"first quarter,\" which is used on viewports 1024px or larger, such as on a desktop or large tablet. Callout 2 points to an accordion labeled \"first third,\" which is used on viewports smaller than 1024px, such as on a mobile phone, tablet, or in a split screen. Each accordion contains multiple \"Accordion summary\" items with expansion indicators on the right."
+  },
+  "ad67271be0973d203864dcd802ec82f1f23b4e8ad6f7343c80699a6122ab5c25": {
+    "nodeId": "18428:22293",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion-group with a combination of medium and small accordion elements, labeled \"Accordion Element M\" and \"Accordion Element S\" respectively. The accordion elements are laid out vertically with expansion indicators on the right. The example is marked as a \"Don't\" because it combines small and medium accordions in the same group, which is not recommended."
+  },
+  "afda8a4f0b5ccef17fc9b98c38ab6a691e68855d2ab731a140f3ffff60b9f477": {
+    "nodeId": "36292:38568",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The layout of an accordion component, highlighting the recommended maximum text width. The measurement \"font size x 34em\" refers to the maximum width for text elements within the accordion to ensure proper formatting. The text \"Summary of features and fixes Lorem ipsum dolor sit amet consectetur.\" is shown within the accordion to demonstrate the text width constraint, and \"accordion width\" indicates the overall width of the accordion component."
+  },
+  "b1496c9de0adab4f92cc3adb296832a545b11b52fb1adaae4a37a89bb48181ea": {
+    "nodeId": "17351:11042",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with flush alignment, used in a filter panel. The panel includes an accordion-group with items such as \"Length\", \"Drive link gauge\", \"Saw chain pitch\", and \"Guide Bars\". There are two buttons: a primary button labeled \"Show results (34)\" and a secondary button labeled \"Clear selection\". The primary button is enabled and filled, while the secondary button is disabled and outlined. The layout is designed for smaller spaces like side drawers or sidebars, ensuring better text alignment with other content elements."
+  },
+  "b465cdafd642d3098564b60220cd9f33814509627844f768ee49ec527ab1e2b1": {
+    "nodeId": "17301:2507",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion group component with five accordion items, each separated by a divider border. The first callout points at the expansion indicator located to the right of the \"Summary of the accordion content\" text. The second callout points at the number \"2\" indicating the second accordion item. The component is of medium size, not flush, and has the expansion indicator positioned to the right."
+  },
+  "b674e80a805d58ab35aa12c2f47986ca0148a0967e424650cee07e4dc87780e9": {
+    "nodeId": "17351:6880",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with two accordion items, both in the enabled state and medium size. The first accordion item is expanded and includes a header with the text \"Summary of the accordion content,\" a hint with a subtitle \"Hint with a subtitle,\" and an expansion indicator shown as a caret on the right. The second accordion item also includes a header with the same text, an expansion indicator shown as a caret on the right, and a number indicator \"123.\" Callout 1 points to the expansion indicator, and callout 2 points to the content area labeled \"Placeholder.\" The annotations \"a,\" \"b,\" \"c,\" and \"d\" indicate specific parts of the accordion items, with \"d\" marking the number indicator."
+  },
+  "d1f58190dc77ae8373cb56046704403878fef433d32f8b37543c173741609f7f": {
+    "nodeId": "18443:6348",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with three headers, each demonstrating different text heading styles. The numbered callouts point to the following: 1 points to \"Text M Bold\" with a subtitle \"Hint with a subtitle,\" 2 points to \"HEADING M UPPERCASE,\" and 3 points to \"Heading lorem ipsum dolor sit amet.\" The text explains that using \"Text M\" with a subtitle in bold does not guarantee a clear hierarchy, uppercase text may not be legible for all users, and \"Heading L\" should not be too long to avoid covering two lines. Each accordion header is in an enabled state, medium size, with the expansion indicator on the right and not expanded."
+  },
+  "d9c1690f3dda4086b56b5edcad51a248988a155aecbf803738a7473b8ca60e76": {
+    "nodeId": "35782:2824",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in its minimized state, with four sections labeled \"Category\", \"Price\", \"User Groups\", and \"Area of usage\". The accordion is of medium size, has the expansion indicator on the right, is not expanded, and is not flush with its surroundings. The text mentions that using an orange highlight as a minimal selection indicator is not recommended because it is typically reserved for important notifications or alerts, and combining it with a number indicator in the same section should be avoided."
+  },
+  "de021a8a86f031c28f3556b222125eb684228adbca055f334083c1bdb2d43f63": {
+    "nodeId": "26774:5710",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component with a number indicator, in an enabled state, medium size, and right-aligned expansion indicator. The accordion is not expanded and is not flush with its container. The number indicator is marked as a \"Don't\" example because the content is static and cannot be quantified. The callouts point to static text instructions for a task, specifically \"01. Teile ölen\" and subsequent steps, which do not involve quantities or dynamic values."
+  },
+  "e1ef365d1af654c4e771d6f272638f614967e55bd5daab21d2e28e497aa833cf": {
+    "nodeId": "18443:9584",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in a focused state, with the header entirely focusable and no individual elements within the header being focusable. The accordion is expanded, has a subtitle or hint, and the expansion indicator is positioned to the right. The text within the accordion reads \"Summary of the accordion content\" as the title, \"Hint with a subtitle\" as the hint, and a lorem ipsum paragraph as the content. The accordion is of medium size and is not flush with its surroundings."
+  },
+  "e558b0403587d6a761a0ab1b5807cc6e84019026dc86bdd8e8a29de090de7f16": {
+    "nodeId": "17260:2428",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion-group component with the size set to medium and flush set to false, featuring an expansion indicator on the right. The accordion is shown within a \"Narrow\" content grid, indicating the maximum width it can occupy. The accordion contains four sections, each labeled \"Summary of the accordion content\" with downward-pointing arrows to indicate expandable sections. The maximum width of the accordion follows the size of the content grid narrow, applicable to both smaller and larger viewports."
+  },
+  "ef12abd49ee7f24bf2906dd1960274993f1efaa243bfa36b9ba8febf69ccbfc2": {
+    "nodeId": "17260:2423",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two accordion components, both in the medium size and with flush set to false. The first accordion, labeled with callout 1, is an accordion-single with the expansion indicator on the right, shown in an expanded state. The second accordion, labeled with callout 2, is also an accordion-single with the expansion indicator on the left, also shown in an expanded state. Both accordions have a summary text \"Summary of the accordion content\" and a placeholder content area. The figure illustrates the usage of chevron and caret indicators to signal expand/collapse behavior, with the chevron used on the right and the caret on the left."
+  },
+  "f940ce6af502add53076041064976344cc8db942cb1b57242ffb7bcf6c33f80d": {
+    "nodeId": "17260:2438",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in the \"hover\" state, medium size, with the expansion indicator positioned to the right. The accordion is not expanded and is not flush with its surroundings. The text \"Summary of the accordion content\" is visible, indicating the summary of the content that will be revealed when the accordion is expanded. A cursor icon is shown hovering over the text, demonstrating that the user must click or tap to change the state of the accordion."
+  },
+  "fb15c0662a261eb179bcb84bb9aee618f2458b01430626716440b53699f5f1ae": {
+    "nodeId": "18842:10884",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "An accordion component in a medium size with the expansion indicator on the right, currently not expanded, and not flush with its container. It includes sections labeled \"Smart Connector\", \"Details\", \"Documents\", \"My Dealer\", and \"Technical informations\". The board is marked as a \"Don't\" example because it contains images, specifically photos and content icons, which are not allowed in the custom hint area according to the design documentation."
+  },
+  "ff138efd20f92a5cebdae7b1a8bff0ba95c743fed769b462d112536d1489bb1c": {
+    "nodeId": "18841:16422",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Various configurations of the accordion-single component within an accordion group, showcasing different sizes, expansion indicators, and flush settings. Each column represents a different size: Medium, Small, and Extra-small. Each row demonstrates a different combination of expansion indicator positions (right or left) and flush settings (true or false). The text \"Summary of the accordion content\" is used consistently across all accordion items to illustrate the content summary."
+  }
+}

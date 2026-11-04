@@ -1,0 +1,17 @@
+{
+  "27cf03633e3e57c602790593e0f5d5dd3fc8db31b025bd9c0849e782c91639c1": {
+    "nodeId": "3:3916",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The figure is a table that outlines different easing types for motion in a UI design system. It includes columns labeled \"Type\", \"Description\", \"Purpose\", \"Usage examples\", \"Value\", and \"Example\". Each row describes a specific easing type: motion-functional-linear, motion-functional-ease-in, motion-functional-ease-out, and motion-functional-ease-in-out, detailing their characteristics, purposes, usage examples, and corresponding values. The table provides specific cubic-bezier values for ease-in, ease-out, and ease-in-out types, and lists examples of UI elements where each easing type should be used."
+  },
+  "30054996154c1355bed8ada8f5796d06b3a9f4221fcea16119c945267cfede6c": {
+    "nodeId": "3:3827",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The figure is a table detailing different animation types used in the STIHL Design System. The table includes columns labeled \"Type\", \"Description\", \"Purpose\", \"Usage examples\", and \"Example\". Each row describes an animation type: fade, move, expand, rotate, and zoom, along with their descriptions, purposes, and usage examples. The \"Usage examples\" column lists specific UI elements that utilize each type of animation."
+  },
+  "72ecb8a0841f6ed984ee98e696c154a91334f8b074bd7a210724dccfc266a23c": {
+    "nodeId": "3:3871",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The figure is a table detailing different durations for UI transitions in the STIHL Design System. Each row in the table specifies a duration name, its purpose, usage examples, value in milliseconds, and an example visual. The measurements 100ms, 250ms, 400ms, 700ms, 1100ms, and 1600ms refer to the duration values for various types of UI transitions. The table includes durations named duration-100, duration-250, duration-400, duration-700, duration-1100, and duration-1600, each with specific purposes and usage examples for different UI components and effects."
+  }
+}
