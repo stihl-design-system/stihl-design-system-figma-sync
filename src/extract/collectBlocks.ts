@@ -4,6 +4,11 @@ import type {
   TextNode,
   TypeStyle,
 } from '@figma/rest-api-spec';
+import {
+  collectFigureFacts,
+  hasFacts,
+  type FigureFacts,
+} from './figureFacts.ts';
 
 export interface Inline {
   text: string;
@@ -22,7 +27,7 @@ export type Block =
   | { type: 'heading'; level: number; text: string; nodeId: string }
   | { type: 'paragraph'; inlines: Inline[]; nodeId: string }
   | { type: 'list'; items: ListItem[]; nodeId: string }
-  | { type: 'image'; nodeId: string; alt: string }
+  | { type: 'image'; nodeId: string; alt: string; facts?: FigureFacts }
   | { type: 'note'; inlines: Inline[]; nodeId: string };
 
 export interface CollectOptions {
@@ -347,10 +352,12 @@ export function collectBlocks(
       return;
     }
     if (imageNames.has(name)) {
+      const facts = collectFigureFacts(node);
       blocks.push({
         type: 'image',
         nodeId: node.id,
         alt: lastHeading || node.name.trim(),
+        ...(hasFacts(facts) ? { facts } : {}),
       });
       return;
     }
