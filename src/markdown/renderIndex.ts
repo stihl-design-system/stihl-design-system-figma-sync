@@ -1,12 +1,13 @@
 import { posix } from 'node:path';
 import type { DocCategory } from '../config.ts';
+import { withUniqueSlugs, type DocumentHeading } from './headings.ts';
 import type { Frontmatter } from './renderMarkdown.ts';
 
-export interface DocumentHeading {
-  level: number;
-  /** Heading text as written in the Markdown (escapes included) */
-  text: string;
-}
+export {
+  headingSlug,
+  parseHeadings,
+  type DocumentHeading,
+} from './headings.ts';
 
 export interface IndexEntry {
   frontmatter: Frontmatter;
@@ -34,40 +35,6 @@ const INTRO = `# STIHL Design System: design documentation from Figma
 - The documents cover design guidance: anatomy, sizing, content rules, do's and don'ts, behavior, use cases. Props, types and code examples are not in here; query the Storybook MCP server or \`llms-full.txt\` of the component library for those.
 - Images are referenced relatively and have the section title as alt text, so the text stays meaningful without rendering them.
 `;
-
-/** GitHub style heading anchor */
-export function headingSlug(text: string): string {
-  return text
-    .replace(/\\([\\`*_[\]<>])/g, '$1')
-    .toLowerCase()
-    .replace(/[^\p{L}\p{N}\s-]/gu, '')
-    .trim()
-    .replace(/\s+/g, '-');
-}
-
-export function parseHeadings(markdown: string): DocumentHeading[] {
-  const body = markdown.replace(/^---\n[\s\S]*?\n---\n/, '');
-  const headings: DocumentHeading[] = [];
-  for (const line of body.split('\n')) {
-    const match = line.match(/^(#{1,6}) (.+)$/);
-    if (match?.[1] && match[2]) {
-      headings.push({ level: match[1].length, text: match[2] });
-    }
-  }
-  return headings;
-}
-
-function withUniqueSlugs(
-  headings: DocumentHeading[]
-): (DocumentHeading & { slug: string })[] {
-  const seen = new Map<string, number>();
-  return headings.map((heading) => {
-    const base = headingSlug(heading.text);
-    const count = seen.get(base) ?? 0;
-    seen.set(base, count + 1);
-    return { ...heading, slug: count === 0 ? base : `${base}-${count}` };
-  });
-}
 
 function renderEntry(entry: IndexEntry, indexPath: string): string {
   const { frontmatter } = entry;
