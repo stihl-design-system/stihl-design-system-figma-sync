@@ -58,7 +58,10 @@ function snippetFor(markdown: string, terms: string[]): string {
   if (!best) {
     return '';
   }
-  const clean = best.replace(/^[-*] |^\d+\. |\*\*/g, '');
+  const clean = best
+    .replace(/^_Figure: /, 'Figure: ')
+    .replace(/_$/, '')
+    .replace(/^[-*] |^\d+\. |\*\*/g, '');
   return clean.length > 220 ? `${clean.slice(0, 217).trimEnd()}...` : clean;
 }
 

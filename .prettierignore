@@ -4,5 +4,6 @@ mcp/public
 .wrangler
 docs/**/*.md
 docs/**/*.png
+docs/**/captions.json
 test/fixtures/*.json
 package-lock.json

@@ -24,6 +24,8 @@ export interface RenderOptions {
   frontmatter: Frontmatter;
   /** nodeId to path relative to the Markdown file */
   imagePaths: Map<string, string>;
+  /** nodeId to text alternative, rendered as a caption line under the image */
+  captions?: Map<string, string>;
 }
 
 export function figmaNodeUrl(fileKey: string, nodeId: string): string {
@@ -96,7 +98,9 @@ function renderBlock(block: Block, options: RenderOptions): string | undefined {
       if (!path) {
         return undefined;
       }
-      return `![${escapeText(block.alt)}](${path})`;
+      const image = `![${escapeText(block.alt)}](${path})`;
+      const caption = options.captions?.get(block.nodeId);
+      return caption ? `${image}\n\n_Figure: ${escapeText(caption)}_` : image;
     }
   }
 }

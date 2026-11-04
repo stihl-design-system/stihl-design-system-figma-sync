@@ -39,7 +39,7 @@ const INSTRUCTIONS = `Design documentation of the STIHL Design System, synced fr
 
 It covers design guidance for designers and product people: foundations (typography, iconography, grid, spacing, styles), components (anatomy, sizing, variants, content rules, do's and don'ts, behaviour, examples), patterns and guidelines. It does NOT contain code, props or API details; for those use the Storybook MCP server of @stihl-design-system/components.
 
-Start with search_documentation for a question, list_documents to browse, get_document for a whole page or one chapter. Images in the Markdown are absolute URLs; pass one to get_image when you need to see a spec or a do/don't example. Always cite the document (and its Figma source URL) you took guidance from.`;
+Start with search_documentation for a question, list_documents to browse, get_document for a whole page or one chapter. Every image is followed by a "Figure:" line that describes what it shows (measurements, variants, callouts, do/don't verdict); rely on that first and pass the image URL to get_image only when you need to see a spec or example yourself. Always cite the document (and its Figma source URL) you took guidance from.`;
 
 const categorySchema = z
   .enum(CATEGORIES as [DocCategory, ...DocCategory[]])

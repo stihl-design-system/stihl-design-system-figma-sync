@@ -106,7 +106,7 @@ export function summarize(doc: ContentDocument): string | undefined {
   const candidates =
     definitionIndex >= 0 ? paragraphs.slice(definitionIndex + 1) : paragraphs;
   for (const paragraph of candidates) {
-    if (paragraph === '' || /^(#|!\[)/.test(paragraph)) {
+    if (paragraph === '' || /^(#|!\[|_Figure:)/.test(paragraph)) {
       continue;
     }
     // A list stands in for prose on many boards; its first item is the gist

@@ -104,7 +104,10 @@ function main(): void {
         if (/\.(png|svg)$/.test(source)) {
           images++;
         }
-        return !basename(source).startsWith('.');
+        return (
+          !basename(source).startsWith('.') &&
+          basename(source) !== 'captions.json'
+        );
       },
     });
   }

@@ -9,6 +9,10 @@ import {
 } from '../config.ts';
 import { createFigmaClient, requireToken } from '../figma/client.ts';
 import { collectBlocks } from '../extract/collectBlocks.ts';
+import {
+  captionImages,
+  createCaptionProviderFromEnv,
+} from '../images/captionImages.ts';
 import { exportImages } from '../images/exportImages.ts';
 import {
   parseHeadings,
@@ -67,6 +71,12 @@ async function main(): Promise<void> {
   const { documents, latest } = parseArgs(process.argv.slice(2));
   const client = createFigmaClient(requireToken());
   const resolveVersion = createVersionResolver(client, latest);
+  const captionProvider = createCaptionProviderFromEnv();
+  console.log(
+    captionProvider
+      ? `Image captions: ${captionProvider.model} (cached per image)`
+      : 'Image captions: cache only (set CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN or CAPTION_API_* to describe new images)'
+  );
 
   for (const document of selectDocuments(config, documents)) {
     const { file } = document;
@@ -104,8 +114,17 @@ async function main(): Promise<void> {
       reuseExisting: previous?.figmaVersion === target.id,
     });
 
+    const captions = await captionImages(blocks, imagePaths, {
+      imageDir: document.imageDir,
+      format: config.imageExport.format,
+      document: { title: document.title, category: document.category },
+      provider: captionProvider,
+      log: console.log,
+    });
+
     const markdown = renderMarkdown(blocks, {
       imagePaths,
+      captions,
       frontmatter: {
         id: document.id,
         title: document.title,
