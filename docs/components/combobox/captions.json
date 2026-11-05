@@ -74,6 +74,11 @@
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
     "caption": "A \"Don't\" example of a combobox component layout. It includes two comboboxes with \"Label\" and \"Input\" text, each having a maximum width. The example is marked as incorrect because it does not keep the click path between the label and action short, which is necessary to reduce the time it takes for the mouse to reach the target according to Fitt’s Law."
   },
+  "ac74bd4d88c39f1cf7243d2ead04c72ca6f2823d6400db9869c9a103291c10ec": {
+    "nodeId": "39621:13634",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a white popover with the text \"Select max. 3 different products\" opened from the info button of a combobox with the label \"Product Name\". The popover covers most of the input, leaving only its clear button visible at the right edge, and a pointer cursor sits inside the popover. This is wrong because required information such as the selection limit is hidden behind the info button instead of being shown as a hint."
+  },
   "b03f7adebb7105fa6a95332e445ff6fb03319214c7ad13a13f2fac4cfe29be18": {
     "nodeId": "30853:6788",
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
@@ -88,6 +93,16 @@
     "nodeId": "8196:33741",
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
     "caption": "The anatomy of a combobox component in a UI design system, showing both default and invalid states. The combobox consists of a select field and a dropdown menu. Callout 1 points to the Label, callout 2 points to the Hint, callout 3 points to the Field, callout 4 points to the area where the dropdown appears, callout 5 points to the System feedback message, callout 6 points to the Input area, callout 7 points to the clear icon, callout 8 points to the dropdown indicator, and callout 9 points to the Label with an info icon. The select field is styled like an input component and opens a dropdown upon user interaction..."
+  },
+  "c980e4db70db6b44ce1678b009af44df9b654e2f270b2b3c22faa4c327507cc0": {
+    "nodeId": "8472:30050",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example with three callouts. Callout 1 points at the horizontal radio group \"Form of address\" with the options \"Mr.\" (selected), \"Mrs.\" and \"other\", used for fewer than 5 items. Callout 2 points at the \"Options\" combobox with the placeholder \"Select\" and a chevron, opened to a list with \"Label\", \"Label\", \"Option 3\" and \"Label\" (5 to 20 items, opens on click). Callout 3 points at the \"Country\" combobox with typed input \"B|\" and a clear button, showing a filtered list of \"Label\", \"Label\", \"Bangladesh\", \"Label\" and \"Label\" (more than 20 items, opens after typing)."
+  },
+  "d2c0be31c1dd48a41f999bc488cbf10ab00e416d46acb64d2382156bcb623ed2": {
+    "nodeId": "9039:21450",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a form with the heading \"Legend\", a radio group with the legend \"Radio Group Legend\" and two \"Radio Label\" options, followed by a \"Select\" field with a chevron and several \"Label\" text inputs, laid over a 12-column grid. All fields stay within the left 8 columns, at most two fields share a row (a short and a long field, or a long and a short one), and the right 4 columns remain empty."
   },
   "e0467106e195df945a0fede258664fc2007e77655afa3505c814b079cb758a0e": {
     "nodeId": "19703:2118",

@@ -1,0 +1,22 @@
+{
+  "4ca3db34530f0008f02ee79de3d4437f0d86d0ed0605e3d77e7c63bdc743c020": {
+    "nodeId": "7:87",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview of the Title component in a 2 by 2 grid, each cell showing the text \"Title Component\" followed by the short stand line dash. The top row uses Font-styling \"Heading XL\" and the bottom row \"Heading L\"; the left column is for viewports desktop-large, desktop-medium and desktop-small, the right column for tablet and mobile, where the text is set slightly smaller."
+  },
+  "6dbdb0d543f2ceed6fa26d090b0a9a14688f05a6000f0579f5ee3fbd8fbe45f7": {
+    "nodeId": "9322:53",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four page mockups with a STIHL header, the \"Title Component\" with stand line and a grey content area, annotated with spacing tokens. Callout 1 (top row) is the variant with breadcrumbs \"Home / ... / Previous level / Current\": \"spacing-24\" sits between header and breadcrumbs, \"spacing-dynamic-m\" between breadcrumbs and title, and below the title either \"spacing-dynamic-xs\" (left) or \"spacing-0\" (right, content directly below). Callout 2 (bottom row) is the variant without breadcrumbs: \"spacing-dynamic-l\" sits between header and title, and below the title again either \"spacing-dynamic-xs\" (left) or \"spacing-0\" (right)."
+  },
+  "82e9c5d3ebf81a30f8a2a6f4b5bb7bf6ebafc2fee3e9fe51c5499eaaf4f265e4": {
+    "nodeId": "7:119",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the Title component, shown as the text \"Title Component\" with a short dash beneath its left edge. Callout 1 points at the title text and callout 2 points at the stand line, the dash below it."
+  },
+  "b42e92a7c515217c98a24c2ebb6f39819a48ec017fef8aa52da701ca0435606c": {
+    "nodeId": "7:128",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A white square showing the stand line, a short thick horizontal black bar, next to the heading \"SPECIAL CHARACTER\" and the keyboard shortcuts for typing it: \"Mac: Alt + F\" and \"PC: Alt + 0131\"."
+  }
+}

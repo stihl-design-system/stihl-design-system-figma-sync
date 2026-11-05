@@ -124,6 +124,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Product page for \"MS 180\" with the section \"Motor housing\" and a segmented control of two icon-only buttons at the top right, a selected grid view and a list view button. The pointer hovers the list view button, which shows a dark Tooltip above it with the text \"List view\"."
   },
+  "eed18fd2b84f737b4d3b8bbbf7e7ed17b9892a13c4c90c305fd8719fe554b57d": {
+    "nodeId": "36492:428",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: an accordion group in which the first item \"Battery advantages for employees\" is expanded (up chevron) and shows the text \"The devices produce only minimal vibrations, which reduces muscle fatigue. This enables precise work even over longer periods of time.\" Two collapsed items follow, \"Battery advantages for companies\" and \"Battery advantages for the environment or customers\", each with a down chevron and divider lines between the items."
+  },
   "f9b173da0d1ed5951ef4948ee58effa25e64e7dc56e4d9cc99db87ab3795710b": {
     "nodeId": "36306:331",
     "model": "github-copilot/claude-sonnet-4.5",

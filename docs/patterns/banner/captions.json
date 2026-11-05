@@ -9,6 +9,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Orange highlight promo banner (\"Promo Banner Link\" with a close button) shown above the top bar and nav bar on viewport l, and below it the same banner above the top bar on viewport s, showing that a banner used alone stays visible on both viewports."
   },
+  "32d49a67b33f8f2e693d3f7c541a54ffc70a369dbc344c001429e91f61984daf": {
+    "nodeId": "9902:2929",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Examples of system and mandatory messages. A grey info notification reads \"The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.\" with a close icon, a green success toast reads \"Settings have been saved.\" with a close icon, and a yellow warning notification with a warning icon reads \"Recall notice: Product XY has been recalled. Please visit www.example.com for safety and return details.\" On the right a white dialog with the heading \"Cookies help us improve your experience.\" explains that clicking \"Accept all\" agrees to the use of cookies as described in the \"Cookie Policy\" link, with the buttons \"Accept all\" (filled) and \"Manage preferences\" (outlined)."
+  },
   "4af667de0f8f378f70c2171951a9d8de12525ccc21ea94bb179fc14d8c62f07a": {
     "nodeId": "7171:11260",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -34,6 +39,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Overview of the Banner pattern as a matrix of full-width bars in three variants (default dark, secondary light grey, highlight orange), four viewports (XL, L, M, S) and close-button true or false. The columns are \"content: promo\" (centered \"Promo Banner Link\" with icon and chevron), \"content: placeholder\" (purple dashed \"Placeholder\" slot) and \"content: USPs\" (three \"Text Element\" items, shown only for the secondary variant), with the close button as an X at the right edge when enabled and bar width shrinking with the viewport."
   },
+  "8007c57e14428b05886e06979da24511b60cbcca9d86d518eaee1f1a7e10cf0b": {
+    "nodeId": "9902:2943",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three full-width banners stacked vertically: a dark default banner with a mail icon and the text \"Join our Newsletter\" followed by a chevron, an orange highlight banner with a percent icon and \"Up to 40% off all Chainsaw models\" followed by a chevron, and a light grey banner with three USPs side by side, \"Versandkostenfreie ab 49€\" with a box icon, \"Lieferung oder Abholung vor Ort\" with a delivery truck icon and \"30 Tage Rückgaberecht\" with a return arrow icon. None of the banners has a close button."
+  },
   "814abcc68cf82fcb74a8a6e58e50ff18e5a0695a24f69135ec3b64a5f2e62b39": {
     "nodeId": "7171:11411",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -44,10 +54,20 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two page headers, each with two banners stacked above the top bar (STIHL logo, \"This is a Platform name\", \"Search Site\") and nav bar (\"Button nav\"). The first has the dark Default banner \"Promo Banner Link\" (callout 1) and the second has the orange Highlight banner (callout 2); in both a light grey Secondary banner with three \"Text Element\" items (callout 3) sits below it."
   },
+  "81f90526dada7c66bf37d534474bbe081ae0962194fe692b878b4834d40ccfdc": {
+    "nodeId": "9902:2951",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A light grey secondary banner without close button, with a bell icon, the bold text \"We’ve just rolled out something new!\" followed by the regular text \"Check out the latest updates and improvements\" and a chevron at the end."
+  },
   "83cba19a78d9ac1efaa27ac8a9b5452dd33c46b90ab5d8412357ed3fb06903f0": {
     "nodeId": "7171:11253",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two banners illustrating character length. The dark banner holds one long text, \"Longer Banner Copy Lorem ipsum dolor sit amet, consectetur lorem\", with a link chevron and close button. The light grey banner splits the copy into three short items, \"Longer Banner Copy\", \"Lorem ipsum dolor sit\" and \"amet consectetur lorem\", each with its own icon, followed by a close button."
+  },
+  "83fdb019ec041f55ea439a72d92410b8d2e20ab500109189bef9ce6fc7ae84c7": {
+    "nodeId": "9902:2911",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three components ordered by urgency. Callout 1 marks a dialog with the heading \"Heading\", a close icon, a purple \"Placeholder\" content area and three buttons (a filled one and an outlined one on the left, an outlined one on the right). Callout 3 marks a grey info notification with the text \"This is a notification message that guides the user.\", a close icon and two buttons, below it a smaller toast with an info icon and the text \"All files lorem ipsum\", and a second callout 3 marks a dark promo banner with an image icon, \"Promo Banner Link\", a right chevron and a close icon."
   },
   "93587928b4fb86be6928ad2187ca782a688e218af1c683f10ac505a970d56992": {
     "nodeId": "7171:11304",
@@ -58,6 +78,11 @@
     "nodeId": "7171:11355",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Header on a desktop viewport (xl) with a yellow warning Notification above the top bar and nav bar, titled \"Important Safety Notice\" with a text and link about a product recall and a close button, shown instead of a promotional banner. The top bar has the STIHL logo, \"This is a Platform name\", a \"Search Site\" field and icon buttons labelled \"Label\", and the nav bar has seven \"Button nav\" items."
+  },
+  "b0925150ba0c1094b21eec1543b8e4e2d44377b91763943c1a9e53d668bb90ff": {
+    "nodeId": "7171:11173",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two banners with numbered callouts. Callout 1 on the left marks the container, a light grey bar holding a purple \"Placeholder\" area for content such as text, links or buttons. Callout 2 on the right marks the optional close button (X) at the right end of a second banner with an image icon, \"Promo Banner Link\" and a right chevron."
   },
   "c04858a5b58185e3a41dcd17a9a397a3a727611e2ac22e65354d3f1d9f0bbddb": {
     "nodeId": "7171:11348",

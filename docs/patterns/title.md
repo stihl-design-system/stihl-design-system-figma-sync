@@ -17,7 +17,7 @@ figmaNodeId: 7:19
 figmaVersion: "2418090261531524003"
 figmaVersionLabel: "Bug Fix: popover slot implementation / content loss"
 figmaVersionCreatedAt: 2026-11-04T18:34:21Z
-syncedAt: 2026-11-05T19:30:37.218Z
+syncedAt: 2026-11-05T19:52:17.623Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7-19
 ---
 
@@ -32,7 +32,7 @@ Overview:
 
 ![Title](title/title-7-87.png)
 
-_Figure: Text in the figure: "viewports: desktop-large, desktop-medium, desktop-small", "viewports: tablet, mobile", "Title Component", "ƒ", "Font-styling: Heading XL", "Font-styling: Heading L"._
+_Figure: Overview of the Title component in a 2 by 2 grid, each cell showing the text "Title Component" followed by the short stand line dash. The top row uses Font-styling "Heading XL" and the bottom row "Heading L"; the left column is for viewports desktop-large, desktop-medium and desktop-small, the right column for tablet and mobile, where the text is set slightly smaller._
 
 ### Related elements
 
@@ -53,7 +53,7 @@ In the component the two elements are separate to ensure proper function in Figm
 
 ![Anatomy](title/anatomy-7-119.png)
 
-_Figure: Shows title (title text=Title Component, size=xl, viewport=desktop); annotation-cirlce (line=on, position=right); annotation-cirlce (line=on, position=top). Callouts 1, 2. Text in the figure: "Title Component", "ƒ"._
+_Figure: Anatomy of the Title component, shown as the text "Title Component" with a short dash beneath its left edge. Callout 1 points at the title text and callout 2 points at the stand line, the dash below it._
 
 ### Stand Line
 
@@ -67,7 +67,7 @@ Mac: Alt + F PC: Alt + 0131 More guidelines can be found in the [STIHL Brand Por
 
 ![Stand Line](title/stand-line-7-128.png)
 
-_Figure: Text in the figure: "SPECIAL CHARACTER", "Mac: Alt + F PC: Alt + 0131"._
+_Figure: A white square showing the stand line, a short thick horizontal black bar, next to the heading "SPECIAL CHARACTER" and the keyboard shortcuts for typing it: "Mac: Alt + F" and "PC: Alt + 0131"._
 
 ### Spacing Guidelines
 
@@ -92,6 +92,6 @@ The exact spacing depends on context — always prioritize clarity and readabili
 
 ![Spacing Guidelines](title/spacing-guidelines-9322-53.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=1); spacer (type=core token, direction=vertical); breadcrumb (level 6, level 5, level 4, level 3, level 2, expanded=false); spacer (type=dynamic token, direction=vertical); title (title text=Title Component, size=xl, viewport=desktop); annotation-circle (number=2, type=center, color=blue). Measurements: 0px. Callouts 1, 2. Text in the figure: "Home", "/", "...", "Previous level", "Current", "Title Component", "ƒ", "spacing-24", "spacing-dynamic-m", "spacing-0", "spacing-dynamic-xs", "spacing-dynamic-l"._
+_Figure: Four page mockups with a STIHL header, the "Title Component" with stand line and a grey content area, annotated with spacing tokens. Callout 1 (top row) is the variant with breadcrumbs "Home / ... / Previous level / Current": "spacing-24" sits between header and breadcrumbs, "spacing-dynamic-m" between breadcrumbs and title, and below the title either "spacing-dynamic-xs" (left) or "spacing-0" (right, content directly below). Callout 2 (bottom row) is the variant without breadcrumbs: "spacing-dynamic-l" sits between header and title, and below the title again either "spacing-dynamic-xs" (left) or "spacing-0" (right). Measurements in the figure: 0px._
 
 ## Examples

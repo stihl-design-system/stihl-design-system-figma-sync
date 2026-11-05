@@ -14,6 +14,16 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Don't example: two minimal sliders used to show status, one labelled \"Progress\" with the scale \"Start\" to \"Finish\" and one labelled \"Battery Status\" with the scale 0% to 100%, both with the thumb at the middle. The slider is an interactive input and must not be used as a progress bar or stepper."
   },
+  "04f892546d40fb844456bfbd9bab63736fade622c41f2db58e24d26965cdece0": {
+    "nodeId": "29346:2765",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two blue \"CONTENT AREA NARROW\" containers each hold an input with a \"Label\", a hint text and an \"Input\" field. In the upper example the container width equals the input width. In the lower example the container is wider, and the input stays at the \"recommended max. width 544px\" measured from the left edge while the \"Container Width\" measurement spans the whole wider container."
+  },
+  "06c8fef99ca75febcf2ed8df7daa39c33768dc535a467ed657e073ec5d024204": {
+    "nodeId": "1899:2028",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two rows of paired empty input fields. The first row has a wide \"Street Names\" field next to a narrow \"Number\" field, and the second row has a narrower \"Postal Code\" field next to a wider \"City\" field, so at most 2 related fields sit side by side."
+  },
   "09348fa2f27829cf34c4034c2b453675870e9ba0e73093855bddda6051f32715": {
     "nodeId": "29536:27832",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -34,6 +44,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two input sliders (label, range 0 to 100, orange filled track, thumb at 50) inside light blue \"Content area Narrow\" containers. In the upper one the slider fills the container width (Container Width). In the lower, wider container the slider stops at a recommended max. width of 544px, narrower than the Container Width."
   },
+  "0f4e22935e34635c33b366cb3a547a1cd7b7e1b071d0374b0f353be8a567f78c": {
+    "nodeId": "4395:15192",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: two inputs labelled \"Label\" with combinations that should not be used. Callout 1 shows a lock function icon combined with the \"Suffix\" on the right side, and callout 2 shows the \"Prefix\" combined with a leading image icon on the left side."
+  },
   "13598da8e2663dfeeac4d9607f3499b157538606fe1b7bb3a36562d57092f146": {
     "nodeId": "4946:2448",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -53,6 +68,11 @@
     "nodeId": "29536:27572",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Minimal input slider with label, range values 0 and 100 and thumb at the middle, with a dimension line below the track marking a minimum width of 256px."
+  },
+  "1faaa25113446ed4a6b71b05cf42c0ab7357afe699fad36a5052bf3a02df7813": {
+    "nodeId": "4495:6217",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four inputs labelled \"Label\" showing short prefixes and suffixes of at most 5 characters. The first has the prefix \"https://\" with the value \"stihl.de\", the second has the prefix \"€\" with \"120\", the third has the value \"55,8\" with the suffix \"kg\", and the fourth has \"150\" with the suffix \"inch\"."
   },
   "1fcb29983935383acd859dd2d01b1637e0e2baab7b69ea2920c7d624bfbd186c": {
     "nodeId": "7342:2433",
@@ -83,6 +103,21 @@
     "nodeId": "2607:3772",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Anatomy of the search input with seven numbered callouts: the top field shows (1) Label, (2) Hint (optional), (3) Text field, (4) Clear function (cross icon) and (5) Submit function (magnifying glass icon); the bottom field with the placeholder \"Placeholder\" shows (6) Info Button (optional) next to the label and (7) Placeholder text (optional)."
+  },
+  "2900b567e3de3b74ed97bfa20dadf494def92a89af19cd7a8aa06331ebdc4bd7": {
+    "nodeId": "14151:2131",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: an empty input with the label \"Telephone number\" and the hint \"Please enter your phone number in the correct format: +49098765432\", which wraps onto two lines. This is wrong because the hint is conversational and uses the word \"Please\"."
+  },
+  "2b822ce67dcd40cb669f820c8de6cf41a49da09a19dde74b2c5355d478b97e65": {
+    "nodeId": "39616:16329",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "An input labelled \"9-stellige Maschinennummer\" with the hint \"Nummer ohne Leerzeichen und Bindestriche eintragen\" and an info button next to the label, hovered with a pointer cursor. A white popover with an arrow pointing at the button opens above it, with the text \"Bei STIHL FS94 finden Sie die Maschinennummer in der Regel an der in den Abbildungen gezeigten Stelle.\" and two line drawings of STIHL machines (a petrol trimmer engine unit and a full trimmer), each with a line pointing to an \"XXXXXXXXX\" placeholder for the machine number."
+  },
+  "344c515678ef224093f31ab92c1a99f23cdee309e6c150f48dbe5b9918273025": {
+    "nodeId": "39634:11170",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a file upload field with the label \"Label\" and an info button next to it, with the pointer cursor on the button. A white popover with an arrow pointing down at the button reads \"For best results, upload high-resolution images (at least 1200×800 px)\", which is supplementary, non-critical information. Below is the dashed dropzone with an upload icon, \"Drag and drop files here or\", a \"Browse files\" button and \"Max file size: 7 MB. Supported file types: .jpg and .png\"."
   },
   "367a9c0916f64c76ae8dba837741215a86851fdeb0576f41f1c3d9aa3f6e6e08": {
     "nodeId": "32314:6605",
@@ -199,6 +234,21 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Six input types by browser default, each a medium field with a label and a numbered callout pointing at the field content: 1 \"Email\" (text, tel, number, email, url type) with no icon, 2 \"Date of departure\" with placeholder \"DD/MM/YY\" and a calendar icon, 3 \"Month\" with a calendar icon, 4 \"Calender week\" with placeholder \"Week XX, XXXX\" and a calendar icon, 5 \"Departure time\" with placeholder \"HH:MM\" and a clock icon, 6 \"Date of departure\" with placeholder \"DD/MM/YY, HH:MM\" and a calendar icon."
   },
+  "75947b84acd82621a16b81e12d6aa203fc4c5058717dd386910d4ee8c138c345": {
+    "nodeId": "4495:6227",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "An input with the label \"Label\" and a two-sentence hint above the field, \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\", wrapped onto two lines. Callout 1 points at the hint, which should be one sentence ideally and two at most."
+  },
+  "75fa474039def6baa49df8da4b001cd553e3e6d6c39498285e24b6dbc720e536": {
+    "nodeId": "39616:16400",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: clicking the info button next to the \"Password\" label of an empty input opens a white popover with an arrow pointing at the button, containing \"Use at least 8 characters, including one uppercase letter, one number, and one special character.\" This is wrong because required information like password rules must not be hidden in a popover and should be shown as a hint instead."
+  },
+  "78a9537804a20a7c3f6ff9b0b49295b72bd0e759ac0d215660674e3e2ee9e5ee": {
+    "nodeId": "1744:9004",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Input labelled \"Label\" with a hint text (\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\") above the field, the field showing the placeholder \"Input\" and an image icon on the right, in the invalid state with a red border. Below the input field, a red warning icon and the text \"System feedback message\" show that system feedback is placed directly below the field."
+  },
   "7a5ecc0235940a796422d79912182dcfe72142dd149e3fcc380e5b02ec7b1a5a": {
     "nodeId": "29536:27891",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -239,6 +289,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Input anatomy with two examples and numbered callouts. In the first, 1 points at the \"Label\", 2 at the hint text below it, 3 at the field border and 4 at the \"Placeholder\" text inside it. In the second, which has a red invalid border, 5 points at the info button next to the label, 6 at the leading icon on the left of the field, 7 at the tailing icon on the right and at the \"Input\" text, and 8 at the \"System feedback message\" under the field."
   },
+  "8401050360702a036981b9fea4bbff70bdac4ed7a27e7937cde618bfbd690420": {
+    "nodeId": "11105:17997",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two inputs with placeholder text that shows the expected format. Callout 1 points at the placeholder \"XXXX XXXX XXXX XXXX\" in the field labelled \"Credit card number\". Callout 2 points at the placeholder \"DD/MM/YY\" in the field labelled \"Date\", which has a calendar icon at its right end."
+  },
   "84631a898e6715f5ec7e9d0d7a68e964b6860deff94f9bf61b1b81f69cbadafe": {
     "nodeId": "32314:6739",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -263,6 +318,11 @@
     "nodeId": "29536:28124",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "A form card titled \"Mowing Settings\" in which the slider \"Cutting height in mm\" (range 20 to 60, step markers) permanently shows a tooltip with its current value 50 above the thumb. The form also contains the selects \"Wire over drive\" (\"Not close to the wire\") and \"rain sensor sensitivity\" with hint \"Allowed mowing weather\" (\"Any Weather\"), a divider, the text field \"Mowing duration\" (00:15) and the switch \"Ignore rain sensors\" turned on."
+  },
+  "8c67c0297801f99fac1c6d9ee2c6d19eddd2aaf649f365e1816285c285b213be": {
+    "nodeId": "4395:15184",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: four inputs labelled \"Label\" showing the recommended combinations. Callout 1 is \"Prefix\" on the left and \"Suffix\" on the right, callout 2 is \"Prefix\" on the left and a lock function icon on the right, callout 3 is a leading image icon on the left and \"Suffix\" on the right, and callout 4 is a leading image icon on the left and a lock function icon on the right."
   },
   "8d311e560c8f1141ed5eface9f9f53e63eeede23fc735a6bea198060c0e00365": {
     "nodeId": "32314:7110",
@@ -334,6 +394,21 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Do example showing four space-saving options for the label \"Lorem augue\": callout 1 points at a default slider with a number input \"50\" and suffix \"cm\" on the label row and no hint, callout 2 at a slider with a short hint \"Vivamus id erat eget leo eget.\" and a compact input \"0000\" with suffix \"cm\", callout 3 at a minimal slider with the hint and range \"0\" to \"100\" but no input, and callout 4 at a plain text input with the hint and suffix \"cm\" instead of a slider; a green \"Do\" badge marks it."
   },
+  "9d9c0a0d44285b01c83c17b3784fd1fc2653e3e5bc75831062ba96485b054d70": {
+    "nodeId": "14151:2091",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: an empty input with the label \"Telephone number\" and the concise hint \"Use the following format: +49098765432\" on a single line, without conversational wording."
+  },
+  "a0f8f9696aa711d4e9cef388338f6298e946ed91217e95a7c1146b4422c6fc28": {
+    "nodeId": "1899:2036",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Mobile layout on a 4-column grid in which all fields are stacked vertically. A \"Label\" with a hint text and a full-width \"Input\" comes first, followed by a \"Label\" with a half-width \"Input\", and then two further \"Label\" and full-width \"Input\" pairs."
+  },
+  "a802f9cfb1a27ba76c351bdfc2baa48f47cb4b1dd8285658c0976aee8c9687ab": {
+    "nodeId": "2421:4301",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three inputs with the label \"Label\" are stacked. Callout 1 points at a leading image icon on the left of the first input, which is decorative and has no function. Callout 2 points at a lock icon on the right of the second input, a trailing icon with a function; the third input shows the same trailing lock icon as a ghost button with a grey hover background and a pointer cursor."
+  },
   "aa0efd6c025b49e6c1616e1753b81775424296812bdabbaa15786c31c993a3f8": {
     "nodeId": "2141:6700",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -363,6 +438,11 @@
     "nodeId": "29536:27679",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two transitions of a slider (label \"Length in m\", range 0 to 100, thumb at 50). Top: without tooltip to hovered thumb with tooltip 50, labelled \"Appear fade: 0 > 100% Opacity\". Bottom: hovered thumb with tooltip to enabled state without tooltip, labelled \"Disapear fade: 0 > 100% Opacity\"."
+  },
+  "b21f71a01cc8fd7b7e59d01450487c86c27b93d5d796195177fed72c2704b89d": {
+    "nodeId": "4671:10422",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a 12-column grid with a \"Label\" and \"Input\" field spanning about 8 columns with an image icon at its right end, and below it three \"Label\" and \"Input\" fields of unequal widths in one row. This is wrong because three inputs sit next to each other, while a maximum of two are allowed in a row."
   },
   "b79fc585621df81c806be33d4afb6f2738b00748105e147031c6a1b8c20b050c": {
     "nodeId": "29536:27743",
@@ -434,6 +514,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Overview of the search input in sizes \"Size Medium\" and \"Size Small\", with states Default, Hover, Focus and Disabled and an \"is invalid\" column. Each field has a \"Label\", a hint text, the text \"Input\", a clear (cross) and a submit (magnifying glass) icon; invalid fields have a red border and the \"System feedback message\" with an error icon, hover has a grey fill, focus a thick dark border, and disabled greyed-out text and icons."
   },
+  "d4d7e3e33bc189e56934f0b4c71b7789ef705d1100bb34c43d1ea52258cb1af5": {
+    "nodeId": "4644:11160",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: two inputs labelled \"Password\" without a hint. The first shows the text \"Must contain at least one special character (e.g. !”%&°^)\" as grey placeholder inside the field, and the second is focused with a text cursor and the placeholder gone. This is wrong because helpful information in the placeholder disappears when the user focuses the field."
+  },
   "d8b01ab774047733e2feb4c594368c2666590f059219206cc62d79f806165436": {
     "nodeId": "44694:7199",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -459,6 +544,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Anatomy of Input File with two parts: (1) the upload field, shown without dropzone (\"Label\", hint \"Max file size: 7 MB. Supported file types: .jpg and .png\", \"Upload files\" button) and with dropzone (\"Label\", \"Drag and drop files here or\", \"Browse files\", hint), and (2) the file list below each field with image thumbnails, \"Filename.png\", \"1.5 MB\" and a remove button per row."
   },
+  "e340c6be0e7d06d3f25af832a743969cf7df53a4462f81297a80359f25ad69f6": {
+    "nodeId": "3210:14520",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "An empty input with the short label \"Machine number\" and the short hint \"For example: MS 170\" above the field, as an example of simple, concise copy."
+  },
   "e5e3dca7d3c0a0e1cdaae7a1bc35fdfd0b9ba12bd49ddeb7dffda975d06e03f8": {
     "nodeId": "32314:8796",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -479,10 +569,20 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Slider with label \"Length in m\", range 0 to 100 and thumb at 50 in hover state: a pointer cursor sits on the thumb, the thumb is shaded and a dark tooltip with 50 appears above it."
   },
+  "eadfcbf0bc267d382900183f7f81964a9cfa808c7fd6c23e56950d97b286364d": {
+    "nodeId": "4644:11165",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: an empty input with the label \"Password\" and the hint \"Must contain at least one special character (e.g. !”%&°^)\" shown permanently above the field, so the helpful information stays visible."
+  },
   "ee9477bbfa815fa7c9baa49e12e2653f156a1205ea9b3bf6780fac9e1766c726": {
     "nodeId": "29536:27949",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two sliders with hint text: a minimal slider labelled \"Length in m\" with a two-line hint of placeholder text and range \"0\" to \"100\", and a default slider labelled \"Length in milimeters (mm)\" with a three-line hint beside a number input showing \"50\" with suffix \"mm\" above the track, illustrating that hints stay at one to three lines."
+  },
+  "efa2a8b005985365ba432cd019373d40355816c7da266b19817b9e0acfe89188": {
+    "nodeId": "1899:2161",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two inputs with an \"Input\" value. Callout 1 points at the asterisk after the label \"Label *\", which marks a required field. Callout 2 points at the word \"(optional)\" after the label in \"Label (optional)\", which marks an optional field."
   },
   "f071f8cac03dca0959c52f9c1ae83ccee1c7e01387d5c46a9c743c9d4e120b74": {
     "nodeId": "32314:6496",
@@ -493,6 +593,11 @@
     "nodeId": "2502:3815",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Anatomy of the number input with six numbered callouts: (1) Label, (2) Info Button (optional) beside the label, (3) Hint (optional) below it, (4) Text field showing \"123\", (5) the value text inside the field, and (6) Button, the dark minus and plus buttons to the right of the field."
+  },
+  "f1832c16ae7bdf964020955d851e6662d5528e8ddbea0fe70fb53fccd66e4bc8": {
+    "nodeId": "2421:4351",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Input with the label \"Label\", the hint \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\" and an empty field, all three highlighted with one shared light orange background and a pointer cursor over the hint text. The shared highlight shows that label, hint and field form a single click area."
   },
   "f55cef5831b45418583d59d95b0423d861699f1cbd0a21f55794af7d1d0e08f5": {
     "nodeId": "2607:3974",

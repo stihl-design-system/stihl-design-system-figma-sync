@@ -16,7 +16,7 @@ figmaNodeId: 356:1729
 figmaVersion: "2414601641067527736"
 figmaVersionLabel: ""
 figmaVersionCreatedAt: 2026-10-26T09:28:34Z
-syncedAt: 2026-11-04T14:53:05.855Z
+syncedAt: 2026-11-05T19:52:20.129Z
 sourceUrl: https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj?node-id=356-1729
 ---
 
@@ -28,7 +28,7 @@ sourceUrl: https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj?node-id=356-1729
 
 ![Introduction](introduction/introduction-384-1311.png)
 
-_Figure: Shows color-swatch (type=minimal). Text in the figure: "Primary", "STIHL Orange Light", "100", "#FEE2CD", "STIHL Orange Mid", "300", "#F7A669", "STIHL Orange Base", "500", "#F37A1F", "STIHL Orange Dark", "700", "#E9640C", "STIHL Orange Deep", "900", "#D9480F", "Neutrals", "Grey Ultra Light", "50", "#F8F8F8", "Grey Light", "#EDEDED", "Grey Mid", "#DADADA"._
+_Figure: Colour palette of the STIHL Design System in three groups, each swatch showing name, step number and hex value. Primary: STIHL Orange Light 100 #FEE2CD, STIHL Orange Mid 300 #F7A669, STIHL Orange Base 500 #F37A1F, STIHL Orange Dark 700 #E9640C, STIHL Orange Deep 900 #D9480F. Neutrals: Grey Ultra Light 50 #F8F8F8, Grey Light 100 #EDEDED, Grey Mid 300 #DADADA, Grey Base 500 #B1B1B1, Grey Dark 600 #505050, Grey Deep 800 #252525, White #FFFFFF, Black #000000. Secondary has five columns of Light 100, Mid 300, Base 500, Dark 700 and Deep 900: Blue (#D4ECF7, #8DCFE8, #249ABE, #1E71A1, #19618B), Yellow (#FDECC3, #FED277, #FDC543, #F9A521, #EE8F00), Red (#EEBCBD, #DA6B6D, #D43B3B, #B72427, #A5181D), Green (#E5F0DB, #9BC077, #749F4A, #5B863C, #46762D) and Forest (#DBF0E1, #77C089, #4A9E5F, #3C8653, #2D7644)._
 
 ### What is a Design System?
 
@@ -62,7 +62,7 @@ Libraries containing foundational design principles applicable across all platfo
 
 ![01. Fundamentals](introduction/01-fundamentals-371-203.png)
 
-_Figure: Shows cover-thumbnails (type=miscellaneous); cover-thumbnails (type=library). Text in the figure: "Archive 📁", "Fundamentals", "Archive 📁 Fundamentals", "Archived fundamentals exploration", "Playground 🏐", "Playground 🏐 Fundamentals", "Ongoing fundamentals exploration", "Color 🌈", "Color system and tokens", "Grid & Spacing 🧮", "Grid styles and spacing tokens", "Iconography ➡️", "Icon library", "Styles 🪭", "Motion and shadow styles", "Typography 🅰️", "Typescale sytles and tokens"._
+_Figure: Seven library cover cards in a row, each with a title and description. Five black cards: "Color" (Color system and tokens), "Grid & Spacing" (Grid styles and spacing tokens), "Iconography" (Icon library), "Styles" (Motion and shadow styles) and "Typography" (Typescale sytles and tokens). Two grey cards: "Archive Fundamentals" (Archived fundamentals exploration) and "Playground Fundamentals" (Ongoing fundamentals exploration)._
 
 ### 02. Core Components
 
@@ -70,7 +70,7 @@ A library with core components built on the fundamentals and accompanied by docu
 
 ![02. Core Components](introduction/02-core-components-371-572.png)
 
-_Figure: Shows cover-thumbnails (type=miscellaneous); cover-thumbnails (type=library). Text in the figure: "Archive 📁", "Core Components", "Archive 📁 Core Components", "Archived core components exploration", "Playground 🏐", "Playground 🏐 Core Components", "Ongoing core components exploration", "Core Components 💠", "Core components for all platforms, teams & products"._
+_Figure: Three library cover cards: a black card "Core Components" (Core components for all platforms, teams & products), a grey card "Archive Core Components" (Archived core components exploration) and a grey card "Playground Core Components" (Ongoing core components exploration)._
 
 ### 03. Platform Libraries
 
@@ -78,7 +78,7 @@ Platform-specific libraries with tailored components and modules designed for th
 
 ![03. Platform Libraries](introduction/03-platform-libraries-371-708.png)
 
-_Figure: Shows cover-thumbnails (type=library); cover-thumbnails (type=miscellaneous). Text in the figure: "App Pattern Library", "Platform Libraries", "🗓️", "Coming soon", "Components and modules tailored to app interfaces", "Web Pattern Library", "Components and modules tailored to web interfaces", "E-Mail Patterns", "👁️️", "Visual guideline", "Components and modules tailored to e-mail interfaces", "Archive 📁", "Archive 📁 Platform Libraries", "Archived platform libraries exploration", "Playground 🏐", "Playground 🏐 Platform Libraries", "Ongoing platform libraries exploration"._
+_Figure: Five library cover cards. Three black cards: "App Pattern Library" with a "Coming soon" tag (Components and modules tailored to app interfaces), "Web Pattern Library" (Components and modules tailored to web interfaces) and "E-Mail Patterns" with a "Visual guideline" tag (Components and modules tailored to e-mail interfaces). Two grey cards: "Archive Platform Libraries" (Archived platform libraries exploration) and "Playground Platform Libraries" (Ongoing platform libraries exploration)._
 
 ### 04. Guidelines, Onboarding, Process
 
@@ -86,7 +86,7 @@ Files containing guidelines, onboarding ressources, process documentation and mo
 
 ![04. Guidelines, Onboarding, Process](introduction/04-guidelines-onboarding-process-371-787.png)
 
-_Figure: Shows cover-thumbnails (type=guidelines); cover-thumbnails (type=moccu helper); cover-thumbnails (type=miscellaneous). Text in the figure: "Onboarding 📖", "Structure, guidance and process", "A resource hub for using the design system and working with Figma files", "Accessibility Introduction", "Based on WCAG 2.2", "Summary of relevant WCAG requirements", "Helper", "Moccu Helper 🟠", "Userful elements for a better Figma file organization", "Archive 📁", "Guidelines, Onboarding, Process", "Archive 📁 Guidelines, Onboarding, Process", "Archived guidelines, onboarding and process exploration", "Playground 🏐", "Playground 🏐 Guidelines, Onboarding, Process", "Ongoing guidelines, onboarding and process exploration"._
+_Figure: Five library cover cards. Two white cards: "Onboarding" (A resource hub for using the design system and working with Figma files) and "Accessibility Introduction" with the line "Based on WCAG 2.2" (Summary of relevant WCAG requirements). One beige card, the Moccu "Helper" (Moccu Helper: Userful elements for a better Figma file organization). Two grey cards: "Archive Guidelines, Onboarding, Process" (Archived guidelines, onboarding and process exploration) and "Playground Guidelines, Onboarding, Process" (Ongoing guidelines, onboarding and process exploration)._
 
 ## How to ...
 

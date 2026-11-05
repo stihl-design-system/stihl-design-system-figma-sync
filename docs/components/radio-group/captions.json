@@ -1,8 +1,18 @@
 {
+  "015c65c1fb13669f9238aa5c993cdb11f633868864d1afca5fe06c8ef315404a": {
+    "nodeId": "1310:9064",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Vertical radio group with the legend \"Radio Group Legend\" and the description \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\" Below it three radio items stacked vertically, each labelled \"Radio Label lorem ipsum dolor sit amet, consectetur\", the first selected and the other two unselected."
+  },
   "02d41345d95e1286a260cff5b098cd7c7217f86c28e871171031127108e0e815": {
     "nodeId": "41031:17996",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Radio Group with Image shown twice, each with the legend \"Radio Group Legend\", a hint and four image options in one row, the first selected. With \"show title: false\" each option has a regular \"Radio Label\" beside its radio button and no hint. With \"show title: true\" the \"Radio Label\" is bold and a hint (\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\") appears under each label."
+  },
+  "1bbeb8b0445eadebe1fc7f828e8dd9d19ba574296fd86eea37d8e6db2a0810bd": {
+    "nodeId": "44214:4455",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Full STIHL web page of the Bar & Chain Advisor, in which radio groups are used together with image radio groups. It shows the STIHL header with logo, \"Search Site\" field, Contact, Dealer, Wishlist, Cart (badge 3), STIHL World and Login, the navigation bar (Products, Accessories, Professionals, Advice, Support), the breadcrumb \"Home / Product-Advisors / Bar-and-Chain-Advisor\" and the title \"STIHL BAR & CHAIN ADVISOR\". The section \"1. SEARCH\" asks \"What are you looking for?*\" with three image radios, \"Saw Chain\" (selected), \"Guide Bar\" and \"Guide bar and Saw Chain\", followed by the radio group \"I need the Saw Chain for ...\" with \"STIHL\" (selected) and \"a different supplier\", and a \"Next\" button with a right arrow. A vertical stepper on the right lists 1 Search (current), 2 Device Selection, 3 Technical Specification, 4 Usage (Optional) and 5 Recommendation."
   },
   "27faef7bc32bfcfdf7d197f3188b7286788d26956fc51910ac1fae6bc32bdf65": {
     "nodeId": "41996:6851",
@@ -13,6 +23,11 @@
     "nodeId": "15589:1688",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Radio group with legend, hint text and payment logos (Mastercard, Visa, PayPal, Klarna) next to the labels \"Radio Label\" and \"Lorem consectetur adipiscing elit nunc amet\". A vertical measurement beside the Visa logo is marked \"max.32px\", the maximum image height."
+  },
+  "293a0d9bd56f635dc83531eded39e6cd845c94d31c48ebfc7014da21c3d54910": {
+    "nodeId": "41704:13135",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Full STIHL web page of the Bar & Chain Advisor, in which a radio group with images is used within the digital advisor. It shows the STIHL header with logo, \"Search Site\" field, Contact, Dealer, Wishlist, Cart (badge 3), STIHL World and Login, the navigation bar (Products, Accessories, Professionals, Advice, Support), the breadcrumb \"Home / Product-Advisors / Bar-and-Chain-Advisor\" and the title \"STIHL BAR & CHAIN ADVISOR\". Under \"1. SEARCH\" the question \"What are you looking for?*\" offers three radios with photos above them, \"Saw Chain\" (selected), \"Guide Bar\" and \"Guide bar and Saw Chain\", followed by the plain radio group \"I need the Saw Chain for ...\" with \"STIHL\" (selected) and \"a different supplier\", and a \"Next\" button with a right arrow. A vertical stepper on the right lists 1 Search (current), 2 Device Selection, 3 Technical Specification, 4 Usage (Optional) and 5 Recommendation."
   },
   "42761911731bd401ccd104a66f4be71fa45a07d1365092e752caf8ce3ffd7a3b": {
     "nodeId": "41031:17588",
@@ -44,6 +59,16 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Radio Group with Image with three items, each a placeholder image above a radio, a bold \"Radio Label\" and a hint, the first one selected. Above the items are the \"Radio Group Legend\" with an info icon, a hint text and a red \"System Feedback Message\". Callout 1 points at the legend, 2 at the info button, 3 at the hint below the legend, 4 at the system feedback message and 5 at the hint of a radio item."
   },
+  "4e1999aaf60b6cd44c5b54cbaa739e004204180600797b3f96a9b386695f9f50": {
+    "nodeId": "23123:9795",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Vertical radio group with the question legend \"Which of the following characteristics do you believe contributes the most to the creation of your garden?\" and five radio items with bold labels and hints (\"Radio Label\", \"Design and Layout\", \"Functional Areas\", \"Water Features\", \"Wildlife Attraction\"). Callout 1 points from the left at the description line \"Choose the one that resonates the most:\", where an action verb is used; callout 2 points from the right at the colon at the end of that line."
+  },
+  "4ed8ab792cedd5427f1e2db666f0de992dd7975586874135ba8cf70eb9e969db": {
+    "nodeId": "1007:26",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview of the Radio Group in the orientations vertical and horizontal, each with show title false and true. Every group has the \"Radio Group Legend\" with a description text and radio items labelled \"Radio Label\", with the first item selected (orange filled), and with show title true the labels are bold and each has its own hint text. Variation examples below show the invalid state with the red warning icon and \"System Feedback Message\" above red-outlined radios, a disabled last item, and the variants \"Show checked hint\", \"Show checked hint + images\" and \"Show title + images\", where image placeholders sit to the right of the labels."
+  },
   "5557f81ee3da2eeb0b0acd12e001336017a22401d24a7fb25d1369710b8123bb": {
     "nodeId": "1310:10905",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -73,6 +98,16 @@
     "nodeId": "36086:14164",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Don't example: a radio button with a long label stretched over two wide lines, with a measurement line marked \"greater than 544px\". The text container is wider than the 544px maximum, which hurts readability."
+  },
+  "841ff8f5d9cecfaa7e791203e11ab626bff6f8c45f76b05cb7643079d93e8970": {
+    "nodeId": "36086:14144",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a radio item with a long label text (\"Lorem ipsum dolor sit amet, consetetur sadipiscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\") wrapping over three lines, with two image placeholders to its right. A dimension line below spans the full width of radio, text and images and is labelled \"max. 544px\", the maximum width of the text container."
+  },
+  "85bb800d168927e4416c31a475666f5325ddd5893136f97087b6cc9f9b0c83e0": {
+    "nodeId": "15589:1946",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Vertical radio group with show title true. The legend \"Which of the following characteristics do you believe contributes the most to the creation of your garden?\" is followed by the description \"Choose the one that resonates the most:\", then five radio items with bold labels each followed by a hint: \"Radio Label\" (selected, with the Lorem ipsum hint), \"Design and Layout\" (Structured, balanced layout for organized, aesthetic garden spaces.), \"Functional Areas\" (Designated sections for flowers, vegetables, and other plants.), \"Water Features\" (Ponds, fountains add visual, auditory interest; promote relaxation.) and \"Wildlife Attraction\" (Brd feeders, insect hotels enhance biodiversity, garden liveliness.)."
   },
   "885580ba9ce16e729d2ef1b36f8a1cc0c319a6955a9f949ced810fcc1fed69cd": {
     "nodeId": "15589:2284",

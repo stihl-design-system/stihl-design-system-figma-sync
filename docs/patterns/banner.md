@@ -16,7 +16,7 @@ figmaNodeId: 7171:9055
 figmaVersion: "2418090261531524003"
 figmaVersionLabel: "Bug Fix: popover slot implementation / content loss"
 figmaVersionCreatedAt: 2026-11-04T18:34:21Z
-syncedAt: 2026-11-05T19:26:54.793Z
+syncedAt: 2026-11-05T19:51:59.661Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7171-9055
 ---
 
@@ -71,7 +71,7 @@ The Promo Banner consists of two main parts:
 
 ![Elements](banner/elements-7171-11173.png)
 
-_Figure: Shows banner (variant=secondary, viewport=m, content=placeholder, close-button=false); annotation-circle (number=1, type=left, color=blue); banner (variant=secondary, viewport=m, content=promo, close-button=true); annotation-circle (number=2, type=right, color=blue). Callouts 1, 2. Text in the figure: "❖ Placeholder", "Promo Banner Link"._
+_Figure: Two banners with numbered callouts. Callout 1 on the left marks the container, a light grey bar holding a purple "Placeholder" area for content such as text, links or buttons. Callout 2 on the right marks the optional close button (X) at the right end of a second banner with an image icon, "Promo Banner Link" and a right chevron._
 
 #### Variants
 
@@ -268,7 +268,7 @@ Components are chosen based on their level of urgency:
 
 ![Functionality & Priority](banner/functionality-priority-9902-2911.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=desktop); footer-dialog (first button, second button, third button, viewport=desktop, direction=horizontal, primary position=left); annotation-circle (number=3, type=center, color=blue); notification (custom action area=\[object Object\], custom action area, children=\[object Object\], close button, type=info, icon=True); toast (text=All files lorem ipsum, icon, type=info); banner (variant=default, viewport=m, content=promo, close-button=true). Callouts 1, 3. Text in the figure: "Heading", "❖ Placeholder", "Button", "This is a notification message that guides the user.", "All files lorem ipsum", "Promo Banner Link"._
+_Figure: Three components ordered by urgency. Callout 1 marks a dialog with the heading "Heading", a close icon, a purple "Placeholder" content area and three buttons (a filled one and an outlined one on the left, an outlined one on the right). Callout 3 marks a grey info notification with the text "This is a notification message that guides the user.", a close icon and two buttons, below it a smaller toast with an info icon and the text "All files lorem ipsum", and a second callout 3 marks a dark promo banner with an image icon, "Promo Banner Link", a right chevron and a close icon._
 
 ### Use Cases
 
@@ -281,7 +281,7 @@ _Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dia
 
 ![System / Mandatory](banner/system-mandatory-9902-2929.png)
 
-_Figure: Shows header-dialog (heading, viewport=desktop); content-placeholder (type=text, format=none); footer-dialog (first button, third button, viewport=desktop, direction=horizontal, primary position=left); notification (custom action area=\[object Object\], children=\[object Object\], close button, type=info, icon=True); toast (text=Settings have been saved., icon, type=success); notification (custom action area=\[object Object\], children=\[object Object\], type=warning, icon=True). Text in the figure: "Cookies help us improve your experience.", "By clicking “Accept all,” you agree to the use of cookies as described in our...", "Accept all", "Manage preferences", "The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.", "Settings have been saved.", "Recall notice: Product XY has been recalled. Please visit www.example.com for..."._
+_Figure: Examples of system and mandatory messages. A grey info notification reads "The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM." with a close icon, a green success toast reads "Settings have been saved." with a close icon, and a yellow warning notification with a warning icon reads "Recall notice: Product XY has been recalled. Please visit www.example.com for safety and return details." On the right a white dialog with the heading "Cookies help us improve your experience." explains that clicking "Accept all" agrees to the use of cookies as described in the "Cookie Policy" link, with the buttons "Accept all" (filled) and "Manage preferences" (outlined)._
 
 #### Marketing / Engagement
 
@@ -292,7 +292,7 @@ _Figure: Shows header-dialog (heading, viewport=desktop); content-placeholder (t
 
 ![Marketing / Engagement](banner/marketing-engagement-9902-2943.png)
 
-_Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=false); banner (variant=highlight, viewport=m, content=promo, close-button=false). Text in the figure: "Join our Newsletter", "Up to 40% off all Chainsaw models", "Versandkostenfreie ab 49€", "Lieferung oder Abholung vor Ort", "30 Tage Rückgaberecht"._
+_Figure: Three full-width banners stacked vertically: a dark default banner with a mail icon and the text "Join our Newsletter" followed by a chevron, an orange highlight banner with a percent icon and "Up to 40% off all Chainsaw models" followed by a chevron, and a light grey banner with three USPs side by side, "Versandkostenfreie ab 49€" with a box icon, "Lieferung oder Abholung vor Ort" with a delivery truck icon and "30 Tage Rückgaberecht" with a return arrow icon. None of the banners has a close button._
 
 #### Informational
 
@@ -301,7 +301,7 @@ _Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=
 
 ![Informational](banner/informational-9902-2951.png)
 
-_Figure: Shows banner (variant=secondary, viewport=m, content=promo, close-button=false). Text in the figure: "We’ve just rolled out something new! Check out the latest updates and improve..."._
+_Figure: A light grey secondary banner without close button, with a bell icon, the bold text "We’ve just rolled out something new!" followed by the regular text "Check out the latest updates and improvements" and a chevron at the end._
 
 ## Examples
 

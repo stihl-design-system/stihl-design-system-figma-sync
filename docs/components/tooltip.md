@@ -13,7 +13,7 @@ figmaNodeId: 36194:1244
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:26:33.871Z
+syncedAt: 2026-11-05T19:51:54.446Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=36194-1244
 ---
 
@@ -335,7 +335,7 @@ _Figure: Don't example: three headings "Battery advantages for employees", "Batt
 
 ![Expandable sections and accordions](tooltip/expandable-sections-and-accordions-36492-428.png)
 
-_Figure: Do example. Shows accordion-group (size=medium, flush=false, expansion indicator=right). Text in the figure: "Battery advantages for employees", "The devices produce only minimal vibrations, which reduces muscle fatigue. Th...", "Battery advantages for companies", "Battery advantages for the environment or customers"._
+_Figure: Do example: an accordion group in which the first item "Battery advantages for employees" is expanded (up chevron) and shows the text "The devices produce only minimal vibrations, which reduces muscle fatigue. This enables precise work even over longer periods of time." Two collapsed items follow, "Battery advantages for companies" and "Battery advantages for the environment or customers", each with a down chevron and divider lines between the items._
 
 ## Examples
 

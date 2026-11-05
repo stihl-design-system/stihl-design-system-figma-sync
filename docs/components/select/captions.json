@@ -39,6 +39,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Don't example: select labelled \"Chain pitch\" with an info button and the placeholder \"Select\", with a white popover above it reading \"Selecting the wrong chain pitch can make the chain incompatible\". Critical information must not be hidden in a popover; use the hint instead."
   },
+  "d56c9e4981212a9c337de501521cbb52a167c2d03040d16657372f1d2af08aa3": {
+    "nodeId": "9537:4731",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example for choosing a component by the amount of items, with three callouts. Callout 1 points at the label \"Salutation\" with a horizontal radio group \"Mr.\" (selected), \"Mrs.\" and \"other\", used for fewer than 5 items. Callout 2 points at a select labelled \"Label\" with its native menu open showing \"Select\" (checked), \"Option 1\", \"Option 2\", \"Option 3\" and \"Option 4\", used for 5 to 20 items. Callout 3 points at a combobox labelled \"Country\" where \"B\" has been typed with a clear icon and a dropdown list with \"Label\", \"Label\", \"Bangladesh\", \"Label\" and \"Label\" appears, used for more than 20 items."
+  },
   "e3017c664b2d29f9429b51872a3ff0a3e5fec6f9052240572916fa50928a9644": {
     "nodeId": "9537:4741",
     "model": "github-copilot/claude-sonnet-4.5",

@@ -19,7 +19,7 @@ figmaNodeId: 860:2728
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:25:01.365Z
+syncedAt: 2026-11-05T19:51:40.375Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=860-2728
 ---
 
@@ -36,7 +36,7 @@ Overview:
 
 ![Radio Group](radio-group/radio-group-1007-26.png)
 
-_Figure: Shows building-element-radio (label=Radio Label, custom area=\[object Object\], label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=title, state=enabled, checked=true, invalid=true); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=title, state=enabled, checked=false, invalid=false); radio-group (description=\[object Object\], item 5, legend, item 3, legend=Radio Group Legend, item 4, invalid, description, orientation=vertical, show title=false); radio-group (item 4, legend, description=\[object Object\], legend=Radio Group Legend, item 5, item 3, invalid, description, orientation=horizontal, show title=false); radio-group (description=\[object Object\], item 5, legend, item 3, legend=Radio Group Legend, item 4, description, orientation=vertical, show title=false); radio-group (legend, item 5, item 3, item 4, legend=Radio Group Legend, description=\[object Object\], description, orientation=vertical, show title=true). Text in the figure: "Radio Group", "orientation: vertical", "orientation: horizontal", "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "show title: false", "show title: true", "Variation examples", "Invalid true", "System Feedback Message", "Show checked hint", "Show checked hint + images", "Show title + images", "❖"._
+_Figure: Overview of the Radio Group in the orientations vertical and horizontal, each with show title false and true. Every group has the "Radio Group Legend" with a description text and radio items labelled "Radio Label", with the first item selected (orange filled), and with show title true the labels are bold and each has its own hint text. Variation examples below show the invalid state with the red warning icon and "System Feedback Message" above red-outlined radios, a disabled last item, and the variants "Show checked hint", "Show checked hint + images" and "Show title + images", where image placeholders sit to the right of the labels._
 
 ![Radio Group](radio-group/radio-group-860-2774.png)
 
@@ -100,7 +100,7 @@ _Figure: Anatomy of the Radio Item with callouts: 1 points at the selected radio
 
 ![Vertical (default)](radio-group/vertical-default-1310-9064.png)
 
-_Figure: Shows radio-group (description=\[object Object\], item 5, legend, legend=Radio Group Legend, description, orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label lorem ipsum dolor sit amet, consectetur"._
+_Figure: Vertical radio group with the legend "Radio Group Legend" and the description "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget." Below it three radio items stacked vertically, each labelled "Radio Label lorem ipsum dolor sit amet, consectetur", the first selected and the other two unselected._
 
 #### Horizontal
 
@@ -122,7 +122,7 @@ To ensure good readability the maximum width should not exceed 544px (16px\*34em
 
 ![Maximum width of text container](radio-group/maximum-width-of-text-container-36086-14144.png)
 
-_Figure: Do example. Shows building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (custom area, custom area=\[object Object\], label=Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. , label, type=label, state=enabled, checked=false, invalid=false). Text in the figure: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirm...", "❖", "max. 544px"._
+_Figure: Do example: a radio item with a long label text ("Lorem ipsum dolor sit amet, consetetur sadipiscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.") wrapping over three lines, with two image placeholders to its right. A dimension line below spans the full width of radio, text and images and is labelled "max. 544px", the maximum width of the text container._
 
 Do not exceed 544px, even when the module or grid is wider.
 
@@ -217,7 +217,7 @@ To enable this behavior, set “**Show title**” to **true**.
 
 ![Bold labels when hints are visible](radio-group/bold-labels-when-hints-are-visible-15589-1946.png)
 
-_Figure: Shows radio-group (legend, item 5, item 3, item 4, legend=Which of the following characteristics do you believe contributes the most to the creation of your garden?, description=\[object Object\], description, orientation=vertical, show title=true). Text in the figure: "Which of the following characteristics do you believe contributes the most to...", "Choose the one that resonates the most:", "Radio Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Design and Layout", "Structured, balanced layout for organized, aesthetic garden spaces.", "Functional Areas", "Designated sections for flowers, vegetables, and other plants.", "Water Features", "Ponds, fountains add visual, auditory interest; promote relaxation.", "Wildlife Attraction", "Brd feeders, insect hotels enhance biodiversity, garden liveliness."._
+_Figure: Vertical radio group with show title true. The legend "Which of the following characteristics do you believe contributes the most to the creation of your garden?" is followed by the description "Choose the one that resonates the most:", then five radio items with bold labels each followed by a hint: "Radio Label" (selected, with the Lorem ipsum hint), "Design and Layout" (Structured, balanced layout for organized, aesthetic garden spaces.), "Functional Areas" (Designated sections for flowers, vegetables, and other plants.), "Water Features" (Ponds, fountains add visual, auditory interest; promote relaxation.) and "Wildlife Attraction" (Brd feeders, insect hotels enhance biodiversity, garden liveliness.)._
 
 ### Prompting the user with a call to action
 
@@ -230,7 +230,7 @@ _Figure: Shows radio-group (legend, item 5, item 3, item 4, legend=Which of the 
 
 ![Prompting the user with a call to action](radio-group/prompting-the-user-with-a-call-to-action-23123-9795.png)
 
-_Figure: Shows radio-group (legend, item 5, item 3, item 4, legend=Which of the following characteristics do you believe contributes the most to the creation of your garden?, description=\[object Object\], description, orientation=vertical, show title=true); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=right, color=blue). Callouts 1, 2. Text in the figure: "Which of the following characteristics do you believe contributes the most to...", "Choose the one that resonates the most:", "Radio Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Design and Layout", "Structured, balanced layout for organized, aesthetic garden spaces.", "Functional Areas", "Designated sections for flowers, vegetables, and other plants.", "Water Features", "Ponds, fountains add visual, auditory interest; promote relaxation.", "Wildlife Attraction", "Brd feeders, insect hotels enhance biodiversity, garden liveliness."._
+_Figure: Vertical radio group with the question legend "Which of the following characteristics do you believe contributes the most to the creation of your garden?" and five radio items with bold labels and hints ("Radio Label", "Design and Layout", "Functional Areas", "Water Features", "Wildlife Attraction"). Callout 1 points from the left at the description line "Choose the one that resonates the most:", where an action verb is used; callout 2 points from the right at the colon at the end of that line._
 
 ### The hint appears on activation
 
@@ -286,7 +286,7 @@ Radio Groups are used in combination with Radio Groups with Images within the Di
 
 ![Product Advisors](radio-group/product-advisors-44214-4455.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); breadcrumb (expanded=true); steps (hint=250 - 500 m², label=Search, status=current, state=enabled, orientation=vertical); steps (label=Device Selection, hint=Hint option.); steps (label=Technical Specification, hint=Hint option.); steps (label=Usage (Optional), hint=Hint option.); steps (label=Recommendation, hint=Hint option.); local/page header (Viewport=desktop); radio-group-with-image (legend=What are you looking for?\*, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, legend, show title=false); radio-group (description=\[object Object\], legend, legend=I need the Saw Chain for ..., orientation=vertical, show title=false); button (button text=Next, variant=filled, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Home", "/", "Product-Advisors", "Bar-and-Chain-Advisor", "1", "Search", "2", "Device Selection", "Technical Specification", "4", "Usage (Optional)"._
+_Figure: Full STIHL web page of the Bar & Chain Advisor, in which radio groups are used together with image radio groups. It shows the STIHL header with logo, "Search Site" field, Contact, Dealer, Wishlist, Cart (badge 3), STIHL World and Login, the navigation bar (Products, Accessories, Professionals, Advice, Support), the breadcrumb "Home / Product-Advisors / Bar-and-Chain-Advisor" and the title "STIHL BAR & CHAIN ADVISOR". The section "1. SEARCH" asks "What are you looking for?\*" with three image radios, "Saw Chain" (selected), "Guide Bar" and "Guide bar and Saw Chain", followed by the radio group "I need the Saw Chain for ..." with "STIHL" (selected) and "a different supplier", and a "Next" button with a right arrow. A vertical stepper on the right lists 1 Search (current), 2 Device Selection, 3 Technical Specification, 4 Usage (Optional) and 5 Recommendation._
 
 ## Radio Group with Image
 
@@ -472,4 +472,4 @@ Radio Groups with Images are mainly used within the Digital Advisors. Including 
 
 ![Product Advisors](radio-group/product-advisors-41704-13135.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); breadcrumb (expanded=true); steps (hint=250 - 500 m², label=Search, status=current, state=enabled, orientation=vertical); steps (label=Device Selection, hint=Hint option.); steps (label=Technical Specification, hint=Hint option.); steps (label=Usage (Optional), hint=Hint option.); steps (label=Recommendation, hint=Hint option.); local/page header (Viewport=desktop); radio-group-with-image (legend=What are you looking for?\*, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, legend, show title=false); radio-group (description=\[object Object\], legend, legend=I need the Saw Chain for ..., orientation=vertical, show title=false); button (button text=Next, variant=filled, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Home", "/", "Product-Advisors", "Bar-and-Chain-Advisor", "1", "Search", "2", "Device Selection", "Technical Specification", "4", "Usage (Optional)"._
+_Figure: Full STIHL web page of the Bar & Chain Advisor, in which a radio group with images is used within the digital advisor. It shows the STIHL header with logo, "Search Site" field, Contact, Dealer, Wishlist, Cart (badge 3), STIHL World and Login, the navigation bar (Products, Accessories, Professionals, Advice, Support), the breadcrumb "Home / Product-Advisors / Bar-and-Chain-Advisor" and the title "STIHL BAR & CHAIN ADVISOR". Under "1. SEARCH" the question "What are you looking for?\*" offers three radios with photos above them, "Saw Chain" (selected), "Guide Bar" and "Guide bar and Saw Chain", followed by the plain radio group "I need the Saw Chain for ..." with "STIHL" (selected) and "a different supplier", and a "Next" button with a right arrow. A vertical stepper on the right lists 1 Search (current), 2 Device Selection, 3 Technical Specification, 4 Usage (Optional) and 5 Recommendation._

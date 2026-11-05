@@ -24,7 +24,7 @@ figmaNodeId: 1591:2
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:23:46.588Z
+syncedAt: 2026-11-05T19:51:31.752Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1591-2
 ---
 
@@ -129,7 +129,7 @@ _Figure: Two input fields with a "Label". Callout 1 points at the "Prefix" eleme
 
 ![Icons with and without function](input/icons-with-and-without-function-2421-4301.png)
 
-_Figure: Shows input-medium (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit., input=Input, leading icon, label=Label, size=medium, state=enabled, invalid=false); input-medium (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, function, label=Label, size=medium, state=enabled, invalid=false). Callouts 1, 2. Text in the figure: "Label"._
+_Figure: Three inputs with the label "Label" are stacked. Callout 1 points at a leading image icon on the left of the first input, which is decorative and has no function. Callout 2 points at a lock icon on the right of the second input, a trailing icon with a function; the third input shows the same trailing lock icon as a ghost button with a grey hover background and a pointer cursor._
 
 #### Do
 
@@ -142,7 +142,7 @@ The following combinations of pre- and suffix with leading and tailing are recom
 
 ![Do](input/do-4395-15184.png)
 
-_Figure: Do example. Shows input-medium (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, prefix, suffix, size=medium, state=enabled, invalid=false); input-medium (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, function, label=Label, prefix, size=medium, state=enabled, invalid=false); input-medium (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, leading icon, label=Label, suffix, size=medium, state=enabled, invalid=false); input-medium (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, leading icon, function, label=Label, size=medium, state=enabled, invalid=false). Callouts 1, 2, 3, 4. Text in the figure: "Label", "Prefix", "Suffix"._
+_Figure: Do example: four inputs labelled "Label" showing the recommended combinations. Callout 1 is "Prefix" on the left and "Suffix" on the right, callout 2 is "Prefix" on the left and a lock function icon on the right, callout 3 is a leading image icon on the left and "Suffix" on the right, and callout 4 is a leading image icon on the left and a lock function icon on the right._
 
 #### Don’t
 
@@ -150,7 +150,7 @@ In order to keep the component clearly structured and reduce mental load, the co
 
 ![Don’t](input/don-t-4395-15192.png)
 
-_Figure: Don't example. Shows input-medium (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, function, label=Label, suffix, size=medium, state=enabled, invalid=false); input-medium (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, leading icon, label=Label, prefix, size=medium, state=enabled, invalid=false). Callouts 1, 2. Text in the figure: "Label", "Suffix", "Prefix"._
+_Figure: Don't example: two inputs labelled "Label" with combinations that should not be used. Callout 1 shows a lock function icon combined with the "Suffix" on the right side, and callout 2 shows the "Prefix" combined with a leading image icon on the left side._
 
 ### Sizing
 
@@ -164,7 +164,7 @@ In the Figma component, the maximum width is set to the recommended 544px.
 
 ![Maximum width](input/maximum-width-29346-2765.png)
 
-_Figure: Shows input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, hint, label=Label, input, size=medium, state=enabled, invalid=false). Text in the figure: "Content area Narrow", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Input", "Container Width", "recommended max. width 544px"._
+_Figure: Two blue "CONTENT AREA NARROW" containers each hold an input with a "Label", a hint text and an "Input" field. In the upper example the container width equals the input width. In the lower example the container is wider, and the input stays at the "recommended max. width 544px" measured from the left edge while the "Container Width" measurement spans the whole wider container._
 
 Available space does not necessitate that inputs span the full width. Defining an appropriate width enhances usability and contributes to a more structured and visually balanced layout. Especially when the expected input is short (e.g. Zip code) or if 2 inputs are used next too each other.
 
@@ -174,7 +174,7 @@ Additionally, according to Fitts’s Law, increasing the distance to a target (s
 
 ![Maximum width](input/maximum-width-4671-10422.png)
 
-_Figure: Don't example. Shows button (button text=Button, variant=ghost, state=enabled, size=medium, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Label", "Input"._
+_Figure: Don't example: a 12-column grid with a "Label" and "Input" field spanning about 8 columns with an image icon at its right end, and below it three "Label" and "Input" fields of unequal widths in one row. This is wrong because three inputs sit next to each other, while a maximum of two are allowed in a row._
 
 #### Input Grouping
 
@@ -184,7 +184,7 @@ A common combination is the postal code and city and also the street name and ho
 
 ![Input Grouping](input/input-grouping-1899-2028.png)
 
-_Figure: Shows input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Street Names, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Number, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Postal Code, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=City, size=medium, state=enabled, invalid=false). Text in the figure: "Street Names", "Number", "Postal Code", "City"._
+_Figure: Two rows of paired empty input fields. The first row has a wide "Street Names" field next to a narrow "Number" field, and the second row has a narrower "Postal Code" field next to a wider "City" field, so at most 2 related fields sit side by side._
 
 #### Grouping on mobile
 
@@ -192,7 +192,7 @@ On mobile devices all fields are stacked vertically.
 
 ![Grouping on mobile](input/grouping-on-mobile-1899-2036.png)
 
-_Figure: Shows input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, hint, label=Label, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, input, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Input"._
+_Figure: Mobile layout on a 4-column grid in which all fields are stacked vertically. A "Label" with a hint text and a full-width "Input" comes first, followed by a "Label" with a half-width "Input", and then two further "Label" and full-width "Input" pairs._
 
 ## Content and Assets
 
@@ -204,7 +204,7 @@ _Figure: Shows input (system feedback, hint=Lorem ipsum dolor sit amet, consecte
 
 ![Simple text](input/simple-text-3210-14520.png)
 
-_Figure: Shows input-medium (system feedback, hint=For example: MS 170, input=XXXX  XXXX  XXXX  XXXX, hint, label=Machine number, size=medium, state=enabled, invalid=false). Text in the figure: "Machine number", "For example: MS 170"._
+_Figure: An empty input with the short label "Machine number" and the short hint "For example: MS 170" above the field, as an example of simple, concise copy._
 
 ### Hint length
 
@@ -214,7 +214,7 @@ Copy in the hint **(1)** should be ideally 1 sentence and 2 sentences maximum.
 
 ![Hint length](input/hint-length-4495-6227.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=XXXX  XXXX  XXXX  XXXX, hint, label=Label, size=medium, state=enabled, invalid=false). Callouts 1. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri..."._
+_Figure: An input with the label "Label" and a two-sentence hint above the field, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.", wrapped onto two lines. Callout 1 points at the hint, which should be one sentence ideally and two at most._
 
 ### Hint tone-of-voice
 
@@ -224,11 +224,11 @@ Do not use conversational language and avoid words like “Please”.
 
 ![Hint tone-of-voice](input/hint-tone-of-voice-14151-2091.png)
 
-_Figure: Do example. Shows input-medium (system feedback, hint=Use the following format: +49098765432, input=XXXX  XXXX  XXXX  XXXX, hint, label=Telephone number, size=medium, state=enabled, invalid=false). Text in the figure: "Telephone number", "Use the following format: +49098765432"._
+_Figure: Do example: an empty input with the label "Telephone number" and the concise hint "Use the following format: +49098765432" on a single line, without conversational wording._
 
 ![Hint tone-of-voice](input/hint-tone-of-voice-14151-2131.png)
 
-_Figure: Don't example. Shows input-medium (system feedback, hint=Please enter your phone number in the correct format: +49098765432, input=XXXX  XXXX  XXXX  XXXX, hint, label=Telephone number, size=medium, state=enabled, invalid=false). Text in the figure: "Telephone number", "Please enter your phone number in the correct format: +49098765432"._
+_Figure: Don't example: an empty input with the label "Telephone number" and the hint "Please enter your phone number in the correct format: +49098765432", which wraps onto two lines. This is wrong because the hint is conversational and uses the word "Please"._
 
 ### Do
 
@@ -236,7 +236,7 @@ Helpful information should visible at all times and therefore in the hint.
 
 ![Do](input/do-4644-11165.png)
 
-_Figure: Do example. Shows input-medium (system feedback, hint=Must contain at least one special character (e.g. !”%&°^), input=XXXX  XXXX  XXXX  XXXX, hint, label=Password, size=medium, state=enabled, invalid=false). Text in the figure: "Password", "Must contain at least one special character (e.g. !”%&°^)"._
+_Figure: Do example: an empty input with the label "Password" and the hint "Must contain at least one special character (e.g. !”%&°^)" shown permanently above the field, so the helpful information stays visible._
 
 ### Don’t
 
@@ -244,7 +244,7 @@ Helpful information cannot be in the placeholder, because the text disappears on
 
 ![Don’t](input/don-t-4644-11160.png)
 
-_Figure: Don't example. Shows input-medium (system feedback, placeholder, input=XXXX  XXXX  XXXX  XXXX, label=Password, size=medium, state=enabled, invalid=false); input-medium (system feedback, input=|, label=Password, input, size=medium, state=enabled, invalid=false). Text in the figure: "Password", "Must contain at least one special character (e.g. !”%&°^)", "|"._
+_Figure: Don't example: two inputs labelled "Password" without a hint. The first shows the text "Must contain at least one special character (e.g. !”%&°^)" as grey placeholder inside the field, and the second is focused with a text cursor and the placeholder gone. This is wrong because helpful information in the placeholder disappears when the user focuses the field._
 
 ### Placeholder text
 
@@ -254,7 +254,7 @@ The examples show a field for a credit card number **(1)** and a date **(2).**
 
 ![Placeholder text](input/placeholder-text-11105-17997.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=XXXX  XXXX  XXXX  XXXX, label=Credit card number, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Date, size=medium, state=enabled, invalid=false). Callouts 1, 2. Text in the figure: "Credit card number", "XXXX XXXX XXXX XXXX", "Date", "DD/MM/YY"._
+_Figure: Two inputs with placeholder text that shows the expected format. Callout 1 points at the placeholder "XXXX XXXX XXXX XXXX" in the field labelled "Credit card number". Callout 2 points at the placeholder "DD/MM/YY" in the field labelled "Date", which has a calendar icon at its right end._
 
 ### Required and optional indicators
 
@@ -268,7 +268,7 @@ Optional fields are marked with the word “(optional)”, after the label **(2)
 
 ![Required and optional indicators](input/required-and-optional-indicators-1899-2161.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label \*, input, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label (optional), input, size=medium, state=enabled, invalid=false). Callouts 1, 2. Text in the figure: "Label \*", "Input", "Label (optional)"._
+_Figure: Two inputs with an "Input" value. Callout 1 points at the asterisk after the label "Label \*", which marks a required field. Callout 2 points at the word "(optional)" after the label in "Label (optional)", which marks an optional field._
 
 ### Use cases for the prefix and suffix
 
@@ -284,7 +284,7 @@ _Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, c
 
 ![Copy length for the prefix and suffix](input/copy-length-for-the-prefix-and-suffix-4495-6217.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=stihl.de, label=Label, prefix, input, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=120, label=Label, prefix, input, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=55,8, label=Label, input, suffix, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=150, label=Label, input, suffix, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "https://", "stihl.de", "€", "120", "55,8", "kg", "150", "inch"._
+_Figure: Four inputs labelled "Label" showing short prefixes and suffixes of at most 5 characters. The first has the prefix "https://" with the value "stihl.de", the second has the prefix "€" with "120", the third has the value "55,8" with the suffix "kg", and the fourth has "150" with the suffix "inch"._
 
 ### Info Button
 
@@ -294,7 +294,7 @@ Popover content should be **limited to supplementary, non-critical information**
 
 ![Info Button](input/info-button-39616-16329.png)
 
-_Figure: Shows input-medium (system feedback, hint=Nummer ohne  Leerzeichen und Bindestriche eintragen, ℹ️ info-button, placeholder, input=XXXX  XXXX  XXXX  XXXX, hint, label=9-stellige Maschinennummer, size=medium, state=enabled, invalid=false); cursor (type=pointer). Text in the figure: "Bei STIHL FS94 finden Sie die Maschinennummer in der Regel an der in den Abbi...", "9-stellige Maschinennummer", "Nummer ohne Leerzeichen und Bindestriche eintragen"._
+_Figure: An input labelled "9-stellige Maschinennummer" with the hint "Nummer ohne Leerzeichen und Bindestriche eintragen" and an info button next to the label, hovered with a pointer cursor. A white popover with an arrow pointing at the button opens above it, with the text "Bei STIHL FS94 finden Sie die Maschinennummer in der Regel an der in den Abbildungen gezeigten Stelle." and two line drawings of STIHL machines (a petrol trimmer engine unit and a full trimmer), each with a line pointing to an "XXXXXXXXX" placeholder for the machine number._
 
 **Don’t use popovers for critical or required information.**
 
@@ -304,7 +304,7 @@ For more guidance, see the [Popover documentation](https://www.figma.com/design/
 
 ![Info Button](input/info-button-39616-16400.png)
 
-_Figure: Don't example. Shows popover (children=\[object Object\], arrow=true, arrow placement=below, arrow alignment=center, color=white); input-medium (system feedback, ℹ️ info-button, placeholder, input=XXXX  XXXX  XXXX  XXXX, label=Password, size=medium, state=enabled, invalid=false); cursor (type=pointer). Text in the figure: "Use at least 8 characters, including one uppercase letter, one number, and on...", "Password"._
+_Figure: Don't example: clicking the info button next to the "Password" label of an empty input opens a white popover with an arrow pointing at the button, containing "Use at least 8 characters, including one uppercase letter, one number, and one special character." This is wrong because required information like password rules must not be hidden in a popover and should be shown as a hint instead._
 
 ## Behavior
 
@@ -314,7 +314,7 @@ System feedback is placed below the input-field.
 
 ![System feedback](input/system-feedback-1744-9004.png)
 
-_Figure: Shows input-medium (input=Input, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Label, system feedback, function, input, hint, size=medium, state=enabled, invalid=true). Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Input", "System feedback message"._
+_Figure: Input labelled "Label" with a hint text ("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.") above the field, the field showing the placeholder "Input" and an image icon on the right, in the invalid state with a red border. Below the input field, a red warning icon and the text "System feedback message" show that system feedback is placed directly below the field._
 
 ### Click behavior
 
@@ -322,7 +322,7 @@ The label, hint and field are one click area.
 
 ![Click behavior](input/click-behavior-2421-4351.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, hint, label=Label, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri..."._
+_Figure: Input with the label "Label", the hint "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget." and an empty field, all three highlighted with one shared light orange background and a pointer cursor over the hint text. The shared highlight shows that label, hint and field form a single click area._
 
 ### Focus order
 
@@ -1408,7 +1408,7 @@ Popover content should be **limited to supplementary, non-critical information**
 
 ![Info Button](input/info-button-39634-11170.png)
 
-_Figure: Shows popover (children=\[object Object\], arrow=true, arrow placement=below, arrow alignment=center, color=white); upload-field (ℹ️ info-button, dropzone=true, state=enabled, is invalid=false, hint-in-drop-zone=true); cursor (type=pointer). Text in the figure: "For best results, upload high-resolution images (at least 1200×800 px)", "Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png"._
+_Figure: Do example: a file upload field with the label "Label" and an info button next to it, with the pointer cursor on the button. A white popover with an arrow pointing down at the button reads "For best results, upload high-resolution images (at least 1200×800 px)", which is supplementary, non-critical information. Below is the dashed dropzone with an upload icon, "Drag and drop files here or", a "Browse files" button and "Max file size: 7 MB. Supported file types: .jpg and .png"._
 
 **Don’t use the popover for critical or required information**, use the hint instead. Critical information should not be hidden.
 
