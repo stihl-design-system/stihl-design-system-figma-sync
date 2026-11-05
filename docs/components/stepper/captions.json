@@ -1,0 +1,187 @@
+{
+  "00da7b0a1505a9f52f5f50d0b1c7b5c255b8180387ceda44a0e9be74ccf29855": {
+    "nodeId": "38478:5049",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Interaction states of a completed step (checkmark, Label, Hint opt.) in the horizontal and vertical orientation. Callout 1 is the enabled state (dark step line only), 2 is hover/pressed (grey background) and 3 is focus (dark outline around the step)."
+  },
+  "09ad123fdb60e71e96f5c16f5e53259efd92a7d9adcafd1edfe841e55f68f1f1": {
+    "nodeId": "39066:16793",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Wireframes of the vertical Stepper at four breakpoints. Callout 1 shows desktop with the Stepper beside the content area on the left, callout 2 shows tablet with the vertical Stepper above the content, and callouts 3a and 3b show mobile with either the vertical Stepper listed above the content or collapsed into a single dropdown-style row."
+  },
+  "09d98bb69f46a1416b9bce99a96e42289641a099078e543eb77216a687d70378": {
+    "nodeId": "39026:14604",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two desktop wireframes with a Vertical Stepper of five steps beside the content area, which has Back and Next buttons below it. Callout 1 shows the stepper on the left side of the content (default), callout 2 shows it on the right side of the content, used only when layout constraints require the content or form in the left column."
+  },
+  "102689d295da8ad9014cd0483d13eadfc4884aade5e3af48ceee60ed71b665f2": {
+    "nodeId": "38478:3834",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Main Component of the Stepper in two orientations, Horizontal and Vertical, each with six steps showing Label and Hint opt. Step 1 is the current step (orange filled number badge, bold label, orange step line), steps 2 to 6 are incomplete (outlined number badge, grey label, grey step line), and the step line sits above each step in the horizontal variant and to the left in the vertical variant."
+  },
+  "184462e256b8e19e8a9adc830b7de87773270db5669bf400d3d1cba7634f7052": {
+    "nodeId": "38488:8220",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Focus order of the Stepper with six steps, each showing a \"Label\" and \"Hint opt.\", in the \"horizontal\" and \"vertical\" orientation. Steps 1 to 3 are completed and step 4 is the current one (orange); steps 5 and 6 are upcoming. Numbered callouts 1 to 4 point at the first four steps in order, left to right for horizontal and top to bottom for vertical."
+  },
+  "19bc2fa2ad904279d51205ebd29163c082209db07bf9899178f4f53815b4d12c": {
+    "nodeId": "39030:15170",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A horizontal Stepper with three steps showing short labels: 1 \"Details\" (current, orange), 2 \"Payment Methods\" and 3 \"Confirmation\", illustrating labels of one to two words without hints."
+  },
+  "1d481c426a681b2e0b61ac42cbfb0e3053a6608653467ad3f38ed6adefec2618": {
+    "nodeId": "38478:4262",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "iMOW Advisor product advisor page at desktop size with the STIHL header and navigation, breadcrumb \"Home / Product Advisors / iMow Advisor\", a hero image with the heading \"1. Area\", and a lawn-area question with radio options (750 - 1000 m² selected) plus a hint box and Back and Next buttons. A vertical Stepper sits at the right with six steps: 1 Area (current, hint \"250 - 500 m²\"), 2 Slope, 3 Obstacles, 4 Operation, 5 Recommendation and 6 Installation, with a \"Restart\" button below it."
+  },
+  "23c78015f25e3cfda27097fa8780132a4ca835f22da0f33fad535ef8781933f6": {
+    "nodeId": "38478:5111",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Sizing of the vertical stepper with three steps. Callout 1 marks the Stepper with Stepper Width: fixed (aligned to Grid) and Stepper Height: hug contents; callout 2 marks the Step with Step Width: fill container, min. 128px, max. 312px and Step Height: hug contents, min. 52px, max. 96px."
+  },
+  "2d82763b100697e03083d162dda6866fcd864522cb7e2187af1b6c3728a1361b": {
+    "nodeId": "38478:3914",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "The Stepper container (callout 1) in its two orientations, horizontal and vertical, each with six steps labelled Label and Hint opt. In both, step 1 is current (orange) and steps 2 to 6 are incomplete (grey)."
+  },
+  "2edcd3fd4cd267a9e1912f58aafe01af9d37fc397126b46965972f442d13549e": {
+    "nodeId": "38478:5325",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two mobile page layouts with the STIHL top bar showing a Stepper embedded in an Accordion. Left: the collapsed Accordion summary reads \"2. Steigung\" with \"Schritt 2 von 6\" and a downward chevron, above gray placeholder content. Right: the expanded Accordion (upward chevron) lists the vertical steps Fläche (completed, check icon), 2 Steigung (current, orange), 3 Hindernisse, 4 Bedienung, 5 Empfehlung and 6 Installation (upcoming, grey) above the placeholder content."
+  },
+  "3118a5e2a0c6d9b81c74e3fe0b89f0c5b738482710222e35bc50cac0f49ea654": {
+    "nodeId": "38882:14651",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: horizontal stepper with three steps where only step 2 shows the hint \"Hint opt.\" while steps 1 and 3 have only the label \"Label\", so hints are mixed inconsistently across steps."
+  },
+  "32b084c52bb193e7f725fce9f39a479fdea5d03827b22d0f134014727c2255fc": {
+    "nodeId": "38478:5062",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Step statuses in the horizontal and vertical orientation, all in the enabled state. Callout 1 is Incomplete (outlined number, grey label and grey step line), 2 is Current (orange filled number, bold label, orange step line) and 3 is Completed (checkmark, dark step line)."
+  },
+  "32e6a1bb7d9c13015d007858f1d9afbc80512347f52dbd6acd1a6ea8df4e270e": {
+    "nodeId": "39066:14525",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Checkout page \"Secure Checkout-Process\" with a three-step stepper (1 \"Details\" current, 2 \"Payment\", 3 \"Confirmation\") above a Details form with an error notification \"Please fill in all mandatory information\". The form shows Title* radios (\"Mr.\" selected, \"Mrs.\", \"other\"), an invalid empty Name* input with the \"System feedback message\" error, an optional Phone number input, an enabled outline \"Back\" button and a disabled \"Next\" button, so step 1 cannot be completed while errors remain."
+  },
+  "3b2c745b05519cf4e16b7580d81a2b4c59c376a68a5cde8ad6866dd60de71430": {
+    "nodeId": "39207:17653",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three wireframes (horizontal stepper on desktop, vertical stepper beside content on tablet, vertical stepper above content on mobile), each with the step controls below the content area. The \"Back\" outline button sits at the left edge and the filled \"Next\" button at the right edge."
+  },
+  "3c5a9dade6ff2e27cbac1567b7d1ada9786a7a290884f54aa6e3baadfcd165e5": {
+    "nodeId": "38478:5074",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Sizing of the horizontal stepper with three steps. Callout 1 marks the Stepper with Stepper Width: fixed (aligned to Grid) and Stepper Height: hug contents; callout 2 marks the Step with Step Width: fill container, min. 128px and Step Height: hug contents, min. 46px, max. 104px."
+  },
+  "509a3e2d09e7c80bc80a7e5ee8780de7f60dadd587e9b4889b9493af120bc385": {
+    "nodeId": "39102:23480",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Building Blocks of the Stepper. The Step Indicator appears as three circles with the number 1: incomplete (grey outline), current (orange filled) and complete (checkmark in a dark outline). Below, the Steps are shown for Alignment: horizontal and Alignment: vertical in the states enabled, hover and focus, for the statuses incomplete, current and completed, each with Label and Hint opt.; incomplete and current have no hover variant, hover shows a grey background, focus shows a dark outline, and the horizontal step has a minimum width of 128px."
+  },
+  "61635f0b1f87ea21c9cee839d222f16a7b6e1c6f18f6383a8bd352d00dd1f578": {
+    "nodeId": "39030:15018",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of a current step in the horizontal and vertical orientation with four numbered callouts. 1 points at the number Indicator, 2 at the Label, 3 at the Hint opt., and 4 at the orange Step Line above the step (horizontal) or beside it on the left (vertical)."
+  },
+  "67150a880c2bd7064ef98551d1f80e63bd62658446d3fd45b1572962053bee0e": {
+    "nodeId": "38918:14104",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four stepper pattern layouts, each with a stepper of six steps (\"Label\" with \"Hint opt.\"), a purple dashed \"Placeholder\" content area and an outline Button on the left plus a filled Button on the right: \"Above content / horizontal\", \"Above content / vertical\", \"Above content / Accordion\" (a collapsible accordion titled \"Steps\" with \"Step 1 of 6\" containing the vertical stepper) and \"Beside content / vertical\" (vertical stepper to the left of the content area)."
+  },
+  "6c63c3a8020513a70600247b9a56bba64b1c7a5897ac87764cc155bd409616d3": {
+    "nodeId": "38918:13809",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two wireframes with the grid overlaid, each with a three-step Horizontal Stepper above the content placeholder and Back and Next buttons below. In both, the left edge of the stepper is aligned with the left edge of the content and the Back button, marked by a purple guide, whether the content spans the full grid or only part of it."
+  },
+  "7428855449eeac3e9bb37ff2d4565b056e893e4c906f44d17259731553bb9dea": {
+    "nodeId": "38478:4239",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Horizontal stepper with three steps; the active step 1 has an orange progress bar, a filled orange number badge, the bold label \"Label with a max. 25 char.\" and the hint \"Hint with a maximum of 48 characters\" wrapping onto a second line. Steps 2 and 3 show the label \"Label\" and the hint \"Hint opt.\" in grey."
+  },
+  "755421418291b0efaec358c9f7204ebc96a4565c681441e4e0806e6a0a2853a4": {
+    "nodeId": "39030:15199",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: horizontal stepper with four steps, \"Lieferoptionen\", \"Adressen\", \"Zahlungsmethode\" and \"Überprüfen & Bezahlen\", where the last label is cut off with an ellipsis as \"Überprüfen & Be...\" instead of wrapping to a second line."
+  },
+  "8043550a37aa240cf355f39a560555d10f50aac96be2b75ae1e97153c7b9acd1": {
+    "nodeId": "38918:14928",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three wireframes of a stepper placed above the content, each with a content placeholder and Back and Next buttons below. Callout 1 is a Horizontal Stepper with five steps in a row for Desktop and Tablet, callout 2 is a Vertical Stepper with five steps stacked above the content for Mobile, and callout 3 is a Vertical Stepper collapsed within an Accordion (a dropdown header with chevron) for Mobile."
+  },
+  "87450c011d71a4411396a0b7833236ed1806aa1378fb904911f0d1bc4d31be8b": {
+    "nodeId": "38478:5386",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two horizontal Steppers. The upper one has the minimum of three steps (1 current in orange, 2 and 3 upcoming), and the lower one has the maximum of six steps (1 current, 2 to 6 upcoming), each with \"Label\" and \"Hint opt.\"."
+  },
+  "8fba84b6d1180b0a7bac1b0791e9b7d4dca8b835fa2c30519a8052ee35652523": {
+    "nodeId": "38478:5320",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A single step in the current state (orange numbered circle \"1\", bold \"Label\" and the hint \"Hint opt.\" below) shown for the horizontal orientation with an orange line on top, and for the vertical orientation with an orange bar on the left."
+  },
+  "902b1ce0723e44c18856d654d73abe1ff2002923a22463e08d276d183fc8fc84": {
+    "nodeId": "39095:22140",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Stepper pattern in a horizontal and a vertical layout, each with three steps, where callout 1 marks the Stepper component, callout 2 the Content Placeholder and callout 3 the Step Control. In the horizontal layout the stepper sits above the placeholder, with an outline Back button on the left and a filled Next button on the right below it. In the vertical layout the stepper sits on the left, with the placeholder to its right and an outline and a filled Button below it (both labelled Button)."
+  },
+  "917e7017d9354c4f933a8d9a79d81b248120375b608617844c60099c8dc18467": {
+    "nodeId": "38478:4252",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Checkout page at desktop size with a header showing the STIHL logo and a lock icon with \"Secure Checkout-Process\". A horizontal Stepper below has three steps: 1 Address (current, orange), 2 Payment and 3 Confirmation. Under it is the \"Address information\" form with the \"Billing Address\" section: a \"I am a business customer.\" checkbox, \"Title (optional)\" radio buttons (Mr., Mrs., Other, Not specified), and input fields for first name, last name, country, postal code, city and street and house number with a helper text."
+  },
+  "98358a5936635258cdd8582546b006d3fdcea263f94925c467cf24aae0d591f5": {
+    "nodeId": "39421:15638",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: horizontal stepper with three steps labelled \"Step 1\", \"Step 2\" and \"Step 3\", which repeats the order already shown by the number badges instead of using descriptive names."
+  },
+  "9b13601d5e3887236bb0636cb545b949ec56924a03e0e842da7d9061ff180d3a": {
+    "nodeId": "38488:5564",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Horizontal stepper with six steps (1 to 6, each labelled \"Label\") that does not fit the available width: step 1 is active, steps 4 to 6 fade out on the right, and a dark button with a right chevron at step 4 (the Scroller) lets users scroll to the hidden steps. A dashed purple vertical line marks the edge of the visible area."
+  },
+  "ab6db64e87af7465edadc93c0194960559b4ccdbce1d3ae45c4bd95ff8243838": {
+    "nodeId": "39207:17402",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four wireframes with the column grid overlaid and purple guides marking the stepper's extent. 1a is a Horizontal Stepper with five steps spanning the full content width, 1b is a Horizontal Stepper with three steps spanning only about half the columns, 2a is a Vertical Stepper in a narrow left column of about one grid column with the content beside it, and 2b is a Vertical Stepper with longer labels spanning about two columns before the content starts."
+  },
+  "ad3d1a8b46390d315aa3e1555e8a47087597fb45a2586db70cca1c6c8a44c8bf": {
+    "nodeId": "38478:3942",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "The two Stepper orientations with six steps each (Label, Hint opt.; step 1 current, steps 2 to 6 incomplete). Callout 1 is the horizontal stepper with step lines above the steps, callout 2 is the vertical stepper with step lines at the left of the steps."
+  },
+  "ba9dafd7007eb3b5ef5b9d43ab8fffaec03923b5d7b27b8b493e63b00c515ffa": {
+    "nodeId": "38478:5344",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two horizontal steppers with a content placeholder and step controls. On the left, step 1 \"Current step\" is active with a hovered filled Next button, and callout 1 points at the \"Following Step\" items 2 and 3, which show a not-allowed cursor because they are locked, while callout 2 points at the Next button that proceeds once requirements are met. On the right, step 2 \"Current step\" is active, callout 3 points at the \"Previous Step\" 1 (completed check mark, hovered with a pointer cursor and still reachable), and callout 4 points at the hovered outline Back button that returns one step."
+  },
+  "c550a4d5cc65ab6539c03e12c2905cef58cb53ee013be2c403437af86ab2557a": {
+    "nodeId": "39065:17223",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Wireframes of the horizontal Stepper placed above the content at four breakpoints. Callout 1 shows desktop with all five steps in one row above the content area and a back and next button below. Callout 2 shows tablet with overflow arrow buttons at both ends of the Stepper, callout 3a shows mobile with a stacked vertical Stepper above the content, and callout 3b shows mobile with the Stepper collapsed into a single dropdown-style row."
+  },
+  "c6b5a926359c70bf2d6de3b7bcb466ffbaf6ba035fef058ea556de421f6ba004": {
+    "nodeId": "38864:14420",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Stepper in two orientations, each with three steps labelled \"1 Label\" (current, orange), \"2 Label\" and \"3 Label\" (following, grey). In the horizontal stepper the 6px measurement marks the gap between the progress lines of neighbouring steps, and in the vertical stepper it marks the gap between the vertical bars of neighbouring steps."
+  },
+  "d87136dd9e9f265a9ecb814be16cfd0a566568b3d0e05f330b79c96217a23d6d": {
+    "nodeId": "38864:15842",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: vertical stepper where step 1 is completed (check mark), step 2 \"Label\" is current, and below it the sub-steps \"2.1 Label\" (current, orange bar), \"2.2 Label\" and \"2.3Label\" are nested as indented items without number badges, followed by step 3. Sub-steps must not be nested in a stepper."
+  },
+  "ef83930314a250161214aea52c8b7bda029f17429a90af26b24d9c171c078861": {
+    "nodeId": "38488:8250",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Keyboard interaction for a horizontal Stepper with six steps (steps 1 to 3 completed, step 4 current, steps 5 and 6 upcoming). \"Open Step with:\" the \"Space\" or \"Enter\" key, which moves from the focused second step to a dashed content area below. \"Move to next focusable element:\" \"Tab\", which moves focus from the second to the third step. \"Move to previous focusable element:\" \"Tab\" + \"Shift\", which moves focus from the third back to the second step."
+  },
+  "fbd11819a699534a0b79678396bd2ad1f6699e80ebc5167e523b6a6d495725a0": {
+    "nodeId": "38488:8706",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A vertical Stepper with three steps (step 1 current, steps 2 and 3 upcoming, each with \"Label\" and \"Hint opt.\", shown blurred) beside a purple dashed \"Placeholder\" content area. Below the content is a Button Group with an outlined \"Back\" button on the left and a filled \"Next\" button on the right as additional step controls."
+  },
+  "fdb09e08cbf2c1df3cf1a555749683c3db7b0b82d0fec30f5eeda6fd13a7d392": {
+    "nodeId": "39065:16884",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Horizontal stepper with three steps when first displayed: step 1 \"Current step\" is set as current (orange circle, orange line, bold text, focus outline in purple), while steps 2 and 3 \"Following Step\" are grey."
+  }
+}

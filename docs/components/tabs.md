@@ -15,10 +15,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 24564:312
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:51:08.835Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:26:18.952Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=24564-312
 ---
 
@@ -38,11 +38,11 @@ Overview:
 
 ![Tabs in-page](tabs/tabs-in-page-24686-11442.png)
 
-_Figure: Shows tabs (tab item4, tab item 3, tab pane, grid=main / narrow, alignment=left); tabs (tab item4, tab item 3, tab pane, grid=main / narrow, alignment=center). Text in the figure: "Tab", "alignment: left", "alignment: center", "❖ Placeholder"._
+_Figure: Two in-page tabs examples labelled "Tab", each with four tab items (first selected in bold with an orange underline) above a purple dashed "Placeholder" tab pane: "alignment: left" with the tab list aligned to the left edge, and "alignment: center" with the tab list centered._
 
 ![Tabs in-page](tabs/tabs-in-page-24564-326.png)
 
-_Figure: Shows tab-item (label=Tab, state=enabled, selected=off); tab-item (label=Tab, state=hover, selected=off); tab-item (label=Tab, state=focus, selected=off); tab-item (label=Tab, state=enabled, selected=on); tab-item (label=Tab, state=hover, selected=on); tab-item (label=Tab, state=focus, selected=on). Text in the figure: "Tab item", "enabled", "hover/pressed", "focus", "Tab", "selected: false", "selected: true"._
+_Figure: Tab item states in a matrix: columns "enabled", "hover/pressed" and "focus", rows "selected: false" and "selected: true". Unselected "Tab" is regular text, gets a grey background on hover/pressed and a dark outline on focus; selected "Tab" is bold with an orange underline in all states, also with grey background on hover/pressed and a dark outline on focus._
 
 ### Further guidelines
 
@@ -76,7 +76,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](tabs/anatomy-24564-364.png)
 
-_Figure: Shows tabs (tab item 6, tab item 5, tab item4, tab item 3, tab pane, button right, grid=main / narrow, alignment=left). Callouts 1, 2, 3, 4, 5, 6, 7. Text in the figure: "Tab", "123", "❖ Placeholder"._
+_Figure: Anatomy of tabs with six tab items, each with an image icon, the label "Tab" and a "123" number badge, a dark right-chevron overflow button at the end and a purple dashed "Placeholder" content pane below. Callouts: 1 selected tab item (bold, orange underline), 2 unselected tab item(s), 3 icon (optional), 4 label, 5 number indicator (optional), 6 overflow button (optional), 7 content pane._
 
 ### Overflow
 
@@ -86,7 +86,7 @@ The width of tab items adjusts dynamically to their content. If the total number
 
 ![A tab overflow must be indicated with a button](tabs/a-tab-overflow-must-be-indicated-with-a-button-25085-15198.png)
 
-_Figure: Do example. Shows tabs (tab item4, tab item 3, button right, grid=main / narrow, alignment=left). Text in the figure: "Persönliche Schutzausrüstung", "Serivce Kits", "Garniturpflege", "Betriebsstoffe"._
+_Figure: Do example: a single-row tab list with the labels "Persönliche Schutzausrüstung" (selected, bold, with an orange underline), "Serivce Kits", "Garniturpflege" and "Betriebsstoffe", followed by a dark square button with a right chevron at the right end that indicates further tabs overflow the available width._
 
 #### A tab list cannot wrap
 
@@ -94,7 +94,7 @@ The tab list cannot span two rows, as it disrupts the overview and hierarchy.
 
 ![A tab list cannot wrap](tabs/a-tab-list-cannot-wrap-25085-15221.png)
 
-_Figure: Don't example. Shows tab item (label=Persönliche Schutzausrüstung, selected=on, state=enabled); tab item (label=Service Kits, selected=off, state=enabled); tab item (label=Garniturpflege, selected=off, state=enabled); tab item (label=Betriebsstoffe, selected=off, state=enabled); tab item (label=Akkus und Ladegeräte, selected=off, state=enabled). Text in the figure: "Persönliche Schutzausrüstung", "Service Kits", "Garniturpflege", "Betriebsstoffe", "Akkus und Ladegeräte"._
+_Figure: Don't example: the tab list wraps onto two rows, with "Persönliche Schutzausrüstung" (selected, orange underline), "Service Kits", "Garniturpflege" and "Betriebsstoffe" in the first row and "Akkus und Ladegeräte" on a second row, which disrupts the overview and hierarchy._
 
 #### The tab item label cannot wrap
 
@@ -102,7 +102,7 @@ The label of the tab item cannot span two lines, as it disturbs the legibility.
 
 ![The tab item label cannot wrap](tabs/the-tab-item-label-cannot-wrap-25085-15244.png)
 
-_Figure: Don't example. Shows tabs (tab item 5, tab item4, tab item 3, button right, grid=main / narrow, alignment=left). Text in the figure: "Persönliche Schutzausrüstung", "Service Kits", "Garniturpflege", "Betriebsstoffe", "Akku und Ladegeräte", "123"._
+_Figure: Don't example: in a tab list with an overflow button on the right, the selected tab label "Persönliche Schutzausrüstung" wraps onto two lines, which hurts legibility; the other tabs "Service Kits", "Garniturpflege", "Betriebsstoffe" and an icon tab "Akku und Lade…" are cut off by the dark right chevron button._
 
 ### Spacings
 
@@ -114,7 +114,7 @@ The dynamic spacings adjust based on the breakpoint, providing a more compact la
 
 ![Dynamic spacings](tabs/dynamic-spacings-25114-15885.png)
 
-_Figure: Shows tabs (tab item4, tab item 3, tab pane, grid=main / narrow, alignment=left); spacer (type=dynamic token, direction=horizontal); spacer (type=dynamic token, direction=vertical). Text in the figure: "Tab", "❖ Placeholder", "xs", "spacing-dynamic-s"._
+_Figure: Spacing specification for tabs: each tab label "Tab" has horizontal spacers marked "xs" on both sides, and the selected first tab has an orange underline. Below the tab list, a purple dashed "Placeholder" tab pane is separated from the tabs and from the content below by vertical spacers labeled "spacing-dynamic-s"._
 
 ### Placement
 
@@ -124,7 +124,7 @@ The tab in-page must be positioned within the grid and can span either the full 
 
 ![Within the grid](tabs/within-the-grid-24564-381.png)
 
-_Figure: Callouts 1, 2._
+_Figure: Two browser mockups with a column grid and purple dashed guides. Callout 1: the tab list and its tab pane span the full width of the main content area (seven tabs). Callout 2: the tab list and tab pane span only the narrow content area, about the left half of the grid (three tabs)._
 
 #### Warning: nesting tabs in tabs
 
@@ -134,7 +134,7 @@ If a use case requires nested tabs, make sure to test it with real users.
 
 ![Warning: nesting tabs in tabs](tabs/warning-nesting-tabs-in-tabs-25085-15615.png)
 
-_Figure: Don't example._
+_Figure: Don't example: a browser mockup in which a second tab list is nested below the first tab list, each with its own selected tab and orange underline, above a single content area, which makes nested tabs hard to find._
 
 ### Alignment
 
@@ -148,7 +148,7 @@ In most cases, left alignment preferred, as it aligns with typical user reading 
 
 ![Align the tab list to the left or to the center](tabs/align-the-tab-list-to-the-left-or-to-the-center-25085-15702.png)
 
-_Figure: Callouts 1, 2._
+_Figure: Two browser mockups with four tabs each above a content pane and a purple dashed guide. Callout 1: the tab list is left-aligned with the left edge of the content pane. Callout 2: the tab list is centered within the content pane._
 
 #### Align the tab list with the tab pane
 
@@ -156,11 +156,15 @@ The tabs in-page, run as wide as the content pane.
 
 ![Align the tab list with the tab pane](tabs/align-the-tab-list-with-the-tab-pane-25290-6413.png)
 
+_Figure: Browser mockup with seven tabs, the first selected with an orange underline, spread across the full width of the content pane below; purple dashed guides at the left and right edges show that the tab list is as wide as the tab pane._
+
 #### On smaller screens align the tabs to the left
 
 To make more labels visible, left-align the tab list on smaller screens.
 
 ![On smaller screens align the tabs to the left](tabs/on-smaller-screens-align-the-tabs-to-the-left-24564-396.png)
+
+_Figure: Narrow, small-screen browser mockup in which the tab list is left-aligned with the content pane (purple dashed guide at the left edge); the third tab is cut off by a dark overflow button at the right end, and the selected first tab has an orange underline._
 
 ### Motion
 
@@ -172,7 +176,7 @@ To make more labels visible, left-align the tab list on smaller screens.
 
 ![Selected tab indicator: horizontal movement of active border](tabs/selected-tab-indicator-horizontal-movement-of-active-border-25085-15191.png)
 
-_Figure: Shows tabs (tab item 3, grid=main / narrow, alignment=left). Text in the figure: "Lorem ipsum", "Active border move: left or right"._
+_Figure: Tab list with three "Lorem ipsum" tabs: the first is selected (bold, orange active border) and the third is hovered by a mouse cursor with a grey background. A purple arrow from the first to the second tab is labeled "Active border move: left or right", showing that the orange selected-tab indicator moves horizontally to the next tab._
 
 ## Content and Assets
 
@@ -184,7 +188,7 @@ _Figure: Shows tabs (tab item 3, grid=main / narrow, alignment=left). Text in th
 
 ![Consistent and plain language](tabs/consistent-and-plain-language-24564-456.png)
 
-_Figure: Shows tabs (tab item 3, grid=main / narrow, alignment=left). Text in the figure: "Search results for “m162”", "Products", "Documents", "Promotions"._
+_Figure: Under the page title "Search results for “m162”", a left-aligned tab list with three short one-word labels: "Products" (selected, bold with an orange underline), "Documents" and "Promotions"._
 
 ### Context on the page
 
@@ -194,7 +198,7 @@ A clear headline gives guidance and context to the tab list.
 
 ![Context on the page](tabs/context-on-the-page-25111-2008.png)
 
-_Figure: Shows tabs (tab item 3, grid=main / narrow, alignment=left). Text in the figure: "Search results for “m162”", "Products", "Content", "Support"._
+_Figure: In-page tabs placed directly below the headline "Search results for “m162”", which gives the tab list context. The left-aligned tabs are "Products" (selected, bold with an orange underline), "Content" and "Support"._
 
 ### 3 or more words in a tab label
 
@@ -202,7 +206,7 @@ Long labels are hard to recognize as a clickable area, especially mobile.
 
 ![3 or more words in a tab label](tabs/3-or-more-words-in-a-tab-label-24564-461.png)
 
-_Figure: Shows tabs (tab item4, tab item 3, button right, grid=main / narrow, alignment=left). Text in the figure: "Promotions and new arrivals", "Sawing and cutting", "Mowing and planting", "Cleaning and tidying"._
+_Figure: A tab list with long labels: "Promotions and new arrivals" (selected, bold with an orange underline), "Sawing and cutting", "Mowing and planting" and "Cleaning and tidying", followed by a dark right-arrow scroll button. The labels of three or more words take up much space and are hard to recognize as clickable areas._
 
 ### Be aware of duplicate words
 
@@ -210,7 +214,7 @@ In some cases, the title appears directly above the tab list. To enhance clarity
 
 ![Be aware of duplicate words](tabs/be-aware-of-duplicate-words-25123-2048.png)
 
-_Figure: Shows tabs (grid=main / narrow, alignment=left). Text in the figure: "Employees", "All employees", "123", "Invited employees"._
+_Figure: Page title "Employees" above a short tab list with the tabs "All employees" (selected, bold with an orange underline) and "Invited employees", each followed by a grey number indicator "123". The words "employees" repeat in the title and in the tab labels._
 
 ### Don’t: truncate a tab label
 
@@ -218,7 +222,7 @@ Copy inside a tab label does not truncate, because it harms accessibility.
 
 ![Don’t: truncate a tab label](tabs/don-t-truncate-a-tab-label-25123-2097.png)
 
-_Figure: Don't example. Shows tabs (tab item4, tab item 3, button right, grid=main / narrow, alignment=left). Text in the figure: "Promot ... rivals", "Sawing and cutting", "Mowing and planting", "Cleaning and tidying"._
+_Figure: Don't example marked with a red "Don't" badge: the first tab label is truncated to "Promot ... rivals" with an ellipsis, next to "Sawing and cutting", "Mowing and planting", "Cleaning and tidying" and a dark right-arrow button. Truncating a tab label harms accessibility._
 
 ### Icon usage
 
@@ -229,7 +233,7 @@ _Figure: Don't example. Shows tabs (tab item4, tab item 3, button right, grid=ma
 
 ![Icon usage](tabs/icon-usage-24564-471.png)
 
-_Figure: Shows tabs (tab item4, tab item 3, grid=main / narrow, alignment=left). Text in the figure: "All", "On-Site", "Remote", "Hybrid"._
+_Figure: Two tab lists with the labels "All", "On-Site", "Remote" and "Hybrid", "All" selected. In the top list every tab has an icon; in the bottom list "All" has no icon while the other three tabs have one, the allowed exception for a first tab that shows all items._
 
 ### Integrated number indicator
 
@@ -240,7 +244,7 @@ _Figure: Shows tabs (tab item4, tab item 3, grid=main / narrow, alignment=left).
 
 ![Integrated number indicator](tabs/integrated-number-indicator-24867-1314.png)
 
-_Figure: Shows tabs (tab item4, tab item 3, grid=main / narrow, alignment=left). Text in the figure: "Employees", "All", "123", "Full-Time", "Part-Time", "Freelancers"._
+_Figure: Page title "Employees" above four tabs, "All" (selected, bold with an orange underline), "Full-Time", "Part-Time" and "Freelancers", each with an integrated grey number indicator "123" on the right side of the label._
 
 ### Icon and number indicator
 
@@ -248,7 +252,7 @@ Be aware of visual clutter and harming the cognitive load of the user, when both
 
 ![Icon and number indicator](tabs/icon-and-number-indicator-25128-2101.png)
 
-_Figure: Shows tabs (tab item4, tab item 3, grid=main / narrow, alignment=left). Text in the figure: "Employees", "All", "123", "On-Site", "Remote", "Hybrid"._
+_Figure: Page title "Employees" above four tabs, "All" (selected, bold with an orange underline), "On-Site", "Remote" and "Hybrid", each showing both a leading icon and a grey number indicator "123", which creates visual clutter and raises cognitive load._
 
 ### Amount of tabs
 
@@ -260,7 +264,7 @@ _Figure: Shows tabs (tab item4, tab item 3, grid=main / narrow, alignment=left).
 
 ![Minimum is two tabs](tabs/minimum-is-two-tabs-24564-477.png)
 
-_Figure: Shows tabs (grid=main / narrow, alignment=center). Text in the figure: "Recent", "Favorites"._
+_Figure: A center-aligned tab list with the minimum of two tabs, "Recent" (selected, bold with an orange underline) and "Favorites", above a thin grey baseline._
 
 #### Discoverability problem: high amount of tabs
 
@@ -268,7 +272,7 @@ Tabs that are initially hidden are less discoverable, as the user must scroll/na
 
 ![Discoverability problem: high amount of tabs](tabs/discoverability-problem-high-amount-of-tabs-24564-482.png)
 
-_Figure: Shows tabs (tab item 7, tab item 6, tab item 10, tab item 5, tab item 9, tab item4, tab item 3, tab item 8, button right, grid=main / narrow, alignment=left). Text in the figure: "Employees", "Tab"._
+_Figure: Under the title "Employees", a row of ten tabs all labelled "Tab", the first selected. Seven tabs are visible up to a dark right-arrow button and a dashed vertical line marking the visible edge; the last three are faded and hidden behind it, so the user must scroll or use the arrow to find them._
 
 #### Order the tabs by importance and/or relevance
 
@@ -279,7 +283,7 @@ _Figure: Shows tabs (tab item 7, tab item 6, tab item 10, tab item 5, tab item 9
 
 ![Order the tabs by importance and/or relevance](tabs/order-the-tabs-by-importance-and-or-relevance-24564-487.png)
 
-_Figure: Shows tabs (tab item 5, tab item4, tab item 3, grid=main / narrow, alignment=left). Text in the figure: "All products", "Saw Chains", "Guide Bars", "Sets", "Service Kits"._
+_Figure: Horizontal tab list ordered by relevance with "All products" first and selected (bold label, orange underline), followed by "Saw Chains", "Guide Bars", "Sets" and "Service Kits" above a thin divider line._
 
 #### On smaller screens, most tabs may extend beyond the visible area
 
@@ -287,7 +291,7 @@ Short copy is even more essential on mobile devices to display more tabs.
 
 ![On smaller screens, most tabs may extend beyond the visible area](tabs/on-smaller-screens-most-tabs-may-extend-beyond-the-visible-a-24564-492.png)
 
-_Figure: Shows tabs (tab item4, tab item 3, button right, grid=main / narrow, alignment=left). Text in the figure: "Accessories", "All products", "Installation", "Tab", "All", "Clean & Care"._
+_Figure: Two mobile screens titled "ACCESSORIES", each with a tab list that runs past the visible area and ends in a dark right-arrow button; the left screen shows "All products" (selected) and "Installation" with shorter labels, the right shows "All" (selected), "Installation" and a cut-off "Clean & Care"._
 
 ## Behavior
 
@@ -297,7 +301,7 @@ Do not place any elements that needs system verification in a tab component. Sys
 
 ![Don’t: system feedback](tabs/don-t-system-feedback-25295-5709.png)
 
-_Figure: Don't example. Shows tabs (tab item4, tab item 3, grid=main / narrow, alignment=left); system-feedback (type=error). Text in the figure: "Tab", "System Feedback Message"._
+_Figure: Don't example: a tab list of four tabs labelled "Tab" (first selected) with a red error icon and the "System Feedback Message" placed directly below it, which is wrong because elements needing system verification must not sit in a tab component, where feedback is hidden or hard to find._
 
 ### Overflow behaviour
 
@@ -306,7 +310,7 @@ _Figure: Don't example. Shows tabs (tab item4, tab item 3, grid=main / narrow, a
 
 ![Overflow behaviour](tabs/overflow-behaviour-25123-2131.png)
 
-_Figure: Shows tabs (tab item 7, tab item 6, tab item 5, tab item 9, button left, tab item4, tab item 3, tab item 8, button right, grid=main / narrow, alignment=left); tabs (tab item 7, tab item 6, tab item 5, button left, tab item4, tab item 3, tab item 8, button right, grid=main / narrow, alignment=left). Callouts 1, 2. Text in the figure: "Tab"._
+_Figure: Two overflowing tab lists of "Tab" items with a selected third tab and left/right arrow buttons. Callout 1 marks the cursor variant, where the tabs move horizontally only by clicking the arrow buttons (a hand cursor is on the right button); callout 2 marks the touch variant, where tapping the buttons or dragging moves the tabs (touch points shown as purple circles on a tab and on the right button)._
 
 ### Content pane
 
@@ -318,7 +322,7 @@ No trigger is needed to display the first pane.
 
 ![First tab label is selected by default](tabs/first-tab-label-is-selected-by-default-24564-431.png)
 
-_Figure: Shows tabs (tab item 5, tab item4, tab item 3, grid=main / narrow, alignment=left). Text in the figure: "Chainsaw Accessories", "All", "Saw Chains", "Guide Bars", "Sets", "Service Kits"._
+_Figure: Page section titled "CHAINSAW ACCESSORIES" with the tab list "All", "Saw Chains", "Guide Bars", "Sets", "Service Kits" where the first tab "All" is selected by default (bold, orange underline) and its content pane below shows product cards for a Care and Clean Kit MS Plus and two service kits._
 
 #### One content pane is visible
 
@@ -331,7 +335,7 @@ The user has full control over the content that is visible.
 
 ![One content pane is visible](tabs/one-content-pane-is-visible-24564-436.png)
 
-_Figure: Shows tabs (tab item 5, tab item4, tab item 3, grid=main / narrow, alignment=left). Text in the figure: "Chainsaw Accessories", "All", "Saw Chains", "Guide Bars", "Sets", "Service Kits"._
+_Figure: Page section titled "CHAINSAW ACCESSORIES" with the tab list "All", "Saw Chains", "Guide Bars", "Sets", "Service Kits" where "Saw Chains" is the only selected tab and the only visible content pane shows saw chain products (.325" Super 3 Pro, 1,3 mm; Rapid HEXA; 36 GBE Diamond Concrete Saw Chain)._
 
 ## Examples/Variants
 
@@ -348,7 +352,7 @@ _Figure: Shows tabs (tab item 5, tab item4, tab item 3, grid=main / narrow, alig
 
 ![Tab in-page vs. tab navigation](tabs/tab-in-page-vs-tab-navigation-24564-503.png)
 
-_Figure: Callouts 1, 2. Text in the figure: "Page title"._
+_Figure: Two wireframe pages with a side navigation and "PAGE TITLE". Callout 1 points at tabs in-page, placed below the page title and image area, to switch content panes on the page; callout 2 points at tab navigation, placed above the page title at the top of the content area, linking to other pages on the same level._
 
 #### Tabs to hide and show content
 
@@ -360,13 +364,15 @@ Example: Most people that visit the website are private consumers and not an aut
 
 ![Tabs to hide and show content](tabs/tabs-to-hide-and-show-content-25128-4363.png)
 
-_Figure: Shows tabs (grid=main / narrow, alignment=center); accordion-group (size=medium, flush=false, expansion indicator=right); button (button text=Zum Kontaktformular, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Zu weiteren Kontaktmöglichkeiten, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Wir sind für Sie da.", "Our STIHL customer service is happy to answer any questions you may have abou...", "How may we help you?", "Consumer", "STIHL dealer", "Summary of the accordion content", "Ich habe keine Antwort auf meine Frage gefunden und möchte den STIHL-Kundense...", "Zum Kontaktformular", "Zu weiteren Kontaktmöglichkeiten"._
+_Figure: Customer service page excerpt with the heading "How may we help you?" and centered tabs "Consumer" (selected) and "STIHL dealer", with a content pane below made of five accordion rows titled "Summary of the accordion content"; above it a hero image of a man with the text "Our STIHL customer service is happy to answer any questions you may have about..." and below the accordions the buttons "Zum Kontaktformular" and "Zu weiteren Kontaktmöglichkeiten"._
 
 #### Tabs to filter cards
 
 In some cases a tab list helps users to filter cards. Use up to 5-7 tab items in the tab list.
 
 ![Tabs to filter cards](tabs/tabs-to-filter-cards-25128-9628.png)
+
+_Figure: Dark page section titled "THIS YEARS ATHLETES" with a tab list "All Athletes" (selected), "World champions" and "German champions" used to filter the row of athlete portrait cards below it._
 
 #### Filter: tabs in-page, checkbox group or chip group?
 
@@ -388,7 +394,7 @@ In some cases a tab list helps users to filter cards. Use up to 5-7 tab items in
 
 ![Filter: tabs in-page, checkbox group or chip group?](tabs/filter-tabs-in-page-checkbox-group-or-chip-group-24564-513.png)
 
-_Figure: Shows tabs (tab item4, tab item 3, grid=main / narrow, alignment=left); checkbox-group (legend=Type of propulsion:, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, direction=vertical); button (button text=Save selection, variant=filled, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); chip-group (lable, type=selectable, size=medium). Callouts 1, 2, 3. Text in the figure: "All types of propulsion", "Battery", "Fuel", "Corded electric", "Type of propulsion:", "Save selection"._
+_Figure: Three ways to filter by type of propulsion. Callout 1: tabs "All types of propulsion" (selected), "Battery", "Fuel" and "Corded electric". Callout 2: a checkbox group with legend "Type of propulsion:" and unchecked checkboxes "Battery", "Fuel", "Corded electric" plus a "Save selection" button. Callout 3: a chip group with legend "Type of propulsion:" and selectable chips "Battery", "Fuel" and "Corded electric", each with an icon._
 
 ### STIHL use cases
 
@@ -398,27 +404,21 @@ In the STIHL dealer search web app the tabs are placed on top of a map. The tabs
 
 ![STIHL dealer search](tabs/stihl-dealer-search-25128-4532.png)
 
-_Figure: Shows tabs (grid=main / narrow, alignment=left). Text in the figure: "Favorites", "Search results"._
+_Figure: STIHL dealer search web app titled "FIND A DEALER" with a search field containing "Stuttgart" and a "Select filter" dropdown above a map of the Stuttgart area. Over the left of the map a tabs component (grid=main / narrow, alignment=left) shows the tabs "Favorites" (selected, with an orange underline) and "Search results", above a list of dealer results with their addresses and distances._
 
 ## Tabs navigation
-
-Overview:
-
-- The components main function is to navigate to another page url.
-   - In case the other tabs activate a content pane to switch, use the tabs in-page (see above)
-- Tabs navigation can be extended beyond the grid to span the full width of the full content area.
-- Left alignment is default and preferred option, as it aligns with typical user reading behavior, also known as the ‘F-pattern’.
-- The tabs navigation component is a link list and often used as secondary navigation.
 
 > Tabs in-page and tabs navigation are stored together as a single component in Figma.
 
 ![Tabs navigation](tabs/tabs-navigation-25290-6868.png)
 
-_Figure: Shows tab-item (label=Tab, state=enabled, selected=on); tab-item (label=Tab, state=enabled, selected=off). Text in the figure: "Tab", "alignment: left", "alignment: center", "grid: main/narrow", "grid: full"._
+_Figure: Tabs navigation variants in a matrix of "alignment: left" and "alignment: center" columns against "grid: main/narrow" and "grid: full" rows. Each cell shows four tabs labelled "Tab", the first one selected (bold with an orange underline) and the others unselected, above a thin divider line; in the full grid the left-aligned tab list starts slightly further inset._
 
 ![Tabs navigation](tabs/tabs-navigation-25290-7285.png)
 
-_Figure: Text in the figure: "Tab item", "enabled", "hover/pressed", "focus", "Tab", "selected: false", "selected: true"._
+_Figure: Tab item states in a matrix of "enabled", "hover/pressed" and "focus" columns against "selected: false" and "selected: true" rows. Unselected tabs show a regular "Tab" label; selected tabs show a bold label with an orange underline. Hover/pressed adds a light grey background and focus adds a dark outline around the tab._
+
+> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 
@@ -455,7 +455,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](tabs/anatomy-25128-2867.png)
 
-_Figure: Shows tabs (tab item 6, tab item4, tab item 3, button right, grid=main / narrow, alignment=left). Callouts 1, 2, 3, 4, 5, 6. Text in the figure: "Tab", "123"._
+_Figure: Anatomy of tabs (grid=main / narrow, alignment=left): a row of tabs each with an image icon, the label "Tab" and a number badge "123", ending with a dark chevron button on the right. Callout 1 points at the selected tab (bold, orange underline), 2 at an unselected tab, 3 at the icon, 4 at the label, 5 at the number indicator, and 6 at the overflow button._
 
 ### Placement
 
@@ -465,7 +465,7 @@ The tab navigation can either be placed within the grid, spanning the main conte
 
 ![Horizontal placement: grid](tabs/horizontal-placement-grid-25295-5735.png)
 
-_Figure: Callouts 1, 2._
+_Figure: Two page wireframes with a column grid and purple dashed lines marking the grid edges. Callout 1: the tab navigation sits within the grid, spanning the main content area's full width, with a divider line limited to the grid. Callout 2: the tab navigation extends beyond the grid across the full content area, with its divider line running the full page width while the tab items still align with the content grid._
 
 #### Horizontal placement: grid sidebar
 
@@ -474,6 +474,8 @@ For use cases with 1 or 2 sidebars the tab navigation must extend beyond the gri
 [Full content area guideline →](https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ/Grid-%26-Spacing-%F0%9F%A7%AE?node-id=1-132)
 
 ![Horizontal placement: grid sidebar](tabs/horizontal-placement-grid-sidebar-25299-14151.png)
+
+_Figure: Page wireframe with a sidebar on the left and a column grid for the content area, with purple dashed lines at the edges of the full content area. The tab navigation spans the full content area beside the sidebar, its divider line running across the whole area, while the tab items align with the content grid below._
 
 #### Vertical placement
 
@@ -485,7 +487,7 @@ background-color-secondary
 
 ![Vertical placement](tabs/vertical-placement-25290-7373.png)
 
-_Figure: Callouts 1, 2. Text in the figure: "Page title"._
+_Figure: Four page wireframes, the top two without and the bottom two with a sidebar. Callout 1 (left column): the tab navigation is placed below the "PAGE TITLE" heading, inside a tinted header area. Callout 2 (right column): the tab navigation is placed above the "PAGE TITLE" heading, directly under the main header, with the page title and content below it._
 
 ### Alignment
 
@@ -499,13 +501,15 @@ Center alignment can be used in for some use cases, if it enhances the discovera
 
 ![Align the tab list to the left or to the center](tabs/align-the-tab-list-to-the-left-or-to-the-center-25299-18430.png)
 
-_Figure: Callouts 1, 2._
+_Figure: Four page wireframes, the top two without and the bottom two with a sidebar, each with a purple dashed alignment line. Callout 1: the tab list is left-aligned, with the first tab starting at the left edge of the content below. Callout 2: the tab list is centered, positioned around the central dashed line._
 
 #### Align the tab items with the content
 
 Even if the tab component extends beyond the grid, the tab items themselves must always align with content below and cannot run wider.
 
 ![Align the tab items with the content](tabs/align-the-tab-items-with-the-content-25299-18469.png)
+
+_Figure: Page wireframe where the tab navigation's divider line extends beyond the content grid across the full width, but the tab items, including the last one and the dark overflow chevron button, stay between two purple dashed lines that mark the left and right edges of the content below._
 
 ## Behavior
 
@@ -519,7 +523,7 @@ Even if the tab component extends beyond the grid, the tab items themselves must
 
 ![Tab contains a link](tabs/tab-contains-a-link-25227-3342.png)
 
-_Figure: Shows tabs (tab item 5, tab item4, tab item 3, grid=main / narrow, alignment=left). Text in the figure: "Chainsaw Accessories", "All", "Saw Chains", "Guide Bars", "Sets", "Service Kits", "Open category page Guide Bars Accessories"._
+_Figure: Tabs navigation under the heading "CHAINSAW ACCESSORIES" with the tabs "All" (selected, bold with orange underline), "Saw Chains", "Guide Bars", "Sets" and "Service Kits". The mouse cursor hovers the "Guide Bars" tab, which has a grey background, and a tooltip reads "Open category page Guide Bars Accessories", showing that each tab is a link to a URL._
 
 ## Examples/Variants
 
@@ -538,7 +542,7 @@ _Figure: Shows tabs (tab item 5, tab item4, tab item 3, grid=main / narrow, alig
 
 ![Tab in-page vs. tab navigation](tabs/tab-in-page-vs-tab-navigation-25227-2827.png)
 
-_Figure: Callouts 1, 2. Text in the figure: "Page title"._
+_Figure: Two wireframes of an app page with a sidebar, an orange logo area and a "Page title". Callout 2 (top wireframe) points at the tabs navigation, a row of four tabs with the first one active, placed above the page title; callout 1 (bottom wireframe) points at the in-page tabs, a row of four tabs with the first one active, placed below the page title and content blocks._
 
 #### Navigation as a main purpose
 
@@ -551,7 +555,7 @@ It can be combined with a main navigation, e.g. a
 
 ![Navigation as a main purpose](tabs/navigation-as-a-main-purpose-25327-3481.png)
 
-_Figure: Shows tabs (tab item 3, grid=main/narrow, alignment=left). Callouts 1, 2. Text in the figure: "Page title"._
+_Figure: Two wireframes of tabs navigation (tab item 3, grid main/narrow, left aligned, first tab active) used as secondary navigation above the "Page title" together with a main navigation. Callout 1 shows it combined with a sidebar on the left; callout 2 shows it combined with a top bar navigation along the top._
 
 ### STIHL use cases
 
@@ -563,10 +567,12 @@ The tabs are combined with a more complex filter.
 
 ![Category pages in the stihl webshop](tabs/category-pages-in-the-stihl-webshop-25227-3009.png)
 
-_Figure: Shows tabs (tab item 5, tab item4, tab item 3, grid=main / narrow, alignment=left). Text in the figure: "Chainsaw Accessories", "All", "Saw Chains", "Guide Bars", "Sets", "Service Kits"._
+_Figure: STIHL webshop category page titled "Chainsaw Accessories" with left-aligned tabs "All" (active, orange underline), "Saw Chains", "Guide Bars", "Sets" and "Service Kits" below the title. Beneath the tabs are a Filter with checkbox options (Power source: Battery, Electric, Manually, Automatic) and product cards such as Care and Clean Kit MS Plus and Service Kit 14 and 12._
 
 #### STIHL Service Center (SSC)
 
 The portal offers a search function of which search results are categorized into: ‘Product variants’, ‘Parts’, ‘Documents’ and ‘Support news’ results.
 
 ![STIHL Service Center (SSC)](tabs/stihl-service-center-ssc-25227-3273.png)
+
+_Figure: STIHL Service Center search results page for "MS 180" (34) with tabs "Product variantes" (active, 6), "Parts" (23), "Documents" (5) and "Support news" (3), each with a count badge. Below the tabs are a "Sort by: Variant" dropdown and cards titled "Model plate MS 180" showing a chainsaw and an "Add to bookmarks" button, the last one showing "Added to bookmarks"._

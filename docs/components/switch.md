@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 513:2
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:50:14.189Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:25:57.836Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=513-2
 ---
 

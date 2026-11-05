@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 8139:4888
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:48:35.647Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:25:07.765Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=8139-4888
 ---
 
@@ -30,11 +30,11 @@ Overview:
 
 ![Select](select/select-8196-31676.png)
 
-_Figure: Shows button (button text=Button, variant=ghost, state=enabled, size=medium, icon position=none, hide label=on, flush alignment=off); system-feedback (type=error); button (button text=Button, variant=ghost, state=disabled, size=medium, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Size: Medium", "Size: Small", "is invalid", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Placeholder", "System Feedback Message", "Default", "Hover", "Focus", "Disabled"._
+_Figure: Select states matrix for sizes Medium and Small, each with a default and an "is invalid" column and rows Default, Hover, Focus and Disabled. Every cell shows a "Label", a hint text and a bordered field with the placeholder "Placeholder" and a chevron; invalid cells (Default and Focus only) have a red border and a red "System Feedback Message", Hover has a grey filled field, Focus a thick dark border, and Disabled a light grey border and muted text._
 
 ![Select](select/select-8892-2253.png)
 
-_Figure: Shows select (label, placeholder, state=enabled, invalid=false, size=medium); Select menu chrome menu items (input, state=enabled, selected=True); Select menu chrome menu items (input, state=enabled, selected=False). Text in the figure: "Helper Component", "Select Menu Item Chrome", "Selceted : false", "Selceted : true", "Label", "Select", "Option", "Enabled", "Hover/Focus", "Disabled", "Select Menu Chrome"._
+_Figure: Helper components for the native select menu. "Select Menu Item Chrome" shows an "Option" item with "Selceted : false" and "Selceted : true" in the states Enabled (plain text, a grey check mark when selected), Hover/Focus (blue highlight with white text, white check mark when selected) and Disabled (light grey text); "Select Menu Chrome" shows an open list with a checked "Select" entry followed by four "Option" entries, and a select field labelled "Label" with the same menu opened over it._
 
 ### Further guidelines
 
@@ -74,7 +74,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Select Field](select/select-field-8196-33637.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); select (label, ℹ️ info-button, placeholder, hint, state=enabled, invalid=false, size=medium); annotation-circle (number=5, type=right, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=bottom, color=blue); select (label, placeholder, hint, state=enabled, invalid=true, size=medium); annotation-circle (number=5, type=left, color=blue); annotation-circle (number=6, type=left, color=blue). Callouts 1, 2, 3, 4, 5, 6. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing", "Select", "System Feedback Message"._
+_Figure: Anatomy of the select field in two states. In the upper default field callout 1 marks the "Label", callout 5 the info button next to the label, callout 2 the hint text "Lorem ipsum dolor sit amet, consectetur adipiscing", callout 3 the placeholder "Select" inside the field and callout 4 the chevron on the right; in the lower invalid field with a red border, a second callout 5 marks the field and callout 6 the red "System Feedback Message" below it._
 
 #### Native select menu
 
@@ -82,7 +82,7 @@ The select menu is defined by the the operating system or browsers design (examp
 
 ![Native select menu](select/native-select-menu-9758-3202.png)
 
-_Figure: Shows select (label, placeholder, state=enabled, invalid=false, size=medium). Text in the figure: "Salutation", "Select", "Mr.", "Mrs.", "Other"._
+_Figure: Select field with the label "Salutation" and its native operating-system select menu opened over it, listing "Select" (checked), "Mr.", "Mrs." and "Other" in a grey rounded menu._
 
 ## Content and Assets
 
@@ -100,11 +100,11 @@ _Figure: Shows select (label, placeholder, state=enabled, invalid=false, size=me
 
 ![Amount of items in the list](select/amount-of-items-in-the-list-9537-4731.png)
 
-_Figure: Do example. Shows radio-group (item 4, legend, item 5, item 3, legend=Salutation, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false); select (label, placeholder, state=enabled, invalid=false, size=medium); combobox (dropdown, state=active/focus, invalid=false). Callouts 1, 2, 3. Text in the figure: "Salutation", "Mr.", "Mrs.", "other", "Label", "Select", "Option 1", "Option 2", "Option 3", "Option 4", "Country", "B|", "Bangladesh"._
+_Figure: Do example. Shows radio-group (item 4, legend, description=\[object Object\], legend=Salutation, item 5, item 3, orientation=horizontal, show title=false); select (label, placeholder, state=enabled, invalid=false, size=medium); combobox (dropdown, state=active/focus, invalid=false). Callouts 1, 2, 3. Text in the figure: "Salutation", "Mr.", "Mrs.", "other", "Label", "Select", "Option 1", "Option 2", "Option 3", "Option 4", "Country", "B|", "Bangladesh"._
 
 ![Amount of items in the list](select/amount-of-items-in-the-list-9537-4741.png)
 
-_Figure: Don't example. Shows select (label, placeholder, state=enabled, invalid=false, size=medium). Callouts 1. Text in the figure: "Salutation", "Select", "Mr.", "Mrs.", "Other"._
+_Figure: Don't example: callout 1 marks a select labelled "Salutation" with its native menu open showing only "Select", "Mr." and "Mrs." and "Other"; with fewer than 5 options a radio group should be used instead of a select._
 
 ### Specific placeholder copy
 
@@ -112,7 +112,7 @@ Even though the default placeholder is “Select”. It is recommended to be as 
 
 ![Specific placeholder copy](select/specific-placeholder-copy-9783-802.png)
 
-_Figure: Shows combobox (dropdown, state=default, invalid=false). Text in the figure: "Salutation", "Select", "Country", "Select a country"._
+_Figure: Two select fields side by side: "Salutation" with the default placeholder "Select" and "Country" with the more specific placeholder "Select a country", each with a chevron._
 
 ### Truncation
 
@@ -120,7 +120,7 @@ _Figure: Shows combobox (dropdown, state=default, invalid=false). Text in the fi
 
 ![Truncation](select/truncation-9537-4922.png)
 
-_Figure: Shows select (label, placeholder, state=enabled, invalid=false, size=medium). Text in the figure: "Country", "Select", "United Kingdom", "United States of Ameri...", "Uruguay"._
+_Figure: Select with the label "Country" whose native dropdown is open, listing "Select", "United Kingdom" (checked), "United States of Ameri..." and "Uruguay"; the long option "United States of Ameri..." is cut off with an ellipsis because the list is narrower than the item._
 
 ### Info Button
 
@@ -130,7 +130,7 @@ Popover content should be **limited to supplementary, non-critical information**
 
 ![Info Button](select/info-button-39626-3110.png)
 
-_Figure: Shows select (label, ℹ️ info-button, placeholder, state=enabled, invalid=false, size=medium); cursor (type=pointer). Text in the figure: "You will usually find the Machine Number in the location shown in the illustr...", "Machine Number", "Select"._
+_Figure: Select labelled "Machine Number" with an info button (ℹ️) next to the label, hovered by a pointer cursor, with the placeholder "Select". A popover above it reads "You will usually find the Machine Number in the location shown in the illustrations" and shows two line drawings of STIHL machines with the number location marked as "xxxxxxxxx"._
 
 **Don’t use the popover for critical or required information**, use the hint instead as critical information should net be hidden
 
@@ -138,7 +138,7 @@ For mor Guidance on this topic see the [Popover documentation](https://www.figma
 
 ![Info Button](select/info-button-39626-3129.png)
 
-_Figure: Don't example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); select (label, ℹ️ info-button, placeholder, state=enabled, invalid=false, size=medium); cursor (type=pointer). Text in the figure: "Selecting the wrong chain pitch can make the chain incompatible", "Chain pitch", "Select"._
+_Figure: Don't example: select labelled "Chain pitch" with an info button and the placeholder "Select", with a white popover above it reading "Selecting the wrong chain pitch can make the chain incompatible". Critical information must not be hidden in a popover; use the hint instead._
 
 ## Behavior
 
@@ -148,7 +148,7 @@ The native select component enhances the usability, on all devices and in all br
 
 ![Familiar pattern](select/familiar-pattern-9544-5308.png)
 
-_Figure: Do example. Shows select (label, placeholder, state=enabled, invalid=false, size=medium). Text in the figure: "Label", "Select", "Option 1", "Option 2", "Option 3", "Option 4"._
+_Figure: Do example: select labelled "Label" using the native dropdown, which is open and lists "Select" (checked), "Option 1", "Option 2", "Option 3" and "Option 4". The native list is familiar to users on all devices and browsers._
 
 ### Trigger to open the dropdown
 
@@ -156,7 +156,7 @@ _Figure: Do example. Shows select (label, placeholder, state=enabled, invalid=fa
 
 ![Trigger to open the dropdown](select/trigger-to-open-the-dropdown-9544-5949.png)
 
-_Figure: Do example. Shows select (label, placeholder, state=enabled, invalid=false, size=medium). Text in the figure: "Label", "Select", "Option 1", "Option 2", "Option 3", "Option 4"._
+_Figure: Do example: two selects labelled "Label" side by side. The left one is closed with the placeholder "Select" and a chevron, the right one is open and shows the full native list "Select" (checked), "Option 1", "Option 2", "Option 3", "Option 4", which opens on click._
 
 ## Examples / Variations
 

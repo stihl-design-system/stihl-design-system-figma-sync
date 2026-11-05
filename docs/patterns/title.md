@@ -14,10 +14,10 @@ figmaFile: Web Pattern Library
 figmaProject: 03. Platform Libraries
 figmaFileKey: Ie2r0R9QwjEc7O3nrFbXhV
 figmaNodeId: 7:19
-figmaVersion: "2370898144407684143"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-06-30T14:44:46Z
-syncedAt: 2026-11-04T14:53:02.922Z
+figmaVersion: "2418090261531524003"
+figmaVersionLabel: "Bug Fix: popover slot implementation / content loss"
+figmaVersionCreatedAt: 2026-11-04T18:34:21Z
+syncedAt: 2026-11-05T19:30:37.218Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7-19
 ---
 

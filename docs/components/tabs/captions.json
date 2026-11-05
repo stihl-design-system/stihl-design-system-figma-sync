@@ -1,0 +1,237 @@
+{
+  "0004764b0c79b4ce002dbbb948fb94f179651d60c72a8a0e423e617f645bf0dc": {
+    "nodeId": "25128:4532",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "STIHL dealer search web app titled \"FIND A DEALER\" with a search field containing \"Stuttgart\" and a \"Select filter\" dropdown above a map of the Stuttgart area. Over the left of the map a tabs component (grid=main / narrow, alignment=left) shows the tabs \"Favorites\" (selected, with an orange underline) and \"Search results\", above a list of dealer results with their addresses and distances."
+  },
+  "034b793d7185a2597cae4e9b1086166669a157b2c9ecb5890ae37f14a9daabb3": {
+    "nodeId": "24564:364",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of tabs with six tab items, each with an image icon, the label \"Tab\" and a \"123\" number badge, a dark right-chevron overflow button at the end and a purple dashed \"Placeholder\" content pane below. Callouts: 1 selected tab item (bold, orange underline), 2 unselected tab item(s), 3 icon (optional), 4 label, 5 number indicator (optional), 6 overflow button (optional), 7 content pane."
+  },
+  "0537c79daec2c89769089d8d0fe79c7611b43606954098260c143c03a1e7948d": {
+    "nodeId": "24564:436",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Page section titled \"CHAINSAW ACCESSORIES\" with the tab list \"All\", \"Saw Chains\", \"Guide Bars\", \"Sets\", \"Service Kits\" where \"Saw Chains\" is the only selected tab and the only visible content pane shows saw chain products (.325\" Super 3 Pro, 1,3 mm; Rapid HEXA; 36 GBE Diamond Concrete Saw Chain)."
+  },
+  "09267ff6b46f62f03be48d34ca03707da6826ad3447d1a37a750dbc0ff6ab05c": {
+    "nodeId": "25085:15702",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two browser mockups with four tabs each above a content pane and a purple dashed guide. Callout 1: the tab list is left-aligned with the left edge of the content pane. Callout 2: the tab list is centered within the content pane."
+  },
+  "11afc13d8159e1553b7d5ec41a9ffe4fc6315cf0dda8cba40475a94f7911cfec": {
+    "nodeId": "25123:2097",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example marked with a red \"Don't\" badge: the first tab label is truncated to \"Promot ... rivals\" with an ellipsis, next to \"Sawing and cutting\", \"Mowing and planting\", \"Cleaning and tidying\" and a dark right-arrow button. Truncating a tab label harms accessibility."
+  },
+  "1bb16f05debd6dc86c31619e75c33949182c3dbff06cfe5561d8cce350a34544": {
+    "nodeId": "24564:461",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A tab list with long labels: \"Promotions and new arrivals\" (selected, bold with an orange underline), \"Sawing and cutting\", \"Mowing and planting\" and \"Cleaning and tidying\", followed by a dark right-arrow scroll button. The labels of three or more words take up much space and are hard to recognize as clickable areas."
+  },
+  "2844b586b35befd570b5c89d01db8a9453f60ce1b25aac5b3466ecee0d2ea44d": {
+    "nodeId": "25123:2131",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two overflowing tab lists of \"Tab\" items with a selected third tab and left/right arrow buttons. Callout 1 marks the cursor variant, where the tabs move horizontally only by clicking the arrow buttons (a hand cursor is on the right button); callout 2 marks the touch variant, where tapping the buttons or dragging moves the tabs (touch points shown as purple circles on a tab and on the right button)."
+  },
+  "29196a85d8235f2d2c41f2ef449bc76a687b32333388ca0d255de8efbb3c570a": {
+    "nodeId": "25128:9628",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Dark page section titled \"THIS YEARS ATHLETES\" with a tab list \"All Athletes\" (selected), \"World champions\" and \"German champions\" used to filter the row of athlete portrait cards below it."
+  },
+  "3b48607d2cd98744f04a3f14a7f04b8d324e18d3d4964535404e9efb0d45728a": {
+    "nodeId": "24867:1314",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Page title \"Employees\" above four tabs, \"All\" (selected, bold with an orange underline), \"Full-Time\", \"Part-Time\" and \"Freelancers\", each with an integrated grey number indicator \"123\" on the right side of the label."
+  },
+  "42d005debdb9c6fe59f2c5dec15317460a3840a9a0ae87fc1457ecf11663b9c5": {
+    "nodeId": "25290:7285",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Tab item states in a matrix of \"enabled\", \"hover/pressed\" and \"focus\" columns against \"selected: false\" and \"selected: true\" rows. Unselected tabs show a regular \"Tab\" label; selected tabs show a bold label with an orange underline. Hover/pressed adds a light grey background and focus adds a dark outline around the tab."
+  },
+  "4629212341eba5c09c99624d5242592daf7f93132765aeb7095b1421ba45a176": {
+    "nodeId": "24564:431",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Page section titled \"CHAINSAW ACCESSORIES\" with the tab list \"All\", \"Saw Chains\", \"Guide Bars\", \"Sets\", \"Service Kits\" where the first tab \"All\" is selected by default (bold, orange underline) and its content pane below shows product cards for a Care and Clean Kit MS Plus and two service kits."
+  },
+  "469f19b37e18397164464da6102ced3a40350c6701b0b6a5384d2dcb102dc0bc": {
+    "nodeId": "24686:11442",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two in-page tabs examples labelled \"Tab\", each with four tab items (first selected in bold with an orange underline) above a purple dashed \"Placeholder\" tab pane: \"alignment: left\" with the tab list aligned to the left edge, and \"alignment: center\" with the tab list centered."
+  },
+  "528e4b7af46109b7b89f7810907288a72fb8d7372b905c534587b5cdfdd4bc78": {
+    "nodeId": "25085:15191",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Tab list with three \"Lorem ipsum\" tabs: the first is selected (bold, orange active border) and the third is hovered by a mouse cursor with a grey background. A purple arrow from the first to the second tab is labeled \"Active border move: left or right\", showing that the orange selected-tab indicator moves horizontally to the next tab."
+  },
+  "5c52b905bb9f28dc5077393eafc30ba93324bcb8e2c308744e0eb24a71ad1f03": {
+    "nodeId": "24564:503",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two wireframe pages with a side navigation and \"PAGE TITLE\". Callout 1 points at tabs in-page, placed below the page title and image area, to switch content panes on the page; callout 2 points at tab navigation, placed above the page title at the top of the content area, linking to other pages on the same level."
+  },
+  "6240224940f768363b350f2d4bb1ccf58bb26a8146c7fdd3fff8e6ee6fd7242c": {
+    "nodeId": "25295:5735",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two page wireframes with a column grid and purple dashed lines marking the grid edges. Callout 1: the tab navigation sits within the grid, spanning the main content area's full width, with a divider line limited to the grid. Callout 2: the tab navigation extends beyond the grid across the full content area, with its divider line running the full page width while the tab items still align with the content grid."
+  },
+  "76b184e56180bdb3201429a99181c75ba9b7461895f27e4e117464f184a73cc5": {
+    "nodeId": "25085:15198",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a single-row tab list with the labels \"Persönliche Schutzausrüstung\" (selected, bold, with an orange underline), \"Serivce Kits\", \"Garniturpflege\" and \"Betriebsstoffe\", followed by a dark square button with a right chevron at the right end that indicates further tabs overflow the available width."
+  },
+  "7c35ad1a1436e7d2736747a30886f0d66345693eb50e0d9f69552b0348d99e1a": {
+    "nodeId": "25128:2101",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Page title \"Employees\" above four tabs, \"All\" (selected, bold with an orange underline), \"On-Site\", \"Remote\" and \"Hybrid\", each showing both a leading icon and a grey number indicator \"123\", which creates visual clutter and raises cognitive load."
+  },
+  "7ed92cdd6e530e0ec0845d213c59c334796d6c557f9d72815b1281e375004909": {
+    "nodeId": "24564:456",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Under the page title \"Search results for “m162”\", a left-aligned tab list with three short one-word labels: \"Products\" (selected, bold with an orange underline), \"Documents\" and \"Promotions\"."
+  },
+  "80529e3086880984f7f2e8dc3d2976c738750ee2e96460d0e01e46bc60302c89": {
+    "nodeId": "25227:3273",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "STIHL Service Center search results page for \"MS 180\" (34) with tabs \"Product variantes\" (active, 6), \"Parts\" (23), \"Documents\" (5) and \"Support news\" (3), each with a count badge. Below the tabs are a \"Sort by: Variant\" dropdown and cards titled \"Model plate MS 180\" showing a chainsaw and an \"Add to bookmarks\" button, the last one showing \"Added to bookmarks\"."
+  },
+  "85622c0411b0f3e74b457421cf238f4c82ec7b03bf3d5888608cbdd1bc48c8f3": {
+    "nodeId": "25290:6413",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Browser mockup with seven tabs, the first selected with an orange underline, spread across the full width of the content pane below; purple dashed guides at the left and right edges show that the tab list is as wide as the tab pane."
+  },
+  "8ab5df1b1a7691076b2bf0422df7bb7ed8c06c22806048ff5f3aeeb18f01d8a5": {
+    "nodeId": "24564:471",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two tab lists with the labels \"All\", \"On-Site\", \"Remote\" and \"Hybrid\", \"All\" selected. In the top list every tab has an icon; in the bottom list \"All\" has no icon while the other three tabs have one, the allowed exception for a first tab that shows all items."
+  },
+  "8c967770c57c79931fdda32a12eb78d5c2307c0436e8c55bac146d7cb311365c": {
+    "nodeId": "24564:381",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two browser mockups with a column grid and purple dashed guides. Callout 1: the tab list and its tab pane span the full width of the main content area (seven tabs). Callout 2: the tab list and tab pane span only the narrow content area, about the left half of the grid (three tabs)."
+  },
+  "92d82b4ef40e2b1b893a790aac3e00ce79e5b23dd8f57171f3d6d4cc7561cf63": {
+    "nodeId": "25290:7373",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four page wireframes, the top two without and the bottom two with a sidebar. Callout 1 (left column): the tab navigation is placed below the \"PAGE TITLE\" heading, inside a tinted header area. Callout 2 (right column): the tab navigation is placed above the \"PAGE TITLE\" heading, directly under the main header, with the page title and content below it."
+  },
+  "a13267f56e7d7c45c33690ec44fe7c7195650fbeb4d53c7596f9fe04f818f4b8": {
+    "nodeId": "25128:2867",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of tabs (grid=main / narrow, alignment=left): a row of tabs each with an image icon, the label \"Tab\" and a number badge \"123\", ending with a dark chevron button on the right. Callout 1 points at the selected tab (bold, orange underline), 2 at an unselected tab, 3 at the icon, 4 at the label, 5 at the number indicator, and 6 at the overflow button."
+  },
+  "a159bc07d4e7f313702a3a4ae45ca76fd1f22e773c7fb37f1b677fc680d12663": {
+    "nodeId": "24564:482",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Under the title \"Employees\", a row of ten tabs all labelled \"Tab\", the first selected. Seven tabs are visible up to a dark right-arrow button and a dashed vertical line marking the visible edge; the last three are faded and hidden behind it, so the user must scroll or use the arrow to find them."
+  },
+  "a74f0ca8312e5b3d51c6fa10b5b7652bd568dd19f87d57e381a7981739abf8cb": {
+    "nodeId": "25299:18430",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four page wireframes, the top two without and the bottom two with a sidebar, each with a purple dashed alignment line. Callout 1: the tab list is left-aligned, with the first tab starting at the left edge of the content below. Callout 2: the tab list is centered, positioned around the central dashed line."
+  },
+  "a7c277a67fee88e6fe09032f52f66d83fcd21a6e762f3539bceb8d0d11c564b5": {
+    "nodeId": "25123:2048",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Page title \"Employees\" above a short tab list with the tabs \"All employees\" (selected, bold with an orange underline) and \"Invited employees\", each followed by a grey number indicator \"123\". The words \"employees\" repeat in the title and in the tab labels."
+  },
+  "aba821a69237492fdad7af57826e6a52bce32256f87395962aca8c4df56abe7c": {
+    "nodeId": "24564:487",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Horizontal tab list ordered by relevance with \"All products\" first and selected (bold label, orange underline), followed by \"Saw Chains\", \"Guide Bars\", \"Sets\" and \"Service Kits\" above a thin divider line."
+  },
+  "add0679c6186743fc48ee4be511d1bf1ca63a8a36b0db5bcf73fbdbf0539d018": {
+    "nodeId": "25299:14151",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Page wireframe with a sidebar on the left and a column grid for the content area, with purple dashed lines at the edges of the full content area. The tab navigation spans the full content area beside the sidebar, its divider line running across the whole area, while the tab items align with the content grid below."
+  },
+  "b5d070cbb73823b21e99e783d7fbb91b7acfcd2495f51e6806d81dd9fdcb0f7c": {
+    "nodeId": "25227:2827",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two wireframes of an app page with a sidebar, an orange logo area and a \"Page title\". Callout 2 (top wireframe) points at the tabs navigation, a row of four tabs with the first one active, placed above the page title; callout 1 (bottom wireframe) points at the in-page tabs, a row of four tabs with the first one active, placed below the page title and content blocks."
+  },
+  "b5d8bc6523504f844380dd370c3c2282763edb19d6450392c5f8d0ab3fb05fdb": {
+    "nodeId": "25227:3342",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Tabs navigation under the heading \"CHAINSAW ACCESSORIES\" with the tabs \"All\" (selected, bold with orange underline), \"Saw Chains\", \"Guide Bars\", \"Sets\" and \"Service Kits\". The mouse cursor hovers the \"Guide Bars\" tab, which has a grey background, and a tooltip reads \"Open category page Guide Bars Accessories\", showing that each tab is a link to a URL."
+  },
+  "bd8013c608b198d4f164a3191dc52d592523f5b6dbc4f12e11bd22e28b2993dc": {
+    "nodeId": "25299:18469",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Page wireframe where the tab navigation's divider line extends beyond the content grid across the full width, but the tab items, including the last one and the dark overflow chevron button, stay between two purple dashed lines that mark the left and right edges of the content below."
+  },
+  "c26d2c28b9978b8b18665795aaa07160c86ded3c0e0fffef0aac9584fc865c1c": {
+    "nodeId": "25114:15885",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Spacing specification for tabs: each tab label \"Tab\" has horizontal spacers marked \"xs\" on both sides, and the selected first tab has an orange underline. Below the tab list, a purple dashed \"Placeholder\" tab pane is separated from the tabs and from the content below by vertical spacers labeled \"spacing-dynamic-s\"."
+  },
+  "c830a1978ed60597a4940c2f6492355afe2768c2f02cb349583f990db1887bc7": {
+    "nodeId": "24564:326",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Tab item states in a matrix: columns \"enabled\", \"hover/pressed\" and \"focus\", rows \"selected: false\" and \"selected: true\". Unselected \"Tab\" is regular text, gets a grey background on hover/pressed and a dark outline on focus; selected \"Tab\" is bold with an orange underline in all states, also with grey background on hover/pressed and a dark outline on focus."
+  },
+  "c98c326fb30f4e91efbaf37b469f374a96e0fd4711e114ee779f0b29321a5ef8": {
+    "nodeId": "25085:15244",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: in a tab list with an overflow button on the right, the selected tab label \"Persönliche Schutzausrüstung\" wraps onto two lines, which hurts legibility; the other tabs \"Service Kits\", \"Garniturpflege\", \"Betriebsstoffe\" and an icon tab \"Akku und Lade…\" are cut off by the dark right chevron button."
+  },
+  "cf9cb0536cf2cbc8f8677d61d6beee4bd74aa85ce57ba9d4f1725e2d67549c26": {
+    "nodeId": "24564:513",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three ways to filter by type of propulsion. Callout 1: tabs \"All types of propulsion\" (selected), \"Battery\", \"Fuel\" and \"Corded electric\". Callout 2: a checkbox group with legend \"Type of propulsion:\" and unchecked checkboxes \"Battery\", \"Fuel\", \"Corded electric\" plus a \"Save selection\" button. Callout 3: a chip group with legend \"Type of propulsion:\" and selectable chips \"Battery\", \"Fuel\" and \"Corded electric\", each with an icon."
+  },
+  "d2f043cc99949f03d48847b6cdf5d324a5717dc28bdd32886716b911469bffa8": {
+    "nodeId": "24564:477",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A center-aligned tab list with the minimum of two tabs, \"Recent\" (selected, bold with an orange underline) and \"Favorites\", above a thin grey baseline."
+  },
+  "d4c8bb819a0e6c36966c2bc2791387edaa8c2d25a1a09233a6d8d4fcb3ea752d": {
+    "nodeId": "25085:15221",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: the tab list wraps onto two rows, with \"Persönliche Schutzausrüstung\" (selected, orange underline), \"Service Kits\", \"Garniturpflege\" and \"Betriebsstoffe\" in the first row and \"Akkus und Ladegeräte\" on a second row, which disrupts the overview and hierarchy."
+  },
+  "d542d9a3ce75a86e743bfba461f885ff8e129c8b8e0df3f67e073b38fc6a3618": {
+    "nodeId": "24564:492",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two mobile screens titled \"ACCESSORIES\", each with a tab list that runs past the visible area and ends in a dark right-arrow button; the left screen shows \"All products\" (selected) and \"Installation\" with shorter labels, the right shows \"All\" (selected), \"Installation\" and a cut-off \"Clean & Care\"."
+  },
+  "d88f2ccd7a685df8648e4f54d4d92c862e6586dd1ad37f70e4ff492d3201a6fb": {
+    "nodeId": "25085:15615",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a browser mockup in which a second tab list is nested below the first tab list, each with its own selected tab and orange underline, above a single content area, which makes nested tabs hard to find."
+  },
+  "dc6461b828ad46ca8a2f43cbc4fa212a636e1e37e49a2d9af02d6a4e919f9155": {
+    "nodeId": "25128:4363",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Customer service page excerpt with the heading \"How may we help you?\" and centered tabs \"Consumer\" (selected) and \"STIHL dealer\", with a content pane below made of five accordion rows titled \"Summary of the accordion content\"; above it a hero image of a man with the text \"Our STIHL customer service is happy to answer any questions you may have about...\" and below the accordions the buttons \"Zum Kontaktformular\" and \"Zu weiteren Kontaktmöglichkeiten\"."
+  },
+  "ee4f7d74270b42818fdc198b49f8ecc9b3ba0f39cf559d9a3d5c34dc42ec10f0": {
+    "nodeId": "25290:6868",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Tabs navigation variants in a matrix of \"alignment: left\" and \"alignment: center\" columns against \"grid: main/narrow\" and \"grid: full\" rows. Each cell shows four tabs labelled \"Tab\", the first one selected (bold with an orange underline) and the others unselected, above a thin divider line; in the full grid the left-aligned tab list starts slightly further inset."
+  },
+  "efe7f81a43539f08c0b842760551ade7a70686d18975df87f4bbc0940bf0e055": {
+    "nodeId": "25295:5709",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a tab list of four tabs labelled \"Tab\" (first selected) with a red error icon and the \"System Feedback Message\" placed directly below it, which is wrong because elements needing system verification must not sit in a tab component, where feedback is hidden or hard to find."
+  },
+  "f168149d7ed45e84abb37bb41a4bf321dccc823cc852084e20025d275ed01e40": {
+    "nodeId": "25111:2008",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "In-page tabs placed directly below the headline \"Search results for “m162”\", which gives the tab list context. The left-aligned tabs are \"Products\" (selected, bold with an orange underline), \"Content\" and \"Support\"."
+  },
+  "f715f57e8fbdcc942c5af44a685b18c21b98d25e36b0a2ba8689a2ee5efa1c94": {
+    "nodeId": "25227:3009",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "STIHL webshop category page titled \"Chainsaw Accessories\" with left-aligned tabs \"All\" (active, orange underline), \"Saw Chains\", \"Guide Bars\", \"Sets\" and \"Service Kits\" below the title. Beneath the tabs are a Filter with checkbox options (Power source: Battery, Electric, Manually, Automatic) and product cards such as Care and Clean Kit MS Plus and Service Kit 14 and 12."
+  },
+  "fba7dcf2819d69ca8028e8397d6eada6208246d02d16da9ea06eeae76703cdc1": {
+    "nodeId": "24564:396",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Narrow, small-screen browser mockup in which the tab list is left-aligned with the content pane (purple dashed guide at the left edge); the third tab is cut off by a dark overflow button at the right end, and the selected first tab has an orange underline."
+  },
+  "fff698c0d3f9b431e567b591b00eaabe6cf9bbc7535c7e3fdde68dd00269ac44": {
+    "nodeId": "25327:3481",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two wireframes of tabs navigation (tab item 3, grid main/narrow, left aligned, first tab active) used as secondary navigation above the \"Page title\" together with a main navigation. Callout 1 shows it combined with a sidebar on the left; callout 2 shows it combined with a top bar navigation along the top."
+  }
+}

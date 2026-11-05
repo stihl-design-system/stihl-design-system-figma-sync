@@ -1,0 +1,152 @@
+{
+  "041090a0d04e1ec412c46b3a99e298e7222a50a1666697e82801d5a5a5838e5b": {
+    "nodeId": "37096:1950",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "White popover with a Placeholder content area, a scroll bar on its right side and an arrow below pointing to a triggering info icon button. Callout 1 points at the popover container, callout 2 at the triggering element below it, and callout 3 at the optional scroll bar."
+  },
+  "04fe420031aa29f4c9d8a0424cb637fa05f0d580b8138043300ff6487e58469f": {
+    "nodeId": "37344:11739",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Utility Menu built on the Popover, shown in the STIHL top bar (Search Site, Contact, Dealer, Wishlist, Cart with badge 3, STIHL World, Login). The open \"STIHL World\" panel below the active \"STIHL World\" button lists STIHL Website, MY STIHL, STIHL Connected, iMOW® Web App and Product Advisor with orange icons, and ends with the link \"All Services & Apps\" with an external-link icon."
+  },
+  "09d6a69de07f225697cea3abfe2bda0f9bd7559465364f4ea0d96b0a347ac68b": {
+    "nodeId": "37096:2018",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Disappear animation: a visible popover with a Placeholder above its info icon button (pointer cursor on the button) leads, via an arrow labelled \"on click again/ or outside the element\" and \"fade-out, 250ms\", to the plain info icon button with the popover gone."
+  },
+  "0c4a82dda0717e389c6abed8bee907fca31579e043ef53fc0c5bce59fb116141": {
+    "nodeId": "37813:2553",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a white popover with a \"Placeholder\" content area is anchored to the underlined link \"Quisque eget\" inside body copy under the heading \"HEADLINE\", with a pointer cursor on the link. A popover must not be triggered by a link or other non-interactive text, which is inaccessible to keyboard and screen reader users."
+  },
+  "0ccd85e9f3d2c1bf9419567a2bb93995a10ed80f9a15da2aacf3b7a7272c2545": {
+    "nodeId": "37972:2561",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: on mobile the same language content opens in a centered dialog over a dimmed grey background. The dialog has the heading \"Language\" with a close button, a search field with the placeholder \"Input\", a \"Global Sites\" group (Global / English, Global / Español, Global / Français, Global / Portugals) and a \"Local Sites\" group with \"Deutschland / Deutsch\" highlighted as active and \"Argentina / Español\"."
+  },
+  "0d2fd40758f3633bca3d2caf0aac88141661c6adcf2f1210143e52068dfc6389": {
+    "nodeId": "37363:2614",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "[unverified] Dropdown Menu built on the Popover: in the STIHL top bar and nav bar, a linear list of Action Items opens below a nav bar Button Nav, under the title \"Welcome to STIHL\". The items are STIHL sustainability strategy, Education and people, Economic sustainability, Social engagement, Climate strategy, Environmental protection and STIHL and the rainforest, and the top bar shows Corporate, Search Site, Contact, English and the nav entries About STIHL, Sustainability, Careers, STIHL Journal, Press."
+  },
+  "172e3ea0a510bc6fa48bf4bc5de3c4ae9f873806132ab18ac7dfd3dd7e7f00a2": {
+    "nodeId": "37335:3243",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Popover trigger and dismissal behaviour in four annotated cases: an info button with a pointer cursor labelled \"click/tab to open\"; an open white popover with \"Placeholder\" content above its info button labelled \"click/tap again to close\"; a lone pointer cursor in empty space labelled \"click/tap outside close\"; and a dark filled \"Next\" button with an arrow and pointer cursor labelled \"click/tap other element\"."
+  },
+  "223d73723c61df4568f84ff8f67471859b2d061808641276cb2877ae036d06a0": {
+    "nodeId": "37344:9591",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a password input labelled \"Password\" with an info button, masked value \"********\" and a show-password eye icon. A popover opened from the info button holds the essential instruction \"Use at least 8 characters, including one uppercase letter, one number, and one special character.\", which is only visible on interaction and should be persistent hint text instead."
+  },
+  "30b9efb88ec56299232a23354f57b8715de96bef5734355f144418a2ab560d8b": {
+    "nodeId": "37335:2036",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Popovers with Placeholder content in different colors. Callout 1 marks the popovers with an arrow below, shown in white (top) and grey (bottom); callout 2 marks the popover without an arrow, shown in white only."
+  },
+  "32a64dc6698c2cd34cb6f5f6192d89982c0f9f78d827118e5142ee6c6499fc86": {
+    "nodeId": "37322:1574",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Grid of white popovers with a Placeholder, each pointing its arrow at a small info icon button, showing the three arrow alignments (start, center (default), end) for each of the arrow placements below, right, left and above. For below and above the arrow sits at the left edge (start), the middle (center) or the right edge (end) of the popover; for right and left the arrow sits at the top (start), the middle (center) or the bottom (end) edge."
+  },
+  "4fb374d2b46f1010d51966d0364bb1dfb1692f35ae6b253b99e1c22c170c4908": {
+    "nodeId": "37221:2038",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two dropdown menus, each opened below a \"Label\" button with an up chevron and listing eight \"Label\" items. The left one, annotated \"below-start (left)\", is aligned to the left edge of its button; the right one, annotated \"below-end (right)\", is aligned to the right edge of its button."
+  },
+  "6c560ee55e91199159560699bd96cefc1e1874d59724d8afef7daeaee8de5203": {
+    "nodeId": "37574:3158",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Keyboard actions for a Popover opened from the \"Products\" nav bar item in the STIHL top bar. \"Open Popover with:\" Space or Enter on the focused trigger button reveals an empty dashed popover panel below it. \"Close Popover with:\" Esc closes the open menu (Sawing and cutting, Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise, All products). \"Move to next focusable element:\" Tab moves focus from \"STIHL sustainability strategy\" to \"Education and people\", and \"Move to previous focusable element:\" Tab + Shift moves it back."
+  },
+  "6f11d26f74b377d275451c9d42b0b93a3a21bdb89ff3d8908cbd6e5f397b7570": {
+    "nodeId": "37096:1981",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two popovers with the 6px gap highlighted: on the left a popover with an arrow above its small info icon button, on the right a popover without an arrow below a tooltip-like \"Label\" element. In both cases the \"6px\" marker spans the distance between the popover and the triggering element."
+  },
+  "8610f5475014915d2ba5d373a573604b48026ab90197e932be879aedd3e74ccd": {
+    "nodeId": "37241:1456",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two white popovers with Placeholder content side by side. Callout 1 marks the popover with an arrow at the bottom center (arrow=true, arrow placement=below, arrow alignment=center); callout 2 marks the popover without an arrow (arrow=false)."
+  },
+  "89ec876ce67452d562592a1233ee8b9ef95c39dbb2ce8e7de4ae9fdb50b811c1": {
+    "nodeId": "37096:1961",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two popovers with arrow and Placeholder content side by side with width markers: a narrow one labelled \"min. 200px\" and a much wider one labelled \"max. 540px\", showing the minimum and maximum popover widths."
+  },
+  "9647413b2aab39786870797de203f583c7016c7ba084f670d79a8f7fb0f5012f": {
+    "nodeId": "37096:1975",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four white popovers with an arrow (color=white, arrow alignment=center), each filled with a Placeholder, around a small ghost icon button (info icon, size=small, state=hover / pressed): labelled \"above (default)\" with the popover above its trigger, \"below\" with the popover below, \"left\" with the popover left of its trigger and \"right\" with the popover right of its trigger. The arrow always points at the triggering button."
+  },
+  "a02ae9c580e277c2c4e5326b00d2af531445447e54ac3dbd333ce82882ad8ce4": {
+    "nodeId": "37344:9586",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a password input labelled \"Password\" with the masked value \"********\" and an eye icon. The instruction \"Use at least 8 characters, including one uppercase letter, one number, and one special character.\" is shown permanently as hint text between the label and the input field."
+  },
+  "a61a23477e5c0c35f6e2845da5f778cf0efd0060be2676a381f6e6eb2ad859b9": {
+    "nodeId": "37344:11750",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Popover used for additional guidance in the STIHL advisor \"Schneidwerkzeug berater für Freischneider\" at step \"1. Produktauswahl\". Next to the question \"Wo finde ich die Maschinennummer?\" an info button opens a white Popover with an arrow pointing at it, containing a short text and two drawings of the machine with the number location marked \"xxxxxxxxx\". Below it is the input \"9-stellige Maschinennummer\" with the hint \"Nummer ohne Leerzeichen und Bindestriche eintragen\"."
+  },
+  "acba8500afbee6aa345bf6952dfd0a80046a75deaedafe834d3bc40a18bb79f2": {
+    "nodeId": "37096:1991",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Edge case before and after, linked by an arrow: on the left a popover with \"Position: above\" and \"Alignment: center\" extends past a dashed vertical line labelled \"Viewport edge\", so part of it is cut off; on the right the popover has repositioned to \"Position: above\" and \"Alignment: end\", with its arrow at the right edge above the trigger, and now lies fully inside the viewport edge."
+  },
+  "b30247735c7ade7c371dda3376ed48dcd18807fce58c07b746f17d8b92db8668": {
+    "nodeId": "37344:9139",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a very tall popover above an info icon button holds a long text, \"General Terms and Conditions for Orders\" with sections \"1. Scope and Contractual Partner\" and \"2. Ordering Process / Customer's Offer\", and a scrollbar. This is wrong because long text and content do not belong in a popover; it should stay brief and focused, and larger amounts of information belong on a separate page."
+  },
+  "b6eb6bbab0c7028787fe3922173bcb2dbe1720e152656bc19470135ce636be78": {
+    "nodeId": "37344:11649",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Focus order in two Popover examples. In \"Example: dropdown menu\" the seven items (STIHL sustainability strategy, Education and people, Economic sustainability, Social engagement, Climate strategy, Environmental protection, STIHL and the rainforest) carry callouts 1 to 7 from top to bottom, each with a focus outline. In \"Example: additional information\" (\"Need more details?\" text) the buttons \"View Guide\" (filled, callout 1) and \"Contact Support\" (ghost, callout 2) are focused left to right."
+  },
+  "c7909197c21a60393b42339612ac7f563f0b71ebe73ab0b6d1ab9c6f4515c153": {
+    "nodeId": "37972:2553",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a mobile screen where a language selector button labelled \"English\" with a globe icon and upward chevron opens a popover anchored below it. The popover contains a search field with the placeholder \"Input\", a \"Global Sites\" group (Global / English, Global / Español, Global / Français, Global / Portugals) and a \"Local Sites\" group with \"Deutschland / Deutsch\" highlighted as active and \"Argentina / Español\", and it covers much of the small screen."
+  },
+  "cc64510193ba0030f44225a2f24dce80ab21d2602ebbd6db5cbcba8642d822b8": {
+    "nodeId": "37096:2006",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Appear animation: a small info icon button with a pointer cursor on click leads, via an arrow labelled \"on click\" and \"fade-in, 250ms\", to the popover with a Placeholder shown above the same button, which has no popover before the click."
+  },
+  "cd31443858380721c51851c6a12077070470d0d4511df367cb3b75e6e7b3b288": {
+    "nodeId": "37096:1912",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Popover variants, each a rectangular container with a \"Placeholder\" content slot. \"arrow: false, color: white\" has no arrow. \"arrow: true, color: white\" and \"arrow: true, color: grey\" each show a grid of \"arrow placement\" (below, above, left, right) by \"arrow alignment\" (start, center, end), with the small arrow on the matching edge and corner position."
+  },
+  "db83c8fd5539da021a4a217d35a1e93e0cc266a27f5876230d2d5a30c226fc37": {
+    "nodeId": "37344:9644",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: three bold headings, \"Battery advantages for employees\", \"Battery advantages for companies\" and \"Battery advantages for the environment or customers\", each followed by an info button. The first info button is pressed with a pointer cursor and opens a popover with the text \"The devices produce only minimal vibrations, which reduces muscle fatigue. This enables precise work even over longer periods of time.\", hiding item details in a popover."
+  },
+  "eb8d072b4e71df1bbb93f05097f0c3bd1450906b4d07630dffa95c2260199678": {
+    "nodeId": "37335:3219",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: two popovers, each opened by a button. On the left, a white popover with a \"Placeholder\" content area and a scrollbar sits above a small label-hidden info button, captioned \"Example: button small (label-hidden)\". On the right, a white popover with a \"Placeholder\" content area opens below a button-nav labelled \"Label\" with an upward chevron, captioned \"Example: button-nav\"."
+  },
+  "ebf1ea11ccd82f941f468e0e55384d1b29cc9c495d552af3a7b356a74af8c6df": {
+    "nodeId": "37335:3303",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Browser window with a trigger button \"Label\" (chevron up) and an open list of many \"Label\" action items in a popover with a scrollbar. The list is cut off at the bottom, and a marker labelled \"min. 48px\" shows the minimum distance between the bottom of the popover and the bottom edge of the screen, beyond which the content scrolls."
+  },
+  "eed18fd2b84f737b4d3b8bbbf7e7ed17b9892a13c4c90c305fd8719fe554b57d": {
+    "nodeId": "37344:9639",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: an accordion group with three items separated by thin dividers. \"Battery advantages for employees\" is expanded with an upward chevron and shows the text \"The devices produce only minimal vibrations, which reduces muscle fatigue. This enables precise work even over longer periods of time.\", while \"Battery advantages for companies\" and \"Battery advantages for the environment or customers\" are collapsed with downward chevrons."
+  },
+  "f3a86f44bb6f950239b34784900ceae760a58fe5fa1910ca779f624a06fd778e": {
+    "nodeId": "37335:3295",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Popover with an arrow above its info icon button containing mixed content: the heading \"Need more details?\", the body text \"Learn how to configure this feature step by step. The guide includes setup instructions, best practices, and troubleshooting tips to help you get started quickly.\" and a small filled \"View Guide\" button aligned to the bottom right."
+  },
+  "f5fbac10c21473e650ccbf0873b915470f283f4513d618f375c012c164168551": {
+    "nodeId": "37335:3262",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "White popover with an arrow pointing down at an info button next to the bold label \"Model Designation\". It contains the text \"You can find the model designation on the housing of your brushcutter. The designation usually consists of a combination of letters and numbers (e.g., FS 55).\" above a line drawing of a STIHL brushcutter engine housing with a callout marked 1, showing additional non-critical content."
+  }
+}

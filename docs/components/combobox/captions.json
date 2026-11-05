@@ -1,9 +1,4 @@
 {
-  "0148b4c700045980f7601ff8c2f4b347f8ce4d7d60d7ef7e939fd8e4df07f560": {
-    "nodeId": "8472:30050",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A \"Do\" example of a combobox component with different item amounts in the list. The numbered callouts point to a radio-group component labeled \"Form of address\" with three options: \"Mr.\", \"Mrs.\", and \"other\" (1), a combobox labeled \"Options\" with a dropdown menu showing four items (2), and another combobox labeled \"Country\" with a dropdown menu showing four items and a partially typed input \"B|\" (3). The text describes guidelines for the number of items in a combobox list: using a radio group for fewer than 5 items, a standard dropdown for 5 to 20 items, and a filtered dropdown for more than 20 items after the user types at least one character."
-  },
   "1bf285979802e63878329b0c054cd1e02d1aa3d1c6f954591bb5973abcd7957c": {
     "nodeId": "8196:33782",
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
@@ -54,11 +49,6 @@
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
     "caption": "A combobox component in an active or focus state, showing a dropdown menu with three items labeled \"Options\", \"Option 1\", \"Label\", and \"Option 3\". Icons are optionally used next to each item in the dropdown, appearing only if the combobox is of a single select type. The first item, \"Option 1\", is selected and marked with a checkmark."
   },
-  "8047e76029ac4839e18ef1131a59e00bd7e01a95855e758d2d66fddd5812e755": {
-    "nodeId": "9039:21450",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A layout example marked as a \"Do\" example, illustrating the use of a radio-group component and a button component. The radio-group has a horizontal orientation, includes a legend labeled \"Radio Group Legend,\" and contains two radio labels. The maximum width of input fields is demonstrated, with a recommendation of approximately 650px, which corresponds to 8 columns in a grid system. The layout shows a combination of input fields and labels, ensuring optimal legibility and adherence to the grid structure."
-  },
   "88f779cf4926fc999b1f96b75333a74965298f5d0b744b3e8d1c85b17be79d79": {
     "nodeId": "9411:3055",
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
@@ -68,11 +58,6 @@
     "nodeId": "5671:19983",
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
     "caption": "Various states and layouts of a combobox component from the STIHL Design System. It shows the combobox in different states such as default, hover, active/focus, disabled, and invalid, with both single-select and multi-select item lists. The combobox consists of an input field and a dropdown list, which can be short, medium, or long, and can open on click or after typing. The text next to the figure provides guidelines for using the combobox, such as specifying placeholder text and handling different list lengths."
-  },
-  "952ff07ad0a95a5af925cb1014d30e1a80bd8a407458a330a2f8d0a0b3f544cf": {
-    "nodeId": "39621:13634",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A \"Don't\" example of a combobox component with a popover. The combobox has a label \"Product Name,\" an info button, a clear button, and input text displaying \"FSA 45, FSA 70, FSA 50.\" The popover, positioned below the combobox, contains the text \"Select max. 3 different products.\" The example is marked as incorrect because it uses the popover for information that should not be hidden; instead, a hint should be used for critical information."
   },
   "986f17c32d48942689a1f46dcb45a15088c4cf054e4c650c85ed08c59e345383": {
     "nodeId": "38133:4971",

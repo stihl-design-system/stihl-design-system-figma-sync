@@ -1,0 +1,112 @@
+{
+  "07311639b3ec5b94e47d1984736d46d0cfb739563a64c7ed5959fbd2b9b8ef63": {
+    "nodeId": "51285:14726",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Circle skeletons next to the layouts they replace, with width equal to height. Avatar (initials \"MM\") is 40px and becomes a 40px grey circle; Button round with an image icon is 32px and becomes a 32px grey circle."
+  },
+  "1c09ddbef55a81a675624a8a2148bf7522fa911bf7e70400893129a46ba839a3": {
+    "nodeId": "51293:4572",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Vertical action card split by a dotted line: the left half shows real content (\"Brand Flag\", the headline \"Charging and energy management in the STIHL AP system\", body text \"Benefit now from the expertise of our experts - because you deserve advice an...\", \"Metadata\", three \"Flag\" chips, a \"Button\" and \"Summary of the accordion content\"), the right half shows the skeleton of the same card with grey blocks at identical positions, sizes and spacing. This illustrates that a skeleton must match the final layout exactly so that nothing shifts when content loads (callout 3)."
+  },
+  "2b1bb500ce2b88df76511e65e23eabdaa572f9b6803e35de6514313b2bab091a": {
+    "nodeId": "51345:5241",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Corporate and Careers Journal page in loading state at breakpoint xl, with the STIHL top bar (\"Search Site\", \"Contact\", \"English\") and main nav bar (\"About STIHL\", \"Sustainability\", \"Careers\", \"STIHL Journal\", \"Press\") above a grid of vertical link cards whose images, headings, descriptions and flags are replaced by rectangle, single line and multi line Skeletons."
+  },
+  "2f6f4dbd3dd2e2cc6c57f50403f23c4f6a09456defbdafd22ec67d6eefe2a464": {
+    "nodeId": "51285:14531",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Rectangle skeletons next to the layouts they replace, each with the same size as its source and plain grey fill. Image: 240px wide, 180px high. Button: 95px wide, 48px high. Accordion: 338px wide, 40px high, replacing the closed accordion with the summary \"Summary of the accordion content\"."
+  },
+  "30a6123b54bac849e7f0f281741c38fbffd55bef30ce2288424b6e3f3bcf2e27": {
+    "nodeId": "50300:2470",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A STIHL website page in loading state, with a header, search field and navigation but gray Skeleton placeholders instead of card images and text, enclosed in a purple frame with the callout \"“loading content”\" showing the text that can be announced to screen readers instead."
+  },
+  "6362491555481b2df2234f25a9c3f8569fbebf7e5690f9c00ae049a11af00036": {
+    "nodeId": "50929:11688",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three skeleton bars on a white background, each with a soft light shimmer band and a purple arrow pointing right, at the left, middle and right of the bar. They show the gradient moving horizontally across the skeleton over time."
+  },
+  "6bfd19078c750f59967ebd2571d1579764e644db0a90c5390cecf9daeefe3a4e": {
+    "nodeId": "51324:4863",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two gradient swatches: the light mode one is light grey fading to near white and back to light grey toward the right edge, and the dark mode one is dark grey brightening slightly near the right and fading back toward the edge."
+  },
+  "861f159dfc951aee54b43d846d92260b2279ad4e2ed59dfb54fde4efdc7c815e": {
+    "nodeId": "50819:37018",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Corporate and Careers job listing page once loaded, with the STIHL top bar and main nav bar at breakpoint xl, the heading \"STELLENANGEBOTE\" and four horizontal link cards, each with a job title (for example \"Praktikum Group Compliance Management\") and flags for contract type (\"befristet\", \"Auf Anfrage\"), location (\"Waiblingen\", \"Dieburg\") and department (\"Forschung & Entwicklung\", \"Marketing & Vertrieb PR\")."
+  },
+  "9a374ad1de822ba337af8bcad2c5405e47a3c4fb3ab0595d8a6166e9a16af827": {
+    "nodeId": "50894:5724",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two skeleton rectangles on a light background side by side: \"default motion (with gradient)\" on the left shows a subtle shimmering gradient, and \"static version (without gradient)\" on the right shows a flat gray fill used as the reduced-motion fallback."
+  },
+  "9bf10ccb72d3898e5485e0baf766b11dbc70aa6754ec4c19354c51098ba255bc": {
+    "nodeId": "50929:11427",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Skeleton layouts in light mode and dark mode: a headline bar, three text line bars (the last shorter), a large rectangle and a small circle at the bottom right. In light mode the shapes are light grey on white; in dark mode they are dark grey on black."
+  },
+  "9f1e2747607e82a2906069da6f4ea80fed00a3e92bc4801bf85b7ca0c80f868d": {
+    "nodeId": "49465:12146",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Internal helper under the heading \"building elements\": the \".helper-last-line\" spacer, shown as a single light grey bar at line width 80%, used as the shorter last line of multi-line skeletons."
+  },
+  "9ffa8a170281a37c0d86c228ef47a81062909ecf7d3972557534f73b3745241f": {
+    "nodeId": "50819:37644",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Corporate and Careers job listing page in loading state, with the STIHL top bar, main nav bar and the heading \"STELLENANGEBOTE\" shown normally, and four horizontal cards whose titles and three flags each are replaced by single line Skeletons (two lines for the second card's title)."
+  },
+  "a744aea686e8c18fce018645cb31286ceb9af72007393ce32c0789320a3871d1": {
+    "nodeId": "49577:12878",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "The three skeleton building elements with numbered callouts: 1a points at the single line (one grey bar), 1b at the multi line (four bars, the last one shorter), 2 at the rectangle (a large grey block) and 3 at the circle (a small round shape)."
+  },
+  "b66a9f04b210ac075bb07b5cbf90fcf4b0326de5aea8b0755f6c1ccdda280bb2": {
+    "nodeId": "50929:13443",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Motion building elements for the shimmer. helper-container-background-light and helper-container-background-dark each hold two plain grey bars, \"frame: start\" and \"frame: end\", in light grey and dark grey respectively. helper-gradient-light is a white panel with a faint grey gradient, and helper-gradient-dark is a black panel with a gradient that brightens slightly toward the right and fades to black at the edge."
+  },
+  "be3de4d5e8207304ac2c3313d27b6c8d431477c26b775694fcda4bd39bd224a1": {
+    "nodeId": "50331:10659",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three stages of a \"Fleet Overview\" page with a STIHL top bar and a table (columns Product, User, Location, Status, Fuel Level; rows such as MS 881, H. Zimmermann, Affalterbach, OK, 75%). 1. Skeleton: the heading, navigation labels and all table cells are grey placeholder bars. 2. Partial Skeleton, partial layout: the navigation, heading and column headers are already real text while the table body is still skeleton bars. 3. Full Layout: all content is loaded."
+  },
+  "c3368442cdefe1c2418bbb376a864a0d65dc078ab187cecedadd78f543a882ce": {
+    "nodeId": "51345:5562",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Corporate and Careers Journal page once loaded, with the STIHL top bar and main nav bar at breakpoint xl above a grid of vertical link cards with photos, headings such as \"Interview with Dr Michael Prochaska\", \"One lab for all\" and \"Charging and energy management in the STIHL AP system\", truncated descriptions and flags like \"Backstage\" and \"Background Story\"; this is the real content that replaces the Skeleton version."
+  },
+  "c5ff74d5ab7c0ad8e079333a75cbc5c93a36836115690706994aa3dec4c6f679": {
+    "nodeId": "49577:16681",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two horizontal link cards titled \"Praktikum Group Compliance Management\" with flags \"befristet\", \"Waiblingen\" and \"Forschung & Entwicklung\", each followed by its skeleton. In the wide layout the title and flags sit side by side, with the flags right-aligned; in the narrow layout the flags wrap below the title. Each skeleton keeps the same width, arrangement and wrapping as its layout (a title bar plus three flag rectangles), so no layout shift occurs when content replaces it."
+  },
+  "cf77ab773efaed620a08c65860dd7fd1303e3b5b9105ab726181eefe7c5856a2": {
+    "nodeId": "51285:13537",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Multi-line skeleton compared with its source layout in two cases, each 370px wide. For a Text Paragraph the four-line text block is 96px high and its skeleton is four grey bars of the same height, the last bar shorter. For a Multiline Headline + Text Paragraph the two-line headline (64px) and the paragraph (96px) are separated by a 20px gap, and the skeleton repeats this with two bars for the headline, a 20px gap and four bars for the paragraph, the last bar of each block shorter."
+  },
+  "d51d0fc95a18d4f4fd3603df33899941398647b11d465811d77963348d886d8e": {
+    "nodeId": "49465:11325",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four light grey skeleton primitives stacked vertically inside a dashed purple frame, labelled on the left: \"single line\" (one bar), \"multi line\" (four bars, the last one shorter), \"rectangle\" (a large block) and \"circle\" (a small round shape)."
+  },
+  "d694da5a547dd12d392058b65a52e2ba79f2889fad42cea8078399364f49c2b4": {
+    "nodeId": "50894:5616",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a multi-line text Skeleton (gray placeholder bars) with a pointer cursor hovering over it and the lower skeleton block outlined with a dark focus-style frame, showing that skeletons must not be interactive or focusable."
+  },
+  "e8db408f55ef016252d25361d58607505df6e712fbf603f7a0bccda471282f2c": {
+    "nodeId": "51285:13391",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Single line skeleton sizing, comparing Layout with Skeleton. \"Headline (single line)\": the headline text and its skeleton are both 160px wide and 38px high. \"Text (single line)\": the sentence \"The quick brown fox jumps over the lazy dog\" and its skeleton are both 304px wide and 24px high, so the skeleton matches the width of the source element and the line height of the typography."
+  },
+  "fc3321a4b6e98c1551614b1a3ddcff98008647770ed942fa772d7077380376fc": {
+    "nodeId": "51285:14809",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A vertical card (media area with \"Brand Flag\", title \"Charging and energy management in the STIHL AP system\", description, \"Metadata\", three \"Flag\" tags, two \"Button\"s, and an accordion \"Summary of the accordion content\") shown with two skeleton versions. 1 Skeleton / low detail: a single grey rectangle covers the whole card. 2 Skeleton / high detail: a grey image rectangle, two title bars, three description bars, a metadata bar, three small flag rectangles, two button rectangles and a grey accordion rectangle inside the card container."
+  }
+}

@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 35223:10505
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:47:36.432Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:24:38.365Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=35223-10505
 ---
 
@@ -32,7 +32,7 @@ sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=35223-105
 
 ![Anatomy](popover/anatomy-37096-1950.png)
 
-_Figure: Shows popover (overflow, arrow=true, arrow placement=below, arrow alignment=center, color=white); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=3, type=right, color=blue); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); annotation-circle (number=2, type=right, color=blue). Callouts 1, 2, 3. Text in the figure: "❖ Placeholder"._
+_Figure: White popover with a Placeholder content area, a scroll bar on its right side and an arrow below pointing to a triggering info icon button. Callout 1 points at the popover container, callout 2 at the triggering element below it, and callout 3 at the optional scroll bar._
 
 ### Variants
 
@@ -43,7 +43,7 @@ The Popover is available in two main variants:
 
 ![Variants](popover/variants-37241-1456.png)
 
-_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "❖ Placeholder"._
+_Figure: Two white popovers with Placeholder content side by side. Callout 1 marks the popover with an arrow at the bottom center (arrow=true, arrow placement=below, arrow alignment=center); callout 2 marks the popover without an arrow (arrow=false)._
 
 #### Color
 
@@ -54,7 +54,7 @@ Popovers are available in different color options depending on their style:
 
 ![Color](popover/color-37335-2036.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); annotation-circle (number=2, type=center, color=blue); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); popover (arrow=true, arrow placement=below, arrow alignment=center, color=grey). Callouts 1, 2. Text in the figure: "❖ Placeholder"._
+_Figure: Popovers with Placeholder content in different colors. Callout 1 marks the popovers with an arrow below, shown in white (top) and grey (bottom); callout 2 marks the popover without an arrow, shown in white only._
 
 ### Placement
 
@@ -66,7 +66,7 @@ In this case, the Popover can **only be positioned below** the triggering elemen
 
 ![Popover Placement (without Arrow)](popover/popover-placement-without-arrow-37221-2038.png)
 
-_Figure: Shows dropdown-menu (alignment=left, expanded=true); dropdown-menu (alignment=right, expanded=true). Text in the figure: "below-start (left)", "below-end (right)", "Label"._
+_Figure: Two dropdown menus, each opened below a "Label" button with an up chevron and listing eight "Label" items. The left one, annotated "below-start (left)", is aligned to the left edge of its button; the right one, annotated "below-end (right)", is aligned to the right edge of its button._
 
 #### Popover Placement (with Arrow)
 
@@ -79,7 +79,7 @@ This variant can be placed relative to the triggering element in four directions
 
 ![Popover Placement (with Arrow)](popover/popover-placement-with-arrow-37096-1975.png)
 
-_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); popover (arrow=true, arrow placement=right, arrow alignment=center, color=white); popover (arrow=true, arrow placement=left, arrow alignment=center, color=white); popover (arrow=true, arrow placement=above, arrow alignment=center, color=white). Text in the figure: "above (default)", "❖ Placeholder", "left", "right", "below"._
+_Figure: Four white popovers with an arrow (color=white, arrow alignment=center), each filled with a Placeholder, around a small ghost icon button (info icon, size=small, state=hover / pressed): labelled "above (default)" with the popover above its trigger, "below" with the popover below, "left" with the popover left of its trigger and "right" with the popover right of its trigger. The arrow always points at the triggering button._
 
 #### Arrow Alignment
 
@@ -91,7 +91,7 @@ In addition to the placement (see above), the Popover Arrow can be aligned with 
 
 ![Arrow Alignment](popover/arrow-alignment-37322-1574.png)
 
-_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=start, color=white); popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); popover (arrow=true, arrow placement=below, arrow alignment=end, color=white); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); popover (arrow=true, arrow placement=right, arrow alignment=start, color=white); popover (arrow=true, arrow placement=left, arrow alignment=start, color=white); popover (arrow=true, arrow placement=right, arrow alignment=center, color=white); popover (arrow=true, arrow placement=left, arrow alignment=center, color=white); popover (arrow=true, arrow placement=right, arrow alignment=end, color=white); popover (arrow=true, arrow placement=left, arrow alignment=end, color=white); popover (arrow=true, arrow placement=above, arrow alignment=start, color=white); popover (arrow=true, arrow placement=above, arrow alignment=center, color=white). Text in the figure: "Arrow placement: below", "Arrow alignment: start", "Alignment: center (default)", "Alignment: end", "❖ Placeholder", "Arrow placement: right", "Arrow placement: left", "Arrow alignment: center (default)", "Arrow alignment: end", "Arrow placement: above"._
+_Figure: Grid of white popovers with a Placeholder, each pointing its arrow at a small info icon button, showing the three arrow alignments (start, center (default), end) for each of the arrow placements below, right, left and above. For below and above the arrow sits at the left edge (start), the middle (center) or the right edge (end) of the popover; for right and left the arrow sits at the top (start), the middle (center) or the bottom (end) edge._
 
 #### Distance
 
@@ -99,7 +99,7 @@ The default distance between the Popover and the triggering element is **6px**.
 
 ![Distance](popover/distance-37096-1981.png)
 
-_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); popover (Property 1=Default); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off). Measurements: 6px. Text in the figure: "❖ Placeholder", "Label"._
+_Figure: Two popovers with the 6px gap highlighted: on the left a popover with an arrow above its small info icon button, on the right a popover without an arrow below a tooltip-like "Label" element. In both cases the "6px" marker spans the distance between the popover and the triggering element._
 
 #### Edge cases:
 
@@ -107,7 +107,7 @@ If the preferred placement (for example, above-center) would cause the Popover t
 
 ![Edge cases:](popover/edge-cases-37096-1991.png)
 
-_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); popover (arrow=true, arrow placement=below, arrow alignment=end, color=white); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Position: above Alignment: center", "Position: above Alignment: end", "❖ Placeholder", "Viewport edge"._
+_Figure: Edge case before and after, linked by an arrow: on the left a popover with "Position: above" and "Alignment: center" extends past a dashed vertical line labelled "Viewport edge", so part of it is cut off; on the right the popover has repositioned to "Position: above" and "Alignment: end", with its arrow at the right edge above the trigger, and now lies fully inside the viewport edge._
 
 ### Sizing
 
@@ -124,7 +124,7 @@ These limits ensure the pop-over remains readable and visually balanced, regardl
 
 ![Maximum width](popover/maximum-width-37096-1961.png)
 
-_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white). Text in the figure: "❖ Placeholder", "min. 200px", "max. 540px"._
+_Figure: Two popovers with arrow and Placeholder content side by side with width markers: a narrow one labelled "min. 200px" and a much wider one labelled "max. 540px", showing the minimum and maximum popover widths._
 
 ### Motion
 
@@ -134,7 +134,7 @@ _Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=cente
 
 ![Appear](popover/appear-37096-2006.png)
 
-_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); cursor (type=pointer). Text in the figure: "❖ Placeholder", "on click", "fade-in, 250ms"._
+_Figure: Appear animation: a small info icon button with a pointer cursor on click leads, via an arrow labelled "on click" and "fade-in, 250ms", to the popover with a Placeholder shown above the same button, which has no popover before the click._
 
 #### Disappear
 
@@ -142,7 +142,7 @@ _Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=cente
 
 ![Disappear](popover/disappear-37096-2018.png)
 
-_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); cursor (type=pointer). Text in the figure: "❖ Placeholder", "on click again/ or outside the element", "fade-out, 250ms"._
+_Figure: Disappear animation: a visible popover with a Placeholder above its info icon button (pointer cursor on the button) leads, via an arrow labelled "on click again/ or outside the element" and "fade-out, 250ms", to the plain info icon button with the popover gone._
 
 ## Content and Assets
 
@@ -152,7 +152,7 @@ A Popover can contain a variety of elements, such as text, buttons, images, acti
 
 ![Varaible content](popover/varaible-content-37335-3295.png)
 
-_Figure: Shows placeholder: text + image; button (button text=View Guide, variant=filled, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Need more details?", "Learn how to configure this feature step by step. The guide includes setup in...", "View Guide"._
+_Figure: Popover with an arrow above its info icon button containing mixed content: the heading "Need more details?", the body text "Learn how to configure this feature step by step. The guide includes setup instructions, best practices, and troubleshooting tips to help you get started quickly." and a small filled "View Guide" button aligned to the bottom right._
 
 ### Maximum height
 
@@ -164,7 +164,7 @@ If the content exceeds the available space, the Popover becomes scrollable, prev
 
 ![Maximum height](popover/maximum-height-37335-3303.png)
 
-_Figure: Shows anchor element (state=hover /pressed, breakpoint=l + xl, icon=right); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Text in the figure: "Label", "min. 48px"._
+_Figure: Browser window with a trigger button "Label" (chevron up) and an open list of many "Label" action items in a popover with a scrollbar. The list is cut off at the bottom, and a marker labelled "min. 48px" shows the minimum distance between the bottom of the popover and the bottom edge of the screen, beyond which the content scrolls._
 
 ### Don’t use for long text and content
 
@@ -174,7 +174,7 @@ For larger amounts of information use a separate page.
 
 ![Don’t use for long text and content](popover/don-t-use-for-long-text-and-content-37344-9139.png)
 
-_Figure: Don't example. Shows placeholder: text + image; button (button text=Label, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "General Terms and Conditions for Orders", "1. Scope and Contractual Partner 1.1 These General Terms and Conditions (here..."._
+_Figure: Don't example: a very tall popover above an info icon button holds a long text, "General Terms and Conditions for Orders" with sections "1. Scope and Contractual Partner" and "2. Ordering Process / Customer's Offer", and a scrollbar. This is wrong because long text and content do not belong in a popover; it should stay brief and focused, and larger amounts of information belong on a separate page._
 
 ## Behavior & Usage
 
@@ -184,13 +184,13 @@ A Popover must always be triggered by a button or a button variant.
 
 ![Only buttons trigger popovers](popover/only-buttons-trigger-popovers-37335-3219.png)
 
-_Figure: Do example. Shows popover (overflow, arrow=true, arrow placement=below, arrow alignment=center, color=white); button-nav (state=hover /pressed, breakpoint=l + xl, icon=right); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "❖ Placeholder", "Example: button-nav", "Label", "Example: button small (label-hidden)"._
+_Figure: Do example: two popovers, each opened by a button. On the left, a white popover with a "Placeholder" content area and a scrollbar sits above a small label-hidden info button, captioned "Example: button small (label-hidden)". On the right, a white popover with a "Placeholder" content area opens below a button-nav labelled "Label" with an upward chevron, captioned "Example: button-nav"._
 
 Applying a Popover to **links or non-interactive elements (such as div, span, or p)** interferes with expected functionality and **makes the component inaccessible to keyboard and screen reader users.**
 
 ![Only buttons trigger popovers](popover/only-buttons-trigger-popovers-37813-2553.png)
 
-_Figure: Don't example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); cursor (type=pointer). Text in the figure: "❖ Placeholder", "Headline", "Copy text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur..."._
+_Figure: Don't example: a white popover with a "Placeholder" content area is anchored to the underlined link "Quisque eget" inside body copy under the heading "HEADLINE", with a pointer cursor on the link. A popover must not be triggered by a link or other non-interactive text, which is inaccessible to keyboard and screen reader users._
 
 ### Triggers and dismissal
 
@@ -210,7 +210,7 @@ It is dismissed when:
 
 ![Triggers and dismissal](popover/triggers-and-dismissal-37335-3243.png)
 
-_Figure: Shows button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); cursor (type=pointer); popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); button (button text=Next, variant=filled, state=hover / pressed, size=small, icon position=right, hide label=off, flush alignment=off). Text in the figure: "click/tab to open", "❖ Placeholder", "click/tap outside close", "Next", "click/tap again to close", "click/tap other element"._
+_Figure: Popover trigger and dismissal behaviour in four annotated cases: an info button with a pointer cursor labelled "click/tab to open"; an open white popover with "Placeholder" content above its info button labelled "click/tap again to close"; a lone pointer cursor in empty space labelled "click/tap outside close"; and a dark filled "Next" button with an arrow and pointer cursor labelled "click/tap other element"._
 
 ### Usecases
 
@@ -220,7 +220,7 @@ Popovers are best used for additional, non-critical content. They can provide su
 
 ![Additional non critical content](popover/additional-non-critical-content-37335-3262.png)
 
-_Figure: Shows placeholder: text + image; button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "You can find the model designation on the housing of your brushcutter. The de...", "Model Designation"._
+_Figure: White popover with an arrow pointing down at an info button next to the bold label "Model Designation". It contains the text "You can find the model designation on the housing of your brushcutter. The designation usually consists of a combination of letters and numbers (e.g., FS 55)." above a line drawing of a STIHL brushcutter engine housing with a callout marked 1, showing additional non-critical content._
 
 ### Alternatives for Popovers
 
@@ -241,11 +241,11 @@ Instead, present critical information as persistent content, such as hint text f
 
 ![Persistent Content](popover/persistent-content-37344-9591.png)
 
-_Figure: Don't example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); input-password (ℹ️ info-button, input, system feedback, size=medium, state=enabled, invalid=false); cursor (type=pointer). Text in the figure: "Use at least 8 characters, including one uppercase letter, one number, and on...", "Password", "\*\*\*\*\*\*\*\*"._
+_Figure: Don't example: a password input labelled "Password" with an info button, masked value "\*\*\*\*\*\*\*\*" and a show-password eye icon. A popover opened from the info button holds the essential instruction "Use at least 8 characters, including one uppercase letter, one number, and one special character.", which is only visible on interaction and should be persistent hint text instead._
 
 ![Persistent Content](popover/persistent-content-37344-9586.png)
 
-_Figure: Do example. Shows input-password (input, system feedback, hint, size=medium, state=enabled, invalid=false). Text in the figure: "Password", "Use at least 8 characters, including one uppercase letter, one number, and on...", "\*\*\*\*\*\*\*\*"._
+_Figure: Do example: a password input labelled "Password" with the masked value "\*\*\*\*\*\*\*\*" and an eye icon. The instruction "Use at least 8 characters, including one uppercase letter, one number, and one special character." is shown permanently as hint text between the label and the input field._
 
 #### Expandable sections and accordions
 
@@ -255,11 +255,11 @@ Instead, use expandable sections or accordions, which keep the information disco
 
 ![Expandable sections and accordions](popover/expandable-sections-and-accordions-37344-9644.png)
 
-_Figure: Don't example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); cursor (type=pointer). Text in the figure: "The devices produce only minimal vibrations, which reduces muscle fatigue. Th...", "Battery advantages for employees", "Battery advantages for companies", "Battery advantages for the environment or customers"._
+_Figure: Don't example: three bold headings, "Battery advantages for employees", "Battery advantages for companies" and "Battery advantages for the environment or customers", each followed by an info button. The first info button is pressed with a pointer cursor and opens a popover with the text "The devices produce only minimal vibrations, which reduces muscle fatigue. This enables precise work even over longer periods of time.", hiding item details in a popover._
 
 ![Expandable sections and accordions](popover/expandable-sections-and-accordions-37344-9639.png)
 
-_Figure: Do example. Shows accordion-group (size=medium, flush=false, expansion indicator=right). Text in the figure: "Battery advantages for employees", "The devices produce only minimal vibrations, which reduces muscle fatigue. Th...", "Battery advantages for companies", "Battery advantages for the environment or customers"._
+_Figure: Do example: an accordion group with three items separated by thin dividers. "Battery advantages for employees" is expanded with an upward chevron and shows the text "The devices produce only minimal vibrations, which reduces muscle fatigue. This enables precise work even over longer periods of time.", while "Battery advantages for companies" and "Battery advantages for the environment or customers" are collapsed with downward chevrons._
 
 #### Mobile
 
@@ -269,11 +269,11 @@ Do open the same content in a dialog on mobile. A centered dialog ensures clarit
 
 ![Mobile](popover/mobile-37972-2553.png)
 
-_Figure: Don't example. Shows action-item (label=English, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); input-search (submit button, input, system feedback, hint, size=input-search-small, state=enabled, invalid=false); divider (Direction=horizontal); text (viewport=desktop, variant=group title); action-item (label=Global / English, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Global / Español, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Global / Français, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Global / Portugals, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Deutschland / Deutsch, state=active, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Argentina / Español, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false). Text in the figure: "English", "Input", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español"._
+_Figure: Don't example: a mobile screen where a language selector button labelled "English" with a globe icon and upward chevron opens a popover anchored below it. The popover contains a search field with the placeholder "Input", a "Global Sites" group (Global / English, Global / Español, Global / Français, Global / Portugals) and a "Local Sites" group with "Deutschland / Deutsch" highlighted as active and "Argentina / Español", and it covers much of the small screen._
 
 ![Mobile](popover/mobile-37972-2561.png)
 
-_Figure: Do example. Shows header-dialog (heading, close button, viewport=mobile); input-search (submit button, input, system feedback, hint, size=input-search-small, state=enabled, invalid=false); divider (Direction=horizontal); text (viewport=desktop, variant=group title); action-item (label=Global / English, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Global / Español, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Global / Français, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Global / Portugals, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Deutschland / Deutsch, state=active, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false); action-item (label=Argentina / Español, state=enabled, leading-element=none, stacking=horizontal, chevron=false, label-weight=normal, indent=false). Text in the figure: "Language", "Input", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español"._
+_Figure: Do example: on mobile the same language content opens in a centered dialog over a dimmed grey background. The dialog has the heading "Language" with a close button, a search field with the placeholder "Input", a "Global Sites" group (Global / English, Global / Español, Global / Français, Global / Portugals) and a "Local Sites" group with "Deutschland / Deutsch" highlighted as active and "Argentina / Español"._
 
 ## Accessiblity
 
@@ -285,7 +285,7 @@ From there, it follows a logical **top-to-bottom**, **left-to-right** sequence.
 
 ![Focus order](popover/focus-order-37344-11649.png)
 
-_Figure: Shows dropdown\_menu\_container (overflow=false); placeholder: text + image; button (button text=View Guide, variant=filled, state=focus, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Contact Support, variant=ghost, state=focus, size=small, icon position=none, hide label=off, flush alignment=off); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=5, type=left, color=blue); annotation-circle (number=1, type=bottom, color=blue); annotation-circle (number=2, type=bottom, color=blue); annotation-circle (number=6, type=left, color=blue). Callouts 1, 2, 3, 4, 5, 6, 7. Text in the figure: "Example: dropdown menu", "Example: additional information", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest", "Need more details?", "Learn how to configure this feature step by step. The guide includes setup in...", "View Guide", "Contact Support"._
+_Figure: Focus order in two Popover examples. In "Example: dropdown menu" the seven items (STIHL sustainability strategy, Education and people, Economic sustainability, Social engagement, Climate strategy, Environmental protection, STIHL and the rainforest) carry callouts 1 to 7 from top to bottom, each with a focus outline. In "Example: additional information" ("Need more details?" text) the buttons "View Guide" (filled, callout 1) and "Contact Support" (ghost, callout 2) are focused left to right._
 
 ### Keyboard navigation
 
@@ -298,7 +298,7 @@ Users can interact with the Popover using the following keyboard actions:
 
 ![Keyboard navigation](popover/keyboard-navigation-37574-3158.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); dropdown\_menu\_container (overflow=false). Text in the figure: "Space", "Enter", "Open Popover with:", "or", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Esc", "Close Popover with:", "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions"._
+_Figure: Keyboard actions for a Popover opened from the "Products" nav bar item in the STIHL top bar. "Open Popover with:" Space or Enter on the focused trigger button reveals an empty dashed popover panel below it. "Close Popover with:" Esc closes the open menu (Sawing and cutting, Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise, All products). "Move to next focusable element:" Tab moves focus from "STIHL sustainability strategy" to "Education and people", and "Move to previous focusable element:" Tab + Shift moves it back._
 
 ## Examples
 
@@ -308,7 +308,7 @@ Built on the Popover component the Utility Menu offers quick access to essential
 
 ![Utility Menu](popover/utility-menu-37344-11739.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); utility\_menu\_container (overflow=false). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "STIHL Website", "MY STIHL", "STIHL Connected", "iMOW® Web App", "Product Advisor", "All Services & Apps"._
+_Figure: Utility Menu built on the Popover, shown in the STIHL top bar (Search Site, Contact, Dealer, Wishlist, Cart with badge 3, STIHL World, Login). The open "STIHL World" panel below the active "STIHL World" button lists STIHL Website, MY STIHL, STIHL Connected, iMOW® Web App and Product Advisor with orange icons, and ends with the link "All Services & Apps" with an external-link icon._
 
 ### Dropdown Menu
 
@@ -316,7 +316,7 @@ Built on the Popover component the Dropdown Menu provides quick access to nested
 
 ![Dropdown Menu](popover/dropdown-menu-37363-2614.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=true, number areas=2); nav-bar (variant=main, breakpoint=xl); title (title text=Welcome to STIHL, size=xl, viewport=desktop); dropdown\_menu\_container (overflow=false). Text in the figure: "Corporate", "Search Site", "Contact", "English", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "Welcome to STIHL", "ƒ", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest"._
+_Figure: \[unverified\] Dropdown Menu built on the Popover: in the STIHL top bar and nav bar, a linear list of Action Items opens below a nav bar Button Nav, under the title "Welcome to STIHL". The items are STIHL sustainability strategy, Education and people, Economic sustainability, Social engagement, Climate strategy, Environmental protection and STIHL and the rainforest, and the top bar shows Corporate, Search Site, Contact, English and the nav entries About STIHL, Sustainability, Careers, STIHL Journal, Press._
 
 ### Additional info
 
@@ -324,7 +324,7 @@ In the case of STIHL advisors, the Popover is used to provide users with additio
 
 ![Additional info](popover/additional-info-37344-11750.png)
 
-_Figure: Shows text (alert banner=false); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); input (system feedback, hint=Nummer ohne  Leerzeichen und Bindestriche eintragen, input=Input, hint, label=9-stellige Maschinennummer, size=medium, state=enabled, invalid=false). Text in the figure: "1.", "Geräteauswahl", "2.", "Vegetation", "3.", "hindernisse", "4.", "Empfehlungen", "5.", "überprüfung", "Neustart", "1. Produktauswahl", "Welchen STIHL Freischneider besitzen Sie?", "Modellbezeichnung", "FS 94", "Schneidwerkzeug berater für Freischneider ƒ", "Bei STIHL FS94 finden Sie die Maschinennummer in der Regel an der in den Abbi...", "Welche Maschinennummer weist Ihr Freischneider auf?", "Das von Ihnen angegebene Modell gibt es in unterschiedlichen Ausführungsvaria...", "Wo finde ich die Maschinennummer?", "9-stellige Maschinennummer", "Nummer ohne Leerzeichen und Bindestriche eintragen"._
+_Figure: Popover used for additional guidance in the STIHL advisor "Schneidwerkzeug berater für Freischneider" at step "1. Produktauswahl". Next to the question "Wo finde ich die Maschinennummer?" an info button opens a white Popover with an arrow pointing at it, containing a short text and two drawings of the machine with the number location marked "xxxxxxxxx". Below it is the input "9-stellige Maschinennummer" with the hint "Nummer ohne Leerzeichen und Bindestriche eintragen"._
 
 ## Popover
 
@@ -335,11 +335,13 @@ _Figure: Shows text (alert banner=false); button (button text=Button, variant=gh
 
 ![Popover](popover/popover-37096-1912.png)
 
-_Figure: Text in the figure: "❖ Placeholder", "arrow: false", "color: white", "arrow: true", "arrow alignment: start", "arrow alignment: center", "arrow alignment: end", "arrow placement: below", "arrow placement: above", "arrow placement: left", "arrow placement: right", "color: grey"._
+_Figure: Popover variants, each a rectangular container with a "Placeholder" content slot. "arrow: false, color: white" has no arrow. "arrow: true, color: white" and "arrow: true, color: grey" each show a grid of "arrow placement" (below, above, left, right) by "arrow alignment" (start, center, end), with the small arrow on the matching edge and corner position._
+
+> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 
-[Storybook documentation](https://main--63440bbb95889041542a5ba3.chromatic.com/?path=/docs/components-notification--documentation&globals=backgrounds.name:!undefined;backgrounds.value:!undefined)
+[Storybook documentation](https://main--63440bbb95889041542a5ba3.chromatic.com/?path=/docs/components-popover--documentation)
 
 [Decision tree](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26738-47603)
 

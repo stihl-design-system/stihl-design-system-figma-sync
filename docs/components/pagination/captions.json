@@ -1,0 +1,77 @@
+{
+  "08f9748dcf462c2b8f757fd0f78e1f835c553e24a072a9767c9d336514a9e863": {
+    "nodeId": "47220:5154",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of Pagination: callout 1 points at the Page Navigation on the right (previous button, pages 1, ..., 5, 6, 7 active, 8, 9, ..., 50, next button), callout 2 points at the optional Pagination Controls on the left (\"Items per page:\" select set to 100 and the range \"10 — 50 of 1000 items\")."
+  },
+  "27fd31cb0c6b0ec3fe3f4c80bf5fc28a8f400a8ed0377063bb769e13fd4a51e5": {
+    "nodeId": "47624:20552",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "STIHL Service Communication support news page in desktop (stacked=false) and mobile (stacked=true) layouts, showing a grid of news cards. Below the cards, the desktop layout has \"32 — 40 of 56 items\" followed by pagination controls \"1\" to \"7\" with page 4 active, and the mobile layout shows the same item range above pagination \"1\", \"2\", \"3\" (active), \"...\", \"7\"."
+  },
+  "396eae45b9009d9d593fee1aa60d772108a109370006034929c3f1fbb5f084ea": {
+    "nodeId": "50759:37703",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of Page Navigation shown twice with 9 page items and page 7 active: in the top row callout 1 points at the previous link, callout 2 at the next link and callout 3 at the group of page numbers with ellipsis; in the bottom row callout 4 points at the first page link (1), callout 5 at the last page link (50), callout 6 at a page number item (5), callout 7 at the current page (7, underlined in orange), callout 8 at an ellipsis and callout 9 at a divider between items."
+  },
+  "3aa383615820da51c0541260e153b86a32160ac6593f9261c71f9e4089be335d": {
+    "nodeId": "50869:34574",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two pagination bars with page items \"1\", \"...\", \"5\", \"6\", \"7\", \"8\", \"9\", \"...\", \"50\" and dark previous and next arrow buttons, linked by a purple arrow from top to bottom. In the top bar page 7 is the active page (bold, orange underline) and page 8 is focused with a dark outline; in the bottom bar page 8 is now active and keeps the focus outline, so focus stays on the triggered control after the page change."
+  },
+  "3d3cf4aa6fead71801e704303522071425759c7bae0be9b238da0a5156e77ccc": {
+    "nodeId": "53356:6093",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: two schematic page wireframes side by side, each with an image area, a text bar and a pagination bar at the bottom, linked by a purple arrow. The active page changes from the second to the fifth item while both pages show the same scroll position (the dashed purple viewport frames are aligned), so the user's scroll position is kept when switching pages."
+  },
+  "57b89c74804ea53121ce1c0a4d3e3d941ffd82a49b0d6878cd118c6c14574d08": {
+    "nodeId": "47272:11342",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two schematic pages with STIHL header and a grey content block. Callout 1: pagination placed right-aligned below the content it controls. Callout 2: an additional pagination placed above a tall content block (for tables or large datasets) in addition to the mandatory one below it."
+  },
+  "63a45cc855e2d78b12e17f5483d8ac94e3ec3e4ddcb52f2db324899baecd738c": {
+    "nodeId": "47272:11475",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "STIHL Service Communication bookmarks page with a parts table in desktop (stacked=false) and mobile (stacked=true) layouts. Below the content, \"Rows per page:\" with a select set to \"10\", \"70 — 80 of 568 rows\" and pagination controls \"1\", \"...\", \"5\", \"6\", \"7\" (active), \"8\", \"9\", \"...\", \"50\" on desktop, and the same elements stacked with \"1\", \"...\", \"7\" (active), \"...\", \"50\" on mobile."
+  },
+  "98a3f2c93ca8ea06d437003634fa1da3431b424e617e1aea378167761eb73079": {
+    "nodeId": "50857:43334",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Schematic pages showing pagination alignment. Callout 1 (default): Page Navigation + Pagination Controls, the stacked variant of it, and Page Navigation alone are all right-aligned to the content edge, marked by a dotted line. Callout 2: Page Navigation without additional controls is centered below the content, with the dotted line through the middle."
+  },
+  "b7727b66485fe97da582c49944aae0e73f386279a091a63c6353a291d0805548": {
+    "nodeId": "47291:2806",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Page Navigation with 7 page items at four stages: callout 1 active page first (1 active, 2, 3, 4, 5, ..., 50, previous button disabled); callout 2 active page first third (2 active, 1, 3, 4, 5, ..., 50); callout 3 active page middle (1, ..., 6, 7 active, 8, ..., 50); callout 4 active page last (1, ..., 46, 47, 48, 49, 50 active, next button disabled). First and last pages stay visible in every stage."
+  },
+  "ba143cef79bf4ffa72fa20bd8000eee84f85e3d31dd1a6821e46b8e5be696569": {
+    "nodeId": "47578:12673",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Pagination at five widths, each below a grey content block: breakpoint XL-M with 9 page items and controls and navigation in one row; breakpoint M with 9 page items and controls stacked above the navigation from 976px screen width; breakpoint S with 7 page items (1, ..., 6, 7, 8, ..., 50) from 518px; breakpoint S with 5 page items (1, ..., 7, ..., 50) from 428px; and breakpoint S with 5 page items where the page size select and the range indicator also stack on separate lines from 341px screen width."
+  },
+  "c9108a15439b248c21501ddb1d6dcb32d292db61c4f5feec48f4f673cf51ee47": {
+    "nodeId": "47559:8662",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the optional Pagination controls: callout 1 is the Page Size, made of 1a the label \"Items per page:\" and 1b the select showing 100; callout 2 is the Range Indicator \"10 — 50 of 1000 items\", made of 2a the item range (10 — 50) and 2b the total item count (1000 items)."
+  },
+  "cb93e244b74651ac8273ef9c54ff7f9951a1799412e2e13d4a35447532716d22": {
+    "nodeId": "53356:6154",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: two schematic page wireframes linked by a purple arrow. The first page shows the pagination bar in the viewport, but after switching pages the second page is scrolled to its top (title bar and heading visible, pagination pushed to the bottom edge), which is wrong because the automatic scroll to the top disrupts context."
+  },
+  "eb22a739a2f3bc5662129c18ede5b293cbf03f9d972667ef3e73941f7f18234b": {
+    "nodeId": "47220:5991",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Building elements of Pagination. Left: page navigation variants with 5, 7 and 9 page items, each shown for active page first, first third, middle, last third and last, with the previous button disabled on the first page and the next button disabled on the last page. Right: page number item in enabled and active states (default, hover / pressed, focus), the page navigation items ellipsis and divider element, and the optional pagination controls with \"Items per page:\" select (values 10, 25, 50, 100) and the range text \"10 — 50 of 1000 items\"."
+  },
+  "ec477e89b5b9760b271a30cc21fd0324e56b0e82417705397a6e38589bd65228": {
+    "nodeId": "53245:7423",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four page size select fields stacked vertically, each preceded by a monospace annotation: \"value: 10\" with the select showing \"10\", \"value: 25\" showing \"25\", \"value: 50\" showing \"50\" and \"value: 100\" showing \"100\", each with a chevron-down icon."
+  },
+  "fbae041d8e01c239dc7a7f3563628c4075bf7d1cc3714b2639a9a3a529f70b55": {
+    "nodeId": "47201:10046",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Pagination component in two layouts: \"stacked: false\" shows the page size selector \"Items per page:\" (100), the range indicator \"10 — 50 of 1000 items\" and the page navigation (1, ..., 5, 6, 7 active, 8, 9, ..., 50 with previous and next buttons) in one row, while \"stacked: true\" places the page size and range indicator above the page navigation."
+  }
+}

@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 4937:4402
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:51:25.639Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:26:24.071Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=4937-4402
 ---
 
@@ -30,7 +30,7 @@ Overview:
 
 ![Textarea](textarea/textarea-5145-19065.png)
 
-_Figure: Shows system-feedback (type=error). Text in the figure: "Size Medium", "is invalid", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Input", "0/100", "System Feedback Message", "Default", "Hover", "Focus", "Disabled", "Read-only", "Size Small"._
+_Figure: Overview of the textarea in sizes "Size Medium" and "Size Small", each in the states Default, Hover (grey fill), Focus (thick black border), Disabled (greyed text) and Read-only (grey fill, no border). Each has a Label, hint text, an "Input" area with resize handle and a "0/100" counter; Default and Focus also have an "is invalid" variant with red border and the "System Feedback Message" with an error icon._
 
 ### Further guidelines
 
@@ -58,7 +58,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](textarea/anatomy-8859-463.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); textarea (input, resize handle, counter, size=medium, state=enabled, invalid=false); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=4, type=right, color=blue); textarea (input, resize handle, ℹ️ info-button, counter, hint, size=medium, state=enabled, invalid=false); annotation-circle (number=6, type=right, color=blue); annotation-circle (number=5, type=left, color=blue); textarea (resize handle, input, counter, size=medium, state=enabled, invalid=true); annotation-circle (number=7, type=left, color=blue). Callouts 1, 2, 3, 4, 5, 6, 7. Text in the figure: "Label", "Input", "0/100", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "System Feedback Message"._
+_Figure: Anatomy of the textarea in three variants: callout 1 points at the Label, 2 at the text area, 3 at the user input text "Input", 4 at the character count "0/100". The second example adds 5 the hint text below the label and 6 the info button next to the label; the third example has a red border and 7 points at the "System Feedback Message" with error icon._
 
 ### Sizing
 
@@ -69,7 +69,7 @@ _Figure: Shows annotation-circle (number=1, type=top, color=blue); textarea (inp
 
 ![Minimum height and width](textarea/minimum-height-and-width-8859-479.png)
 
-_Figure: Shows textarea (input, resize handle, counter, size=medium, state=enabled, invalid=false). Measurements: 96px, 288px. Text in the figure: "Label", "Input", "0/100"._
+_Figure: Medium textarea with Label, "Input" text and "0/100" counter, with measurements showing the minimum height of 96px (vertical, at the right of the field) and the minimum width of 288px (horizontal, below the field)._
 
 #### Maximum width
 
@@ -81,11 +81,11 @@ In the Figma component, the maximum width is set to the recommended 544px. ([Lin
 
 ![Maximum width](textarea/maximum-width-30568-8898.png)
 
-_Figure: Shows textarea (input, resize handle, counter, size=medium, state=enabled, invalid=false). Text in the figure: "Content area Narrow", "Label", "Input", "0/100", "Container Width", "recommended max. width 544px"._
+_Figure: Two textareas (Label, "Input", "0/100") inside a "Content area Narrow" container. In the first the field fills the container width; in the second the container is wider than the field, and the field stays at the "recommended max. width 544px" while "Container Width" extends beyond it._
 
 ![Maximum width](textarea/maximum-width-8859-525.png)
 
-_Figure: Don't example. Shows textarea (input, resize handle, counter, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Input", "0/100"._
+_Figure: Don't example: a textarea (Label, "Input", "0/100") stretched across the full 12-column grid width, far beyond the recommended maximum width of 544px, which hurts scanability and readability._
 
 ## Content and Assets
 
@@ -97,7 +97,7 @@ Optional areas are marked with the word “(optional)”, after the label **(2)*
 
 ![Required and optional indicators](textarea/required-and-optional-indicators-8859-2884.png)
 
-_Figure: Shows text-area-medium (input, resize handle, counter, size=medium, state=enabled, invalid=false). Callouts 1, 2. Text in the figure: "Label \*", "Input", "0/100", "Label (optional)"._
+_Figure: Two medium textareas with "Input" and "0/100": the first with the label "Label \*", where callout 1 points at the asterisk marking a required field; the second with the label "Label (optional)", where callout 2 points at the word "(optional)" marking an optional field._
 
 ### Info Button
 
@@ -107,7 +107,7 @@ Popover content should be **limited to supplementary, non-critical information**
 
 ![Info Button](textarea/info-button-40251-50514.png)
 
-_Figure: Shows textarea (input, resize handle, ℹ️ info-button, counter, size=medium, state=enabled, invalid=false); cursor (type=pointer). Text in the figure: "You will usually find the Machine Number in the location shown in the illustr...", "Label", "Input", "0/100"._
+_Figure: Medium textarea with the label "Label", an info button next to it (hovered with a pointer cursor), the placeholder "Input", a resize handle and the counter "0/100". Above the info button an open white popover with the text "You will usually find the Machine Number in the location shown in the illustrations" shows two line drawings of a STIHL engine unit and a trimmer, each with a leader line to a placeholder machine number "xxxxxxxxx"._
 
 **Don’t use the popover for critical or required information**, use the hint instead as critical information should net be hidden
 
@@ -115,7 +115,7 @@ For mor Guidance on this topic see the [Popover documentation](https://www.figma
 
 ![Info Button](textarea/info-button-40251-50533.png)
 
-_Figure: Don't example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); textarea (input, resize handle, ℹ️ info-button, counter, size=medium, state=enabled, invalid=false); cursor (type=pointer). Text in the figure: "xxxx", "Label", "Input", "0/100"._
+_Figure: Don't example: a medium textarea with the label "Label", an info button (hovered), the placeholder "Input", a resize handle and the counter "0/100", with a small white popover above the info button containing only the placeholder text "xxxx". This is wrong because the popover must not hold critical or required information; use the hint instead._
 
 ## Behavior
 
@@ -125,7 +125,7 @@ Some text areas need a character limit. These indicators are displayed at the bo
 
 ![Character count](textarea/character-count-5145-19986.png)
 
-_Figure: Do example. Shows text-area-medium (resize handle, input, counter, size=medium, state=enabled, invalid=true). Text in the figure: "Label", "Input", "System Feedback Message", "100/100"._
+_Figure: Do example: a medium textarea with the label "Label" and the placeholder "Input" in the invalid state, with a red border, an error icon with the "System Feedback Message" below it and the counter "100/100" at the bottom right. It shows the error mode that is correct when the character limit is reached or exceeded._
 
 ### Scaling the area
 
@@ -136,7 +136,7 @@ The text area can have a fixed hight or can be used dynamically and scale with t
 
 ![Scaling the area](textarea/scaling-the-area-8300-14366.png)
 
-_Figure: Shows text-area-medium (input, counter, size=medium, state=enabled, invalid=false); text-area-medium (input, resize handle, counter, size=medium, state=enabled, invalid=false). Callouts 1, 2. Text in the figure: "Label", "Input", "0/100"._
+_Figure: Two medium textareas, each with the label "Label", the placeholder "Input" and the counter "0/100". Callout 1 points at the left textarea without a resize handle (automatic scaling); callout 2 points at the right textarea with a resize handle in its bottom right corner (manual scaling)._
 
 **Automatic**
 
@@ -144,7 +144,7 @@ The text area grows automatically in height when entering the input. If the area
 
 ![Scaling the area](textarea/scaling-the-area-8861-678.png)
 
-_Figure: Shows text-area-medium (input, counter, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Lorem ipsum dolor sit, consectetur adipiscing elit. Lacus vel etiam|", "67/200", "Lorem ipsum dolor sit, consectetur adipiscing elit. Lacus vel etiam adipiscin...", "200/200"._
+_Figure: Two medium textareas with the label "Label" showing automatic growth. The left one is at minimum height with two lines of "Lorem ipsum dolor sit, consectetur adipiscing elit. Lacus vel etiam|" and the counter "67/200"; the right one has grown taller to fit six lines of text and shows the counter "200/200". Neither has a resize handle._
 
 ### Overflow
 
@@ -152,4 +152,4 @@ More characters than max height requires a (native) scroll bar to be shown in th
 
 ![Overflow](textarea/overflow-8861-740.png)
 
-_Figure: Shows text-area-medium (input, resize handle, counter, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Lorem ipsum dolor sit, consectetur adipiscing elit. Lacus vel etiam adipiscin...", "67/200"._
+_Figure: Medium textarea with the label "Label" and a resize handle, filled with six lines of Lorem ipsum text and the counter "67/200". The text is taller than the maximum height, so a native vertical scroll bar appears on the right inside the textarea._

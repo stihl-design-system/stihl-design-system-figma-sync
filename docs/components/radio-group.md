@@ -16,10 +16,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 860:2728
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:48:20.502Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:25:01.365Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=860-2728
 ---
 
@@ -36,11 +36,13 @@ Overview:
 
 ![Radio Group](radio-group/radio-group-1007-26.png)
 
-_Figure: Shows building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (label=Radio Label, label, type=title, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, label, type=title, state=enabled, checked=false, invalid=false); radio-group (item 5, legend, item 3, legend=Radio Group Legend, item 4, invalid, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, show title=false); radio-group (item 4, legend, item 5, item 3, legend=Radio Group Legend, hint, invalid, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false); radio-group (item 5, legend, item 3, legend=Radio Group Legend, item 4, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, show title=false); radio-group (legend, item 5, item 3, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 4, legend=Radio Group Legend, hint, orientation=vertical, show title=true). Text in the figure: "Radio Group", "orientation: vertical", "orientation: horizontal", "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "show title: false", "show title: true", "Variation examples", "Invalid true", "System Feedback Message", "Show checked hint", "Show checked hint + images", "Show title + images", "❖"._
+_Figure: Shows building-element-radio (label=Radio Label, custom area=\[object Object\], label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=title, state=enabled, checked=true, invalid=true); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=title, state=enabled, checked=false, invalid=false); radio-group (description=\[object Object\], item 5, legend, item 3, legend=Radio Group Legend, item 4, invalid, description, orientation=vertical, show title=false); radio-group (item 4, legend, description=\[object Object\], legend=Radio Group Legend, item 5, item 3, invalid, description, orientation=horizontal, show title=false); radio-group (description=\[object Object\], item 5, legend, item 3, legend=Radio Group Legend, item 4, description, orientation=vertical, show title=false); radio-group (legend, item 5, item 3, item 4, legend=Radio Group Legend, description=\[object Object\], description, orientation=vertical, show title=true). Text in the figure: "Radio Group", "orientation: vertical", "orientation: horizontal", "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "show title: false", "show title: true", "Variation examples", "Invalid true", "System Feedback Message", "Show checked hint", "Show checked hint + images", "Show title + images", "❖"._
 
 ![Radio Group](radio-group/radio-group-860-2774.png)
 
-_Figure: Shows building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (label=Radio Label, checked hint, label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (label=Radio Label, type=label, state=enabled, checked=true, invalid=false). Text in the figure: "Building Element Radio Item", "default", "hover/pressed", "focus", "disabled", "Radio Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "checked: false", "checked: true", "invalid: true checked: false", "invalid: true checked: true", "Show label", "Show checked hint", "true", "false"._
+_Figure: "Building Element Radio Item" state matrix. Columns are default, hover/pressed, focus and disabled; rows are "checked: false", "checked: true", "invalid: true checked: false" and "invalid: true checked: true", each as a plain "Radio Label" and as a bold label with a hint text. Hover/pressed adds a grey fill, focus a dark outer ring, invalid a red ring, checked an orange dot, and disabled is greyed out with no invalid variants. Below, "Show label" true/false and "Show checked hint" true/false show the label hidden or the hint shown only when checked._
+
+> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 
@@ -74,7 +76,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Radio Group](radio-group/radio-group-1310-8800.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); radio-group (item 5, legend, item 3, legend=Radio Group Legend, item 4, invalid, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., ℹ️ info-button, hint, orientation=vertical, show title=false); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=3, type=right, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=5, type=left, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "System Feedback Message", "Radio Label"._
+_Figure: Anatomy of a vertical Radio Group with numbered callouts: 1 points at the "Radio Group Legend", 2 at the info button next to the legend, 3 at the hint text below it, 4 at the "System Feedback Message" with a red warning icon, and 5 at the first "Radio Label" item, which is selected, followed by four unselected "Radio Label" items._
 
 #### Radio Item
 
@@ -86,7 +88,7 @@ _Figure: Shows annotation-circle (number=1, type=top, color=blue); radio-group (
 
 ![Radio Item](radio-group/radio-item-1426-4418.png)
 
-_Figure: Shows building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=true, invalid=false); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (label=Radio Label, images, checked hint, label, type=label, state=enabled, checked=true, invalid=false). Callouts 1, 2, 3, 4, 5. Text in the figure: "Radio Label", "❖", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri..."._
+_Figure: Anatomy of the Radio Item with callouts: 1 points at the selected radio (orange dot), 2 at the unselected radio (empty circle), 3 at the "Radio Label" text, 4 at two image placeholders to the right of the label, and 5 at the hint text below the label of a selected item._
 
 ### Orientation
 
@@ -98,7 +100,7 @@ _Figure: Shows building-element-radio (label=Radio Label, label, type=label, sta
 
 ![Vertical (default)](radio-group/vertical-default-1310-9064.png)
 
-_Figure: Shows radio-group (item 5, legend, legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label lorem ipsum dolor sit amet, consectetur"._
+_Figure: Shows radio-group (description=\[object Object\], item 5, legend, legend=Radio Group Legend, description, orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label lorem ipsum dolor sit amet, consectetur"._
 
 #### Horizontal
 
@@ -108,7 +110,7 @@ _Figure: Shows radio-group (item 5, legend, legend=Radio Group Legend, hint=Lore
 
 ![Horizontal](radio-group/horizontal-1310-9044.png)
 
-_Figure: Shows radio-group (item 4, legend, item 5, legend=Radio Group Legend, hint, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label"._
+_Figure: Horizontal radio group with the legend "Radio Group Legend" and a hint text, followed by two short "Radio Label" radio buttons placed side by side. The first is selected, the second is unselected._
 
 ### Sizing
 
@@ -120,13 +122,13 @@ To ensure good readability the maximum width should not exceed 544px (16px\*34em
 
 ![Maximum width of text container](radio-group/maximum-width-of-text-container-36086-14144.png)
 
-_Figure: Do example. Shows building-element-radio (images, label=Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. , label, type=label, state=enabled, checked=false, invalid=false). Text in the figure: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirm...", "❖", "max. 544px"._
+_Figure: Do example. Shows building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (custom area, custom area=\[object Object\], label=Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. , label, type=label, state=enabled, checked=false, invalid=false). Text in the figure: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirm...", "❖", "max. 544px"._
 
 Do not exceed 544px, even when the module or grid is wider.
 
 ![Maximum width of text container](radio-group/maximum-width-of-text-container-36086-14164.png)
 
-_Figure: Don't example. Text in the figure: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirm...", "greater than 544px"._
+_Figure: Don't example: a radio button with a long label stretched over two wide lines, with a measurement line marked "greater than 544px". The text container is wider than the 544px maximum, which hurts readability._
 
 ### Images
 
@@ -139,7 +141,7 @@ Images support two alignment options relative to the label:
 
 ![Alignment](radio-group/alignment-15589-1584.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue). Callouts 1, 2. Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "Lorem consectetur adipiscing elit nunc amet"._
+_Figure: Two radio groups with the legend "Radio Group Legend", hint text and payment logos (Mastercard, Visa, PayPal, Klarna) as images. Callout 1 (Hug): the logos sit directly next to each label. Callout 2 (Fill): the logos are aligned to the far right edge of the container, marked by a dashed vertical line._
 
 #### Maximum height
 
@@ -152,7 +154,7 @@ Do:
 
 ![Maximum height](radio-group/maximum-height-15589-1688.png)
 
-_Figure: Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "max.32px", "Lorem consectetur adipiscing elit nunc amet"._
+_Figure: Radio group with legend, hint text and payment logos (Mastercard, Visa, PayPal, Klarna) next to the labels "Radio Label" and "Lorem consectetur adipiscing elit nunc amet". A vertical measurement beside the Visa logo is marked "max.32px", the maximum image height._
 
 #### Function icons
 
@@ -160,11 +162,9 @@ Don’t insert function icons in the image area, as functional icons width a hei
 
 ![Function icons](radio-group/function-icons-15944-2022.png)
 
-_Figure: Don't example. Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label"._
+_Figure: Don't example: a radio group where function icons (calendar and clock, lock, coffee cup) are placed in the image area next to the "Radio Label" labels. Function icons lack hierarchy at this size and do not mesh well with the radio group; only logos or images belong there._
 
-## Content and Assets
-
-### Amount of radio buttons
+#### Amount of radio buttons
 
 - A radio group should contain at least 2 and no more than approximately 5 options.
 - For more than 5 options, consider using a Select Component instead.
@@ -173,7 +173,9 @@ _Figure: Don't example. Text in the figure: "Radio Group Legend", "Lorem ipsum d
 
 ![Amount of radio buttons](radio-group/amount-of-radio-buttons-1310-10275.png)
 
-_Figure: Shows radio-group (item 4, legend, item 5, legend=Radio Group Legend, hint, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false); radio-group (item 5, legend, item 3, legend=Radio Group Legend, item 4, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label"._
+_Figure: Two radio groups with the legend "Radio Group Legend" and hint text. The upper one is horizontal with two "Radio Label" options, the lower one is vertical with five "Radio Label" options, the first selected, showing the range of two to about five options._
+
+## Content and Assets
 
 ### Overflow behaviour
 
@@ -182,7 +184,7 @@ _Figure: Shows radio-group (item 4, legend, item 5, legend=Radio Group Legend, h
 
 ![Overflow behaviour](radio-group/overflow-behaviour-36292-38386.png)
 
-_Figure: Shows radio-group (item 5, legend, legend=Radio Group Legend, item 4, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris", "Radio Label"._
+_Figure: Vertical radio group with legend and hint text. The first label is long and wraps onto a second line ("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris"); a dashed horizontal line marks the first text line, to which the radio element is aligned. Two further "Radio Label" options follow._
 
 ### Long texts
 
@@ -190,7 +192,7 @@ _Figure: Shows radio-group (item 5, legend, legend=Radio Group Legend, item 4, h
 
 ![Long texts](radio-group/long-texts-1310-10441.png)
 
-_Figure: Shows radio-group (item 5, legend, legend=Radio Group Legend, item 4, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, show title=false). Text in the figure: "Startseite", "Produkt- und Zubehörberater", "Lorem Ipsum ƒ", "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris", "Radio Label"._
+_Figure: Mobile page mockup with the STIHL header, "MENU" bar, breadcrumb "Startseite \> Produkt- und Zubehörberater" and the heading "LOREM IPSUM", followed by a vertical radio group with legend and hint. The first selected option has a long label wrapping onto two lines, followed by two "Radio Label" options, illustrating that label length must be tested on mobile._
 
 ### Required and optional indicators
 
@@ -203,7 +205,7 @@ _Figure: Shows radio-group (item 5, legend, legend=Radio Group Legend, item 4, h
 
 ![Required and optional indicators](radio-group/required-and-optional-indicators-5680-9487.png)
 
-_Figure: Shows radio-group (item 4, legend, item 5, legend=Radio Group Legend\*, hint, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false); radio-group (item 4, legend, item 5, legend=Radio Group Legend (optional), hint, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false). Callouts 1, 2. Text in the figure: "Radio Group Legend\*", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "Radio Group Legend (optional)"._
+_Figure: Two horizontal Radio Groups, each with a legend, a hint ("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.") and two options labelled "Radio Label", the first selected. Callout 1 points at the legend "Radio Group Legend\*", where the asterisk marks the group as required; callout 2 points at the legend "Radio Group Legend (optional)", where the suffix marks the group as optional._
 
 ### Bold labels when hints are visible
 
@@ -215,7 +217,7 @@ To enable this behavior, set “**Show title**” to **true**.
 
 ![Bold labels when hints are visible](radio-group/bold-labels-when-hints-are-visible-15589-1946.png)
 
-_Figure: Shows radio-group (legend, item 5, item 3, hint=Choose the one that resonates the most:, item 4, legend=Which of the following characteristics do you believe contributes the most to the creation of your garden?, hint, orientation=vertical, show title=true). Text in the figure: "Which of the following characteristics do you believe contributes the most to...", "Choose the one that resonates the most:", "Plant Diversity", "Variety of plants ensuring seasonal interest and visual appeal.", "Design and Layout", "Structured, balanced layout for organized, aesthetic garden spaces.", "Functional Areas", "Designated sections for flowers, vegetables, and other plants.", "Water Features", "Ponds, fountains add visual, auditory interest; promote relaxation.", "Wildlife Attraction", "Brd feeders, insect hotels enhance biodiversity, garden liveliness."._
+_Figure: Shows radio-group (legend, item 5, item 3, item 4, legend=Which of the following characteristics do you believe contributes the most to the creation of your garden?, description=\[object Object\], description, orientation=vertical, show title=true). Text in the figure: "Which of the following characteristics do you believe contributes the most to...", "Choose the one that resonates the most:", "Radio Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Design and Layout", "Structured, balanced layout for organized, aesthetic garden spaces.", "Functional Areas", "Designated sections for flowers, vegetables, and other plants.", "Water Features", "Ponds, fountains add visual, auditory interest; promote relaxation.", "Wildlife Attraction", "Brd feeders, insect hotels enhance biodiversity, garden liveliness."._
 
 ### Prompting the user with a call to action
 
@@ -228,7 +230,7 @@ _Figure: Shows radio-group (legend, item 5, item 3, hint=Choose the one that res
 
 ![Prompting the user with a call to action](radio-group/prompting-the-user-with-a-call-to-action-23123-9795.png)
 
-_Figure: Shows radio-group (legend, item 5, item 3, hint=Choose the one that resonates the most:, item 4, legend=Which of the following characteristics do you believe contributes the most to the creation of your garden?, hint, orientation=vertical, show title=true); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=right, color=blue). Callouts 1, 2. Text in the figure: "Which of the following characteristics do you believe contributes the most to...", "Choose the one that resonates the most:", "Plant Diversity", "Variety of plants ensuring seasonal interest and visual appeal.", "Design and Layout", "Structured, balanced layout for organized, aesthetic garden spaces.", "Functional Areas", "Designated sections for flowers, vegetables, and other plants.", "Water Features", "Ponds, fountains add visual, auditory interest; promote relaxation.", "Wildlife Attraction", "Brd feeders, insect hotels enhance biodiversity, garden liveliness."._
+_Figure: Shows radio-group (legend, item 5, item 3, item 4, legend=Which of the following characteristics do you believe contributes the most to the creation of your garden?, description=\[object Object\], description, orientation=vertical, show title=true); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=right, color=blue). Callouts 1, 2. Text in the figure: "Which of the following characteristics do you believe contributes the most to...", "Choose the one that resonates the most:", "Radio Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Design and Layout", "Structured, balanced layout for organized, aesthetic garden spaces.", "Functional Areas", "Designated sections for flowers, vegetables, and other plants.", "Water Features", "Ponds, fountains add visual, auditory interest; promote relaxation.", "Wildlife Attraction", "Brd feeders, insect hotels enhance biodiversity, garden liveliness."._
 
 ### The hint appears on activation
 
@@ -240,7 +242,7 @@ The hint disappears again, when another Radio Button is activated. Read the[ mot
 
 ![The hint appears on activation](radio-group/the-hint-appears-on-activation-15589-2284.png)
 
-_Figure: Shows radio-group (item 5, legend, item 3, legend=Radio Group Legend, item 4, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Radio Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri..."._
+_Figure: Two states of a vertical Radio Group with the legend "Radio Group Legend" and five options labelled "Radio Label", connected by an arrow. On the left no option is selected and no hint is shown. On the right the first option is selected and its hint ("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.") appears below its label, pushing the other options down._
 
 ## Behavior
 
@@ -256,7 +258,7 @@ If applicable, provide an opt-out option (e.g., “Other” or “None of the ab
 
 ![One choice](radio-group/one-choice-1310-10905.png)
 
-_Figure: Shows radio-group (item 5, legend, legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet., hint, orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet.", "Option A", "Option B", "Option C", "Other"._
+_Figure: Three steps of one vertical Radio Group with the legend "Radio Group Legend" and the hint "Lorem ipsum dolor sit amet.", connected by arrows. First step: "Option A", "Option B" and "Option C", none selected. Second step: "Option A" is selected and the third option is now "Other". Third step: "Other" is selected and "Option A" is deselected, showing that only one option can be active at a time and a selection is changed only by choosing another option._
 
 ### System feedback
 
@@ -266,7 +268,7 @@ Feedback always refers to the full list, instead to one single Radio Button.
 
 ![System feedback](radio-group/system-feedback-1310-11644.png)
 
-_Figure: Shows radio-group (legend, item 3, legend=Radio Group Legend, invalid, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "System Feedback Message", "Radio Label"._
+_Figure: Vertical Radio Group in the invalid state with the legend "Radio Group Legend" and a hint ("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget."). Below the hint a red error icon with the "System Feedback Message" applies to the whole list, and all three "Radio Label" options have red outlined radio buttons._
 
 ### Click behavior
 
@@ -274,7 +276,7 @@ The entire option is clickable, including the label and image, not just the radi
 
 ![Click behavior](radio-group/click-behavior-1310-11560.png)
 
-_Figure: Shows radio-group (item 4, legend, item 5, item 3, legend=Radio Group Legend, hint, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label"._
+_Figure: Horizontal Radio Group with the legend "Radio Group Legend", a hint and three options labelled "Radio Label", the middle one selected. Each radio button and its label are highlighted with a light orange background to show the whole option is clickable, and a hand cursor hovers over the label of the third option._
 
 ## Examples
 
@@ -284,7 +286,7 @@ Radio Groups are used in combination with Radio Groups with Images within the Di
 
 ![Product Advisors](radio-group/product-advisors-44214-4455.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); breadcrumb (expanded=true); steps (hint=250 - 500 m², label=Search, status=current, state=enabled, orientation=vertical); steps (label=Device Selection, hint=Hint option.); steps (label=Technical Specification, hint=Hint option.); steps (label=Usage (Optional), hint=Hint option.); steps (label=Recommendation, hint=Hint option.); local/page header (Viewport=desktop); radio-group-with-image (legend=What are you looking for?\*, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, legend, show title=false); radio-group (legend, legend=I need the Saw Chain for ..., hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=vertical, show title=false); button (button text=Next, variant=filled, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Home", "/", "Product-Advisors", "Bar-and-Chain-Advisor", "1", "Search", "2", "Device Selection", "Technical Specification", "4", "Usage (Optional)"._
+_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); breadcrumb (expanded=true); steps (hint=250 - 500 m², label=Search, status=current, state=enabled, orientation=vertical); steps (label=Device Selection, hint=Hint option.); steps (label=Technical Specification, hint=Hint option.); steps (label=Usage (Optional), hint=Hint option.); steps (label=Recommendation, hint=Hint option.); local/page header (Viewport=desktop); radio-group-with-image (legend=What are you looking for?\*, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, legend, show title=false); radio-group (description=\[object Object\], legend, legend=I need the Saw Chain for ..., orientation=vertical, show title=false); button (button text=Next, variant=filled, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Home", "/", "Product-Advisors", "Bar-and-Chain-Advisor", "1", "Search", "2", "Device Selection", "Technical Specification", "4", "Usage (Optional)"._
 
 ## Radio Group with Image
 
@@ -297,15 +299,15 @@ Overview:
 
 ![Radio Group with Image](radio-group/radio-group-with-image-41031-17996.png)
 
-_Figure: Shows building-element-radio-with-image (hint text=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label text=Radio Label, state=enabled, show title=false, checked=true, invalid=false); building-element-radio-with-image (hint text=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label text=Radio Label, state=enabled, show title=false, checked=false, invalid=false); building-element-radio-with-image (label text=Radio Label, hint text=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., state=enabled, show title=true, checked=true, invalid=false); building-element-radio-with-image (label text=Radio Label, hint text=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., state=enabled, show title=true, checked=false, invalid=false). Text in the figure: "Radio Group with Image", "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "show title: false", "show title: true"._
+_Figure: Radio Group with Image shown twice, each with the legend "Radio Group Legend", a hint and four image options in one row, the first selected. With "show title: false" each option has a regular "Radio Label" beside its radio button and no hint. With "show title: true" the "Radio Label" is bold and a hint ("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.") appears under each label._
 
 ![Radio Group with Image](radio-group/radio-group-with-image-41996-6851.png)
 
-_Figure: Shows radio-group-with-image (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, item 4, legend, show title=false); Component 2 (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, item 4, legend, show title=false); Component 6 (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, item 4, invalid, legend, show title=false); radio-group-with-image (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, item 4, ℹ️ info-button, legend, show title=false); radio-group-with-image (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, item 4, legend, show title=true); radio-group-with-image (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, legend, show title=true); radio-group-with-image (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, legend, show title=true). Text in the figure: "Variation examples", "legend only", "Radio Group Legend", "Radio Label", "legend + hint", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "invalid true", "System Feedback Message", "info button true", "title true", "4 items", "3 items", "2 items"._
+_Figure: Variation examples of Radio Group with Image, stacked vertically, each with image placeholders and "Radio Label" options, the first selected: "legend only" (legend, no hint), "legend + hint", "invalid true" (red "System Feedback Message" and red outlined radio buttons on the first two options), "info button true" (info icon after the legend), "title true" (bold labels with a hint under each), "4 items", "3 items" (wider images) and "2 items" (widest images)._
 
 ![Radio Group with Image](radio-group/radio-group-with-image-40938-4281.png)
 
-_Figure: Shows Radio-image-Placeholder (show stroke=false); placeholder: image (aspect ratio=3:2); building-element-radio-with-image (hint text=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label text=Radio Label, state=enabled, show title=false, checked=false, invalid=false). Text in the figure: "Building Element Radio with Image", "default", "hover/pressed", "focus", "disabled", "Radio Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "selected false", "selected true", "invalid true selected false", "invalid true selected true", "Radio Image Stroke", "show stroke: false", "show stroke: true", "Radio Image Aspect Ratios", "1:1", "4:3", "3:2", "16:9"._
+_Figure: Building Element Radio with Image shown as a matrix of purple placeholder images, each with a radio and a "Radio Label", once without and once with a hint text. Columns are the states default, hover/pressed, focus and disabled (disabled is faded), rows are selected false, selected true, invalid true selected false and invalid true selected true (invalid has a red radio, no disabled column). Below, Radio Image Stroke compares show stroke: false and show stroke: true, and Radio Image Aspect Ratios shows the image at 1:1, 4:3, 3:2 and 16:9._
 
 ### Further guidelines
 
@@ -342,7 +344,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Radio Group with Image](radio-group/radio-group-with-image-41031-17618.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); radio-group-with-image (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, invalid, ℹ️ info-button, legend, show title=true); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=5, type=bottom, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "System Feedback Message", "Radio Label"._
+_Figure: Radio Group with Image with three items, each a placeholder image above a radio, a bold "Radio Label" and a hint, the first one selected. Above the items are the "Radio Group Legend" with an info icon, a hint text and a red "System Feedback Message". Callout 1 points at the legend, 2 at the info button, 3 at the hint below the legend, 4 at the system feedback message and 5 at the hint of a radio item._
 
 #### Radio Item
 
@@ -355,7 +357,7 @@ _Figure: Shows annotation-circle (number=1, type=top, color=blue); radio-group-w
 
 ![Radio Item](radio-group/radio-item-41031-17588.png)
 
-_Figure: Shows building-element-radio-with-image (hint text=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label text=Radio Label, state=enabled, show title=false, checked=true, invalid=false); building-element-radio-with-image (hint text=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label text=Radio Label, state=enabled, show title=false, checked=false, invalid=false); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=right, color=blue); building-element-radio-with-image (label text=Radio Label, hint text=Lorem ipsum dolor sit amet, consectetur adipiscing elit. , state=enabled, show title=true, checked=true, invalid=false); annotation-circle (number=5, type=left, color=blue); annotation-circle (number=6, type=left, color=blue). Callouts 1, 2, 3, 4, 5, 6. Text in the figure: "Radio Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."._
+_Figure: Anatomy of a Radio Item in three variants: a selected radio with the label "Radio Label", an unselected radio with the label, and a selected radio with a bold label and a hint text below. Callout 1 points at the image, 2 at the selected radio, 3 at the unselected radio, 4 at the label, 5 at the label used as a title, and 6 at the hint._
 
 ### Scaling
 
@@ -368,13 +370,13 @@ The Radio Items scale evenly to fill the available container width, always left-
 
 ![Scaling](radio-group/scaling-42001-12749.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue); annotation-circle (number=4, type=center, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "fill", "container width", "fill (max.400px)", "fill (min.160px)"._
+_Figure: Four diagrams of how Radio Items scale within a page grid. Callout 1: three items each marked "fill" share the "container width" evenly. Callout 2: two items marked "fill (max.400px)" stop growing at 400 px and stay left-aligned in a wider container. Callout 3: items marked "fill (min.160px)" shrink to 160 px and wrap into two rows in a narrow container. Callout 4: a single item with image, radio and label where the image scales proportionally._
 
 > **Manual Pixel Alignment (Figma Bug)** Sometimes the component creates fractional pixel heights when scaling up and down. This is a known Figma issue. **Workaround:** Manually adjust the component’s height to a whole pixel value (rounded up or down). Enable “Lock aspect ratio” to prevent the component from reverting to fractional dimensions when resizing.
 
 ![Scaling](radio-group/scaling-41296-3991.png)
 
-_Figure: Shows building-element-radio-with-image (hint text=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label text=Radio Label, state=enabled, show title=false, checked=false, invalid=false). Text in the figure: "Radio Label"._
+_Figure: Two copies of the same radio item (placeholder image above an unselected radio with "Radio Label") with their Figma height fields. The left one has a fractional height of 138.67 set to Hug. The right one has the rounded whole-pixel height 139 with the lock aspect ratio option enabled, as the workaround for fractional heights._
 
 ### Responsive behaviour
 
@@ -389,13 +391,13 @@ The component automatically adapts to the width of its container. It uses a hori
 
 ![Alignment and Wrapping](radio-group/alignment-and-wrapping-41031-17631.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); radio-group-with-image (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, item 4, legend, show title=false); annotation-circle (number=2, type=center, color=blue); radio-group-with-image (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, legend, show title=false). Callouts 1, 2. Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label"._
+_Figure: Radio Group with Image with legend and hint in two layouts. Callout 1: horizontal alignment with four items side by side in one row (first one selected). Callout 2: wrapping, where on narrower widths the items wrap into a 2x2 grid and in an even narrower container stack vertically._
 
 > The component features two **📐 layout helpe**r that should be used too ensure the correct item size when they wrap: Use **📐 layout helper** 1 **+ 📐 layout help**er2 to fill two empty item slots U**se 📐 layout help**er 1 to fill one empty item slot
 
 ![Alignment and Wrapping](radio-group/alignment-and-wrapping-42031-13562.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); radio-group-with-image (legend=Radio Group Legend, layout helper 2, layout helper 1, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, item 4, show title=false); annotation-circle (number=2, type=center, color=blue); radio-group-with-image (legend=Radio Group Legend, layout helper 1, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, show title=false). Callouts 1, 2. Text in the figure: "Radio Label", "📐 layout helper 1", "📐 layout helper 2"._
+_Figure: Two wrapped Radio Groups showing the layout helper. Callout 1: four items in a three-column layout where the second row has one item plus dashed placeholders "layout helper 1" and "layout helper 2" filling the two empty slots. Callout 2: three items in a two-column layout where the second row has one item plus a dashed "layout helper 1" filling the one empty slot._
 
 #### Spacing
 
@@ -407,7 +409,7 @@ Remeber applying the correct **Variable Mode** in your designs.
 
 ![Spacing](radio-group/spacing-42158-7583.png)
 
-_Figure: Shows radio-group-with-image (legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, hint, item 4, legend, show title=false); spacer (type=dynamic token, direction=horizontal). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label", "spacing-dynamic-xs"._
+_Figure: Radio Group Legend with a hint above four radio items in a row (first one selected). The horizontal gap between each pair of neighbouring items is highlighted and labelled "spacing-dynamic-xs", the dynamic spacing token used between items._
 
 ### Placement
 
@@ -421,7 +423,7 @@ The Radio Group with Image is ideally placed within the appropriate Grid Content
 
 ![Placement](radio-group/placement-41652-10397.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue). Callouts 1, 2, 3. Text in the figure: "main", "Narrow left", "Narrow center", "Back", "Next", "Two Thirds"._
+_Figure: Three page layouts with a Radio Group with Image placed in grid content areas. Callout 1: four items spanning the full grid width, labelled "main". Callout 2: three items in a narrow column, left-aligned ("Narrow left") or centered ("Narrow center"). Callout 3: four items in the "Two Thirds" area with "Back" and "Next" buttons below and a stepper on the right._
 
 ## Content and Assets
 
@@ -435,7 +437,7 @@ _Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation
 
 ![Amount of Text](radio-group/amount-of-text-41079-65119.png)
 
-_Figure: Shows annotation-circle (number=1, type=left, color=blue); radio-group-with-image (legend=Wonach suchen Sie?, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, legend, show title=false); annotation-circle (number=2, type=left, color=blue); radio-group-with-image (legend=Wonach suchen Sie?, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, legend, show title=true); annotation-circle (number=3, type=bottom, color=blue). Callouts 1, 2, 3. Text in the figure: "Wonach suchen Sie?", "Sägekette", "Führungsschiene", "Sägekette und Führungsschiene", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri..."._
+_Figure: Two Radio Groups with the legend "Wonach suchen Sie?" and three photo options: "Sägekette" (selected), "Führungsschiene" and "Sägekette und Führungsschiene". The first has only short labels, the second has bold labels with a three-line hint each. Callout 1 points at the legend (one line, two at most), 2 at the label (short, one line, two at most), and 3 at the hint (optional, maximum three lines)._
 
 **Don’t use text elements inconsistently.**
 
@@ -444,7 +446,7 @@ _Figure: Shows annotation-circle (number=1, type=left, color=blue); radio-group-
 
 ![Amount of Text](radio-group/amount-of-text-41328-12996.png)
 
-_Figure: Don't example. Shows annotation-circle (number=1, type=center, color=blue); radio-group-with-image (legend=Welche Art der Vegetation möchten Sie bearbeiten?, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, show title=false); annotation-circle (number=2, type=center, color=blue); radio-group-with-image (legend=Wonach suchen Sie?, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, show title=false). Callouts 1, 2. Text in the figure: "Welche Art der Vegetation möchten Sie bearbeiten?", "Wonach suchen Sie?", "Sägekette", "Führungsschiene", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."._
+_Figure: Don't example with two image radio groups. Callout 1 marks the legend "Welche Art der Vegetation möchten Sie bearbeiten?" above two image radio items that have no labels at all (first selected), and callout 2 marks "Wonach suchen Sie?" with items "Sägekette" (plain label) and "Führungsschiene" (bold label plus a hint), which mixes label types within one row; labels must always be present and label types consistent._
 
 ### Usage of Images and Illustrations
 
@@ -460,7 +462,7 @@ _Figure: Don't example. Shows annotation-circle (number=1, type=center, color=bl
 
 ![Usage of Images and Illustrations](radio-group/usage-of-images-and-illustrations-41079-65173.png)
 
-_Figure: Shows radio-group-with-image (legend=Wonach suchen Sie?, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, legend, show title=false); annotation-circle (number=1, type=center, color=blue); Radio-image-Placeholder (show stroke=true); annotation-circle (number=3, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); radio-group-with-image (legend=Welche Steigung weist Ihre Rasenfläche auf?, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, show title=false). Callouts 1, 2, 3. Text in the figure: "Wonach suchen Sie?", "Sägekette", "Führungsschiene", "Sägekette und Führungsschiene", "Welche Steigung weist Ihre Rasenfläche auf?", "Die Rasenfläche hat keine Steigung.", "Die Rasenfläche ist leicht hügelig."._
+_Figure: Two image radio groups. Callout 1 marks the first group "Wonach suchen Sie?" with photographic images and the options "Sägekette" (selected), "Führungsschiene" and "Sägekette und Führungsschiene"; callout 2 marks the second group "Welche Steigung weist Ihre Rasenfläche auf?" with light line illustrations of a robotic mower and the options "Die Rasenfläche hat keine Steigung." (selected) and "Die Rasenfläche ist leicht hügelig."; callout 3 points with a magnified detail at the thin grey outline around an illustration, used because the illustration has a light background._
 
 ## Examples
 
@@ -470,4 +472,4 @@ Radio Groups with Images are mainly used within the Digital Advisors. Including 
 
 ![Product Advisors](radio-group/product-advisors-41704-13135.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); breadcrumb (expanded=true); steps (hint=250 - 500 m², label=Search, status=current, state=enabled, orientation=vertical); steps (label=Device Selection, hint=Hint option.); steps (label=Technical Specification, hint=Hint option.); steps (label=Usage (Optional), hint=Hint option.); steps (label=Recommendation, hint=Hint option.); local/page header (Viewport=desktop); radio-group-with-image (legend=What are you looking for?\*, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, legend, show title=false); radio-group (legend, legend=I need the Saw Chain for ..., hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=vertical, show title=false); button (button text=Next, variant=filled, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Home", "/", "Product-Advisors", "Bar-and-Chain-Advisor", "1", "Search", "2", "Device Selection", "Technical Specification", "4", "Usage (Optional)"._
+_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); breadcrumb (expanded=true); steps (hint=250 - 500 m², label=Search, status=current, state=enabled, orientation=vertical); steps (label=Device Selection, hint=Hint option.); steps (label=Technical Specification, hint=Hint option.); steps (label=Usage (Optional), hint=Hint option.); steps (label=Recommendation, hint=Hint option.); local/page header (Viewport=desktop); radio-group-with-image (legend=What are you looking for?\*, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., item 3, legend, show title=false); radio-group (description=\[object Object\], legend, legend=I need the Saw Chain for ..., orientation=vertical, show title=false); button (button text=Next, variant=filled, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Home", "/", "Product-Advisors", "Bar-and-Chain-Advisor", "1", "Search", "2", "Device Selection", "Technical Specification", "4", "Usage (Optional)"._

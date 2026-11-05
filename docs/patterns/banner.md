@@ -13,10 +13,10 @@ figmaFile: Web Pattern Library
 figmaProject: 03. Platform Libraries
 figmaFileKey: Ie2r0R9QwjEc7O3nrFbXhV
 figmaNodeId: 7171:9055
-figmaVersion: "2370898144407684143"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-06-30T14:44:46Z
-syncedAt: 2026-11-04T14:52:34.467Z
+figmaVersion: "2418090261531524003"
+figmaVersionLabel: "Bug Fix: popover slot implementation / content loss"
+figmaVersionCreatedAt: 2026-11-04T18:34:21Z
+syncedAt: 2026-11-05T19:26:54.793Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7171-9055
 ---
 
@@ -32,7 +32,7 @@ sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7171-9055
 
 ![Banner](banner/banner-7171-10866.png)
 
-_Figure: Shows link-default (label=Promo Banner Link, variant=neutral, state=enabled, icon position=right); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button (button text=This is a button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "content: promo", "content: placeholder", "content: USPs", "variant: default", "viewport: XL", "close-button: true", "Promo Banner Link", "❖ Placeholder", "Text Element", "close-button: false", "viewport: L", "viewport: M", "viewport: S", "variant:secondary", "variant:highlight"._
+_Figure: Overview of the Banner pattern as a matrix of full-width bars in three variants (default dark, secondary light grey, highlight orange), four viewports (XL, L, M, S) and close-button true or false. The columns are "content: promo" (centered "Promo Banner Link" with icon and chevron), "content: placeholder" (purple dashed "Placeholder" slot) and "content: USPs" (three "Text Element" items, shown only for the secondary variant), with the close button as an X at the right edge when enabled and bar width shrinking with the viewport._
 
 ### Further guidelines
 
@@ -83,7 +83,7 @@ There are three main variants:
 
 ![Variants](banner/variants-7171-11184.png)
 
-_Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=true); annotation-circle (number=1, type=left, color=blue); banner (variant=secondary, viewport=m, content=promo, close-button=true); annotation-circle (number=2, type=left, color=blue); banner (variant=highlight, viewport=m, content=promo, close-button=true); annotation-circle (number=3, type=left, color=blue). Callouts 1, 2, 3. Text in the figure: "Promo Banner Link"._
+_Figure: Three full-width promo banners stacked vertically, each with an image icon, the centered link text "Promo Banner Link" with a chevron, and a close button on the right. Callout 1 marks the dark Default banner, callout 2 the light grey Secondary banner and callout 3 the orange Highlight banner._
 
 ### Alignment & Placement
 
@@ -91,7 +91,7 @@ The Promo Banner is positioned **above the top bar** and spans the **full width 
 
 ![Alignment & Placement](banner/alignment-placement-7171-11198.png)
 
-_Figure: Shows banner (variant=default, viewport=xl, content=promo, close-button=true); top-bar (variant=main, breakpoint=xl, logo add-on=true, number areas=2); nav-bar (variant=main, breakpoint=xl). Text in the figure: "Full", "Promo Banner Link", "This is a Platform name", "Search Site", "Label", "Button nav"._
+_Figure: On the XL viewport the dark Promo Banner with the link "Promo Banner Link" and a close button sits above the top bar, which holds the STIHL logo, "This is a Platform name", a "Search Site" field and icon buttons labelled "Label". The nav bar with "Button nav" items sits below it, and a purple bar labelled "Full" shows that the banner spans the full width of the viewport._
 
 #### Content Alignment
 
@@ -99,7 +99,7 @@ On **viewports XL, L, M, content is centered (1)** within the banner. **On viewp
 
 ![Content Alignment](banner/content-alignment-7171-11212.png)
 
-_Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=true); annotation-circle (number=1, type=left, color=blue); banner (variant=default, viewport=s, content=promo, close-button=true); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "center", "Promo Banner Link", "left"._
+_Figure: Two dark promo banners with the link "Promo Banner Link" and a close button. Callout 1 marks the wider banner (viewports XL, L, M) whose content is centered on a dashed vertical line labelled "center"; callout 2 marks the narrower banner (viewport S) whose content is left-aligned to a dashed line labelled "left"._
 
 ### Sizing
 
@@ -109,7 +109,7 @@ The banner has a **maximum height of 48px on XL, L, and M viewports (1)**. On **
 
 ![Height](banner/height-7171-11229.png)
 
-_Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=true); banner (variant=default, viewport=s, content=promo, close-button=true). Measurements: 48px. Text in the figure: "Longer Promo Banner Copy Lorem ipsum dolor sit amet", "dynamic"._
+_Figure: Two dark promo banners with the text "Longer Promo Banner Copy Lorem ipsum dolor sit amet". The wider banner (M viewport) keeps the text on one line and has a height marked "48px"; the narrower banner (S viewport) wraps the text onto two lines and its height is marked "dynamic"._
 
 ## Content and Assets
 
@@ -119,7 +119,7 @@ The maximum character count should not exceed **65 characters**. Depending on th
 
 ![Maximum Character](banner/maximum-character-7171-11253.png)
 
-_Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=true). Text in the figure: "Longer Banner Copy Lorem ipsum dolor sit amet, consectetur lorem", "Longer Banner Copy", "Lorem ipsum dolor sit", "amet consectetur lorem"._
+_Figure: Two banners illustrating character length. The dark banner holds one long text, "Longer Banner Copy Lorem ipsum dolor sit amet, consectetur lorem", with a link chevron and close button. The light grey banner splits the copy into three short items, "Longer Banner Copy", "Lorem ipsum dolor sit" and "amet consectetur lorem", each with its own icon, followed by a close button._
 
 ### Overflow
 
@@ -128,7 +128,7 @@ _Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=
 
 ![Overflow](banner/overflow-7171-11260.png)
 
-_Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=true); annotation-circle (number=1, type=left, color=blue); banner (variant=default, viewport=s, content=promo, close-button=true); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "Longer Promo Banner Copy Lorem ip sum dolor sit amet, consectetur"._
+_Figure: Two dark promo banners with a percent icon, the text "Longer Promo Banner Copy Lorem ip sum dolor sit amet, consectetur", a chevron and a close button. Callout 1 marks the wide banner (XL, L, M) where the text stays on a single line; callout 2 marks the narrow banner (S) where the text wraps onto two lines and the banner grows in height._
 
 ### Pairing
 
@@ -142,7 +142,7 @@ A **maximum of two banners** can be displayed at the same time:
 
 ![Pairing](banner/pairing-7171-11272.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); banner (variant=default, viewport=xl, content=promo, close-button=true); top-bar (variant=main, breakpoint=xl, logo add-on=true, number areas=2); nav-bar (variant=main, breakpoint=xl); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=2, type=top, color=blue); banner (variant=highlight, viewport=xl, content=promo, close-button=false). Callouts 1, 2, 3. Text in the figure: "Promo Banner Link", "Text Element", "This is a Platform name", "Search Site", "Label", "Button nav"._
+_Figure: Two page headers, each with two banners stacked above the top bar (STIHL logo, "This is a Platform name", "Search Site") and nav bar ("Button nav"). The first has the dark Default banner "Promo Banner Link" (callout 1) and the second has the orange Highlight banner (callout 2); in both a light grey Secondary banner with three "Text Element" items (callout 3) sits below it._
 
 #### Combinations
 
@@ -150,7 +150,7 @@ Do not combine the Default and Highlight variants.
 
 ![Combinations](banner/combinations-7171-11291.png)
 
-_Figure: Don't example. Shows banner (variant=highlight, viewport=xl, content=promo, close-button=false); banner (variant=default, viewport=xl, content=promo, close-button=true); top-bar (variant=main, breakpoint=xl, logo add-on=true, number areas=2); nav-bar (variant=main, breakpoint=xl). Text in the figure: "Promo Banner Link", "This is a Platform name", "Search Site", "Label", "Button nav"._
+_Figure: Don't: an orange Highlight banner and a dark Default banner, both with "Promo Banner Link", are stacked above the top bar and nav bar. This is wrong because the Default and Highlight variants must not be combined._
 
 #### Actions and hierachy
 
@@ -158,7 +158,7 @@ Avoid including multiple actions per banner. Focus on a single, clear call to ac
 
 ![Actions and hierachy](banner/actions-and-hierachy-7171-11304.png)
 
-_Figure: Don't example. Shows link-default (label=Link to the Promotion, variant=neutral, state=enabled, icon position=right); link-default (label=Link to the participate Raffel, variant=neutral, state=enabled, icon position=right); link-default (label=Copy Code: STIHL25 for free shipping, variant=neutral, state=enabled, icon position=right); button (button text=This is a button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); top-bar (variant=main, breakpoint=xl, logo add-on=true, number areas=2); nav-bar (variant=main, breakpoint=xl). Text in the figure: "Link to the Promotion", "Link to the participate Raffel", "Copy Code: STIHL25 for free shipping", "This is a Platform name", "Search Site", "Label", "Button nav"._
+_Figure: Don't: a single dark banner above the top bar contains three links, "Link to the Promotion", "Link to the participate Raffel" and "Copy Code: STIHL25 for free shipping" with a copy icon, plus a close button. This is wrong because a banner should offer one clear call to action, not multiple actions._
 
 ### Pattern
 
@@ -172,7 +172,7 @@ An **icon (1),** paired with a **link component (2)** that directs users to the 
 
 ![Promo](banner/promo-7171-11335.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); annotation-circle (number=2, type=top, color=blue); banner (variant=default, viewport=m, content=promo, close-button=true); banner (variant=highlight, viewport=m, content=promo, close-button=true); annotation-circle (number=1, type=bottom, color=blue); annotation-circle (number=2, type=bottom, color=blue). Callouts 1, 2. Text in the figure: "Only this week free delivery", "Up to 40% off all Chainsaw models"._
+_Figure: Two promo banners, a dark one reading "Only this week free delivery" with a delivery truck icon and an orange one reading "Up to 40% off all Chainsaw models" with a percent icon, each with a chevron and close button. In both, callout 1 points at the icon and callout 2 points at the link text._
 
 #### USPs
 
@@ -182,7 +182,7 @@ This pattern is most often used to communicate USPs or other non-essential or su
 
 ![USPs](banner/usps-7171-11348.png)
 
-_Figure: Text in the figure: "Versandkostenfreie ab 49€", "Lieferung oder Abholung vor Ort", "30 Tage Rückgaberecht"._
+_Figure: Secondary banner on a grey background used as a USP bar, with three icon plus text elements side by side, "Versandkostenfreie ab 49€" (box icon), "Lieferung oder Abholung vor Ort" (truck icon) and "30 Tage Rückgaberecht" (return arrow icon), and a close button at the right end._
 
 #### Status
 
@@ -192,7 +192,7 @@ Don’t display status messages (e.g. success, error, or warning) in the Promoti
 
 ![Status](banner/status-7171-11355.png)
 
-_Figure: Shows notification (close button, type=warning, icon=True); top-bar (variant=main, breakpoint=xl, logo add-on=true, number areas=2); nav-bar (variant=main, breakpoint=xl). Text in the figure: "Important Safety Notice We are recalling selected items due to a material def...", "This is a Platform name", "Search Site", "Label", "Button nav"._
+_Figure: Header on a desktop viewport (xl) with a yellow warning Notification above the top bar and nav bar, titled "Important Safety Notice" with a text and link about a product recall and a close button, shown instead of a promotional banner. The top bar has the STIHL logo, "This is a Platform name", a "Search Site" field and icon buttons labelled "Label", and the nav bar has seven "Button nav" items._
 
 ## Behavior
 
@@ -204,7 +204,7 @@ _Figure: Shows notification (close button, type=warning, icon=True); top-bar (va
 
 ![Dismissibility](banner/dismissibility-7171-11370.png)
 
-_Figure: Shows banner (variant=default, viewport=l, content=promo, close-button=true). Text in the figure: "Only this week free delivery"._
+_Figure: Default promo banner on a dark background at viewport l, centered truck icon with the link "Only this week free delivery" and a chevron, and a close button at the right end that makes the banner dismissible._
 
 #### Focus order
 
@@ -212,7 +212,7 @@ In a promo banner, the focus order should **start with the first interactive ele
 
 ![Focus order](banner/focus-order-7171-11376.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); annotation-circle (number=2, type=top, color=blue); banner (variant=default, viewport=l, content=promo, close-button=true). Callouts 1, 2. Text in the figure: "Only this week free delivery"._
+_Figure: Default promo banner with the focus order marked by two numbered callouts. Callout 1 points at the link "Only this week free delivery", the first focusable element, and callout 2 points at the close button at the right end, the second focusable element; both show a focus outline._
 
 #### Status
 
@@ -220,7 +220,7 @@ If a **Notification is used in the banner area to display a status message**, no
 
 ![Status](banner/status-7171-11384.png)
 
-_Figure: Don't example. Shows notification (close button, type=warning, icon=True); banner (variant=highlight, viewport=l, content=promo, close-button=false); top-bar (variant=main, breakpoint=l, logo add-on=true, number areas=2); nav-bar (variant=main, breakpoint=l). Text in the figure: "Important Safety Notice We are recalling selected items due to a material def...", "Promo Banner Link", "This is a Platform name", "Search Site", "Label", "Button nav"._
+_Figure: Don't example: a yellow warning Notification ("Important Safety Notice" with a recall text and link) is displayed directly above an orange highlight promo banner ("Promo Banner Link") and the top bar and nav bar at viewport l. A Notification used for a status message must not appear together with a promotional banner because the two compete for attention._
 
 ### Viewport behavior
 
@@ -230,7 +230,7 @@ When a Default or Highlight banner is used alone, it remains visible across all 
 
 ![Primary or Highlight banner](banner/primary-or-highlight-banner-7171-11399.png)
 
-_Figure: Shows banner (variant=highlight, viewport=l, content=promo, close-button=true); top-bar (variant=main, breakpoint=l, logo add-on=true, number areas=2); nav-bar (variant=main, breakpoint=l); banner (variant=highlight, viewport=s, content=promo, close-button=true); top-bar (variant=main, breakpoint=s, logo add-on=true, number areas=2). Text in the figure: "Promo Banner Link", "This is a Platform name", "Search Site", "Label", "Button nav"._
+_Figure: Orange highlight promo banner ("Promo Banner Link" with a close button) shown above the top bar and nav bar on viewport l, and below it the same banner above the top bar on viewport s, showing that a banner used alone stays visible on both viewports._
 
 #### Secondary Banner
 
@@ -241,7 +241,7 @@ When using the secondary banner alone or in combination with another banner:
 
 ![Secondary Banner](banner/secondary-banner-7171-11411.png)
 
-_Figure: Shows banner (variant=highlight, viewport=l, content=promo, close-button=true); top-bar (variant=main, breakpoint=l, logo add-on=true, number areas=2); nav-bar (variant=main, breakpoint=l); annotation-circle (number=1, type=left, color=blue); banner (variant=highlight, viewport=s, content=promo, close-button=true); top-bar (variant=main, breakpoint=s, logo add-on=true, number areas=2); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "Promo Banner Link", "Text Element", "This is a Platform name", "Search Site", "Label", "Button nav"._
+_Figure: Orange highlight banner with a grey secondary banner below it (three "Text Element" items with icons and a close button) above the top bar and nav bar on viewport l, marked with callout 1. An arrow leads to viewport s, marked with callout 2, where only the orange highlight banner remains above the top bar and the secondary banner is hidden._
 
 ### Scroll behavior
 
@@ -252,7 +252,7 @@ _Figure: Shows banner (variant=highlight, viewport=l, content=promo, close-butto
 
 ![Scroll behavior](banner/scroll-behavior-7171-11432.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue); annotation-circle (number=4, type=center, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "Banner", "Top Bar", "Nav Bar"._
+_Figure: Four numbered states of a page header during scrolling. 1: "Banner", "Top Bar" and "Nav Bar" all visible. 2 (after scrolling down, mouse icon with a double down chevron): only "Top Bar". 3 (after scrolling up, mouse icon with a double up chevron): "Top Bar" and "Nav Bar" without the banner. 4 (back at the top): "Banner", "Top Bar" and "Nav Bar" visible again._
 
 ## Usage Guidelines
 
@@ -268,7 +268,7 @@ Components are chosen based on their level of urgency:
 
 ![Functionality & Priority](banner/functionality-priority-9902-2911.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=desktop); footer-dialog (first button, second button, third button, viewport=desktop, direction=horizontal, primary position=left); annotation-circle (number=3, type=center, color=blue); notification (action, close button, type=info, icon=True); toast (text=All files lorem ipsum, icon, type=info); banner (variant=default, viewport=m, content=promo, close-button=true). Callouts 1, 3. Text in the figure: "Heading", "❖ Placeholder", "Button", "This is a notification message that guides the user.", "All files lorem ipsum", "Promo Banner Link"._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=desktop); footer-dialog (first button, second button, third button, viewport=desktop, direction=horizontal, primary position=left); annotation-circle (number=3, type=center, color=blue); notification (custom action area=\[object Object\], custom action area, children=\[object Object\], close button, type=info, icon=True); toast (text=All files lorem ipsum, icon, type=info); banner (variant=default, viewport=m, content=promo, close-button=true). Callouts 1, 3. Text in the figure: "Heading", "❖ Placeholder", "Button", "This is a notification message that guides the user.", "All files lorem ipsum", "Promo Banner Link"._
 
 ### Use Cases
 
@@ -281,7 +281,7 @@ _Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dia
 
 ![System / Mandatory](banner/system-mandatory-9902-2929.png)
 
-_Figure: Shows header-dialog (heading, viewport=desktop); content-placeholder (type=text, format=none); footer-dialog (first button, third button, viewport=desktop, direction=horizontal, primary position=left); notification (close button, type=info, icon=True); toast (text=Settings have been saved., icon, type=success); notification (type=warning, icon=True). Text in the figure: "Cookies help us improve your experience.", "By clicking “Accept all,” you agree to the use of cookies as described in our...", "Accept all", "Manage preferences", "The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.", "Settings have been saved.", "Recall notice: Product XY has been recalled. Please visit www.example.com for..."._
+_Figure: Shows header-dialog (heading, viewport=desktop); content-placeholder (type=text, format=none); footer-dialog (first button, third button, viewport=desktop, direction=horizontal, primary position=left); notification (custom action area=\[object Object\], children=\[object Object\], close button, type=info, icon=True); toast (text=Settings have been saved., icon, type=success); notification (custom action area=\[object Object\], children=\[object Object\], type=warning, icon=True). Text in the figure: "Cookies help us improve your experience.", "By clicking “Accept all,” you agree to the use of cookies as described in our...", "Accept all", "Manage preferences", "The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.", "Settings have been saved.", "Recall notice: Product XY has been recalled. Please visit www.example.com for..."._
 
 #### Marketing / Engagement
 
@@ -313,4 +313,4 @@ Banner focused on promotions, campaigns and USPs
 
 ![Examples](banner/examples-7171-11487.png)
 
-_Figure: Shows banner (variant=default, viewport=xl, content=promo, close-button=true); banner (variant=secondary, viewport=xl, content=usps, close-button=false); top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); flag (label=Offer, color=promo: highlight); button (button text=To the Offer, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Up to 40% off all Chainsaw models", "Free shipping on orders over €49", "Delivery or local pickup available", "30-day return policy", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "outdoor time. Chainsaws from STIHL.", "Quality and Ease of Use", "Offer", "MS 180", "399,00 €", "from €399.00\*", "To the Offer"._
+_Figure: E-shop page at breakpoint xl showing banners above the navigation: a dark default promo banner "Up to 40% off all Chainsaw models" with a close button, then a grey secondary USP banner with "Free shipping on orders over €49", "Delivery or local pickup available" and "30-day return policy". Below are the top-bar (STIHL logo, "Search Site" field, Contact, Dealer, Wishlist, Cart with badge "3", STIHL World, Login) and nav-bar (Products, Accessories, Professionals, Advice, Support), followed by a hero with the headline "OUTDOOR TIME. CHAINSAWS FROM STIHL." and a product teaser card "QUALITY AND EASE OF USE" with an "Offer" flag, "MS 180", "399,00 €", "from €399.00\*" and a highlight button "To the Offer"._

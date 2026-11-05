@@ -16,10 +16,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 26711:8034
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:45:25.991Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:23:56.043Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26711-8034
 ---
 
@@ -31,7 +31,7 @@ Use links when you want the users to navigate to another internal or external pa
 
 ![Link](link/link-168-7255.png)
 
-_Figure: Shows link-default (label=Link Default, variant=highlight, state=enabled, icon position=none); link-default (label=Link Default, variant=highlight, state=enabled, icon position=left); link-default (label=Link Default, variant=highlight, state=enabled, icon position=right); link-default (label=Link Default, variant=highlight, state=hover / pressed, icon position=none); link-default (label=Link Default, variant=highlight, state=hover / pressed, icon position=left); link-default (label=Link Default, variant=highlight, state=hover / pressed, icon position=right); link-default (label=Link Default, variant=highlight, state=focus, icon position=none); link-default (label=Link Default, variant=highlight, state=focus, icon position=left); link-default (label=Link Default, variant=highlight, state=focus, icon position=right); link-default (label=Link Default, variant=highlight, state=active, icon position=none); link-default (label=Link Default, variant=highlight, state=active, icon position=left); link-default (label=Link Default, variant=highlight, state=active, icon position=right). Text in the figure: "Link default: light", "enabled", "hover / pressed", "focus", "active", "Link Default", "highlight", "neutral", "Link Default: light"._
+_Figure: State matrix of the Link Default component in light and dark mode, with columns enabled, hover / pressed, focus and active and rows highlight and neutral. Each cell has three links: no icon, icon left and icon right. Highlight links are blue and neutral links are dark text (white on the black dark-mode panel); hover / pressed adds a grey background, focus adds a dark outline frame around the link and active adds an underline._
 
 ## Overview
 
@@ -59,7 +59,7 @@ Do not use Standalone links within sentences or paragraphs. Use [Inline links](h
 
 ![Anatomy](link/anatomy-1943-14768.png)
 
-_Figure: Shows link-default (label=Link Default, variant=highlight, state=active, icon position=left). Callouts 1, 2, 3. Text in the figure: "Link Default"._
+_Figure: Anatomy of a highlight link with an icon on the left and the label "Link Default": callout 1 points at the link label, callout 2 at the underline beneath the label, and callout 3 at the optional icon._
 
 ### Variants
 
@@ -70,7 +70,7 @@ There are two variants for Standalone links:
 
 ![Variants](link/variants-1943-15059.png)
 
-_Figure: Shows link-default (label=Link Default, variant=highlight, state=enabled, icon position=left); link-default (label=Link Default, variant=neutral, state=enabled, icon position=left). Callouts 1, 2. Text in the figure: "Link Default"._
+_Figure: Two Link Default variants with a left icon, stacked: callout 1 is the blue highlight variant and callout 2 is the dark neutral variant._
 
 ### Icon
 
@@ -78,7 +78,7 @@ Standalone link can be feature an icon to clarify an action and to highlight a l
 
 ![Icon](link/icon-1969-5385.png)
 
-_Figure: Shows link-default (label=Link Default, variant=highlight, state=enabled, icon position=left); link-default (label=Link Default, variant=highlight, state=enabled, icon position=right). Text in the figure: "Link Default"._
+_Figure: Two highlight Link Default links side by side in the enabled state: one with the icon placed left of the label and one with the icon placed right of the label._
 
 ## Content
 
@@ -88,7 +88,7 @@ Standalone links can be set to a single word **(1)**, as well, as to full senten
 
 ![Character length Standalone Link](link/character-length-standalone-link-1943-14895.png)
 
-_Figure: Shows link-default (label=Impressum, variant=neutral, state=enabled, icon position=none); link-default (label=Entsorgung von Batterien und Elektrogeräten, variant=neutral, state=enabled, icon position=none). Callouts 1, 2. Text in the figure: "Impressum", "Entsorgung von Batterien und Elektrogeräten"._
+_Figure: Two neutral standalone links without icon: callout 1 points at the single-word link "Impressum" and callout 2 at the full-sentence link "Entsorgung von Batterien und Elektrogeräten"._
 
 ### Overflow
 
@@ -96,7 +96,7 @@ Although its not recommended, overflow **(1)** can occur. The icon **(2)** is al
 
 ![Overflow](link/overflow-1943-14904.png)
 
-_Figure: Shows link-default (label=Rasentrimmer, Motorsensen und Freischneider, variant=neutral, state=enabled, icon position=right); link-default (label=Rasenmäher, variant=neutral, state=enabled, icon position=none); link-default (label=Mulchrasenmäher, variant=neutral, state=enabled, icon position=none). Callouts 1, 2. Text in the figure: "Rasentrimmer, Motorsensen und Freischneider", "Rasenmäher", "Mulchrasenmäher"._
+_Figure: Three neutral links in a list: "Rasentrimmer, Motorsensen und Freischneider" with a right icon wraps onto two lines, followed by single-line "Rasenmäher" and "Mulchrasenmäher". Callout 1 points at the wrapped text (overflow, max two lines) and callout 2 at the icon, which is vertically centered to the text._
 
 ## Colour combinations
 
@@ -108,13 +108,13 @@ Inline links should only be used on backgrounds as shown below:
 
 ![Light mode](link/light-mode-1969-5531.png)
 
-_Figure: Shows link-default (label=Link Default, variant=highlight, state=enabled, icon position=none); link-default (label=Link Default, variant=neutral, state=enabled, icon position=none). Text in the figure: "Link Default", "white background", "grey ultra-light background", "orange background"._
+_Figure: Link Default in light mode on three backgrounds. On "white background" and "grey ultra-light background" both the blue highlight link and the dark neutral link are shown; on "orange background" only a single dark link is shown._
 
 #### Dark mode
 
 ![Dark mode](link/dark-mode-1969-5558.png)
 
-_Figure: Shows link-default (label=Link Default, variant=highlight, state=enabled, icon position=none); link-default (label=Link Default, variant=neutral, state=enabled, icon position=none). Text in the figure: "Link Default", "grey deep background", "blue dark background"._
+_Figure: Link Default in dark mode on two backgrounds. On "grey deep background" a light-blue highlight link and a white neutral link are shown; on "blue dark background" only a single white link is shown._
 
 ## Link Button
 
@@ -126,7 +126,7 @@ A button link visually looks like a button but functions as a link
 
 ![Link Button](link/link-button-28123-2592.png)
 
-_Figure: Shows button (button text=Button, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=enabled, size=medium, icon position=left, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=enabled, size=medium, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=highlight, state=hover / pressed, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=hover / pressed, size=medium, icon position=left, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=hover / pressed, size=medium, icon position=right, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=hover / pressed, size=medium, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=highlight, state=focus, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=focus, size=medium, icon position=left, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=focus, size=medium, icon position=right, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=focus, size=medium, icon position=none, hide label=on, flush alignment=off). Text in the figure: "enabled", "hover / pressed /active", "focus", "Button", "highlight", "filled", "outline", "ghost (default)", "ghost (flush)"._
+_Figure: Button states used to design a link button, with columns enabled, hover / pressed /active and focus and rows highlight (orange), filled (dark), outline, ghost (default) and ghost (flush). Each row shows medium and small buttons labelled "Button" without icon, with left icon, with right icon and icon only; hover / pressed /active darkens or greys the fill and focus adds a double outline frame._
 
 ## Overview
 
@@ -168,7 +168,7 @@ For general button behavior, refer to the [Button Documentation](https://www.fig
 
 ![Icon](link/icon-28616-1979.png)
 
-_Figure: Shows button (button text=See all products, variant=filled, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off); button (button text=Anchor Link, variant=ghost, state=enabled, size=medium, icon position=left, hide label=off, flush alignment=off). Text in the figure: "See all products", "Anchor Link"._
+_Figure: Two button links with icons: a filled dark button "See all products" with a right chevron icon, and a ghost button "Anchor Link" with a left downward arrow icon._
 
 ## Content
 
@@ -183,7 +183,7 @@ Unlike standalone links, a button link should not contain full sentences. Instea
 
 ![Maximum character](link/maximum-character-28633-2474.png)
 
-_Figure: Shows button (button text=mmmmmmmmmmmmmmmmmm, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=mmmmmmmmmmmmmmmm, variant=filled, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off). Callouts 1, 2. Text in the figure: "mmmmmmmmmmmmmmmmmm", "mmmmmmmmmmmmmmmm"._
+_Figure: Two filled medium buttons on a dark fill, each with a numbered callout. Callout 1 marks a button without icon whose label is 18 characters ("mmmmmmmmmmmmmmmmmm"), the maximum without icon. Callout 2 marks a button with an icon on the right whose label is 16 characters ("mmmmmmmmmmmmmmmm"), the maximum with icon._
 
 ### Overflow
 
@@ -191,7 +191,7 @@ Although its not recommended, overflow can occur. [In this case use ghost button
 
 ![Overflow](link/overflow-28633-2485.png)
 
-_Figure: Shows button (button text=Example of a button  with two lines, variant=ghost, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=off); button (button text=Example of a button  with two lines, variant=ghost, state=enabled, size=medium, icon position=left, hide label=off, flush alignment=off). Text in the figure: "Example of a button with two lines"._
+_Figure: Two ghost medium buttons with the label "Example of a button with two lines" wrapped onto two lines. The left one has the chevron icon on the left and the right one has it on the right, in both cases vertically centered to the text._
 
 ## Behavior
 
@@ -203,13 +203,13 @@ The button linke has the same fcouse behaviour as the button component
 
 ![Disable](link/disable-28645-2847.png)
 
-_Figure: Shows button (button text=Highlight, variant=highlight, state=focus, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Filled, variant=filled, state=focus, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Outline, variant=outline, state=focus, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Ghost, variant=ghost, state=focus, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Highlight", "Filled", "Outline", "Ghost"._
+_Figure: Four medium buttons in the focus state, from left to right "Highlight" (orange fill), "Filled" (dark fill), "Outline" (outlined) and "Ghost" (no fill). Each shows the same double focus frame around the button as the button component._
 
 ## Inline Link
 
 ![Inline Link](link/inline-link-168-6185.png)
 
-_Figure: Shows link-inline (label=Link Inline, variant=highlight, state=enabled, type=internal link, size=text M); link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text M); link-inline (label=Link Inline, variant=highlight, state=enabled, type=anchor link, size=text M); link-inline (label=Link Inline, variant=highlight, state=hover / pressed, type=internal link, size=text M); link-inline (label=Link Inline, variant=highlight, state=hover / pressed, type=external link, size=text M); link-inline (label=Link Inline, variant=highlight, state=hover / pressed, type=anchor link, size=text M); link-inline (label=Link Inline, variant=highlight, state=focus, type=internal link, size=text M); link-inline (label=Link Inline, variant=highlight, state=focus, type=external link, size=text M); link-inline (label=Link Inline, variant=highlight, state=focus, type=anchor link, size=text M); link-inline (label=Link Inline, variant=highlight, state=enabled, type=internal link, size=text S); link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text S); link-inline (label=Link Inline, variant=highlight, state=enabled, type=anchor link, size=text S). Text in the figure: "Inline Link: light", "enabled", "hover / pressed", "focus", "Link Inline", "highlight", "neutral", "Inline Link: dark"._
+_Figure: Overview matrix of the inline link "Link Inline" on a light and a dark background, in the variants highlight (blue) and neutral (text colour). Columns are the states enabled, hover / pressed (grey background behind the link) and focus (frame around the link), each in three types (no icon, arrow out icon, arrow down icon) and three text sizes (M, S, XS), all underlined._
 
 ## Overview
 
@@ -247,7 +247,7 @@ In code Inline links are set up as a style. For ease of use in Figma we created 
 
 ![Anatomy](link/anatomy-1943-12164.png)
 
-_Figure: Shows link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text M). Callouts 1, 2, 3. Text in the figure: "Link Inline"._
+_Figure: Inline link "Link Inline" with the arrow out icon (highlight, text M, enabled) and three callouts. Callout 1 points at the link label, callout 2 at the underline beneath the label, and callout 3 at the icon after the label._
 
 ### Types
 
@@ -261,7 +261,7 @@ There are three Inline link types:
 
 ![Types](link/types-1943-12174.png)
 
-_Figure: Shows link-inline (label=Link Inline, variant=highlight, state=enabled, type=internal link, size=text M); link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text M); link-inline (label=Link Inline, variant=highlight, state=enabled, type=anchor link, size=text M). Callouts 1, 2, 3. Text in the figure: "Link Inline"._
+_Figure: Three highlight inline links "Link Inline", text M, enabled, each with a numbered callout. Callout 1 marks the default link without icon, callout 2 the link with arrow out icon (external link), and callout 3 the link with arrow down icon (anchor link)._
 
 ### Variants
 
@@ -271,7 +271,7 @@ For accessibility reasons the highlight variation is recommended.
 
 ![Variants](link/variants-1943-12198.png)
 
-_Figure: Shows link-inline (label=Link Inline, variant=highlight, state=enabled, type=internal link, size=text M); link-inline (label=Link Inline, variant=neutral, state=enabled, type=internal link, size=text M). Callouts 1, 2. Text in the figure: "Lorem ipsum Inline Linksit amet.", "Link Inline"._
+_Figure: Two lines of body text "Lorem ipsum Link Inline sit amet." with the inline link underlined. Callout 1 marks the highlight variant, where the link is blue, and callout 2 marks the neutral variant, where the link has the same dark colour as the text._
 
 ### Font size
 
@@ -279,7 +279,7 @@ For Inline links the font size adapts to the main copy.
 
 ![Font size](link/font-size-1943-12187.png)
 
-_Figure: Shows link-inline (label=consectetur, variant=highlight, state=enabled, type=internal link, size=text M); link-inline (label=consectetur, variant=highlight, state=enabled, type=internal link, size=text S). Text in the figure: "Lorem ipsum dolor sit amet consectetur. Eget odio massa in lacus. Risus at le...", "consectetur"._
+_Figure: Two paragraphs of Lorem ipsum body text, each containing the underlined highlight inline link "consectetur". The left paragraph uses the larger text M and the right the smaller text S, and the link takes the font size of its surrounding text._
 
 ### Icon size
 
@@ -291,7 +291,7 @@ For Inline links the icon size adapts to the font size:
 
 ![Icon size](link/icon-size-5131-1895.png)
 
-_Figure: Shows link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text M); link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text S); link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text XS). Callouts 1, 2, 3. Text in the figure: "Link Inline"._
+_Figure: Three highlight inline links "Link Inline" with the arrow out icon at decreasing sizes. Callout 1 marks Text M, callout 2 Text S and callout 3 Text XS, and the icon shrinks together with the font size._
 
 ### Spacing
 
@@ -299,7 +299,7 @@ The spacing between text and icon is set to 0.375em in order to allow the spacin
 
 ![Spacing](link/spacing-5131-1971.png)
 
-_Figure: Shows link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text M); link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text XS). Text in the figure: "0.375em = 6px", "0.375em = 4.5px", "Link Inline"._
+_Figure: Two highlight inline links "Link Inline" with the arrow out icon, with dashed purple guides marking the gap between the end of the text and the icon. For the larger text (M) the gap is "0.375em = 6px" and for the smaller text (XS) it is "0.375em = 4.5px"._
 
 ## Content
 
@@ -309,7 +309,7 @@ Inline links can be set to a single word, as well, as to full sentences.
 
 ![Character length Inline Link](link/character-length-inline-link-1943-12325.png)
 
-_Figure: Shows link-inline (label=Lorem ipsum dolor sit amet consectetur., variant=highlight, state=enabled, type=internal link, size=text M); link-inline (label=consectetur, variant=highlight, state=enabled, type=internal link, size=text M). Text in the figure: "Lorem ipsum dolor sit amet consectetur. Eget odio massa in lacus. Risus at le...", "Lorem ipsum dolor sit amet consectetur.", "consectetur", "Eget odio massa in lacus. Risus at leo dolor nisi mattis. Volutpat leo proin..."._
+_Figure: Two columns of the same Lorem ipsum paragraph with highlight inline links in the enabled state at text M. In the left column only the single word "consectetur" is linked, in the right column the full sentence "Lorem ipsum dolor sit amet consectetur." is linked, showing that inline links can be a single word or a sentence._
 
 ### Don’t link multiple sentences
 
@@ -317,7 +317,7 @@ It is not recommended to link multiple sentences or a full paragraph.
 
 ![Don’t link multiple sentences](link/don-t-link-multiple-sentences-1943-12336.png)
 
-_Figure: Don't example. Shows link-inline (label=Lorem ipsum dolor sit amet consectetur. Eget odio massa in lacus. Risus at leo dolor nisi mattis., variant=highlight, state=enabled, type=internal link, size=text M); link-inline (label=Lorem ipsum dolor sit amet consectetur. Eget odio massa in lacus. Risus at leo dolor nisi mattis. Volutpat leo proin non ut id diam et., variant=highlight, state=enabled, type=internal link, size=text M). Text in the figure: "Lorem ipsum dolor sit amet consectetur. Eget odio massa in lacus. Risus at le...", "Volutpat leo proin non ut id diam et."._
+_Figure: Don't example with two columns of the same paragraph in which several sentences are linked as highlight inline links. The left column links the first three sentences and leaves the last one plain, the right column links the whole paragraph including "Volutpat leo proin non ut id diam et."; linking multiple sentences or a full paragraph is not recommended._
 
 ## Behavior
 
@@ -327,7 +327,7 @@ The edge case when the link expands over two lines
 
 ![Focus edge case – Link over two lines](link/focus-edge-case-link-over-two-lines-2036-7384.png)
 
-_Figure: Shows link-inline (label=amet consectetur, variant=highlight, state=focus, type=internal link, size=text M); link-inline (label=faucibus turpis risus, variant=highlight, state=focus, type=internal link, size=text M). Text in the figure: "Lorem ipsum sit amet consectetur faucibus turpis risus eget urna consequat ne...", "amet consectetur", "faucibus turpis risus"._
+_Figure: Highlight inline link in the focus state that wraps over two lines inside a paragraph ("Lorem ipsum sit amet consectetur faucibus turpis risus eget urna consequat nec..."). The focus outline follows the text: one outline surrounds "amet consectetur" at the end of the first line and a second outline surrounds "faucibus turpis risus" at the start of the second line._
 
 ### Interaction trigger
 
@@ -335,7 +335,7 @@ Users can activate external links (dialogue, new tab or new window) or anchor li
 
 ![Interaction trigger](link/interaction-trigger-1943-12310.png)
 
-_Figure: Shows link-inline (label=Link Inline, variant=highlight, state=enabled, type=external link, size=text M); link-inline (label=Anchor Link, variant=highlight, state=enabled, type=anchor link, size=text M). Text in the figure: "Link Inline", "Anchor Link"._
+_Figure: Two highlight inline links in the enabled state at text M. "Link Inline" is an external link with a trailing arrow-out-of-box icon (opens a dialogue, new tab or new window), and "Anchor Link" is an anchor link with a trailing downward arrow icon (jumps within the same tab/page)._
 
 ## Colour combinations
 
@@ -347,10 +347,10 @@ Inline links should only be used on backgrounds as shown below:
 
 ![Light mode](link/light-mode-1943-12221.png)
 
-_Figure: Shows link-inline (label=Link Inline, variant=highlight, state=enabled, type=internal link, size=text M); link-inline (label=Link Inline, variant=neutral, state=enabled, type=internal link, size=text M). Text in the figure: "Lorem ipsum Inline Linksit amet.", "Link Inline", "Lorem ipsum Inline Link sit amet.", "white background", "grey ultra-light background", "orange background"._
+_Figure: Light mode inline links in the sentence "Lorem ipsum Link Inline sit amet." on three backgrounds. On the white background and on the grey ultra-light background (thin dark border) the link is the blue highlight variant, on the orange background the link is the neutral variant shown in dark text with an underline._
 
 #### Dark mode
 
 ![Dark mode](link/dark-mode-1943-12260.png)
 
-_Figure: Shows link-inline (label=Link Inline, variant=highlight, state=enabled, type=internal link, size=text M); link-inline (label=Link Inline, variant=neutral, state=enabled, type=internal link, size=text M). Text in the figure: "Lorem ipsum Inline Linksit amet.", "Link Inline", "grey deep background", "blue dark background"._
+_Figure: Dark mode inline links in the sentence "Lorem ipsum Link Inline sit amet." with white text on two backgrounds. On the grey deep background the link is the highlight variant in light blue with underline, on the blue dark background the link is the neutral variant in white with underline._

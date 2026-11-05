@@ -1,0 +1,57 @@
+{
+  "0333d4967a39e2a7a6b71566da837acde91a82cc7bdfb30815a51c27057581b6": {
+    "nodeId": "9783:802",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two select fields side by side: \"Salutation\" with the default placeholder \"Select\" and \"Country\" with the more specific placeholder \"Select a country\", each with a chevron."
+  },
+  "20610c3ca3d3085efab540c069042fd65828c104ad957d03373844a19a60ded5": {
+    "nodeId": "9537:4922",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Select with the label \"Country\" whose native dropdown is open, listing \"Select\", \"United Kingdom\" (checked), \"United States of Ameri...\" and \"Uruguay\"; the long option \"United States of Ameri...\" is cut off with an ellipsis because the list is narrower than the item."
+  },
+  "3d85a0656acf578485d642f7570aada1d4e359404424aba5483eaae3686a43c6": {
+    "nodeId": "9544:5949",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: two selects labelled \"Label\" side by side. The left one is closed with the placeholder \"Select\" and a chevron, the right one is open and shows the full native list \"Select\" (checked), \"Option 1\", \"Option 2\", \"Option 3\", \"Option 4\", which opens on click."
+  },
+  "3fbaabdc96e23e603b6d3ba5216ad8be5cbb0fa7636ca55bbefacdff00d83aba": {
+    "nodeId": "9758:3202",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Select field with the label \"Salutation\" and its native operating-system select menu opened over it, listing \"Select\" (checked), \"Mr.\", \"Mrs.\" and \"Other\" in a grey rounded menu."
+  },
+  "72f67f2d1de37654ac6b8ec665e92946445da3df05e264a1205a218f2f2aeb70": {
+    "nodeId": "8196:33637",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the select field in two states. In the upper default field callout 1 marks the \"Label\", callout 5 the info button next to the label, callout 2 the hint text \"Lorem ipsum dolor sit amet, consectetur adipiscing\", callout 3 the placeholder \"Select\" inside the field and callout 4 the chevron on the right; in the lower invalid field with a red border, a second callout 5 marks the field and callout 6 the red \"System Feedback Message\" below it."
+  },
+  "8396fa4015010710732084dad78772e79f58b7b1f7aee24e55d5456e8a4f6fc9": {
+    "nodeId": "39626:3110",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Select labelled \"Machine Number\" with an info button (ℹ️) next to the label, hovered by a pointer cursor, with the placeholder \"Select\". A popover above it reads \"You will usually find the Machine Number in the location shown in the illustrations\" and shows two line drawings of STIHL machines with the number location marked as \"xxxxxxxxx\"."
+  },
+  "851bcff90ca1e97c5ddd769925f52ddd9d7a60f7203b0a8122cffa63653f1c65": {
+    "nodeId": "9544:5308",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: select labelled \"Label\" using the native dropdown, which is open and lists \"Select\" (checked), \"Option 1\", \"Option 2\", \"Option 3\" and \"Option 4\". The native list is familiar to users on all devices and browsers."
+  },
+  "ad1dff822465ea838cf93ee43af61a5e9ab4d24de47fa101d5a16ecf897386f1": {
+    "nodeId": "39626:3129",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: select labelled \"Chain pitch\" with an info button and the placeholder \"Select\", with a white popover above it reading \"Selecting the wrong chain pitch can make the chain incompatible\". Critical information must not be hidden in a popover; use the hint instead."
+  },
+  "e3017c664b2d29f9429b51872a3ff0a3e5fec6f9052240572916fa50928a9644": {
+    "nodeId": "9537:4741",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: callout 1 marks a select labelled \"Salutation\" with its native menu open showing only \"Select\", \"Mr.\" and \"Mrs.\" and \"Other\"; with fewer than 5 options a radio group should be used instead of a select."
+  },
+  "e5df8964d4a36e842b20b0c938f74572123e1ee1cc26f13ddac003bfd911a9c1": {
+    "nodeId": "8892:2253",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Helper components for the native select menu. \"Select Menu Item Chrome\" shows an \"Option\" item with \"Selceted : false\" and \"Selceted : true\" in the states Enabled (plain text, a grey check mark when selected), Hover/Focus (blue highlight with white text, white check mark when selected) and Disabled (light grey text); \"Select Menu Chrome\" shows an open list with a checked \"Select\" entry followed by four \"Option\" entries, and a select field labelled \"Label\" with the same menu opened over it."
+  },
+  "e8d4b4339b7746df8f2e8139549b5e63b085c0dfcd1b53067f3e83d554b2b052": {
+    "nodeId": "8196:31676",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Select states matrix for sizes Medium and Small, each with a default and an \"is invalid\" column and rows Default, Hover, Focus and Disabled. Every cell shows a \"Label\", a hint text and a bordered field with the placeholder \"Placeholder\" and a chevron; invalid cells (Default and Focus only) have a red border and a red \"System Feedback Message\", Hover has a grey filled field, Focus a thick dark border, and Disabled a light grey border and muted text."
+  }
+}

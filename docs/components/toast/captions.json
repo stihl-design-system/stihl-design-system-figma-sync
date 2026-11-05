@@ -1,0 +1,102 @@
+{
+  "05e8f859b87266f0428a4ee37af2c7f4220b80900ee52d68f6d8ea43265ed9a8": {
+    "nodeId": "12666:8815",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Yellow warning toast with warning icon, the text \"You have unsaved changes\" and a close button, as an example of conversational language."
+  },
+  "12e6bcafb7b0cf5f08f0a43354be16f8fe22d50ea1672101cb19f0e515095f35": {
+    "nodeId": "8844:5387",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Screenshot of the STIHL Service Communication Platform parts list for an MS 180 with an info toast \"Number copied to clipboard\" and a close button shown over the table, after the user copied a part number."
+  },
+  "229de5ddde29180ed38d5894fcceff28ef537e5dd9c9b166f8ca4b7d962ee443": {
+    "nodeId": "12521:397",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a red error toast with error icon, the text \"Some required fields are left empty\" and a close button, used for important information. This is wrong because toasts disappear, lie above the content and cannot be reached by keyboard."
+  },
+  "24e625fe573ce0b32f5a0f986c6a15c1b23b69f55391e6d05ee6a14ec20aa7e1": {
+    "nodeId": "12517:315",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Info toast with an info icon and the text \"A new update is available\", with a mouse cursor on its close button, which shows a hover background. Closing the toast triggers the exit animation immediately."
+  },
+  "3ebbb57b65d7a3895054dd8886b06aa5dcc06642e0c4af444364818de6762d77": {
+    "nodeId": "12546:404",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Green success toast with check icon, the text \"All files updated\" and a close button. An upward arrow below it is labelled \"move-in from bottom up\" and \"fade-in: 0% > 100% Opacity\", describing the enter animation."
+  },
+  "4cc98f46c0490e55f574857ad24ded4144a9bd879c882c18cd8e22e943b31876": {
+    "nodeId": "12546:409",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Green success toast with check icon, the text \"All files updated\" and a close button. A purple clock badge labelled \"10 sec\" below it indicates the time the toast stays visible."
+  },
+  "4e944c7a482f13d2a8ecabd255ca8c53ba23653bba9230ddf8c77c672583b366": {
+    "nodeId": "12517:265",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a grey info toast with info icon, the text \"A new update is available\" and a close button. This is right because the message is very short, ideally below 5 words."
+  },
+  "5f93151ae6a7c19411bba8ccef799d34665addd798fafdedd2eb29a90365a572": {
+    "nodeId": "12521:344",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Yellow warning toast with warning icon and a close button, with the French text \"Il semble que votre connexion réseau soit instable.\" wrapped on three lines, showing that translated copy is longer and needs testing."
+  },
+  "6bc758af8c8e2feda1b16b4fec827e024a3ff66a58e4016bbd2b1a7d5238ba45": {
+    "nodeId": "12521:363",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Grey info toast without an icon, showing the text \"Number copied to clipboard\" and a close button, illustrating that the icon can be omitted to reduce visual clutter."
+  },
+  "79912186fe2c935d301c3dc2c06b4853f5e8f2a5d1093d4fc3a369815f55431d": {
+    "nodeId": "8844:5356",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a filled \"Copy number\" button with a copy icon on the right, in hover / pressed state with a mouse cursor on it, followed by an arrow pointing to an info toast reading \"Number copied to clipboard\" with a close button. The toast appears as immediate feedback to the user's action."
+  },
+  "87575198ef625539255aa6ad835bfbfabb2d94271ee2d7579e19f81c85cd098a": {
+    "nodeId": "8844:5324",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Left, a dashed purple frame with three stacked toasts with the text \"All files lorem ipsum\": success (green, check icon), warning (yellow, warning icon) and info (grey, info icon), each with a close button on the right. Right, two success toasts compared: \"Show Icon: True\" with the icon and \"Show Icon: false\" without the icon."
+  },
+  "948500d04fa9f1950d4f31bb36d9fd83b602cb486546dbe2a1e50d6d09315f51": {
+    "nodeId": "8844:5377",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three stacked toasts, each with an icon, text and close button. Callout 1 points at the success toast \"All files updated\" (green, check icon), callout 2 at the warning toast \"You have unsaved changes\" (yellow, warning icon), and callout 3 at the info toast \"A new update is available\" (grey, info icon)."
+  },
+  "9ce10fa65945f90bc54557e6702432bba6673c652b4a6186dee7edaa55995a3a": {
+    "nodeId": "12521:379",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a toast with a round profile photo of a person on the left, the text \"Susie sent you a personal message\" and a ghost close button on the right. Images such as photos or avatars must not be used in toast notifications."
+  },
+  "a22a70814f1f758a84641815da7e5c6a3f7f14839cdfd711f439a01fdaee3827": {
+    "nodeId": "12985:203",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example labelled \"Stack: all visible at the same time\": three info toasts stacked vertically with the texts \"File A successfully updated\", \"File B successfully updated\" and \"File C successfully updated\". Toasts must not be stacked; they should be shown one after another in a queue."
+  },
+  "a2b5b1f8900385574f563dae3a6ecbd2c023059ee48ef372daedb1d39454396e": {
+    "nodeId": "8844:5342",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Success toast with the text \"All files updated\" on a light green background with a green left edge. Callout 1 points at the optional icon (check mark) on the left, callout 2 at the content text, and callout 3 at the close icon (X) on the right."
+  },
+  "aa569aaf2cb5dcbfa8330e682b0c0ac6f2e73e2eebb5ef20529a5a733768eda2": {
+    "nodeId": "20741:2994",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A warning toast shown at the bottom of two browser windows. On the wide desktop window the toast is marked with the width \"max. 400px\"; on the narrow mobile window the toast is marked with a gap of \"min. 16px\" between the browser edge and the toast."
+  },
+  "bd273163aa2751e9dee00cf50455eeedabc80c6a9b9c4e8ad39b9b9263af82ec": {
+    "nodeId": "12517:288",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example labelled \"Queue: visible one at a time\": only a single info toast with an icon, the text \"File A successfully updated\" and a close button is visible. Further toasts wait in the queue until the first has exited."
+  },
+  "f038ccfe9312aa59d7b48ece640169339ddd7ab5aaff8d3b2347d0b9f4ad4df7": {
+    "nodeId": "13808:1514",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Success toast with check icon, the text \"All files updated\" and a close button, shown faded to low opacity. The label \"fade-out: 100% > 0% Opacity\" below it describes the exit animation."
+  },
+  "f4ec511882bfff4116938d310116b70ec440f187f418b2e88f9823dfc7e412d1": {
+    "nodeId": "13494:206",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Success toast \"All files updated\" displayed at the bottom center of a page that contains a results table with pagination. A vertical measurement marked \"64px\" runs from the bottom edge of the toast to the bottom edge of the page, showing the default offset."
+  },
+  "fbe9c6a63f3daa8a225fcec5d698610db8f95ad43a6dbddca07cc8395b052837": {
+    "nodeId": "12546:419",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Grey info toast with info icon and the text \"An update is ready for installation\" wrapped on two lines. The mouse cursor hovers over its close button, which is highlighted, showing that the toast can be dismissed by the user."
+  }
+}

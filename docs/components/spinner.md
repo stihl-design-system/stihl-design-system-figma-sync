@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 26:3
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:49:20.839Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:25:29.287Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26-3
 ---
 
@@ -31,7 +31,7 @@ Overview:
 
 ![Spinner](spinner/spinner-26-103.png)
 
-_Figure: Text in the figure: "small 16px", "medium 32px", "large 40px", "x-large 64px", "inherit", "use different spinner sizes depending on the usecase"._
+_Figure: The four Spinner sizes in a purple dashed frame, from top to bottom: "small 16px", "medium 32px", "large 40px" and "x-large 64px", each a ring of dashes growing in size and dash thickness, with the note "inherit": "use different spinner sizes depending on the usecase"._
 
 ### Further guidelines
 

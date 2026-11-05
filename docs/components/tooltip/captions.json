@@ -1,0 +1,137 @@
+{
+  "09ea78081d8f713dc250e7b0d70335e2d36d3cccd7a98499b71cba18d9cf0119": {
+    "nodeId": "36306:451",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two rows show when a tooltip is dismissed. In the top row an orange highlight button \"Button\" is hovered with the pointer and shows a \"Tooltip\"; an arrow labeled \"on mouse leave\" leads to the same button in enabled state without a tooltip. In the bottom row the focused button (with focus ring) shows a \"Tooltip\"; an arrow labeled \"focus leave\" leads to the button still focus-ringed but with no tooltip."
+  },
+  "138f129246f3f4a007ffcc74e22a46daa5f1f14c0e5bade2501c2f5eef88f0e4": {
+    "nodeId": "36306:204",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Tooltip with two numbered callouts: 1 points at the left edge of the dark grey Tooltip surface (Container) and 2 points at the text \"Tooltip\" inside it (Text, the description string)."
+  },
+  "16859b1e5a0eb6b1bd18dde85a23ee90fdb21302f5360b334b486efef5821f92": {
+    "nodeId": "36492:326",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A small ghost icon-only button with a pencil icon, hovered with a pointer cursor, shows the tooltip \"Edit\" above it. The tooltip supplies the label that the icon button hides."
+  },
+  "1818399ab9c757ff509085556a6d6e0ff270714525e04e8a73a35b036749f1a8": {
+    "nodeId": "36492:1444",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Disappear behavior: a hovered orange \"Button\" with a Tooltip above it on the left, an arrow labeled \"on mouse leave/ switching focus\" and \"after 0ms delay fade out\", and the same Button without Tooltip on the right."
+  },
+  "2285ce3f1a37ccf622bde83127ba400cde225f7e09384a56c855ccf0fa8fb0f9": {
+    "nodeId": "36306:373",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Tooltip with two lines of centered text (\"Lorem ipsum dolor sit amet, conse ctetura dipiscing elit ut sollicitudin\") wrapped inside its container. A dimension line below spans the full container width and is labeled \"max. width 272px\"."
+  },
+  "276d9a4efca3cc0b0724ee189db73ce200f4af012d67abc511917eddcebe34ff": {
+    "nodeId": "36492:454",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: next to the text \"Start Up Process\" a hovered ghost info icon button shows a tooltip reading \"More information to the process can be found in the Guidelines\" with \"Guidelines\" as a link. Tooltips must not contain interactive elements such as links, so a popover should be used instead."
+  },
+  "2b1010042eaabdc107bbb90ecf55bdce49a085038e9d12ada0059885efc9fd74": {
+    "nodeId": "36492:382",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: tooltips are attached only to interactive elements. An orange highlight button \"Notifications\" with a bell icon shows the tooltip \"You have no unread massages\", a small ghost icon-only pencil button shows \"Edit\", and a focused external link \"Learn mor about Accessibility\" shows \"Leave page\"."
+  },
+  "3e0e5e66e73cc1559fe887e3b11014b83f602033663e5a4e061fe5f572ecbc69": {
+    "nodeId": "36492:342",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a password input in enabled state with the label \"Label\", a persistent hint under the label reading \"Use at least 8 characters, including one uppercase letter, one number, and one special character.\", the masked value \"********\" and an eye icon. Important instructions are shown permanently as a hint instead of in a tooltip."
+  },
+  "41d8d5fb1f7a0c1494973676fe8d0ec66c70cd97e99b729b356b37a3d898faca": {
+    "nodeId": "36306:310",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four Tooltip positions around a dashed purple box labeled \"Triggering element e.g button / link\": \"above (default)\" on top, \"below\" underneath, \"left\" at the left side and \"right\" at the right side, each Tooltip placed directly adjacent to the box."
+  },
+  "448e9f5cbbcfdb645a48c2848179ad09dfc39526764bbc5d9b74bb8847dbcadc": {
+    "nodeId": "36557:1573",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Top bar (grid variant main, breakpoint l, no brand add-on, two number areas) with STIHL logo, \"Search Site\" field and the items \"Dealer\", \"Wishlist\", \"Notifications\" (badge \"3\"), \"STIHL World\" and an avatar \"MM\". The pointer hovers \"Notifications\", which shows a dark Tooltip below it with the text \"3 new message\"."
+  },
+  "650fade929785a75a72582d54bffaecd5562a940c020169f102738f8b8e73f70": {
+    "nodeId": "36492:1507",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two Tooltips above triggering elements, a small round orange icon button with pointer cursor (hover / pressed) and an orange \"Button\" with focus outline. A purple band marked \"6px\" shows the gap between the bottom of each Tooltip and the top of its triggering element."
+  },
+  "660372b3bbf6400f33454cbb44cf1cf88ccf8f199fe11562684bc024512fac7d": {
+    "nodeId": "36492:432",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: three headings \"Battery advantages for employees\", \"Battery advantages for companies\" and \"Battery advantages for the environment or customers\" each have an info icon button; the pointer hovers the first one and a dark Tooltip shows the long text \"The devices produce only minimal vibrations, which reduces muscle fatigue. This enables precise work even over longer periods of time.\" Item-specific additional information is wrongly hidden in a Tooltip instead of being kept discoverable."
+  },
+  "70bea9a65bba7b2075d1aa4f1b9373f1023780b5e05a66f6961b67e2d44454e8": {
+    "nodeId": "36573:13480",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Table of common guide bars with columns \"Common guide bars\", \"Risk of kickback *\", \"Add to picklist\" and \"Availability\", where each row has a part number such as \"1130 020 3033\" followed by a copy icon button. The pointer hovers the copy icon in the second row, which shows a dark Tooltip above it with the text \"Copy\"."
+  },
+  "735a679d5f421c3a7dc7b641f77d99acb07edea1210628f455250ed6d8f59249": {
+    "nodeId": "36306:458",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A hovered orange \"Button\" with a Tooltip above it containing only the short text \"I can contain short text\", showing that Tooltips hold plain text only."
+  },
+  "7396bbe149e03cb706b72f430b935af36d7e8161e61042bcf7d2389de0688143": {
+    "nodeId": "36492:346",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a hovered password input with the label \"Label\", masked value \"********\" and a show-password eye icon displays a tooltip below it reading \"Use at least 8 characters, including one uppercase letter, one number, and one special character.\" Essential form instructions must not be hidden in a tooltip that only appears on hover or focus."
+  },
+  "7f5d216b3361fab406fb37ea7f6705a3ddb411d1c75c2f6a97d95522e773cf73": {
+    "nodeId": "36492:333",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A hovered action item with a mail icon, a number indicator \"5\" and the label \"Mail\" shows the tooltip \"5 unread messages\" below it. The tooltip adds context to the visible label instead of replacing it."
+  },
+  "853dae862e1b58932ea8ce50e873dd0818d15242927ea8e6f514a04b1b24a7e1": {
+    "nodeId": "36492:450",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: next to the bold heading \"Start Up Process\" an info icon button (ghost, small, hover / pressed) opens a white popover with a centered arrow below pointing at the button, containing the text \"More information to the process can be found in the MS 600 User Manual\" with \"MS 600 User Manual\" as a link. Rich content such as a link belongs in a popover, not in a Tooltip."
+  },
+  "95eb9f92cd451e98d9bbe60dbf06e2d76f0b8a2a049205a35c5d1d1b37495602": {
+    "nodeId": "36492:1201",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Appear behavior: an orange \"Button\" without Tooltip on the left, an arrow labeled \"on mouse enter/ focus\" and \"after 400ms delay fade in\", and the same Button with a Tooltip appearing above it on the right."
+  },
+  "a8cf949663822237cda501b6683acbd920c91df0f8c2e07f109c99fcbdfe59d1": {
+    "nodeId": "36306:165",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A single Tooltip: a small dark grey rectangle with light text \"Tooltip\" on a light background."
+  },
+  "af138a9795c3376ed14b1441976e4ddeb7641630a6f29af6fa2814e0614fef99": {
+    "nodeId": "37810:3416",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a tooltip \"Chapter 1\" appears over the non-interactive heading \"HEADLINE\" above a paragraph of body copy (\"Copy text Lorem ipsum dolor sit amet...\"). Tooltips on non-interactive elements such as headings or text are inaccessible to keyboard and screen reader users."
+  },
+  "bab6578626c867a6d9f0a8547b8c35c9dc4a1180a9446e046e789dae3b677fa7": {
+    "nodeId": "36306:390",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A dark grey tooltip with two lines of text (\"Long Tooltip description max. two lines\" and \"Lorem ipsum dolor sit amet, conse ctetur\") sits above an orange highlight button labeled \"Button\" in hover state with a pointer cursor on it. It illustrates the maximum tooltip length of two lines, about 60 characters."
+  },
+  "bbb176ed41cff90ee93a278ca8931f24bfcf431fabe29b4e29a33c1d56cc9e98": {
+    "nodeId": "37581:1744",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Matrix of Tooltip positions (above, left, right, below) each shown with the three alignments \"Alignment: start\", \"Alignment: center (default)\" and \"Alignment: end\" relative to a dashed \"Triggering element e.g button / link\" box. For above and below the Tooltip sits at the left edge, middle or right edge of the box; for left and right it sits at the top edge, vertical middle or bottom edge."
+  },
+  "c258ec3fd664a776ade5dec3dc2782d104db68990d334e81e3b912d84c7e804b": {
+    "nodeId": "36492:366",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a hovered action item with a bell icon and the visible label \"Notifications\" shows a tooltip that repeats the same text \"Notifications\". Repeating the visible label adds no information, so the tooltip is unnecessary."
+  },
+  "d1ec8273d72b9a3423e1928255121022061b751f9727635c8d77302f7aaec887": {
+    "nodeId": "36557:1216",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Top bar (grid variant main, breakpoint l, no brand add-on, two number areas) with STIHL logo, \"Search Site\" field and the items \"Contact\", \"Dealer\", \"Wishlist\", \"Cart\" (badge \"3\"), \"STIHL World\" and an avatar with initials \"MM\". The pointer hovers the avatar, which shows a dark Tooltip below it with the user name \"Max Musterman\"."
+  },
+  "e30e0243e62e8b47348e190980c72816adee69b9106cd7d2a6c278ae68abf1fd": {
+    "nodeId": "36557:1714",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Product page for \"MS 180\" with the section \"Motor housing\" and a segmented control of two icon-only buttons at the top right, a selected grid view and a list view button. The pointer hovers the list view button, which shows a dark Tooltip above it with the text \"List view\"."
+  },
+  "f9b173da0d1ed5951ef4948ee58effa25e64e7dc56e4d9cc99db87ab3795710b": {
+    "nodeId": "36306:331",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Before and after comparison in the top bar, with Wishlist, Cart (badge 3), STIHL World and an account avatar at the right edge. On the left, the Tooltip \"Account Setting\" with Position: below-center is centered under the avatar and crosses the dashed \"Viewport edge\"; on the right, an arrow leads to Position: below-end where the Tooltip is aligned to the avatar's end and stays inside the viewport edge."
+  },
+  "fe13350c9ae1cfa631257aaa5e245e7a62f804d26715afa08f56519a09d82db8": {
+    "nodeId": "36573:6165",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Grid of six \"Muffer\" part cards (code \"901SW069 GM\" with copy icon) above a pagination bar showing \"30 – 40 of 74 items\" and pages 1, ..., 5, 6 (current), 7 with arrow buttons. The pointer hovers the left arrow button, which shows a dark Tooltip above it with the text \"Previous page\"."
+  }
+}

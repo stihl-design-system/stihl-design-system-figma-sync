@@ -1,4 +1,9 @@
 {
+  "0dbbd93e465e5151ec4177202871914ad81905fe684c9b077fa573f909f148d2": {
+    "nodeId": "53310:12800",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two cards using flags. Callout 1 points at a product card (chainsaw image, \"Productname\", rating \"3.5 (80)\", \"Categorie\", short description, \"Available now\", price \"11.199,00 €\" incl. VAT, \"Compare\" checkbox and an orange add-to-cart button) with a dark \"Promo Flag\" above the product name, the Promo Neutral variant used with a Highlight Button. Callout 2 points at a vertical link card with a photo, an orange \"Brand Flag\" on the image, the heading \"Charging and energy management in the STIHL AP system\", a truncated description and a \"Decorative Link\"."
+  },
   "223049479768611d09950a0a4a22abedc7848f35e30988caf70c6a0b0c496924": {
     "nodeId": "54222:11448",
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",

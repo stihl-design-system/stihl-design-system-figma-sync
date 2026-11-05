@@ -14,10 +14,10 @@ figmaFile: Iconography
 figmaProject: 01. Fundamentals
 figmaFileKey: U218NNP4OsipaHOtv5flns
 figmaNodeId: 9857:3242
-figmaVersion: "2413526403511462978"
-figmaVersionLabel: Moccu – Final Icon Design Status (Handover)
-figmaVersionCreatedAt: 2026-10-23T11:49:01Z
-syncedAt: 2026-11-04T14:13:32.037Z
+figmaVersion: "2418055142655843337"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T16:16:31Z
+syncedAt: 2026-11-05T19:18:54.797Z
 sourceUrl: https://www.figma.com/design/U218NNP4OsipaHOtv5flns?node-id=9857-3242
 ---
 

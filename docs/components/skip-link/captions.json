@@ -1,0 +1,12 @@
+{
+  "624f131898d55f96a1306c03ce44ed7d2f3cc0de51e55080843224ca9d8950df": {
+    "nodeId": "16333:2405",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two page wireframes showing where to place the skip link: on the left the dark skip link sits at the top left of the page, above the header content; on the right it sits at the top left of a content block (a row of four columns) that can be skipped, with a purple frame marking each placement."
+  },
+  "bb09dd2eec18c785acfa9842ee3ca65da540e9467a1a6fdd4c1151412bf9bfa6": {
+    "nodeId": "16333:2382",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "The Skip Link component: a dark rectangular button with white underlined text \"Skip link\" and a white focus outline."
+  }
+}

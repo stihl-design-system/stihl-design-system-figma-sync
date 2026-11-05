@@ -1,0 +1,137 @@
+{
+  "0114365e2099442d8a2d5ec9c47867141b202314ae174e0d036e59fd3a4f151d": {
+    "nodeId": "12279:2453",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Search results page for \"MS 180\" (74) in the Documents tab with filter chips and a results table, showing a yellow warning notification with a close button above the results: \"Server Maintenance: Downloads are Temporarily disabled. Maintenance should be done around 1pm CEST.\" It illustrates a dismissible system feedback notification."
+  },
+  "0af067252eb48333b4f0c5658ce3849f8f1340a480337a10037d6cbe49ec4671": {
+    "nodeId": "13018:4938",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four stacked notifications with icon and close icon, each with a bold prefix: 1 Success (green, \"All files have been successfully uploaded. Thank you for your patience.\"), 2 Error (red, \"There was an issue uploading your files. Please try again or contact support if the problem persists.\"), 3 Warning (yellow, \"Connection unstable. Unsaved progress might be lost. Please save your work and check your network connection.\") and 4 Note (gray info, \"Enhance your experience by customizing your preferences in the settings. Visit the Settings page to get started.\")."
+  },
+  "120d3038c5e5503271a1d48dba4234d3a59ea94cbc097e2e1db1da7f1ed218a1": {
+    "nodeId": "8844:5102",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Info notification with callouts: 1 points at the icon on the left, 2 at the custom content area with the text \"This is a notification message that guides the user.\", 3 at the custom action area with an outline \"Button\" and a ghost \"Button\", and 4 at the close icon on the right."
+  },
+  "1312827c9832921f4000ad0f1f4663ec5618e7e4e8c987fa7740283f976940ef": {
+    "nodeId": "12279:2833",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a grey notification with a close button whose content section contains a large technical illustration of a chainsaw engine part, followed by the text \"You're not allowed to change these restrictions.\" and an outline \"Button\" plus a ghost \"Button\"; images and illustrations should not be used in notifications (use a popover tip instead)."
+  },
+  "132ae3dea806f1a9a894ef81d047820a126fa74dd5f26dcace2512f529ed0f32": {
+    "nodeId": "13888:17537",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a green success notification with a check icon, the short one-line text \"All files have been successfully uploaded.\" and a close button, showing concise, to-the-point content."
+  },
+  "32d49a67b33f8f2e693d3f7c541a54ffc70a369dbc344c001429e91f61984daf": {
+    "nodeId": "40483:1399",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Examples of system and mandatory messages: a cookie dialog (\"Cookies help us improve your experience.\" with buttons \"Accept all\" and \"Manage preferences\"), a gray info notification about system unavailability on Monday, October 20, from 2:00 PM to 4:00 PM, a green success toast \"Settings have been saved.\", and a yellow warning notification \"Recall notice: Product XY has been recalled.\" with a link to www.example.com."
+  },
+  "34afadf6c9d03d14e4881309a19ed24f871e6725d137d28813ff7e6bfec83385": {
+    "nodeId": "14312:4110",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a yellow warning notification with a warning icon, reading \"A new update is required. It includes essential features and fixes. Please update now to continue using the service.\" with a close button and an \"Update now\" action link; for a message that is not time-sensitive the icon can be intrusive and stressful for the user."
+  },
+  "38c8710d9f45c7d54c4f54ca834cd5e66846f4de3e84abd646156a92ee0ace21": {
+    "nodeId": "13837:9479",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a yellow warning notification without an icon, reading \"A new update is required. It includes essential features and fixes. Please update now to continue using the service.\" with a close button and an \"Update now\" action link with a chevron; the icon is left out to avoid visual clutter and cognitive load."
+  },
+  "3fe99d4f025634fac758732348e17eef6c067a35d1f0a59a25a964b05cfa006b": {
+    "nodeId": "13837:9444",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example with three grey info notifications: one with the uppercase heading \"Heading\" labelled \"Heading S Uppercase\" and one with the heading \"Heading\" labelled \"Heading S\" (callout 1, Headline S with or without uppercase), and a single-line message labelled \"Text M Bold\" whose first words \"Note:\" are bold (callout 2) followed by a short inline link \"patch notes\" (callout 3)."
+  },
+  "44f8e2db05f4bf009ab95b8c1fbe847ab0a327fb2cbb736de45c34704a05ffb8": {
+    "nodeId": "7251:17556",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Eight notifications in two columns, one per type (success green, error red, warning yellow, info gray) in rows, each with the text \"This is a notification message that guides the user.\", a close icon, an outline \"Button\" and a ghost \"Button\". The left column shows each type with its type icon, the right column without an icon."
+  },
+  "46b1c420f2398cbe390ab63385f7943a59fbbfd8eae502e65997bce04fb5477e": {
+    "nodeId": "14312:4301",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: three green success notifications with the text \"This is a notification message that guides the user.\" and a close button, each showing a discouraged button combination. Callout 1 points at a highlight (orange) button next to a filled (dark) button, not allowed because of the background color; callout 2 at a filled button next to an outline button, which takes too much attention; callout 3 at two ghost buttons with icons, which gives too little hierarchy."
+  },
+  "4d3fa8d52a0925f4a91bce6b9799f2b549667061f50b023447febc29155e8aa4": {
+    "nodeId": "12194:75566",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two grey info notifications with a dark left border. The first has an info icon, an uppercase bold heading \"Heading\" (callout 1), the text \"Lorem ipsum\" and a close button; the second is a single line \"Note: More information can be found in the patch notes\" with the bold \"Note:\" (callout 2) and the underlined inline link \"patch notes\" (callout 3)."
+  },
+  "53e7c2e5dec491d52c3d98fa9427a861ac710eb226980a305354f2221c592295": {
+    "nodeId": "12194:75679",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Narrow yellow warning notification with icon, the text \"Unsaved progress might be lost.\", a close icon and an outline \"Continue\" button, with a measurement below marking the minimum width as 272 px."
+  },
+  "6dcf21bec8190325e768d9cdb38259742da7b232215087ac58e149e9cdfc8189": {
+    "nodeId": "12279:2458",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Guidance message (notification type=info, icon=false) in the iMOW Berater web page, step \"2. STEIGUNG\": below the question \"Welche Steigung weist Ihre Rasenfläche auf?\" and three radio options, a grey inline notification with a dark left border and no icon explains \"Warum fragen wir nach Geometrie, Steigung und Gefälle?\" in a short bold heading and a few lines of body text."
+  },
+  "7f9fac07775a6c738941ba69692ab70ac178b92da8148a488c099c8271f3200e": {
+    "nodeId": "12194:75703",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Gray info notification with the text \"You're not allowed to change these restrictions. It's either due to the\" and a close button, with the buttons stacked below the text: an outline button \"Button Lorem Ipsum\" first, then a ghost button \"Button\" with a right chevron. A magenta vertical line shows that the ghost button label is flush-aligned with the left edge of the text and the outline button."
+  },
+  "8007c57e14428b05886e06979da24511b60cbcca9d86d518eaee1f1a7e10cf0b": {
+    "nodeId": "40483:4162",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three full-width banners for marketing and engagement: a dark default banner \"Join our Newsletter\" with envelope icon, an orange highlight banner \"Up to 40% off all Chainsaw models\" with percent icon, and a gray USP banner with \"Versandkostenfreie ab 49€\", \"Lieferung oder Abholung vor Ort\" and \"30 Tage Rückgaberecht\", each with an icon."
+  },
+  "81f90526dada7c66bf37d534474bbe081ae0962194fe692b878b4834d40ccfdc": {
+    "nodeId": "40483:4167",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Gray full-width secondary banner with a bell icon and the text \"We’ve just rolled out something new! Check out the latest updates and improvements\" followed by a chevron, used for non-critical product or feature updates."
+  },
+  "82e499ff646264942ddf44c9f218baca3b9675a32d332e0fef39880746d76f40": {
+    "nodeId": "12279:4994",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Six simplified page wireframes with a STIHL top bar, each with a yellow notification, in two columns (without and with a left side navigation). Callout 1 (Global) shows the notification spanning the full page width below the header, callout 2 (Page) shows it at the top of the main content area above a single content block, and callout 3 shows it above the first of two content blocks."
+  },
+  "83fdb019ec041f55ea439a72d92410b8d2e20ab500109189bef9ce6fc7ae84c7": {
+    "nodeId": "40483:1433",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Stack of components ordered by urgency. Callout 1 points at a dialog with heading \"Heading\", close button, content placeholder and three buttons (highest urgency, blocks the user). Callout 3 points at both the info notification (\"This is a notification message that guides the user.\" with outline and ghost buttons) with the smaller toast below it (\"All files lorem ipsum\"), and at the dark promo banner (\"Promo Banner Link\" with close button), which are lower urgency and non-blocking."
+  },
+  "b41f53cc5c7ccf1387e2a36e6eda5c1f7076eff5155875c81146166d3b63bb58": {
+    "nodeId": "15570:7486",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a mobile screen from stihl.de with a gray info notification titled \"Warum fragen wir nach Geometrie, Steigung und Gefälle?\" and a medium-length explanatory text about iMOW® mowing robots, kept compact so the notification and the \"Zurück\" and \"Weiter\" buttons fit within one viewport."
+  },
+  "c0bb5ec879fbeaa3294db919b80d22d3ca90dc7ef4601478e0faad26ee26a0b9": {
+    "nodeId": "13860:7009",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example with four grey info notifications showing wrong hierarchy: an oversized uppercase \"Heading\" labelled \"Heading M Uppercase\" that is bigger than the icon (callout 1); a bold \"Dolor sit\" labelled \"Text M Bold\" with a line break instead of a semantic heading (callout 2); an italic \"Note:\" labelled \"Text M Italic\" (callout 3); an inline link covering the whole sentence \"More information can be found in the patch notes\" (callout 4); and a completely bold message labelled \"Text M Bold\" that gives no hierarchy or focus (callout 5)."
+  },
+  "c85d37c73919319bebcd5d1256ad436fed5756d0e38bb792a0dc9543335dbf2e": {
+    "nodeId": "12276:2934",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two browser page mockups with the STIHL logo, a top bar and a 12-column grid, each containing an orange notification bar. In callout 1 the notification spans the full width of the page between two dashed purple lines (Global Notification in the Full content area); in callout 2 the notification sits above a content block inside a narrower area marked by two dashed lines (Page or Group Notification in the Narrower content area or smaller)."
+  },
+  "ccab7c9283a4f33b61eaad7aa309e4b08008ada706843849e82d3fd1adaa9d4e": {
+    "nodeId": "8844:5147",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Article page about sawing firewood (\"Baumstämme zu Brennholz sägen und nachhaltig bearbeiten\") with a list of anchor links and body text, containing a gray inline content-highlight notification without icon or close button and with a left border, headed \"Tipp:\" and a short highlighted text."
+  },
+  "ef579b973f79db85e9d04600b6a69ed35998395357627aa559f28e89d9f1a1dd": {
+    "nodeId": "14312:3396",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: three green success notifications with icon, the text \"This is a notification message that guides the user.\" and a close button, each with a different recommended button hierarchy. Callout 1 points at a ghost button next to an outline button (\"Button\", \"Button\"), callout 2 at a single outline button below text with an inline link, callout 3 at a single ghost button with an icon."
+  },
+  "f32994e5260c646d9ab7f53ff79eb62a3b6d216dbd36f7f2b28dc6ef8fb15702": {
+    "nodeId": "12209:87267",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two page examples of notification triggers. Callout 1 points at a yellow warning notification with a close button above a search results table for \"MS 180\", as system feedback (\"Server Maintenance: Downloads are Temporarily disabled.\"). Callout 2 points at a gray info notification without icon, titled \"Warum fragen wir nach Geometrie, Steigung und Gefälle?\", placed fixed within the iMOW Berater page layout as a content module."
+  },
+  "f54f5f39a54f7e1def408632905f503332efd4aa61d60dac5c6956a82f50ad14": {
+    "nodeId": "12194:75611",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two notifications with a custom action area and close button. The yellow warning notification with warning icon reads \"Connection with product not possible. Ttry again later. If the problem persists please contact the STIHL Support\" and has a link \"Helpdesk\" with an external-link icon; the green success notification with check icon reads \"This is a notification message that guides the user.\" and has two buttons, an outline \"Button\" and a ghost \"Button\"."
+  },
+  "f87a9f98d9a932d68c5969470a664023a80c0455838839554f104181d1ef3616": {
+    "nodeId": "12209:87296",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: one grey info notification with an info icon and close button that combines three separate messages (\"Info 1:\", \"Info 2:\", \"Info 3:\"), each with a bold label and lorem ipsum text across several lines, instead of one message at a time."
+  }
+}

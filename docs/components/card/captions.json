@@ -9,6 +9,11 @@
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
     "caption": "Five link-card-vertical components arranged horizontally, each with different content structures and layouts. Each card has a heading \"Charging and energy management in the STIHL AP system\" and a description starting with \"Benefit now from the expertise of our experts...\". The cards vary in their inclusion of a media area, graphic area, flags, description, metadata, and footer. The example is marked as a \"Don't\" because it mixes different content structures within a group of related cards, which is inconsistent and can hinder scanning and comparison."
   },
+  "063d457a6d57b6e8d36faf01e165e21e58e9a45e7d737dfbccac267d1e064546": {
+    "nodeId": "57629:19271",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Card height behavior in two sections. Under \"Vertical Orientation\", the card on its own (Hug) is as tall as its content, marked \"Hug to content\"; the card on its own (Fill) has a \"User Defined\" height with a \"Fill\" gap between the text block and the footer; in a grid of four cards the row height is shared and the content of shorter cards is marked \"Fill\" to stretch. Under \"Horizontal Orientation\", the same applies: the card on its own (Hug) is \"Hug to content\", the card on its own (Fill) has a \"User Defined\" height with a \"Fill\" gap, and in a grid of two rows of two cards the content marked \"Fill\" stretches to the row height."
+  },
   "0836777c26f4dddee05f9c11e153a369f0450ee0721fc09916cf441b0f744231": {
     "nodeId": "54990:22500",
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
@@ -158,6 +163,11 @@
     "nodeId": "66680:42230",
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
     "caption": "Two variants of the \"action-card-horizontal\" component with a horizontal content orientation. The minimum width of 450px applies to minimal card variants with up to three content elements, while the maximum width is 1435px. The first card has small padding and includes a header with text and a button, while the second card has medium padding, includes an image, header text, metadata, two buttons, and an accordion."
+  },
+  "4ab7a5aff02d9e7f12596fba62db99e1606a0a14794fd711c5f4848de7b7a0ac": {
+    "nodeId": "57629:18929",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Card width behavior in two sections. Under \"Vertical Orientation\", a single card on its own spans the full width marked \"Fill to container (standard) or User Defined (width)\", and four cards placed alongside each other in a grid each span one column marked \"Fill\", together covering the \"Container width\". Under \"Horizontal Orientation\", a single card with media on the left and content on the right also fills the container or a user defined width, and a grid of two horizontal cards per row each marked \"Fill\" together spans the \"Container width\"."
   },
   "4bffa5d92d1735cc4baba60a6ec9501f456d5662fc388dad12c784b78dabdb71": {
     "nodeId": "54990:20846",

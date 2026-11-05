@@ -15,10 +15,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 1017:2316
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:39:39.750Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:21:45.208Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1017-2316
 ---
 
@@ -35,6 +35,8 @@ sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1017-2316
 ![Checkbox](checkbox/checkbox-1017-2373.png)
 
 _Figure: Various states and configurations of a checkbox component in a UI design system. It includes different states such as default, hover/pressed, focus, and disabled, along with conditions like checked true, checked false, indeterminate true, and invalid true. The layout shows how the checkbox appears with and without a label and system feedback message, illustrating the visual representation for each combination of these states and conditions._
+
+> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 
@@ -179,6 +181,8 @@ Overview:
 ![Checkbox Group](checkbox/checkbox-group-5596-5885.png)
 
 _Figure: Different layouts and states of a Checkbox Group component. It shows two main layouts: vertical and horizontal, with the vertical layout containing multiple Checkbox Labels stacked vertically and the horizontal layout containing three Checkbox Labels aligned horizontally. The figure also demonstrates the invalid state of the Checkbox Group, where the checkboxes are outlined in red and accompanied by a System Feedback Message._
+
+> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 

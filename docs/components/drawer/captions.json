@@ -153,5 +153,10 @@
     "nodeId": "14911:5437",
     "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
     "caption": "A Drawer component that spans the full height of the screen in two different width variants. Each measurement labeled 100% indicates that the height of the drawer covers the entire height of the screen. The component includes a close button at the top right corner and a bar at the bottom, with the main content area in between."
+  },
+  "ff859bc99598f46f05fc609e07034befc49f5b559392df1dbd87f7c696f51ff1": {
+    "nodeId": "14303:49141",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Navigation drill down: a web page with a STIHL header, search field, \"Meta Item\" and \"Menu\" button is shown on the left. An arrow from the highlighted \"Menu\" button leads to the same page dimmed behind an open drawer on the right, titled \"Main navigation level 1\" with a close icon, a list of ten \"Menu Item Level 2\" entries (nine with a right chevron for drilling deeper, the last with an external link icon) and a footer area with four \"Meta item\" entries (two with chevrons, one with an external link icon, one plain)."
   }
 }

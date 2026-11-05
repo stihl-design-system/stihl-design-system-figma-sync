@@ -1,0 +1,42 @@
+{
+  "9887962afa80914779937b673800aad61e15a03ce4c8c762e32c2be80d78e972": {
+    "nodeId": "36986:4695",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Orange 100 Years logo without date with a horizontal measurement below it showing its minimum width of 80px."
+  },
+  "a88411b85a2845e65bd5788bfd41c875dd2e90d03b0299082a8cd5a3fb5cab22": {
+    "nodeId": "37209:1371",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two top bar examples with the STIHL logo and the small orange 100 Years add-on. On the large breakpoint the add-on sits above and to the right of the STIHL logo, overlapping the top edge of the bar, with six icon items labelled \"Label\" on the right. On the small breakpoint the add-on sits directly next to the STIHL logo, with the five \"Label\" icon items in a row below."
+  },
+  "ac22b6a96e98da7427f64058ecadace6f98ee1146d464658f39713c331212a7d": {
+    "nodeId": "9050:5860",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Overview grid of the logo variants as orange squares with white marks. The Default row shows only the Main wide STIHL wordmark logo; the Reduced row shows the Main reduced \"S\" logo, the Sub-Connected \"C\" symbol, the Sub-MY STIHL garage symbol and the Sub-iMow \"MY iMOW\" logo."
+  },
+  "c4ac3db749d33a63f1af7b3155b8d7eb5eb0515b4470ed1a6f42ef50c5449ec0": {
+    "nodeId": "9050:6243",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Favicon variants for four logos, STIHL (\"S\"), Connected (\"C\" symbol), My STIHL (garage symbol) and iMOw (\"MY iMOW\"), each as an orange square with a white mark in the sizes 16px, 32px, 128px, 180px, 192px and 512px."
+  },
+  "c82f67a74986509e414a7b5c73cad5510e2da100f2fb7e2fd55b46a81a51a891": {
+    "nodeId": "9763:111",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two sizes of the default main STIHL logo side by side with height measurements: the smaller logo is 50px high (minimum) and the larger logo is 70px high (maximum), the allowed height range when the logo is used as a clickable element."
+  },
+  "ca2b1258cdea72c197650e841d34bd163d5a93e4e1bb1ed2bff8f56f374ea89f": {
+    "nodeId": "36986:4720",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two orange 100 Years logos, one without date and one with the dates 1926-2026, surrounded by a purple safe zone. The logo height is marked X and the safe zone on every side is 1/4x."
+  },
+  "d0db9187cff71c636682e442bf39cf3ca5e51ed8fa51ee992cc243aac6b04004": {
+    "nodeId": "9050:881",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Focus state of the default main STIHL logo, shown once as \"original\" and once \"zoomed\". Callout 1 points at the 2px wide dark grey-deep focus border around the logo, and the two callouts 2 mark the 2px gap between that border and the logo."
+  },
+  "f2474504296b5584e16a0ae4a875e6babd01fe9de30bbca789ba85d0912c13a6": {
+    "nodeId": "36951:4223",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Matrix of the 100 Years logo in three colors (rows: black, orange, white on a dark background) and two date options (columns: date: false shows the \"100 YEARS\" mark only, date: true adds a line and the dates 1926-2026 below it)."
+  }
+}

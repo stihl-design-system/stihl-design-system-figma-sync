@@ -18,10 +18,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 26075:11591
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:37:24.824Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:21:06.684Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11591
 ---
 
@@ -259,7 +259,7 @@ Applies to all card variants unless stated otherwise.
 
 ![Card Width Behavior](card/card-width-behavior-57629-18929.png)
 
-_Figure: Shows media-area (aspect ratio=4:3). Text in the figure: "Vertical Orientation", "Card on its own", "Card placed alongside other cards i.e. grid", "Fill", "Container width", "Fill to container (standard) or User Defined (width)", "Horizontal Orientation"._
+_Figure: Card width behavior in two sections. Under "Vertical Orientation", a single card on its own spans the full width marked "Fill to container (standard) or User Defined (width)", and four cards placed alongside each other in a grid each span one column marked "Fill", together covering the "Container width". Under "Horizontal Orientation", a single card with media on the left and content on the right also fills the container or a user defined width, and a grid of two horizontal cards per row each marked "Fill" together spans the "Container width"._
 
 #### Card Height Behavior
 
@@ -272,7 +272,7 @@ Applies to all card variants unless stated otherwise.
 
 ![Card Height Behavior](card/card-height-behavior-57629-19271.png)
 
-_Figure: Shows media-area (aspect ratio=4:3). Text in the figure: "Vertical Orientation", "Card on its own (Hug)", "Card on its own (Fill)", "Card placed alongside other cards i.e. grid", "Hug to content", "Fill", "User Defined", "Horizontal Orientation"._
+_Figure: Card height behavior in two sections. Under "Vertical Orientation", the card on its own (Hug) is as tall as its content, marked "Hug to content"; the card on its own (Fill) has a "User Defined" height with a "Fill" gap between the text block and the footer; in a grid of four cards the row height is shared and the content of shorter cards is marked "Fill" to stretch. Under "Horizontal Orientation", the same applies: the card on its own (Hug) is "Hug to content", the card on its own (Fill) has a "User Defined" height with a "Fill" gap, and in a grid of two rows of two cards the content marked "Fill" stretches to the row height._
 
 ## Responsive Behavior
 

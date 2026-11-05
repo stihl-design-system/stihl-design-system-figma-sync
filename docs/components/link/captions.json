@@ -1,0 +1,132 @@
+{
+  "08f51350712aa5b15a231b904fb5d54e6c8ea57cf61cb1f5b563b3bb9669b321": {
+    "nodeId": "1943:12198",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two lines of body text \"Lorem ipsum Link Inline sit amet.\" with the inline link underlined. Callout 1 marks the highlight variant, where the link is blue, and callout 2 marks the neutral variant, where the link has the same dark colour as the text."
+  },
+  "1fefa5015ae70cc2f2219080a4e894a6cb180dc5fdef3f532fe1e342a4299f91": {
+    "nodeId": "1969:5558",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Link Default in dark mode on two backgrounds. On \"grey deep background\" a light-blue highlight link and a white neutral link are shown; on \"blue dark background\" only a single white link is shown."
+  },
+  "2e7bb51094ab585d8c9aa6fa9a60da6fefd5bed88346ed224d8485bff37bb3b6": {
+    "nodeId": "28633:2485",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two ghost medium buttons with the label \"Example of a button with two lines\" wrapped onto two lines. The left one has the chevron icon on the left and the right one has it on the right, in both cases vertically centered to the text."
+  },
+  "478686eb52041bc0ad7ddc3a52979f5943c354ed8f8b2fcf2486cfbd0ba4c107": {
+    "nodeId": "28123:2592",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Button states used to design a link button, with columns enabled, hover / pressed /active and focus and rows highlight (orange), filled (dark), outline, ghost (default) and ghost (flush). Each row shows medium and small buttons labelled \"Button\" without icon, with left icon, with right icon and icon only; hover / pressed /active darkens or greys the fill and focus adds a double outline frame."
+  },
+  "4a5df6acaef66bb31675da2971529f8d675f5fcd566aee66b7c33de33234935b": {
+    "nodeId": "5131:1895",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three highlight inline links \"Link Inline\" with the arrow out icon at decreasing sizes. Callout 1 marks Text M, callout 2 Text S and callout 3 Text XS, and the icon shrinks together with the font size."
+  },
+  "7c579e555a226cfc7c82eb1eed60f0670b7be258edeab06725fd523eb096c983": {
+    "nodeId": "1943:14895",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two neutral standalone links without icon: callout 1 points at the single-word link \"Impressum\" and callout 2 at the full-sentence link \"Entsorgung von Batterien und Elektrogeräten\"."
+  },
+  "81e8c9f5e07b520952d2c779f8432e57530fa54bb707907f5d294866e28531ca": {
+    "nodeId": "1969:5531",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Link Default in light mode on three backgrounds. On \"white background\" and \"grey ultra-light background\" both the blue highlight link and the dark neutral link are shown; on \"orange background\" only a single dark link is shown."
+  },
+  "83a29695b09ace4ee7488533194daea8445b8f50deb6e12aa4c1c3a709edb734": {
+    "nodeId": "168:6185",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Overview matrix of the inline link \"Link Inline\" on a light and a dark background, in the variants highlight (blue) and neutral (text colour). Columns are the states enabled, hover / pressed (grey background behind the link) and focus (frame around the link), each in three types (no icon, arrow out icon, arrow down icon) and three text sizes (M, S, XS), all underlined."
+  },
+  "89cc3b19e0d4c79c3705b2a1fe8b60fb15c4573930dab82a3067af3bbb95fb70": {
+    "nodeId": "1943:14768",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of a highlight link with an icon on the left and the label \"Link Default\": callout 1 points at the link label, callout 2 at the underline beneath the label, and callout 3 at the optional icon."
+  },
+  "8fd406710f2dcfec42e132c6cc4177e9f2e60cdd050b6251891ecb83e9571fef": {
+    "nodeId": "2036:7384",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Highlight inline link in the focus state that wraps over two lines inside a paragraph (\"Lorem ipsum sit amet consectetur faucibus turpis risus eget urna consequat nec...\"). The focus outline follows the text: one outline surrounds \"amet consectetur\" at the end of the first line and a second outline surrounds \"faucibus turpis risus\" at the start of the second line."
+  },
+  "9b57e96d7da542007112c37bb5354aec861560342c9a6dcbeb232707f5939941": {
+    "nodeId": "1943:12336",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example with two columns of the same paragraph in which several sentences are linked as highlight inline links. The left column links the first three sentences and leaves the last one plain, the right column links the whole paragraph including \"Volutpat leo proin non ut id diam et.\"; linking multiple sentences or a full paragraph is not recommended."
+  },
+  "9f6d856e1c14ad8b5a050976a3a152fbbe6df47602a0007faf2b666e50cb671a": {
+    "nodeId": "1943:12164",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Inline link \"Link Inline\" with the arrow out icon (highlight, text M, enabled) and three callouts. Callout 1 points at the link label, callout 2 at the underline beneath the label, and callout 3 at the icon after the label."
+  },
+  "a09f5bd443e384229f9e0081963f08b139b36ad626d165bb310f6c7b56f2d3a2": {
+    "nodeId": "1943:12325",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two columns of the same Lorem ipsum paragraph with highlight inline links in the enabled state at text M. In the left column only the single word \"consectetur\" is linked, in the right column the full sentence \"Lorem ipsum dolor sit amet consectetur.\" is linked, showing that inline links can be a single word or a sentence."
+  },
+  "a924dc8ad7102e2d71e24bd8477d96cfc6715dbb3244c552ba0f66cdbf2135e4": {
+    "nodeId": "5131:1971",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two highlight inline links \"Link Inline\" with the arrow out icon, with dashed purple guides marking the gap between the end of the text and the icon. For the larger text (M) the gap is \"0.375em = 6px\" and for the smaller text (XS) it is \"0.375em = 4.5px\"."
+  },
+  "aee4953cfcda99f9dcb42f12520fd93eee9dd6a3e430fa4338893384d28ef6f5": {
+    "nodeId": "1943:15059",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two Link Default variants with a left icon, stacked: callout 1 is the blue highlight variant and callout 2 is the dark neutral variant."
+  },
+  "bb2611b220c48a23804ee060e94925ef6c84c916cfeea4987fa744981e34ace4": {
+    "nodeId": "28633:2474",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two filled medium buttons on a dark fill, each with a numbered callout. Callout 1 marks a button without icon whose label is 18 characters (\"mmmmmmmmmmmmmmmmmm\"), the maximum without icon. Callout 2 marks a button with an icon on the right whose label is 16 characters (\"mmmmmmmmmmmmmmmm\"), the maximum with icon."
+  },
+  "c44a7930c4b4209afe36ec8f0aa687b81c985e5ac02ea3973e3fbff4cafbc1fe": {
+    "nodeId": "1943:12221",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Light mode inline links in the sentence \"Lorem ipsum Link Inline sit amet.\" on three backgrounds. On the white background and on the grey ultra-light background (thin dark border) the link is the blue highlight variant, on the orange background the link is the neutral variant shown in dark text with an underline."
+  },
+  "c810e7c19f14f5bc0e28ac159efff060a2bd0611939406bfaa83228c3c51f84c": {
+    "nodeId": "1943:12187",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two paragraphs of Lorem ipsum body text, each containing the underlined highlight inline link \"consectetur\". The left paragraph uses the larger text M and the right the smaller text S, and the link takes the font size of its surrounding text."
+  },
+  "ca153f40c4cdc2d28b1b895c7c8945f1d0f2281cdcbe6ddb14b02773f51d384f": {
+    "nodeId": "28645:2847",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four medium buttons in the focus state, from left to right \"Highlight\" (orange fill), \"Filled\" (dark fill), \"Outline\" (outlined) and \"Ghost\" (no fill). Each shows the same double focus frame around the button as the button component."
+  },
+  "ca816e45a45d7b0ae33141ca9d37c2f2b1f3553da445e80dee3776ffbc12dec3": {
+    "nodeId": "1943:12174",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three highlight inline links \"Link Inline\", text M, enabled, each with a numbered callout. Callout 1 marks the default link without icon, callout 2 the link with arrow out icon (external link), and callout 3 the link with arrow down icon (anchor link)."
+  },
+  "cae779c6d197f7e38907e7ab7ce772c797b55928ec5e31016fb282ecf8e76524": {
+    "nodeId": "1943:12310",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two highlight inline links in the enabled state at text M. \"Link Inline\" is an external link with a trailing arrow-out-of-box icon (opens a dialogue, new tab or new window), and \"Anchor Link\" is an anchor link with a trailing downward arrow icon (jumps within the same tab/page)."
+  },
+  "d9159a50d4f3497b3b27b6376f794bc949589e996b00bdd05ee506c6a3079bac": {
+    "nodeId": "168:7255",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "State matrix of the Link Default component in light and dark mode, with columns enabled, hover / pressed, focus and active and rows highlight and neutral. Each cell has three links: no icon, icon left and icon right. Highlight links are blue and neutral links are dark text (white on the black dark-mode panel); hover / pressed adds a grey background, focus adds a dark outline frame around the link and active adds an underline."
+  },
+  "dc64c84a1ed98919de238923b9ecd19c88e15f1b1a82114df06462520252754a": {
+    "nodeId": "1943:14904",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three neutral links in a list: \"Rasentrimmer, Motorsensen und Freischneider\" with a right icon wraps onto two lines, followed by single-line \"Rasenmäher\" and \"Mulchrasenmäher\". Callout 1 points at the wrapped text (overflow, max two lines) and callout 2 at the icon, which is vertically centered to the text."
+  },
+  "e8ca175b1eb90fa3c72ca98fe4a1691c5ecd5fcafb60f1a389b7c1abb350d4be": {
+    "nodeId": "28616:1979",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two button links with icons: a filled dark button \"See all products\" with a right chevron icon, and a ghost button \"Anchor Link\" with a left downward arrow icon."
+  },
+  "eb54853e1ef97f9fccdb9b19b9403858852df9e3dd750195eca2e529fcce904e": {
+    "nodeId": "1969:5385",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two highlight Link Default links side by side in the enabled state: one with the icon placed left of the label and one with the icon placed right of the label."
+  },
+  "fbf0eab8e030257d9955236ec2b12fdee05beb1a2f17e8ab35431ff443082cc0": {
+    "nodeId": "1943:12260",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Dark mode inline links in the sentence \"Lorem ipsum Link Inline sit amet.\" with white text on two backgrounds. On the grey deep background the link is the highlight variant in light blue with underline, on the blue dark background the link is the neutral variant in white with underline."
+  }
+}

@@ -10,10 +10,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 36194:1244
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:51:54.125Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:26:33.871Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=36194-1244
 ---
 
@@ -28,7 +28,7 @@ sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=36194-124
 
 ![Tooltip](tooltip/tooltip-36306-165.png)
 
-_Figure: Text in the figure: "Tooltip"._
+_Figure: A single Tooltip: a small dark grey rectangle with light text "Tooltip" on a light background._
 
 ### Further guidelines
 
@@ -125,7 +125,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](tooltip/anatomy-36306-204.png)
 
-_Figure: Shows annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=right, color=blue). Callouts 1, 2. Text in the figure: "Tooltip"._
+_Figure: Tooltip with two numbered callouts: 1 points at the left edge of the dark grey Tooltip surface (Container) and 2 points at the text "Tooltip" inside it (Text, the description string)._
 
 ### Sizing
 
@@ -135,7 +135,7 @@ Tooltips have a maximum width of 272 px. Content wraps automatically when it rea
 
 ![Maximum width](tooltip/maximum-width-36306-373.png)
 
-_Figure: Text in the figure: "Lorem ipsum dolor sit amet, conse ctetura dipiscing elit ut sollicitudin", "max. width 272px"._
+_Figure: Tooltip with two lines of centered text ("Lorem ipsum dolor sit amet, conse ctetura dipiscing elit ut sollicitudin") wrapped inside its container. A dimension line below spans the full container width and is labeled "max. width 272px"._
 
 ### Placement
 
@@ -150,7 +150,7 @@ The Tooltip can be positioned relative to the triggering element in four directi
 
 ![Position](tooltip/position-36306-310.png)
 
-_Figure: Text in the figure: "above (default)", "Tootip", "❖ Triggering element e.g button / link", "left", "right", "below"._
+_Figure: Four Tooltip positions around a dashed purple box labeled "Triggering element e.g button / link": "above (default)" on top, "below" underneath, "left" at the left side and "right" at the right side, each Tooltip placed directly adjacent to the box._
 
 #### Alignment
 
@@ -162,7 +162,7 @@ In addition to the position, the Tooltip can be aligned with the triggering elem
 
 ![Alignment](tooltip/alignment-37581-1744.png)
 
-_Figure: Text in the figure: "Position: above", "Alignment: start", "Alignment: center (default)", "Alignment: end", "Tooltip", "❖ Triggering element e.g button / link", "Position: left", "Position: right", "Position: below"._
+_Figure: Matrix of Tooltip positions (above, left, right, below) each shown with the three alignments "Alignment: start", "Alignment: center (default)" and "Alignment: end" relative to a dashed "Triggering element e.g button / link" box. For above and below the Tooltip sits at the left edge, middle or right edge of the box; for left and right it sits at the top edge, vertical middle or bottom edge._
 
 #### Distance
 
@@ -170,7 +170,7 @@ The distance to the triggering element is 6px
 
 ![Distance](tooltip/distance-36492-1507.png)
 
-_Figure: Shows round (variant=highlight, state=hover / pressed, size=small); button (button text=Button, variant=highlight, state=focus, size=small, icon position=none, hide label=off, flush alignment=off); cursor (type=pointer). Measurements: 6px. Text in the figure: "Tooltip", "Button"._
+_Figure: Two Tooltips above triggering elements, a small round orange icon button with pointer cursor (hover / pressed) and an orange "Button" with focus outline. A purple band marked "6px" shows the gap between the bottom of each Tooltip and the top of its triggering element._
 
 #### Edge cases:
 
@@ -178,7 +178,7 @@ If the preferred placement (e.g., top) would cause the Tooltip to appear outside
 
 ![Edge cases:](tooltip/edge-cases-36306-331.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=false, number areas=2); cursor (type=pointer). Text in the figure: "Tooltip Position: below-center", "Tooltip Position: below-end", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM", "Account Setting", "Viewport edge"._
+_Figure: Before and after comparison in the top bar, with Wishlist, Cart (badge 3), STIHL World and an account avatar at the right edge. On the left, the Tooltip "Account Setting" with Position: below-center is centered under the avatar and crosses the dashed "Viewport edge"; on the right, an arrow leads to Position: below-end where the Tooltip is aligned to the avatar's end and stays inside the viewport edge._
 
 ### Motion
 
@@ -188,7 +188,7 @@ _Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=false, num
 
 ![Appear](tooltip/appear-36492-1201.png)
 
-_Figure: Shows button (button text=Button, variant=highlight, state=hover / pressed, size=medium, icon position=none, hide label=off, flush alignment=off); cursor (type=pointer). Text in the figure: "on mouse enter/ focus", "Tooltip", "Button", "after 400ms delay fade in"._
+_Figure: Appear behavior: an orange "Button" without Tooltip on the left, an arrow labeled "on mouse enter/ focus" and "after 400ms delay fade in", and the same Button with a Tooltip appearing above it on the right._
 
 #### Disappear
 
@@ -196,7 +196,7 @@ _Figure: Shows button (button text=Button, variant=highlight, state=hover / pres
 
 ![Disappear](tooltip/disappear-36492-1444.png)
 
-_Figure: Shows button (button text=Button, variant=highlight, state=hover / pressed, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); cursor (type=pointer). Text in the figure: "on mouse leave/ switching focus", "Tooltip", "Button", "after 0ms delay fade out"._
+_Figure: Disappear behavior: a hovered orange "Button" with a Tooltip above it on the left, an arrow labeled "on mouse leave/ switching focus" and "after 0ms delay fade out", and the same Button without Tooltip on the right._
 
 ## Content and Assets
 
@@ -206,7 +206,7 @@ Tooltips may only contain text. Keep the message short and focused.
 
 ![Text only](tooltip/text-only-36306-458.png)
 
-_Figure: Shows button (button text=Button, variant=highlight, state=hover / pressed, size=medium, icon position=none, hide label=off, flush alignment=off); cursor (type=pointer). Text in the figure: "I can contain short text", "Button"._
+_Figure: A hovered orange "Button" with a Tooltip above it containing only the short text "I can contain short text", showing that Tooltips hold plain text only._
 
 ### Maximum length and overflow
 
@@ -214,7 +214,7 @@ Maximum length: up to 2 lines of text, apr. 60 characters
 
 ![Maximum length and overflow](tooltip/maximum-length-and-overflow-36306-390.png)
 
-_Figure: Shows button (button text=Button, variant=highlight, state=hover / pressed, size=medium, icon position=none, hide label=off, flush alignment=off); cursor (type=pointer). Text in the figure: "Long Tooltip description max. two lines Lorem ipsum dolor sit amet, conse ctetur", "Button"._
+_Figure: A dark grey tooltip with two lines of text ("Long Tooltip description max. two lines" and "Lorem ipsum dolor sit amet, conse ctetur") sits above an orange highlight button labeled "Button" in hover state with a pointer cursor on it. It illustrates the maximum tooltip length of two lines, about 60 characters._
 
 ## Behavior and Usage
 
@@ -224,13 +224,13 @@ Tooltips must only be attached to interactive components (such as buttons or lin
 
 ![Interactive elements only](tooltip/interactive-elements-only-36492-382.png)
 
-_Figure: Do example. Shows button (button text=Notifications, variant=highlight, state=hover / pressed, size=medium, icon position=left, hide label=off, flush alignment=off); button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); link-inline (label=Learn mor about Accessibility, variant=highlight, state=focus, type=external link, size=text M); cursor (type=pointer). Text in the figure: "You have no unread massages", "Edit", "Leave page", "Notifications", "Learn mor about Accessibility"._
+_Figure: Do example: tooltips are attached only to interactive elements. An orange highlight button "Notifications" with a bell icon shows the tooltip "You have no unread massages", a small ghost icon-only pencil button shows "Edit", and a focused external link "Learn mor about Accessibility" shows "Leave page"._
 
 Applying Tooltips to non-interactive elements (e.g., div, span, or p) makes them inaccessible to keyboard and screen reader users.
 
 ![Interactive elements only](tooltip/interactive-elements-only-37810-3416.png)
 
-_Figure: Don't example. Shows cursor (type=pointer). Text in the figure: "Chapter 1", "Headline", "Copy text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur..."._
+_Figure: Don't example: a tooltip "Chapter 1" appears over the non-interactive heading "HEADLINE" above a paragraph of body copy ("Copy text Lorem ipsum dolor sit amet..."). Tooltips on non-interactive elements such as headings or text are inaccessible to keyboard and screen reader users._
 
 ### Triggers and dismissal
 
@@ -247,7 +247,7 @@ _Figure: Don't example. Shows cursor (type=pointer). Text in the figure: "Chapte
 
 ![Triggers and dismissal](tooltip/triggers-and-dismissal-36306-451.png)
 
-_Figure: Shows button (button text=Button, variant=highlight, state=hover / pressed, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Button, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); cursor (type=pointer); button (button text=Button, variant=highlight, state=focus, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Tooltip", "on mouse leave", "Button", "focus leave"._
+_Figure: Two rows show when a tooltip is dismissed. In the top row an orange highlight button "Button" is hovered with the pointer and shows a "Tooltip"; an arrow labeled "on mouse leave" leads to the same button in enabled state without a tooltip. In the bottom row the focused button (with focus ring) shows a "Tooltip"; an arrow labeled "focus leave" leads to the button still focus-ringed but with no tooltip._
 
 ### Usecases
 
@@ -259,7 +259,7 @@ Icon button labels are hidden by default. Use a Tooltip to show the label and cl
 
 ![Tooltip as label](tooltip/tooltip-as-label-36492-326.png)
 
-_Figure: Shows button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); cursor (type=pointer). Text in the figure: "Edit"._
+_Figure: A small ghost icon-only button with a pencil icon, hovered with a pointer cursor, shows the tooltip "Edit" above it. The tooltip supplies the label that the icon button hides._
 
 #### Tooltip as description
 
@@ -269,7 +269,7 @@ Tooltips should supplement the label, not replace it, and include only supportin
 
 ![Tooltip as description](tooltip/tooltip-as-description-36492-333.png)
 
-_Figure: Shows action-item (label=Mail, number indicator, state=hover, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); cursor (type=pointer). Text in the figure: "5", "Mail", "5 unread messages"._
+_Figure: A hovered action item with a mail icon, a number indicator "5" and the label "Mail" shows the tooltip "5 unread messages" below it. The tooltip adds context to the visible label instead of replacing it._
 
 #### Don’t duplicate content
 
@@ -277,7 +277,7 @@ Avoid repeating the visible label in a Tooltip. If the label alone makes the pur
 
 ![Don’t duplicate content](tooltip/don-t-duplicate-content-36492-366.png)
 
-_Figure: Don't example. Shows action-item (label=Notifications, state=hover, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); cursor (type=pointer). Text in the figure: "Notifications"._
+_Figure: Don't example: a hovered action item with a bell icon and the visible label "Notifications" shows a tooltip that repeats the same text "Notifications". Repeating the visible label adds no information, so the tooltip is unnecessary._
 
 ## Accessiblity
 
@@ -305,11 +305,11 @@ Instead, show important details persistently, such as input field hints.
 
 ![Persistent Content](tooltip/persistent-content-36492-346.png)
 
-_Figure: Don't example. Shows input-password (system feedback, input, size=medium, state=hover, invalid=false); cursor (type=pointer). Text in the figure: "Label", "\*\*\*\*\*\*\*\*", "Use at least 8 characters, including one uppercase letter, one number, and on..."._
+_Figure: Don't example: a hovered password input with the label "Label", masked value "\*\*\*\*\*\*\*\*" and a show-password eye icon displays a tooltip below it reading "Use at least 8 characters, including one uppercase letter, one number, and one special character." Essential form instructions must not be hidden in a tooltip that only appears on hover or focus._
 
 ![Persistent Content](tooltip/persistent-content-36492-342.png)
 
-_Figure: Do example. Shows input-password (input, system feedback, hint, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Use at least 8 characters, including one uppercase letter, one number, and on...", "\*\*\*\*\*\*\*\*"._
+_Figure: Do example: a password input in enabled state with the label "Label", a persistent hint under the label reading "Use at least 8 characters, including one uppercase letter, one number, and one special character.", the masked value "\*\*\*\*\*\*\*\*" and an eye icon. Important instructions are shown permanently as a hint instead of in a tooltip._
 
 #### Popover
 
@@ -317,11 +317,11 @@ Tooltips must not contain interactive elements. When you need to present actions
 
 ![Popover](tooltip/popover-36492-454.png)
 
-_Figure: Don't example. Shows button (button text=Label, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); cursor (type=pointer). Text in the figure: "More information to the process can be found in the Guidelines", "Start Up Process"._
+_Figure: Don't example: next to the text "Start Up Process" a hovered ghost info icon button shows a tooltip reading "More information to the process can be found in the Guidelines" with "Guidelines" as a link. Tooltips must not contain interactive elements such as links, so a popover should be used instead._
 
 ![Popover](tooltip/popover-36492-450.png)
 
-_Figure: Do example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); button (button text=Label, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "More information to the process can be found in the MS 600 User Manual", "Start Up Process"._
+_Figure: Do example: next to the bold heading "Start Up Process" an info icon button (ghost, small, hover / pressed) opens a white popover with a centered arrow below pointing at the button, containing the text "More information to the process can be found in the MS 600 User Manual" with "MS 600 User Manual" as a link. Rich content such as a link belongs in a popover, not in a Tooltip._
 
 #### Expandable sections and accordions
 
@@ -331,7 +331,7 @@ Instead, use expandable sections or accordions, which keep the information disco
 
 ![Expandable sections and accordions](tooltip/expandable-sections-and-accordions-36492-432.png)
 
-_Figure: Don't example. Shows button (button text=Button, variant=ghost, state=hover / pressed, size=small, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); cursor (type=pointer). Text in the figure: "The devices produce only minimal vibrations, which reduces muscle fatigue. Th...", "Battery advantages for employees", "Battery advantages for companies", "Battery advantages for the environment or customers"._
+_Figure: Don't example: three headings "Battery advantages for employees", "Battery advantages for companies" and "Battery advantages for the environment or customers" each have an info icon button; the pointer hovers the first one and a dark Tooltip shows the long text "The devices produce only minimal vibrations, which reduces muscle fatigue. This enables precise work even over longer periods of time." Item-specific additional information is wrongly hidden in a Tooltip instead of being kept discoverable._
 
 ![Expandable sections and accordions](tooltip/expandable-sections-and-accordions-36492-428.png)
 
@@ -345,7 +345,7 @@ If the avatar in the top bar has no visible label, a Tooltip can provide the mis
 
 ![Avatar](tooltip/avatar-36557-1216.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); cursor (type=pointer). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM", "Max Musterman"._
+_Figure: Top bar (grid variant main, breakpoint l, no brand add-on, two number areas) with STIHL logo, "Search Site" field and the items "Contact", "Dealer", "Wishlist", "Cart" (badge "3"), "STIHL World" and an avatar with initials "MM". The pointer hovers the avatar, which shows a dark Tooltip below it with the user name "Max Musterman"._
 
 ### Notification
 
@@ -353,7 +353,7 @@ In the top bar, additional details for notifications can be displayed using a To
 
 ![Notification](tooltip/notification-36557-1573.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); cursor (type=pointer). Text in the figure: "Search Site", "Dealer", "Wishlist", "3", "Notifications", "STIHL World", "MM", "3 new message"._
+_Figure: Top bar (grid variant main, breakpoint l, no brand add-on, two number areas) with STIHL logo, "Search Site" field and the items "Dealer", "Wishlist", "Notifications" (badge "3"), "STIHL World" and an avatar "MM". The pointer hovers "Notifications", which shows a dark Tooltip below it with the text "3 new message"._
 
 ### Toggle button / Segmented controls
 
@@ -361,7 +361,7 @@ When buttons switch views without a visible label, Tooltips help to clarify thei
 
 ![Toggle button / Segmented controls](tooltip/toggle-button-segmented-controls-36557-1714.png)
 
-_Figure: Shows cursor (type=pointer). Text in the figure: "List view"._
+_Figure: Product page for "MS 180" with the section "Motor housing" and a segmented control of two icon-only buttons at the top right, a selected grid view and a list view button. The pointer hovers the list view button, which shows a dark Tooltip above it with the text "List view"._
 
 ### Pagination
 
@@ -369,7 +369,7 @@ Arrow buttons in a pagination component can include Tooltips to explain their ac
 
 ![Pagination](tooltip/pagination-36573-6165.png)
 
-_Figure: Shows cursor (type=pointer). Text in the figure: "Previous page"._
+_Figure: Grid of six "Muffer" part cards (code "901SW069 GM" with copy icon) above a pagination bar showing "30 – 40 of 74 items" and pages 1, ..., 5, 6 (current), 7 with arrow buttons. The pointer hovers the left arrow button, which shows a dark Tooltip above it with the text "Previous page"._
 
 ### Copy function
 
@@ -377,4 +377,4 @@ Tooltips can explain icon buttons in tables, such as copying a serial number. Ex
 
 ![Copy function](tooltip/copy-function-36573-13480.png)
 
-_Figure: Shows cursor (type=pointer). Text in the figure: "Copy"._
+_Figure: Table of common guide bars with columns "Common guide bars", "Risk of kickback \*", "Add to picklist" and "Availability", where each row has a part number such as "1130 020 3033" followed by a copy icon button. The pointer hovers the copy icon in the second row, which shows a dark Tooltip above it with the text "Copy"._

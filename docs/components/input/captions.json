@@ -1,0 +1,527 @@
+{
+  "00463cb9a0bf5afdf6b96947d162d77ea6abcfc2f8f3ff14f591ce112160e954": {
+    "nodeId": "29536:27781",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two discrete sliders with white tick dots on the track and a value tooltip \"50\" above a hovered thumb with pointer cursor: \"Length in m\" from \"0\" to \"100\" with five ticks, and \"Cutting line strength in mm\" from \"1,4\" to \"3,3\" with six ticks, showing predefined steps the thumb can snap to."
+  },
+  "0137db0718bfa101cfe2762313286ce675453d9067c5aecea19c097866351318": {
+    "nodeId": "4624:16214",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Search field (input-search-medium, enabled) from the STIHL web shop advisor with the label \"Machine number\" followed by an info button, the placeholder \"Search\" and a magnifying glass submit button on the right, inside a white container."
+  },
+  "04dbb3d13812051329f5497a02e2deb3f13c5d16bde8a790b7a0084b0b18aaa8": {
+    "nodeId": "29536:28007",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: two minimal sliders used to show status, one labelled \"Progress\" with the scale \"Start\" to \"Finish\" and one labelled \"Battery Status\" with the scale 0% to 100%, both with the thumb at the middle. The slider is an interactive input and must not be used as a progress bar or stepper."
+  },
+  "09348fa2f27829cf34c4034c2b453675870e9ba0e73093855bddda6051f32715": {
+    "nodeId": "29536:27832",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two discrete steps sliders labelled \"Amount of items\", one from \"1\" to \"5\" with four tick dots and a value tooltip \"50\", the other from \"2\" to \"18\" with nine tick dots and a value tooltip \"10\", illustrating the number of ticks and steps."
+  },
+  "0a1ad46643a20fd3e6531364e42a06556a8b3a6b8386f977f10e62135fd27cf1": {
+    "nodeId": "7342:2206",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three medium Input Number fields, each with a \"Label\" and minus and plus buttons, showing the keyboard focus order. Callout 1 marks focus on the input field, callout 2 marks focus on the minus button, and callout 3 marks focus on the plus button."
+  },
+  "0d1049e59faa591c1ba2f997747d5f7c46e7515b37edd7a25d8944894776fd48": {
+    "nodeId": "29536:27475",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Overview of the horizontal single-point Input Slider in three types as columns, \"default (with input)\", \"minimal\" and \"steps\", and four states as rows, \"enabled\", \"hover\", \"focus\" and \"disabled\". Each has a \"Label\", hint text, a track from 0 to 100 with an orange filled part and a round thumb at 50. The default type adds an input field with value 50 and suffix \"xyz\", minimal and steps show a \"50\" tooltip on hover and focus, steps has tick marks on the track, and the disabled state is greyed out."
+  },
+  "0d269bb765aac06f665159eccdad2314376523ecbe540c1e3770bfa29e586b01": {
+    "nodeId": "30568:8744",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two input sliders (label, range 0 to 100, orange filled track, thumb at 50) inside light blue \"Content area Narrow\" containers. In the upper one the slider fills the container width (Container Width). In the lower, wider container the slider stops at a recommended max. width of 544px, narrower than the Container Width."
+  },
+  "13598da8e2663dfeeac4d9607f3499b157538606fe1b7bb3a36562d57092f146": {
+    "nodeId": "4946:2448",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Medium date input with the label \"Date of departure\", the placeholder \"DD/MM/YY\" and a calendar icon on the right, with the browser's native date picker open below it. The picker shows January 2024 with weekday columns M to S, the 24th highlighted as selected, month and year arrows, and \"Clear\" and \"Today\" links at the bottom."
+  },
+  "18b7564db48a8906ac0aeb0d60e1ff3c5422979732c40fbef89de6653ab290b8": {
+    "nodeId": "29536:27941",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Minimal slider in the enabled state with the clear, predictable label \"Length in meters (m)\", range end labels \"0\" and \"100\", and the thumb at the middle of the orange filled track, showing the unit written out in full before its abbreviation."
+  },
+  "1aad0143534dfc3a7c3512974d067c675e8a7f4d75bb44d51af35c400508c348": {
+    "nodeId": "2496:5961",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Overview of the password input in sizes \"Size Medium\" and \"Size Small\", each with the states Default, Hover, Focus, Disabled and Read-only. Every field has \"Label\", a hint text, masked input \"********\" and an eye icon; Default and Focus also exist in an \"is invalid\" column with a red border (Default) or a thick dark focus border plus the red \"System feedback message\". Hover has a grey fill, Disabled has a light grey border and muted text, Read-only has a grey fill without border."
+  },
+  "1ae4a926a2134db99ac0b2357758ea4dd6512e9b4cd723e133ba7910cc6dd1cf": {
+    "nodeId": "29536:27572",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Minimal input slider with label, range values 0 and 100 and thumb at the middle, with a dimension line below the track marking a minimum width of 256px."
+  },
+  "1fcb29983935383acd859dd2d01b1637e0e2baab7b69ea2920c7d624bfbd186c": {
+    "nodeId": "7342:2433",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three medium Input Number fields in the enabled state, each with minus and plus buttons: \"Price\" with prefix \"€\" and value \"120\", \"Amount\" with value \"55,8\" and suffix \"kg\", and \"Maximum Length\" with value \"150\" and suffix \"inch\". They illustrate a currency symbol as prefix and units of measurement as suffix."
+  },
+  "226f6e4229bc28be480f19f7aadc76c0cfd9e7da9c72b7f4711a1a8e1bec3f1c": {
+    "nodeId": "32314:8860",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two Input File variants where the call-to-action is a filled dark button (1): a standalone field with label \"Label\", hint text and a filled \"Upload file\" button with upload icon, and a dashed drop zone with upload icon, \"Drag and drop files here or\", a filled \"Browse files\" button and the hint \"Max file size: 7 MB. Supported file types: .jpg and .png\"."
+  },
+  "23bff7b07a6352da61bb48f78239c40cd66d44fca1816ee8cd9582a2fdd8f1b9": {
+    "nodeId": "32314:6941",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Preview list item with a file icon, a very long file name \"Quarterly_Financial_Report_Q1_2024_Updated_Version_Final_Reviewed_April_2_With_Annotations.pdf\" wrapped onto two lines so it stays fully visible, followed by \"1.5 MB\" and an \"X\" button, with a divider line below."
+  },
+  "24c7caa321f93628498a4d880937bdbbbee86d4a96f915eba8dcf2fd732d1916": {
+    "nodeId": "1898:1232",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two input fields with a \"Label\". Callout 1 points at the \"Prefix\" element in a separated cell at the start of the first field, before the input text. Callout 2 points at the \"Suffix\" element in a separated cell at the end of the second field, after the input text."
+  },
+  "26efb66e026bd10bfd9146589d3023ebbc7dcbb6a339ec9420f931b89f0e762a": {
+    "nodeId": "29536:28115",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a price filter titled \"Preis\" with two text fields \"Minimum\" (0, suffix \"€\") and \"Maximum\" (2.379, suffix \"€\") separated by \"bis\" and followed by a confirm button, plus checkboxes for the predefined ranges \"0 - 499 € (25)\", \"500 - 999 € (29)\" and \"ab 1.000 € (29)\". Offering both predefined ranges and text fields supports exact filtering and shows the available price range."
+  },
+  "28645fe479eeeaa1f66e0ef6c5c000c461df3831d7d7cbdecb95698f15f410d7": {
+    "nodeId": "2607:3772",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the search input with seven numbered callouts: the top field shows (1) Label, (2) Hint (optional), (3) Text field, (4) Clear function (cross icon) and (5) Submit function (magnifying glass icon); the bottom field with the placeholder \"Placeholder\" shows (6) Info Button (optional) next to the label and (7) Placeholder text (optional)."
+  },
+  "367a9c0916f64c76ae8dba837741215a86851fdeb0576f41f1c3d9aa3f6e6e08": {
+    "nodeId": "32314:6605",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the upload field in three variants (without dropzone, with dropzone hint inside, with dropzone hint above) with callouts: 1 Label, 2 hint text about file size and types (inside the dropzone in one variant, above the dropzone in the last variant, where it reads \"Upload up to 5 files in .jpg, .png, .pdf, or .docx format...\"), 3 button (\"Upload files\" or \"Browse files\"), 4 info icon next to the label, 5 dashed dropzone area, 6 upload icon, 7 \"Drag and drop files here or\" text."
+  },
+  "386d4cd0a5f088c5e1611da99019e49eddf683138d4628578bd773fec60793e9": {
+    "nodeId": "29536:28017",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a minimal slider labelled \"Progress\" with the scale \"Start\" to \"Finish\", placed on an orange background panel. The slider is an input element and should only be used on white or grey backgrounds."
+  },
+  "3b316ed75fbaac2d706b761df63f5859c072cc6cffd8bea17f0a93d729b438a4": {
+    "nodeId": "29536:27913",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two default sliders, each with a numeric input field and unit, with the thumb in the middle of the track. \"Thickness in mm\" has the value 50 mm on a scale from 0 to 100, and \"Choose a emperature\" has the value 20 °C on a scale from -10 to 30, so the default is centred and negative values are possible."
+  },
+  "3b4bb969a004e97da91c57577022e003c09571bdce1a345d0c0a64fb622b8c70": {
+    "nodeId": "7342:2188",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A small Input Number labelled \"Hours\" under the question \"How many hours do you use the machine every day?\", holding the value \"0,5\". The minus button is disabled (light grey) because the lowest value is reached, while the plus button stays enabled (dark)."
+  },
+  "3ce8a3b5ed748314a0cba9047618cc0be231f7f25dcb8d9859ef19be1433a9c9": {
+    "nodeId": "32314:8851",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Input File with the label \"Label\", the hint \"Max file size: 7 MB. Supported file types: .jpg and .png\" and an outlined \"Upload files\" button with an upload icon, showing the maximum file size placed in the hint text next to the upload field."
+  },
+  "3db00844c3177a68982bb7036c8f2dfeece14752f7efbcf09249441c8f697e50": {
+    "nodeId": "32314:6951",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two preview list items compared with Figma layout settings above each. Left: width set to \"Hug\", showing \"Filename.png\" with \"1.5 MB\" and an \"X\" button on one line. Right: width set to \"Fill\", where the long file name \"Quarterly_Financial_Report_Q1_2024_Updated_Version_Final_Reviewed_April_2_With_Annotations.pdf\" wraps over several lines within the container."
+  },
+  "48a1e94c195e6803a254efccd4d7c6b8461df9c3b18c3f0c14bb7f74893cccd1": {
+    "nodeId": "7342:1822",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Search field (input-search-medium, enabled, not invalid) with the label \"Search\", a placeholder giving examples (\"Machine number, serial number, parts number...\", truncated with an ellipsis) and a magnifying glass submit button on the right."
+  },
+  "4a2de288d98b9b44dc0c5ad7f15a2779d5aaca690b1568657ab4bc033d94b5d7": {
+    "nodeId": "29536:27561",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Figma properties panels of the input slider. Callout 1 points at the input-slider panel (type default, state enabled, hint on) and its input-frame section with size medium, width min and suffix on, which are the options to use. Callout 2 points at the nested input-medium panel (state enabled, invalid, leading icon, prefix, suffix on, function, input on, placeholder), whose options should NOT be used."
+  },
+  "4add5748196e9be420c54d5d83584c96db3b5a3eca24d65ac6fea474640e14f7": {
+    "nodeId": "29536:27619",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Input sliders with vertical guide lines showing alignment. Callout 1 points at the range value \"0\", centred on the first tick at the start of the track. Callout 2 points at the tooltip (50), centred on the thumb. Callout 3 points at the thumb at the track start, aligned with the track end, the label and the input field (value 50, suffix mm) on the same edge."
+  },
+  "4c4ca85d79a336a810e0931b108309f5ee8577214bab436a2a54f16bc1a532a9": {
+    "nodeId": "32314:8749",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "\"Empty\" state of a product detail page for a chainsaw (\"BREEZE BEN\", MS 261 C-M, with serial number, article number and dates plus \"Edit product data\" and \"Delete product\" buttons) on desktop and mobile. A grey placeholder image has a small dashed gallery upload button below it, labelled \"Upload\" on desktop and showing only an upload icon on mobile."
+  },
+  "4eb5250a20e36fddcf5de28d643cc677865a35fd678727acad58b7da419125b2": {
+    "nodeId": "7342:1675",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Medium password input with the label \"Password\", a hint reading \"Password must contain at least 8 characters with at least one uppercase letter, one number and one special character\", masked input \"********\" and an eye icon, showing that password requirements are explained in the hint."
+  },
+  "52d1c7e73fe62c8a3634a1542f80ec768ba9d52f01b8d8d00d5e8b14d717cd5f": {
+    "nodeId": "32314:6986",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Input File with drop zone shown twice. \"Collapsed Loading List\" has a chevron-down toggle, a spinner and the overall status \"1 of 15 files uploaded\" below the drop zone; \"Expanded Loading List - on click\" has a chevron-up toggle with the same status and a list of \"Filename.png\" 1.5 MB items, the first with a green success \"System Feedback Message\" and the others uploading at 50%. Callout 1 marks the overall status indicator."
+  },
+  "54c53eac52b077a286adab3113cb4123bfb9dc07a7c4cfb95df9968a831e9865": {
+    "nodeId": "4650:7675",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Search field (input-search-medium, enabled) with the label \"Label\" and the text \"Input\"; the submit button (magnifying glass icon) at the right end shows a grey hover background with a hand cursor on it, illustrating that clicking it triggers the search."
+  },
+  "56a4d52b40be1c4b288020c41ae69159fadcd117d6fce3dff17fdf91e5423825": {
+    "nodeId": "29536:27600",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Grid of four input sliders with label \"Thickness in mm\", hint text, value 50 and range 0 to 100. The top row shows \"Minimum Width\" and the bottom row \"Maximum Width\" of the input field; the left column has \"Suffix: false\" and the right column \"Suffix: true\" (unit \"mm\" inside the input). The maximum width fields are wider, and the hint text wraps to fewer lines next to them."
+  },
+  "5baaaeb9cfef25ba9b73325e3a6fc054466e552a636fea6345d55d7efa0465b8": {
+    "nodeId": "29536:27548",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "The three Input Slider types stacked, each with a \"Label\", hint text and a track from 0 to 100 with the thumb at 50. Callout 1 marks type \"Default\" with a synchronised input field (50, \"xyz\"), callout 2 marks type \"Minimal\" without input field and with a \"50\" tooltip above the thumb, and callout 3 marks type \"Steps\" with predefined step marks along the track."
+  },
+  "5cfbd409d590e934688f964e61bf2998757e1b4b9a91ec6834c25c9917c10c28": {
+    "nodeId": "32314:6676",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "The Input File drop zone (label, upload icon, \"Drag and drop files here or\", a \"Browse files\" button, and the hint \"Max file size: 7 MB. Supported file types: .jpg and .png\") placed on the grid inside the \"Content area Narrow\" at viewport 1024px and viewport 1440px. At 1024px it fills the full container width; at 1440px the container is wider but the field stays at the recommended max. width 544px."
+  },
+  "5d0275b615e52124da26045fe7daaffb2c3f766e3ca3c29fd2d19941c2a5d6eb": {
+    "nodeId": "32314:7087",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Best-practice progress version of the upload list with three items \"Filename.png\" (1.5 MB), each with a close button: the first shows a green success \"System Feedback Message\", the other two each show a blue progress bar filled to half its track with the percentage \"50%\" at the right end."
+  },
+  "61a53ca1a99a190a5f93039b3e1380a3600765bc5dff59f8430ad591a8491430": {
+    "nodeId": "32314:6815",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Drag-over states of three file upload variants with dragged files \"Icons-Files.zip\" and \"Image-Files.zip\" shown at the cursor. Callout 1 marks the \"Upload files\" button of \"Input File (without drop zone)\", the only part highlighted; callout 2 marks the whole drop zone of \"Input File (with drop zone)\", filled with a background color; callout 3 marks the whole \"Input File Gallery\" tile, also filled with a background color."
+  },
+  "6b9744394948fde5a5b551952dcb053b9421a5de05014e297d3491fcf72c40e7": {
+    "nodeId": "32314:7056",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "File input labelled \"Upload Document*\" with a grey dashed drop zone (\"Drag and drop files here or\", \"Browse files\", \"Max file size: 7 MB. Supported file types: .jpg and .png\") above two uploaded items \"Filename.png\" (1.5 MB). The first item shows \"Upload status 50%\" with a red error \"System Feedback Message\", retry and close buttons, and callout 1; the second shows a green success \"System Feedback Message\" with callout 3."
+  },
+  "6ba41976e80db7086d03ede456af6660f6290200dc2087e2e7708bb45ec60f4d": {
+    "nodeId": "32314:6635",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the Preview List Item shown twice: a normal row with a file icon, and an error row with an image thumbnail and the message \"System Feedback Message\" under a red divider. Callouts: 1 file preview (icon or thumbnail), 2 file name \"Filename.png\", 3 file size \"1.5 MB\", 4 system feedback message, 5 remove button."
+  },
+  "6bcb736d32dbbdede475af20f1f4875b7f698928ac792872a42ba91aae78619d": {
+    "nodeId": "29536:27484",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Building blocks of the Input Slider: \"thumb\" in enabled, hover, focus and disabled states; \"tooltip\" in dark and disabled light variants showing \"000\"; \"track\" with increments at 0%, 50% and 100% (tooltip showing 0, 50 and 100 above the thumb, orange fill growing with the value); and \"input frame\" variants in medium and small size, with and without the \"xyz\" suffix, for 3-digit (\"000\") and 4-digit (\"0000\") values."
+  },
+  "717644cd6839e7233ff5488dab7e46476e2087d176d84002cfd9644426be6757": {
+    "nodeId": "29536:28033",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A drawer titled \"Filter\" with a close button, in which the expanded \"Length\" section holds a slider with its value 50 in an input field with the suffix \"cm\" labelled \"Length in centimetres (cm)\", and a range from 0 to 100 with the thumb at the middle. Below are collapsed sections \"Drive link gauge\", \"Saw chain pitch\", \"Guide Bars\" and \"Saw Chains\", and a dark \"Show results (34)\" button at the bottom."
+  },
+  "743896941181c3fa459e2b318e67ea12c1e32a56a54eb3b53d00f2e2839406f4": {
+    "nodeId": "4874:12225",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Six input types by browser default, each a medium field with a label and a numbered callout pointing at the field content: 1 \"Email\" (text, tel, number, email, url type) with no icon, 2 \"Date of departure\" with placeholder \"DD/MM/YY\" and a calendar icon, 3 \"Month\" with a calendar icon, 4 \"Calender week\" with placeholder \"Week XX, XXXX\" and a calendar icon, 5 \"Departure time\" with placeholder \"HH:MM\" and a clock icon, 6 \"Date of departure\" with placeholder \"DD/MM/YY, HH:MM\" and a calendar icon."
+  },
+  "7a5ecc0235940a796422d79912182dcfe72142dd149e3fcc380e5b02ec7b1a5a": {
+    "nodeId": "29536:27891",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Focus order of the sliders. In the default slider with label, hint text and scale 0 to 100, callout 1 marks the numeric input field (value 50, unit \"xyz\") that is focused first and callout 2 marks the thumb that is focused second. The minimal slider labelled \"Length in m\" below has no input, so focus goes directly to the thumb, which shows a tooltip with 50, and the left and right arrow keys change the value."
+  },
+  "7a63f8eea7fd9a83cb40c37cf7af13d213ccb1f8aaf021f7c7f6c38930fbd8ec": {
+    "nodeId": "29536:27528",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the Input Slider shown with three variants with numbered callouts. In the default variant: 1 \"Label\", 2 hint text, 3 grey slider scale (track), 4 orange tint showing the selected value, 5 round thumb (handle) and 9 the input field with value 50 and suffix \"xyz\". In the minimal variant: 6 the value tooltip \"50\" above the thumb and 7 the maximum value label \"100\". In the steps variant: 8 the step tick marks on the track and 10 the info button next to the \"Label\"."
+  },
+  "7a7345678db2cc65e8e36d1c4ef93038e7637e73636773eb6eab7f032d567b7d": {
+    "nodeId": "29536:27920",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two before and after examples (arrows) of automatic correction for the default slider labelled \"Area in m2\". Top: with a scale of 20 to 200, a typed value of 15 is below the minimum and is corrected to 20. Bottom: with a scale of 20 to 1000, a typed value of 5600 exceeds the maximum and is corrected to 1000, with the thumb at the right end."
+  },
+  "7aa2a6f0a25f32d5840bbf5d789cbcaa4c5b612379e8734f31ffddba90c656a7": {
+    "nodeId": "29536:27906",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Minimal slider labelled \"Length in m\" with a scale from 0 to 100 in the hover state, with a pointer cursor on the thumb. A dark tooltip above the thumb shows the current value 50."
+  },
+  "7b28ef9ba7c355e830aa93114324197f9b6dafaa84a5844374b15635059620f5": {
+    "nodeId": "32314:6756",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Product detail page of a STIHL chainsaw (Breeze Ben, MS 261 C-M) with product data, an \"Edit product data\" and a \"Delete product\" button, and a thumbnail row below the large product photo. The medium Input File Gallery tile labelled \"Upload\" sits as the first item in the thumbnail row, followed by the uploaded chainsaw thumbnail."
+  },
+  "7caa150bd0aade6d30efed459c62b630f1cafbf477bfb94db4a60298f7846aee": {
+    "nodeId": "32314:7217",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Flow diagram of a file upload form with temporary server storage: \"Empty\" form (Surname field and drag and drop upload area) leads, when the user selects a file (no extra confirmation is needed) and upload begins, to \"Upload queue of selected files\" with progress bars. From there, files uploaded successfully lead to \"Upload completed\", and then \"User submits form\" leads to \"Confirmation\" (\"Form was successfully submitted\"). Branches lead to \"Error: Upload in Progress\" when Submit is clicked while files are still uploading, and to \"Error: File Upload Failed\" when there is an error while uploading, both showing red error messages."
+  },
+  "8190b726f92cab83801e6338569d673436afc722e01d6bf6af19f723c3e6c3d6": {
+    "nodeId": "45308:6831",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Motion design board \"Motion Design Progress Bar\" with a warning note that the two animation components only illustrate movement and are not meant for UI layouts. The \"indeterminate\" example shows four animation steps of a blue segment moving along a fixed track (ease in: 400ms, ease out: 400ms) and moving continually until the process is complete, while the \"determinate\" example shows a bar filling from 0% to 100% (linear: 1100ms)."
+  },
+  "82c6b95858d5135a10dc258b3f7ca26fe08d761690acfef796f152353fbe3cd0": {
+    "nodeId": "1744:8963",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Input anatomy with two examples and numbered callouts. In the first, 1 points at the \"Label\", 2 at the hint text below it, 3 at the field border and 4 at the \"Placeholder\" text inside it. In the second, which has a red invalid border, 5 points at the info button next to the label, 6 at the leading icon on the left of the field, 7 at the tailing icon on the right and at the \"Input\" text, and 8 at the \"System feedback message\" under the field."
+  },
+  "84631a898e6715f5ec7e9d0d7a68e964b6860deff94f9bf61b1b81f69cbadafe": {
+    "nodeId": "32314:6739",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two enabled Input File Gallery variants with a dashed drop zone: medium contains an upload icon (2) and the label \"Upload\" (3), small contains only the upload icon (2). Callout 1 points at the clickable drop zone in both variants."
+  },
+  "87cd93dad54f3ebed91cc32658a16d159ad50ada8bfed505ec3a6d8902fbb52f": {
+    "nodeId": "32314:8817",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Row of file type previews, each numbered: an image thumbnail placeholder (1, purple tile), an image icon (1), a video camera icon (2), a PDF document icon (3), a DOC document icon (4), a ZIP document icon (5) and a generic file icon (6)."
+  },
+  "88b9e685e24465787ef784ead51feed213717abe799cf8b65e235964d101c2ca": {
+    "nodeId": "29536:27982",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: two sliders without a numeric input, a minimal slider labelled \"Length in m\" and a steps slider labelled \"Thickness in mm\", both ranging from 0 to 100 with the thumb at the middle. The unit of measurement is part of each label, so it is clear what the scale values represent."
+  },
+  "897e619a61948377d619271dec70927a43d1e09889dadf758c6d2527d1ee0070": {
+    "nodeId": "2496:6407",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Overview of the number input in sizes \"Size medium\" and \"Size small\", with states Default, Hover, Focus, Disabled and Read-only and an \"is invalid\" column. Each has a \"Label\", a hint text, the value \"123\" and dark minus and plus buttons beside the field; invalid fields have a red border and the \"System feedback message\" with an error icon, hover has a grey field fill, focus a thick dark border, disabled has greyed-out text and light grey buttons, and read-only has a light grey field fill with light grey buttons."
+  },
+  "8b1e34b1b1c97b68935aa6a5e7a8867f77aa4ca84380f827af6412bc1d5b30de": {
+    "nodeId": "29536:28124",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A form card titled \"Mowing Settings\" in which the slider \"Cutting height in mm\" (range 20 to 60, step markers) permanently shows a tooltip with its current value 50 above the thumb. The form also contains the selects \"Wire over drive\" (\"Not close to the wire\") and \"rain sensor sensitivity\" with hint \"Allowed mowing weather\" (\"Any Weather\"), a divider, the text field \"Mowing duration\" (00:15) and the switch \"Ignore rain sensors\" turned on."
+  },
+  "8d311e560c8f1141ed5eface9f9f53e63eeede23fc735a6bea198060c0e00365": {
+    "nodeId": "32314:7110",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two states of an \"Upload Form\" on desktop and mobile. \"Empty\": a Title select (\"Choose your title\"), Name and Surname inputs, \"Upload your Document\" with the hint \"Max file size: 7 MB. Supported file types: .jpg and .png\", an \"Upload file\" button and a filled \"Submit form\" button. \"Preview of Selected Files\": the same form with two \"Filename.png\" (1.5 MB) items, each with a close button, listed between the upload button and \"Submit form\"."
+  },
+  "8d434563add746f08d1866ccd963de76a40502bf24a8b6c4617d5e1d227864e7": {
+    "nodeId": "7477:6400",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: two empty search fields with a magnifying glass submit button, one labelled \"Search*\" (required asterisk) and one labelled \"Search (optional)\". A search field needs no required or optional indicator."
+  },
+  "8e57e675b32b04b306ba4457fd062dd873492ab09daaac6205b736283f633b15": {
+    "nodeId": "39634:11188",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: an Input File with the label \"Label\" and a dark \"Upload file\" button, where the pointer hovers the info button next to the label and opens a white popover (arrow below, centered) reading \"Max file size: 7 MB. Supported file types: .jpg and .png\". This is wrong because such critical or required information is hidden in a popover instead of being shown as a hint."
+  },
+  "921dcb7909082d64da3d0374ff2852bd81df23305863eefd9c5562d5085a6f78": {
+    "nodeId": "4642:15561",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two medium password inputs labelled \"Label\". Callout 1: masked text \"********\" with the \"eye\" icon and the tooltip \"Show password\". Callout 2: after clicking, the revealed text \"P4s5W0rd*\" with the \"eye-closed\" icon and the tooltip \"Hide password\"."
+  },
+  "9243f90996d84251edddb458819ecf30149a42d554a2cf217923158a8a1d255c": {
+    "nodeId": "44710:6749",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Prototype frame labelled \"Indeterminate progress bar animation (click “Open prototype” on the left)\" showing an upload item with a file icon, the file name \"Filename.png\", a ghost close button on the right, and a thin grey track with a short blue segment near its start, with the status text \"Uploading...\" underneath."
+  },
+  "92b030e9f2e7c3a333a777dd3724b2bc4683296fedd68ea96fbe67b6fafc1654": {
+    "nodeId": "7342:1778",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Login form with two stacked medium fields: \"Username or E-Mail\" containing max.mustermann@stihl.com and \"Password\" with masked input and an eye icon. Neither label carries a required or optional indicator, because the password field is always required."
+  },
+  "93e0057224272e58d92bd7e30cf0784c29f9af38c3d6c95b0cd085b82ce405bc": {
+    "nodeId": "29536:27959",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a default slider with the label \"Label Lorem ipsum dolor sit\" and a long hint squeezed into a narrow column of seven short lines beside a number input \"50\" with suffix \"mm\", above a track from \"0\" to \"100\"; the input leaves too little width for the hint, which is marked by a red \"Don't\" badge."
+  },
+  "94f01ef1f8b3ccede1138e5757cb30f3add5c45c7f614dcf5f91fd0667853327": {
+    "nodeId": "32314:6900",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Upload queue items in the states Uploading, Indeterminate Uploading, Error and Success, each showing a file icon, \"Filename.png\", \"1.5 MB\" and an \"X\" button. Callout a marks the variant without progress bar (text \"Upload status 50%\", spinner with \"Uploading...\", or only a status message) and callout b the variant with progress bar (50% blue bar, or an indeterminate bar); Error adds a retry button and a red \"System Feedback Message\", while Success shows no progress indicator and a green check with \"System Feedback Message\"."
+  },
+  "965dc55e8c31756b1c3b2d0b543ae2ff4611277a185a50d6880a31b20cb93bf6": {
+    "nodeId": "29536:27993",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a minimal slider labelled \"Area in square meters (m2)\" with a scale from 10000 to 500000. The minimum and maximum values have more than six characters, which is too long for the slider scale."
+  },
+  "973ac9b7e87e5e152e6c4d29a186c5499b6ccdaa68847af18a7f9d6baa5c56f9": {
+    "nodeId": "7477:6846",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a single medium Input Number with a \"Label\" that has both a \"Prefix\" cell and a \"Suffix\" cell around the input, followed by minus and plus buttons. Combining a prefix and a suffix in one field is not recommended."
+  },
+  "98cfa6921aebb0fc327f461d999598372b39e8b19c9a98837a21d4e993fac2f5": {
+    "nodeId": "32314:8804",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two Input File examples with an \"Upload file\" button and the hint \"Max file size: 7 MB. Supported file types: .pdf, .doc and .docx\": the required field has the label \"Upload Document *\" with an asterisk (1), and the optional field has the label \"Upload Document (optional)\" with the added word \"(optional)\" (2)."
+  },
+  "99d4f14567cda0d4506d3b185fb257444cab44153eeacda79e6d6b55d44d9889": {
+    "nodeId": "29536:27716",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Minimal slider in the enabled state with the label \"Length in m*\" (asterisk marks it as mandatory), range end labels \"0\" and \"100\", an orange filled track up to a white round thumb at the middle, and a blue \"Accessibility\" badge with an info icon at the lower left that flags the accessibility concern of sliders as mandatory fields."
+  },
+  "99e93c2070bf37c8d909bbc58a096cd22142872aaf80da0081f3fa15b2c816bf": {
+    "nodeId": "29536:28142",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three slider designs compared: (1) the existing iMow app \"MOWING SETTINGS\" screen with a stepped \"Cutting height\" slider showing 37.5mm, (2) the minimal slider \"Cutting Height (in mm)\" from 20 to 60 with a tooltip showing 50 above the thumb, and (3) the default slider with the same label and range plus an input field with the suffix \"mm\" showing 37,5 for precise entry."
+  },
+  "9c65b12237ccfb17f633d68d97372a4f2ac5cbf49ed012fcbfc8c90602ed8de6": {
+    "nodeId": "29536:27964",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example showing four space-saving options for the label \"Lorem augue\": callout 1 points at a default slider with a number input \"50\" and suffix \"cm\" on the label row and no hint, callout 2 at a slider with a short hint \"Vivamus id erat eget leo eget.\" and a compact input \"0000\" with suffix \"cm\", callout 3 at a minimal slider with the hint and range \"0\" to \"100\" but no input, and callout 4 at a plain text input with the hint and suffix \"cm\" instead of a slider; a green \"Do\" badge marks it."
+  },
+  "aa0efd6c025b49e6c1616e1753b81775424296812bdabbaa15786c31c993a3f8": {
+    "nodeId": "2141:6700",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Building block overview of the input prefix and suffix, titled \"Building Block\" and \"Prefix/Suffix\". A grid of boxes labeled \"Label\" shows a \"Prefix\" row and a \"Suffix\" row, each in \"Default\" and \"Disabled\" states, each in \"medium\" and \"small\" sizes, plus a filled grey variant of each at the right, all enclosed in a dashed purple frame."
+  },
+  "ab7ed98a69c05ea39d9c98f34fe136e0bf05e34d70521abfb17368d33618b619": {
+    "nodeId": "32314:6654",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Six Upload Queue Item states stacked vertically, each with Filename.png and a close (X) button: uploading with text-only status \"Upload status 50%\" and a document icon (1a, 2 file name, 3 file size 1.5 MB, 4a status text); uploading with an image thumbnail (1b) and a blue loading bar with \"50%\" (4b); error with a red loading bar at 50%, a red error icon with \"System Feedback Message\" (5) and a retry button (6) next to the close button; success with a green check icon and \"System Feedback Message\" (5); an indeterminate loading bar (4b) with \"Uploading...\" (8); and a spinner icon (7) with \"Uploading...\" (8), where 9 points at the close button."
+  },
+  "ac2ca10fc7e7777930dc0b212e9ab9f225e98ae7e05c26b4183ef8a632582287": {
+    "nodeId": "7477:7127",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: two medium Input Number fields in the enabled state, each with a \"Label\" above, an input and dark minus and plus buttons to the right. Callout 1 points at the \"Prefix\" cell at the start of the first input, callout 2 points at the \"Suffix\" cell at the end of the second input; each field uses only one of the two."
+  },
+  "acb2124b30326a8c559594c2047945a951d577126a800c8b5ccadf1300c66891": {
+    "nodeId": "32314:7071",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Minimal progress version of the upload list with three items \"Filename.png\" (1.5 MB), each with a close button: the first shows a green success \"System Feedback Message\", the other two show only the text \"Upload status 50%\" and no progress bar."
+  },
+  "aea56a97f3bd2fcb3fb5b60e6bcb5a76a881e4e5409187ee352d1120c763cbf2": {
+    "nodeId": "4642:15937",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Invalid medium password input with the label \"Enter Password\", masked input \"********\", an eye icon and a red border. Below the field a red error icon with the message \"Password must contain at least 1 number and 1 capital letter\" is displayed as system feedback."
+  },
+  "b1f63f85b03e9be2562f19c957d34cb3a916ed381ab4435d20d266eee7430132": {
+    "nodeId": "29536:27679",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two transitions of a slider (label \"Length in m\", range 0 to 100, thumb at 50). Top: without tooltip to hovered thumb with tooltip 50, labelled \"Appear fade: 0 > 100% Opacity\". Bottom: hovered thumb with tooltip to enabled state without tooltip, labelled \"Disapear fade: 0 > 100% Opacity\"."
+  },
+  "b79fc585621df81c806be33d4afb6f2738b00748105e147031c6a1b8c20b050c": {
+    "nodeId": "29536:27743",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a slider labelled \"Area in square meters (m2)\" with a very precise range from \"10000\" to \"45000\" and a value tooltip \"1752\" above the thumb, which is unsuitable because users cannot easily land on an exact number in such a range; a red \"Don't\" badge marks it."
+  },
+  "b8f4ccb23816b761e253f979a63cfa70fa794bd6401132f9b6bd5e6014d04bac": {
+    "nodeId": "29536:28109",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a price filter that uses only a slider labelled \"Preis (€)\" with an input field showing 1250 and the suffix \"€\", a range from 0 to 2500 and the thumb at the middle. A slider alone is wrong for price ranges because users cannot set exact values or see which price ranges are available."
+  },
+  "bb41453f4da27f2e25e2f4b341c1f96e0bbb5c6a1cf5ae6d0737a6b369ee580a": {
+    "nodeId": "32314:6875",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Focus states of three file upload variants. Callout 1 marks the focus ring around the \"Upload files\" button of \"Input File (without drop zone)\"; callout 2 marks the focus ring around only the \"Browse files\" button in \"Input File (with drop zone)\", while the drop zone itself shows no focus; callout 3 marks the \"Input File Gallery\" tile, where the entire component has a solid focus border."
+  },
+  "c042b597dea4f1049e398589bdf7f87ae023d0775476f3a3b78e4a72473b9cd5": {
+    "nodeId": "32314:6794",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Hover states of three file upload variants. Callout 1 marks the \"Upload files\" button of \"Input File (without drop zone)\", the only element that gets the hover effect; callout 2 marks the \"Browse files\" button inside \"Input File (with drop zone)\", which is the only part that shows hover although the whole drop zone is clickable; callout 3 marks the square \"Input File Gallery\" with an \"Upload\" icon, which is filled grey on hover as a whole."
+  },
+  "c133c2ef7051a4d05d9b353c284bedfc3f87e8901701a01f7ec472fbcd3f133b": {
+    "nodeId": "4624:16136",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Mobile STIHL web shop page \"Log in and Sign Up\" with a header (icon bar, \"MENÜ\", STIHL logo). In the \"Log in\" section are an empty medium \"Email\" input and an empty \"Password\" input with an eye icon, both without a required asterisk, then a highlight (orange) \"Sign In\" button and a ghost \"Forgot Password?\" button, followed by the start of the \"Sign up\" section with another \"Email\" label."
+  },
+  "c270881a3c1c8ba96c60537a01ba86819a57c65c221e25c31918803590cc6464": {
+    "nodeId": "32314:8059",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Flow diagram of a file upload form with a preview list: \"Empty\" form leads, when the user selects files, to \"Preview\" (files selected and listed but not yet uploaded). Clicking \"Submit\" starts \"Upload\" with progress bars, which leads on form submission to \"Confirmation\" (\"Files are uploaded & form was successfully submitted\") or, on an error while uploading, to \"Error: upload in progress\". Selecting a wrong file format from the preview leads to \"Error: validation file format\" with a red message on the file item."
+  },
+  "c2f00f0171d746060da2bdcd7ef01ccbadc524ca61da6b301e2c4c3b48d46f38": {
+    "nodeId": "29536:27735",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two minimal sliders labelled \"Volume in %\" with range \"0\" to \"100\": the upper one is enabled with the thumb at the middle, the lower one is in the hover state with a pointer cursor on the thumb and a dark tooltip above it showing the current value \"50\"."
+  },
+  "c312401248012ea3ab23814c751fbeeaedf8d6ff2b739ad5f9b072203289b36a": {
+    "nodeId": "4650:7669",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Search field (input-search-medium, enabled) with the label \"Label\" and the entered text \"Input\"; the clear button (cross icon) at the right end shows a grey hover background with a hand cursor on it, illustrating that clicking it clears the input."
+  },
+  "c44eac95c0b46f408fa711938e04a9c52143722379a2265cc970798d4d6da61f": {
+    "nodeId": "29536:27869",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three minimal sliders labelled \"Length in m\" with a scale from 0 to 100. Callout 1 marks the thumb being dragged with a pointer in the hover state while the tooltip shows 50. Callout 2 marks a click on the track near 100, after which the thumb jumps to that position and the tooltip shows 100 (arrow between before and after). The bottom slider in the focus state with a hint text shows the left and right arrow keys decrementing or incrementing the value 50."
+  },
+  "c538b4a7252eeb79ba6cf44931ee57003ba152c64993eeed9d2d378c0fe3e2da": {
+    "nodeId": "29536:27636",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Slider with label \"Length in m\" and thumb at the start, with large range values \"20000\" and \"100000\". The values are aligned to the left and right edges of the track, marked by vertical guide lines, so they do not extend beyond the slider."
+  },
+  "c6771a5a5fba44795cfe16dd3eb0e922f993434e6b1ad6968b6d5063f6d47e2a": {
+    "nodeId": "29536:27998",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a minimal slider labelled \"Area in hectare (ha)\" with a short scale from 1 to 50. A more suitable unit keeps the minimum and maximum values to no more than six characters."
+  },
+  "c8350568f8644922b52f58b31cd26b3bd2dd136062ff016636c7c8a76aa0fec7": {
+    "nodeId": "1898:1220",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Focus order of an input labeled \"Choose a location\" with the value \"STIHL Headquarter\" and a location pin function icon on the right, shown in three steps. Callout 1 marks the focused input field with a thick border, 2 marks the focused function icon button with its own focus outline, and 3 marks the input focused again when navigating back, with the text \"STIHL Headquarter\" selected so it can be deleted in one click."
+  },
+  "c868238f3bd2e20c59eee18826a0736771633e530e5a2704363066617b7dcc22": {
+    "nodeId": "7341:1780",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two search fields with the label \"Label\" and the text \"Input\", each with a clear button (cross) and a submit button (magnifying glass). In the top one the input (1) has the focus ring; in the bottom one the focus ring sits on the submit button (3), skipping the clear function (2), which has no focus ring."
+  },
+  "c997f4807be3ae052c33886a040509ad1b0684e3cf6d310f2a4a8899456fe6aa": {
+    "nodeId": "2496:6234",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Overview of the search input in sizes \"Size Medium\" and \"Size Small\", with states Default, Hover, Focus and Disabled and an \"is invalid\" column. Each field has a \"Label\", a hint text, the text \"Input\", a clear (cross) and a submit (magnifying glass) icon; invalid fields have a red border and the \"System feedback message\" with an error icon, hover has a grey fill, focus a thick dark border, and disabled greyed-out text and icons."
+  },
+  "d8b01ab774047733e2feb4c594368c2666590f059219206cc62d79f806165436": {
+    "nodeId": "44694:7199",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Static frame of the determinate progress bar animation (prototype): an upload item with a file icon, \"Filename.png\", an \"X\" button and an empty grey progress track with \"50%\" at its right end."
+  },
+  "daecb65c4ca7b9e6139376e0642615368f2c3ce8b090f20543e5ed7baa039b4b": {
+    "nodeId": "4650:7797",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Medium search input with the label \"Label\" and the entered text \"Input\", showing a clear (X) icon at the right end of the field with a hand cursor on it, meaning a click removes the entered text."
+  },
+  "de24f1cce6665b4dd8c1b5960f0ce5424aeaff50a0e89a8b04ef2cce7b02e3c1": {
+    "nodeId": "29536:27591",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two input sliders with label \"Lorem Ipsum\", value 50 and range 0 to 100, side by side. The left one, \"Input medium\", has a larger input field; the right one, \"Input small\", has a smaller input field."
+  },
+  "e1dbd7468ff7c56e4cc65c66931a4bf063ce097fd5870bf5f0fcf10636ae4662": {
+    "nodeId": "4672:7111",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Mobile web shop page \"iMOW BERATER\" in the section \"INSTALLATIONSMATERIAL\", listing the product \"Installations-Kit S\" at 104,00 € with a checkbox and an image. A small Input Number labelled \"Menge\" with value 1 and minus and plus buttons keeps the product listing compact; a \"ZURÜCK\" link and an \"ABLAUF ÖFFNEN\" button sit at the bottom."
+  },
+  "e2ee80de3d6573fc0447504623e221d33fe9736398682994cd9780139e9d6f31": {
+    "nodeId": "32314:6578",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of Input File with two parts: (1) the upload field, shown without dropzone (\"Label\", hint \"Max file size: 7 MB. Supported file types: .jpg and .png\", \"Upload files\" button) and with dropzone (\"Label\", \"Drag and drop files here or\", \"Browse files\", hint), and (2) the file list below each field with image thumbnails, \"Filename.png\", \"1.5 MB\" and a remove button per row."
+  },
+  "e5e3dca7d3c0a0e1cdaae7a1bc35fdfd0b9ba12bd49ddeb7dffda975d06e03f8": {
+    "nodeId": "32314:8796",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Input File with the label \"Upload Document\" (1) above the hint text \"Max file size: 7 MB. Supported file types: .pdf, .doc and .docx\" (2) and an outlined \"Upload file\" button with an upload icon below."
+  },
+  "e81cb0b36b0cffca8a2ca34927baac9e53ac63e8ed454d561b81bd236b1b5fb6": {
+    "nodeId": "32314:7035",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "File input labelled \"Upload Document*\" with a red dashed drop zone (\"Drag and drop files here or\", a \"Browse files\" button, \"Max file size: 7 MB. Supported file types: .jpg and .png\") and a red error \"System feedback message\" directly below it, pointed at by callouts 2, 3 and 4. Below it, an item \"Filename.png\" (1.5 MB) with a close button shows its own red \"System feedback message\" pointed at by callout 1."
+  },
+  "ea0155f09a1e9e3301d509778d33dfa7dabd4b13b89d29891835061e0ad02f3b": {
+    "nodeId": "32314:6508",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Building blocks of Input File. The upload field appears as a plain \"Upload files\" button (dropzone: false) or as a dashed dropzone with \"Drag and drop files here or\" and \"Browse files\" (dropzone: true, with hint-in-dropzone true or false), each in the states enabled, hover, drag-over, focus, disabled and invalid (invalid shows a \"System feedback message\"). Further blocks are Preview (icon, image), Progress Indicator (type bar and text; determinate, error and indeterminate with \"Upload status 50%\" and \"Uploading...\"), Upload Item (states uploading, error, success and indeterminate, with layout variants preview list and upload queue) and File List (preview list and upload queue)."
+  },
+  "ea430f87d324ac38d9efa352ab3613143aca56046de223e0bc303a1482d6896a": {
+    "nodeId": "29536:27671",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Slider with label \"Length in m\", range 0 to 100 and thumb at 50 in hover state: a pointer cursor sits on the thumb, the thumb is shaded and a dark tooltip with 50 appears above it."
+  },
+  "ee9477bbfa815fa7c9baa49e12e2653f156a1205ea9b3bf6780fac9e1766c726": {
+    "nodeId": "29536:27949",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two sliders with hint text: a minimal slider labelled \"Length in m\" with a two-line hint of placeholder text and range \"0\" to \"100\", and a default slider labelled \"Length in milimeters (mm)\" with a three-line hint beside a number input showing \"50\" with suffix \"mm\" above the track, illustrating that hints stay at one to three lines."
+  },
+  "f071f8cac03dca0959c52f9c1ae83ccee1c7e01387d5c46a9c743c9d4e120b74": {
+    "nodeId": "32314:6496",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Main component overview of Input File: an upload field with a dashed dropzone (\"Label\", \"Drag and drop files here or\", \"Browse files\", \"Max file size: 7 MB. Supported file types: .jpg and .png\") above a list of five files \"Filename.png\" (1.5 MB) with remove buttons. Beside it, the Figma-only variant \"Input File - Gallery\" shows \"Upload\" tiles in sizes medium and small for the states enabled, hover/drag-over, focus, disabled and invalid, with a warning note that this variant is currently out of scope but planned for a future release."
+  },
+  "f0b76449d2e447b791c752fecd47a899c82e4177c73a19ddc92edbbbfa2035f3": {
+    "nodeId": "2502:3815",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the number input with six numbered callouts: (1) Label, (2) Info Button (optional) beside the label, (3) Hint (optional) below it, (4) Text field showing \"123\", (5) the value text inside the field, and (6) Button, the dark minus and plus buttons to the right of the field."
+  },
+  "f55cef5831b45418583d59d95b0423d861699f1cbd0a21f55794af7d1d0e08f5": {
+    "nodeId": "2607:3974",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the medium password input with six numbered callouts: 1 points at the \"Label\", 2 at the info button (circled i) next to the label, 3 at the hint text below the label, 4 at the text field, 5 at the eye icon on the right (show/hide password) and 6 at the masked input text \"********\"."
+  },
+  "f5f6418a98c6f00d9ca8a766d8374d2d3ced867f0e2cdfd8a26edf9f23820547": {
+    "nodeId": "10637:2731",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Input main component in \"Size Medium\" and \"Size Small\", each showing the states \"Default\", \"Hover\", \"Focus\", \"Disabled\" and \"Read-only\", with each \"Label\", hint text and \"Input\" field. Default and Focus also exist \"is invalid\", with a red border and a \"System feedback message\" under the field; hover has a grey fill, focus a thick dark border, disabled grey text and read-only a light grey fill without border. Below, \"Input Variations\" show fields for \"text, tel, number, email, url\", \"date\" (\"DD/MM/YY\"), \"month\", \"week\" (\"Week XX, XXXX\"), \"time\" (\"HH:MM\") and \"datetime\" (\"DD/MM/YY, HH:MM\"), where all but the first have a trailing calendar or clock icon."
+  },
+  "f683d893b9389f9454fc9eed0df9eddbbe26d42a3ee3fd8531b502f2abea14b3": {
+    "nodeId": "1744:9019",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Mobile shopping cart mockup with a product (\"Product name 2Z\", ART.-NR. 58289808584, € 469.00 instead of € 469.00 old price, quantity 2, € 890.00 statt € 938.00). Below it a single medium input labelled \"Coupon code\" holds \"CODE 1045\", followed by Subtotal € 549.00, Delivery € 29.00, Discount – € 23.50, total € 554.50, \"Contains 19% VAT: € 81.27\", a highlight (orange) \"Buy now\" button, \"Free delivery\" and a legal note about the Privacy Policy, Terms and Cancellation policy."
+  },
+  "f6f7bddf41e65cf0f9df14ae7273b86d307e2d5fd2df82235fe0ba696407c81a": {
+    "nodeId": "32314:6927",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Input File with drop zone (\"Label\", \"Drag and drop files here or\", \"Browse files\", \"Max file size: 7 MB. Supported file types: .jpg and .png\") above a preview list of two \"Filename.png\" (1.5 MB) entries. Callout 1 marks the focused \"Browse files\" button as the first focus target; callout 2 marks the remove (\"X\") button of a list entry, which is focused next."
+  },
+  "f76bc35c0e4257f308b77c71235149c8c5ca8f1614d0fbda08f709b271b8aabe": {
+    "nodeId": "29536:27708",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three input sliders labelled \"Thickness\", each with an input field and suffix \"mm\" above the track and range 0 to 100. The values are 0 (thumb at start, no fill), 50 (thumb in the middle, half filled orange) and 100 (thumb at end, fully filled), showing the input as an alternative way to enter the value."
+  },
+  "fe8fa38e6b9fe9453721038c23f310faf8fb330fd7332d2648a581889770372b": {
+    "nodeId": "29536:27790",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a slider labelled \"Distance in km\" with a vast range from \"0\" to \"5000000\", a value tooltip \"250000\" above the thumb, and many more than five tick marks along the track, which is too dense and imprecise for a discrete slider; a red \"Don't\" badge marks it."
+  }
+}

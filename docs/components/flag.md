@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 19511:2443
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:42:50.205Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:22:57.879Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=19511-2443
 ---
 
@@ -276,7 +276,7 @@ The two Promo flag variants are used depending on the level of emphasis and the 
 
 ![Promo Flag Neutral vs. Highlight](flag/promo-flag-neutral-vs-highlight-53310-12800.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); product-card: grid view (content sizing=hug); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., decorative link, heading copy=Charging and energy management in the STIHL AP system, media area, description, footer, padding=medium, content sizing=hug). Callouts 1, 2. Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Brand Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Decorative Link"._
+_Figure: Two cards using flags. Callout 1 points at a product card (chainsaw image, "Productname", rating "3.5 (80)", "Categorie", short description, "Available now", price "11.199,00 €" incl. VAT, "Compare" checkbox and an orange add-to-cart button) with a dark "Promo Flag" above the product name, the Promo Neutral variant used with a Highlight Button. Callout 2 points at a vertical link card with a photo, an orange "Brand Flag" on the image, the heading "Charging and energy management in the STIHL AP system", a truncated description and a "Decorative Link"._
 
 ### Color usage
 

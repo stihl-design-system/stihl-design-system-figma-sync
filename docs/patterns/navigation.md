@@ -18,10 +18,10 @@ figmaFile: Web Pattern Library
 figmaProject: 03. Platform Libraries
 figmaFileKey: Ie2r0R9QwjEc7O3nrFbXhV
 figmaNodeId: 5381:18
-figmaVersion: "2370898144407684143"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-06-30T14:44:46Z
-syncedAt: 2026-11-04T14:52:57.956Z
+figmaVersion: "2418090261531524003"
+figmaVersionLabel: "Bug Fix: popover slot implementation / content loss"
+figmaVersionCreatedAt: 2026-11-04T18:34:21Z
+syncedAt: 2026-11-05T19:30:27.078Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=5381-18
 ---
 
@@ -65,7 +65,7 @@ Depending on the product context and content complexity, the navigation system c
 
 ![Navigation Structural Patterns](navigation/navigation-structural-patterns-6830-53517.png)
 
-_Figure: Text in the figure: "Top Bar", "Nav Bar", "Header", "Utility Menu (Optional)", "Mega Menu"._
+_Figure: \[unverified\] Wireframe of the Mega Navigation structural pattern, labelled "Header" and made up of a "Top Bar", a "Nav Bar", an optional "Utility Menu (Optional)" and an open "Mega Menu" panel below the Nav Bar._
 
 **Dropdown Navigation**
 
@@ -73,7 +73,7 @@ _Figure: Text in the figure: "Top Bar", "Nav Bar", "Header", "Utility Menu (Opti
 
 ![Navigation Structural Patterns](navigation/navigation-structural-patterns-6830-53546.png)
 
-_Figure: Text in the figure: "Top Bar", "Nav Bar", "Header", "Utility Menu (Optional)", "Dropdown Menu"._
+_Figure: \[unverified\] Wireframe of the Dropdown Navigation structural pattern, labelled "Header" and made up of a "Top Bar", a "Nav Bar", an optional "Utility Menu (Optional)" and a "Dropdown Menu" opening below the Nav Bar._
 
 **Sidebar Navigation**
 
@@ -81,7 +81,7 @@ _Figure: Text in the figure: "Top Bar", "Nav Bar", "Header", "Utility Menu (Opti
 
 ![Navigation Structural Patterns](navigation/navigation-structural-patterns-6830-53575.png)
 
-_Figure: Text in the figure: "Top Bar", "Nav Bar (Optional)", "Header", "Utility Menu (Optional)", "Sidebar"._
+_Figure: \[unverified\] Wireframe of the Sidebar Navigation structural pattern, labelled "Header" and made up of a "Top Bar", an optional "Nav Bar (Optional)", an optional "Utility Menu (Optional)" and a "Sidebar" for the section navigation._
 
 **Reduced Navigation**
 
@@ -89,7 +89,7 @@ _Figure: Text in the figure: "Top Bar", "Nav Bar (Optional)", "Header", "Utility
 
 ![Navigation Structural Patterns](navigation/navigation-structural-patterns-6830-53487.png)
 
-_Figure: Text in the figure: "Top Bar", "Header"._
+_Figure: \[unverified\] Wireframe of the Reduced Navigation structural pattern, where the "Header" consists only of a "Top Bar"._
 
 #### Contribute
 
@@ -105,15 +105,15 @@ The navigation is optimized for browsing and product discovery. It provides acce
 
 ![Mega Navigation: Examples](navigation/mega-navigation-examples-6558-29974.png)
 
-_Figure: Shows promo-banner (type=secondary, viewport=XL, content=usps); top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); flag (label=Offer, color=promo: highlight); button (button text=To the Offer, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Desktop closed", "Free shipping on orders over €49", "Delivery or local pickup available", "30-day return policy", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "outdoor time. Chainsaws from STIHL.", "Quality and Ease of Use", "Offer", "MS 180", "399,00 €", "from €399.00\*", "To the Offer"._
+_Figure: \[unverified\] E-Shop example of the Mega Navigation on desktop in its closed state ("Desktop closed"): a secondary promo-banner with the USPs "Free shipping on orders over €49", "Delivery or local pickup available" and "30-day return policy", a top-bar with "Search Site", "Contact", "Dealer", "Wishlist", "Cart" (badge "3"), "STIHL World" and "Login", and a nav-bar with "Products", "Accessories", "Professionals", "Advice" and "Support", above a hero with the "Offer" flag, product "MS 180" at "399,00 €" and a highlight button "To the Offer"._
 
 ![Mega Navigation: Examples](navigation/mega-navigation-examples-6833-52880.png)
 
-_Figure: Shows promo-banner (type=secondary, viewport=XL, content=usps); top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); action-item (label=Contact, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Dealer, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Wishlist, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Cart, number indicator, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=vertical); utility-menu (alignment=right, expanded=false); anchor element (label=Login, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); button (button text=Log in, variant=filled, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Create Account, variant=ghost, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); divider (Direction=horizontal). Text in the figure: "Desktop open", "Free shipping on orders over €49", "Delivery or local pickup available", "30-day return policy", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Log in", "Create Account", "My Orders", "My saved items", "My reservations", "Products", "Accessories", "Professionals", "Advice", "Support", "outdoor time. Chainsaws from STIHL.", "Quality and Ease of Use"._
+_Figure: \[unverified\] E-Shop example of the Mega Navigation on desktop with the utility menu open ("Desktop open"): the top-bar action items "Contact", "Dealer", "Wishlist" and "Cart" (badge "3") sit left of a vertical divider, and the "Login" item is active with a chevron, expanding a right-aligned utility-menu containing a filled "Log in" button, a ghost "Create Account" button, a horizontal divider and the links "My Orders", "My saved items" and "My reservations"; the promo-banner, "Search Site" and the nav-bar items "Products", "Accessories", "Professionals", "Advice" and "Support" remain visible._
 
 ![Mega Navigation: Examples](navigation/mega-navigation-examples-6833-53286.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2); flag (label=Offer, color=promo: highlight); button (button text=To the Offer, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, viewport=m + s, icon=right); divider (Direction=horizontal); action-item (label=STIHL World, state=enabled, stacking=horizontal, leading-element=icon, chevron=true, label-weight=regular, indent=false); action-item (label=Dealer, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Wishlist, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Contact, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false). Text in the figure: "Mobile closed & open", "3", "Cart", "Login", "Menu", "Search Site", "outdoor time. Chainsaws from STIHL.", "Quality and Ease of Use", "Offer", "MS 180", "399,00 €", "from €399.00\*", "To the Offer", "\*Manufacturer's suggested retail price (for sets when purchasing individual c...", "Products", "Accessories", "Professionals", "Advice", "Support", "STIHL World", "Dealer", "Wishlist", "Contact"._
+_Figure: \[unverified\] E-Shop example of the Mega Navigation on mobile ("Mobile closed & open"): the closed state shows a top-bar with logo, "Search Site", "Cart" (badge "3"), "Login" and a "Menu" button above the "Offer" hero for "MS 180" at "399,00 €", and the open state shows a full-width menu listing "Products", "Accessories", "Professionals", "Advice" and "Support" with right-pointing nav buttons, a divider, and the horizontal action items "STIHL World" (with chevron), "Dealer", "Wishlist" and "Contact"._
 
 ## Dropdown Navigation: Examples
 
@@ -125,15 +125,15 @@ A content-driven structure highlights brand identity, services, press, and compa
 
 ![Dropdown Navigation: Examples](navigation/dropdown-navigation-examples-6833-54416.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=true, number areas=2); nav-bar (variant=main, breakpoint=xl); title (title text=Welcome to STIHL, size=xl, viewport=desktop). Text in the figure: "Desktop closed", "Corporate", "Search Site", "Contact", "English", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "Welcome to STIHL", "ƒ"._
+_Figure: Corporate example of the Dropdown Navigation on desktop in its closed state ("Desktop closed"): an orange STIHL logo with "Corporate", a "Search Site" field in the centre, the "Contact" and "English" items at the right, and below them a nav-bar with the chevron items "About STIHL", "Sustainability", "Careers", "STIHL Journal" and "Press", followed by a hero photo with the title "Welcome to STIHL"._
 
 ![Dropdown Navigation: Examples](navigation/dropdown-navigation-examples-6833-55224.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=true, number areas=2); nav-bar (variant=main, breakpoint=l); title (title text=Welcome to STIHL, size=xl, viewport=desktop). Text in the figure: "Desktop open", "corporate", "Search Site", "Contact", "English", "Search Language", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español", "About STIHL", "Sustainability", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest", "Careers"._
+_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=true, number areas=2); nav-bar (variant=main, breakpoint=l); popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); title (title text=Welcome to STIHL, size=xl, viewport=desktop). Text in the figure: "Desktop open", "corporate", "Search Site", "Contact", "English", "Search Language", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy"._
 
 ![Dropdown Navigation: Examples](navigation/dropdown-navigation-examples-6833-54513.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=2); title (title text=Welcome to STIHL, size=xl, viewport=mobile); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, viewport=m + s, icon=right); divider (Direction=horizontal); action-item (label=English, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Contact, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false). Text in the figure: "Mobile closed & open", "Corporate", "Search Site", "Menu", "Welcome to STIHL", "ƒ", "3", "Cart", "Login", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "English", "Contact"._
+_Figure: \[unverified\] Corporate example of the Dropdown Navigation on mobile ("Mobile closed & open"): the closed state shows a compact top-bar with logo, "Search Site" and a "Menu" button above the "Welcome to STIHL" hero, and the open state shows a full-width menu with right-pointing nav buttons "About STIHL", "Sustainability", "Careers", "STIHL Journal" and "Press", a divider, and the horizontal action items "English" and "Contact"._
 
 ## Sidebar Navigation: Examples
 
@@ -147,11 +147,11 @@ The sidebar provides fast access to categories and search functions, supporting 
 
 ![Sidebar Navigation: Examples](navigation/sidebar-navigation-examples-7133-35827.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=xl, brand add-on=true, number areas=2); nav-bar (variant=full width, breakpoint=xl); ❌ DEPRECATED - interactiv-info-icon (state=default); button (button text=Download product as PDF, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); divider (Direction=horizontal); number-indicator (type=default, minimized=false); action-item (label=Parts Lists, number indicator, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Documents, number indicator, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Repair Times, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Service Packages, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Special Tools, number indicator, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Desktop", "SERVICE COMMUNICATION", "Search for products, descriptions, documents", "Picklist", "Bookmarks", "Help", "MM", "Catalogue", "Bar & Chain Finders", "Utilities", "Support News", "MS 180", "Assemblies", "30", "Parts Lists", "234", "Documents", "5", "Technical Data", "Repair Times", "Bar & chain combinations", "Service kits", "2", "Service Packages"._
+_Figure: Desktop layout of the STIHL Service Communication tool: a top-bar with STIHL logo, platform name SERVICE COMMUNICATION, a search field ("Search for products, descriptions, documents") and the icon actions Picklist, Bookmarks, Help and the user avatar "MM", above a nav-bar with Catalogue, Bar & Chain Finders, Utilities and Support News. Below it a left sidebar titled "MS 180" with an info icon lists Assemblies (active, 30), Parts Lists (234), Documents (5), Technical Data, Repair Times, Bar & chain combinations, Service kits (2), Service Packages, Support News (5), Cutting Attachments (23) and Special Tools (46), next to the main content with breadcrumb, the heading "Assemblies", a search field, a "System choice" / "A - Z" toggle and a grid of assembly cards such as Muffler and Rewind Starter._
 
 ![Sidebar Navigation: Examples](navigation/sidebar-navigation-examples-7133-36200.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=2); top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, viewport=m + s, icon=right); divider (Direction=horizontal); action-item (label=Picklist, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Bookmarks, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Help, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false). Text in the figure: "Mobile closed & open", "Service Communication", "Search Site", "Menu", "Connected", "STIHL World", "MM", "Catalogue", "Bar & Chain Finders", "Utilities", "Support News", "Picklist", "Bookmarks", "Help"._
+_Figure: Two mobile screens of the Service Communication tool, closed and open. The closed screen shows the top-bar with logo and platform name, a "Search Site" field and a "Menu" button, then breadcrumb, the title "MS 180", "Add to bookmarks", "Download as PDF", a search field, a "System choice" / "A - Z" toggle and cards. The open screen shows a side menu with a close icon, the entries Catalogue, Bar & Chain Finders, Utilities and Support News with chevrons, and below a divider Picklist, Bookmarks and Help, while the page behind is dimmed._
 
 **Connected Portal**
 
@@ -159,11 +159,11 @@ A logged-in user portal designed to navigate between tools and manage STIHL prod
 
 ![Sidebar Navigation: Examples](navigation/sidebar-navigation-examples-6833-55606.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=xl, brand add-on=true, number areas=1); sidebar-menu\_expandable (overflow=false). Text in the figure: "Desktop", "Connected", "STIHL World", "MM", "Fleet Management", "Equipment", "Filtered lists", "3", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information"._
+_Figure: Desktop layout of the STIHL Connected portal: a top-bar with the Connected logo and platform name CONNECTED, the "STIHL World" menu and the user avatar "MM", and an expandable left sidebar with the group Fleet Management (Equipment active with sub-item Filtered lists, badge 3, Connected Hub, Energy Evaluation), the group Organization (Teams, Employees, Organization Settings, Maintenance Settings), and Contact and Legal Information at the bottom. The main area shows the heading "EQUIPMENT (12)" with Filter, search, Add equipment and Export list buttons above a sortable table with the columns Nickname, Model, Category, Drive and Serial number._
 
 ![Sidebar Navigation: Examples](navigation/sidebar-navigation-examples-6833-55655.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=active, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); accordion-single (state=enabled, size=extra-small, expansion-indicator=left, expanded=false, flush=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Organization, breakpoint=l + xl, variant=group title); action-item (label=Teams, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Employees, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Organization Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false). Text in the figure: "Mobile closed & open", "Connected", "STIHL World", "MM", "Menu", "Fleet Management", "Equipment", "Filtered lists", "3", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information"._
+_Figure: Two mobile screens of the Connected portal, closed and open. The closed screen shows the top-bar with the Connected logo, "STIHL World", the avatar "MM" and a "Menu" button above the heading "EQUIPMENT (12)", a Filter button, a search field and a table with the Nickname column. The open screen shows a side menu with a close icon and the groups Fleet Management (Equipment active, Filtered lists with badge 3, Connected Hub, Energy Evaluation), Organization (Teams, Employees, Organization Settings, Maintenance Settings) and Contact and Legal Information, with the page behind dimmed._
 
 ## Reduced Navigation: Examples
 
@@ -175,11 +175,11 @@ A minimal, linear flow that guides users step-by-step through the purchase proce
 
 ![Reduced Navigation: Examples](navigation/reduced-navigation-examples-6838-60728.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=xl, brand add-on=false, number areas=1). Text in the figure: "Desktop", "Sicherer Checkout-Prozess"._
+_Figure: Desktop checkout page with a reduced top-bar that contains only the STIHL logo and a lock icon with the text "Sicherer Checkout-Prozess", without navigation or utility actions. Below it the page shows the link "Zurück zum Warenkorb", the heading "BESTELLPROZESS", step 1 "Lieferoptionen", the article FSA 50, AutoCut C 3-2 and two delivery options, "Lieferung" (selected) and "Abholung im Fachhandel"._
 
 ![Reduced Navigation: Examples](navigation/reduced-navigation-examples-6838-61101.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=1). Text in the figure: "Mobile", "Sicherer Checkout-Prozess"._
+_Figure: Mobile checkout page with a reduced top-bar that contains only the STIHL logo and a lock icon with the text "Sicherer Checkout-Prozess". Below it the page shows the link "Zurück zum Warenkorb", the heading "BESTELLPROZESS", a stepper with the steps 1 to 5, the heading "LIEFEROPTIONEN", the subheading "VERSANDFÄHIGE ARTIKEL" and a product image of a trimmer._
 
 ## Header: Overview
 
@@ -191,7 +191,7 @@ It includes links to key sections — like **Home**, **Products**, or **Services
 
 ![Header: Overview](navigation/header-overview-6583-79294.png)
 
-_Figure: Text in the figure: "Top Bar", "Nav Bar (Optional)", "Header", "Utility Menu (Optional)"._
+_Figure: Schematic of the Header, labelled "Header": a wide container with a "Top Bar" at the top and below it a "Nav Bar (Optional)". A "Utility Menu (Optional)" box overlaps the right end of the Top Bar and Nav Bar and extends below them._
 
 ### Header Variants
 
@@ -201,7 +201,7 @@ In addition to displaying **logos** and **platform names**, the Top Bar includes
 
 ![Top Bar – Only The basic version of the Header.](navigation/top-bar-only-the-basic-version-of-the-header-6576-37764.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=true, number areas=2); annotation-circle (number=2, type=left, color=blue). Text in the figure: "Platform name", "Search Site", "Contact"._
+_Figure: Top Bar as the basic version of the Header: the STIHL logo with the platform name "PLATFORM NAME", a rounded search field "Search Site" with a magnifier icon and a "Contact" icon action with an envelope._
 
 #### Top Bar + Nav Bar Adds a primary navigation layer to the Top Bar.
 
@@ -209,7 +209,7 @@ The Nav Bar represents the **primary level of navigation** and defines the core 
 
 ![Top Bar + Nav Bar Adds a primary navigation layer to the Top Bar.](navigation/top-bar-nav-bar-adds-a-primary-navigation-layer-to-the-top-b-6583-79722.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "Products", "Accessories", "Professionals", "Advice", "Support"._
+_Figure: Top Bar with a Nav Bar below it. The Top Bar shows the STIHL logo, a "Search Site" field and the icon actions Contact, Dealer, Wishlist and Cart with a badge showing 3. The Nav Bar underneath lists the primary navigation entries Products, Accessories, Professionals, Advice and Support._
 
 #### Top Bar + Nav Bar (Optional) + Utility Menu A fully featured header, enhanced with a Utility Menu.
 
@@ -225,7 +225,7 @@ The reduced variant of the Top Bar is typically used in **focused flows**, such 
 
 ![Top Bar – reduced Minimal header for focused user flows.](navigation/top-bar-reduced-minimal-header-for-focused-user-flows-6583-79419.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=1). Text in the figure: "Sicherer Checkout-Prozess"._
+_Figure: Reduced Top Bar (grid variant main, breakpoint l, brand add-on false, number areas 1) for a focused flow: only the orange STIHL logo on the left and a lock icon with the text "Sicherer Checkout-Prozess" next to it, with no search, action items or avatar, above an empty page area._
 
 #### Contribute
 
@@ -237,7 +237,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Header: Pattern](navigation/header-pattern-6240-50805.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); top-bar (grid variant=main, breakpoint=m, brand add-on=false, number areas=2); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2). Text in the figure: "Search Site", "Label", "Button nav", "viewport: XL", "viewport: L", "viewport: M", "viewport: S"._
+_Figure: The Header pattern at four viewports. At "viewport: XL" and "viewport: L" a Top Bar (logo, "Search Site" field, six icon action items labelled "Label" with a divider before the last two) sits above a Nav Bar row of seven "Button nav" items. At "viewport: M" and "viewport: S" only the Top Bar is shown, with the search field moved below the logo and action items, and fewer action items at S._
 
 ### Further guidelines
 
@@ -266,7 +266,7 @@ Overview:
 
 ![Header: Top Bar](navigation/header-top-bar-5381-2193.png)
 
-_Figure: Shows top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); top-bar\_nav (alignment=right); top-bar\_logo (internal (do not modify): add-on, internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): s); top-bar\_logo (internal (do not modify): add-on, internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): s); top-bar\_nav (alignment=center); divider (Direction=horizontal). Text in the figure: "Main Component", "brand add-on: false", "brand add-on: true", "Label", "This is a Platform name", "Search Site", "number areas: 1", "grid variant: main", "grid variant: full", "number areas: 2"._
+_Figure: Overview of the Top Bar main component on a matrix: columns "brand add-on: false" (logo only) and "brand add-on: true" (logo plus "This is a Platform name"), rows "number areas: 1" and "number areas: 2" each for "grid variant: main" and "grid variant: full". Each cell shows the four breakpoints from XL down to S; one-area bars have logo and action items, two-area bars add the "Search Site" field, which moves below the logo at M and S, and with the add-on at S the platform name wraps onto two lines._
 
 ### Further guidelines
 
@@ -308,7 +308,7 @@ The Top Bar consists of the following layout areas, which build on each other in
 
 ![Anatomy](navigation/anatomy-6576-39330.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); annotation-circle (number=a, type=bottom, color=blue); annotation-circle (number=b, type=bottom, color=blue); annotation-circle (number=c, type=bottom, color=blue). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM", "a", "b", "c"._
+_Figure: Anatomy of the Top Bar (grid variant main, breakpoint xl, brand add-on false, number areas 2) with three coloured areas: a is the Brand Area (green) holding the STIHL logo, b is the Primary Area (yellow) holding the "Search Site" field, and c is the Secondary Area (blue) holding the action items Contact, Dealer, Wishlist, Cart (badge 3), STIHL World with a chevron, and the "MM" avatar._
 
 ### Area Configuration & Content
 
@@ -336,7 +336,7 @@ Alignment and spacing may vary based on the elements included.
 
 ![Two-Area Layout](navigation/two-area-layout-7624-39982.png)
 
-_Figure: Shows annotation-circle (number=a, type=top, color=blue); annotation-circle (number=b, type=top, color=blue); top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); annotation-circle (number=1, type=bottom, color=blue); top-bar (grid variant=main, breakpoint=xl, brand add-on=true, number areas=1); annotation-circle (number=2, type=bottom, color=blue); top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=1). Callouts 1, 2. Text in the figure: "a", "b", "Brand Add-on", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM", "Search Site", "Secure Checkout"._
+_Figure: Three Top Bars in the two-area layout, each with a Brand Area (a, logo plus "Brand Add-on") on the left and a Primary Area (b) to its right. Callout 1 points at the Top Bar Nav action items (Contact, Dealer, Wishlist, Cart with badge 3, STIHL World, "MM" avatar), callout 2 at the "Search Site" field in the second bar and at the icon-text combination "Secure Checkout" in the third bar._
 
 #### Three-Area Layout
 
@@ -362,7 +362,7 @@ Secondary Area
 
 ![Three-Area Layout](navigation/three-area-layout-7624-41127.png)
 
-_Figure: Shows annotation-circle (number=a, type=top, color=blue); annotation-circle (number=c, type=top, color=blue); top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); annotation-circle (number=1, type=bottom, color=blue); annotation-circle (number=2, type=bottom, color=blue). Callouts 1, 2. Text in the figure: "a", "c", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM"._
+_Figure: Top Bar in the three-area layout: the Brand Area (a, green) with the STIHL logo, the Primary Area (yellow) with the "Search Site" field, and the Secondary Area (c, blue) with the Top Bar Nav items Contact, Dealer, Wishlist, Cart (badge 3), STIHL World and the "MM" avatar. Callout 1 points at the search field in the Primary Area and callout 2 at the Top Bar Nav in the Secondary Area._
 
 ### Responsive Behaviour
 
@@ -384,7 +384,7 @@ Primary Area
 
 ![Top Bar responsive behavior – Two-area layout](navigation/top-bar-responsive-behavior-two-area-layout-6576-39553.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); top-bar (variant=full, breakpoint=xl, logo add-on=false, number areas=1); top-bar (variant=full, breakpoint=l, logo add-on=false, number areas=1); top-bar (variant=full, breakpoint=m, logo add-on=false, number areas=1); top-bar (variant=full, breakpoint=s, logo add-on=false, number areas=1); annotation-circle (number=2, type=center, color=blue); top-bar (variant=full, breakpoint=xl, logo add-on=true, number areas=1); top-bar (variant=full, breakpoint=l, logo add-on=true, number areas=1); top-bar (variant=full, breakpoint=m, logo add-on=true, number areas=1); top-bar (variant=full, breakpoint=s, logo add-on=true, number areas=1). Callouts 1, 2. Text in the figure: "Two-area layout (Default)", "Brand Area", "Primary Area", "Label", "breakpoint xl", "breakpoint l", "breakpoint m", "breakpoint s", "Two-area layout (with Brand Add-On)", "Brand Add-On", "This is a Platform name"._
+_Figure: Responsive behavior of the two-area Top Bar, as schematic area blocks next to real bars at breakpoints xl, l, m and s. Callout 1, "Two-area layout (Default)": Brand Area and Primary Area stay side by side in one row at every breakpoint. Callout 2, "Two-area layout (with Brand Add-On)": the Brand Area includes the Brand Add-On ("This is a Platform name") and stays in one row at xl, l and m, but at s the Primary Area is stacked below the Brand Area._
 
 #### Top Bar responsive behavior – Three-area layout
 
@@ -406,7 +406,7 @@ Secondary Area
 
 ![Top Bar responsive behavior – Three-area layout](navigation/top-bar-responsive-behavior-three-area-layout-6576-39460.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); top-bar (variant=full, breakpoint=xl, logo add-on=false, number areas=2); top-bar (variant=full, breakpoint=l, logo add-on=false, number areas=2); top-bar (variant=full, breakpoint=m, logo add-on=false, number areas=2); top-bar (variant=full, breakpoint=s, logo add-on=false, number areas=2); annotation-circle (number=2, type=center, color=blue); top-bar (variant=full, breakpoint=xl, logo add-on=true, number areas=2); top-bar (variant=full, breakpoint=l, logo add-on=true, number areas=2); top-bar (variant=full, breakpoint=m, logo add-on=true, number areas=2); top-bar (variant=full, breakpoint=s, logo add-on=true, number areas=2). Callouts 1, 2. Text in the figure: "Three-area layout (Default)", "Brand Area", "Primary Area", "Secondary Area", "Search Site", "Label", "Breakpoint XL", "Breakpoint L", "Breakpoint M", "Breakpoint S", "Three-area layout (with Brand Add-On)", "Brand Add-On", "This is a Platform name"._
+_Figure: Responsive behavior of the three-area Top Bar, as schematic blocks (Brand Area, Primary Area, Secondary Area) next to real bars at breakpoints xl, l, m and s. Callout 1, "Three-area layout (Default)": all three areas are in one row at xl and l; at m and s the Primary Area with the "Search Site" field drops below the Brand Area and Secondary Area. Callout 2, "Three-area layout (with Brand Add-On)": same at xl and l and at m; at s the Brand Area with Brand Add-On is on top and the Primary Area and Secondary Area sit side by side below it._
 
 #### Combinations and flexibility
 
@@ -418,7 +418,7 @@ For example, if the Search function should be prominent on desktop but takes a s
 
 ![Combinations and flexibility](navigation/combinations-and-flexibility-6576-39628.png)
 
-_Figure: Shows top-bar (variant=full, breakpoint=xl, logo add-on=false, number areas=2); top-bar (variant=full, breakpoint=s, logo add-on=false, number areas=1). Text in the figure: "Brand Area", "Primary Area", "Secondary Area", "Breakpoint XL", "Search Site", "Label", "Breakpoint S", "Search"._
+_Figure: Example of a per-breakpoint customization: at breakpoint xl the Top Bar shows the full "Search Site" field in the Primary Area between Brand Area and Secondary Area, while at breakpoint s the same search is shown as a "Search" action item (magnifier icon) in the Primary Area next to the logo, highlighted with a purple frame and an arrow from the xl search field._
 
 ### Grid Variants
 
@@ -442,19 +442,19 @@ The Top Bar can be configured using two layout variants:
 
 ![Grid Variants](navigation/grid-variants-6885-67932.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); annotation-circle (number=2a, type=center, color=blue); annotation-circle (number=2b, type=center, color=blue); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2). Callouts 1. Text in the figure: "Search Site", "Label", "main", "2a", "Full", "2b", "Menu"._
+_Figure: Callout 1: Top Bar with grid variant "main" (breakpoint l), whose content aligns with the main content area, shown above a peach "MAIN" content block that is inset from the edges. Callout 2a: grid variant "Full" at the same width, where logo and action items sit near the screen edges above a lilac "FULL" block spanning the whole width. Callout 2b: the Full variant at a narrow breakpoint (s), with logo, two action items and a "Menu" item, the "Search Site" field below, and a full-width "FULL" block._
 
 #### Do not modify the breakpoint properties of nested components.
 
 ![Do not modify the breakpoint properties of nested components.](navigation/do-not-modify-the-breakpoint-properties-of-nested-components-13494-38411.png)
 
-_Figure: Don't example. Text in the figure: "Property panel of the top-bar component"._
+_Figure: Don't example: the "Property panel of the top-bar component" (grid variant main, breakpoint xl, brand add-on on, number areas 1) with the nested components top-bar\_logo, top-bar\_logo-helper and top-bar\_brand-add-on expanded. The internal (do not modify) breakpoint dropdowns of each nested component are highlighted in purple, marking that these nested breakpoint properties must not be changed individually._
 
 #### Do modify the overall breakpoint property that’s affecting all nested components.
 
 ![Do modify the overall breakpoint property that’s affecting all nested components.](navigation/do-modify-the-overall-breakpoint-property-that-s-affecting-a-13528-38623.png)
 
-_Figure: Do example. Text in the figure: "Property panel of the top-bar component"._
+_Figure: Do example: the "Property panel of the top-bar component" (grid variant main, breakpoint xl, brand add-on on, number areas 1) with the nested components expanded. Only the top-level breakpoint dropdown (xl) is highlighted in purple, marking that the overall breakpoint property is the one to change, as it affects all nested components._
 
 ### Scroll behaviour
 
@@ -471,7 +471,7 @@ The Header adapts dynamically to the user's scroll direction to optimize visibil
 
 ![Motion](navigation/motion-7624-39905.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue); annotation-circle (number=4, type=center, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "Top Bar", "Nav Bar"._
+_Figure: Four stacked states of the navigation scroll behavior, each a white frame with colored bars labeled "Top Bar" and "Nav Bar". Callout 1 shows Top Bar above Nav Bar at the page top; callout 2 shows only the Top Bar after scrolling down (mouse icon with a downward double chevron); callout 3 shows Top Bar and Nav Bar again after scrolling up (upward double chevron above a mouse icon); callout 4 shows Top Bar and Nav Bar in the final state._
 
 ## Top Bar: Brand Area
 
@@ -489,7 +489,7 @@ The Brand Area consists of two interchangeable elements, offering maximum flexib
 
 ![Elements](navigation/elements-6576-39360.png)
 
-_Figure: Shows top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); annotation-circle (number=1, type=left, color=blue); top-bar\_logo (internal (do not modify): add-on, internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); annotation-circle (number=2a, type=right, color=blue); annotation-circle (number=2b, type=right, color=blue); annotation-circle (number=2c, type=right, color=blue). Callouts 1. Text in the figure: "This is a Platform name", "2a", "Official importer", "Company name goes here", "2b", "❖ Placeholder", "2c"._
+_Figure: Brand Area elements on a light background. Callout 1 points at the orange STIHL logo alone; the second group shows the logo with a brand add-on in three variants: 2a "This is a Platform name" as a single-line title, 2b "Official importer" with the second line "Company name goes here" as a double-line title, and 2c a dashed purple "Placeholder" instance for an additional logo._
 
 ### Logo
 
@@ -499,13 +499,13 @@ Otherwise it may cause unexpected behaviour.
 
 ![Don’t modify the ‘logo’ element directly.](navigation/don-t-modify-the-logo-element-directly-13268-46392.png)
 
-_Figure: Don't example. Shows top-bar (grid variant=full, breakpoint=m, brand add-on=false, number areas=1). Text in the figure: "Top Bar - Logo selected", "Property panel of the logo component", "Label"._
+_Figure: Don't example: "Top Bar - Logo selected" shows a top bar with the STIHL logo selected directly (highlighted in purple) next to six icon items labeled "Label", and the "Property panel of the logo component" shows the logo component with its type dropdown (default) highlighted and logos set to main. Modifying the logo element directly this way may cause unexpected behaviour._
 
 #### Do modify the ‘logo’ element through the Top Bar component property panel.
 
 ![Do modify the ‘logo’ element through the Top Bar component property panel.](navigation/do-modify-the-logo-element-through-the-top-bar-component-pro-13494-38914.png)
 
-_Figure: Do example. Shows top-bar (grid variant=full, breakpoint=m, brand add-on=false, number areas=1). Text in the figure: "Top Bar - Entire component selected", "Property panel of the top-bar component", "Label"._
+_Figure: Do example: "Top Bar - Entire component selected" shows the whole top bar highlighted in purple (STIHL logo and six icon items labeled "Label"), and the "Property panel of the top-bar component" (grid variant main, breakpoint xl, brand add-on on, number areas 1) has the logo variant dropdown (main) under top-bar\_logo-helper highlighted. The logo is modified through the Top Bar property panel._
 
 ### Brand Add-On
 
@@ -515,7 +515,7 @@ On the right are examples of how the Brand Add-On can be used.
 
 ![Brand Add-On](navigation/brand-add-on-6583-53824.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=xl, brand add-on=true, number areas=2); top-bar (grid variant=full, breakpoint=xl, brand add-on=true, number areas=1); top-bar\_logo-helper (breakpoint=m - xl, variant=main); top-bar\_nav (alignment=right). Text in the figure: "STIHL shop with anniversary add-on", "Search Site", "Contact", "Dealer search", "Wishlist", "Cart", "STIHL World", "Login", "STIHL Connected portal", "STIHL Connected", "Label", "STHIL US shop with dealer information", "Metropolitan Lumber & Supply", "Open until 6:00pm", "(2)", "STHIL Official Importer", "Official importer", "Company name goes here"._
+_Figure: Four top bar examples using the Brand Add-On: "STIHL shop with anniversary add-on" (STIHL logo with a 100 Years mark, search field "Search Site", and icons Contact, Dealer search, Wishlist, Cart, STIHL World, Login); "STIHL Connected portal" (STIHL Connected logo and title with two "Label" icons); "STHIL US shop with dealer information" (STIHL logo with dealer name "Metropolitan Lumber & Supply", "Open until 6:00pm", five-star rating "(2)", search field and six "Label" icons); and "STHIL Official Importer" (STIHL logo with "Official importer" and "Company name goes here", search field and six "Label" icons)._
 
 ### Brand Add-On max length
 
@@ -526,7 +526,7 @@ To ensure proper spacing and visual consistency, the following character limits 
 
 ![Brand Add-On max length](navigation/brand-add-on-max-length-6576-39660.png)
 
-_Figure: Shows top-bar\_logo (internal (do not modify): add-on, internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "This is a Platform name", "Max. 24 Characters", "Official importer", "Company name goes here", "Line 1: Max. 14 Characters", "Line 2: Max. 18 Characters"._
+_Figure: Maximum lengths for Brand Add-On titles next to the STIHL logo. Callout 1 is the single-line title "This is a Platform name" with a limit of "Max. 24 Characters"; callout 2 is the double-line title "Official importer" / "Company name goes here" with "Line 1: Max. 14 Characters" and "Line 2: Max. 18 Characters"._
 
 ### Link Behavior
 
@@ -536,7 +536,7 @@ The most common link destination is the product’s main homepage.
 
 ![Link Behavior](navigation/link-behavior-7673-39283.png)
 
-_Figure: Shows top-bar\_logo (internal (do not modify): add-on, internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl). Text in the figure: "Link 1", "Link 2", "This is a Platform name"._
+_Figure: The STIHL logo with the brand add-on title "This is a Platform name", each outlined in purple as a separate link target: "Link 1" for the logo and "Link 2" for the add-on title. Both are linkable, and they should preferably share the same destination._
 
 ### Additional Logo usage
 
@@ -546,7 +546,7 @@ Ensure the additional logo remains smaller than the main logo. To obtain a visua
 
 ![Additional Logo usage](navigation/additional-logo-usage-13470-37471.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=1); top-bar (grid variant=main, breakpoint=m, brand add-on=false, number areas=1). Text in the figure: "breakpoint: xl – m", "❖ Placeholder", "Label", "Safety Padding"._
+_Figure: Adding another logo to the top bar for "breakpoint: xl – m". In the upper top bar the dashed purple "Placeholder" (.placeholder: generic) next to the STIHL logo is replaced via a "Swap instance" panel (Navigation library, 100-years-logo), and in the lower top bar the swapped 100 Years logo sits smaller than the STIHL logo; both show a "Safety Padding" dashed marker beside the additional logo, followed by six "Label" icons._
 
 ## Top Bar: Primary and Secondary (Optional) Area
 
@@ -558,7 +558,7 @@ The Top Bar uses the Input Search Component from the [Core Component Library](ht
 
 ![Search](navigation/search-6576-39375.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); input-search (system feedback, placeholder, submit button, hint, size=medium, state=enabled, invalid=false); input-search (system feedback, placeholder, submit button, size=medium, state=enabled, invalid=false); input-search (system feedback, submit button, placeholder, size=medium, state=hover, invalid=false); input-search (system feedback, placeholder, submit button, size=medium, state=focus, invalid=false). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM", "Input Search Core Componets", "Search site", "Input Search Adjusted for the Top Bar", "Enabled", "Hover", "Focus"._
+_Figure: A Top Bar (xl, two areas) with the STIHL logo, a pill-shaped "Search Site" input and action items, above a comparison of "Input Search Core Componets" (a rectangular "Search site" field with a search icon) and "Input Search Adjusted for the Top Bar" (the same field with a fully rounded corner radius). An arrow points from the core input to the adjusted one, which is shown in the states Enabled (thin outline), Hover (grey fill) and Focus (thicker outline)._
 
 #### Icon with Text (for Reduced Navigation)
 
@@ -568,7 +568,7 @@ This element can be placed inside the Primary Area of the Top Bar.
 
 ![Icon with Text (for Reduced Navigation)](navigation/icon-with-text-for-reduced-navigation-6576-39393.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=1). Text in the figure: "Secure Checkout"._
+_Figure: A reduced Top Bar (xl, one area) containing only the STIHL logo and a lock icon with the text "Secure Checkout" in the Primary Area, with no search field or other action items._
 
 #### Top Bar Nav
 
@@ -578,7 +578,7 @@ It consists of a group of **Action Items (1), Avatar (2), and Divider (3).**
 
 ![Top Bar Nav](navigation/top-bar-nav-6885-68867.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); annotation-circle (number=1, type=bottom, color=blue); annotation-circle (number=3, type=bottom, color=blue); annotation-circle (number=2, type=bottom, color=blue). Callouts 1, 2, 3. Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM"._
+_Figure: A Top Bar (xl, two areas) with logo, search field and, on the right, the Top Bar Nav with the action items Contact, Dealer, Wishlist, Cart (with a count badge of 3) and STIHL World (with chevron), a vertical divider and an initials avatar "MM". Callout 1 marks the Action Items, callout 2 the Avatar and callout 3 the Divider._
 
 1. **Action Items** An Action Item can be either a button or a link, depending on its function — whether it navigates to a page or triggers a Utility Menu. They are mainly used for user tools and system-level actions such as Login, Cart, Wishlist and Language Selector. Each item includes the following elements:
    1. **Icon**
@@ -589,7 +589,7 @@ _Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, nu
 
 ![Top Bar Nav](navigation/top-bar-nav-6885-69051.png)
 
-_Figure: Shows annotation-circle (number=1a, type=top, color=blue); annotation-circle (number=1d, type=top, color=blue); annotation-circle (number=1e, type=top, color=blue); action-item (label=Contact, state=enabled, leading-element=icon, stacking=vertical, chevron=false, label-weight=normal, indent=false); action-item (label=STIHL World, state=enabled, leading-element=icon, stacking=vertical, chevron=true, label-weight=normal, indent=false); action-item (label=Cart, number indicator, state=enabled, leading-element=icon, stacking=vertical, chevron=false, label-weight=normal, indent=false); action-item (label=Notifications, minimal indicator, state=enabled, leading-element=icon, stacking=vertical, chevron=false, label-weight=normal, indent=false); annotation-circle (number=1b, type=bottom, color=blue); annotation-circle (number=1c, type=bottom, color=blue). Text in the figure: "1a", "1d", "1e", "Contact", "STIHL World", "3", "Cart", "Notifications", "1b", "1c"._
+_Figure: Four Action Items in the enabled state, each with an icon above a label: Contact (1a icon, 1b label), STIHL World (a chevron, 1c, marks that it opens a dropdown menu), Cart (a number indicator "3", 1d) and Notifications (a small orange minimized indicator dot, 1e)._
 
 1. **Avatar** The Avatar is displayed once the user is logged into their account. The component supports two variations:
    1. **Initials:** This is the default fallback when no profile image is available. The generation logic for user initials is not handled within the design system. It is the responsibility of the product development team.
@@ -597,7 +597,7 @@ _Figure: Shows annotation-circle (number=1a, type=top, color=blue); annotation-c
 
 ![Top Bar Nav](navigation/top-bar-nav-6885-69313.png)
 
-_Figure: Shows avatar (variant=initials); avatar (variant=image); annotation-circle (number=2a, type=bottom, color=blue); annotation-circle (number=2b, type=bottom, color=blue). Text in the figure: "MM", "2a", "2b"._
+_Figure: Two Avatar variants side by side: 2a is the initials variant showing "MM" in a circle with a grey outline, 2b is the image variant showing a profile photo of a smiling person with curly hair in a circle._
 
 1. **Divider** The Divider visually separates items within the Top Bar Navigation:
    - **Left-side items (a):** Variable, product-specific
@@ -605,7 +605,7 @@ _Figure: Shows avatar (variant=initials); avatar (variant=image); annotation-cir
 
 ![Top Bar Nav](navigation/top-bar-nav-6885-69223.png)
 
-_Figure: Shows top-bar\_nav (alignment=right); annotation-circle (number=3a, type=bottom, color=blue); annotation-circle (number=3b, type=bottom, color=blue); annotation-circle (number=3a, type=top, color=blue); annotation-circle (number=3b, type=top, color=blue); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2). Text in the figure: "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM", "3a", "3b", "Login", "Menu", "Search Site"._
+_Figure: Two Top Bar Nav groups with the Divider separating left and right items, each side outlined by a purple box. At breakpoint xl, 3a is Contact, Dealer, Wishlist and Cart (variable, product-specific items) and 3b is STIHL World and the avatar "MM" (core items). At breakpoint s, 3a is Cart (badge 3) and Login, and 3b is Menu, below the logo and a "Search Site" field._
 
 ### Content & Assets
 
@@ -617,7 +617,7 @@ To ensure clarity and usability, it’s recommended to collaborate with a UX wri
 
 ![Max. length Action Item label](navigation/max-length-action-item-label-6576-39672.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); top-bar (variant=main, breakpoint=s, logo add-on=false, number areas=2); top-bar\_nav-item (state=enabled, chevron=off). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM", "Busca distribuidores", "Menú", "Búsqueda", "Händlersuche", "Dealer Search", "Hitta återförsäljare", "Etsi jälleenmyyjä"._
+_Figure: A Top Bar at xl and a small-breakpoint Top Bar with the Dealer action item (pin icon) whose label is translated into several languages to show label lengths: Händlersuche, Dealer Search, Busca distribuidores, Hitta återförsäljare and Etsi jälleenmyyjä. The small Top Bar shows "Busca distribuidores", "Menú" and the search field "Búsqueda", demonstrating that labels stay short._
 
 #### Action Item visibility
 
@@ -638,7 +638,7 @@ The number of visible Action Items depends on:
 
 ![Action Item visibility](navigation/action-item-visibility-6576-39683.png)
 
-_Figure: Shows top-bar (variant=main, breakpoint=xl, logo add-on=false, number areas=2); top-bar (variant=main, breakpoint=l, logo add-on=false, number areas=2); top-bar (variant=main, breakpoint=m, logo add-on=false, number areas=2); top-bar (variant=main, breakpoint=s, logo add-on=false, number areas=2). Text in the figure: "Breakpoint XL", "Search Site", "Contact", "Dealer search", "Wishlist", "Cart", "STIHL World", "Login", "Breakpoint L", "Breakpoint M", "Breakpoint S", "Menu"._
+_Figure: The Top Bar with two areas at four breakpoints. Breakpoint xl, l and m show the full set of action items (Contact, Dealer search, Wishlist, Cart, STIHL World, Login), with the search field beside the logo at xl and l and on its own row at m. Breakpoint s reduces the items to Cart, Login and Menu, with the search field on a second row._
 
 ### Examples and Use Cases
 
@@ -652,7 +652,7 @@ The same behaviour applies to smaller screens.
 
 ![Search behaviour](navigation/search-behaviour-6576-48656.png)
 
-_Figure: Shows top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); top-bar\_nav (alignment=right); nav-bar (variant=main, breakpoint=xl); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2). Text in the figure: "Ab |", "Products", "Abxxxx", "Advice", "Contact", "Dealer support", "Wishlist", "3", "Cart", "STIHL World", "Login", "Accessories", "Professionals", "Support", "Menu"._
+_Figure: Shows top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); top-bar\_nav (alignment=right); nav-bar (variant=main, breakpoint=xl); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2). Text in the figure: "Ab |", "Products", "Abxxxx", "Advice", "Contact", "Dealer support", "Wishlist", "3", "Cart", "STIHL World", "Login", "Accessories", "Professionals", "Support", "Menu"._
 
 #### Login
 
@@ -671,7 +671,7 @@ On **breakpoint s** and **m**, Utility Menus are not used. Instead:
 
 ![Login](navigation/login-6583-58194.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); cursor (type=pointer); top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); action-item (label=Contact, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Dealer support, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Cart, number indicator, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=vertical); utility-menu (alignment=right, expanded=false); anchor element (label=Login, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); button (button text=Log in, variant=filled, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Create Account, variant=ghost, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off). Callouts 1, 2, 3, 4, 5, 6. Text in the figure: "Search Site", "Contact", "Dealer support", "3", "Cart", "STIHL World", "Login", "Log in", "Create Account", "My Orders", "My saved items", "My reservations", "E-Mail-Adresse", "Placeholder", "Passwort", "Kontakt", "Deutsch", "Favoriten", "Warenkorb", "STIHL Welt", "MM", "corporate", "English", "Wishlist"._
+_Figure: Login flow in six numbered steps from top to bottom. 1: the "Login" Action Item in the Top Bar is clicked. 2: it opens a Utility Menu with the buttons "Log in" and "Create Account" and the links My Orders, My saved items and My reservations. 3: these lead to the Login and registration page with email and password fields. 4: after login the Action Item is replaced by the avatar "MM". 5: the avatar is clicked. 6: it opens a Utility Menu with the user name "Max Mustermann", "Konto verwalten", a profile picture, the links My Orders, My saved items and My reservations, the app version and a "Sign out" button._
 
 #### Language selector
 
@@ -697,7 +697,7 @@ _Figure: Shows annotation-circle (number=1, type=top, color=blue); top-bar (grid
 
 ![Focus Order](navigation/focus-order-7434-43960.png)
 
-_Figure: Shows annotation-circle (number=2, type=top, color=blue); annotation-circle (number=3, type=top, color=blue); annotation-circle (number=4a, type=top, color=blue); annotation-circle (number=4b, type=top, color=blue); annotation-circle (number=4c, type=top, color=blue); annotation-circle (number=4d, type=top, color=blue); annotation-circle (number=4e, type=top, color=blue); annotation-circle (number=4f, type=top, color=blue); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); annotation-circle (number=1, type=left, color=blue). Callouts 1, 2, 3. Text in the figure: "4a", "4b", "4c", "4d", "4e", "4f", "|Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Skip to content"._
+_Figure: Top Bar with the focus order marked by blue callouts: 1 is the "Skip to content" Skip Link at the top left, 2 the logo, 3 the "Search Site" input, and 4a to 4f the Secondary Area items Contact, Dealer, Wishlist, Cart (badge 3), STIHL World and Login, each shown with a focus outline from left to right._
 
 ### Keyboard Navigation
 
@@ -711,29 +711,29 @@ Users can navigate through focusable elements in the Top Bar using the keyboard:
 
 ![Keyboard Navigation](navigation/keyboard-navigation-7434-43998.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); action-item (label=Contact, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Dealer, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Wishlist, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=English, number indicator, state=enabled, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); divider (Direction=vertical); utility-menu (alignment=right, expanded=false); anchor element (label=Login, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); button (button text=Log in, variant=filled, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Create Account, variant=ghost, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); divider (Direction=horizontal). Text in the figure: "Tab", "Move to next focusable element:", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Shift", "Move to previous focusable element:", "+", "Space", "Enter", "Open Utility Menu with:", "or", "Esc", "Close Utility Menu with:", "English", "Log in", "Create Account", "My Orders", "My saved items"._
+_Figure: Five Top Bar examples of keyboard navigation: "Tab" moves focus to the next focusable element (Contact to Dealer), "Tab" + "Shift" moves to the previous one (Dealer back to Contact), "Space" or "Enter" opens the Utility Menu from the focused Login item (an empty dashed panel appears below it), "Esc" closes the open Login menu (Log in, Create Account, My Orders, My saved items, My reservations), and "Enter" on the focused Wishlist item navigates to a page (shown as a dashed content area)._
 
 ## Building elements
 
 ![Building elements](navigation/building-elements-7366-46192.png)
 
-_Figure: Shows top-bar\_logo-helper (internal (do not modify): 🖥️ breakpoint=⛔️ internal (do not modify): s, logo variant=main); top-bar\_brand-add-on (internal (do not modify): 🖥️ breakpoint=⛔️ internal (do not modify): s, add-on variant=title-single); top-bar\_logo-helper (internal (do not modify): 🖥️ breakpoint=⛔️ internal (do not modify): m - xl, logo variant=main); top-bar\_brand-add-on (internal (do not modify): 🖥️ breakpoint=⛔️ internal (do not modify): m – xl, add-on variant=title-single); logo (type=default, logos=main); logo (type=reduced, logos=main); logo (type=reduced, logos=connected); logo (type=reduced, logos=my-stihl); logo (type=reduced, logos=imow); notification (type=info, icon=false). Text in the figure: "Top Bar – Logo", "This is a Platform name", "Top Bar – Logo Helper", "Top Bar – Brand Add-on", "breakpoint: s", "Main", "Main reduced", "Connected", "MySTIHL", "iMow", "title – single", "title – double", "placeholder", "breakpoint: m - xl", "Official importer", "Company name goes here", "❖ Placeholder", "Name Max. Characters: 24"._
+_Figure: Building elements of the Top Bar logo area: "Top Bar – Logo" shows the STIHL logo with the text "THIS IS A PLATFORM NAME" at breakpoint s and at breakpoint m - xl (larger); "Top Bar – Logo Helper" shows the logo variants Main, Main reduced, Connected, MySTIHL and iMow at breakpoint s and m - xl; "Top Bar – Brand Add-on" shows the variants title - single ("THIS IS A PLATFORM NAME"), title - double ("OFFICIAL IMPORTER" with "COMPANY NAME GOES HERE") and placeholder at both breakpoints, with a note "Name Max. Characters: 24"._
 
 ![Building elements](navigation/building-elements-7366-46542.png)
 
-_Figure: Shows input-search (system feedback, placeholder, submit button, size=medium, state=enabled, invalid=false); input-search (system feedback, placeholder, submit button, hint, size=medium, state=enabled, invalid=false); notification (type=warning, icon=True); input-search (system feedback, submit button, placeholder, size=medium, state=hover, invalid=false); input-search (system feedback, placeholder, submit button, size=medium, state=focus, invalid=false). Text in the figure: "Top Bar – Search", "entire search", "button in input search", "Search Site", "Search site", "enabled", "Developement Status The input search component is used but has been manually...", "hover", "focus"._
+_Figure: Building element "Top Bar – Search": a rounded "Search Site" input with a search button, next to a square-cornered standard "Search site" input and a warning notification "Developement Status" explaining that the input search component is manually overwritten for the Top Bar (rounded corners, all states and styles retained) and that an optimized variant will be added later; on the right, the enabled, hover and focus states are shown for the "entire search" and for the "button in input search" (the hover or focus highlight applies to the whole field or only to the button)._
 
 ![Building elements](navigation/building-elements-7366-46669.png)
 
-_Figure: Shows action-item (label=Label, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=vertical); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2). Text in the figure: "Top Bar – Nav", "Label", "Example:", "alignment: right", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "MM", "alignment: center"._
+_Figure: Building element "Top Bar – Nav": rows of icon Action Items labelled "Label" with a vertical divider separating the last two, shown for "alignment: right" (all items grouped on the right) and "alignment: center"; an example Top Bar with logo, search and Contact, Dealer, Wishlist, Cart (badge), STIHL World and an "MM" avatar illustrates the placement._
 
 ![Building elements](navigation/building-elements-7366-46667.png)
 
-_Figure: Shows notification (type=info, icon=True); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=1). Text in the figure: "Top Bar – Text with icon", "Example:", "Placerholder text", "The element should not be used alongside navigation items. It is reserved for...", "Secure Checkout"._
+_Figure: Building element "Top Bar – Text with icon": a "Placerholder text" element with icon and an info notice stating that it should not be used alongside navigation items, is reserved for critical information such as security messages during checkout, and has a maximum of 60 characters; the example shows a Top Bar with the STIHL logo and a lock icon with the text "Secure Checkout"._
 
 ![Building elements](navigation/building-elements-7366-46677.png)
 
-_Figure: Shows notification (type=warning, icon=True); avatar-building-block (variant=initials); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2). Text in the figure: "Development Status: This component currently exists only in Figma and has not...", "Top Bar – Avatar", "Avatar", "Avatar Building Block", "enabled", "hover", "active", "focus", "initials", "image", "Example:", "MM", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World"._
+_Figure: Building element "Top Bar – Avatar" with a warning notification "Development Status" that the component exists only in Figma and is not yet implemented as a standalone component in code; the Avatar (round "MM" initials) is shown in the states enabled, hover, active and focus, the Avatar Building Block in the variants initials and image (a photo), and an example Top Bar ends with the "MM" avatar._
 
 ## Header: Nav Bar
 
@@ -748,11 +748,11 @@ Overview:
 
 ![Header: Nav Bar](navigation/header-nav-bar-6263-49220.png)
 
-_Figure: Shows nav-bar-group; notification (type=info, icon=True). Text in the figure: "Main Component", "variant: main", "variant: full", "Button nav", "breakpoint: xl", "breakpoint: l", "The Nav Bar is visible only on desktop. On tablet and mobile devices, the Nav..."._
+_Figure: Main Component of the Nav Bar: a row of seven "Button nav" items shown for variant: main and variant: full at breakpoint: xl and breakpoint: l (the xl bars are wider than the l bars), with an info notice that the Nav Bar is visible only on desktop and is moved into the mobile menu on tablet and mobile, linking to the Mobile documentation._
 
 ![Header: Nav Bar](navigation/header-nav-bar-6263-49227.png)
 
-_Figure: Shows button-nav (state=enabled, breakpoint=l + xl, icon=none); nav-bar-group (overflow-right); nav-bar-group (overflow-left); nav-bar-group (overflow-left, overflow-right). Text in the figure: "Nav Bar – Group", "overflow right: false overflow left: false", "Button nav", "overflow right: true overflow left: false", "overflow right: false overflow left: true", "overflow right: true overflow left: true"._
+_Figure: "Nav Bar – Group" with seven "Button nav" items in four overflow states: overflow right: false and overflow left: false shows all items; overflow right: true shows a dark right arrow button over a partly cut last item; overflow left: true shows a dark left arrow button over a partly cut first item; both true shows arrow buttons on both sides._
 
 ### Further guidelines
 
@@ -790,7 +790,7 @@ The Nav Bar is a key element in the header pattern and is composed of the follow
 
 ![Elements](navigation/elements-6583-60085.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); nav-bar (variant=main, viewport=L); annotation-circle (number=3, type=top, color=blue); annotation-circle (number=2, type=top, color=blue). Callouts 1, 2, 3. Text in the figure: "Button nav"._
+_Figure: Two Nav Bar rows (breakpoint L) with seven "Button nav" items each. In the top row, callout 1 points at the highlighted Nav Bar Group that contains all items. In the bottom row, callout 2 points at one "Button nav" item shown in a highlighted state and callout 3 points at the dark Icon Button with a left chevron at the left edge, which indicates hidden items that overflow._
 
 ### Grid Variants
 
@@ -814,7 +814,7 @@ The Nav Bar can be configured using two layout variants:
 
 ![Grid Variants](navigation/grid-variants-6885-70468.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); annotation-circle (number=2a, type=center, color=blue); annotation-circle (number=2b, type=center, color=blue); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2). Callouts 1. Text in the figure: "Search Site", "Label", "Button nav", "main", "2a", "Full", "2b", "Menu"._
+_Figure: Three header layouts, each with STIHL logo, "Search Site" field, icon buttons labelled "Label" and a Nav Bar of seven "Button nav" items. Callout 1 is the "main" variant at breakpoint L, where content sits within the main content area with white space left and right. Callout 2a is the "Full" variant at breakpoint L, where the header spans the full screen width. Callout 2b is the "Full" variant at breakpoint S, where the logo, two icon buttons and a "Menu" button are in the top row and the search field sits below._
 
 ## Nav Bar: Content and Assets
 
@@ -829,7 +829,7 @@ While the Nav Bar is flexible and supports a dynamic number of items, we recomme
 
 ![Amount of items in the Nav Bar](navigation/amount-of-items-in-the-nav-bar-6583-60167.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Chainsaws", "Lawn Mowers", "Hedge Trimmers", "Batteries & Chargers", "Vacuum Shredders", "Grass Trimmers"._
+_Figure: Header at breakpoint L (main variant) with STIHL logo, "Search Site" field and utility buttons "Contact", "Dealer", "Wishlist", "Cart" (badge "3"), "STIHL World" and "Login". The Nav Bar below shows six items that fit comfortably: "Chainsaws", "Lawn Mowers", "Hedge Trimmers", "Batteries & Chargers", "Vacuum Shredders" and "Grass Trimmers"._
 
 ### Maximum character in the label
 
@@ -837,7 +837,7 @@ For navigation links and menu items, aim to keep label text **between 20 and 25 
 
 ![Maximum character in the label](navigation/maximum-character-in-the-label-6583-60172.png)
 
-_Figure: Shows button-nav (state=enabled, breakpoint=l + xl, icon=none). Text in the figure: "recommended maximum 25 character:", "Akkus und Ladegeräte", "DE: 22 characters", "Batteries and Chargers", "EN: 24 characters", "Baterias e carregadores", "PT: 25 characters"._
+_Figure: Three example Nav Bar labels with their character counts, under the note "recommended maximum 25 character:": "Akkus und Ladegeräte" (DE: 22 characters), "Batteries and Chargers" (EN: 24 characters) and "Baterias e carregadores" (PT: 25 characters)._
 
 ### Overflow
 
@@ -849,7 +849,7 @@ In this case, **navigation buttons (left and/or right)** appear, enabling users 
 
 ![Overflow](navigation/overflow-6583-60177.png)
 
-_Figure: Shows nav-bar (variant=main, breakpoint=l). Text in the figure: "overflow right", "Chainsaws", "Vacuum Shredders", "Hedge Trimmers", "Batteries & Chargers", "Lawn Mowers", "Grass Trimmers", "Pressure Washers", "overflow left", "overflow left and right"._
+_Figure: Three Nav Bars (breakpoint L) with items "Chainsaws", "Vacuum Shredders", "Hedge Trimmers", "Batteries & Chargers", "Lawn Mowers", "Grass Trimmers" and "Pressure Washers". "overflow right" shows a dark right chevron button at the right edge, with the last item cut off. "overflow left" shows a dark left chevron button at the left edge, with the first item cut off. "overflow left and right" shows both chevron buttons._
 
 ### Link vs. Button
 
@@ -857,7 +857,7 @@ The Nav Bar Items ca be implemented as either a **link (1)** or a **button (2)**
 
 ![Link vs. Button](navigation/link-vs-button-7267-36160.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); annotation-circle (number=1, type=bottom, color=blue); annotation-circle (number=2, type=bottom, color=blue). Callouts 1, 2. Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support"._
+_Figure: Header at breakpoint L (main variant) whose Nav Bar contains "Products", "Accessories", "Professionals", "Advice" and "Support". Callout 1 points at "Products", a plain link item without an icon. Callout 2 points at "Professionals", a button item with a chevron icon that indicates it opens a Dropdown Menu or Mega Menu._
 
 ### Motion
 
@@ -865,7 +865,7 @@ _Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, num
 
 ![Motion](navigation/motion-7695-40327.png)
 
-_Figure: Shows nav-bar (variant=main, breakpoint=l). Text in the figure: "Chainsaws", "Vacuum Shredders", "Hedge Trimmers", "Batteries & Chargers", "Lawn Mowers", "Grass Trimmers", "Pressure Washers"._
+_Figure: Nav Bar (breakpoint L) with items "Chainsaws", "Vacuum Shredders", "Hedge Trimmers", "Batteries & Chargers", "Lawn Mowers", "Grass Trimmers" and "Pressure Washers", with left and right chevron buttons at both edges. A purple double-headed arrow below the bar shows the items moving horizontally, left and right, when scrolling._
 
 ## Nav Bar: Accessibility
 
@@ -876,7 +876,7 @@ _Figure: Shows nav-bar (variant=main, breakpoint=l). Text in the figure: "Chains
 
 ![Focus Order](navigation/focus-order-7434-45587.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2a, type=bottom, color=blue); annotation-circle (number=2b, type=bottom, color=blue); annotation-circle (number=2c, type=bottom, color=blue); annotation-circle (number=2d, type=bottom, color=blue); annotation-circle (number=2e, type=bottom, color=blue); annotation-circle (number=2f, type=bottom, color=blue); annotation-circle (number=2g, type=bottom, color=blue). Callouts 1. Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Chainsaws", "Vacuum Shredders", "2a", "2b", "2c", "2d", "2e", "2f", "2g"._
+_Figure: Two headers (breakpoint L, main variant) whose Nav Bar overflows to the right, with items "Products", "Accessories", "Professionals", "Advice", "Support", "Chainsaws" and "Vacuum Shredders". In the top one, callout 1 points at the outline around the whole Nav Bar, the scroll container that is focusable. In the bottom one, callouts 2a to 2g point at the focus outline of each individual item, from "Products" to "Vacuum Shredders", in left to right order._
 
 ### Keyboard Navigation
 
@@ -890,7 +890,7 @@ Users can navigate through focusable elements in the Nav Bar using the keyboard:
 
 ![Keyboard Navigation](navigation/keyboard-navigation-7434-45618.png)
 
-_Figure: Shows nav-bar (variant=main, breakpoint=l). Text in the figure: "Tab", "Move to next focusable element:", "Products", "Accessories", "Professionals", "Advice", "Support", "Chainsaws", "Vacuum Shredders", "Shift", "Move to previous focusable element:", "+", "Arrow left", "Arrow right", "Scroll the container horizontally:", "or", "Space", "Enter", "Open Menu with:", "Esc", "Close Menu with:", "STIHL sustainability strategy", "Education and people", "Economic sustainability"._
+_Figure: Shows nav-bar (variant=main, breakpoint=l). Text in the figure: "Tab", "Move to next focusable element:", "Products", "Accessories", "Professionals", "Advice", "Support", "Chainsaws", "Vacuum Shredders", "Shift", "Move to previous focusable element:", "+", "Arrow left", "Arrow right", "Scroll the container horizontally:", "or", "Space", "Enter", "Open Menu with:", "Esc", "Close Menu with:", "Navigate to page:"._
 
 ## Header: Utility Menu
 
@@ -907,7 +907,7 @@ _Figure: Shows nav-bar (variant=main, breakpoint=l). Text in the figure: "Tab", 
 
 ![Header: Utility Menu](navigation/header-utility-menu-7158-33072.png)
 
-_Figure: Shows anchor element (label=Label, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); anchor element (label=Label, state=enabled, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); text (Text=Text, Group Title=Group Title, Main Title=Main Title, breakpoint=l + xl, variant=main title); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Group Title, breakpoint=l + xl, variant=group title); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); text (Group Title=Group Title, Main Title=Main Title, Text=Text, breakpoint=l + xl, variant=text); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=left, hide label=off, flush alignment=off). Text in the figure: "Utility Menu", "anchor-element: action-item (vertical)", "alignment: left", "alignment: right", "Label", "Main Title", "❖ Placeholder", "Group Title", "Text", "Button", "expanded: true", "expanded: false", "Utility Menu Content"._
+_Figure: Utility Menu, a popover opened from an anchor element (action-item, vertical, with icon, "Label" and chevron), shown with alignment left and alignment right, each with "expanded: true" (anchor active, popover open) and "expanded: false" (anchor enabled, popover closed). The popover content, "Utility Menu Content", has a "Main Title", a "Placeholder" slot, dividers, two "Group Title" sections with four "Label" action items each, a "Text" line and a ghost "Button" with an icon at the bottom._
 
 ### Related elements
 
@@ -942,7 +942,7 @@ It consists of two key elements:
 
 ![Elements](navigation/elements-7399-38617.png)
 
-_Figure: Shows utility-menu (alignment=left, expanded=true); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "Label", "Main Title", "❖ Placeholder", "Group Title"._
+_Figure: Utility Menu with alignment=left in the expanded state, showing an anchor element with an image icon, the label "Label" and an upward chevron, with a popover below it. Callout 1 points at the anchor element; callout 2 points at the utility menu container, which holds the "Main Title", a purple dashed "Placeholder" slot, a separator, the "Group Title" and four "Label" action items._
 
 #### Utility Menu Container
 
@@ -959,7 +959,7 @@ The Utility Menu Container is flexible and can be customized. The current design
 
 ![Utility Menu Container](navigation/utility-menu-container-7399-40871.png)
 
-_Figure: Shows popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=1a, type=left, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=1b, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=1c, type=left, color=blue); annotation-circle (number=4, type=left, color=blue). Callouts 2, 3, 4. Text in the figure: "Main Title", "❖ Placeholder - Replace this content", "Group Title", "Label", "Text", "Button", "1a", "1b", "1c"._
+_Figure: Shows popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=1a, type=left, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=1b, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=1c, type=left, color=blue); annotation-circle (number=4, type=left, color=blue). Callouts 2, 3, 4. Text in the figure: "Main Title", "❖ Placeholder - Replace this content", "Group Title", "Label", "Text", "Button", "1a", "1b", "1c"._
 
 ### Sizing
 
@@ -976,7 +976,7 @@ These limits ensure the utility menu remains readable and visually balanced, reg
 
 ![Min and Max width](navigation/min-and-max-width-7399-38627.png)
 
-_Figure: Shows utility-menu (alignment=left, expanded=true); anchor element (label=Label, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white). Text in the figure: "Label", "Main Title", "❖ Placeholder", "Group Title", "max. 540px", "min. 200px"._
+_Figure: Two expanded Utility Menus, each below an anchor element with the label "Label", showing the width limits. The narrow menu on the left is marked "min. 200px", and the wide menu on the right is marked "max. 540px"; both contain "Main Title", a "Placeholder" slot that fills the full width, "Group Title" and four "Label" items._
 
 #### Maximum height
 
@@ -988,7 +988,7 @@ If the content exceeds the available space, the Utility Menu Container becomes s
 
 ![Maximum height](navigation/maximum-height-7399-38648.png)
 
-_Figure: Shows anchor element (label=Label, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); popover (overflow, arrow=false, arrow placement=none, arrow alignment=none, color=white). Text in the figure: "Label", "Main Title", "❖ Placeholder", "Group Title", "Text", "Button", "min. 48px"._
+_Figure: Shows anchor element (label=Label, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); popover (children=\[object Object\], overflow, arrow=false, arrow placement=none, arrow alignment=none, color=white). Text in the figure: "Label", "Main Title", "❖ Placeholder", "Group Title", "Text", "Button", "min. 48px"._
 
 ### Alignment
 
@@ -1000,7 +1000,7 @@ This responsive behavior ensures optimal positioning and prevents content from b
 
 ![Alignment](navigation/alignment-7399-38689.png)
 
-_Figure: Shows utility-menu (alignment=left, expanded=true); utility-menu (alignment=right, expanded=true). Text in the figure: "Label", "Main Title", "❖ Placeholder", "Group Title", "alignment: left", "alignment: right"._
+_Figure: Two identical Utility Menus in a browser window, each opened from an anchor element labelled "Label" with "Main Title", "Placeholder", "Group Title" and four "Label" items. On the left, marked "alignment: left", the menu is aligned with the left edge of its anchor near the left side of the viewport; on the right, marked "alignment: right", the menu is aligned with the right edge of its anchor near the right side of the viewport so it stays fully visible._
 
 ## Utility Menu: Content and Assets
 
@@ -1012,7 +1012,7 @@ The placeholder area is optional and designed to accommodate a variety of conten
 
 ![Placeholder (Optional)](navigation/placeholder-optional-7472-40034.png)
 
-_Figure: Shows popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); link-default (label=Konto verwalten, variant=highlight, state=enabled, icon position=none); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=iMOW Account, breakpoint=l + xl, variant=group title); action-item (label=Rechtliche Unterlagen, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Cookies verwalten, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); text (Main Title=Main Title, Text=Text, Group Title=STIHL Account, breakpoint=l + xl, variant=group title); action-item (label=Sicherheit & Passwort, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Nutzungsbedingungen, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=STIHL Fachhandel, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false). Callouts 1, 2. Text in the figure: "Main Title", "❖ Placeholder", "Group Title", "Label", "Search Language", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español", "Max Mustermann", "Konto verwalten", "MM", "iMOW Account", "Rechtliche Unterlagen", "Cookies verwalten", "STIHL Account", "Sicherheit & Passwort", "Nutzungsbedingungen", "STIHL Fachhandel", "App-Version: 1.80.2"._
+_Figure: Shows popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); link-default (label=Konto verwalten, variant=highlight, state=enabled, icon position=none); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=iMOW Account, breakpoint=l + xl, variant=group title); action-item (label=Rechtliche Unterlagen, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Cookies verwalten, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); text (Main Title=Main Title, Text=Text, Group Title=STIHL Account, breakpoint=l + xl, variant=group title); action-item (label=Sicherheit & Passwort, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Nutzungsbedingungen, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=STIHL Fachhandel, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false). Callouts 1, 2. Text in the figure: "Main Title", "❖ Placeholder", "Group Title", "Label", "Search Language", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español", "Max Mustermann", "Konto verwalten", "MM", "iMOW Account", "Rechtliche Unterlagen", "Cookies verwalten", "STIHL Account", "Sicherheit & Passwort", "Nutzungsbedingungen", "STIHL Fachhandel", "App-Version: 1.80.2"._
 
 ## Utility Menu: Behavior
 
@@ -1036,7 +1036,7 @@ Instead, they follow one of two patterns:
 
 ![Breakpoints m and s](navigation/breakpoints-m-and-s-7422-36672.png)
 
-_Figure: Shows anchor element (label=Label, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=mobile); input-search (system feedback, submit button, placeholder, hint, size=input-search-small, state=enabled, invalid=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Global Sites, breakpoint=l + xl, variant=group title); action-item (label=Global / English, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Global / Español, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Global / Français, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Global / Portugals, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Callouts 1, 2. Text in the figure: "Breakpoints l and xl", "❖ Placeholder", "Breakpoints m and s", "Page", "Dialog", "Example Language selector: Breakpoints l and xl =\> Utility Menu", "Example Language selector: Breakpoints m and s =\> Dialog", "Language", "Input", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español", "English", "Search Language", "Example Login: Breakpoints l and xl =\> Utility Menu", "Example Login: Breakpoints m and s =\> Page", "Login", "Log in", "Create Account"._
+_Figure: Shows anchor element (label=Label, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=mobile); input-search (system feedback, submit button, placeholder, hint, size=input-search-small, state=enabled, invalid=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Global Sites, breakpoint=l + xl, variant=group title); action-item (label=Global / English, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Global / Español, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Global / Français, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Global / Portugals, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Callouts 1, 2. Text in the figure: "Breakpoints l and xl", "❖ Placeholder", "Breakpoints m and s", "Page", "Dialog", "Example Language selector: Breakpoints l and xl =\> Utility Menu", "Example Language selector: Breakpoints m and s =\> Dialog", "Language", "Input", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español", "English", "Search Language", "Example Login: Breakpoints l and xl =\> Utility Menu", "Example Login: Breakpoints m and s =\> Page", "Login", "Log in", "Create Account"._
 
 ### Responsiveness
 
@@ -1054,7 +1054,7 @@ The overall focus order follows a left-to-right and top-to-bottom pattern, depen
 
 ![Focus Order](navigation/focus-order-7456-44092.png)
 
-_Figure: Shows link-default (label=Konto verwalten, variant=highlight, state=focus, icon position=none); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=iMOW Account, breakpoint=l + xl, variant=group title); action-item (label=Rechtliche Unterlagen, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Cookies verwalten, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); text (Main Title=Main Title, Text=Text, Group Title=STIHL Account, breakpoint=l + xl, variant=group title); action-item (label=Sicherheit & Passwort, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Nutzungsbedingungen, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=STIHL Fachhandel, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); text (Group Title=Group Title, Main Title=Main Title, Text=App-Version: 1.80.2, breakpoint=l + xl, variant=text); button (button text=Sign out, variant=ghost, state=focus, size=small, icon position=left, hide label=off, flush alignment=off); annotation-circle (number=1a, type=left, color=blue). Callouts 3. Text in the figure: "Tim Timber", "Konto verwalten", "MM", "iMOW Account", "Rechtliche Unterlagen", "Cookies verwalten", "STIHL Account", "Sicherheit & Passwort", "Nutzungsbedingungen", "STIHL Fachhandel", "App-Version: 1.80.2", "Sign out", "1a", "1b", "2a", "2b", "2c", "2d", "2e"._
+_Figure: Utility Menu for a signed-in user ("Tim Timber") with focus outlines on every focusable element, showing the focus order. Callouts 1a and 1b mark the "Konto verwalten" link and the avatar edit button in the placeholder area, 2a to 2e mark the action items "Rechtliche Unterlagen", "Cookies verwalten", "Sicherheit & Passwort", "Nutzungsbedingungen" and "STIHL Fachhandel" from top to bottom, and callout 3 marks the "Sign out" button at the end; "iMOW Account", "STIHL Account" and "App-Version: 1.80.2" are non-focusable text._
 
 ### Keyboard Navigation
 
@@ -1067,7 +1067,7 @@ Users can navigate through focusable elements in the Utility Menu using the keyb
 
 ![Keyboard Navigation](navigation/keyboard-navigation-7456-44138.png)
 
-_Figure: Shows button (button text=Log in, variant=filled, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Create Account, variant=ghost, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); divider (Direction=horizontal); action-item (label=My order, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=My saved items, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=My reservation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); button (button text=Create Account, variant=ghost, state=focus, size=small, icon position=none, hide label=off, flush alignment=off); top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); action-item (label=Contact, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Dealer, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Wishlist, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Cart, number indicator, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false). Text in the figure: "Tab", "Move to next focusable element:", "Log in", "Create Account", "My order", "My saved items", "My reservation", "Shift", "Move to previous focusable element:", "+", "Space", "Enter", "Open Utility Menu with:", "or", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Esc", "Close Utility Menu with:"._
+_Figure: Four keyboard interaction examples for the Utility Menu. "Tab" moves focus to the next focusable element, shown as focus moving from the "Log in" button to the "Create Account" button in the menu; "Tab" + "Shift" moves to the previous element, shown as focus moving back from "Create Account" to "Log in"; "Space" or "Enter" opens the menu from the "Login" anchor in the STIHL top bar, revealing the menu; "Esc" closes the open menu and the arrow leads out of it._
 
 ## Utility Menu: Examples
 
@@ -1097,7 +1097,7 @@ Content structure:
 
 ![Log-in](navigation/log-in-7423-36932.png)
 
-_Figure: Shows top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); action-item (label=Contact, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Dealer, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Wishlist, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Cart, number indicator, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=vertical); utility-menu (alignment=right, expanded=false); anchor element (label=Login, state=active, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); button (button text=Log in, variant=filled, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Create Account, variant=ghost, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); divider (Direction=horizontal); action-item (label=My order, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false). Callouts 1, 2. Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Log in", "Create Account", "My order", "My saved items", "My reservation"._
+_Figure: Desktop top bar with the STIHL logo, a "Search Site" field, action items "Contact", "Dealer", "Wishlist", "Cart" (with number indicator 3), a divider, "STIHL World" and an active "Login" item with an open chevron. Below Login a Utility Menu is open with callout 1 pointing at the filled "Log in" button and the ghost "Create Account" button, and callout 2 pointing at the Important Links "My order", "My saved items" and "My reservation", separated from the buttons by a horizontal divider._
 
 ### Account and Settings
 
@@ -1113,7 +1113,7 @@ Content structure:
 
 ![Account and Settings](navigation/account-and-settings-7407-38626.png)
 
-_Figure: Shows top-bar\_logo (internal (do not modify): add-on, internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); action-item (label=Contact, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); utility-menu (alignment=right, expanded=false); action-item (label=Wishlist, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Cart, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=vertical); action-item (label=STIHL World, state=enabled, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false); anchor element (state=hover); link-default (label=Konto verwalten, variant=highlight, state=enabled, icon position=none); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=iMOW Account, breakpoint=l + xl, variant=group title); action-item (label=Rechtliche Unterlagen, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false). Callouts 1, 2, 3, 4, 5. Text in the figure: "corporate", "Search Site", "Contact", "English", "Wishlist", "Cart", "STIHL World", "MM", "Max Mustermann", "Konto verwalten", "iMOW Account", "Rechtliche Unterlagen", "Cookies verwalten", "STIHL Account", "Sicherheit & Passwort", "Nutzungsbedingungen", "STIHL Fachhandel", "App-Version: 1.80.2", "Sign out"._
+_Figure: Top bar of a "CORPORATE" site with search, "Contact", "English", "Wishlist", "Cart", "STIHL World" and an avatar with initials MM, whose Utility Menu is open. Callout 1 marks the custom account section with "Max Mustermann", the "Konto verwalten" link and an editable avatar, callout 2 the group labels "iMOW Account" and "STIHL Account", callout 3 the icon action items such as "Rechtliche Unterlagen", "Cookies verwalten", "Sicherheit & Passwort", "Nutzungsbedingungen" and "STIHL Fachhandel", callout 4 the text "App-Version: 1.80.2", and callout 5 the "Sign out" button at the bottom._
 
 ### Language Selector
 
@@ -1149,7 +1149,7 @@ Full **Mobile Menu** documentation is available [here](https://www.figma.com/des
 
 ![Header Mobile & Tablet: Overview](navigation/header-mobile-tablet-overview-6897-84351.png)
 
-_Figure: Text in the figure: "Top Bar Items (Primary)", "Utility Menu Items (Optional)", "Nav Bar Items (Optional)", "Top Bar Items (Secondary)", "Header", "Mobile Menu"._
+_Figure: Schematic of how header content is distributed on mobile and tablet. The "Header" holds only "Top Bar Items (Primary)" and an optional "Utility Menu Items (Optional)" block, while the "Mobile Menu" contains "Nav Bar Items (Optional)" with "Utility Menu Items (Optional)" nested inside, followed by "Top Bar Items (Secondary)"._
 
 ### Mobile Header Variants
 
@@ -1183,7 +1183,7 @@ Since there are fewer elements, all of them remain visible across all breakpoint
 
 ![Top Bar – reduced Minimal header for focused user flows.](navigation/top-bar-reduced-minimal-header-for-focused-user-flows-6897-84417.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=1). Text in the figure: "Sicherer Checkout-Prozess"._
+_Figure: Reduced top bar at breakpoint s containing only the STIHL logo and a lock icon with the text "Sicherer Checkout-Prozess", with no search, menu or other items, as used for focused flows like checkout._
 
 #### Related elements
 
@@ -1221,7 +1221,7 @@ The **Mobile Menu (4)** can be accessed by tapping the **Menu Action Item (4a)**
 
 ![Responsiveness](navigation/responsiveness-6897-80662.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=2, type=bottom, color=blue); annotation-circle (number=3, type=right, color=blue); annotation-circle (number=1a, type=top, color=blue); annotation-circle (number=4a, type=top, color=blue); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, viewport=m + s, icon=none); divider (Direction=horizontal). Callouts 1, 2, 3, 4. Text in the figure: "Desktop (breakpoint l & xl)", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "STIHL Website", "MY STIHL", "STIHL Connected", "iMOW® Web App", "Product Advisor", "All Services & Apps", "Tablet and Mobile (breakpoint s & m)", "1a", "4a", "Menu"._
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=2, type=bottom, color=blue); annotation-circle (number=3, type=right, color=blue); annotation-circle (number=1a, type=top, color=blue); annotation-circle (number=4a, type=top, color=blue); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, viewport=m + s, icon=none); divider (Direction=horizontal). Callouts 1, 2, 3, 4. Text in the figure: "Desktop (breakpoint l & xl)", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "STIHL Website", "MY STIHL", "STIHL Connected", "iMOW® Web App", "Product Advisor", "All Services & Apps", "Tablet and Mobile (breakpoint s & m)", "1a", "4a", "Menu"._
 
 ### Scroll behaviour
 
@@ -1235,7 +1235,7 @@ _Figure: Shows annotation-circle (number=1, type=top, color=blue); top-bar (grid
 
 ![Motion](navigation/motion-6931-97157.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue). Callouts 1, 2, 3. Text in the figure: "Top Bar"._
+_Figure: Three-step scroll behavior of the "Top Bar" with mouse icons: in 1 the Top Bar is visible, in 2 the user scrolls down with a downward chevron and the bar has moved away leaving an empty frame, and in 3 the user scrolls up with an upward chevron and the Top Bar is visible again._
 
 ## Mega Navigation: Overview
 
@@ -1245,7 +1245,7 @@ Mega Navigation provides structured access to deeply nested navigation items, he
 
 ![Mega Navigation: Overview](navigation/mega-navigation-overview-6869-65558.png)
 
-_Figure: Text in the figure: "Top Bar", "Nav Bar", "Header", "Utility Menu (Optional)", "Mega Menu"._
+_Figure: Schematic of the Mega Navigation structure: a Header containing a stacked Top Bar and Nav Bar, with the large Mega Menu area directly below it and an optional Utility Menu (Optional) box overlapping the right end of the Nav Bar and the top right of the Mega Menu._
 
 ### Mega Navigation Variants
 
@@ -1255,7 +1255,7 @@ It provides access to one to two levels of site navigation, offering users a cle
 
 ![Top Bar + Nav Bar + Mega Menu This is the standard version of the Mega Menu.](navigation/top-bar-nav-bar-mega-menu-this-is-the-standard-version-of-th-7364-35484.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); mega menu (breakpoint=xl); text (Text=Text, Group Title=Group Title, Main Title=Sawing and cutting, breakpoint=l + xl, variant=main title); action-item (label=Chainsaws and Power Saws, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Pole Saws, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Hedge Trimmers and Cutters, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Combination and Multi-Tool Systems, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Pruners, Garden Shears, Loppers, and Branch Saws, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Axes, Hatchets, Hammers, and Forestry Tools, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "Products", "Accessories", "Professionals", "Advice", "Support", "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions", "Merchandise", "All products", "Chainsaws and Power Saws", "Pole Saws", "Hedge Trimmers and Cutters", "Combination and Multi-Tool Systems", "Pruners, Garden Shears, Loppers, and Branch Saws", "Axes, Hatchets, Hammers, and Forestry Tools"._
+_Figure: Standard Mega Menu with Top Bar, Nav Bar and Mega Menu: the Top Bar shows the STIHL logo, a "Search Site" field and Contact, Dealer, Wishlist and Cart (badge 3) items, and the Nav Bar lists Products (open, active), Accessories, Professionals, Advice and Support. Below, the Mega Menu shows a left column with Sawing and cutting (active), Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise and All products, and on the right the group title "Sawing and cutting" with six links from Chainsaws and Power Saws to Axes, Hatchets, Hammers, and Forestry Tools._
 
 #### Top Bar + Nav Bar + Mega Menu + Utility Menu This is the standard version, enhanced with a Utility Menu.
 
@@ -1282,7 +1282,7 @@ _Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, num
 
 ![Mega Menu: Component](navigation/mega-menu-component-6263-50689.png)
 
-_Figure: Shows action-item (label=Label, state=active, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); notification (type=info, icon=True). Text in the figure: "Label", "❖ Placeholder", "viewport: XL", "viewport: L", "The Mega Menu is visible only on desktop. On tablet and mobile devices, the M..."._
+_Figure: Mega Menu component at "viewport: XL" and "viewport: L": each has a left list of seven "Label" action items with chevrons (the first active with an orange bar) and a large dashed purple "Placeholder" area on the right, which is narrower at L. An info note states that the Mega Menu is visible only on desktop and is moved into the Mobile Menu on tablet and mobile._
 
 ### Related elements
 
@@ -1311,7 +1311,7 @@ The Mega Menu is divided into two main sections:
 
 ![Elements](navigation/elements-6885-71180.png)
 
-_Figure: Shows annotation-circle (number=2, type=top, color=blue); annotation-circle (number=1, type=top, color=blue); mega menu (breakpoint=xl). Callouts 1, 2. Text in the figure: "Label", "❖ Placeholder"._
+_Figure: Mega Menu with two numbered callouts: callout 1 points at the left list of "Label" action items (Navigation, third navigation level), and callout 2 points at the dashed "Placeholder" area on the right, which holds fourth-level items, images or teasers._
 
 ### Placement and sizing
 
@@ -1327,13 +1327,15 @@ _Figure: Shows annotation-circle (number=2, type=top, color=blue); annotation-ci
 
 ![Placement and sizing](navigation/placement-and-sizing-6897-71478.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); mega menu (breakpoint=xl); annotation-circle (number=3, type=center, color=blue); ❌ DEPRICATED nav-bar-item (state=hover, chevron=off, external icon=off); annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue). Callouts 1, 2, 3. Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions", "Merchandise", "All products", "❖ Placeholder", "min. 64px", "min. 380px max. 640px", "main"._
+_Figure: Open Mega Menu below the Top Bar and Nav Bar (Products active, Sawing and cutting active) with a "Placeholder" area, and a "MAIN" content-area bar beneath. Callout 1 marks the Mega Menu position directly below the Nav Bar, callout 2 marks its content aligned with the MAIN content area, and callout 3 marks the sizing: min. 380px max. 640px for the menu height and min. 64px for the space below the menu._
 
 ### Content Overflow
 
 If the content exceeds the available height, it should become scrollable by enabling a vertical scrollbar.
 
 ![Content Overflow](navigation/content-overflow-6897-78721.png)
+
+_Figure: \[unverified\] Rendered blank (plain light grey background with no visible content); per the surrounding text it is meant to illustrate that Mega Menu content taller than the available height becomes scrollable with a vertical scrollbar, and that overflow should be avoided by reducing items or using multiple columns of Action Items for 3rd-level navigation._
 
 > Overflowing menus should be avoided whenever possible, as they hinder ease of use and reduce scannability.
 
@@ -1342,6 +1344,8 @@ It’s recommended to either reduce the number of menu items or make better use 
 **Note:** Using multiple columns limits the available space, making it suitable only for displaying 3rd-level navigation.
 
 ![Content Overflow](navigation/content-overflow-7367-35912.png)
+
+_Figure: \[unverified\] Rendered blank (plain light grey background with no visible content); per the surrounding text it is meant to illustrate that Mega Menu content taller than the available height becomes scrollable with a vertical scrollbar, and that overflow should be avoided by reducing items or using multiple columns of Action Items for 3rd-level navigation._
 
 ### Usage
 
@@ -1375,7 +1379,7 @@ _Figure: Don't example. Shows top-bar (grid variant=main, breakpoint=l, brand ad
 
 ![Transition to other Mega Menu](navigation/transition-to-other-mega-menu-6897-72346.png)
 
-_Figure: Shows mega menu (breakpoint=xl). Text in the figure: "Label", "❖ Placeholder", "Enter Menu on click Container: move in from top Content: fade in after delay...", "Close on click move out to top 400ms motion-functional-ease-in", "Transition to other Mega Menu on click instant"._
+_Figure: Mega Menu with seven "Label" action items and a "Placeholder" area, annotated with three motions: "Enter Menu" on click, container moves in from top, content fades in after delay (1ms), 400ms, motion-functional-ease-out; "Close" on click, moves out to top, 400ms, motion-functional-ease-in; and "Transition to other Mega Menu" on click, instant._
 
 ## Mega Menu: Navigation Hierarchy
 
@@ -1399,7 +1403,7 @@ Mega Menu levels are reflected in the breadcrumb trail to support user orientati
 
 ![Three-Level Navigation](navigation/three-level-navigation-7247-36325.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); action-item (label=Sawing and cutting, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Mowing and planting, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Cleaning and clearing, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Garden size, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Offers and promotions, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Merchandise, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=All products, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); breadcrumb (expanded=true). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions", "Merchandise", "All products", "Example IA", "A", "Level 1: Service Homepage", "B"._
+_Figure: Desktop header (breakpoint l) with the Products menu open as a list of seven plain action items (Sawing and cutting, Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise, All products) without chevrons, with markers A (header, Level 1: Service Homepage), B (nav bar item, Level 2: Primary Navigation Page) and C (menu list, Level 3: Category Page). On the right an "Example IA" tree shows A at the root with several B children and three C children under the first B, and below a second header labelled "Correspondence with breadcrumbs (Optional)" connects the logo, Products and Sawing and cutting to the breadcrumb Home / Products / Sawing and cutting._
 
 ### Four-Level Navigation
 
@@ -1421,7 +1425,7 @@ Mega Menu levels are reflected in the breadcrumb trail to support user orientati
 
 ![Four-Level Navigation](navigation/four-level-navigation-7247-36394.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); action-item (label=Sawing and cutting, state=active, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Mowing and planting, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Cleaning and clearing, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Garden size, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Offers and promotions, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Merchandise, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=All products, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); text (Text=Text, Group Title=Group Title, Main Title=Sawing and cutting, breakpoint=l + xl, variant=main title); action-item (label=Chainsaws and Power Saws, state=hover, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); cursor (type=pointer). Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions", "Merchandise", "All products", "Chainsaws and Power Saws", "Pole Saws", "Hedge Trimmers and Cutters", "Combination and Multi-Tool Systems"._
+_Figure: Desktop header (breakpoint l) with the Products mega menu open in a four-level structure: the left column lists Sawing and cutting (active, orange marker, chevron), Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise (all with chevrons) and All products (no chevron), while the right column under the title "Sawing and cutting" lists Chainsaws and Power Saws (hover state, pointer cursor), Pole Saws, Hedge Trimmers and Cutters, Combination and Multi-Tool Systems, Pruners, Garden Shears, Loppers, and Branch Saws, and Axes, Hatchets, Hammers, and Forestry Tools. Markers A (header), B (nav bar), C (left column) and D (right column items) map to Levels 1 to 4 (Service Homepage, Primary Navigation Page, Category Page, Subcategory Page) in an "Example IA" tree, and a second header below shows the matching breadcrumb Home / Products / Sawing and cutting / Chainsaws and Power Saws._
 
 ### Chevron Usage
 
@@ -1430,7 +1434,7 @@ _Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, num
 
 ![Chevron Usage](navigation/chevron-usage-7247-37646.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); action-item (label=Sawing and cutting, state=active, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Mowing and planting, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Cleaning and clearing, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Garden size, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Offers and promotions, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Merchandise, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=All products, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); annotation-circle (number=2, type=center, color=blue); text (Text=Text, Group Title=Group Title, Main Title=Sawing and cutting, breakpoint=l + xl, variant=main title); action-item (label=Chainsaws and Power Saws, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Pole Saws, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Callouts 1, 2. Text in the figure: "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions", "Merchandise", "All products", "Chainsaws and Power Saws", "Pole Saws", "Hedge Trimmers and Cutters", "Combination and Multi-Tool Systems", "Pruners, Garden Shears, Loppers, and Branch Saws", "Axes, Hatchets, Hammers, and Forestry Tools"._
+_Figure: Open mega menu with a left column of action items and a right column titled "Sawing and cutting" listing its subcategories. Callout 1 magnifies the chevron on the active item "Sawing and cutting", which leads to a deeper menu level, and callout 2 magnifies "All products", which has no chevron and is a direct page link without submenu; Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions and Merchandise also carry chevrons._
 
 ## Mega Menu: Content and Assets
 
@@ -1448,7 +1452,7 @@ _Figure: Shows annotation-circle (number=1, type=center, color=blue); action-ite
 
 ![Three-Level Navigation](navigation/three-level-navigation-6897-80147.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); action-item (label=Sawing and cutting, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Mowing and planting, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Cleaning and clearing, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Garden size, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Offers and promotions, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Merchandise, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=All products, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); placeholder: image (aspect ratio=1:1); annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue). Callouts 1, 2. Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions", "Merchandise", "All products"._
+_Figure: Desktop header with the Products mega menu open in a three-level structure: seven action items (Sawing and cutting, Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise, All products) without chevrons or active state in the left column, and a dashed placeholder area to their right. Callout 1 marks the 1:1 image placeholder in the right half of the placeholder area, where optional visual content such as images, teasers or videos can go, and callout 2 marks the third-level action items, which show no active state because there is no fourth level._
 
 #### Four-Level Navigation
 
@@ -1461,7 +1465,7 @@ _Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, nu
 
 ![Four-Level Navigation](navigation/four-level-navigation-7247-34735.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); action-item (label=Sawing and cutting, state=active, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Mowing and planting, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Cleaning and clearing, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Garden size, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Offers and promotions, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Merchandise, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=All products, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); placeholder: image (aspect ratio=1:1); annotation-circle (number=1, type=center, color=blue); text (Text=Text, Group Title=Group Title, Main Title=Sawing and cutting, breakpoint=l + xl, variant=main title). Callouts 1, 2, 3. Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions", "Merchandise", "All products", "Chainsaws and Power Saws", "Pole Saws", "Hedge Trimmers and Cutters", "Combination and Multi-Tool Systems"._
+_Figure: Desktop header with the Products mega menu open in a four-level structure: left column of action items with chevrons (Sawing and cutting active with orange marker, Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise, All products), and a dashed placeholder area containing the headline "Sawing and cutting" with the fourth-level links Chainsaws and Power Saws, Pole Saws, Hedge Trimmers and Cutters, Combination and Multi-Tool Systems, Pruners, Garden Shears, Loppers, and Branch Saws and Axes, Hatchets, Hammers, and Forestry Tools, plus a 1:1 image placeholder on the right. Callout 1 marks the headline and fourth-level link list, callout 2 marks the optional visual content (image placeholder), and callout 3 marks the active third-level action item._
 
 ## Mega Menu: Accessibility
 
@@ -1481,7 +1485,7 @@ The overall focus order follows a top-to-bottom and left-to-right pattern, depen
 
 ![Focus Order](navigation/focus-order-7446-39344.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); action-item (label=Sawing and cutting, state=active-focus, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Mowing and planting, state=focus, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Cleaning and clearing, state=focus, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Garden size, state=focus, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Offers and promotions, state=focus, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Merchandise, state=focus, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=All products, state=focus, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); placeholder: image (aspect ratio=16:9); text (Text=Text, Group Title=Group Title, Main Title=Sawing and cutting, breakpoint=l + xl, variant=main title); action-item (label=Chainsaws and Power Saws, state=focus, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Callouts 3. Text in the figure: "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions", "Merchandise", "All products", "Chainsaws and Power Saws", "Pole Saws", "Hedge Trimmers and Cutters", "Combination and Multi-Tool Systems"._
+_Figure: Open mega menu with focus outlines drawn around every focusable element and numbered markers giving the focus order: 1a is the active Sawing and cutting item, 3a to 3f are the remaining third-level items in order (Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise, All products), 2a to 2f are the fourth-level links under the "Sawing and cutting" title (Chainsaws and Power Saws, Pole Saws, Hedge Trimmers and Cutters, Combination and Multi-Tool Systems, Pruners, Garden Shears, Loppers, and Branch Saws, Axes, Hatchets, Hammers, and Forestry Tools), and callout 3 marks the image placeholder on the right; the header behind is blurred._
 
 ### Keyboard Navigation
 
@@ -1497,7 +1501,7 @@ Users can navigate through focusable elements in the Mega Menu using the keyboar
 
 ![Keyboard Navigation](navigation/keyboard-navigation-7446-39390.png)
 
-_Figure: Shows action-item (label=Sawing and cutting, state=focus, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Mowing and planting, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Cleaning and clearing, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Garden size, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Offers and promotions, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Merchandise, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=All products, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Sawing and cutting, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Mowing and planting, state=focus, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Sawing and cutting, state=active-focus, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Mowing and planting, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false); action-item (label=Cleaning and clearing, state=enabled, stacking=horizontal, leading-element=none, chevron=true, label-weight=regular, indent=false). Text in the figure: "Tab", "Move to next focusable element:", "Sawing and cutting", "Mowing and planting", "Cleaning and clearing", "Garden size", "Offers and promotions", "Merchandise", "All products", "Shift", "Move to previous focusable element:", "+", "Arrow left", "Arrow right", "Switch between levels + items:", "or", "Arrow down", "Arrow up", "Chainsaws and Power Saws", "Pole Saws", "Hedge Trimmers and Cutters", "Combination and Multi-Tool Systems", "Pruners, Garden Shears, Loppers, and Branch Saws", "Axes, Hatchets, Hammers, and Forestry Tools"._
+_Figure: Five keyboard interaction examples, each with a key label above a menu: "Tab" ("Move to next focusable element:") moves focus from Sawing and cutting to Mowing and planting; "Tab" + "Shift" ("Move to previous focusable element:") moves focus back from Mowing and planting to Sawing and cutting; "Arrow left" or "Arrow right" and "Arrow down" or "Arrow up" ("Switch between levels + items:") move focus between the left column and the right column (to Chainsaws and Power Saws) and between items; "Enter" ("Open Utility Menu with:") moves focus from the Products nav item into the dashed menu area; "Esc" ("Close Utility Menu with:") closes the open menu, with an arrow pointing out of the menu to a close mark._
 
 ## Mega Menu: Example
 
@@ -1507,7 +1511,7 @@ The navigation is optimized for browsing and product discovery. It provides acce
 
 ![E-Shop](navigation/e-shop-7700-44318.png)
 
-_Figure: Shows promo-banner (type=secondary, viewport=XL, content=usps); top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l); flag (label=Offer, color=promo: highlight); button (button text=To the Offer, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); mega menu (breakpoint=xl); text (Text=Text, Group Title=Group Title, Main Title=Sawing and cutting, breakpoint=l + xl, variant=main title); action-item (label=Chainsaws and Power Saws, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Pole Saws, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Hedge Trimmers and Cutters, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Combination and Multi-Tool Systems, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Pruners, Garden Shears, Loppers, and Branch Saws, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Text in the figure: "Free shipping on orders over €49", "Delivery or local pickup available", "30-day return policy", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login", "Products", "Accessories", "Professionals", "Advice", "Support", "outdoor time. Chainsaws from STIHL.", "Quality and Ease of Use", "Offer", "MS 180", "399,00 €", "from €399.00\*", "To the Offer", "\*Manufacturer's suggested retail price (for sets when purchasing individual c..."._
+_Figure: E-shop desktop header with a promo banner above it ("Free shipping on orders over €49", "Delivery or local pickup available", "30-day return policy"), the top bar with logo, "Search Site" field and Contact, Dealer, Wishlist, Cart (badge 3), STIHL World and Login, and the nav bar Products (open), Accessories, Professionals, Advice, Support. The Products mega menu shows seven category items with chevrons on the left (Sawing and cutting active) and the title "Sawing and cutting" with six subcategory links on the right, overlaying page content with images below._
 
 ## Mega Navigation Mobile & Tablet: Overview
 
@@ -1532,7 +1536,7 @@ Full **Mobile Menu** documentation is available [here](https://www.figma.com/des
 
 ![Mega Navigation Mobile & Tablet: Overview](navigation/mega-navigation-mobile-tablet-overview-6924-86683.png)
 
-_Figure: Text in the figure: "Top Bar Items (Primary)", "Utility Menu Items (Optional)", "Nav Bar Items", "Top Bar Items (Secondary)", "Mega Menu Items", "Header", "Mobile Menu", "Mobile Menu – Drilldown"._
+_Figure: Schematic of how navigation content is distributed on mobile and tablet across three panels. Header contains "Top Bar Items (Primary)" at the top and "Utility Menu Items (Optional)" in the middle; Mobile Menu contains "Nav Bar Items" with "Utility Menu Items (Optional)" inside it and "Top Bar Items (Secondary)" below; "Mobile Menu - Drilldown" contains "Mega Menu Items"._
 
 ### Mega Navigation Variants
 
@@ -1597,7 +1601,7 @@ It supports a single level of navigation and is best suited for simple site stru
 
 ![Dropdown Navigation: Overview](navigation/dropdown-navigation-overview-6897-80609.png)
 
-_Figure: Text in the figure: "Top Bar", "Nav Bar", "Header", "Utility Menu (Optional)", "Dropdown Menu"._
+_Figure: Schematic of the Dropdown Navigation structure: a Header containing a Top Bar above a Nav Bar, a Dropdown Menu box hanging below the left side of the Nav Bar, and an optional Utility Menu (Optional) box overlapping the right end of the Top Bar and Nav Bar._
 
 ### Dropdown Navigation Variants
 
@@ -1607,7 +1611,7 @@ Dropdown Menus is triggered via Button Nav Items in the Nav Bar, each revealing 
 
 ![Top Bar + Nav Bar + Dropdown Menu This is the standard version of the Dropdown Menu.](navigation/top-bar-nav-bar-dropdown-menu-this-is-the-standard-version-o-7422-37754.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=true, number areas=2); nav-bar (variant=main, breakpoint=l); annotation-circle (number=2, type=left, color=blue). Text in the figure: "Corporate", "Search Site", "Contact", "About STIHL", "Sustainability", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest", "Careers", "STIHL Journal", "Press"._
+_Figure: Desktop header of the standard Dropdown Menu with the STIHL logo, CORPORATE, a Search Site field and Contact in the Top Bar, and a Nav Bar with About STIHL, Sustainability, Careers, STIHL Journal and Press. Sustainability is active with an up chevron and opens a dropdown list: STIHL sustainability strategy, Education and people, Economic sustainability, Social engagement, Climate strategy, Environmental protection and STIHL and the rainforest._
 
 #### Top Bar + Nav Bar + Dropdown Menu + Utility Menu This is the standard version, enhanced with a Utility Menu.
 
@@ -1634,7 +1638,7 @@ _Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=true, numb
 
 ![Dropdown Menu: Component](navigation/dropdown-menu-component-6263-62120.png)
 
-_Figure: Shows anchor element (state=hover /pressed, breakpoint=l + xl, icon=right); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); anchor element (state=enabled, breakpoint=l + xl, icon=right); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Text in the figure: "Dropdown Menu", "anchor-element: button-nav", "alignment: left", "alignment: right", "Label", "expanded: true", "expanded: false", "Dropdown Menu Content"._
+_Figure: Dropdown Menu component variants: anchor-element button-nav with alignment: left and alignment: right, each shown expanded: true (Label button with up chevron and a list of eight Label items below, aligned to the left or right edge of the button) and expanded: false (Label button with down chevron, no list). Below, Dropdown Menu Content shows the plain list of eight Label items._
 
 ### Related elements
 
@@ -1663,7 +1667,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Elements](navigation/elements-6583-85991.png)
 
-_Figure: Shows annotation-circle (number=1, type=left, color=blue); dropdown-menu (alignment=left, expanded=true); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "Label"._
+_Figure: Expanded Dropdown Menu with callout 1 pointing at the Label button with up chevron (the Anchor Element, a Button Nav) and callout 2 pointing at the white list of eight Label items below it (the List)._
 
 ### Sizing
 
@@ -1680,7 +1684,7 @@ These limits ensure the dropdown remains readable and visually balanced, regardl
 
 ![Min. and max. width](navigation/min-and-max-width-7388-47354.png)
 
-_Figure: Shows dropdown-menu (alignment=left, expanded=true); anchor element (state=hover /pressed, breakpoint=l + xl, icon=right); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white). Text in the figure: "Label", "min. 200px", "max. 540px"._
+_Figure: Two expanded Dropdown Menus showing width limits: a narrow list measured min. 200px and a wide list measured max. 540px, each below a Label button with up chevron and containing eight Label items._
 
 #### Maximum height
 
@@ -1692,7 +1696,7 @@ If the content exceeds the available space, the Dropdown Menu becomes scrollable
 
 ![Maximum height](navigation/maximum-height-7388-47359.png)
 
-_Figure: Shows anchor element (state=hover /pressed, breakpoint=l + xl, icon=right); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Text in the figure: "Label", "min. 48px"._
+_Figure: Expanded Dropdown Menu inside a browser window, with a Label button and a long list of Label items that extends toward the bottom of the viewport and shows a scrollbar. A measurement marks min. 48px between the bottom of the dropdown and the bottom edge of the screen._
 
 ### Alignment
 
@@ -1704,7 +1708,7 @@ This responsive behavior ensures optimal positioning and prevents content from b
 
 ![Alignment](navigation/alignment-6583-85997.png)
 
-_Figure: Shows dropdown-menu (alignment=left, expanded=true); dropdown-menu (alignment=right, expanded=true). Text in the figure: "Label", "alignment: left", "alignment: right"._
+_Figure: Browser window with two expanded Dropdown Menus: on the left a Label button with its list aligned to the button's left edge (alignment: left), and on the right a Label button near the right screen edge with its list aligned to the button's right edge (alignment: right) so it stays fully inside the viewport._
 
 ### Usage
 
@@ -1726,7 +1730,7 @@ The overall focus order follows a top-to-bottom pattern.
 
 ![Focus Order](navigation/focus-order-7446-41809.png)
 
-_Figure: Shows popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=5, type=left, color=blue); annotation-circle (number=6, type=left, color=blue); annotation-circle (number=7, type=left, color=blue). Callouts 1, 2, 3, 4, 5, 6, 7. Text in the figure: "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest"._
+_Figure: Shows popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=5, type=left, color=blue); annotation-circle (number=6, type=left, color=blue); annotation-circle (number=7, type=left, color=blue). Callouts 1, 2, 3, 4, 5, 6, 7. Text in the figure: "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest"._
 
 ### Keyboard Navigation
 
@@ -1739,7 +1743,7 @@ Users can navigate through focusable elements in the Dropdown Menu using the key
 
 ![Keyboard Navigation](navigation/keyboard-navigation-7446-41855.png)
 
-_Figure: Shows dropdown\_menu\_container (overflow=false); popover (arrow=false, arrow placement=none, arrow alignment=none, color=white); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l). Text in the figure: "Tab", "Move to next focusable element:", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest", "Shift", "Move to previous focusable element:", "+", "Space", "Enter", "Open Utility Menu with:", "or", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login"._
+_Figure: Shows dropdown\_menu\_container (overflow=false); popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=l). Text in the figure: "Tab", "Move to next focusable element:", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest", "Shift", "Move to previous focusable element:", "+", "Space", "Enter", "Open Utility Menu with:", "or", "Search Site", "Contact", "Dealer", "Wishlist", "3", "Cart", "STIHL World", "Login"._
 
 ## Dropdown Menu: Examples
 
@@ -1751,7 +1755,7 @@ On the STIHL Corporate and Career website, when the navigation structure is simp
 
 ![STIHL Corporate](navigation/stihl-corporate-7388-48224.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=true, number areas=2); nav-bar (variant=main, breakpoint=l); title (title text=Welcome to STIHL, size=xl, viewport=desktop). Text in the figure: "Corporate", "Search Site", "Contact", "English", "About STIHL", "Sustainability", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest", "Careers", "STIHL Journal", "Press", "Welcome to STIHL", "ƒ"._
+_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=true, number areas=2); nav-bar (variant=main, breakpoint=l); popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); title (title text=Welcome to STIHL, size=xl, viewport=desktop). Text in the figure: "Corporate", "Search Site", "Contact", "English", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest", "Welcome to STIHL", "ƒ"._
 
 ## Dropdown Navigation Mobile & Tablet: Overview
 
@@ -1829,7 +1833,7 @@ The **Mobile Menu (4)** can be accessed by tapping the **Menu Action Item (4a)**
 
 ![Responsiveness](navigation/responsiveness-7402-43961.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=2); nav-bar (variant=full width, breakpoint=l); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=right, color=blue); annotation-circle (number=4, type=top, color=blue); top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=2); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, viewport=m + s, icon=right); divider (Direction=horizontal). Callouts 1, 2, 3, 4, 5. Text in the figure: "Desktop (breakpoint l & xl)", "corporate", "Search Site", "Contact", "English", "Search Language", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español", "About STIHL", "Sustainability", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection", "STIHL and the rainforest", "Careers"._
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=2); nav-bar (variant=full width, breakpoint=l); popover (children=\[object Object\], arrow=false, arrow placement=none, arrow alignment=none, color=white); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=right, color=blue); annotation-circle (number=4, type=top, color=blue); top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=2); top-bar (grid variant=main, breakpoint=s, brand add-on=false, number areas=2); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, viewport=m + s, icon=right). Callouts 1, 2, 3, 4, 5. Text in the figure: "Desktop (breakpoint l & xl)", "corporate", "Search Site", "Contact", "English", "Search Language", "Global Sites", "Global / English", "Global / Español", "Global / Français", "Global / Portugals", "Local Sites", "Deutschland / Deutsch", "Argentina / Español", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "STIHL sustainability strategy", "Education and people", "Economic sustainability", "Social engagement", "Climate strategy"._
 
 ## Sidebar Navigation: Overview
 
@@ -1881,11 +1885,11 @@ _Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=false, num
 
 ![Sidebar Menu: Component](navigation/sidebar-menu-component-6263-51863.png)
 
-_Figure: Shows text (Main Title=Main Title, Text=Text, Group Title=Group Title, breakpoint=l + xl, variant=group title); action-item (label=Label, state=active, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); divider (Direction=horizontal); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); action-item (label=Label, state=active, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); accordion-single (state=enabled, size=extra-small, expansion-indicator=left, expanded=true, flush=false); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Label, state=active, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Label, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false). Text in the figure: "Sidebar: simple", "Sidebar: expandable", "Sidebar: collapsed", "Group Title", "Label", "Accordion", "123"._
+_Figure: Three Sidebar Menu variants side by side, each shown in a default and a scrolling version: "Sidebar: simple" with Group Title headings and plain Label action items, "Sidebar: expandable" with icon labels, an Accordion item with a count badge "123" and indented child labels, and "Sidebar: collapsed" showing only icons with small labels. In every variant the first Label is active (grey background, orange left bar, bold) and a collapse button sits at the bottom._
 
 ![Sidebar Menu: Component](navigation/sidebar-menu-component-6263-56826.png)
 
-_Figure: Shows action-item (label=Label, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false). Text in the figure: "Helper Component", "second-layer-group", "Label"._
+_Figure: Helper Component named "second-layer-group": a plain list of four indented Label action items (enabled, horizontal, no icon) used as the nested second layer of an expandable sidebar group._
 
 ### Related elements
 
@@ -1916,7 +1920,7 @@ There are two possible states for sidebars:
 
 ![States](navigation/states-6924-89469.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); sidebar-menu\_simple (overflow=false); sidebar-menu\_collapsed (icons=true). Callouts 1, 2. Text in the figure: "Group Title", "Label"._
+_Figure: Two sidebar states side by side: callout 1 marks the expanded sidebar showing Group Titles and icon Labels with the first item active, callout 2 marks the collapsed sidebar showing only icons with small labels. Both have a collapse button at the bottom._
 
 #### Elements
 
@@ -1928,7 +1932,7 @@ _Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation
 
 ![Elements](navigation/elements-6931-91782.png)
 
-_Figure: Shows sidebar-menu\_simple (overflow=false); sidebar-menu\_expandable (overflow=false); sidebar-menu\_collapsed (icons=true); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=5, type=right, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=right, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Group Title", "Label", "Accordion", "123"._
+_Figure: Anatomy of the sidebar in simple, expandable and collapsed variants. Callout 1 points at the Group Title, 2 at an Action Item, 3 at the Divider between groups, 4 at the Collapse Button at the bottom, and 5 at the Expandable Item (an Accordion row with a "123" badge and indented child labels) in the expandable sidebar._
 
 ### Background colour
 
@@ -1939,7 +1943,7 @@ The sidebar background color can adapt based on layout needs:
 
 ![Background colour](navigation/background-colour-7700-46442.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); top-bar (grid variant=full, breakpoint=xl, brand add-on=true, number areas=1); sidebar-menu\_expandable (overflow=false); annotation-circle (number=2, type=center, color=blue). Callouts 1, 2. Text in the figure: "Connected", "STIHL World", "MM", "Fleet Management", "Equipment", "Filtered lists", "3", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information"._
+_Figure: Two identical "Connected" Equipment (12) page layouts with a Top Bar and expandable Sidebar Menu that differ only in background colour. Callout 1 marks the default layout with a white page and sidebar (background-color-primary), callout 2 marks the alternative where the main content area is grey so the white sidebar is visually separated (background-color-secondary)._
 
 ### Grid
 
@@ -1965,7 +1969,7 @@ The different levels are reflected in the breadcrumb trail to support user orien
 
 ![Without Nav Bar: Starting from level two](navigation/without-nav-bar-starting-from-level-two-7379-40585.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=1); sidebar-menu\_expandable (overflow=false); breadcrumb (expanded=true). Text in the figure: "Connected", "STIHL World", "MM", "Example IA", "A", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information", "Level 1: Service Homepage", "B"._
+_Figure: Layout without a Nav Bar: a Top Bar above an expandable Sidebar (Fleet Management, Equipment, Filtered lists, Connected Hub, Energy Evaluation, Organization and footer groups), with markers A at the Top Bar and B at the sidebar items and an optional dashed C at the filtered list items. The "Example IA" tree shows A as Level 1: Service Homepage, B as Level 2: Page, and C as Level 3: Filtered Views or In-Page Sections (Optional). A second layout shows how the breadcrumb "Home / Fleet Management: Equipment" corresponds to the Top Bar, the optional section header and the active sidebar item._
 
 ### With Nav Bar: Starting from level three
 
@@ -1985,7 +1989,7 @@ The different levels are reflected in the breadcrumb trail to support user orien
 
 ![With Nav Bar: Starting from level three](navigation/with-nav-bar-starting-from-level-three-7379-35273.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=1); nav-bar (variant=full width, breakpoint=l); sidebar-menu\_expandable (overflow=false); breadcrumb (level 2, expanded=true). Text in the figure: "Connected", "STIHL World", "MM", "Example IA", "A", "Level 1: Service Homepage", "B", "Products", "Accessories", "Professionals", "Advice", "Support", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams"._
+_Figure: Layout with a Nav Bar (Products, Accessories, Professionals, Advice, Support) between the Top Bar and the expandable Sidebar. Markers A (Top Bar), B (Nav Bar), C (sidebar items) and an optional dashed D (filtered list items) map to the "Example IA" tree: Level 1: Service Homepage, Level 2: Page, Level 3: Sub-Page, Level 4: Filtered Views or In-Page Sections (Optional). A second layout shows the breadcrumb "Home / Products / Fleet Management: Equipment" with arrows to the Top Bar, the Nav Bar item, the optional section header and the active sidebar item._
 
 ## Sidebar Menu: Navigation Patterns
 
@@ -2007,7 +2011,7 @@ Example Structure:
 
 ![Simple Navigation Pattern](navigation/simple-navigation-pattern-7379-37092.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=1); action-item (label=Equipment, state=active, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=horizontal); action-item (label=Teams, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Employees, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Organization Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Maintenance Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Contact, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Legal Information, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Connected", "STIHL World", "MM", "Example IA: Simple Navigation Pattern", "A", "Equipment", "Connected Hub", "Energy Evaluation", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information", "Level 1: Service Homepage", "B", "Level 2: Page"._
+_Figure: Simple Navigation Pattern: a Top Bar above a sidebar with a flat list of icon Action Items (Equipment active, Connected Hub, Energy Evaluation, Teams, Employees, Organization Settings, Maintenance Settings, Contact, Legal Information) separated into loose groups by dividers without headers. Marker A is the Top Bar and B the sidebar links; the "Example IA: Simple Navigation Pattern" tree shows A as Level 1: Service Homepage with all items as Level 2: Page, with dotted breaks where dividers fall._
 
 ### Organized with Sections
 
@@ -2031,7 +2035,7 @@ This is recommended when the added context helps users better understand and mai
 
 ![Organized with Sections](navigation/organized-with-sections-7379-37162.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=1); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=active, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Organization, breakpoint=l + xl, variant=group title); action-item (label=Teams, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Employees, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Organization Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Maintenance Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); text (Main Title=Main Title, Text=Text, Group Title=Official, breakpoint=l + xl, variant=group title). Text in the figure: "Connected", "STIHL World", "MM", "Example IA: Organized with Sections", "A", "Fleet Management", "Equipment", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Official", "Contact", "Legal Information", "Level 1: Service Homepage", "B", "Level 2: Page", "Section 1", "Section 2", "Section 3", "Correspondence with breadcrumbs (Optional)"._
+_Figure: Organized with Sections: a sidebar whose links sit under non-clickable group headers Fleet Management (Equipment active, Connected Hub, Energy Evaluation), Organization (Teams, Employees, Organization Settings, Maintenance Settings) and Official (Contact, Legal Information). Marker A is the Top Bar and B the links; the "Example IA: Organized with Sections" tree shows A as Level 1: Service Homepage with Section 1, Section 2 and Section 3 each holding Level 2: Page items. The lower "Correspondence with breadcrumbs (Optional)" example shows the breadcrumb "Home / Organization: Teams" built from the optional section header "Organization" and the active item Teams._
 
 ### Organized with Group Sections (Expandable)
 
@@ -2059,7 +2063,7 @@ Since the links within the accordion do not represent distinct page levels, they
 
 ![Organized with Group Sections (Expandable)](navigation/organized-with-group-sections-expandable-7379-37266.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=1); sidebar-menu\_expandable (overflow=false); breadcrumb (expanded=true). Text in the figure: "Example IA: Organized with Group Sections (Expandable)", "Connected", "STIHL World", "MM", "A", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information", "Level 1: Service Homepage", "B"._
+_Figure: Connected app with top bar and expandable sidebar grouped under the sections "Fleet Management" (Equipment with expanded "Filtered lists" showing List 1 active, List 2, List 3, "Add filtered list", plus Connected Hub, Energy Evaluation) and "Organization" (Teams, Employees, Organization Settings, Maintenance Settings), followed by Contact and Legal Information. Markers A, B and C label the service homepage, a page and a dashed in-page filtered view, and the tree "Example IA: Organized with Group Sections (Expandable)" shows Level 1: Service Homepage (A) with Level 2 pages (B) across Section 1, Section 2 and Section 3, where Level 2 filtered views or in-page sections (C) sit inside Section 1. Below, "Correspondence with breadcrumbs (Optional)" maps the top bar to "Home" and the active List 1 to the breadcrumb "Home / Fleet Management: Equipment", with the section header "Fleet Management" marked optional._
 
 ### Organized with Group Sections (Not expandable)
 
@@ -2081,7 +2085,7 @@ This is recommended when the added context helps users better understand and mai
 
 ![Organized with Group Sections (Not expandable)](navigation/organized-with-group-sections-not-expandable-7827-43030.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=1); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Saw Chains, state=active, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=true); action-item (label=Lawn Mowers, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=true); action-item (label=Pole Pruners, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=true); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Organization, breakpoint=l + xl, variant=group title); action-item (label=Teams, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Employees, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false). Text in the figure: "Example IA: Organized with Group Sections (Expandable)", "Connected", "STIHL World", "MM", "A", "Fleet Management", "Equipment", "Saw Chains", "Lawn Mowers", "Pole Pruners", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information", "Level 1: Service Homepage", "B", "Level 2: Page", "c", "C"._
+_Figure: Connected app with a non-expandable sidebar: under the group title "Fleet Management" the item Equipment (A: service homepage level, B: page) has three indented sub-pages (C) Saw Chains (active), Lawn Mowers and Pole Pruners, followed by Connected Hub and Energy Evaluation, then an "Organization" group with Teams, Employees, Organization Settings and Maintenance Settings, and Contact and Legal Information at the bottom. A tree diagram shows Level 1: Service Homepage (A), Level 2: Page (B) and Level 3: Sub-Page (C) across Section 1, Section 2 and Section 3. The lower part, "Correspondence with breadcrumbs (Optional)", maps the active Saw Chains to the breadcrumb "Home / Fleet Management: Equipment / Saw Chains", with the group title "Fleet Management" marked optional._
 
 ## Sidebar Menu: Content and Assets
 
@@ -2095,7 +2099,7 @@ Avoid abstract or ambiguous symbols unless they are commonly understood.
 
 ![Icons](navigation/icons-6938-99526.png)
 
-_Figure: Shows action-item (label=Equipment, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Maintenance Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=horizontal); action-item (label=Contact, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Legal Information, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Equipment", "Connected Hub", "Energy Evaluation", "Maintenance Settings", "Contact", "Legal Information"._
+_Figure: Sidebar section with action items that each have a leading icon in front of the regular-weight label: Equipment, Connected Hub, Energy Evaluation and Maintenance Settings._
 
 ### Label weight
 
@@ -2108,7 +2112,7 @@ The visual hierarchy of text labels plays a key role in guiding users through th
 
 ![Label weight](navigation/label-weight-6938-101349.png)
 
-_Figure: Shows action-item (label=Equipment, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=horizontal); action-item (label=Teams, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Employees, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Organization Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Maintenance Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Contact, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Legal Information, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); action-item (label=Equipment, state=active, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false). Callouts 3. Text in the figure: "Equipment", "Connected Hub", "Energy Evaluation", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information", "Fleet Management", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Organization", "1a", "1b"._
+_Figure: Three sidebar examples with the action-item property panel beside each. 1a: enabled action item Equipment with label-weight regular. 1b: active item Equipment, highlighted with an orange bar, also label-weight regular. 3: in an expandable group under "Fleet Management", the top-level items Equipment, Connected Hub and Energy Evaluation use label-weight bold, distinguishing them from the nested items Filtered lists, List 1, List 2, List 3 and Add filtered list._
 
 ### Expandable Item
 
@@ -2116,7 +2120,7 @@ When using an accordion within the sidebar, it is recommended to use the “extr
 
 ![Expandable Item](navigation/expandable-item-6938-101827.png)
 
-_Figure: Shows sidebar-menu\_expandable (overflow=false). Text in the figure: "Accordion open", "Accordion closed", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information"._
+_Figure: Two sidebar states of the expandable item "Filtered lists" (with a count badge of 3) under Equipment in the group "Fleet Management". "Accordion open" shows a down-pointing triangle with List 1 (active), List 2, List 3 and "Add filtered list" revealed, while "Accordion closed" shows a right-pointing triangle with the nested items hidden, followed by Connected Hub, Energy Evaluation and the "Organization" group; the accordion is outlined with a dashed frame in both._
 
 ## Sidebar Menu: Behaviour
 
@@ -2138,10 +2142,7 @@ The following elements are not displayed in the collapsed state:
 
 ![Collapsable Sidebar with icons](navigation/collapsable-sidebar-with-icons-6938-102248.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=1); sidebar-menu\_expandable (overflow=false); action-item (label=Equipment, state=active, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Connected  Hub, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Energy
-Evaluation, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=horizontal); action-item (label=Teams, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Employees, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Organization
-Settings, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Maintenance
-Settings, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); annotation-circle (number=3, type=left, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "Sidebar expanded", "Sidebar collapsed", "Connected", "Label", "MM", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings"._
+_Figure: Sidebar expanded and collapsed side by side, with an arrow from expanded to collapsed. The expanded sidebar shows the group title "Fleet Management" (3), Equipment (1), the expandable "Filtered lists" with List 1, List 2, List 3 and "Add filtered list" (4), Connected Hub, Energy Evaluation, a divider (2) and the "Organization" group with Teams, Employees, Organization Settings and Maintenance Settings. The collapsed sidebar keeps only the top-level action items (1) as vertically stacked icon plus label, and the divider lines (2), while group titles and the expandable item are removed._
 
 #### Collapsable Sidebar without icons
 
@@ -2154,7 +2155,7 @@ Settings, state=enabled, stacking=vertical, leading-element=icon, chevron=false,
 
 ![Collapsable Sidebar without icons](navigation/collapsable-sidebar-without-icons-7389-36869.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=l, brand add-on=true, number areas=1); sidebar-menu\_expandable (overflow=false); sidebar-menu\_collapsed (icons=false); annotation-circle (number=1a, type=left, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=1b, type=left, color=blue). Callouts 2. Text in the figure: "Sidebar expanded", "Sidebar collapsed", "Connected", "Label", "MM", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "1a", "1b"._
+_Figure: Sidebar expanded and collapsed side by side, with an arrow from expanded to collapsed. The expanded sidebar has icon-less items: group titles "Fleet Management" and "Organization", Equipment (1a), Connected Hub with an icon (1b), Energy Evaluation, Teams, Employees, Organization Settings and Maintenance Settings; because top-level items lack icons or use them inconsistently, the collapsed sidebar (2) is empty and shows only the expand/collapse button at the bottom._
 
 ### Scroll behaviour
 
@@ -2162,7 +2163,7 @@ Sidebars and their corresponding header elements remain fixed and always visible
 
 ![Scroll behaviour](navigation/scroll-behaviour-6938-104404.png)
 
-_Figure: Text in the figure: "Top Bar", "Nav Bar", "Sidebar"._
+_Figure: Page layout schematic with a "Top Bar" and a "Nav Bar" stacked across the top and a "Sidebar" block on the left below them, with a mouse-scroll icon and a downward chevron on the right indicating page scrolling; the bars and sidebar stay fixed and visible while the content scrolls._
 
 ## Sidebar Menu: Accessibility
 
@@ -2173,7 +2174,7 @@ _Figure: Text in the figure: "Top Bar", "Nav Bar", "Sidebar"._
 
 ![Focus Order](navigation/focus-order-7446-43588.png)
 
-_Figure: Shows action-item (label=Equipment, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Connected Hub, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Energy Evaluation, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=horizontal); action-item (label=Teams, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Employees, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Organization Settings, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Maintenance Settings, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Contact, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Legal Information, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); button (button text=Button, variant=ghost, state=focus, size=small, icon position=none, hide label=on, flush alignment=off); action-item (label=Equipment, state=focus, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false). Callouts 2. Text in the figure: "Equipment", "Connected Hub", "Energy Evaluation", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information", "1a", "1b", "1c", "1d", "1e", "1f", "1g", "1h", "1i"._
+_Figure: Focus order of an expanded sidebar (left) and a collapsed sidebar (right), with every action item outlined as focused and numbered in order: 1a Equipment, 1b Connected Hub, 1c Energy Evaluation, 1d Teams, 1e Employees, 1f Organization Settings, 1g Maintenance Settings, and in the expanded sidebar 1h Contact and 1i Legal Information, so focus moves top to bottom. Callout 2 marks the collapse/expand button at the bottom, which comes last in the focus order and is reachable with Tab._
 
 ### Keyboard Navigation
 
@@ -2185,7 +2186,7 @@ Users can navigate through focusable elements in the header using the keyboard:
 
 ![Keyboard Navigation](navigation/keyboard-navigation-7446-43601.png)
 
-_Figure: Shows action-item (label=Equipment, state=focus, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); divider (Direction=horizontal); action-item (label=Teams, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Employees, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Organization Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Maintenance Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Contact, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Legal Information, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); action-item (label=Equipment, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false). Text in the figure: "Tab", "Move to next focusable element:", "Equipment", "Connected Hub", "Energy Evaluation", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information", "Shift", "Move to previous focusable element:", "+", "Enter", "Open page with:", "Connected", "Label", "MM"._
+_Figure: Three sidebar keyboard states. "Move to next focusable element: Tab" shows the focus ring on Equipment with an arrow to a dashed Connected Hub below. "Move to previous focusable element: Tab + Shift" shows focus on Connected Hub with an arrow back up to a dashed Equipment. "Open page with: Enter" shows Equipment as active, focus on Connected Hub, and an arrow from it to the dashed content area where the page opens._
 
 ## Sidebar Menu: Examples
 
@@ -2199,7 +2200,7 @@ The sidebar provides fast access to categories and search functions, supporting 
 
 ![STIHL Service Communication (SSC)](navigation/stihl-service-communication-ssc-7700-45147.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=xl, brand add-on=true, number areas=2); nav-bar (variant=full width, breakpoint=xl); ❌ DEPRECATED - interactiv-info-icon (state=default); button (button text=Download product as PDF, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); divider (Direction=horizontal); number-indicator (type=default, minimized=false); action-item (label=Parts Lists, number indicator, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Documents, number indicator, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Repair Times, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Service Packages, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=Special Tools, number indicator, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "SERVICE COMMUNICATION", "Search for products, descriptions, documents", "Picklist", "Bookmarks", "Help", "MM", "Catalogue", "Bar & Chain Finders", "Utilities", "Support News", "MS 180", "Assemblies", "30", "Parts Lists", "234", "Documents", "5", "Technical Data", "Repair Times", "Bar & chain combinations", "Service kits", "2", "Service Packages", "Cutting Attachments"._
+_Figure: STIHL Service Communication (SSC) desktop screen with a full-width top bar (STIHL logo with the brand add-on "SERVICE COMMUNICATION", a pill-shaped search field "Search for products, descriptions, documents", and the actions "Picklist", "Bookmarks", "Help" and the "MM" avatar), a nav bar with the dropdown items "Catalogue", "Bar & Chain Finders", "Utilities" and "Support News", and an expanded sidebar for the product "MS 180" listing action items such as "Assemblies" (active, 30), "Parts Lists" (234), "Documents" (5), "Technical Data", "Repair Times", "Service kits" (2), "Service Packages", "Support News" (5), "Cutting Attachments" (23) and "Special Tools" (46). The main area shows a breadcrumb, the heading "Assemblies", a search field, a "System choice" / "A - Z" toggle and a grid of assembly cards ("Muffler", "Rewind Starter", "Ignition system, AV system", "Hand guard, Chain brake", "O - Carburetor C1Q-S57, C1Q-S57")._
 
 ### Connected Portal
 
@@ -2207,7 +2208,7 @@ A logged-in user portal designed to navigate between tools and manage STIHL prod
 
 ![Connected Portal](navigation/connected-portal-7700-45292.png)
 
-_Figure: Shows top-bar (grid variant=full, breakpoint=xl, brand add-on=true, number areas=1); sidebar-menu\_expandable (overflow=false). Text in the figure: "Connected", "STIHL World", "MM", "Fleet Management", "Equipment", "Filtered lists", "3", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information"._
+_Figure: STIHL Connected Portal desktop screen with a full-width top bar (logo with "CONNECTED", a "STIHL World" dropdown button and the "MM" avatar) and an expandable sidebar menu grouped under "Fleet Management" ("Equipment" active, "Filtered lists" with badge 3, "Connected Hub", "Energy Evaluation"), "Organization" ("Teams", "Employees", "Organization Settings", "Maintenance Settings") and a footer with "Contact" and "Legal Information". The content area shows the page "EQUIPMENT (12)" with "Filter", search, "Add equipment", "Export list" and overflow buttons above a sortable table with the columns Nickname, Model, Category, Drive and Serial number._
 
 ## Sidebar Navigation Mobile & Tablet: Overview
 
@@ -2230,7 +2231,7 @@ Full **Mobile Menu** documentation is available [here](https://www.figma.com/des
 
 ![Sidebar Navigation Mobile & Tablet: Overview](navigation/sidebar-navigation-mobile-tablet-overview-7401-59621.png)
 
-_Figure: Text in the figure: "Top Bar Items (Primary)", "Utility Menu Items (Optional)", "Nav Bar Items (Optional)", "Top Bar Items (Secondary)", "Sidebar Menu Items", "Header", "Mobile Menu", "Mobile Menu – Drilldown"._
+_Figure: Schematic of where navigation items go on mobile and tablet in three phone-shaped frames. The "Header" holds "Top Bar Items (Primary)" at the top with "Utility Menu Items (Optional)" below; the "Mobile Menu" holds "Nav Bar Items (Optional)" containing "Utility Menu Items (Optional)", followed by "Top Bar Items (Secondary)"; the "Mobile Menu - Drilldown" is filled entirely by "Sidebar Menu Items"._
 
 ### Sidebar Navigation Variants
 
@@ -2242,7 +2243,7 @@ On mobile screens, the Sidebar Menu is replaced with a drilldown navigation patt
 
 ![Top Bar Items + Nav Bar Items (Optional) + Sidebar Menu Items This is the standard version of the Sidebar Menu.](navigation/top-bar-items-nav-bar-items-optional-sidebar-menu-items-this-7401-59653.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, breakpoint=s + m, icon=right); header-drawer (heading, back button, close button, viewport=mobile, style=button); text (Group Title=Group Title, Text=Text, Main Title=Products, breakpoint=s + m, variant=main title); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); accordion-single (state=enabled, size=extra-small, expansion-indicator=left, expanded=true, flush=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Organization, breakpoint=l + xl, variant=group title). Text in the figure: "Connected", "MM", "Menu", "STIHL World", "Products", "Accessories", "Professionals", "Advice", "Support", "Main Menu", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings"._
+_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, breakpoint=s + m, icon=right); header-drawer (heading, back button, close button, viewport=mobile, style=button); text (Group Title=Group Title, Text=Text, Main Title=Products, breakpoint=s + m, variant=main title); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); accordion-single (hint=\[object Object\], children=\[object Object\], state=enabled, size=extra-small, expansion-indicator=left, expanded=true, flush=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Organization, breakpoint=l + xl, variant=group title). Text in the figure: "Connected", "MM", "Menu", "STIHL World", "Products", "Accessories", "Professionals", "Advice", "Support", "Main Menu", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings"._
 
 1. **Top Bar Items + Nav Bar Items (Optional) + Sidebar Menu Items + Utility Menu Items** This is the fully featured version, enhanced with a Utility Menu.
 
@@ -2250,7 +2251,7 @@ On mobile and tablet devices, **Utility Menu Items** do not open as popovers. In
 
 ![Top Bar Items + Nav Bar Items (Optional) + Sidebar Menu Items This is the standard version of the Sidebar Menu.](navigation/top-bar-items-nav-bar-items-optional-sidebar-menu-items-this-7401-59702.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, breakpoint=s + m, icon=right); header-drawer (heading, back button, close button, viewport=mobile, style=button); text (Group Title=Group Title, Text=Text, Main Title=Products, breakpoint=s + m, variant=main title); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); accordion-single (state=enabled, size=extra-small, expansion-indicator=left, expanded=true, flush=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Organization, breakpoint=l + xl, variant=group title). Text in the figure: "Connected", "STIHL World", "MM", "Menu", "Products", "Accessories", "Professionals", "Advice", "Support", "Main Menu", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings"._
+_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button-nav (state=enabled, breakpoint=s + m, icon=right); header-drawer (heading, back button, close button, viewport=mobile, style=button); text (Group Title=Group Title, Text=Text, Main Title=Products, breakpoint=s + m, variant=main title); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); accordion-single (hint=\[object Object\], children=\[object Object\], state=enabled, size=extra-small, expansion-indicator=left, expanded=true, flush=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Organization, breakpoint=l + xl, variant=group title). Text in the figure: "Connected", "STIHL World", "MM", "Menu", "Products", "Accessories", "Professionals", "Advice", "Support", "Main Menu", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings"._
 
 #### Related elements
 
@@ -2291,7 +2292,7 @@ The **Mobile Menu (4)** can be accessed by tapping the **Menu Action Item (4a)**
 
 ![Top Bar Items + Sidebar Menu Items + Utility Menu Items (Optional) – List Variation](navigation/top-bar-items-sidebar-menu-items-utility-menu-items-optional-7391-38046.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); top-bar (grid variant=full, breakpoint=l, brand add-on=false, number areas=1); sidebar-menu\_expandable (overflow=false); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=right, color=blue); annotation-circle (number=4a, type=top, color=blue); top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=active, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); accordion-single (state=enabled, size=extra-small, expansion-indicator=left, expanded=true, flush=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false). Callouts 1, 2, 3, 4. Text in the figure: "Desktop (breakpoint l & xl)", "Connected", "STIHL World", "STIHL Website", "MY STIHL", "STIHL Connected", "iMOW® Web App", "Product Advisor", "All Services & Apps", "MM", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings"._
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); top-bar (grid variant=full, breakpoint=l, brand add-on=false, number areas=1); sidebar-menu\_expandable (overflow=false); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=right, color=blue); annotation-circle (number=4a, type=top, color=blue); top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=active, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); accordion-single (hint=\[object Object\], children=\[object Object\], state=enabled, size=extra-small, expansion-indicator=left, expanded=true, flush=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false). Callouts 1, 2, 3, 4. Text in the figure: "Desktop (breakpoint l & xl)", "Connected", "STIHL World", "STIHL Website", "MY STIHL", "STIHL Connected", "iMOW® Web App", "Product Advisor", "All Services & Apps", "MM", "Fleet Management", "Equipment", "Filtered lists", "3", "List 1", "List 2", "List 3", "Add filtered list", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings"._
 
 #### Top Bar Items + Sidebar Menu Items + Utility Menu Items (Optional) – Drilldown Variation
 
@@ -2390,7 +2391,7 @@ While both share a similar structure, they serve different use cases and include
 
 ![Anatomy](navigation/anatomy-7366-48734.png)
 
-_Figure: Shows action-item (label=Label, state=hover, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); annotation-circle (number=1, type=left, color=blue); action-item (label=Label, state=hover, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "Label"._
+_Figure: Anatomy of the Action Item in hover state with a leading icon and the text "Label": callout 1 points at the horizontal variant with the icon left of the label, callout 2 points at the vertical variant with the icon above the label._
 
 #### Horizontal Variant
 
@@ -2615,7 +2616,7 @@ _Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=false, num
 
 ![Mobile Menu](navigation/mobile-menu-6263-59296.png)
 
-_Figure: Shows header-drawer (heading, close button, viewport=mobile, style=button); button-nav (state=enabled, breakpoint=s + m, icon=right); divider (Direction=horizontal); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); header-drawer (heading, back button, close button, viewport=mobile, style=button); text (Group Title=Group Title, Text=Text, Main Title=Main Titel, breakpoint=s + m, variant=main title); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=icon, chevron=true, label-weight=regular, indent=false); text (Main Title=Main Title, Text=Text, Group Title=Group Title, breakpoint=l + xl, variant=group title); action-item (label=Label, state=active, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); accordion-single (state=enabled, size=extra-small, expansion-indicator=left, expanded=true, flush=false); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=bold, indent=false). Text in the figure: "Variant: Drilldown - Level 1", "Variant: Drilldown - Level 2", "Variant: List - Level 1", "Variant: List - Level 2", "Button nav", "Label", "Button", "Main Titel", "Group Title", "Accordion", "123", "Overflow: false", "Overflow: true"._
+_Figure: Shows header-drawer (heading, close button, viewport=mobile, style=button); button-nav (state=enabled, breakpoint=s + m, icon=right); divider (Direction=horizontal); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); header-drawer (heading, back button, close button, viewport=mobile, style=button); text (Group Title=Group Title, Text=Text, Main Title=Main Titel, breakpoint=s + m, variant=main title); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=icon, chevron=true, label-weight=regular, indent=false); text (Main Title=Main Title, Text=Text, Group Title=Group Title, breakpoint=l + xl, variant=group title); action-item (label=Label, state=active, stacking=horizontal, leading-element=none, chevron=false, label-weight=regular, indent=false); accordion-single (hint=\[object Object\], children=\[object Object\], state=enabled, size=extra-small, expansion-indicator=left, expanded=true, flush=false); action-item (label=Label, state=enabled, stacking=horizontal, leading-element=none, chevron=false, label-weight=bold, indent=false). Text in the figure: "Variant: Drilldown - Level 1", "Variant: Drilldown - Level 2", "Variant: List - Level 1", "Variant: List - Level 2", "Button nav", "Label", "Button", "Main Titel", "Group Title", "Accordion", "123", "Overflow: false", "Overflow: true"._
 
 ### Related elements
 
@@ -2769,4 +2770,4 @@ An example of how a Sidebar Navigation is adapted for mobile. Detailed breakdown
 
 ![STIHL Connected](navigation/stihl-connected-7430-43207.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=active, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); accordion-single (state=enabled, size=extra-small, expansion-indicator=left, expanded=false, flush=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Organization, breakpoint=l + xl, variant=group title); action-item (label=Teams, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Employees, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Organization Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false). Text in the figure: "Closed", "Open", "Connected", "STIHL World", "MM", "Menu", "Fleet Management", "Equipment", "Filtered lists", "3", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information"._
+_Figure: Shows top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1); Button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); text (Main Title=Main Title, Text=Text, Group Title=Fleet Management, breakpoint=l + xl, variant=group title); action-item (label=Equipment, state=active, stacking=horizontal, leading-element=icon, chevron=false, label-weight=regular, indent=false); accordion-single (hint=\[object Object\], children=\[object Object\], state=enabled, size=extra-small, expansion-indicator=left, expanded=false, flush=false); action-item (label=Connected Hub, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Energy Evaluation, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); divider (Direction=horizontal); text (Main Title=Main Title, Text=Text, Group Title=Organization, breakpoint=l + xl, variant=group title); action-item (label=Teams, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Employees, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false); action-item (label=Organization Settings, state=enabled, stacking=horizontal, leading-element=icon, chevron=false, label-weight=bold, indent=false). Text in the figure: "Closed", "Open", "Connected", "STIHL World", "MM", "Menu", "Fleet Management", "Equipment", "Filtered lists", "3", "Connected Hub", "Energy Evaluation", "Organization", "Teams", "Employees", "Organization Settings", "Maintenance Settings", "Contact", "Legal Information"._

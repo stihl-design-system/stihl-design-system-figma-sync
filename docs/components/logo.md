@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 9050:2
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:45:40.191Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:24:00.203Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=9050-2
 ---
 
@@ -33,7 +33,7 @@ Overview:
 
 ![Logo](logo/logo-9050-5860.png)
 
-_Figure: Text in the figure: "Main", "Sub-Connected", "Sub-MY STIHL", "Sub-iMow", "Default", "Reduced"._
+_Figure: Overview grid of the logo variants as orange squares with white marks. The Default row shows only the Main wide STIHL wordmark logo; the Reduced row shows the Main reduced "S" logo, the Sub-Connected "C" symbol, the Sub-MY STIHL garage symbol and the Sub-iMow "MY iMOW" logo._
 
 ### Further guidelines
 
@@ -54,7 +54,7 @@ When the logo is used as an interactive element (i.e. as a link to the homepage 
 
 ![Size for clickable logos](logo/size-for-clickable-logos-9763-111.png)
 
-_Figure: Shows logo (type=default, logos=main). Measurements: 50px, 70px._
+_Figure: Two sizes of the default main STIHL logo side by side with height measurements: the smaller logo is 50px high (minimum) and the larger logo is 70px high (maximum), the allowed height range when the logo is used as a clickable element._
 
 ### Focus State
 
@@ -62,7 +62,7 @@ The focus state uses the same styling as for buttons. A 2px wide border in the c
 
 ![Focus State](logo/focus-state-9050-881.png)
 
-_Figure: Shows logo (type=default, logos=main). Callouts 1, 2. Text in the figure: "original", "zoomed"._
+_Figure: Focus state of the default main STIHL logo, shown once as "original" and once "zoomed". Callout 1 points at the 2px wide dark grey-deep focus border around the logo, and the two callouts 2 mark the 2px gap between that border and the logo._
 
 ## Favicon
 
@@ -74,7 +74,7 @@ Overview:
 
 ![Favicon](logo/favicon-9050-6243.png)
 
-_Figure: Measurements: 16px, 32px, 128px, 180px, 192px, 512px. Text in the figure: "STIHL", "Connected", "My STIHL", "iMOw"._
+_Figure: Favicon variants for four logos, STIHL ("S"), Connected ("C" symbol), My STIHL (garage symbol) and iMOw ("MY iMOW"), each as an orange square with a white mark in the sizes 16px, 32px, 128px, 180px, 192px and 512px._
 
 ## 100 Year Logo
 
@@ -85,7 +85,7 @@ Overview:
 
 ![100 Year Logo](logo/100-year-logo-36951-4223.png)
 
-_Figure: Text in the figure: "date: false", "date: true", "black", "orange", "white"._
+_Figure: Matrix of the 100 Years logo in three colors (rows: black, orange, white on a dark background) and two date options (columns: date: false shows the "100 YEARS" mark only, date: true adds a line and the dates 1926-2026 below it)._
 
 **Additional Information:**
 
@@ -101,7 +101,7 @@ The 100-year logo must be at least **80 px wide** in digital applications.
 
 ![Minimum Size](logo/minimum-size-36986-4695.png)
 
-_Figure: Shows 100-years-logo (color=orange, date=false). Measurements: 80px._
+_Figure: Orange 100 Years logo without date with a horizontal measurement below it showing its minimum width of 80px._
 
 ### Save Zone
 
@@ -109,7 +109,7 @@ For print applications, the safe zone is defined as 2% of the shorter side of th
 
 ![Save Zone](logo/save-zone-36986-4720.png)
 
-_Figure: Shows 100-years-logo (color=orange, date=false); 100-years-logo (color=orange, date=true). Text in the figure: "1/4x", "X"._
+_Figure: Two orange 100 Years logos, one without date and one with the dates 1926-2026, surrounded by a purple safe zone. The logo height is marked X and the safe zone on every side is 1/4x._
 
 ## Usage
 
@@ -127,4 +127,4 @@ In the top bar, use the **black logo without the date in its minimum size versio
 
 ![Example: Top Bar Logo add on](logo/example-top-bar-logo-add-on-37209-1371.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=l, brand add-on=true, number areas=1); top-bar (grid variant=main, breakpoint=s, brand add-on=true, number areas=1). Text in the figure: "Label"._
+_Figure: Two top bar examples with the STIHL logo and the small orange 100 Years add-on. On the large breakpoint the add-on sits above and to the right of the STIHL logo, overlapping the top edge of the bar, with six icon items labelled "Label" on the right. On the small breakpoint the add-on sits directly next to the STIHL logo, with the five "Label" icon items in a row below._

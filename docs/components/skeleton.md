@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 49465:7294
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:49:04.639Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:25:16.682Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=49465-7294
 ---
 
@@ -70,11 +70,11 @@ A progress bar is used when progress is measurable. (Upload, Installing, Update)
 
 ![Related components and patterns](skeleton/related-components-and-patterns-49465-11325.png)
 
-_Figure: Text in the figure: "single line", "multi line", "rectangle", "circle"._
+_Figure: Four light grey skeleton primitives stacked vertically inside a dashed purple frame, labelled on the left: "single line" (one bar), "multi line" (four bars, the last one shorter), "rectangle" (a large block) and "circle" (a small round shape)._
 
 ![Related components and patterns](skeleton/related-components-and-patterns-49465-12146.png)
 
-_Figure: Shows helper-spacer (line width=80%). Text in the figure: "building elements", ".helper-last-line"._
+_Figure: Internal helper under the heading "building elements": the ".helper-last-line" spacer, shown as a single light grey bar at line width 80%, used as the shorter last line of multi-line skeletons._
 
 ### Further guidelines
 
@@ -98,7 +98,7 @@ Skeletons must match the final layout exactly.
 
 ![Global Rules](skeleton/global-rules-51293-4572.png)
 
-_Figure: Shows skeleton (line 04 (default), line 03 (optional), variant=rectangle); skeleton (variant=multi line); helper-multi-line\_depricated (last line, line 02, line 01); skeleton (line 04 (default), line 03 (optional), variant=single line); action-card-vertical (supplementary slot, media slot, padding=medium, alignment=hug); annotation-circle (number=3, type=center, color=blue). Callouts 3. Text in the figure: "Brand Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Button", "Summary of the accordion content"._
+_Figure: Vertical action card split by a dotted line: the left half shows real content ("Brand Flag", the headline "Charging and energy management in the STIHL AP system", body text "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", three "Flag" chips, a "Button" and "Summary of the accordion content"), the right half shows the skeleton of the same card with grey blocks at identical positions, sizes and spacing. This illustrates that a skeleton must match the final layout exactly so that nothing shifts when content loads (callout 3)._
 
 ### Anatomy
 
@@ -114,7 +114,7 @@ Skeletons are built from three main primitives:
 
 ![Building elements](skeleton/building-elements-49577-12878.png)
 
-_Figure: Shows annotation-circle (number=1a, type=left, color=blue); skeleton (line 04 (default), line 03 (optional), variant=single line); annotation-circle (number=1b, type=left, color=blue); skeleton (line 03 (optional), line 04 (default), variant=multi line); skeleton (line 04 (default), line 03 (optional), variant=rectangle); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); skeleton (line 03 (optional), line 04 (default), variant=circle). Callouts 2, 3. Text in the figure: "1a", "1b"._
+_Figure: The three skeleton building elements with numbered callouts: 1a points at the single line (one grey bar), 1b at the multi line (four bars, the last one shorter), 2 at the rectangle (a large grey block) and 3 at the circle (a small round shape)._
 
 ### Variants
 
@@ -142,7 +142,7 @@ Represents a single line of text.
 
 ![Single Line](skeleton/single-line-51285-13391.png)
 
-_Figure: Shows extension-line (type=outside-right); skeleton (line 04 (default), line 03 (optional), variant=single line); extension-line (type=outside-bottom). Measurements: 38px, 160px, 24px, 304px. Text in the figure: "Headline (single line)", "Layout", "Skeleton", "Headline", "Text (single line)", "The quick brown fox jumps over the lazy dog"._
+_Figure: Single line skeleton sizing, comparing Layout with Skeleton. "Headline (single line)": the headline text and its skeleton are both 160px wide and 38px high. "Text (single line)": the sentence "The quick brown fox jumps over the lazy dog" and its skeleton are both 304px wide and 24px high, so the skeleton matches the width of the source element and the line height of the typography._
 
 #### Multi Line (Text Skeleton Pattern)
 
@@ -178,7 +178,7 @@ Represents multiple lines of text.
 
 ![Multi Line (Text Skeleton Pattern)](skeleton/multi-line-text-skeleton-pattern-51285-13537.png)
 
-_Figure: Shows extension-line (type=outside-right); skeleton (line 03 (optional), line 04 (default), variant=multi line); extension-line (type=outside-bottom); extension-line (type=outside-left); skeleton (variant=multi line). Measurements: 96px, 370px, 20px, 64px. Text in the figure: "Text Paragraph", "Layout", "Skeleton", "The quick brown fox jumps over the lazy dog. Lorem ipsum dolor sit amet, cons...", "Multiline Headline + Text Paragraph", "This is a multiline headline."._
+_Figure: Multi-line skeleton compared with its source layout in two cases, each 370px wide. For a Text Paragraph the four-line text block is 96px high and its skeleton is four grey bars of the same height, the last bar shorter. For a Multiline Headline + Text Paragraph the two-line headline (64px) and the paragraph (96px) are separated by a 20px gap, and the skeleton repeats this with two bars for the headline, a 20px gap and four bars for the paragraph, the last bar of each block shorter._
 
 #### Rectangle
 
@@ -209,7 +209,7 @@ Represents rectangular containers and surfaces. **Sizing:**
 
 ![Rectangle](skeleton/rectangle-51285-14531.png)
 
-_Figure: Shows content-placeholder (type=image, format=4:3); extension-line (type=outside-right); skeleton (line 04 (default), line 03 (optional), variant=rectangle); extension-line (type=outside-bottom); button (button text=Button, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); extension-line (type=outside-left); accordion-single (state=enabled, size=small, expansion-indicator=right, expanded=false, flush=false). Measurements: 180px, 240px, 48px, 95px, 40px, 338px. Text in the figure: "Image", "Layout", "Skeleton", "Button", "Accordion", "Summary of the accordion content"._
+_Figure: Rectangle skeletons next to the layouts they replace, each with the same size as its source and plain grey fill. Image: 240px wide, 180px high. Button: 95px wide, 48px high. Accordion: 338px wide, 40px high, replacing the closed accordion with the summary "Summary of the accordion content"._
 
 #### Circle
 
@@ -227,7 +227,7 @@ Represents circular shapes.
 
 ![Circle](skeleton/circle-51285-14726.png)
 
-_Figure: Shows avatar-building-block (variant=initials); extension-line (type=outside-right); skeleton (line 03 (optional), line 04 (default), variant=circle); round (variant=filled, state=enabled, size=small). Measurements: 40px, 32px. Text in the figure: "Avatar", "Button round", "MM"._
+_Figure: Circle skeletons next to the layouts they replace, with width equal to height. Avatar (initials "MM") is 40px and becomes a 40px grey circle; Button round with an image icon is 32px and becomes a 32px grey circle._
 
 ### Level of detail
 
@@ -243,7 +243,7 @@ Skeletons can represent different levels of fidelity.
 
 ![Level of detail](skeleton/level-of-detail-51285-14809.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); action-card-vertical (supplementary slot, media slot, padding=medium, alignment=hug); skeleton (line 04 (default), line 03 (optional), variant=rectangle); skeleton (variant=multi line); helper-multi-line\_depricated (last line, line 02, line 01); skeleton (line 04 (default), line 03 (optional), variant=single line). Callouts 1, 2. Text in the figure: "Card component layout", "Skeleton / low detail", "Skeleton / high detail", "Brand Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Button", "Summary of the accordion content"._
+_Figure: A vertical card (media area with "Brand Flag", title "Charging and energy management in the STIHL AP system", description, "Metadata", three "Flag" tags, two "Button"s, and an accordion "Summary of the accordion content") shown with two skeleton versions. 1 Skeleton / low detail: a single grey rectangle covers the whole card. 2 Skeleton / high detail: a grey image rectangle, two title bars, three description bars, a metadata bar, three small flag rectangles, two button rectangles and a grey accordion rectangle inside the card container._
 
 ### Responsiveness, Layout & Alignment
 
@@ -256,7 +256,7 @@ Skeletons follow the same layout behavior as the final content shouldn’t creat
 
 ![Responsiveness, Layout & Alignment](skeleton/responsiveness-layout-alignment-49577-16681.png)
 
-_Figure: Shows flag (icon, label=befristet, color=status: info); flag (icon, label=Waiblingen, color=status: info); flag (icon, label=Forschung & Entwicklung, color=status: info); skeleton (line 04 (default), line 03 (optional), variant=single line); skeleton (line 04 (default), line 03 (optional), variant=rectangle); link-card-horizontal (flags, heading copy=Praktikum Group Compliance Management, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., footer, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Praktikum Group Compliance Management", "befristet", "Waiblingen", "Forschung & Entwicklung"._
+_Figure: Two horizontal link cards titled "Praktikum Group Compliance Management" with flags "befristet", "Waiblingen" and "Forschung & Entwicklung", each followed by its skeleton. In the wide layout the title and flags sit side by side, with the flags right-aligned; in the narrow layout the flags wrap below the title. Each skeleton keeps the same width, arrangement and wrapping as its layout (a title bar plus three flag rectangles), so no layout shift occurs when content replaces it._
 
 ## Behavior
 
@@ -270,7 +270,7 @@ If progressive loading is not possible, content can be revealed all at once once
 
 ![Loading Behavior](skeleton/loading-behavior-50331-10659.png)
 
-_Figure: Shows top-bar\_logo (internal (do not modify) 🖥️ breakpoint=⛔️ internal (do not modify): m - xl); action-item (label=Contact, state=enabled, stacking=vertical, leading-element=icon, chevron=false, label-weight=regular, indent=false); action-item (label=English, state=enabled, stacking=vertical, leading-element=icon, chevron=true, label-weight=regular, indent=false). Measurements: 75%, 100%, 25%, 50%, 5%, 43%. Text in the figure: "Skeleton", "Partial Skeleton, partial layout", "Full Layout", "Contact", "English", "Products", "Management", "Organisation", "Fleet Overview", "Product", "User", "Location", "Status", "Fuel Level", "MS 881", "H. Zimmermann", "Affalterbach", "OK", "FS 460", "G. Schmidt", "Schorndorf", "BR 800", "W. Fischer", "Fellbach"._
+_Figure: Three stages of a "Fleet Overview" page with a STIHL top bar and a table (columns Product, User, Location, Status, Fuel Level; rows such as MS 881, H. Zimmermann, Affalterbach, OK, 75%). 1. Skeleton: the heading, navigation labels and all table cells are grey placeholder bars. 2. Partial Skeleton, partial layout: the navigation, heading and column headers are already real text while the table body is still skeleton bars. 3. Full Layout: all content is loaded. Measurements in the figure: 100%, 25%, 50%, 43%._
 
 ## Animation
 
@@ -289,7 +289,7 @@ A subtle shimmer effect helps indicate loading activity and reduces perceived wa
 
 ![Background Shimmer](skeleton/background-shimmer-50929-11427.png)
 
-_Figure: Shows helper-container-background-on-light (frame=start); helper-container-background-dark (frame=start). Text in the figure: "light mode", "dark mode"._
+_Figure: Skeleton layouts in light mode and dark mode: a headline bar, three text line bars (the last shorter), a large rectangle and a small circle at the bottom right. In light mode the shapes are light grey on white; in dark mode they are dark grey on black._
 
 ### Motion Specs
 
@@ -305,7 +305,7 @@ _Figure: Shows helper-container-background-on-light (frame=start); helper-contai
 
 ![Motion Specs](skeleton/motion-specs-50929-11688.png)
 
-_Figure: Shows helper-gradient-light (mode=on light)._
+_Figure: Three skeleton bars on a white background, each with a soft light shimmer band and a purple arrow pointing right, at the left, middle and right of the bar. They show the gradient moving horizontally across the skeleton over time._
 
 ### Gradient Specs
 
@@ -327,9 +327,11 @@ The shimmer is created using a moving gradient overlay. **Light mode**
 
 ![Gradient Specs](skeleton/gradient-specs-51324-4863.png)
 
+_Figure: Two gradient swatches: the light mode one is light grey fading to near white and back to light grey toward the right edge, and the dark mode one is dark grey brightening slightly near the right and fading back toward the edge._
+
 ![Gradient Specs](skeleton/gradient-specs-50929-13443.png)
 
-_Figure: Shows helper-gradient-light (mode=on light); helper-gradient-dark (mode=on dark). Text in the figure: "Motion building elements", "helper-container-background-light", "helper-gradient-light", "frame: start", "frame: end", "helper-container-background-dark", "helper-gradient-dark"._
+_Figure: Motion building elements for the shimmer. helper-container-background-light and helper-container-background-dark each hold two plain grey bars, "frame: start" and "frame: end", in light grey and dark grey respectively. helper-gradient-light is a white panel with a faint grey gradient, and helper-gradient-dark is a black panel with a gradient that brightens slightly toward the right and fades to black at the edge._
 
 ## Accessibility
 
@@ -341,7 +343,7 @@ The skeleton is purely decorative and renders with aria-hidden="true".
 
 ![Screen Reader & Interaction](skeleton/screen-reader-interaction-50894-5616.png)
 
-_Figure: Don't example. Shows skeleton (variant=multi line); cursor (type=pointer); skeleton (line 03 (optional), line 04 (default), variant=multi line)._
+_Figure: Don't example: a multi-line text Skeleton (gray placeholder bars) with a pointer cursor hovering over it and the lower skeleton block outlined with a dark focus-style frame, showing that skeletons must not be interactive or focusable._
 
 ### Loading Status
 
@@ -353,7 +355,7 @@ If you need to convey loading state to screen reader users, pair it with an aria
 
 ![Loading Status](skeleton/loading-status-50300-2470.png)
 
-_Figure: Text in the figure: "“loading content”"._
+_Figure: A STIHL website page in loading state, with a header, search field and navigation but gray Skeleton placeholders instead of card images and text, enclosed in a purple frame with the callout "“loading content”" showing the text that can be announced to screen readers instead._
 
 ### Motion
 
@@ -365,7 +367,7 @@ Animation must respect user accessibility preferences:
 
 ![Motion](skeleton/motion-50894-5724.png)
 
-_Figure: Shows helper-gradient-light (mode=on light). Text in the figure: "default motion (with gradient)", "static version (without gradient)"._
+_Figure: Two skeleton rectangles on a light background side by side: "default motion (with gradient)" on the left shows a subtle shimmering gradient, and "static version (without gradient)" on the right shows a flat gray fill used as the reduced-motion fallback._
 
 ## Examples
 
@@ -375,18 +377,18 @@ _Figure: Shows helper-gradient-light (mode=on light). Text in the figure: "defau
 
 ![Examples](skeleton/examples-51345-5241.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); skeleton (line 04 (default), line 03 (optional), variant=rectangle); skeleton (line 04 (default), line 03 (optional), variant=single line); skeleton (line 03 (optional), variant=multi line); skeleton (line 03 (optional), line 04 (default), variant=multi line). Text in the figure: "Search Site", "Contact", "English", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press"._
+_Figure: Corporate and Careers Journal page in loading state at breakpoint xl, with the STIHL top bar ("Search Site", "Contact", "English") and main nav bar ("About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press") above a grid of vertical link cards whose images, headings, descriptions and flags are replaced by rectangle, single line and multi line Skeletons._
 
 ![Examples](skeleton/examples-51345-5562.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); link-card-vertical (description copy=Dr Michael Prochaska, Member of the Executive Board for Human Resources and Legal Affairs, talked with us about challenges HR is currently facing worldwide, how these changes are being tackled and which foundations remain unchanged despite everything., heading copy=Interview with Dr Michael Prochaska, flags, media area, description, footer, padding=medium, content sizing=hug); link-card-vertical (description copy=Electromagnetic compatibility (EMC) tests are carried out on all STIHL appliances before they are launched on the market as part of the approval process. In our, heading copy=One lab for all, flags, media area, description, footer, padding=medium, content sizing=fill); link-card-vertical (description copy=Electromagnetic compatibility (EMC) tests are carried out on all STIHL appliances before they are launched on the market as part of the approval process. In our, heading copy=Charging and energy management in the STIHL AP system, flags, media area, description, footer, padding=medium, content sizing=fill); link-card-vertical (description copy=The STIHL chain factory in Switzerland: manufacturer of all chains for STIHL chainsaws and more than 30 different hedge trimmer blades for over 50 years. . This, heading copy=Charging and energy management in the STIHL AP system, flags, media area, description, footer, padding=medium, content sizing=fill). Text in the figure: "Search Site", "Contact", "English", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "Interview with Dr Michael Prochaska", "Dr Michael Prochaska, Member of the Executive Board for Human Resources and L...", "People and Stories", "Interview", "One lab for all", "Electromagnetic compatibility (EMC) tests are carried out on all STIHL applia...", "Backstage", "Background Story", "Charging and energy management in the STIHL AP system", "The STIHL chain factory in Switzerland: manufacturer of all chains for STIHL...", "Corporate Development"._
+_Figure: Corporate and Careers Journal page once loaded, with the STIHL top bar and main nav bar at breakpoint xl above a grid of vertical link cards with photos, headings such as "Interview with Dr Michael Prochaska", "One lab for all" and "Charging and energy management in the STIHL AP system", truncated descriptions and flags like "Backstage" and "Background Story"; this is the real content that replaces the Skeleton version._
 
 **Corporate and Careers** Job listing
 
 ![Examples](skeleton/examples-50819-37018.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); link-card-horizontal (heading copy=Praktikum Group Compliance Management, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., flags, footer, padding=medium, content sizing=hug, content orientation=horizontal (with footer)); link-card-horizontal (heading copy=Abschlussarbeit Datengetriebene Analyse und KI-gestützte Bewertung  von Prüfstands-Messdaten, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., flags, footer, padding=medium, content sizing=hug, content orientation=horizontal (with footer)); link-card-horizontal (heading copy=Praktikum Forschung Werkstofftechnik - Chemielabor, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., flags, footer, padding=medium, content sizing=hug, content orientation=horizontal (with footer)); link-card-horizontal (heading copy=Praktikum Optimieren von physikalischen Modellen für Lithium-Ionen-Zellen, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., flags, footer, padding=medium, content sizing=hug, content orientation=horizontal (with footer)). Text in the figure: "Search Site", "Contact", "English", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "Stellenangebote ƒ", "Praktikum Group Compliance Management", "befristet", "Waiblingen", "Forschung & Entwicklung", "Abschlussarbeit Datengetriebene Analyse und KI-gestützte Bewertung von Prüfst...", "Auf Anfrage", "Praktikum Forschung Werkstofftechnik - Chemielabor", "Dieburg", "Marketing & Vertrieb PR", "Praktikum Optimieren von physikalischen Modellen für Lithium-Ionen-Zellen"._
+_Figure: Corporate and Careers job listing page once loaded, with the STIHL top bar and main nav bar at breakpoint xl, the heading "STELLENANGEBOTE" and four horizontal link cards, each with a job title (for example "Praktikum Group Compliance Management") and flags for contract type ("befristet", "Auf Anfrage"), location ("Waiblingen", "Dieburg") and department ("Forschung & Entwicklung", "Marketing & Vertrieb PR")._
 
 ![Examples](skeleton/examples-50819-37644.png)
 
-_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); skeleton (line 04 (default), line 03 (optional), variant=single line); skeleton (line 04 (default), line 03 (optional), variant=rectangle); skeleton (variant=multi line). Text in the figure: "Search Site", "Contact", "English", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "Stellenangebote ƒ"._
+_Figure: Corporate and Careers job listing page in loading state, with the STIHL top bar, main nav bar and the heading "STELLENANGEBOTE" shown normally, and four horizontal cards whose titles and three flags each are replaced by single line Skeletons (two lines for the second card's title)._

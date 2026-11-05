@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 2659:3954
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:40:38.031Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:22:08.566Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=2659-3954
 ---
 
@@ -124,7 +124,7 @@ Less than 8 columns is also possible in different combinations.
 
 ![Maximum width](combobox/maximum-width-9039-21450.png)
 
-_Figure: A layout example marked as a "Do" example, illustrating the use of a radio-group component and a button component. The radio-group has a horizontal orientation, includes a legend labeled "Radio Group Legend," and contains two radio labels. The maximum width of input fields is demonstrated, with a recommendation of approximately 650px, which corresponds to 8 columns in a grid system. The layout shows a combination of input fields and labels, ensuring optimal legibility and adherence to the grid structure._
+_Figure: Do example. Shows radio-group (item 4, legend, description=\[object Object\], legend=Radio Group Legend, item 5, orientation=horizontal, show title=false); button (button text=Button, variant=ghost, state=enabled, size=medium, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Legend", "Radio Group Legend", "Radio Label", "Label", "Select"._
 
 #### Maximum width
 
@@ -168,7 +168,7 @@ _Figure: A "Don't" example of a combobox component layout. It includes two combo
 
 ![Amount of items in the list](combobox/amount-of-items-in-the-list-8472-30050.png)
 
-_Figure: A "Do" example of a combobox component with different item amounts in the list. The numbered callouts point to a radio-group component labeled "Form of address" with three options: "Mr.", "Mrs.", and "other" (1), a combobox labeled "Options" with a dropdown menu showing four items (2), and another combobox labeled "Country" with a dropdown menu showing four items and a partially typed input "B|" (3). The text describes guidelines for the number of items in a combobox list: using a radio group for fewer than 5 items, a standard dropdown for 5 to 20 items, and a filtered dropdown for more than 20 items after the user types at least one character._
+_Figure: Do example. Shows radio-group (item 4, legend, description=\[object Object\], legend=Form of address, item 5, item 3, orientation=horizontal, show title=false); combobox (dropdown, state=active/focus, invalid=false). Callouts 1, 2, 3. Text in the figure: "Form of address", "Mr.", "Mrs.", "other", "Options", "Select", "Label", "Option 3", "Country", "B|", "Bangladesh"._
 
 ![Amount of items in the list](combobox/amount-of-items-in-the-list-8472-30091.png)
 
@@ -248,7 +248,7 @@ For mor Guidance on this topic see the [Popover documentation](https://www.figma
 
 ![Info Button](combobox/info-button-39621-13634.png)
 
-_Figure: A "Don't" example of a combobox component with a popover. The combobox has a label "Product Name," an info button, a clear button, and input text displaying "FSA 45, FSA 70, FSA 50." The popover, positioned below the combobox, contains the text "Select max. 3 different products." The example is marked as incorrect because it uses the popover for information that should not be hidden; instead, a hint should be used for critical information._
+_Figure: Don't example. Shows popover (children=\[object Object\], arrow=true, arrow placement=below, arrow alignment=center, color=white); input-combobox (system feedback, ℹ️ info-button, label=Product Name, clear button, input text, state=default, size=medium, invalid=false); cursor (type=pointer). Text in the figure: "Select max. 3 different products", "Product Name", "FSA 45, FSA 70, FSA 50"._
 
 ## Behavior
 

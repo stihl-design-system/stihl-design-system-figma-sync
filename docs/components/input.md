@@ -21,10 +21,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 1591:2
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:44:55.617Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:23:46.588Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1591-2
 ---
 
@@ -42,11 +42,11 @@ Overview:
 
 ![Input](input/input-2141-6700.png)
 
-_Figure: Text in the figure: "Building Block", "Prefix/Suffix", "Default", "Disabled", "medium", "small", "Label", "Prefix", "Suffix"._
+_Figure: Building block overview of the input prefix and suffix, titled "Building Block" and "Prefix/Suffix". A grid of boxes labeled "Label" shows a "Prefix" row and a "Suffix" row, each in "Default" and "Disabled" states, each in "medium" and "small" sizes, plus a filled grey variant of each at the right, all enclosed in a dashed purple frame._
 
 ![Input](input/input-10637-2731.png)
 
-_Figure: Shows system-feedback (type=error); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=XXXX  XXXX  XXXX  XXXX, label=Label, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Date, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Month, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Calender week, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Departure time, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Departure, size=medium, state=enabled, invalid=false). Text in the figure: "Main Component", "is invalid", "Size Medium", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Input", "System feedback message", "Default", "Hover", "Focus", "Disabled", "Read-only", "Size Small", "Input Variations", "text, tel, number, email, url", "date", "month", "Date", "DD/MM/YY", "Month", "week", "time", "datetime", "Calender week"._
+_Figure: Input main component in "Size Medium" and "Size Small", each showing the states "Default", "Hover", "Focus", "Disabled" and "Read-only", with each "Label", hint text and "Input" field. Default and Focus also exist "is invalid", with a red border and a "System feedback message" under the field; hover has a grey fill, focus a thick dark border, disabled grey text and read-only a light grey fill without border. Below, "Input Variations" show fields for "text, tel, number, email, url", "date" ("DD/MM/YY"), "month", "week" ("Week XX, XXXX"), "time" ("HH:MM") and "datetime" ("DD/MM/YY, HH:MM"), where all but the first have a trailing calendar or clock icon._
 
 ### Further guidelines
 
@@ -78,7 +78,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](input/anatomy-1744-8963.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, hint, label=Label, size=medium, state=enabled, invalid=false); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=bottom, color=blue); input-medium (input=Input, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Label, system feedback, function, input, hint, ℹ️ info-button, leading icon, size=medium, state=enabled, invalid=true); annotation-circle (number=5, type=right, color=blue); annotation-circle (number=6, type=left, color=blue); annotation-circle (number=7, type=right, color=blue); annotation-circle (number=7, type=bottom, color=blue); annotation-circle (number=8, type=bottom, color=blue). Callouts 1, 2, 3, 4, 5, 6, 7, 8. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Placeholder", "Input", "System feedback message"._
+_Figure: Input anatomy with two examples and numbered callouts. In the first, 1 points at the "Label", 2 at the hint text below it, 3 at the field border and 4 at the "Placeholder" text inside it. In the second, which has a red invalid border, 5 points at the info button next to the label, 6 at the leading icon on the left of the field, 7 at the tailing icon on the right and at the "Input" text, and 8 at the "System feedback message" under the field._
 
 #### Input types by browser default
 
@@ -103,7 +103,7 @@ Types of input requested from the user are:
 
 ![Input types by browser default](input/input-types-by-browser-default-4874-12225.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=XXXX  XXXX  XXXX  XXXX, label=Email, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Date of departure, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Month, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Calender week, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Departure time, size=medium, state=enabled, invalid=false). Callouts 1, 2, 3, 4, 5, 6. Text in the figure: "Email", "Date of departure", "DD/MM/YY", "Month", "Calender week", "Week XX, XXXX", "Departure time", "HH:MM", "DD/MM/YY, HH:MM"._
+_Figure: Six input types by browser default, each a medium field with a label and a numbered callout pointing at the field content: 1 "Email" (text, tel, number, email, url type) with no icon, 2 "Date of departure" with placeholder "DD/MM/YY" and a calendar icon, 3 "Month" with a calendar icon, 4 "Calender week" with placeholder "Week XX, XXXX" and a calendar icon, 5 "Departure time" with placeholder "HH:MM" and a clock icon, 6 "Date of departure" with placeholder "DD/MM/YY, HH:MM" and a calendar icon._
 
 ### Containing Elements
 
@@ -114,7 +114,7 @@ _Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, c
 
 ![Prefix / Suffix](input/prefix-suffix-1898-1232.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, prefix, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, suffix, size=medium, state=enabled, invalid=false). Callouts 1, 2. Text in the figure: "Label", "Prefix", "Suffix"._
+_Figure: Two input fields with a "Label". Callout 1 points at the "Prefix" element in a separated cell at the start of the first field, before the input text. Callout 2 points at the "Suffix" element in a separated cell at the end of the second field, after the input text._
 
 #### Icons with and without function
 
@@ -304,7 +304,7 @@ For more guidance, see the [Popover documentation](https://www.figma.com/design/
 
 ![Info Button](input/info-button-39616-16400.png)
 
-_Figure: Don't example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); input-medium (system feedback, ℹ️ info-button, placeholder, input=XXXX  XXXX  XXXX  XXXX, label=Password, size=medium, state=enabled, invalid=false); cursor (type=pointer). Text in the figure: "Use at least 8 characters, including one uppercase letter, one number, and on...", "Password"._
+_Figure: Don't example. Shows popover (children=\[object Object\], arrow=true, arrow placement=below, arrow alignment=center, color=white); input-medium (system feedback, ℹ️ info-button, placeholder, input=XXXX  XXXX  XXXX  XXXX, label=Password, size=medium, state=enabled, invalid=false); cursor (type=pointer). Text in the figure: "Use at least 8 characters, including one uppercase letter, one number, and on...", "Password"._
 
 ## Behavior
 
@@ -332,7 +332,7 @@ Navigating back from the content to the field, the input is focused **(3)**, so 
 
 ![Focus order](input/focus-order-1898-1220.png)
 
-_Figure: Shows input-medium (input=STIHL Headquarter, label=Choose a location, input, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., function, size=medium, state=focus, invalid=false); input-medium (hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=STIHL Headquarter, function, label=Choose a location, input, size=medium, state=enabled, invalid=false). Callouts 1, 2, 3. Text in the figure: "Choose a location", "STIHL Headquarter"._
+_Figure: Focus order of an input labeled "Choose a location" with the value "STIHL Headquarter" and a location pin function icon on the right, shown in three steps. Callout 1 marks the focused input field with a thick border, 2 marks the focused function icon button with its own focus outline, and 3 marks the input focused again when navigating back, with the text "STIHL Headquarter" selected so it can be deleted in one click._
 
 ### Wizards by browser default
 
@@ -340,7 +340,7 @@ All browsers offer a default wizard to pick a date. Use the browser default, to 
 
 ![Wizards by browser default](input/wizards-by-browser-default-4946-2448.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Date of departure, size=medium, state=enabled, invalid=false). Text in the figure: "Date of departure", "DD/MM/YY"._
+_Figure: Medium date input with the label "Date of departure", the placeholder "DD/MM/YY" and a calendar icon on the right, with the browser's native date picker open below it. The picker shows January 2024 with weekday columns M to S, the 24th highlighted as selected, month and year arrows, and "Clear" and "Today" links at the bottom._
 
 ### Clear the input field
 
@@ -348,7 +348,7 @@ Some browser automatically show a clear action On click, the entered input from 
 
 ![Clear the input field](input/clear-the-input-field-4650-7797.png)
 
-_Figure: Shows input-search-medium (system feedback, clear button, input, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Input"._
+_Figure: Medium search input with the label "Label" and the entered text "Input", showing a clear (X) icon at the right end of the field with a hand cursor on it, meaning a click removes the entered text._
 
 ## Examples / Variations
 
@@ -362,11 +362,11 @@ For multiple fields together, have a look at the fieldset.
 
 ![Coupon: input text](input/coupon-input-text-1744-9019.png)
 
-_Figure: Shows input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=CODE 1045, label=Coupon code, input, size=medium, state=enabled, invalid=false); button (button text=Buy now, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Product name 2Z", "ART.-NR. 58289808584", "statt€ 469.00", "€ 469.00", "Menge", "2", "€ 890.00", "statt € 938.00", "Coupon code", "CODE 1045", "Subtotal", "€ 549.00", "Delivery", "€ 29.00", "Discount", "– € 23.50", "total", "€ 554.50", "Contains 19% VAT: € 81.27", "Buy now", "Free delivery", "By placing an order at stihl.de, you’re agreeing to our Privacy Policy, Terms..."._
+_Figure: Mobile shopping cart mockup with a product ("Product name 2Z", ART.-NR. 58289808584, € 469.00 instead of € 469.00 old price, quantity 2, € 890.00 statt € 938.00). Below it a single medium input labelled "Coupon code" holds "CODE 1045", followed by Subtotal € 549.00, Delivery € 29.00, Discount – € 23.50, total € 554.50, "Contains 19% VAT: € 81.27", a highlight (orange) "Buy now" button, "Free delivery" and a legal note about the Privacy Policy, Terms and Cancellation policy._
 
 ![Coupon: input text](input/coupon-input-text-2496-5961.png)
 
-_Figure: Shows button (button text=Button, variant=ghost, state=enabled, size=medium, icon position=none, hide label=on, flush alignment=off); system-feedback (type=error); button (button text=Button, variant=ghost, state=disabled, size=medium, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=ghost, state=disabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Size Medium", "is invalid", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "\*\*\*\*\*\*\*\*", "System feedback message", "Default", "Hover", "Focus", "Disabled", "Read-only", "Size Small"._
+_Figure: Overview of the password input in sizes "Size Medium" and "Size Small", each with the states Default, Hover, Focus, Disabled and Read-only. Every field has "Label", a hint text, masked input "\*\*\*\*\*\*\*\*" and an eye icon; Default and Focus also exist in an "is invalid" column with a red border (Default) or a thick dark focus border plus the red "System feedback message". Hover has a grey fill, Disabled has a light grey border and muted text, Read-only has a grey fill without border._
 
 ## Input Password
 
@@ -400,7 +400,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](input/anatomy-2607-3974.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); input-password-medium (ℹ️ info-button, input, system feedback, hint, size=medium, state=enabled, invalid=false); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=5, type=right, color=blue); annotation-circle (number=6, type=bottom, color=blue). Callouts 1, 2, 3, 4, 5, 6. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "\*\*\*\*\*\*\*\*"._
+_Figure: Anatomy of the medium password input with six numbered callouts: 1 points at the "Label", 2 at the info button (circled i) next to the label, 3 at the hint text below the label, 4 at the text field, 5 at the eye icon on the right (show/hide password) and 6 at the masked input text "\*\*\*\*\*\*\*\*"._
 
 ## Content and Assets
 
@@ -410,7 +410,7 @@ The live validation of setting a new password is not part of the code component,
 
 ![Password requirements](input/password-requirements-7342-1675.png)
 
-_Figure: Shows input-password-medium (input, system feedback, hint, size=medium, state=enabled, invalid=false). Text in the figure: "Password", "Password must contain at least 8 characters with at least one uppercase lette...", "\*\*\*\*\*\*\*\*"._
+_Figure: Medium password input with the label "Password", a hint reading "Password must contain at least 8 characters with at least one uppercase letter, one number and one special character", masked input "\*\*\*\*\*\*\*\*" and an eye icon, showing that password requirements are explained in the hint._
 
 ### Required and optional indicators
 
@@ -418,7 +418,7 @@ A password field does not need any indicator, as it always required.
 
 ![Required and optional indicators](input/required-and-optional-indicators-7342-1778.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=max.mustermann@stihl.com, label=Username or E-Mail, input, size=medium, state=enabled, invalid=false); input-password-medium (input, system feedback, size=medium, state=enabled, invalid=false). Text in the figure: "Username or E-Mail", "max.mustermann@stihl.com", "Password", "\*\*\*\*\*\*\*\*"._
+_Figure: Login form with two stacked medium fields: "Username or E-Mail" containing max.mustermann@stihl.com and "Password" with masked input and an eye icon. Neither label carries a required or optional indicator, because the password field is always required._
 
 ## Behavior
 
@@ -428,7 +428,7 @@ In case of an error message being displayed, is shown below the Text field.
 
 ![System feedback](input/system-feedback-4642-15937.png)
 
-_Figure: Shows input-password (input, system feedback, size=medium, state=enabled, invalid=true). Text in the figure: "Enter Password", "\*\*\*\*\*\*\*\*", "Password must contain at least 1 number and 1 capital letter"._
+_Figure: Invalid medium password input with the label "Enter Password", masked input "\*\*\*\*\*\*\*\*", an eye icon and a red border. Below the field a red error icon with the message "Password must contain at least 1 number and 1 capital letter" is displayed as system feedback._
 
 ### Show and hide password
 
@@ -440,7 +440,7 @@ Use a tooltip to communicate the function.
 
 ![Icon switch](input/icon-switch-4642-15561.png)
 
-_Figure: Shows input-password (input, system feedback, size=medium, state=enabled, invalid=false). Callouts 1, 2. Text in the figure: "Label", "\*\*\*\*\*\*\*\*", "Show password", "P4s5W0rd\*", "Hide password"._
+_Figure: Two medium password inputs labelled "Label". Callout 1: masked text "\*\*\*\*\*\*\*\*" with the "eye" icon and the tooltip "Show password". Callout 2: after clicking, the revealed text "P4s5W0rd\*" with the "eye-closed" icon and the tooltip "Hide password"._
 
 ## Examples / Variations
 
@@ -450,7 +450,7 @@ The mobile version of the STIHL web shop. Log in input fields mostly do not have
 
 ![Log in to MY STIHL account](input/log-in-to-my-stihl-account-4624-16136.png)
 
-_Figure: Shows input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Email, size=medium, state=enabled, invalid=false); input-password-medium (system feedback, size=medium, state=enabled, invalid=false); button (button text=Sign In, variant=highlight, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Forgot Password?, variant=ghost, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Log in and Sign Up", "ƒ", "Log in", "Email", "Password", "Sign In", "Forgot Password?", "Sign up"._
+_Figure: Mobile STIHL web shop page "Log in and Sign Up" with a header (icon bar, "MENÜ", STIHL logo). In the "Log in" section are an empty medium "Email" input and an empty "Password" input with an eye icon, both without a required asterisk, then a highlight (orange) "Sign In" button and a ghost "Forgot Password?" button, followed by the start of the "Sign up" section with another "Email" label._
 
 ## Content and Assets
 
@@ -462,7 +462,7 @@ If the use-case and the lay-out allows, placing these examples in the hint is re
 
 ![Placeholder text](input/placeholder-text-7342-1822.png)
 
-_Figure: Shows input-search-medium (system feedback, placeholder, submit button, size=medium, state=enabled, invalid=false). Text in the figure: "Search", "Machine number, serial number, parts number..."._
+_Figure: Search field (input-search-medium, enabled, not invalid) with the label "Search", a placeholder giving examples ("Machine number, serial number, parts number...", truncated with an ellipsis) and a magnifying glass submit button on the right._
 
 ### Required and optional indicators
 
@@ -470,7 +470,7 @@ A search field does not need any indicator. In case the search command is submit
 
 ![Required and optional indicators](input/required-and-optional-indicators-7477-6400.png)
 
-_Figure: Don't example. Shows input-search-medium (system feedback, placeholder, submit button, size=medium, state=enabled, invalid=false). Text in the figure: "Search\*", "Search (optional)"._
+_Figure: Don't example: two empty search fields with a magnifying glass submit button, one labelled "Search\*" (required asterisk) and one labelled "Search (optional)". A search field needs no required or optional indicator._
 
 ## Behavior
 
@@ -480,7 +480,7 @@ Clear the input on click. The function icon appears after input is entered by th
 
 ![Clear function](input/clear-function-4650-7669.png)
 
-_Figure: Shows input-search-medium (system feedback, clear button, input, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Input"._
+_Figure: Search field (input-search-medium, enabled) with the label "Label" and the entered text "Input"; the clear button (cross icon) at the right end shows a grey hover background with a hand cursor on it, illustrating that clicking it clears the input._
 
 ### Submit function
 
@@ -488,7 +488,7 @@ On click the submit button will trigger the search. Additionally, the submit fun
 
 ![Submit function](input/submit-function-4650-7675.png)
 
-_Figure: Shows input-search-medium (system feedback, input, submit button, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Input"._
+_Figure: Search field (input-search-medium, enabled) with the label "Label" and the text "Input"; the submit button (magnifying glass icon) at the right end shows a grey hover background with a hand cursor on it, illustrating that clicking it triggers the search._
 
 ### Keyboard navigation
 
@@ -496,7 +496,7 @@ The keyboard navigation jumps from the input **(1)** directly to the submit func
 
 ![Keyboard navigation](input/keyboard-navigation-7341-1780.png)
 
-_Figure: Shows input-search-medium (system feedback, input, clear button, submit button, size=medium, state=focus, invalid=false); input-search-medium (system feedback, clear button, input, submit button, size=medium, state=enabled, invalid=false). Callouts 1, 2, 3. Text in the figure: "Label", "Input"._
+_Figure: Two search fields with the label "Label" and the text "Input", each with a clear button (cross) and a submit button (magnifying glass). In the top one the input (1) has the focus ring; in the bottom one the focus ring sits on the submit button (3), skipping the clear function (2), which has no focus ring._
 
 ## Examples / Variations
 
@@ -506,7 +506,7 @@ At the beginning of the advisor, the user is asked to search for their machine n
 
 ![Trimmer, cutter and saw advisor in the STIHL web shop](input/trimmer-cutter-and-saw-advisor-in-the-stihl-web-shop-4624-16214.png)
 
-_Figure: Shows input-search-medium (system feedback, placeholder, submit button, size=medium, state=enabled, invalid=false). Text in the figure: "Machine number", "Search"._
+_Figure: Search field (input-search-medium, enabled) from the STIHL web shop advisor with the label "Machine number" followed by an info button, the placeholder "Search" and a magnifying glass submit button on the right, inside a white container._
 
 ## Input Search
 
@@ -517,7 +517,7 @@ Overview:
 
 ![Input Search](input/input-search-2496-6234.png)
 
-_Figure: Shows button (button text=Button, variant=ghost, state=enabled, size=medium, icon position=none, hide label=on, flush alignment=off); system-feedback (type=error); button (button text=Button, variant=ghost, state=disabled, size=medium, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=ghost, state=disabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Size Medium", "is invalid", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Input", "System feedback message", "Default", "Hover", "Focus", "Disabled", "Size Small"._
+_Figure: Overview of the search input in sizes "Size Medium" and "Size Small", with states Default, Hover, Focus and Disabled and an "is invalid" column. Each field has a "Label", a hint text, the text "Input", a clear (cross) and a submit (magnifying glass) icon; invalid fields have a red border and the "System feedback message" with an error icon, hover has a grey fill, focus a thick dark border, and disabled greyed-out text and icons._
 
 ### Further guidelines
 
@@ -547,7 +547,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Section Headline](input/section-headline-2607-3772.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); input-search-medium (system feedback, clear button, input, submit button, hint, size=medium, state=enabled, invalid=false); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=bottom, color=blue); annotation-circle (number=5, type=bottom, color=blue); annotation-circle (number=6, type=top, color=blue); input-search-medium (system feedback, ℹ️ info-button, placeholder, submit button, size=medium, state=enabled, invalid=false); annotation-circle (number=7, type=bottom, color=blue). Callouts 1, 2, 3, 4, 5, 6, 7. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Input", "Placeholder"._
+_Figure: Anatomy of the search input with seven numbered callouts: the top field shows (1) Label, (2) Hint (optional), (3) Text field, (4) Clear function (cross icon) and (5) Submit function (magnifying glass icon); the bottom field with the placeholder "Placeholder" shows (6) Info Button (optional) next to the label and (7) Placeholder text (optional)._
 
 ## Input Number
 
@@ -557,7 +557,7 @@ Overview:
 
 ![Input Number](input/input-number-2496-6407.png)
 
-_Figure: Shows button (button text=Button, variant=filled, state=enabled, size=medium, icon position=none, hide label=on, flush alignment=off); system-feedback (type=error); button (button text=Button, variant=filled, state=disabled, size=medium, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=filled, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); button (button text=Button, variant=filled, state=disabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Size medium", "is invalid", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "123", "System feedback message", "Default", "Hover", "Focus", "Disabled", "Read-only", "Size small"._
+_Figure: Overview of the number input in sizes "Size medium" and "Size small", with states Default, Hover, Focus, Disabled and Read-only and an "is invalid" column. Each has a "Label", a hint text, the value "123" and dark minus and plus buttons beside the field; invalid fields have a red border and the "System feedback message" with an error icon, hover has a grey field fill, focus a thick dark border, disabled has greyed-out text and light grey buttons, and read-only has a light grey field fill with light grey buttons._
 
 ### Further guidelines
 
@@ -590,7 +590,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](input/anatomy-2502-3815.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); annotation-circle (number=2, type=top, color=blue); input-number-medium (system feedback, ℹ️ info-button, hint, input, size=medium, state=enabled, invalid=false); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=6, type=right, color=blue); annotation-circle (number=5, type=bottom, color=blue). Callouts 1, 2, 3, 4, 5, 6. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "123"._
+_Figure: Anatomy of the number input with six numbered callouts: (1) Label, (2) Info Button (optional) beside the label, (3) Hint (optional) below it, (4) Text field showing "123", (5) the value text inside the field, and (6) Button, the dark minus and plus buttons to the right of the field._
 
 #### Prefix / Suffix
 
@@ -599,7 +599,7 @@ _Figure: Shows annotation-circle (number=1, type=top, color=blue); annotation-ci
 
 ![Prefix / Suffix](input/prefix-suffix-7477-7127.png)
 
-_Figure: Do example. Shows input-number-medium (system feedback, prefix, size=medium, state=enabled, invalid=false); input-number-medium (system feedback, suffix, size=medium, state=enabled, invalid=false). Callouts 1, 2. Text in the figure: "Label", "Prefix", "Suffix"._
+_Figure: Do example: two medium Input Number fields in the enabled state, each with a "Label" above, an input and dark minus and plus buttons to the right. Callout 1 points at the "Prefix" cell at the start of the first input, callout 2 points at the "Suffix" cell at the end of the second input; each field uses only one of the two._
 
 **Don’t**
 
@@ -607,7 +607,7 @@ It is not recommended to combine a prefix and suffix.
 
 ![Prefix / Suffix](input/prefix-suffix-7477-6846.png)
 
-_Figure: Don't example. Shows input-number-medium (system feedback, prefix, suffix, size=medium, state=enabled, invalid=false). Text in the figure: "Label", "Prefix", "Suffix"._
+_Figure: Don't example: a single medium Input Number with a "Label" that has both a "Prefix" cell and a "Suffix" cell around the input, followed by minus and plus buttons. Combining a prefix and a suffix in one field is not recommended._
 
 ## Content and Assets
 
@@ -620,7 +620,7 @@ _Figure: Don't example. Shows input-number-medium (system feedback, prefix, suff
 
 ![Use cases for the prefix and suffix](input/use-cases-for-the-prefix-and-suffix-7342-2433.png)
 
-_Figure: Shows input-number-medium (system feedback, prefix, input, size=medium, state=enabled, invalid=false); input-number-medium (system feedback, input, suffix, size=medium, state=enabled, invalid=false). Text in the figure: "Price", "€", "120", "Amount", "55,8", "kg", "Maximum Length", "150", "inch"._
+_Figure: Three medium Input Number fields in the enabled state, each with minus and plus buttons: "Price" with prefix "€" and value "120", "Amount" with value "55,8" and suffix "kg", and "Maximum Length" with value "150" and suffix "inch". They illustrate a currency symbol as prefix and units of measurement as suffix._
 
 ## Behavior
 
@@ -630,7 +630,7 @@ Disable the button, if the lowest or highest value is set, to communicate to the
 
 ![Lowest and highest value](input/lowest-and-highest-value-7342-2188.png)
 
-_Figure: Shows input-number-small (system feedback, input, size=small, state=enabled, invalid=false). Text in the figure: "How many hours do you use the machine every day?", "Hours", "0,5"._
+_Figure: A small Input Number labelled "Hours" under the question "How many hours do you use the machine every day?", holding the value "0,5". The minus button is disabled (light grey) because the lowest value is reached, while the plus button stays enabled (dark)._
 
 ### Keyboard navigation focus order
 
@@ -640,7 +640,7 @@ The keyboard navigations follows the order of the elements semantically.
 
 ![Keyboard navigation focus order](input/keyboard-navigation-focus-order-7342-2206.png)
 
-_Figure: Shows input-number-medium (system feedback, size=medium, state=focus, invalid=false); input-number-medium (system feedback, size=medium, state=enabled, invalid=false). Callouts 1, 2, 3. Text in the figure: "Label"._
+_Figure: Three medium Input Number fields, each with a "Label" and minus and plus buttons, showing the keyboard focus order. Callout 1 marks focus on the input field, callout 2 marks focus on the minus button, and callout 3 marks focus on the plus button._
 
 ## Examples / Variations
 
@@ -649,6 +649,8 @@ _Figure: Shows input-number-medium (system feedback, size=medium, state=focus, i
 The advisor uses the small Input Number, to reduce height in the layout of the product listing.
 
 ![iMOW advisor in the web shop](input/imow-advisor-in-the-web-shop-4672-7111.png)
+
+_Figure: Mobile web shop page "iMOW BERATER" in the section "INSTALLATIONSMATERIAL", listing the product "Installations-Kit S" at 104,00 € with a checkbox and an image. A small Input Number labelled "Menge" with value 1 and minus and plus buttons keeps the product listing compact; a "ZURÜCK" link and an "ABLAUF ÖFFNEN" button sit at the bottom._
 
 ## Input Slider (horizontal single-point)
 
@@ -668,11 +670,11 @@ Overview:
 
 ![Input Slider (horizontal single-point)](input/input-slider-horizontal-single-point-29536-27475.png)
 
-_Figure: Shows input-frame (size=medium, width=min, suffix=true); track (value=50%); track (Increments, value=50%); track (tooltip, value=50%); track (tooltip, Increments, value=50%). Text in the figure: "Component", "default (with input)", "minimal", "steps", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "50", "xyz", "0", "100", "enabled", "hover", "focus", "disabled"._
+_Figure: Overview of the horizontal single-point Input Slider in three types as columns, "default (with input)", "minimal" and "steps", and four states as rows, "enabled", "hover", "focus" and "disabled". Each has a "Label", hint text, a track from 0 to 100 with an orange filled part and a round thumb at 50. The default type adds an input field with value 50 and suffix "xyz", minimal and steps show a "50" tooltip on hover and focus, steps has tick marks on the track, and the disabled state is greyed out._
 
 ![Input Slider (horizontal single-point)](input/input-slider-horizontal-single-point-29536-27484.png)
 
-_Figure: Shows thumb (state=enabled); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=000, hint, label=Label, input, size=medium, state=enabled, invalid=false); input (input=Input, hint, system feedback, label=Label, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input, size=small, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=000, hint, label=Label, input, suffix, size=medium, state=enabled, invalid=false); input (input=Input, hint, system feedback, label=Label, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input, suffix, size=small, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=0000, hint, label=Label, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=0000, hint, label=Label, input, suffix, size=medium, state=enabled, invalid=false). Measurements: 0%, 50%, 100%. Text in the figure: "Building Block", "thumb", "tooltip", "track", "input frame", "000", "0", "100", "50", "xyz", "0000", "enabled", "hover", "focus", "disabled"._
+_Figure: Building blocks of the Input Slider: "thumb" in enabled, hover, focus and disabled states; "tooltip" in dark and disabled light variants showing "000"; "track" with increments at 0%, 50% and 100% (tooltip showing 0, 50 and 100 above the thumb, orange fill growing with the value); and "input frame" variants in medium and small size, with and without the "xyz" suffix, for 3-digit ("000") and 4-digit ("0000") values._
 
 ### Further guidelines
 
@@ -709,7 +711,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](input/anatomy-29536-27528.png)
 
-_Figure: Shows annotation-circle (number=1, type=left, color=blue); input-slider (hint, Property 1=default, Property 2=enabled); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=9, type=right, color=blue); annotation-circle (number=4, type=bottom, color=blue); annotation-circle (number=5, type=bottom, color=blue); annotation-circle (number=3, type=bottom, color=blue); input-slider (hint, Property 1=minimal, Property 2=hover); annotation-circle (number=6, type=right, color=blue); annotation-circle (number=7, type=right, color=blue); input-slider (ℹ️ info-button, hint, Property 1=steps, Property 2=enabled); annotation-circle (number=10, type=right, color=blue). Callouts 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "50", "xyz", "0", "100"._
+_Figure: Anatomy of the Input Slider shown with three variants with numbered callouts. In the default variant: 1 "Label", 2 hint text, 3 grey slider scale (track), 4 orange tint showing the selected value, 5 round thumb (handle) and 9 the input field with value 50 and suffix "xyz". In the minimal variant: 6 the value tooltip "50" above the thumb and 7 the maximum value label "100". In the steps variant: 8 the step tick marks on the track and 10 the info button next to the "Label"._
 
 ### 3 slider types
 
@@ -721,7 +723,7 @@ For detailed instructions on how to use these variants, visit the following page
 
 ![3 slider types](input/3-slider-types-29536-27548.png)
 
-_Figure: Shows input-slider (hint, Property 1=default, Property 2=enabled); annotation-circle (number=1, type=left, color=blue); input-slider (hint, Property 1=minimal, Property 2=hover); annotation-circle (number=2, type=left, color=blue); input-slider (hint, Property 1=steps, Property 2=enabled); annotation-circle (number=3, type=left, color=blue). Callouts 1, 2, 3. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "50", "xyz", "0", "100"._
+_Figure: The three Input Slider types stacked, each with a "Label", hint text and a track from 0 to 100 with the thumb at 50. Callout 1 marks type "Default" with a synchronised input field (50, "xyz"), callout 2 marks type "Minimal" without input field and with a "50" tooltip above the thumb, and callout 3 marks type "Steps" with predefined step marks along the track._
 
 ### Component Handling
 
@@ -733,7 +735,7 @@ However, only use the limited input options available in the **input-frame build
 
 ![Nested components](input/nested-components-29536-27561.png)
 
-_Figure: Shows annotation-circle (number=2, type=left, color=blue); annotation-circle (number=1, type=left, color=blue). Callouts 1, 2._
+_Figure: Figma properties panels of the input slider. Callout 1 points at the input-slider panel (type default, state enabled, hint on) and its input-frame section with size medium, width min and suffix on, which are the options to use. Callout 2 points at the nested input-medium panel (state enabled, invalid, leading icon, prefix, suffix on, function, input on, placeholder), whose options should NOT be used._
 
 ### Sizing
 
@@ -749,7 +751,7 @@ If multiple sliders are used within the same form or fieldset, they should all m
 
 ![Maximum width](input/maximum-width-30568-8744.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=enabled). Text in the figure: "Content area Narrow", "Label", "0", "100", "Container Width", "recommended max. width 544px"._
+_Figure: Two input sliders (label, range 0 to 100, orange filled track, thumb at 50) inside light blue "Content area Narrow" containers. In the upper one the slider fills the container width (Container Width). In the lower, wider container the slider stops at a recommended max. width of 544px, narrower than the Container Width._
 
 #### Minimum width
 
@@ -757,7 +759,7 @@ The minimum width of 256px, applicable to both smaller and larger viewports.
 
 ![Minimum width](input/minimum-width-29536-27572.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=enabled). Text in the figure: "Label", "0", "100", "min. 256px"._
+_Figure: Minimal input slider with label, range values 0 and 100 and thumb at the middle, with a dimension line below the track marking a minimum width of 256px._
 
 #### Input Sizes
 
@@ -765,7 +767,7 @@ The input field within the slider component offers two size options: medium and 
 
 ![Input Sizes](input/input-sizes-29536-27591.png)
 
-_Figure: Shows input-slider (Property 1=default, Property 2=enabled). Text in the figure: "Input medium", "Input small", "Lorem Ipsum", "50", "0", "100"._
+_Figure: Two input sliders with label "Lorem Ipsum", value 50 and range 0 to 100, side by side. The left one, "Input medium", has a larger input field; the right one, "Input small", has a smaller input field._
 
 #### Input Width
 
@@ -784,7 +786,7 @@ Further examples in the Content Section
 
 ![Input Width](input/input-width-29536-27600.png)
 
-_Figure: Shows input-slider (hint, Property 1=default, Property 2=enabled). Text in the figure: "Minimum Width", "Suffix: false", "Suffix: true", "Thickness in mm", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "50", "0", "100", "mm", "Maximum Width"._
+_Figure: Grid of four input sliders with label "Thickness in mm", hint text, value 50 and range 0 to 100. The top row shows "Minimum Width" and the bottom row "Maximum Width" of the input field; the left column has "Suffix: false" and the right column "Suffix: true" (unit "mm" inside the input). The maximum width fields are wider, and the hint text wraps to fewer lines next to them._
 
 ### Alignment
 
@@ -796,7 +798,7 @@ _Figure: Shows input-slider (hint, Property 1=default, Property 2=enabled). Text
 
 ![Alignment of different elements](input/alignment-of-different-elements-29536-27619.png)
 
-_Figure: Shows annotation-circle (number=2, type=top, color=blue); input-slider (Property 1=minimal, Property 2=enabled); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); input-slider (Property 1=default, Property 2=enabled). Callouts 1, 2, 3. Text in the figure: "Length in m", "0", "100", "50", "mm"._
+_Figure: Input sliders with vertical guide lines showing alignment. Callout 1 points at the range value "0", centred on the first tick at the start of the track. Callout 2 points at the tooltip (50), centred on the thumb. Callout 3 points at the thumb at the track start, aligned with the track end, the label and the input field (value 50, suffix mm) on the same edge._
 
 #### Edge-Case alignment large range values
 
@@ -804,7 +806,7 @@ Although large range values should be avoided (see content guidelines), values e
 
 ![Edge-Case alignment large range values](input/edge-case-alignment-large-range-values-29536-27636.png)
 
-_Figure: Shows thumb (state=enabled). Text in the figure: "Length in m", "20000", "100000"._
+_Figure: Slider with label "Length in m" and thumb at the start, with large range values "20000" and "100000". The values are aligned to the left and right edges of the track, marked by vertical guide lines, so they do not extend beyond the slider._
 
 ### Animation
 
@@ -814,7 +816,7 @@ _Figure: Shows thumb (state=enabled). Text in the figure: "Length in m", "20000"
 
 ![Thumb hover](input/thumb-hover-29536-27671.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=hover); cursor (type=pointer). Text in the figure: "Length in m", "0", "100", "50"._
+_Figure: Slider with label "Length in m", range 0 to 100 and thumb at 50 in hover state: a pointer cursor sits on the thumb, the thumb is shaded and a dark tooltip with 50 appears above it._
 
 #### Tooltip
 
@@ -824,7 +826,7 @@ The tooltip animation is triggered by hovering or focusing.
 
 ![Tooltip](input/tooltip-29536-27679.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=enabled); input-slider (Property 1=minimal, Property 2=hover); cursor (type=pointer). Text in the figure: "Length in m", "0", "100", "50", "Appear fade: 0 \> 100% Opacity", "Disapear fade: 0 \> 100% Opacity"._
+_Figure: Two transitions of a slider (label "Length in m", range 0 to 100, thumb at 50). Top: without tooltip to hovered thumb with tooltip 50, labelled "Appear fade: 0 \> 100% Opacity". Bottom: hovered thumb with tooltip to enabled state without tooltip, labelled "Disapear fade: 0 \> 100% Opacity"._
 
 ## Types
 
@@ -852,7 +854,7 @@ A text field helps users who struggle with fine motor control.
 
 ![Accessibility](input/accessibility-29536-27708.png)
 
-_Figure: Shows input-slider (Property 1=default, Property 2=enabled). Text in the figure: "Thickness", "0", "mm", "100", "50"._
+_Figure: Three input sliders labelled "Thickness", each with an input field and suffix "mm" above the track and range 0 to 100. The values are 0 (thumb at start, no fill), 50 (thumb in the middle, half filled orange) and 100 (thumb at end, fully filled), showing the input as an alternative way to enter the value._
 
 #### The slider as a mandatory form field
 
@@ -860,7 +862,7 @@ Using slider inputs for form fields can pose accessibility challenges, so their 
 
 ![The slider as a mandatory form field](input/the-slider-as-a-mandatory-form-field-29536-27716.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=enabled). Text in the figure: "Length in m\*", "0", "100", "Accessibility"._
+_Figure: Minimal slider in the enabled state with the label "Length in m\*" (asterisk marks it as mandatory), range end labels "0" and "100", an orange filled track up to a white round thumb at the middle, and a blue "Accessibility" badge with an info icon at the lower left that flags the accessibility concern of sliders as mandatory fields._
 
 ### Type “Minimal”
 
@@ -878,7 +880,7 @@ The minimal slider is best suited for situations where the user needs to select 
 
 ![Use this slider preferably for small Ranges](input/use-this-slider-preferably-for-small-ranges-29536-27735.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=enabled); input-slider (Property 1=minimal, Property 2=hover); cursor (type=pointer). Text in the figure: "Volume in %", "0", "100", "50"._
+_Figure: Two minimal sliders labelled "Volume in %" with range "0" to "100": the upper one is enabled with the thumb at the middle, the lower one is in the hover state with a pointer cursor on the thumb and a dark tooltip above it showing the current value "50"._
 
 #### Don’t use
 
@@ -890,7 +892,7 @@ _Figure: Shows input-slider (Property 1=minimal, Property 2=enabled); input-slid
 
 ![Don’t use](input/don-t-use-29536-27743.png)
 
-_Figure: Don't example. Shows thumb (state=enabled). Text in the figure: "Area in square meters (m2)", "10000", "45000", "1752"._
+_Figure: Don't example: a slider labelled "Area in square meters (m2)" with a very precise range from "10000" to "45000" and a value tooltip "1752" above the thumb, which is unsuitable because users cannot easily land on an exact number in such a range; a red "Don't" badge marks it._
 
 ### Type “Steps”
 
@@ -904,7 +906,7 @@ By default, the current value is only displayed when hovering over the thumb, dr
 
 ![Choose this type for greater controll over the results.](input/choose-this-type-for-greater-controll-over-the-results-29536-27781.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=hover); cursor (type=pointer); input-slider (Property 1=minimal, Property 2=enabled). Text in the figure: "Length in m", "0", "100", "50", "Cutting line strength in mm", "1,4", "3,3"._
+_Figure: Two discrete sliders with white tick dots on the track and a value tooltip "50" above a hovered thumb with pointer cursor: "Length in m" from "0" to "100" with five ticks, and "Cutting line strength in mm" from "1,4" to "3,3" with six ticks, showing predefined steps the thumb can snap to._
 
 #### Don’t use
 
@@ -917,7 +919,7 @@ Then, the considerations above will limit the number of critical tick marks (ess
 
 ![Don’t use](input/don-t-use-29536-27790.png)
 
-_Figure: Don't example. Shows thumb (state=hover/pressed). Text in the figure: "Distance in km", "0", "5000000", "250000"._
+_Figure: Don't example: a slider labelled "Distance in km" with a vast range from "0" to "5000000", a value tooltip "250000" above the thumb, and many more than five tick marks along the track, which is too dense and imprecise for a discrete slider; a red "Don't" badge marks it._
 
 #### Number of ticks & steps
 
@@ -929,7 +931,7 @@ For more steps, choose alternatives: [Select](https://www.figma.com/design/qXldp
 
 ![Number of ticks & steps](input/number-of-ticks-steps-29536-27832.png)
 
-_Figure: Shows input-slider (Property 1=steps, Property 2=enabled); thumb (state=enabled). Text in the figure: "Amount of items", "1", "5", "50", "2", "18", "10"._
+_Figure: Two discrete steps sliders labelled "Amount of items", one from "1" to "5" with four tick dots and a value tooltip "50", the other from "2" to "18" with nine tick dots and a value tooltip "10", illustrating the number of ticks and steps._
 
 ## Content and Assets
 
@@ -945,7 +947,7 @@ Continuously test the clarity of the copy in the form.
 
 ![Use a predictable label](input/use-a-predictable-label-29536-27941.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=enabled). Text in the figure: "Length in meters (m)", "0", "100"._
+_Figure: Minimal slider in the enabled state with the clear, predictable label "Length in meters (m)", range end labels "0" and "100", and the thumb at the middle of the orange filled track, showing the unit written out in full before its abbreviation._
 
 #### Hint length
 
@@ -955,7 +957,7 @@ Copy in the hint should be one line and 2/3 lines maximum.
 
 ![Hint length](input/hint-length-29536-27949.png)
 
-_Figure: Shows input-slider (hint, Property 1=minimal, Property 2=enabled); input-slider (hint, Property 1=default, Property 2=enabled). Text in the figure: "Length in m", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "0", "100", "Length in milimeters (mm)", "50", "mm"._
+_Figure: Two sliders with hint text: a minimal slider labelled "Length in m" with a two-line hint of placeholder text and range "0" to "100", and a default slider labelled "Length in milimeters (mm)" with a three-line hint beside a number input showing "50" with suffix "mm" above the track, illustrating that hints stay at one to three lines._
 
 #### Handling Space Constraints
 
@@ -972,11 +974,11 @@ These adjustments help maintain usability and ensure a clean, readable layout.
 
 ![Handling Space Constraints](input/handling-space-constraints-29536-27959.png)
 
-_Figure: Don't example. Shows input-slider (hint, Property 1=default, Property 2=enabled). Text in the figure: "Label Lorem ipsum dolor sit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "50", "mm", "0", "100"._
+_Figure: Don't example: a default slider with the label "Label Lorem ipsum dolor sit" and a long hint squeezed into a narrow column of seven short lines beside a number input "50" with suffix "mm", above a track from "0" to "100"; the input leaves too little width for the hint, which is marked by a red "Don't" badge._
 
 ![Handling Space Constraints](input/handling-space-constraints-29536-27964.png)
 
-_Figure: Do example. Shows input-slider (Property 1=default, Property 2=enabled); annotation-circle (number=1, type=left, color=blue); input-slider (hint, Property 1=default, Property 2=enabled); annotation-circle (number=2, type=left, color=blue); input-slider (hint, Property 1=minimal, Property 2=enabled); annotation-circle (number=3, type=left, color=blue); input (system feedback, hint=Vivamus id erat eget leo eget., input=Input, hint, label=Lorem augue, suffix, size=medium, state=enabled, invalid=false); annotation-circle (number=4, type=left, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "Lorem augue", "50", "cm", "0", "100", "Vivamus id erat eget leo eget.", "0000"._
+_Figure: Do example showing four space-saving options for the label "Lorem augue": callout 1 points at a default slider with a number input "50" and suffix "cm" on the label row and no hint, callout 2 at a slider with a short hint "Vivamus id erat eget leo eget." and a compact input "0000" with suffix "cm", callout 3 at a minimal slider with the hint and range "0" to "100" but no input, and callout 4 at a plain text input with the hint and suffix "cm" instead of a slider; a green "Do" badge marks it._
 
 #### Communicate the measurements within the label.
 
@@ -984,7 +986,7 @@ If using the minimal or step version of the component, it is essential to includ
 
 ![Communicate the measurements within the label.](input/communicate-the-measurements-within-the-label-29536-27982.png)
 
-_Figure: Do example. Shows input-slider (Property 1=minimal, Property 2=enabled); input-slider (Property 1=steps, Property 2=enabled). Text in the figure: "Length in m", "0", "100", "Thickness in mm"._
+_Figure: Do example: two sliders without a numeric input, a minimal slider labelled "Length in m" and a steps slider labelled "Thickness in mm", both ranging from 0 to 100 with the thumb at the middle. The unit of measurement is part of each label, so it is clear what the scale values represent._
 
 #### Range values
 
@@ -992,11 +994,11 @@ The slider variant and use case may vary. Find the most frequent range and ensur
 
 ![Range values](input/range-values-29536-27993.png)
 
-_Figure: Don't example. Shows input-slider (Property 1=minimal, Property 2=enabled). Text in the figure: "Area in square meters (m2)", "10000", "500000"._
+_Figure: Don't example: a minimal slider labelled "Area in square meters (m2)" with a scale from 10000 to 500000. The minimum and maximum values have more than six characters, which is too long for the slider scale._
 
 ![Range values](input/range-values-29536-27998.png)
 
-_Figure: Do example. Shows input-slider (Property 1=minimal, Property 2=enabled). Text in the figure: "Area in hectare (ha)", "1", "50"._
+_Figure: Do example: a minimal slider labelled "Area in hectare (ha)" with a short scale from 1 to 50. A more suitable unit keeps the minimum and maximum values to no more than six characters._
 
 #### Don't use the slider as a stepper or progress bar.
 
@@ -1004,7 +1006,7 @@ The slider is an interactive element and should not be used to show progress. Us
 
 ![Don't use the slider as a stepper or progress bar.](input/don-t-use-the-slider-as-a-stepper-or-progress-bar-29536-28007.png)
 
-_Figure: Don't example. Shows input-slider (Property 1=minimal, Property 2=enabled). Measurements: 0%, 100%. Text in the figure: "Progress", "Start", "Finish", "Battery Status"._
+_Figure: Don't example: two minimal sliders used to show status, one labelled "Progress" with the scale "Start" to "Finish" and one labelled "Battery Status" with the scale 0% to 100%, both with the thumb at the middle. The slider is an interactive input and must not be used as a progress bar or stepper._
 
 #### Don't use on orange background.
 
@@ -1012,7 +1014,7 @@ As the slider is a input element it should , like other inputs, only on white or
 
 ![Don't use on orange background.](input/don-t-use-on-orange-background-29536-28017.png)
 
-_Figure: Don't example. Shows input-slider (Property 1=minimal, Property 2=enabled). Text in the figure: "Progress", "Start", "Finish"._
+_Figure: Don't example: a minimal slider labelled "Progress" with the scale "Start" to "Finish", placed on an orange background panel. The slider is an input element and should only be used on white or grey backgrounds._
 
 ## Behavior
 
@@ -1024,7 +1026,7 @@ Once the user tabs through the page and hits the handle, they should be able to 
 
 ![Enable click, drag, jump and arrow movements.](input/enable-click-drag-jump-and-arrow-movements-29536-27869.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); input-slider (Property 1=minimal, Property 2=hover); cursor (type=pointer); annotation-circle (number=2, type=center, color=blue); input-slider (Property 1=minimal, Property 2=enabled); input-slider (hint, Property 1=minimal, Property 2=focus). Callouts 1, 2. Text in the figure: "Length in m", "0", "100", "50", "Click", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri..."._
+_Figure: Three minimal sliders labelled "Length in m" with a scale from 0 to 100. Callout 1 marks the thumb being dragged with a pointer in the hover state while the tooltip shows 50. Callout 2 marks a click on the track near 100, after which the thumb jumps to that position and the tooltip shows 100 (arrow between before and after). The bottom slider in the focus state with a hint text shows the left and right arrow keys decrementing or incrementing the value 50._
 
 ### Focus
 
@@ -1036,7 +1038,7 @@ Users can adjust the value when the thumb is focused by using the arrow keys to 
 
 ![Focus](input/focus-29536-27891.png)
 
-_Figure: Shows input-slider (hint, Property 1=default, Property 2=focus); annotation-circle (number=1, type=right, color=blue); annotation-circle (number=2, type=bottom, color=blue); input-slider (hint, Property 1=minimal, Property 2=focus). Callouts 1, 2. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "50", "xyz", "0", "100", "Length in m"._
+_Figure: Focus order of the sliders. In the default slider with label, hint text and scale 0 to 100, callout 1 marks the numeric input field (value 50, unit "xyz") that is focused first and callout 2 marks the thumb that is focused second. The minimal slider labelled "Length in m" below has no input, so focus goes directly to the thumb, which shows a tooltip with 50, and the left and right arrow keys change the value._
 
 ### Tooltip for the current value
 
@@ -1048,7 +1050,7 @@ The boundaries by themselves are not sufficiently meaningful.
 
 ![Tooltip for the current value](input/tooltip-for-the-current-value-29536-27906.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=hover); cursor (type=pointer). Text in the figure: "Length in m", "0", "100", "50"._
+_Figure: Minimal slider labelled "Length in m" with a scale from 0 to 100 in the hover state, with a pointer cursor on the thumb. A dark tooltip above the thumb shows the current value 50._
 
 ### Default values
 
@@ -1056,7 +1058,7 @@ Set the default value in the middle to avoid empty results when using the slider
 
 ![Default values](input/default-values-29536-27913.png)
 
-_Figure: Shows input-slider (Property 1=default, Property 2=enabled). Text in the figure: "Thickness in mm", "50", "mm", "0", "100", "Choose a emperature", "20", "°C", "-10", "30"._
+_Figure: Two default sliders, each with a numeric input field and unit, with the thumb in the middle of the track. "Thickness in mm" has the value 50 mm on a scale from 0 to 100, and "Choose a emperature" has the value 20 °C on a scale from -10 to 30, so the default is centred and negative values are possible._
 
 ### Automatic correction to minimum and maximum
 
@@ -1067,7 +1069,7 @@ When a user manually inputs an invalid value, the system automatically adjusts i
 
 ![Automatic correction to minimum and maximum](input/automatic-correction-to-minimum-and-maximum-29536-27920.png)
 
-_Figure: Shows input-slider (Property 1=default, Property 2=enabled); cursor (type=blinking-text). Text in the figure: "Area in m2", "15", "m2", "20", "200", "0", "5600", "1000"._
+_Figure: Two before and after examples (arrows) of automatic correction for the default slider labelled "Area in m2". Top: with a scale of 20 to 200, a typed value of 15 is below the minimum and is corrected to 20. Bottom: with a scale of 20 to 1000, a typed value of 5600 exceeds the maximum and is corrected to 1000, with the thumb at the right end._
 
 ## Examples / Variations
 
@@ -1079,7 +1081,7 @@ Sliders can also be positioned alongside other filtering options, as they typica
 
 ![Filter](input/filter-29536-28033.png)
 
-_Figure: Shows input-slider (Property 1=default, Property 2=enabled). Text in the figure: "Filter", "Length", "Length in centimetres (cm)", "50", "cm", "0", "100", "Drive link gauge", "Saw chain pitch", "Guide Bars", "Saw Chains", "Show results (34)", "Clear selection"._
+_Figure: A drawer titled "Filter" with a close button, in which the expanded "Length" section holds a slider with its value 50 in an input field with the suffix "cm" labelled "Length in centimetres (cm)", and a range from 0 to 100 with the thumb at the middle. Below are collapsed sections "Drive link gauge", "Saw chain pitch", "Guide Bars" and "Saw Chains", and a dark "Show results (34)" button at the bottom._
 
 ### Provide text fields for price filter values
 
@@ -1089,11 +1091,11 @@ Offer both predefined ranges and text fields for numeric filters. This supports 
 
 ![Provide text fields for price filter values](input/provide-text-fields-for-price-filter-values-29536-28109.png)
 
-_Figure: Don't example. Shows input-slider (Property 1=default, Property 2=enabled). Text in the figure: "Preis (€)", "1250", "€", "0", "2500"._
+_Figure: Don't example: a price filter that uses only a slider labelled "Preis (€)" with an input field showing 1250 and the suffix "€", a range from 0 to 2500 and the thumb at the middle. A slider alone is wrong for price ranges because users cannot set exact values or see which price ranges are available._
 
 ![Provide text fields for price filter values](input/provide-text-fields-for-price-filter-values-29536-28115.png)
 
-_Figure: Do example._
+_Figure: Do example: a price filter titled "Preis" with two text fields "Minimum" (0, suffix "€") and "Maximum" (2.379, suffix "€") separated by "bis" and followed by a confirm button, plus checkboxes for the predefined ranges "0 - 499 € (25)", "500 - 999 € (29)" and "ab 1.000 € (29)". Offering both predefined ranges and text fields supports exact filtering and shows the available price range._
 
 ### Show current value in forms
 
@@ -1105,7 +1107,7 @@ In this design case example, you can switch on the tooltip visibility permanentl
 
 ![Show current value in forms](input/show-current-value-in-forms-29536-28124.png)
 
-_Figure: Shows input-slider (Property 1=minimal, Property 2=enabled); select (label, input, state=enabled, invalid=false, size=medium); select (label, input, hint, state=enabled, invalid=false, size=medium); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=00:15, function, label=Mowing duration, input, size=medium, state=enabled, invalid=false); switch (label links, Label=Ignore rain sensors, state=enabled, checked=true). Text in the figure: "Mowing Settings", "Applies to scheduled and manually triggered mowing jobs", "Cutting height in mm", "20", "60", "50", "Wire over drive", "Not close to the wire", "rain sensor sensitivity", "Allowed mowing weather", "Any Weather", "Only applies to manually triggered mowing jobs", "Mowing duration", "00:15", "Ignore rain sensors"._
+_Figure: A form card titled "Mowing Settings" in which the slider "Cutting height in mm" (range 20 to 60, step markers) permanently shows a tooltip with its current value 50 above the thumb. The form also contains the selects "Wire over drive" ("Not close to the wire") and "rain sensor sensitivity" with hint "Allowed mowing weather" ("Any Weather"), a divider, the text field "Mowing duration" (00:15) and the switch "Ignore rain sensors" turned on._
 
 ### Precise input and efficiency
 
@@ -1117,7 +1119,7 @@ If you're unsure which solution best fits your use case, we recommend conducting
 
 ![Precise input and efficiency](input/precise-input-and-efficiency-29536-28142.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); input-slider (Property 1=minimal, Property 2=enabled); annotation-circle (number=2, type=left, color=blue); input-frame (size=medium, width=min, suffix=true); thumb (state=enabled); annotation-circle (number=3, type=left, color=blue). Callouts 1, 2, 3. Text in the figure: "Cutting Height (in mm)", "20", "60", "50", "37,5", "mm"._
+_Figure: Three slider designs compared: (1) the existing iMow app "MOWING SETTINGS" screen with a stepped "Cutting height" slider showing 37.5mm, (2) the minimal slider "Cutting Height (in mm)" from 20 to 60 with a tooltip showing 50 above the thumb, and (3) the default slider with the same label and range plus an input field with the suffix "mm" showing 37,5 for precise entry._
 
 ## Input File
 
@@ -1138,11 +1140,11 @@ The input file component allows users to select and upload files, such as images
 
 ![Input File](input/input-file-32314-6496.png)
 
-_Figure: Shows upload-field (dropzone=true, state=enabled, is invalid=false, hint-in-drop-zone=true); file list (layout variant=preview list); notification (type=warning, icon=True). Text in the figure: "Main Component", "Input File", "Input File - Gallery", "Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png", "Filename.png", "1.5 MB", "enabled", "hover/drag-over", "focus", "disabled", "invalid", "Upload", "Component variant “ Input File - Gallery” only available in Figma: This compo...", "medium", "small"._
+_Figure: Main component overview of Input File: an upload field with a dashed dropzone ("Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png") above a list of five files "Filename.png" (1.5 MB) with remove buttons. Beside it, the Figma-only variant "Input File - Gallery" shows "Upload" tiles in sizes medium and small for the states enabled, hover/drag-over, focus, disabled and invalid, with a warning note that this variant is currently out of scope but planned for a future release._
 
 ![Input File](input/input-file-32314-6508.png)
 
-_Figure: Shows button (button text=Upload files, variant=outline, state=enabled, size=medium, icon position=left, hide label=off, flush alignment=off); button (button text=Upload files, variant=outline, state=hover / pressed, size=medium, icon position=left, hide label=off, flush alignment=off); button (button text=Upload files, variant=outline, state=focus, size=medium, icon position=left, hide label=off, flush alignment=off); button (button text=Upload files, variant=outline, state=disabled, size=medium, icon position=left, hide label=off, flush alignment=off); system-feedback (type=error); button (button text=Browse files, variant=outline, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Browse files, variant=outline, state=hover / pressed, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Browse files, variant=outline, state=focus, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Browse files, variant=outline, state=disabled, size=small, icon position=none, hide label=off, flush alignment=off); preview (type=icon); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); progress-indicator (type=bar, status=determinate). Measurements: 50%. Text in the figure: "Building Blocks", "Input File - upload field", "enabled", "hover", "drag-over", "focus", "disabled", "invalid", "Label", "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload files", "System feedback message", "Drag and drop files here or", "Browse files", "dropzone: false", "dropzone: true", "hint-in-dropzone: true", "hint-in-dropzone: false", "Preview", "Progress Indicator", "type: bar", "type: text", "icon", "Upload status 50%"._
+_Figure: Building blocks of Input File. The upload field appears as a plain "Upload files" button (dropzone: false) or as a dashed dropzone with "Drag and drop files here or" and "Browse files" (dropzone: true, with hint-in-dropzone true or false), each in the states enabled, hover, drag-over, focus, disabled and invalid (invalid shows a "System feedback message"). Further blocks are Preview (icon, image), Progress Indicator (type bar and text; determinate, error and indeterminate with "Upload status 50%" and "Uploading..."), Upload Item (states uploading, error, success and indeterminate, with layout variants preview list and upload queue) and File List (preview list and upload queue)._
 
 ### Further guidelines
 
@@ -1179,7 +1181,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](input/anatomy-32314-6578.png)
 
-_Figure: Shows input-file (Show item list); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=left, color=yellow). Callouts 1, 2. Text in the figure: "Upload field without dropzone", "Label", "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload files", "Filename.png", "1.5 MB", "Upload field with dropzone", "Drag and drop files here or", "Browse files"._
+_Figure: Anatomy of Input File with two parts: (1) the upload field, shown without dropzone ("Label", hint "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload files" button) and with dropzone ("Label", "Drag and drop files here or", "Browse files", hint), and (2) the file list below each field with image thumbnails, "Filename.png", "1.5 MB" and a remove button per row._
 
 ### Upload Field Elements
 
@@ -1228,7 +1230,7 @@ The Upload Field is available in three layout variants to support different use 
 
 ![Upload Field with dropzone (hint above)](input/upload-field-with-dropzone-hint-above-32314-6605.png)
 
-_Figure: Shows annotation-circle (number=1, type=left, color=blue); input-file; annotation-circle (number=4, type=right, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=5, type=left, color=blue); annotation-circle (number=6, type=left, color=blue); annotation-circle (number=7, type=left, color=blue). Callouts 1, 2, 3, 4, 5, 6, 7. Text in the figure: "Upload Field without dropzone", "Label", "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload files", "Upload Field with dropzone - hint inside", "Drag and drop files here or", "Browse files", "Upload Field with dropzone - hint above", "Upload up to 5 files in .jpg, .png, .pdf, or .docx format. Each file must not..."._
+_Figure: Anatomy of the upload field in three variants (without dropzone, with dropzone hint inside, with dropzone hint above) with callouts: 1 Label, 2 hint text about file size and types (inside the dropzone in one variant, above the dropzone in the last variant, where it reads "Upload up to 5 files in .jpg, .png, .pdf, or .docx format..."), 3 button ("Upload files" or "Browse files"), 4 info icon next to the label, 5 dashed dropzone area, 6 upload icon, 7 "Drag and drop files here or" text._
 
 ### File List Elements
 
@@ -1246,7 +1248,7 @@ As the name suggests, the **Preview List Item** displays a **preview of the file
 
 ![Anatomy Preview List Item](input/anatomy-preview-list-item-32314-6635.png)
 
-_Figure: Shows annotation-circle (number=2, type=top, color=blue); annotation-circle (number=3, type=top, color=blue); annotation-circle (number=1, type=left, color=blue); upload-item (layout variant=preview list, state=uploading, progress-bar=false, indeterminate=false); annotation-circle (number=5, type=right, color=blue); upload-item (layout variant=preview list, state=error, progress-bar=false, indeterminate=false); annotation-circle (number=4, type=bottom, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Filename.png", "1.5 MB", "System Feedback Message"._
+_Figure: Anatomy of the Preview List Item shown twice: a normal row with a file icon, and an error row with an image thumbnail and the message "System Feedback Message" under a red divider. Callouts: 1 file preview (icon or thumbnail), 2 file name "Filename.png", 3 file size "1.5 MB", 4 system feedback message, 5 remove button._
 
 #### Anatomy Upload Queue Item
 
@@ -1273,7 +1275,7 @@ More on accessibility requirements for progress indicators can be found in the W
 
 ![Anatomy Upload Queue Item](input/anatomy-upload-queue-item-32314-6654.png)
 
-_Figure: Shows annotation-circle (number=2, type=top, color=blue); annotation-circle (number=3, type=top, color=blue); annotation-circle (number=1a, type=left, color=blue); upload-item (layout variant=upload queue, state=uploading, progress-bar=false, indeterminate=false); annotation-circle (number=4a, type=bottom, color=blue); annotation-circle (number=1b, type=left, color=blue); upload-item (layout variant=upload queue, state=uploading, progress-bar=true, indeterminate=false); annotation-circle (number=4b, type=bottom, color=blue); annotation-circle (number=6, type=top, color=blue); upload-item (layout variant=upload queue, state=error, progress-bar=true, indeterminate=false); annotation-circle (number=5, type=bottom, color=blue); upload-item (layout variant=upload queue, state=success, progress-bar=false, indeterminate=false). Measurements: 50%. Callouts 2, 3, 5, 6, 7, 8, 9. Text in the figure: "1a", "Filename.png", "1.5 MB", "Upload status 50%", "4a", "1b", "4b", "System Feedback Message", "Uploading..."._
+_Figure: Six Upload Queue Item states stacked vertically, each with Filename.png and a close (X) button: uploading with text-only status "Upload status 50%" and a document icon (1a, 2 file name, 3 file size 1.5 MB, 4a status text); uploading with an image thumbnail (1b) and a blue loading bar with "50%" (4b); error with a red loading bar at 50%, a red error icon with "System Feedback Message" (5) and a retry button (6) next to the close button; success with a green check icon and "System Feedback Message" (5); an indeterminate loading bar (4b) with "Uploading..." (8); and a spinner icon (7) with "Uploading..." (8), where 9 points at the close button._
 
 ### Sizing
 
@@ -1287,7 +1289,7 @@ Although the upload field adjusts to its container - e.g., within a layout like 
 
 ![Maximum width](input/maximum-width-32314-6676.png)
 
-_Figure: Shows input-file. Text in the figure: "viewport 1024px", "Content area Narrow", "Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png", "Container width", "viewport 1440px", "recommended max. width 544px"._
+_Figure: The Input File drop zone (label, upload icon, "Drag and drop files here or", a "Browse files" button, and the hint "Max file size: 7 MB. Supported file types: .jpg and .png") placed on the grid inside the "Content area Narrow" at viewport 1024px and viewport 1440px. At 1024px it fills the full container width; at 1440px the container is wider but the field stays at the recommended max. width 544px._
 
 ### Input File Gallery
 
@@ -1312,13 +1314,13 @@ Both variants support the following states: Enabled, Hover/Drag-over, Focus, Dis
 
 ![Input File Gallery](input/input-file-gallery-32314-6739.png)
 
-_Figure: Shows annotation-circle (number=1, type=left, color=blue); input-file-gallery (state=enabled, size=medium); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=3, type=left, color=blue); input-file-gallery (state=enabled, size=small). Callouts 1, 2, 3. Text in the figure: "medium", "Upload", "small"._
+_Figure: Two enabled Input File Gallery variants with a dashed drop zone: medium contains an upload icon (2) and the label "Upload" (3), small contains only the upload icon (2). Callout 1 points at the clickable drop zone in both variants._
 
 > **Please note:** This screen demonstrates the **positioning** of the Input Upload component variant used within a gallery template. **Hint text, error messages, upload logic, and status feedback** of this component variant are currently **out of scope**, but planned for a future release. These aspects must be handled by development teams based on project-specific requirements.
 
 ![Input File Gallery](input/input-file-gallery-32314-6756.png)
 
-_Figure: Shows logo (type=default, logos=main); input-file-gallery (state=enabled, size=medium). Text in the figure: "Drag and drop files here or", "Upload"._
+_Figure: Product detail page of a STIHL chainsaw (Breeze Ben, MS 261 C-M) with product data, an "Edit product data" and a "Delete product" button, and a thumbnail row below the large product photo. The medium Input File Gallery tile labelled "Upload" sits as the first item in the thumbnail row, followed by the uploaded chainsaw thumbnail._
 
 ## Content and Assets
 
@@ -1336,7 +1338,7 @@ The following guidelines apply to **all Input File variants**:
 
 ![Label & Hint Text](input/label-hint-text-32314-8796.png)
 
-_Figure: Shows annotation-circle (number=1, type=left, color=blue); input-file; annotation-circle (number=2, type=right, color=blue). Callouts 1, 2. Text in the figure: "Upload Document", "Max file size: 7 MB. Supported file types: .pdf, .doc and .docx", "Upload file"._
+_Figure: Input File with the label "Upload Document" (1) above the hint text "Max file size: 7 MB. Supported file types: .pdf, .doc and .docx" (2) and an outlined "Upload file" button with an upload icon below._
 
 #### Required and Optional Indicators
 
@@ -1347,7 +1349,7 @@ To ensure clarity on field requirements:
 
 ![Required and Optional Indicators](input/required-and-optional-indicators-32314-8804.png)
 
-_Figure: Shows input-file; annotation-circle (number=1, type=right, color=blue); annotation-circle (number=2, type=right, color=blue). Callouts 1, 2. Text in the figure: "Upload Document \*", "Max file size: 7 MB. Supported file types: .pdf, .doc and .docx", "Upload file", "Upload Document (optional)"._
+_Figure: Two Input File examples with an "Upload file" button and the hint "Max file size: 7 MB. Supported file types: .pdf, .doc and .docx": the required field has the label "Upload Document \*" with an asterisk (1), and the optional field has the label "Upload Document (optional)" with the added word "(optional)" (2)._
 
 ### File instructions
 
@@ -1366,7 +1368,7 @@ Icons are provided through the [Iconography Library](https://www.figma.com/desig
 
 ![Supported File Types](input/supported-file-types-32314-8817.png)
 
-_Figure: Shows preview (type=image); annotation-circle (number=1, type=bottom, color=blue); annotation-circle (number=2, type=bottom, color=blue); annotation-circle (number=3, type=bottom, color=blue); annotation-circle (number=4, type=bottom, color=blue); annotation-circle (number=5, type=bottom, color=blue); annotation-circle (number=6, type=bottom, color=blue). Callouts 1, 2, 3, 4, 5, 6._
+_Figure: Row of file type previews, each numbered: an image thumbnail placeholder (1, purple tile), an image icon (1), a video camera icon (2), a PDF document icon (3), a DOC document icon (4), a ZIP document icon (5) and a generic file icon (6)._
 
 #### File Size & Number of Uploads
 
@@ -1383,7 +1385,7 @@ _Figure: Shows preview (type=image); annotation-circle (number=1, type=bottom, c
 
 ![File Size & Number of Uploads](input/file-size-number-of-uploads-32314-8851.png)
 
-_Figure: Shows input-file. Text in the figure: "Label", "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload files"._
+_Figure: Input File with the label "Label", the hint "Max file size: 7 MB. Supported file types: .jpg and .png" and an outlined "Upload files" button with an upload icon, showing the maximum file size placed in the hint text next to the upload field._
 
 ### Button
 
@@ -1396,7 +1398,7 @@ The **Input File component** is most commonly used within forms that include add
 
 ![Button](input/button-32314-8860.png)
 
-_Figure: Shows input-file; annotation-circle (number=1, type=left, color=blue). Callouts 1. Text in the figure: "Label", "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload file", "Drag and drop files here or", "Browse files"._
+_Figure: Two Input File variants where the call-to-action is a filled dark button (1): a standalone field with label "Label", hint text and a filled "Upload file" button with upload icon, and a dashed drop zone with upload icon, "Drag and drop files here or", a filled "Browse files" button and the hint "Max file size: 7 MB. Supported file types: .jpg and .png"._
 
 #### Info Button
 
@@ -1406,7 +1408,7 @@ Popover content should be **limited to supplementary, non-critical information**
 
 ![Info Button](input/info-button-39634-11170.png)
 
-_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); upload-field (ℹ️ info-button, dropzone=true, state=enabled, is invalid=false, hint-in-drop-zone=true); cursor (type=pointer). Text in the figure: "For best results, upload high-resolution images (at least 1200×800 px)", "Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png"._
+_Figure: Shows popover (children=\[object Object\], arrow=true, arrow placement=below, arrow alignment=center, color=white); upload-field (ℹ️ info-button, dropzone=true, state=enabled, is invalid=false, hint-in-drop-zone=true); cursor (type=pointer). Text in the figure: "For best results, upload high-resolution images (at least 1200×800 px)", "Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png"._
 
 **Don’t use the popover for critical or required information**, use the hint instead. Critical information should not be hidden.
 
@@ -1414,7 +1416,7 @@ For mor Guidance on this topic see the [Popover documentation](https://www.figma
 
 ![Info Button](input/info-button-39634-11188.png)
 
-_Figure: Don't example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); input-file; cursor (type=pointer). Text in the figure: "Max file size: 7 MB. Supported file types: .jpg and .png", "Label", "Upload file"._
+_Figure: Don't example: an Input File with the label "Label" and a dark "Upload file" button, where the pointer hovers the info button next to the label and opens a white popover (arrow below, centered) reading "Max file size: 7 MB. Supported file types: .jpg and .png". This is wrong because such critical or required information is hidden in a popover instead of being shown as a hint._
 
 ## Behaviour
 
@@ -1432,7 +1434,7 @@ To illustrate the complex behavior of the upload process, **two different exampl
 
 ![Hover States](input/hover-states-32314-6794.png)
 
-_Figure: Shows upload-field (dropzone=false, state=hover, is invalid=false, hint-in-drop-zone=false); upload-field (dropzone=true, state=hover, is invalid=false, hint-in-drop-zone=true); cursor (type=pointer); annotation-circle (number=1, type=right, color=blue); annotation-circle (number=2, type=right, color=blue); input-file-gallery (state=hover / drag-over, size=medium); annotation-circle (number=3, type=right, color=blue). Callouts 1, 2, 3. Text in the figure: "Input File (without drop zone)", "Input File (with drop zone)", "Label", "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload files", "Drag and drop files here or", "Browse files", "Input File Gallery", "Upload"._
+_Figure: Hover states of three file upload variants. Callout 1 marks the "Upload files" button of "Input File (without drop zone)", the only element that gets the hover effect; callout 2 marks the "Browse files" button inside "Input File (with drop zone)", which is the only part that shows hover although the whole drop zone is clickable; callout 3 marks the square "Input File Gallery" with an "Upload" icon, which is filled grey on hover as a whole._
 
 #### Drag-Over States
 
@@ -1442,7 +1444,7 @@ _Figure: Shows upload-field (dropzone=false, state=hover, is invalid=false, hint
 
 ![Drag-Over States](input/drag-over-states-32314-6815.png)
 
-_Figure: Shows upload-field (dropzone=false, state=hover, is invalid=false, hint-in-drop-zone=false); upload-field (dropzone=true, state=drag-over, is invalid=false, hint-in-drop-zone=true); annotation-circle (number=1, type=right, color=blue); annotation-circle (number=2, type=right, color=blue); input-file-gallery (state=hover / drag-over, size=medium); annotation-circle (number=3, type=right, color=blue). Callouts 1, 2, 3. Text in the figure: "Input File (without drop zone)", "Input File (with drop zone)", "Label", "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload files", "Drag and drop files here or", "Browse files", "Icons-Files.zip", "Image-Files.zip", "Input File Gallery", "Upload"._
+_Figure: Drag-over states of three file upload variants with dragged files "Icons-Files.zip" and "Image-Files.zip" shown at the cursor. Callout 1 marks the "Upload files" button of "Input File (without drop zone)", the only part highlighted; callout 2 marks the whole drop zone of "Input File (with drop zone)", filled with a background color; callout 3 marks the whole "Input File Gallery" tile, also filled with a background color._
 
 #### Focus States
 
@@ -1452,7 +1454,7 @@ _Figure: Shows upload-field (dropzone=false, state=hover, is invalid=false, hint
 
 ![Focus States](input/focus-states-32314-6875.png)
 
-_Figure: Shows upload-field (dropzone=false, state=focus, is invalid=false, hint-in-drop-zone=false); upload-field (dropzone=true, state=focus, is invalid=false, hint-in-drop-zone=true); annotation-circle (number=1, type=right, color=blue); annotation-circle (number=2, type=right, color=blue); input-file-gallery (state=focus, size=medium); annotation-circle (number=3, type=right, color=blue). Callouts 1, 2, 3. Text in the figure: "Input File (without drop zone)", "Input File (with drop zone)", "Label", "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload files", "Drag and drop files here or", "Browse files", "Input File Gallery", "Upload"._
+_Figure: Focus states of three file upload variants. Callout 1 marks the focus ring around the "Upload files" button of "Input File (without drop zone)"; callout 2 marks the focus ring around only the "Browse files" button in "Input File (with drop zone)", while the drop zone itself shows no focus; callout 3 marks the "Input File Gallery" tile, where the entire component has a solid focus border._
 
 ### Upload Queue – States
 
@@ -1484,7 +1486,7 @@ _Figure: Shows upload-field (dropzone=false, state=focus, is invalid=false, hint
 
 ![Success](input/success-32314-6900.png)
 
-_Figure: Shows upload-item (layout variant=upload queue, state=uploading, progress-bar=false, indeterminate=false); upload-item (layout variant=upload queue, state=uploading, progress-bar=true, indeterminate=false); annotation-circle (number=a, type=left, color=blue); annotation-circle (number=b, type=left, color=blue); upload-item (layout variant=upload queue, state=uploading, progress-bar=false, indeterminate=true); upload-item (layout variant=upload queue, state=uploading, progress-bar=true, indeterminate=true); upload-item (layout variant=upload queue, state=error, progress-bar=false, indeterminate=false); upload-item (layout variant=upload queue, state=error, progress-bar=true, indeterminate=false); upload-item (layout variant=upload queue, state=success, progress-bar=false, indeterminate=false). Measurements: 50%. Text in the figure: "Uploading", "Filename.png", "1.5 MB", "Upload status 50%", "a", "b", "Indeterminate Uploading", "Uploading...", "Error", "System Feedback Message", "Success"._
+_Figure: Upload queue items in the states Uploading, Indeterminate Uploading, Error and Success, each showing a file icon, "Filename.png", "1.5 MB" and an "X" button. Callout a marks the variant without progress bar (text "Upload status 50%", spinner with "Uploading...", or only a status message) and callout b the variant with progress bar (50% blue bar, or an indeterminate bar); Error adds a retry button and a red "System Feedback Message", while Success shows no progress indicator and a green check with "System Feedback Message"._
 
 ### Focus Order
 
@@ -1500,7 +1502,7 @@ _Figure: Shows upload-item (layout variant=upload queue, state=uploading, progre
 
 ![Recommended focus order:](input/recommended-focus-order-32314-6927.png)
 
-_Figure: Shows input-file (Show item list); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=right, color=blue). Callouts 1, 2. Text in the figure: "Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png", "Filename.png", "1.5 MB"._
+_Figure: Input File with drop zone ("Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png") above a preview list of two "Filename.png" (1.5 MB) entries. Callout 1 marks the focused "Browse files" button as the first focus target; callout 2 marks the remove ("X") button of a list entry, which is focused next._
 
 ### Edge Case: Long File Names
 
@@ -1510,7 +1512,7 @@ Currently, long file names are handled by **wrapping text onto multiple lines.**
 
 ![Overflow – Long File Names](input/overflow-long-file-names-32314-6941.png)
 
-_Figure: Shows upload-item (layout variant=preview list, state=uploading, progress-bar=false, indeterminate=false). Text in the figure: "Quarterly\_Financial\_Report\_Q1\_2024\_Updated\_Version\_Final\_Reviewed\_April\_2\_Wit...", "1.5 MB"._
+_Figure: Preview list item with a file icon, a very long file name "Quarterly\_Financial\_Report\_Q1\_2024\_Updated\_Version\_Final\_Reviewed\_April\_2\_With\_Annotations.pdf" wrapped onto two lines so it stays fully visible, followed by "1.5 MB" and an "X" button, with a divider line below._
 
 #### Figma Component Handling
 
@@ -1518,7 +1520,7 @@ In the current Figma setup, the text box displaying the file name is set to **�
 
 ![Figma Component Handling](input/figma-component-handling-32314-6951.png)
 
-_Figure: Shows upload-item (layout variant=preview list, state=uploading, progress-bar=false, indeterminate=false). Text in the figure: "Filename.png", "1.5 MB", "Quarterly\_Financial\_Report\_Q1\_2024\_Updated\_Version\_Final\_Reviewed\_April\_2\_Wit..."._
+_Figure: Two preview list items compared with Figma layout settings above each. Left: width set to "Hug", showing "Filename.png" with "1.5 MB" and an "X" button on one line. Right: width set to "Fill", where the long file name "Quarterly\_Financial\_Report\_Q1\_2024\_Updated\_Version\_Final\_Reviewed\_April\_2\_With\_Annotations.pdf" wraps over several lines within the container._
 
 ### Overall Status Indicator
 
@@ -1535,7 +1537,7 @@ When uploading more than 5 to 10 files, it is recommended to:
 
 ![Usability Recommendation:](input/usability-recommendation-32314-6986.png)
 
-_Figure: Shows upload-field (dropzone=true, state=enabled, is invalid=false, hint-in-drop-zone=true); annotation-circle (number=1, type=left, color=blue); upload-item (layout variant=upload queue, state=success, progress-bar=false, indeterminate=false); upload-item (layout variant=upload queue, state=uploading, progress-bar=true, indeterminate=false). Measurements: 50%. Callouts 1. Text in the figure: "Collapsed Loading List", "Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png", "1 of 15 files uploaded", "Expanded Loading List - on click", "Filename.png", "1.5 MB", "System Feedback Message"._
+_Figure: Input File with drop zone shown twice. "Collapsed Loading List" has a chevron-down toggle, a spinner and the overall status "1 of 15 files uploaded" below the drop zone; "Expanded Loading List - on click" has a chevron-up toggle with the same status and a list of "Filename.png" 1.5 MB items, the first with a green success "System Feedback Message" and the others uploading at 50%. Callout 1 marks the overall status indicator._
 
 ## Motion Design – progress bar
 
@@ -1555,7 +1557,7 @@ The determinate variant is visualized as a track that fills from left to right, 
 
 ![Determinate progress bar](input/determinate-progress-bar-44694-7199.png)
 
-_Figure: Shows preview (type=icon); progress-bar-animation-determinate (animation steo=1); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Measurements: 50%. Text in the figure: "Determinate progress bar animation (click “Open prototype” on the left)", "Filename.png"._
+_Figure: Static frame of the determinate progress bar animation (prototype): an upload item with a file icon, "Filename.png", an "X" button and an empty grey progress track with "50%" at its right end._
 
 ### Indeterminate progress bar
 
@@ -1567,11 +1569,11 @@ The indeterminate variant is visualized as a bar moving along a fixed track at a
 
 ![Indeterminate progress bar](input/indeterminate-progress-bar-44710-6749.png)
 
-_Figure: Shows preview (type=icon); progress-bar-animation-indeterminate (animation step=1); system-feedback (type=warning); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Indeterminate progress bar animation (click “Open prototype” on the left)", "Filename.png", "Uploading..."._
+_Figure: Prototype frame labelled "Indeterminate progress bar animation (click “Open prototype” on the left)" showing an upload item with a file icon, the file name "Filename.png", a ghost close button on the right, and a thin grey track with a short blue segment near its start, with the status text "Uploading..." underneath._
 
 ![Indeterminate progress bar](input/indeterminate-progress-bar-45308-6831.png)
 
-_Figure: Text in the figure: "Please note: These two animation components are only intended to illustrate m...", "Motion Design Progress Bar", "indeterminate", "determinate", "ease in: 400ms", "linear: 1100ms", "ease out: 400ms", "Indeterminate progress bars move along a fixed track continually until the pr...", "Determinate progress bars fill from 0% to 100%."._
+_Figure: Motion design board "Motion Design Progress Bar" with a warning note that the two animation components only illustrate movement and are not meant for UI layouts. The "indeterminate" example shows four animation steps of a blue segment moving along a fixed track (ease in: 400ms, ease out: 400ms) and moving continually until the process is complete, while the "determinate" example shows a bar filling from 0% to 100% (linear: 1100ms)._
 
 ## WCAG Compliance
 
@@ -1597,7 +1599,7 @@ By meeting these standards, file upload components become more usable, understan
 
 ![Validation for error and success messages](input/validation-for-error-and-success-messages-32314-7035.png)
 
-_Figure: Shows input-file (Show item list); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=center, color=blue); annotation-circle (number=4, type=center, color=blue); annotation-circle (number=1, type=left, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "Upload Document\*", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png", "System feedback message", "Filename.png", "1.5 MB"._
+_Figure: File input labelled "Upload Document\*" with a red dashed drop zone ("Drag and drop files here or", a "Browse files" button, "Max file size: 7 MB. Supported file types: .jpg and .png") and a red error "System feedback message" directly below it, pointed at by callouts 2, 3 and 4. Below it, an item "Filename.png" (1.5 MB) with a close button shows its own red "System feedback message" pointed at by callout 1._
 
 #### The following error and success message validations must be implemented by your development team:
 
@@ -1610,7 +1612,7 @@ _Figure: Shows input-file (Show item list); annotation-circle (number=2, type=le
 
 ![The following error and success message validations must be implemented by your development team:](input/the-following-error-and-success-message-validations-must-be--32314-7056.png)
 
-_Figure: Shows input-file (Show item list); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=3, type=left, color=blue). Callouts 1, 3. Text in the figure: "Upload Document\*", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png", "Filename.png", "1.5 MB", "Upload status 50%", "System Feedback Message"._
+_Figure: File input labelled "Upload Document\*" with a grey dashed drop zone ("Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png") above two uploaded items "Filename.png" (1.5 MB). The first item shows "Upload status 50%" with a red error "System Feedback Message", retry and close buttons, and callout 1; the second shows a green success "System Feedback Message" with callout 3._
 
 ### Progess indicator
 
@@ -1633,7 +1635,7 @@ If a progress indicator is missing for uploads that take longer than 5 seconds, 
 
 ![Progress Indicator – Minimal Version](input/progress-indicator-minimal-version-32314-7071.png)
 
-_Figure: Shows upload-item (layout variant=upload queue, state=success, progress-bar=false, indeterminate=false); upload-item (layout variant=upload queue, state=uploading, progress-bar=false, indeterminate=false); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Filename.png", "1.5 MB", "System Feedback Message", "Upload status 50%"._
+_Figure: Minimal progress version of the upload list with three items "Filename.png" (1.5 MB), each with a close button: the first shows a green success "System Feedback Message", the other two show only the text "Upload status 50%" and no progress bar._
 
 #### Progress Indicator – Best Practice
 
@@ -1645,7 +1647,7 @@ For actions that take more than 10 seconds, use a combination of:
 
 ![Progress Indicator – Best Practice](input/progress-indicator-best-practice-32314-7087.png)
 
-_Figure: Shows upload-item (layout variant=upload queue, state=success, progress-bar=false, indeterminate=false); upload-item (layout variant=upload queue, state=uploading, progress-bar=true, indeterminate=false); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Measurements: 50%. Text in the figure: "Filename.png", "1.5 MB", "System Feedback Message"._
+_Figure: Best-practice progress version of the upload list with three items "Filename.png" (1.5 MB), each with a close button: the first shows a green success "System Feedback Message", the other two each show a blue progress bar filled to half its track with the percentage "50%" at the right end._
 
 ## Examples and Variations
 
@@ -1657,7 +1659,7 @@ A typical scenario for file uploads where users need to upload documents (e.g., 
 
 ![Submitting documents in forms](input/submitting-documents-in-forms-32314-7110.png)
 
-_Figure: Shows select (label, placeholder, state=enabled, invalid=false, size=medium); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Name, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Surname, size=medium, state=enabled, invalid=false); input-file; button (button text=Submit form, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); input-file (Show item list); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Empty", "Preview of Selected Files", "Upload Form", "Title", "Choose your title", "Name", "Surname", "Upload your Document", "Max file size: 7 MB. Supported file types: .jpg and .png", "Upload file", "Submit form", "Filename.png", "1.5 MB"._
+_Figure: Two states of an "Upload Form" on desktop and mobile. "Empty": a Title select ("Choose your title"), Name and Surname inputs, "Upload your Document" with the hint "Max file size: 7 MB. Supported file types: .jpg and .png", an "Upload file" button and a filled "Submit form" button. "Preview of Selected Files": the same form with two "Filename.png" (1.5 MB) items, each with a close button, listed between the upload button and "Submit form"._
 
 #### Input File Flow Example – With Temporary Server Storage
 
@@ -1669,7 +1671,7 @@ On mobile devices, the component variant without the drag-and-drop field is used
 
 ![Input File Flow Example – With Temporary Server Storage](input/input-file-flow-example-with-temporary-server-storage-32314-7217.png)
 
-_Figure: Shows preview (type=icon); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); progress-indicator (type=bar, status=error); system-feedback (type=error); upload-item (layout variant=upload queue, state=error, progress-bar=false, indeterminate=false). Measurements: 32px, 50%. Text in the figure: "Empty", "Upload queue of selected files Files have been selected and are currently upl...", "Upload completed", "Confirmation", "Personal Information", "Please upload a recent photo and enter your surname below.", "Surname\*", "Upload Image\*", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png", "Submit form", "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Mustermann", "Filename.png", "1.5 MB", "Upload complete", "Form Was successfully Submitted", "User selects file (no extra confirmation is needed) & Upload begins", "Files are uploaded successfully", "User submits form", "Error: File Upload Failed", "The form cannot be submitted. Please check the uploaded documents – upload er..."._
+_Figure: Flow diagram of a file upload form with temporary server storage: "Empty" form (Surname field and drag and drop upload area) leads, when the user selects a file (no extra confirmation is needed) and upload begins, to "Upload queue of selected files" with progress bars. From there, files uploaded successfully lead to "Upload completed", and then "User submits form" leads to "Confirmation" ("Form was successfully submitted"). Branches lead to "Error: Upload in Progress" when Submit is clicked while files are still uploading, and to "Error: File Upload Failed" when there is an error while uploading, both showing red error messages. Measurements in the figure: 32px, 50%._
 
 #### Input File Flow Example – With Preview List
 
@@ -1679,7 +1681,7 @@ In certain contexts, it is recommended to include an **explicit confirmation ste
 
 ![Input File Flow Example – With Preview List](input/input-file-flow-example-with-preview-list-32314-8059.png)
 
-_Figure: Shows file list (layout variant=preview list); cursor (type=pointer); preview (type=icon); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=none, hide label=on, flush alignment=off); progress-indicator (type=bar, status=error); system-feedback (type=error). Measurements: 32px, 50%. Text in the figure: "Preview: Files are selected and a preview is displayed. (Files are not yet up...", "Upload Files are uploading. The form will be sent automatically after complet...", "Empty", "Confirmation", "Personal Information", "Please upload a recent photo and enter your surname below.", "Surname\*", "Upload Image\*", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png", "Submit form", "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Mustermann", "Filename.png", "1.5 MB", "Files are uploading. The form will be submitted automatically once the upload...", "Files are uploaded & Form Was successfully Submitted", "user clicks on “Submit” and upload starts", "The user selects files", "Form is Submitted", "wrong file format was selected", "Error: upload in progress"._
+_Figure: Flow diagram of a file upload form with a preview list: "Empty" form leads, when the user selects files, to "Preview" (files selected and listed but not yet uploaded). Clicking "Submit" starts "Upload" with progress bars, which leads on form submission to "Confirmation" ("Files are uploaded & form was successfully submitted") or, on an error while uploading, to "Error: upload in progress". Selecting a wrong file format from the preview leads to "Error: validation file format" with a red message on the file item. Measurements in the figure: 32px, 50%._
 
 #### Uploading profile pictures or attachments into a gallery
 
@@ -1689,4 +1691,4 @@ This variant is **specifically designed** for uploading visual content like **pr
 
 ![Uploading profile pictures or attachments into a gallery](input/uploading-profile-pictures-or-attachments-into-a-gallery-32314-8749.png)
 
-_Figure: Shows logo (type=default, logos=main); input-file-gallery (state=enabled, size=medium). Text in the figure: "Empty", "Upload"._
+_Figure: "Empty" state of a product detail page for a chainsaw ("BREEZE BEN", MS 261 C-M, with serial number, article number and dates plus "Edit product data" and "Delete product" buttons) on desktop and mobile. A grey placeholder image has a small dashed gallery upload button below it, labelled "Upload" on desktop and showing only an upload icon on mobile._

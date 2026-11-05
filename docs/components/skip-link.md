@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 16333:2371
-figmaVersion: "2418018269838839666"
-figmaVersionLabel: "DS-1543 Design | Global | Slots: Accordion"
-figmaVersionCreatedAt: 2026-11-04T14:25:56Z
-syncedAt: 2026-11-04T14:49:12.717Z
+figmaVersion: "2418039224414387070"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-04T15:50:17Z
+syncedAt: 2026-11-05T19:25:23.834Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=16333-2371
 ---
 
@@ -34,7 +34,7 @@ Overview:
 
 ![Skip Link](skip-link/skip-link-16333-2382.png)
 
-_Figure: Text in the figure: "Skip link"._
+_Figure: The Skip Link component: a dark rectangular button with white underlined text "Skip link" and a white focus outline._
 
 ### Further guidelines
 
@@ -57,3 +57,5 @@ Contribute to improving this component by sharing your feedback, asking question
 As a general rule make sure that the buttons are aligned with the content within a layout: left, center or right.
 
 ![Place buttons at the top left corner of the content that should be skipped](skip-link/place-buttons-at-the-top-left-corner-of-the-content-that-sho-16333-2405.png)
+
+_Figure: Two page wireframes showing where to place the skip link: on the left the dark skip link sits at the top left of the page, above the header content; on the right it sits at the top left of a content block (a row of four columns) that can be skipped, with a purple frame marking each placement._

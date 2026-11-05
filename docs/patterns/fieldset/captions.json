@@ -1,0 +1,72 @@
+{
+  "1c5711400ad38e75c1ce48347c2d11a1848eff04b2b9b2fd067812da91107002": {
+    "nodeId": "8:2925",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A fieldset with the legend \"Fieldset Legend Heading Style\" and a description that ends with the text \"This is an Inline Link.\" with an external-link icon. Callout 1 points at the inline link; below it are a \"Radio Group Legend\" with two \"Radio Label\" options (first selected), three inputs with \"Label\" and a \"Checkbox Label\"."
+  },
+  "230ef25aacb225c579f778a04d35a56b8bdb95ec7333a0934bb319d44d0ff631": {
+    "nodeId": "8:2877",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Example of simple text: an input with the label \"Machine number\" and the short hint \"For example: MS 170\" above an empty input field."
+  },
+  "240166a8b8791857385562045bd9ce5ec932d22c7a93413b1def20e4f71f1793": {
+    "nodeId": "8:2412",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two variants of overall system feedback for a fieldset with the legend \"Fieldset Legend Default Style\" and the invalid inputs \"Identification number\" and \"Name\" (plus a valid \"Branch\" input), each with a \"System feedback message\". Callout 1 is the inline feedback \"Invalid entries in your registration form. Please check the details below.\" below the legend; callout 2 is a Notification error summary above the fieldset with \"Invalid entries. Please check the details below.\" and the links \"Identification number not recognised.\" and \"Name is missing.\"."
+  },
+  "4116c40f5ed002edce35199fc63ff95680655efa03f798f865e5b0a17da4b8a2": {
+    "nodeId": "8:2588",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Fieldset anatomy with five numbered callouts: 1 points at the legend \"Fieldset Legend Default Style\", 2 at the optional info button right of the legend, 3 at the description text, 4 at the system feedback error message \"Overall field set system feedback message\" with an error icon, and 5 at the form element group highlighted in purple, containing two labeled inputs, a \"Radio Group Legend\" with three \"Radio Label\" options, another labeled input and a \"Checkbox Label\"."
+  },
+  "460451c06589d431caf2aefedb4178d8cacada85dd55d43cfc4a39f645cbe52a": {
+    "nodeId": "8:2910",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two fieldsets side by side, one with the legend \"Fieldset Legend Default Style*\" in default style and one in heading style, each containing a \"Radio Group\" with a description and two \"Radio Label\" options (first selected), three inputs with \"Label\" and a \"Checkbox Label\". Callout 1 points at the asterisk shown next to each legend, marking the whole fieldset as required."
+  },
+  "4d1bf5b600a34ec3240bb5d736f799df870a55debff76675150530c8e7d0af85": {
+    "nodeId": "8:2331",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Top: the main fieldset component with the legend \"Fieldset Legend Default Style\", a description and five stacked inputs each with the label \"Label\", next to callout 1 stating that the fieldset is a container component, a pattern/template of the most common items that can be detached and filled with the form elements needed, with styling and spacing guidelines in the documentation. Bottom, \"Examples of content variations\": three fieldsets, one with five \"Variation: Input\" fields, one with Heading Style M legend containing a \"Variation: Radio Group\" with two \"Radio Label\" options (first checked), three inputs and a \"Variation: Checkbox\", and one with legend \"Variation: Heading Style Utility M\" and five labeled inputs."
+  },
+  "540dcd3e6973b244d8692d9c377be3f0dfcd8635e6c8b5bd6508acbfc697226c": {
+    "nodeId": "8:2628",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a complex fieldset with legend \"Fieldset Legend Heading Style\", a \"Radio Group Legend\" with two \"Radio Label\" options (first checked), three labeled inputs and a \"Checkbox Label\", with wider vertical spacing of 24 between each element group, which is right because complex fieldsets need wider spacing for clear structure and hierarchy."
+  },
+  "564530ef53f0b6cefc8c95be8adfab8cf9dc73a8f6604c161ed9eacd467e9e55": {
+    "nodeId": "8:2607",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two fieldsets side by side, each with legend \"Fieldset Legend Default Style\", a description and two labeled inputs. Callout 1 (left, default Utility M legend) marks a 2px gap between legend and description; callout 2 (right, used with heading styles) marks the increased 6px gap."
+  },
+  "62ea32c7d7180265ef775026e48ee69ef653239d6f2745b4f80ef65ebc6971b1": {
+    "nodeId": "8:2681",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: the same complex fieldset (legend \"Fieldset Legend Heading Style\", radio group, three labeled inputs, \"Checkbox Label\") with compact vertical spacing of 16 between elements, which is wrong because complex fieldsets should not use compact spacing; the checkbox group component has optimized compact spacing for that case."
+  },
+  "817aeed9f764ed27fc4e0045b9613d416eebb9f9dc0517286789d0a702a5762c": {
+    "nodeId": "3442:2932",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two layouts of a fieldset (legend \"Fieldset Legend Default Style\", description, three labeled inputs) placed in the \"CONTENT AREA NARROW\" of a column grid. In the upper one the inputs fill the container width; in the lower one the container is wider, the inputs stop at the \"recommended max. width 544px\", and the dimension line \"Container Width\" spans the full content area."
+  },
+  "8c050ba1527d55628e1c160cf33a7bdbe1a860ddcc6d77f9a791f8d03b89659b": {
+    "nodeId": "8:2752",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a fieldset with the legend \"Fieldset Legend Default Style\" and a two-line description above five stacked inputs, each with a \"Label\". The legend and description text container is measured as \"max. 476px (14px*34)\" wide and is narrower than the inputs below it."
+  },
+  "9dce7184e71c74fe1df36eff735804f9d5763ad2a39bd2138d6d7f83dea95c8b": {
+    "nodeId": "8:2374",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "A fieldset with the legend \"Legende\" and the description \"Description (Optional)\" containing invalid input; the other fields are blurred and one input with \"Label\" has a red border. Callout 1 points at the \"Overall fieldset system feedback message\" shown with an error icon below the description, and callout 2 points at the \"System feedback message\" shown below the invalid input."
+  },
+  "eb8c01cf11dbbc69bfe38ff162c54a411c601a441224a0582baa0859ee6a92d9": {
+    "nodeId": "8:2772",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: the same fieldset with the legend \"Fieldset Legend Default Style\", a description and five stacked inputs with \"Label\", but the description text container is stretched to the full width of the inputs and measured as \"greater than 476px\". This is wrong because the text container exceeds the 476px maximum, which hurts readability."
+  },
+  "fd77f554df210208477aa3912b83e1b2ab54f07623e4e3ef45734fa55a2fefbf": {
+    "nodeId": "8:2734",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a fieldset with legend \"Fieldset Legend Default Style\", a description and five labeled inputs where the first two and the last are medium size and the third and fourth are visibly smaller, which is wrong because small and medium input sizes must not be mixed in one fieldset in the same viewport."
+  }
+}

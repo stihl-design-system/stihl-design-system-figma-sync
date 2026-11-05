@@ -1,0 +1,62 @@
+{
+  "00037e71757d4d10761e828b34f002e41361e607420736e3973c3d68cd458ad0": {
+    "nodeId": "8859:479",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Medium textarea with Label, \"Input\" text and \"0/100\" counter, with measurements showing the minimum height of 96px (vertical, at the right of the field) and the minimum width of 288px (horizontal, below the field)."
+  },
+  "221735617e4ff2d9daeb42bec07063a1d9e1340381bbb1238f2f6ae822aebbd3": {
+    "nodeId": "8861:740",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Medium textarea with the label \"Label\" and a resize handle, filled with six lines of Lorem ipsum text and the counter \"67/200\". The text is taller than the maximum height, so a native vertical scroll bar appears on the right inside the textarea."
+  },
+  "417835b454159b4964381bed0b4408451f4afc4e920d0b15763346b417837577": {
+    "nodeId": "30568:8898",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two textareas (Label, \"Input\", \"0/100\") inside a \"Content area Narrow\" container. In the first the field fills the container width; in the second the container is wider than the field, and the field stays at the \"recommended max. width 544px\" while \"Container Width\" extends beyond it."
+  },
+  "41f113c08f556a09a17fd2aabd75d4b20c6ee5dbbe6040ab2a02de986e433740": {
+    "nodeId": "5145:19986",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Do example: a medium textarea with the label \"Label\" and the placeholder \"Input\" in the invalid state, with a red border, an error icon with the \"System Feedback Message\" below it and the counter \"100/100\" at the bottom right. It shows the error mode that is correct when the character limit is reached or exceeded."
+  },
+  "649daddfdf1c86d5367c5e7db530a68c6900727f982b6110d29e0ec0c353eb0b": {
+    "nodeId": "8859:2884",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two medium textareas with \"Input\" and \"0/100\": the first with the label \"Label *\", where callout 1 points at the asterisk marking a required field; the second with the label \"Label (optional)\", where callout 2 points at the word \"(optional)\" marking an optional field."
+  },
+  "b00b8f5188c8808ff472ec34f2f609280773120591ee3a2c7588c4fd2f7f87f3": {
+    "nodeId": "8859:525",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a textarea (Label, \"Input\", \"0/100\") stretched across the full 12-column grid width, far beyond the recommended maximum width of 544px, which hurts scanability and readability."
+  },
+  "b6fdb43afaefe57c0f0de431a3319c858fe295530f9b9e51805c0912eb95f5f2": {
+    "nodeId": "40251:50514",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Medium textarea with the label \"Label\", an info button next to it (hovered with a pointer cursor), the placeholder \"Input\", a resize handle and the counter \"0/100\". Above the info button an open white popover with the text \"You will usually find the Machine Number in the location shown in the illustrations\" shows two line drawings of a STIHL engine unit and a trimmer, each with a leader line to a placeholder machine number \"xxxxxxxxx\"."
+  },
+  "cad7cdaa8c5762c456c475aad0f0069bda730faf10a3c621f5b314eb2c193183": {
+    "nodeId": "8861:678",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two medium textareas with the label \"Label\" showing automatic growth. The left one is at minimum height with two lines of \"Lorem ipsum dolor sit, consectetur adipiscing elit. Lacus vel etiam|\" and the counter \"67/200\"; the right one has grown taller to fit six lines of text and shows the counter \"200/200\". Neither has a resize handle."
+  },
+  "cc961d4158df60309b0b55124560340aac50381c2c3ab94bca38e553309c5f78": {
+    "nodeId": "40251:50533",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a medium textarea with the label \"Label\", an info button (hovered), the placeholder \"Input\", a resize handle and the counter \"0/100\", with a small white popover above the info button containing only the placeholder text \"xxxx\". This is wrong because the popover must not hold critical or required information; use the hint instead."
+  },
+  "dc78fa0553c161dd54d356228cc6efb49ad3ba883ee4b0fe04805e8f11d05e4d": {
+    "nodeId": "8300:14366",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two medium textareas, each with the label \"Label\", the placeholder \"Input\" and the counter \"0/100\". Callout 1 points at the left textarea without a resize handle (automatic scaling); callout 2 points at the right textarea with a resize handle in its bottom right corner (manual scaling)."
+  },
+  "df919de960ce139956066b09216a464583ba4926a7fadcafbdab1abb053d60aa": {
+    "nodeId": "8859:463",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the textarea in three variants: callout 1 points at the Label, 2 at the text area, 3 at the user input text \"Input\", 4 at the character count \"0/100\". The second example adds 5 the hint text below the label and 6 the info button next to the label; the third example has a red border and 7 points at the \"System Feedback Message\" with error icon."
+  },
+  "e5ad458b770c9666bab6947a1dba538ec7f51a1605f2a9f99c9fe36d8d9541a1": {
+    "nodeId": "5145:19065",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Overview of the textarea in sizes \"Size Medium\" and \"Size Small\", each in the states Default, Hover (grey fill), Focus (thick black border), Disabled (greyed text) and Read-only (grey fill, no border). Each has a Label, hint text, an \"Input\" area with resize handle and a \"0/100\" counter; Default and Focus also have an \"is invalid\" variant with red border and the \"System Feedback Message\" with an error icon."
+  }
+}

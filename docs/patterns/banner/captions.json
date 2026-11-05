@@ -1,0 +1,102 @@
+{
+  "1db70b19a2da9aad3cde9eb65394f41a6732d8c56b87cb97e389cda52e6d2f74": {
+    "nodeId": "7171:11184",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three full-width promo banners stacked vertically, each with an image icon, the centered link text \"Promo Banner Link\" with a chevron, and a close button on the right. Callout 1 marks the dark Default banner, callout 2 the light grey Secondary banner and callout 3 the orange Highlight banner."
+  },
+  "2d8807011a45c144f2fa35f342d65b312453e66a92d857bb5f410887be9eeabd": {
+    "nodeId": "7171:11399",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Orange highlight promo banner (\"Promo Banner Link\" with a close button) shown above the top bar and nav bar on viewport l, and below it the same banner above the top bar on viewport s, showing that a banner used alone stays visible on both viewports."
+  },
+  "4af667de0f8f378f70c2171951a9d8de12525ccc21ea94bb179fc14d8c62f07a": {
+    "nodeId": "7171:11260",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two dark promo banners with a percent icon, the text \"Longer Promo Banner Copy Lorem ip sum dolor sit amet, consectetur\", a chevron and a close button. Callout 1 marks the wide banner (XL, L, M) where the text stays on a single line; callout 2 marks the narrow banner (S) where the text wraps onto two lines and the banner grows in height."
+  },
+  "51739deccd60491850106d729376d5b044fe04684530e633f542790316b4dcef": {
+    "nodeId": "7171:11212",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two dark promo banners with the link \"Promo Banner Link\" and a close button. Callout 1 marks the wider banner (viewports XL, L, M) whose content is centered on a dashed vertical line labelled \"center\"; callout 2 marks the narrower banner (viewport S) whose content is left-aligned to a dashed line labelled \"left\"."
+  },
+  "5c65b096b9d8bac28040ee96b556a4fda414f4596a162bae4065bd0d72d2daea": {
+    "nodeId": "7171:11198",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "On the XL viewport the dark Promo Banner with the link \"Promo Banner Link\" and a close button sits above the top bar, which holds the STIHL logo, \"This is a Platform name\", a \"Search Site\" field and icon buttons labelled \"Label\". The nav bar with \"Button nav\" items sits below it, and a purple bar labelled \"Full\" shows that the banner spans the full width of the viewport."
+  },
+  "610a3e13c75b33ec6c26a31285ed495ec3c9b6f2bbada87a00e8b85f40b4578a": {
+    "nodeId": "7171:11370",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Default promo banner on a dark background at viewport l, centered truck icon with the link \"Only this week free delivery\" and a chevron, and a close button at the right end that makes the banner dismissible."
+  },
+  "69cb2cc5ee18fa476026f9596d14b6d4abb9a51d037109b6af1ea46a0a984051": {
+    "nodeId": "7171:10866",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Overview of the Banner pattern as a matrix of full-width bars in three variants (default dark, secondary light grey, highlight orange), four viewports (XL, L, M, S) and close-button true or false. The columns are \"content: promo\" (centered \"Promo Banner Link\" with icon and chevron), \"content: placeholder\" (purple dashed \"Placeholder\" slot) and \"content: USPs\" (three \"Text Element\" items, shown only for the secondary variant), with the close button as an X at the right edge when enabled and bar width shrinking with the viewport."
+  },
+  "814abcc68cf82fcb74a8a6e58e50ff18e5a0695a24f69135ec3b64a5f2e62b39": {
+    "nodeId": "7171:11411",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Orange highlight banner with a grey secondary banner below it (three \"Text Element\" items with icons and a close button) above the top bar and nav bar on viewport l, marked with callout 1. An arrow leads to viewport s, marked with callout 2, where only the orange highlight banner remains above the top bar and the secondary banner is hidden."
+  },
+  "817947f7a56d1ebb56f2a4d3ccd6c2f52f5d013d1a52d3eaed85ef0eb82dd69d": {
+    "nodeId": "7171:11272",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two page headers, each with two banners stacked above the top bar (STIHL logo, \"This is a Platform name\", \"Search Site\") and nav bar (\"Button nav\"). The first has the dark Default banner \"Promo Banner Link\" (callout 1) and the second has the orange Highlight banner (callout 2); in both a light grey Secondary banner with three \"Text Element\" items (callout 3) sits below it."
+  },
+  "83cba19a78d9ac1efaa27ac8a9b5452dd33c46b90ab5d8412357ed3fb06903f0": {
+    "nodeId": "7171:11253",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two banners illustrating character length. The dark banner holds one long text, \"Longer Banner Copy Lorem ipsum dolor sit amet, consectetur lorem\", with a link chevron and close button. The light grey banner splits the copy into three short items, \"Longer Banner Copy\", \"Lorem ipsum dolor sit\" and \"amet consectetur lorem\", each with its own icon, followed by a close button."
+  },
+  "93587928b4fb86be6928ad2187ca782a688e218af1c683f10ac505a970d56992": {
+    "nodeId": "7171:11304",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't: a single dark banner above the top bar contains three links, \"Link to the Promotion\", \"Link to the participate Raffel\" and \"Copy Code: STIHL25 for free shipping\" with a copy icon, plus a close button. This is wrong because a banner should offer one clear call to action, not multiple actions."
+  },
+  "a2a613ac43716e8347be9d6ad2725d5db7b03ba5b3f8d6fd9bca4ced6bd54f87": {
+    "nodeId": "7171:11355",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Header on a desktop viewport (xl) with a yellow warning Notification above the top bar and nav bar, titled \"Important Safety Notice\" with a text and link about a product recall and a close button, shown instead of a promotional banner. The top bar has the STIHL logo, \"This is a Platform name\", a \"Search Site\" field and icon buttons labelled \"Label\", and the nav bar has seven \"Button nav\" items."
+  },
+  "c04858a5b58185e3a41dcd17a9a397a3a727611e2ac22e65354d3f1d9f0bbddb": {
+    "nodeId": "7171:11348",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Secondary banner on a grey background used as a USP bar, with three icon plus text elements side by side, \"Versandkostenfreie ab 49€\" (box icon), \"Lieferung oder Abholung vor Ort\" (truck icon) and \"30 Tage Rückgaberecht\" (return arrow icon), and a close button at the right end."
+  },
+  "c816dacb05160ae834d73cf11e1765e5be074f7803bfda9580fa26bc3318eb08": {
+    "nodeId": "7171:11229",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two dark promo banners with the text \"Longer Promo Banner Copy Lorem ipsum dolor sit amet\". The wider banner (M viewport) keeps the text on one line and has a height marked \"48px\"; the narrower banner (S viewport) wraps the text onto two lines and its height is marked \"dynamic\"."
+  },
+  "cccae471f6bd66db0b6d47738ce3251e714548fc9e4d25632eb1b7eaf402a80c": {
+    "nodeId": "7171:11335",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two promo banners, a dark one reading \"Only this week free delivery\" with a delivery truck icon and an orange one reading \"Up to 40% off all Chainsaw models\" with a percent icon, each with a chevron and close button. In both, callout 1 points at the icon and callout 2 points at the link text."
+  },
+  "d1faa4c245c2172007abdea6766e075727b021c76902f4c1c6be0b8334504a9e": {
+    "nodeId": "7171:11432",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four numbered states of a page header during scrolling. 1: \"Banner\", \"Top Bar\" and \"Nav Bar\" all visible. 2 (after scrolling down, mouse icon with a double down chevron): only \"Top Bar\". 3 (after scrolling up, mouse icon with a double up chevron): \"Top Bar\" and \"Nav Bar\" without the banner. 4 (back at the top): \"Banner\", \"Top Bar\" and \"Nav Bar\" visible again."
+  },
+  "e454939cb33b079c2e116ede83d523f5f9675b08bb9ef72a9be5c34c65b9f941": {
+    "nodeId": "7171:11291",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't: an orange Highlight banner and a dark Default banner, both with \"Promo Banner Link\", are stacked above the top bar and nav bar. This is wrong because the Default and Highlight variants must not be combined."
+  },
+  "eb51b3e189a1deb7eef342475e32287db9e90b22e2c170587900140f77f34583": {
+    "nodeId": "7171:11384",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a yellow warning Notification (\"Important Safety Notice\" with a recall text and link) is displayed directly above an orange highlight promo banner (\"Promo Banner Link\") and the top bar and nav bar at viewport l. A Notification used for a status message must not appear together with a promotional banner because the two compete for attention."
+  },
+  "f2852c6c9abfd60869eeb00e25d78a110621ec0babce57bf3ac17c94a37575ba": {
+    "nodeId": "7171:11487",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "E-shop page at breakpoint xl showing banners above the navigation: a dark default promo banner \"Up to 40% off all Chainsaw models\" with a close button, then a grey secondary USP banner with \"Free shipping on orders over €49\", \"Delivery or local pickup available\" and \"30-day return policy\". Below are the top-bar (STIHL logo, \"Search Site\" field, Contact, Dealer, Wishlist, Cart with badge \"3\", STIHL World, Login) and nav-bar (Products, Accessories, Professionals, Advice, Support), followed by a hero with the headline \"OUTDOOR TIME. CHAINSAWS FROM STIHL.\" and a product teaser card \"QUALITY AND EASE OF USE\" with an \"Offer\" flag, \"MS 180\", \"399,00 €\", \"from €399.00*\" and a highlight button \"To the Offer\"."
+  },
+  "f617ae0ce34be8fd093eed0d6566b4a09174bdcb8c514ab399152ba51263f4c4": {
+    "nodeId": "7171:11376",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Default promo banner with the focus order marked by two numbered callouts. Callout 1 points at the link \"Only this week free delivery\", the first focusable element, and callout 2 points at the close button at the right end, the second focusable element; both show a focus outline."
+  }
+}

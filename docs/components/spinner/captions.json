@@ -1,0 +1,7 @@
+{
+  "585bb037530222d4456f051b098b2bcab888452405af10eb01379b2e33722509": {
+    "nodeId": "26:103",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "The four Spinner sizes in a purple dashed frame, from top to bottom: \"small 16px\", \"medium 32px\", \"large 40px\" and \"x-large 64px\", each a ring of dashes growing in size and dash thickness, with the note \"inherit\": \"use different spinner sizes depending on the usecase\"."
+  }
+}

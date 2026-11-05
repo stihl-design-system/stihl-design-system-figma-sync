@@ -1,0 +1,152 @@
+{
+  "02d41345d95e1286a260cff5b098cd7c7217f86c28e871171031127108e0e815": {
+    "nodeId": "41031:17996",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Radio Group with Image shown twice, each with the legend \"Radio Group Legend\", a hint and four image options in one row, the first selected. With \"show title: false\" each option has a regular \"Radio Label\" beside its radio button and no hint. With \"show title: true\" the \"Radio Label\" is bold and a hint (\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\") appears under each label."
+  },
+  "27faef7bc32bfcfdf7d197f3188b7286788d26956fc51910ac1fae6bc32bdf65": {
+    "nodeId": "41996:6851",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Variation examples of Radio Group with Image, stacked vertically, each with image placeholders and \"Radio Label\" options, the first selected: \"legend only\" (legend, no hint), \"legend + hint\", \"invalid true\" (red \"System Feedback Message\" and red outlined radio buttons on the first two options), \"info button true\" (info icon after the legend), \"title true\" (bold labels with a hint under each), \"4 items\", \"3 items\" (wider images) and \"2 items\" (widest images)."
+  },
+  "28db2570ea00c6453f6b26fec4028a21550ee2c20f2113e9759acaadc59e8d44": {
+    "nodeId": "15589:1688",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Radio group with legend, hint text and payment logos (Mastercard, Visa, PayPal, Klarna) next to the labels \"Radio Label\" and \"Lorem consectetur adipiscing elit nunc amet\". A vertical measurement beside the Visa logo is marked \"max.32px\", the maximum image height."
+  },
+  "42761911731bd401ccd104a66f4be71fa45a07d1365092e752caf8ce3ffd7a3b": {
+    "nodeId": "41031:17588",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of a Radio Item in three variants: a selected radio with the label \"Radio Label\", an unselected radio with the label, and a selected radio with a bold label and a hint text below. Callout 1 points at the image, 2 at the selected radio, 3 at the unselected radio, 4 at the label, 5 at the label used as a title, and 6 at the hint."
+  },
+  "430fdc2e237f71dca30386d7b8f83f0cdcfc7695b85dcca195d9ad8da37a76e2": {
+    "nodeId": "1310:10275",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two radio groups with the legend \"Radio Group Legend\" and hint text. The upper one is horizontal with two \"Radio Label\" options, the lower one is vertical with five \"Radio Label\" options, the first selected, showing the range of two to about five options."
+  },
+  "459787e3761a5ebf5e4165d7486327838b071df88c8786a6886de906efae1c66": {
+    "nodeId": "15944:2022",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a radio group where function icons (calendar and clock, lock, coffee cup) are placed in the image area next to the \"Radio Label\" labels. Function icons lack hierarchy at this size and do not mesh well with the radio group; only logos or images belong there."
+  },
+  "45e7cf5c0a05b73d5ec5cc3c4b57d17578892881870a33911a2f2dcd2e228fe6": {
+    "nodeId": "41031:17631",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Radio Group with Image with legend and hint in two layouts. Callout 1: horizontal alignment with four items side by side in one row (first one selected). Callout 2: wrapping, where on narrower widths the items wrap into a 2x2 grid and in an even narrower container stack vertically."
+  },
+  "46d00b1f66ccdc3e750ce57d1763764fe2d5ba21c1ec55de599eed923c9f6183": {
+    "nodeId": "1426:4418",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of the Radio Item with callouts: 1 points at the selected radio (orange dot), 2 at the unselected radio (empty circle), 3 at the \"Radio Label\" text, 4 at two image placeholders to the right of the label, and 5 at the hint text below the label of a selected item."
+  },
+  "4b85a51ed23e3c4e7d4ea48f7e50ed73a2de42839e3f0aae26aa34f5d055f0a9": {
+    "nodeId": "41031:17618",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Radio Group with Image with three items, each a placeholder image above a radio, a bold \"Radio Label\" and a hint, the first one selected. Above the items are the \"Radio Group Legend\" with an info icon, a hint text and a red \"System Feedback Message\". Callout 1 points at the legend, 2 at the info button, 3 at the hint below the legend, 4 at the system feedback message and 5 at the hint of a radio item."
+  },
+  "5557f81ee3da2eeb0b0acd12e001336017a22401d24a7fb25d1369710b8123bb": {
+    "nodeId": "1310:10905",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three steps of one vertical Radio Group with the legend \"Radio Group Legend\" and the hint \"Lorem ipsum dolor sit amet.\", connected by arrows. First step: \"Option A\", \"Option B\" and \"Option C\", none selected. Second step: \"Option A\" is selected and the third option is now \"Other\". Third step: \"Other\" is selected and \"Option A\" is deselected, showing that only one option can be active at a time and a selection is changed only by choosing another option."
+  },
+  "63f75bd3d9f534f96c8b39e8e59882562b14ea593726024c5a774b9ebcdbfacd": {
+    "nodeId": "42031:13562",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two wrapped Radio Groups showing the layout helper. Callout 1: four items in a three-column layout where the second row has one item plus dashed placeholders \"layout helper 1\" and \"layout helper 2\" filling the two empty slots. Callout 2: three items in a two-column layout where the second row has one item plus a dashed \"layout helper 1\" filling the one empty slot."
+  },
+  "6bad43ff0460c369069d494f14e72e80badf257d043c63c3095611457323acfa": {
+    "nodeId": "36292:38386",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Vertical radio group with legend and hint text. The first label is long and wraps onto a second line (\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris\"); a dashed horizontal line marks the first text line, to which the radio element is aligned. Two further \"Radio Label\" options follow."
+  },
+  "6bfe56386b7a4a640afe32b801298167394bddeb13a72f8a5157bebda1d81ff0": {
+    "nodeId": "42001:12749",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Four diagrams of how Radio Items scale within a page grid. Callout 1: three items each marked \"fill\" share the \"container width\" evenly. Callout 2: two items marked \"fill (max.400px)\" stop growing at 400 px and stay left-aligned in a wider container. Callout 3: items marked \"fill (min.160px)\" shrink to 160 px and wrap into two rows in a narrow container. Callout 4: a single item with image, radio and label where the image scales proportionally."
+  },
+  "7bfae166458024bab3b42f6bbe022db88a534410382dc9c6b1edda1b447ca0cf": {
+    "nodeId": "41296:3991",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two copies of the same radio item (placeholder image above an unselected radio with \"Radio Label\") with their Figma height fields. The left one has a fractional height of 138.67 set to Hug. The right one has the rounded whole-pixel height 139 with the lock aspect ratio option enabled, as the workaround for fractional heights."
+  },
+  "7eadae601ae16684549985e0799d4a82025f3a7544acba5ae67fb355f6d593eb": {
+    "nodeId": "36086:14164",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example: a radio button with a long label stretched over two wide lines, with a measurement line marked \"greater than 544px\". The text container is wider than the 544px maximum, which hurts readability."
+  },
+  "885580ba9ce16e729d2ef1b36f8a1cc0c319a6955a9f949ced810fcc1fed69cd": {
+    "nodeId": "15589:2284",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two states of a vertical Radio Group with the legend \"Radio Group Legend\" and five options labelled \"Radio Label\", connected by an arrow. On the left no option is selected and no hint is shown. On the right the first option is selected and its hint (\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\") appears below its label, pushing the other options down."
+  },
+  "8bbb419955b9b128fce62752e588507490466063596b4cf2ca8b9c645010d3bf": {
+    "nodeId": "41079:65173",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two image radio groups. Callout 1 marks the first group \"Wonach suchen Sie?\" with photographic images and the options \"Sägekette\" (selected), \"Führungsschiene\" and \"Sägekette und Führungsschiene\"; callout 2 marks the second group \"Welche Steigung weist Ihre Rasenfläche auf?\" with light line illustrations of a robotic mower and the options \"Die Rasenfläche hat keine Steigung.\" (selected) and \"Die Rasenfläche ist leicht hügelig.\"; callout 3 points with a magnified detail at the thin grey outline around an illustration, used because the illustration has a light background."
+  },
+  "90170f8431f9fb36e3c10694bd8ea86c4732721b556dc5249c29e8a0a92e29ec": {
+    "nodeId": "1310:11560",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Horizontal Radio Group with the legend \"Radio Group Legend\", a hint and three options labelled \"Radio Label\", the middle one selected. Each radio button and its label are highlighted with a light orange background to show the whole option is clickable, and a hand cursor hovers over the label of the third option."
+  },
+  "a03414d59ea24e9e4660da18aea231737632899533ddc16a46d4362502caf231": {
+    "nodeId": "41079:65119",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two Radio Groups with the legend \"Wonach suchen Sie?\" and three photo options: \"Sägekette\" (selected), \"Führungsschiene\" and \"Sägekette und Führungsschiene\". The first has only short labels, the second has bold labels with a three-line hint each. Callout 1 points at the legend (one line, two at most), 2 at the label (short, one line, two at most), and 3 at the hint (optional, maximum three lines)."
+  },
+  "b26751afd47c367fd19bcb1e02e56c6e29e5b0efa72e06289f56d0502e186999": {
+    "nodeId": "5680:9487",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two horizontal Radio Groups, each with a legend, a hint (\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\") and two options labelled \"Radio Label\", the first selected. Callout 1 points at the legend \"Radio Group Legend*\", where the asterisk marks the group as required; callout 2 points at the legend \"Radio Group Legend (optional)\", where the suffix marks the group as optional."
+  },
+  "b7310bf9dfc62d518d20ded4d1e5cb251c6ba7814232d4e08fd84cfdd64b98ff": {
+    "nodeId": "1310:11644",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Vertical Radio Group in the invalid state with the legend \"Radio Group Legend\" and a hint (\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget.\"). Below the hint a red error icon with the \"System Feedback Message\" applies to the whole list, and all three \"Radio Label\" options have red outlined radio buttons."
+  },
+  "cbd67f83c161082fc956ac3058751c8d41b6f6b2366701157181903d34afe32d": {
+    "nodeId": "15589:1584",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Two radio groups with the legend \"Radio Group Legend\", hint text and payment logos (Mastercard, Visa, PayPal, Klarna) as images. Callout 1 (Hug): the logos sit directly next to each label. Callout 2 (Fill): the logos are aligned to the far right edge of the container, marked by a dashed vertical line."
+  },
+  "cfc44c35fbf9f048860feef218328fc9032f41453e027646b7a38fe9ac0503cc": {
+    "nodeId": "1310:10441",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Mobile page mockup with the STIHL header, \"MENU\" bar, breadcrumb \"Startseite > Produkt- und Zubehörberater\" and the heading \"LOREM IPSUM\", followed by a vertical radio group with legend and hint. The first selected option has a long label wrapping onto two lines, followed by two \"Radio Label\" options, illustrating that label length must be tested on mobile."
+  },
+  "d0cb5701c4c4f4ead9aaf1198faf101a89d69325fc64451eaac85f304287abb0": {
+    "nodeId": "1310:8800",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Anatomy of a vertical Radio Group with numbered callouts: 1 points at the \"Radio Group Legend\", 2 at the info button next to the legend, 3 at the hint text below it, 4 at the \"System Feedback Message\" with a red warning icon, and 5 at the first \"Radio Label\" item, which is selected, followed by four unselected \"Radio Label\" items."
+  },
+  "d3c757c23ce2ffa4299551957e43d36c45d00147a8b3ab8526c9947a55b7d910": {
+    "nodeId": "41328:12996",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Don't example with two image radio groups. Callout 1 marks the legend \"Welche Art der Vegetation möchten Sie bearbeiten?\" above two image radio items that have no labels at all (first selected), and callout 2 marks \"Wonach suchen Sie?\" with items \"Sägekette\" (plain label) and \"Führungsschiene\" (bold label plus a hint), which mixes label types within one row; labels must always be present and label types consistent."
+  },
+  "d6fcc7d750cc3bce500bf9f09a0b1fc6e1d0465f0f6ac63edcc242b021cf9f28": {
+    "nodeId": "860:2774",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "\"Building Element Radio Item\" state matrix. Columns are default, hover/pressed, focus and disabled; rows are \"checked: false\", \"checked: true\", \"invalid: true checked: false\" and \"invalid: true checked: true\", each as a plain \"Radio Label\" and as a bold label with a hint text. Hover/pressed adds a grey fill, focus a dark outer ring, invalid a red ring, checked an orange dot, and disabled is greyed out with no invalid variants. Below, \"Show label\" true/false and \"Show checked hint\" true/false show the label hidden or the hint shown only when checked."
+  },
+  "d744876f56e2a055053222de00e00c3575727dfd5183b1509eca717a4d5e593b": {
+    "nodeId": "41652:10397",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Three page layouts with a Radio Group with Image placed in grid content areas. Callout 1: four items spanning the full grid width, labelled \"main\". Callout 2: three items in a narrow column, left-aligned (\"Narrow left\") or centered (\"Narrow center\"). Callout 3: four items in the \"Two Thirds\" area with \"Back\" and \"Next\" buttons below and a stepper on the right."
+  },
+  "f8c5f3aa05229c27368b4dd9096bb56501470eddfaec4b137285c97cd066809a": {
+    "nodeId": "1310:9044",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Horizontal radio group with the legend \"Radio Group Legend\" and a hint text, followed by two short \"Radio Label\" radio buttons placed side by side. The first is selected, the second is unselected."
+  },
+  "fad91758c840521bb3fd5cab5728af3d5833fbbecce136613b58d3f8580b76de": {
+    "nodeId": "42158:7583",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Radio Group Legend with a hint above four radio items in a row (first one selected). The horizontal gap between each pair of neighbouring items is highlighted and labelled \"spacing-dynamic-xs\", the dynamic spacing token used between items."
+  },
+  "fe52c6557ee3a93d540fbea3a22980fef0c89f302dd0a347a8f8a01dd00781e8": {
+    "nodeId": "40938:4281",
+    "model": "github-copilot/claude-sonnet-4.5",
+    "caption": "Building Element Radio with Image shown as a matrix of purple placeholder images, each with a radio and a \"Radio Label\", once without and once with a hint text. Columns are the states default, hover/pressed, focus and disabled (disabled is faded), rows are selected false, selected true, invalid true selected false and invalid true selected true (invalid has a red radio, no disabled column). Below, Radio Image Stroke compares show stroke: false and show stroke: true, and Radio Image Aspect Ratios shows the image at 1:1, 4:3, 3:2 and 16:9."
+  }
+}
