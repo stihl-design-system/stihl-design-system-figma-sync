@@ -15,7 +15,7 @@ figmaNodeId: 56:73
 figmaVersion: "2315997626726619921"
 figmaVersionLabel: DS-1185 Docu | Global | Add Connected Contact to the disclaimer of Sidebar Grid
 figmaVersionCreatedAt: 2026-02-02T16:02:45Z
-syncedAt: 2026-11-04T14:13:38.973Z
+syncedAt: 2026-11-05T21:31:39.192Z
 sourceUrl: https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ?node-id=56-73
 ---
 
@@ -31,7 +31,7 @@ Overview:
 
 ![Grid App](grid-app/grid-app-2692-5279.png)
 
-_Figure: A grid layout for an app, showing 8 columns with a gutter of 16px and a margin of 16px. The most used screen size is 360px. The grid width adjusts with the viewport size, and content areas within the grid define placement for content and modules._
+_Figure: App grid shown as a strip of 8 light pink columns separated by white gutters, with a darker pink margin at the left and right edge. The labels below read: \>\> most used screen: 360px, gutter: 16px, margin: 16px, columns: 8._
 
 ### Contribute
 
@@ -47,7 +47,7 @@ Contribute to improving these styles by sharing your feedback, asking questions,
 
 ![Anatomy](grid-app/anatomy-2692-6350.png)
 
-_Figure: The layout of a grid system used in a UI design. Callout 1 points to the Margins, which are the spaces separating the grid from the left and right edges and vary with the viewport size. Callout 2 points to the Columns, which are the areas designated for content placement and adjust based on the grid size. Callout 3 points to the Gutters, which are the fixed spaces between the columns that help separate the content and have consistent widths._
+_Figure: App grid strip with three numbered callouts. Callout 1 points at the dark pink margin at the left edge, callout 2 points at a light pink column, and callout 3 points at a white gutter between two columns._
 
 ## Content placement (Grid App)
 
@@ -61,7 +61,7 @@ These areas define how content and modules can be placed within the grid:
 
 ![Content areas](grid-app/content-areas-2692-5902.png)
 
-_Figure: Different content areas within a grid layout for a UI design system. The grid includes four labeled areas: "Full" spans the entire screen width, "Main" aligns with the central grid columns, and "First half" and "Sercond half" divide the grid into two proportional segments. These areas define how content and modules can be placed within the grid for various layout needs._
+_Figure: Phone-shaped app grid with three stacked content area overlays. FULL (purple) spans the whole width including the margins, MAIN (orange) spans the columns between the margins, and FIRST HALF and SERCOND HALF (pink, spelled this way in the image) sit side by side, each covering half of the columns between the margins._
 
 ### Text width for body text
 
@@ -75,4 +75,4 @@ This maximum width should be defined within each module. Headlines should inheri
 
 ![Text width for body text](grid-app/text-width-for-body-text-2692-6260.png)
 
-_Figure: The recommended text width for body text in the STIHL Design System. It shows a text block with a maximum width of 544 pixels, which is derived from a base font size of 16 pixels multiplied by 34. This width ensures that body text does not exceed 80 characters per line, maintaining optimal readability. Headlines should match this width for visual consistency._
+_Figure: Sample block with a bold uppercase headline (LOREM IPSUM DOLOR SIT AMET CONSECTETUR.) above a four-line body paragraph, both aligned to the same width. A purple double-headed arrow below spans the full text width and is labelled 544px (16px\*34)._

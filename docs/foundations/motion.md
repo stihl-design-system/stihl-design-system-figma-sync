@@ -14,7 +14,7 @@ figmaNodeId: 1:148
 figmaVersion: "2402427732341939128"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-09-23T14:01:21Z
-syncedAt: 2026-11-04T14:14:36.273Z
+syncedAt: 2026-11-05T21:31:53.073Z
 sourceUrl: https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps?node-id=1-148
 ---
 
@@ -33,13 +33,13 @@ Basic motion buildings blocks and tokens. Motion is divided in functional motion
 
 ![Animation types](motion/animation-types-3-3827.png)
 
-_Figure: The figure is a table detailing different animation types used in the STIHL Design System. The table includes columns labeled "Type", "Description", "Purpose", "Usage examples", and "Example". Each row describes an animation type: fade, move, expand, rotate, and zoom, along with their descriptions, purposes, and usage examples. The "Usage examples" column lists specific UI elements that utilize each type of animation._
+_Figure: Table of five animation types with the columns Type, Description, Purpose, Usage examples and Example (each Example cell is an empty grey square placeholder). fade changes color or opacity to hide or show an element, to make changes appear natural, used by Buttons and links, Checkbox, Radio button, Inputs, Toast (exit), Select, Dialog, Popover tip and Tooltip. move changes an element's position, to draw attention to changes or interactions, used by Notification, Toast (entrance), Carrousel, Slider, Switch and Sheet. expand increases or decreases an element in size, to emphasize content changes, used by Accordions, Expandable sections, Combobox and Dropdown. rotate turns an element clockwise or counter-clockwise from its center, to emphasize dynamic visual interest, used by the Loading spinner. zoom is a zoom-in, zoom-out effect that shifts attention or creates visual interest by emphasizing focus, used by Cards and Images._
 
 ### Duration
 
 ![Duration](motion/duration-3-3871.png)
 
-_Figure: The figure is a table detailing different durations for UI transitions in the STIHL Design System. Each row in the table specifies a duration name, its purpose, usage examples, value in milliseconds, and an example visual. The measurements 100ms, 250ms, 400ms, 700ms, 1100ms, and 1600ms refer to the duration values for various types of UI transitions. The table includes durations named duration-100, duration-250, duration-400, duration-700, duration-1100, and duration-1600, each with specific purposes and usage examples for different UI components and effects._
+_Figure: Table of six duration tokens with the columns Name, Purpose, Usage examples, Value and Example (each Example cell is an empty grey circle placeholder). duration-100 (100ms) is subtle and instant, for small utility transitions such as Buttons and links, Checkbox, combobox, Input, Radio button, Select, Switch, Textarea and Tooltip Slider. duration-250 (250ms) is balanced and responsive, for medium elements such as Accordion, Expandable section, Dialog (small), Popover tip and Tooltip. duration-400 (400ms) is clear and dramatic, for large elements such as Carousel, Dialog, Drawer (Sheet), Notification, Slider, Sidebar, Screen dimming and Toast. duration-700 (700ms) is fluid and sustained, for moving content across a larger distance such as Carousel sliding. duration-1100 (1100ms) is steady and ambient, for looping animations such as the Loading spinner. duration-1600 (1600ms) is slow and rhythmic, for ambient placeholder animations such as the Skeleton shimmer._
 
 #### Contribute
 
@@ -55,7 +55,7 @@ Functional motion is used to create responsiveness (reactivity), while remaining
 
 ![Easing](motion/easing-3-3916.png)
 
-_Figure: The figure is a table that outlines different easing types for motion in a UI design system. It includes columns labeled "Type", "Description", "Purpose", "Usage examples", "Value", and "Example". Each row describes a specific easing type: motion-functional-linear, motion-functional-ease-in, motion-functional-ease-out, and motion-functional-ease-in-out, detailing their characteristics, purposes, usage examples, and corresponding values. The table provides specific cubic-bezier values for ease-in, ease-out, and ease-in-out types, and lists examples of UI elements where each easing type should be used._
+_Figure: Table of four easing tokens with the columns Type, Description, Purpose, Usage examples, Value and Example (each Example cell is an empty grey circle placeholder). motion-functional-linear has the value linear: uniform speed, a system-like engineered effect, for short functional changes in Button an links, Checkbox, Combobox, Input, Radio button, Select, Switch and Text area. motion-functional-ease-in has the value cubic-bezier (0.5, 0, 1, 1): smoothly accelerates, a natural launching effect, for exiting, closing or blending out elements such as Accordion, Expandable section, Toast, Dialog, Drawer, Popover tip, Tooltip, Slider, Carousel and Sidebar. motion-functional-ease-out has the value cubic-bezier (0, 0, 0.5, 1): smoothly decelerates, a natural settling effect, for entering, opening or blending in the same elements. motion-functional-ease-in-out has the value cubic-bezier (0.5, 0, 0.5, 1): starts slowly, accelerates through the middle and decelerates at the end, a natural seamless effect, for Radio group with expandable section and Hover Slider/Tooltip Slider._
 
 #### Contribute
 

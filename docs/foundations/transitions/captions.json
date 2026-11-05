@@ -1,7 +1,7 @@
 {
   "614151b4d8dab46a57d93860e957cb1e423993eda72e7365cff1629d69f55a2d": {
     "nodeId": "24:2531",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The figure describes the default transition style for UI elements in the STIHL Design System. It specifies that the transition is triggered by interactions defined with the component, uses ease in out easing, and has a duration of 300ms. The transition type is noted as dissolve for Figma."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Card titled \"Default transition\" listing its properties: Trigger: defined with component, Easing: ease in out, Duration: 300ms, and (Type: dissolve > for figma)."
   }
 }

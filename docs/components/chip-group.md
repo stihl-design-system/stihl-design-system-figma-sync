@@ -18,7 +18,7 @@ figmaNodeId: 18691:978
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:21:57.401Z
+syncedAt: 2026-11-05T21:32:48.472Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=18691-978
 ---
 
@@ -43,11 +43,11 @@ Overview:
 
 ![Chip Group](chip-group/chip-group-18693-1144.png)
 
-_Figure: Various states and types of a Chip component within a Chip Group. It shows the Chip in different states: enabled, hover/pressed, focus, and disabled, and in two types: Selectable and Removable. The Selectable type is further divided into selected: false and selected: true. The layout demonstrates how the Chip appears in these different states and types, illustrating the visual changes for each condition._
+_Figure: Text in the figure: "Chip", "enabled", "hover/pressed", "focus", "disabled", "Selectable", "selected: false", "selected: true", "Removable"._
 
 ![Chip Group](chip-group/chip-group-19505-3523.png)
 
-_Figure: The Chip Group component with two sizes, medium and small, and two types, selectable and removable. Each chip has a leading icon and the label "Chip". The selectable chips are shown in both medium and small sizes, while the removable chips, which include an "X" icon, are also shown in both sizes. The layout demonstrates how these chips are grouped under a label._
+_Figure: Shows chip (label=Chip, leading icon, type=selectable, state=enabled, size=medium, selected=false); chip (leading icon, label=Chip, type=selectable, state=enabled, size=small, selected=false); chip (leading icon, label=Chip, type=removable, state=enabled, size=medium, selected=false); chip (leading icon, label=Chip, type=removable, state=enabled, size=small, selected=false). Text in the figure: "Chip group", "medium", "small", "Label", "Chip", "selectable", "removable"._
 
 ### Further guidelines
 
@@ -90,7 +90,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Chip group](chip-group/chip-group-18693-1163.png)
 
-_Figure: A Chip group component with a removable, medium-sized variant. There are four chips in a horizontal layout, each with a Chip label and a Close icon. Callout 1 points to the optional Chip group label, callout 2 points to the first chip, callout 3 points to the second chip, and callout 4 points to the third chip. Each chip includes an optional icon and a close icon._
+_Figure: Shows chip-group (lable, type=removable, size=medium). Callouts 1, 2, 3, 4. Text in the figure: "Label", "Chip"._
 
 #### Selectable chip
 
@@ -103,7 +103,7 @@ The chip has 2 states that are different in color: selected or unselected.
 
 ![Selectable chip](chip-group/selectable-chip-19250-136.png)
 
-_Figure: Two selectable chips labeled "Chip," each with a leading icon. The first chip is in the unselected state, while the second chip is in the selected state. Callout 1 points to the unselected chip, and callout 2 points to the selected chip. The unselected chip has a lighter color, and the selected chip has a darker color._
+_Figure: Shows chip (label=Chip, leading icon, type=selectable, state=enabled, size=medium, selected=false); chip (leading icon, label=Chip, type=selectable, state=enabled, size=medium, selected=true). Callouts 1, 2. Text in the figure: "Chip", "unselected", "selected"._
 
 #### Removable chip
 
@@ -117,7 +117,7 @@ The chip has 2 states that are different in perceptivity: visible and not visibl
 
 ![Removable chip](chip-group/removable-chip-19250-117.png)
 
-_Figure: A removable chip component used for refining lists by applying filters. The chip is labeled "Chip" and includes a close icon to remove it. Callout 1 points to the chip's leading icon area, callout 2 points to the close icon, and callout 3 points to the chip label. The chip is in a visible state and is not selected._
+_Figure: Shows chip (leading icon, label=Chip, type=removable, state=enabled, size=medium, selected=false). Callouts 1, 2, 3. Text in the figure: "Chip", "selected"._
 
 #### Size and density
 
@@ -128,7 +128,7 @@ For different use cases and viewports, the chip comes in two sizes. Only the pad
 
 ![Size and density](chip-group/size-and-density-19250-193.png)
 
-_Figure: Two variants of a chip component labeled "Chip," one in medium size and the other in small size. Callout 1 points to the medium size chip, and callout 2 points to the small size chip. The difference between the two sizes is only in the padding._
+_Figure: Shows chip (label=Chip, type=selectable, state=enabled, size=medium, selected=false); chip (label=Chip, type=selectable, state=enabled, size=small, selected=false). Callouts 1, 2. Text in the figure: "Chip"._
 
 #### Do not combine medium and small
 
@@ -136,7 +136,7 @@ The different sized may not be combined in the same list.
 
 ![Do not combine medium and small](chip-group/do-not-combine-medium-and-small-19448-119.png)
 
-_Figure: A chip-group component with selectable items of different sizes labeled as "small." The text "Easy start mechanisms" is followed by a list of items: "Smart start technology," "Primer bulb," "decompression mechanism," "Automatic choke," and "Inertia-activated chain brake." The example is marked as a "Don't" because it combines medium and small sizes in the same list, which is not allowed according to the design guidelines._
+_Figure: Don't example. Shows chip-group (lable, type=selectable, size=small). Text in the figure: "Easy start mechanisms:", "Smart start technology", "Primer bulb", "decompression mechanism", "Automatic choke", "Inertia-activated chain brake"._
 
 #### Overflow of the label
 
@@ -146,7 +146,7 @@ Tip: test the length of the label in all viewports.
 
 ![Overflow of the label](chip-group/overflow-of-the-label-19250-232.png)
 
-_Figure: A chip-group component with the label "Easy start mechanisms:" and several selectable items listed below it: "Smart start technology", "decompression mechanism", "Inertia-activated chain brake", "Automatic choke", and "Primer bulb". The example is marked as a "Don't" because the label text exceeds one line, which is not allowed according to the tip provided: "The chip label can not be two lines." The tip also advises testing the length of the label in all viewports._
+_Figure: Don't example. Shows chip-group (lable, type=selectable, size=small). Text in the figure: "Easy start mechanisms:", "Smart start technology", "decompression mechanism", "Inertia-activated chain brake", "Automatic choke", "Primer bulb"._
 
 ### Group
 
@@ -159,7 +159,7 @@ The selectable chips are always in a group. For different use cases, the chip gr
 
 ![Single select or multi select](chip-group/single-select-or-multi-select-19230-76.png)
 
-_Figure: Two examples of a chip-group component in a single select layout. The first callout points to a selected chip labeled "300 mm" under the text "Diameter of your machine," indicating a machine diameter measurement. The second callout points to two selected chips labeled "300 mm" and "250 mm" under the text "What cutting wheel diameters are you interested in?", indicating cutting wheel diameter measurements. Each chip represents a selectable option within the group._
+_Figure: Shows chip-group (lable, type=selectable, size=medium); chip-group (type=selectable, size=small). Callouts 1, 2. Text in the figure: "Diameter of your machine:", "230 mm", "300 mm", "250 mm", "400 mm", "What cutting wheel diameters are you interested in?"._
 
 #### Stack all chips in the group
 
@@ -169,7 +169,7 @@ This option is available when there are two or more items.
 
 ![Stack all chips in the group](chip-group/stack-all-chips-in-the-group-20229-3219.png)
 
-_Figure: Two layouts of a chip-group component with the label "Label:" and multiple chips. The purple arrows labeled "content" indicate the width of the container, which adjusts automatically based on the length of the content within the chips. The left example shows chips arranged in two rows, while the right example stacks all chips vertically._
+_Figure: Shows chip-group (lable, type=selectable, size=small). Text in the figure: "content", "Label:", "Chip"._
 
 #### Group width
 
@@ -177,7 +177,7 @@ Follow the width of the [content grid “narrow”.](https://www.figma.com/desig
 
 ![Group width](chip-group/group-width-19250-155.png)
 
-_Figure: Two Chip Group components, each labeled "Label:", with multiple "Chip" components of the small, enabled, and unselected type. The Chip Groups are laid out within a narrow content grid, demonstrating how the group width should follow this grid. The first Chip Group is aligned to the left, while the second Chip Group is aligned to the left but spans two rows._
+_Figure: Shows chip (label=Chip, type=selectable, state=enabled, size=small, selected=false). Text in the figure: "Label:", "Chip"._
 
 ## Content and Assets
 
@@ -187,7 +187,7 @@ Use short words in simple language. They must be easy to understand. Also, avoid
 
 ![Concise labels](chip-group/concise-labels-18693-1194.png)
 
-_Figure: A chip group component with the label "Safety classes:" followed by a colon, and three selectable chips labeled "Class 0", "Class 1", and "Class 2". The chips are arranged horizontally in a medium size. The label is positioned above the chips, and the colon is used to indicate the label for the group of chips._
+_Figure: Shows chip-group (lable, type=selectable, size=medium). Text in the figure: "Safety classes:", "Class 0", "Class 1", "Class 2"._
 
 ### Length
 
@@ -197,7 +197,7 @@ The length of all labels chips in a group can be of diverse length.
 
 ![Length](chip-group/length-19230-87.png)
 
-_Figure: A chip group component with the label "Type of propulsion:" and three selectable chips labeled "Battery," "Fuel," and "Corded electric." The length of the labels in the chip group can vary from around 3 to 40 characters depending on the viewport, ensuring that the labels do not truncate. The length of all label chips in a group can differ._
+_Figure: Shows chip-group (lable, type=selectable, size=medium). Text in the figure: "Type of propulsion:", "Battery", "Fuel", "Corded electric"._
 
 ### Icon usage
 
@@ -212,7 +212,7 @@ Use icons sparingly, as too many icons in an interface might impose unnecessary 
 
 ![Icon usage](chip-group/icon-usage-19250-264.png)
 
-_Figure: Two sets of icons used within a chip-group component of the STIHL Design System. The first set is labeled "Library Icons" and includes icons for "Battery," "Fuel," and "Corded electric." The second set is labeled "Custom Icons" and includes icons for "Team X," "Team Y," and "Team Z." Each icon is rendered in a fixed 16x16 pixel box with a transparent background._
+_Figure: Shows chip-group (type=selectable, size=medium). Text in the figure: "Library Icons", "Battery", "Fuel", "Corded electric", "Custom Icons", "Team X", "Team Y", "Team Z"._
 
 ### Group label
 
@@ -222,7 +222,7 @@ In some cases the group has a label. For the chip group it is recommended to use
 
 ![Use “:”](chip-group/use-19608-834.png)
 
-_Figure: A chip group component with the label "Safety classes:" followed by a colon, and three selectable chips labeled "Class 0", "Class 1", and "Class 2". The chips are arranged horizontally in a medium size. The label is positioned above the chips, and the colon is used to indicate the label for the group of chips._
+_Figure: Shows chip-group (lable, type=selectable, size=medium). Text in the figure: "Safety classes:", "Class 0", "Class 1", "Class 2"._
 
 #### Activate the user
 
@@ -232,7 +232,7 @@ In most cases a colon is recommended.
 
 ![Activate the user](chip-group/activate-the-user-19690-1627.png)
 
-_Figure: A chip group component with the label "Select a safety class:" followed by three selectable chips labeled "Class 0," "Class 1," and "Class 2." The label uses the verb "select" to indicate the action required by the user, and it ends with a colon. The chips are arranged horizontally and have a medium size._
+_Figure: Shows chip-group (lable, type=selectable, size=medium). Text in the figure: "Select a safety class:", "Class 0", "Class 1", "Class 2"._
 
 ### Semantic structure
 
@@ -242,7 +242,7 @@ It is not allowed to combine both **(1)** removable chips and **(2)** input sele
 
 ![Do not combine selectable and removable in the same list](chip-group/do-not-combine-selectable-and-removable-in-the-same-list-19250-275.png)
 
-_Figure: A "chip-group" component with the label "Easy start mechanisms:" and several items listed below it. The component includes both selectable chips like "Smart start technology" and removable chips like "AP System". The numbered callouts point to "Automatic choke" labeled as 1, indicating a removable chip, and "AP System" labeled as 2, also indicating a removable chip. The example is marked as a "Don't" because it combines both selectable and removable chips in the same list, which is not allowed._
+_Figure: Don't example. Shows chip-group (lable, type=selectable, size=small). Callouts 1, 2. Text in the figure: "Easy start mechanisms:", "Smart start technology", "decompression mechanism", "Inertia-activated chain brake", "Automatic choke", "Primer bulb", "AP System"._
 
 #### Don’t mix chips with a different purpose
 
@@ -250,7 +250,7 @@ Chips with a different function and therefore purpose cant be in one group.
 
 ![Don’t mix chips with a different purpose](chip-group/don-t-mix-chips-with-a-different-purpose-19230-81.png)
 
-_Figure: A chip-group component of type selectable and size small, illustrating a "Don't" example. It shows five chips labeled "Recommended for you", "Cutting tools (2)", "operating materials (5)", "Sharpening tools (1)", and "Workwear (4)". The example is marked as incorrect because it mixes chips with different functions and purposes in one group._
+_Figure: Don't example. Shows chip-group (type=selectable, size=small). Text in the figure: "Recommended for you", "Cutting tools (2)", "operating materials (5)", "Sharpening tools (1)", "Workwear (4)"._
 
 ## Behavior
 
@@ -265,7 +265,7 @@ The screenreader explains the action, examples are:
 
 ![Browser default tooltip](chip-group/browser-default-tooltip-19250-250.png)
 
-_Figure: Two types of chips from a UI design system: a selectable chip and a removable chip, both in a hover/pressed state and medium size. The first callout points at the selectable chip labeled "Chip" with the action "Deactivate property," used for actions like changing machine status. The second callout points at the removable chip labeled "Chip" with the action "Remove filter," used for actions like removing a product category filter._
+_Figure: Shows chip (leading icon, label=Chip, type=selectable, state=hover/pressed, size=medium, selected=true); chip (leading icon, label=Chip, type=removable, state=hover/pressed, size=medium, selected=false). Callouts 1, 2. Text in the figure: "Chip", "Deactivate property", "Remove filter"._
 
 ### Chips that appear by user interactions
 
@@ -275,7 +275,7 @@ The chips will appear in the interface. Ideally, close to the filtered list.
 
 ![Chips that appear by user interactions](chip-group/chips-that-appear-by-user-interactions-18693-1177.png)
 
-_Figure: A "Chip Group" component with removable chips that appear after user interactions, specifically after using a filter function. The layout includes a select input labeled "Are of expertise," "Location," and "Level of experience," each with enabled and valid states, and of medium size. Below these selects, there is a chip-group labeled "Results for:" containing removable chips labeled "IT & Digital," "Ludwigsburg," "Waiblingen," and "Senior Level," all of small size. This example is marked as a "Do" because it correctly shows removable chips appearing close to the filtered list after user selection._
+_Figure: Do example. Shows select (label, input, state=enabled, invalid=false, size=medium); chip-group (lable, type=removable, size=small). Text in the figure: "Are of expertise", "IT & Digital", "Location", "Ludwigsburg, Waiblin...", "Level of experience", "Senior level", "Results for:", "Ludwigsburg", "Waiblingen", "Senior Level"._
 
 ### Select chips to reveal the group label
 
@@ -285,7 +285,7 @@ When all chips are deselected, the group label disappears again.
 
 ![Select chips to reveal the group label](chip-group/select-chips-to-reveal-the-group-label-20673-1831.png)
 
-_Figure: A Chip Group component with three select inputs labeled "Are of expertise," "Location," and "Level of experience." Each select input is in an enabled state, showing "Select..." as the default option. The group label appears when at least one chip is selected and disappears when all chips are deselected._
+_Figure: Shows select (label, input, state=enabled, invalid=false, size=medium). Text in the figure: "Are of expertise", "Select...", "Location", "Level of experience"._
 
 ## Examples/Variants
 
@@ -296,7 +296,7 @@ _Figure: A Chip Group component with three select inputs labeled "Are of experti
 
 ![Filter horizontal](chip-group/filter-horizontal-18693-1204.png)
 
-_Figure: A horizontal filter component with three select inputs labeled "Area of expertise," "Location," and "Level of experience." Each select input is in an enabled state and of medium size. Below these inputs, there is a chip group of removable chips labeled "IT & Digital," "Ludwigsburg," "Waiblingen," and "Senior level," each of small size. Additionally, there is a button labeled "Delete all filters" with a ghost variant, medium size, and no icon. The layout shows the chips immediately below the horizontal filter, and the label of the chip group is optional due to clear context._
+_Figure: Shows select (label, input, state=enabled, invalid=false, size=medium); chip-group (type=removable, size=small); button (button text=Delete all filters, variant=ghost, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Area of expertise", "IT & Digital", "Location", "Ludwigsburg, Waiblin...", "Level of experience", "Senior level", "Ludwigsburg", "Waiblingen", "Delete all filters"._
 
 ### Filter mobile
 
@@ -306,7 +306,7 @@ _Figure: A horizontal filter component with three select inputs labeled "Area of
 
 ![Filter mobile](chip-group/filter-mobile-19901-1638.png)
 
-_Figure: A "Filter mobile" component with a button labeled "Filter" in a filled, enabled, medium size variant with an icon on the left. Below the button, there is a chip-group of removable chips labeled "IT & Digital," "Ludwigsburg," "Waiblingen," and "Senior level," all in a small size. At the bottom, there is a button labeled "Delete all filters" in a ghost, enabled, small size variant with flush alignment. The layout shows the filter opening in a drawer with removable chips displayed immediately below the button, and the label of the chip group is optional due to clear context._
+_Figure: Shows button (button text=Filter, variant=filled, state=enabled, size=medium, icon position=left, hide label=off, flush alignment=off); chip-group (type=removable, size=small); button (button text=Delete all filters, variant=ghost, state=enabled, size=small, icon position=none, hide label=off, flush alignment=on). Text in the figure: "Filter", "IT & Digital", "Ludwigsburg", "Waiblingen", "Senior level", "Delete all filters"._
 
 ### Filter sidebar
 
@@ -316,7 +316,7 @@ _Figure: A "Filter mobile" component with a button labeled "Filter" in a filled,
 
 ![Filter sidebar](chip-group/filter-sidebar-19250-100.png)
 
-_Figure: A "Filter sidebar" component with two variants of a chip group layout. The left side, marked as a "Do" example, demonstrates the correct usage: removable chips are used, placed further away from the filter, and a group label is included to help understand the grouped list. The right side shows an incorrect usage with chips that have close buttons, which is not recommended according to the guidelines._
+_Figure: Do example._
 
 ### Do not use selectable chips in complex filters
 
@@ -324,7 +324,7 @@ Do not use selectable chips inside a complex filter, e.g. located in a sidebar, 
 
 ![Do not use selectable chips in complex filters](chip-group/do-not-use-selectable-chips-in-complex-filters-19250-74.png)
 
-_Figure: A Chip Group component within a complex filter layout, specifically in a sidebar. It shows selectable chips arranged in a list format. The example is marked as a "Don't" because using selectable chips in complex filters increases visual clutter and imposes unnecessary cognitive load._
+_Figure: Don't example._
 
 ### Filter simple
 
@@ -333,7 +333,7 @@ _Figure: A Chip Group component within a complex filter layout, specifically in 
 
 ![Filter simple](chip-group/filter-simple-19250-105.png)
 
-_Figure: A simple filter component with three selectable chips labeled "Battery," "Fuel," and "Corded electric" under the heading "Type of propulsion." Each chip is of medium size and is part of a chip-group. The layout shows a horizontal arrangement of the chips, which are designed to be selected by the user._
+_Figure: Shows chip-group (lable, type=selectable, size=medium). Text in the figure: "Type of propulsion:", "Battery", "Fuel", "Corded electric"._
 
 ### Suggestion links
 
@@ -343,7 +343,7 @@ Use a [small outline button](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt
 
 ![Suggestion links](chip-group/suggestion-links-19250-285.png)
 
-_Figure: Three small outline buttons labeled "Sharpen chainsaw chain," "Chainsaw spare parts," and "Chainsaw oil," all in an enabled state. These buttons are presented as suggestion links under the text "Popular searches:" and are aligned horizontally. Each button has no icon, the label is not hidden, and the alignment is not flush._
+_Figure: Shows button (button text=Sharpen chainsaw chain, variant=outline, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Chainsaw spare parts, variant=outline, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); button (button text=Chainsaw oil, variant=outline, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off). Text in the figure: "Popular searches:", "Sharpen chainsaw chain", "Chainsaw spare parts", "Chainsaw oil"._
 
 ### Do not use selectable chips in a combobox component
 
@@ -353,7 +353,7 @@ In a combobox component, as scrolling must be avoided.
 
 ![Do not use selectable chips in a combobox component](chip-group/do-not-use-selectable-chips-in-a-combobox-component-19690-1656.png)
 
-_Figure: A combobox component titled "Garden maintenance" with an active/focus state, containing five selectable chips labeled "Lawn Care," "Pruning and Trimming," "Weed Control," "Soil and Mulching," and "Hardscape Maintenance." All chips are enabled and unselected. The example is marked as a "Don't" because selectable chips should not be used in a combobox component to avoid scrolling. Instead, a checkbox group is recommended for being compact and easy to read._
+_Figure: Don't example. Shows combobox (dropdown, state=active/focus, invalid=false); chip (label=Lawn Care, type=selectable, state=enabled, size=small, selected=false); chip (label=Pruning and Trimming, type=selectable, state=enabled, size=small, selected=false); chip (label=Weed Control, type=selectable, state=enabled, size=small, selected=false); chip (label=Soil and Mulching, type=selectable, state=enabled, size=small, selected=false); chip (label=Hardscape Maintenance, type=selectable, state=enabled, size=small, selected=false). Text in the figure: "Garden maintenance", "|", "Lawn Care", "Pruning and Trimming", "Weed Control", "Soil and Mulching", "Hardscape Maintenance"._
 
 ### Checkbox group, switch button or chip group?
 
@@ -365,7 +365,7 @@ _Figure: A combobox component titled "Garden maintenance" with an active/focus s
 
 ![Checkbox group, switch button or chip group?](chip-group/checkbox-group-switch-button-or-chip-group-19448-125.png)
 
-_Figure: The figure compares three components: a chip group, a switch, and a checkbox group, each labeled with "Type of propulsion:" and options "Battery" and "Fuel." The chip group displays "Battery" selected, the switch is labeled "Battery-powered machines" and is enabled and checked, while the checkbox group shows "Battery" checked. The chip group is noted to take up a lot of space and be harder to read, the switch is not recommended for use in filters as it is not an input element, and the checkbox group is recommended for being compact and easy to read._
+_Figure: Shows chip-group (lable, type=selectable, size=medium); switch (label links, Label=Battery-powered machines, state=enabled, checked=true); checkbox-group (children=\[object Object\], legend=Type of propulsion:, description=\[object Object\], legend, direction=vertical). Text in the figure: "Chip Group", "Type of propulsion:", "Battery", "Fuel", "Switch", "Battery-powered machines", "Checkbox Group"._
 
 ### Chip group or radio group?
 
@@ -375,4 +375,4 @@ _Figure: The figure compares three components: a chip group, a switch, and a che
 
 ![Chip group or radio group?](chip-group/chip-group-or-radio-group-20227-2976.png)
 
-_Figure: The figure compares two components: a chip group and a radio group. The chip group displays selectable options for the "Diameter of your cutting wheel" with sizes 230 mm, 300 mm, 250 mm, and 400 mm. The radio group lists options for "Cutting wheel diameter" with sizes 230 mm, 300 mm, 350 mm, and 400 mm. The chip group is noted to take up more space and be harder to read, while the radio group is recommended for being compact and easy to read._
+_Figure: Shows chip-group (lable, type=selectable, size=medium); radio-group (description=\[object Object\], item 5, legend, item 3, legend=Cutting wheel diameter:, item 4, orientation=vertical, show title=false). Text in the figure: "Chip Group", "Diameter of your cutting wheel:", "230 mm", "300 mm", "250 mm", "400 mm", "Radio Group", "Cutting wheel diameter:", "350 mm"._

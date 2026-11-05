@@ -13,7 +13,7 @@ figmaNodeId: 24:2508
 figmaVersion: "2402427732341939128"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-09-23T14:01:21Z
-syncedAt: 2026-11-04T14:14:39.210Z
+syncedAt: 2026-11-05T21:31:54.114Z
 sourceUrl: https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps?node-id=24-2508
 ---
 
@@ -29,6 +29,6 @@ This will be reviewed at the end of 2025 as part of the animation enhancement ph
 
 ![Transitions](transitions/transitions-24-2531.png)
 
-_Figure: The figure describes the default transition style for UI elements in the STIHL Design System. It specifies that the transition is triggered by interactions defined with the component, uses ease in out easing, and has a duration of 300ms. The transition type is noted as dissolve for Figma._
+_Figure: Card titled "Default transition" listing its properties: Trigger: defined with component, Easing: ease in out, Duration: 300ms, and (Type: dissolve \> for figma)._
 
 > The current **roadmap** is shared during **sprint reviews** and included in the design system **release notes**, which are emailed after each sprint. If you have any questions or would like to be added to the sprint review meetings or release notes distribution list, please reach out to [design.system@stihl.de](mailto:design.system@stihl.de).

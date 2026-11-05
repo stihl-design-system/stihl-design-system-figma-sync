@@ -17,7 +17,7 @@ figmaNodeId: 17260:166
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:19:23.603Z
+syncedAt: 2026-11-05T21:32:03.435Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=17260-166
 ---
 
@@ -38,7 +38,7 @@ Overview:
 
 ![Accordion single](accordion/accordion-single-17260-2298.png)
 
-_Figure: The Accordion single component in a UI design system, displaying various sizes (medium, small, extra-small) and states (enabled, hover, focus) with different expansion indicators (right or left, flush or not, expanded or not). Each measurement refers to the size of the accordion component. The text "Summary of the accordion content" indicates the area for the summary or title, while "❖ Placeholder" marks the custom hint area for additional text, icons, badges, or tags. The do's and don'ts mention that important information should not be placed in the content area and that images are not allowed in the custom hint area._
+_Figure: Matrix of the single accordion with three columns for Size: medium, Size: small and Size: extra-small and rows for the states enabled, hover (gray background) and focus (dark outline). The rows are grouped by expansion indicator, flush and expanded: right with flush false, right with flush true, left with flush false and left with flush true, each collapsed (expanded: false) and expanded (expanded: true). Every accordion shows the summary "Summary of the accordion content" with a chevron on the right or a caret on the left, and the expanded ones show a purple dashed "Placeholder" content area below the header._
 
 > **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
@@ -64,7 +64,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Accordion Group](accordion/accordion-group-18841-16422.png)
 
-_Figure: Various configurations of the accordion-single component within an accordion group, showcasing different sizes, expansion indicators, and flush settings. Each column represents a different size: Medium, Small, and Extra-small. Each row demonstrates a different combination of expansion indicator positions (right or left) and flush settings (true or false). The text "Summary of the accordion content" is used consistently across all accordion items to illustrate the content summary._
+_Figure: Accordion groups shown in three columns, Medium, Small and Extra-small, with rows for expansion indicator: right with flush: false, expansion indicator: right with flush: true, expansion indicator: left with flush: false and a fourth row labelled expansion indicator: left with flush: false whose items sit slightly further left like the flush variant. Each group stacks seven collapsed items with the summary "Summary of the accordion content", separated by thin divider lines, with a chevron at the right or a caret at the left; the spacing grows from extra-small to medium._
 
 ## Formatting and Construction
 
@@ -81,7 +81,7 @@ _Figure: Various configurations of the accordion-single component within an acco
 
 ![Accordion item](accordion/accordion-item-17351-6880.png)
 
-_Figure: An accordion component with two accordion items, both in the enabled state and medium size. The first accordion item is expanded and includes a header with the text "Summary of the accordion content," a hint with a subtitle "Hint with a subtitle," and an expansion indicator shown as a caret on the right. The second accordion item also includes a header with the same text, an expansion indicator shown as a caret on the right, and a number indicator "123." Callout 1 points to the expansion indicator, and callout 2 points to the content area labeled "Placeholder." The annotations "a," "b," "c," and "d" indicate specific parts of the accordion items, with "d" marking the number indicator._
+_Figure: Top: an expanded accordion item with the summary "Summary of the accordion content", the hint "Hint with a subtitle", an up-pointing chevron at the right and a purple dashed "Placeholder" content area; callout 1 marks the header (summary, hint and chevron) and callout 2 marks the content. Middle: the same item with callout a on the summary, b on the hint and c on the expansion indicator, a chevron or caret depending on the use case. Bottom: an expanded item without hint but with the number indicator "123" in a gray pill left of the chevron, marked d._
 
 #### Custom hint area
 
@@ -91,7 +91,7 @@ It is meant for icons, badges and flags. **(2)**
 
 ![Custom hint area](accordion/custom-hint-area-17351-12519.png)
 
-_Figure: An accordion component with a custom hint area, showing two accordion items. The first callout points at a content-placeholder within the accordion, indicating where icons, badges, and flags can be placed. The second callout highlights a system-feedback element labeled "Connected." The text "Title of accordion" is used for both accordion headers, and the first accordion contains a placeholder text "❖ Placeholder - Replace this content._
+_Figure: Two accordion headers with the title "Title of accordion" and a chevron at the right. In the first, callout 1 points at a purple dashed "Placeholder - Replace this content" element in the hint area, which is the slot for custom elements such as icons, badges and flags. In the second, callout 2 points at the hint "Connected" with a Bluetooth icon._
 
 #### Accordion group
 
@@ -102,7 +102,7 @@ _Figure: An accordion component with a custom hint area, showing two accordion i
 
 ![Accordion group](accordion/accordion-group-17301-2507.png)
 
-_Figure: An accordion group component with five accordion items, each separated by a divider border. The first callout points at the expansion indicator located to the right of the "Summary of the accordion content" text. The second callout points at the number "2" indicating the second accordion item. The component is of medium size, not flush, and has the expansion indicator positioned to the right._
+_Figure: An accordion group of five collapsed items, each with the summary "Summary of the accordion content" and a chevron on the right, separated by thin divider lines. Callout 1 points at the first accordion item and callout 2 points at the divider border below it._
 
 #### Chevron vs. Caret Usage
 
@@ -118,7 +118,7 @@ Use indicators consistently to signal expand/collapse behavior. The position and
 
 ![Chevron vs. Caret Usage](accordion/chevron-vs-caret-usage-17260-2423.png)
 
-_Figure: Two accordion components, both in the medium size and with flush set to false. The first accordion, labeled with callout 1, is an accordion-single with the expansion indicator on the right, shown in an expanded state. The second accordion, labeled with callout 2, is also an accordion-single with the expansion indicator on the left, also shown in an expanded state. Both accordions have a summary text "Summary of the accordion content" and a placeholder content area. The figure illustrates the usage of chevron and caret indicators to signal expand/collapse behavior, with the chevron used on the right and the caret on the left._
+_Figure: Two expanded accordions with the summary "Summary of the accordion content" and a purple dashed "Placeholder" content area. Callout 1 points at an up-pointing chevron on the right of the first header, used when the indicator sits on the right, and callout 2 points at a small down-pointing filled caret on the left of the second header, used when the indicator sits on the left._
 
 #### Size Variants
 
@@ -128,7 +128,7 @@ All variants can be used mobile and desktop.
 
 ![Size Variants](accordion/size-variants-18814-10559.png)
 
-_Figure: Three size variants of an accordion component: medium, small, and extra-small. Each variant is shown with a flush value of false and an expansion indicator on the right. The text "Summary of the accordion content" is used to represent the content summary for each accordion item in all three sizes._
+_Figure: Three accordion groups with the size labels medium, small and extra-small, each made of four collapsed items with the summary "Summary of the accordion content", a chevron on the right and divider lines between them. The items get progressively shorter in height from medium over small to extra-small._
 
 ### Sizing
 
@@ -138,7 +138,7 @@ The maximum width follows the size of [content grid narrow](https://www.figma.co
 
 ![Maximum width](accordion/maximum-width-17260-2428.png)
 
-_Figure: An accordion-group component with the size set to medium and flush set to false, featuring an expansion indicator on the right. The accordion is shown within a "Narrow" content grid, indicating the maximum width it can occupy. The accordion contains four sections, each labeled "Summary of the accordion content" with downward-pointing arrows to indicate expandable sections. The maximum width of the accordion follows the size of the content grid narrow, applicable to both smaller and larger viewports._
+_Figure: Accordion group (size medium, flush false, expansion indicator on the right) with four collapsed items, each labeled "Summary of the accordion content" with a downward chevron, placed inside a blue area labeled "NARROW" that marks the content grid narrow. The accordion fills the full width of that narrow grid area, which is its maximum width, for both smaller and bigger viewports._
 
 #### Minimum width
 
@@ -153,7 +153,7 @@ The minimum size, based on the [documented breakpoints and content placement](ht
 
 ![Minimum width](accordion/minimum-width-18428-22228.png)
 
-_Figure: The minimum width requirements for the accordion component in the STIHL Design System. Callout 1 points to an accordion labeled "first quarter," which is used on viewports 1024px or larger, such as on a desktop or large tablet. Callout 2 points to an accordion labeled "first third," which is used on viewports smaller than 1024px, such as on a mobile phone, tablet, or in a split screen. Each accordion contains multiple "Accordion summary" items with expansion indicators on the right._
+_Figure: Two accordions with four "Accordion summary" items each and a chevron on the right, laid over pink grid columns. Callout 1 points to the narrower one labeled "FIRST QUARTER" (viewports of 1024px and larger, e.g. a filter on a desktop or big tablet), callout 2 points to the wider one labeled "FIRST THIRD" (viewports smaller than 1024px, e.g. a content list on a phone, tablet or split screen)._
 
 ### Alignment
 
@@ -163,7 +163,7 @@ When designing for smaller spaces on a page, such as side drawers, panels or sid
 
 ![Flush alignment](accordion/flush-alignment-17351-11042.png)
 
-_Figure: An accordion component with flush alignment, used in a filter panel. The panel includes an accordion-group with items such as "Length", "Drive link gauge", "Saw chain pitch", and "Guide Bars". There are two buttons: a primary button labeled "Show results (34)" and a secondary button labeled "Clear selection". The primary button is enabled and filled, while the secondary button is disabled and outlined. The layout is designed for smaller spaces like side drawers or sidebars, ensuring better text alignment with other content elements._
+_Figure: Filter side drawer with the title "Filter" and a close icon, containing flush-aligned accordion items "Length" with the subtitle "120cm - 170cm", "Drive link gauge", "Saw chain pitch" and "Guide Bars", each with a chevron on the right. A dashed vertical line shows that the accordion text starts on the same left edge as the "Filter" title and the buttons below, a filled "Show results (34)" button and an outlined, greyed "Clear selection" button._
 
 ### Status
 
@@ -175,7 +175,7 @@ More than one accordion can be open at the same time.
 
 ![Default is closed](accordion/default-is-closed-17993-7543.png)
 
-_Figure: An accordion component in its default closed state. Each accordion item has the text "Summary of the accordion content" and an expansion indicator on the right. The accordion-group is of medium size, not flush, and allows more than one accordion to be open simultaneously._
+_Figure: Accordion group in the default state with four items, all closed, each showing the text "Summary of the accordion content" and a downward chevron on the right, separated by thin divider lines. More than one item can be open at the same time._
 
 ### Motion
 
@@ -187,7 +187,7 @@ _Figure: An accordion component in its default closed state. Each accordion item
 
 ![Hover animation](accordion/hover-animation-17645-7620.png)
 
-_Figure: Two instances of an accordion component in the medium size, with the expansion indicator on the right. The first accordion is in the enabled state, while the second is in the hover state, both are not expanded and not flush. The hover animation for the accordion involves a fade effect, changing the background color opacity from transparent to hover over 100 milliseconds with linear easing. The text "Summary of the accordion content" is shown on both accordion components._
+_Figure: Four closed accordion items labeled "Summary of the accordion content" with chevrons on the right. The second item is in the hover state: the mouse pointer is over it and it has a grey background, while the others are enabled. The annotation reads "fade: background color (color: transparent-hover) opacity (0-100%)"._
 
 #### Opening animation
 
@@ -195,7 +195,7 @@ _Figure: Two instances of an accordion component in the medium size, with the ex
 
 ![Opening animation](accordion/opening-animation-17268-2455.png)
 
-_Figure: The opening animation of an accordion component in the STIHL Design System. It shows two states of an accordion-single component, one collapsed and one expanded, both in the enabled and medium size with the expansion indicator on the right. The animation involves expanding the height of the content area from 0 to 100%, fading the opacity of the content in the content area from 0 to 100%, and rotating the chevron from 0° to 180° counter-clockwise. The duration of the animation is 250ms with an easing type of motion-functional-ease-out, which also applies to the icon rotation._
+_Figure: Opening animation shown as a closed accordion item "Summary of the accordion content" with a chevron pointing down, an arrow leading to the same item opened with a chevron pointing up and a Lorem ipsum text block in a highlighted content area below. Annotations: the chevron rotates 0°-180° (counter-clockwise), the height of the content area expands (0-100%), and the opacity of the content in the content area fades (0-100%)._
 
 #### Closing animation
 
@@ -205,7 +205,7 @@ _Figure: The opening animation of an accordion component in the STIHL Design Sys
 
 ![Closing animation](accordion/closing-animation-17351-12563.png)
 
-_Figure: The closing animation of an accordion component in the STIHL Design System. The accordion-single component, in a medium size with the expansion indicator on the right, transitions from an expanded to a collapsed state. The animation involves three key actions: the content area height reduces from 100% to 0%, the opacity of the content within the content area fades from 100% to 0%, and the chevron icon rotates clockwise from 180° to 0°. The duration of this animation is 250ms with an easing function labeled motion-functional-ease-in._
+_Figure: Closing animation shown as an open accordion item "Summary of the accordion content" with a chevron pointing up and a Lorem ipsum text block in a highlighted content area, with an arrow leading down to the same item closed with a chevron pointing down. Annotations: the chevron rotates 180°-0° (clockwise), the height of the content area shrinks (100-0%), and the opacity of the content in the content area fades (100-0%)._
 
 ## Content and Assets
 
@@ -217,7 +217,7 @@ _Figure: The closing animation of an accordion component in the STIHL Design Sys
 
 ![Accessible copy](accordion/accessible-copy-17268-2465.png)
 
-_Figure: An accordion component in the enabled state, medium size, with the expansion indicator positioned to the right, and it is not expanded or flush. The text "Summary of features and fixes" is shown as an example of accessible copy for the accordion header. The accessible copy guidelines recommend keeping summaries and hints short and simple, avoiding abbreviations, and ensuring the header text is understandable._
+_Figure: A single closed accordion header with the short, plain summary text "Summary of features and fixes" and a downward chevron on the right, as an example of accessible copy without abbreviations._
 
 ### Accordion title
 
@@ -233,7 +233,7 @@ You can customize the title using various text heading styles, with or without a
 
 ![Header recommendations](accordion/header-recommendations-18443-19280.png)
 
-_Figure: An accordion component with three header recommendations, each demonstrating different text styles and layouts. Callout 1 points to "Text M Bold" with a subtitle "Hint with a subtitle," showing a medium-sized accordion with a subtitle and an enabled state. Callout 2 points to "Text M Bold long accordion title that breaks in to two lines," illustrating a bold text title that spans two lines, also in a medium-sized, enabled state. Callout 3 points to "Heading L," which is a large heading kept short, in a medium-sized, enabled state. The recommendations suggest using "Text M" with a subtitle for clear hierarchy, "Text M bold" for titles with a maximum of two lines..._
+_Figure: Three accordion headers with chevrons on the right showing recommended formatting. Callout 1: "Text M Bold" title with the regular-weight subtitle "Hint with a subtitle", which gives a clear hierarchy. Callout 2: "Text M Bold long accordion title that breaks in to two lines", bold text limited to a maximum of 2 lines. Callout 3: "Heading L", a short title._
 
 #### Header warnings
 
@@ -247,7 +247,7 @@ You can customize the header using various text heading styles, with or without 
 
 ![Header warnings](accordion/header-warnings-18443-6348.png)
 
-_Figure: An accordion component with three headers, each demonstrating different text heading styles. The numbered callouts point to the following: 1 points to "Text M Bold" with a subtitle "Hint with a subtitle," 2 points to "HEADING M UPPERCASE," and 3 points to "Heading lorem ipsum dolor sit amet." The text explains that using "Text M" with a subtitle in bold does not guarantee a clear hierarchy, uppercase text may not be legible for all users, and "Heading L" should not be too long to avoid covering two lines. Each accordion header is in an enabled state, medium size, with the expansion indicator on the right and not expanded._
+_Figure: Three accordion headers with chevrons on the right showing formatting to avoid. Callout 1: "Text M Bold" title with the subtitle "Hint with a subtitle" also in bold, which does not guarantee a clear hierarchy. Callout 2: "HEADING M UPPERCASE", uppercase text that is less legible for some users. Callout 3: "Heading lorem ipsum dolor sit amet" in Heading L breaking over two lines, which is too long for that style._
 
 #### Maximum Text width
 
@@ -257,7 +257,7 @@ Please make sure the Header summary and text elements inside the accordion do no
 
 ![Maximum Text width](accordion/maximum-text-width-36292-38568.png)
 
-_Figure: The layout of an accordion component, highlighting the recommended maximum text width. The measurement "font size x 34em" refers to the maximum width for text elements within the accordion to ensure proper formatting. The text "Summary of features and fixes Lorem ipsum dolor sit amet consectetur." is shown within the accordion to demonstrate the text width constraint, and "accordion width" indicates the overall width of the accordion component._
+_Figure: A single accordion header "Summary of features and fixes Lorem ipsum dolor sit amet consectetur." with a chevron on the right. A top measurement labeled "recommenden max text width: font size x 34em" spans from the left edge to the end of the header text, while a bottom measurement labeled "accordion width" spans the full width of the accordion, so the text is much narrower than the accordion._
 
 ### Custom hint area
 
@@ -269,7 +269,7 @@ Additionally, it can function as a status display, for example, reflecting the f
 
 ![Hint](accordion/hint-17993-7605.png)
 
-_Figure: An accordion component with a medium size, non-flush layout, and expansion indicators positioned to the right. It includes four sections labeled "Length", "Drive link gauge", "Saw chain pitch", and "Guide bars", each with a dropdown arrow, and the "Length" section shows a value of "120cm". The hint area can be used to provide additional content or functions related to the accordion's sections, or to display status information such as filter settings or sorting rules._
+_Figure: Accordion group with four closed items "Length", "Drive link gauge", "Saw chain pitch" and "Guide bars", each with a chevron on the right. Only "Length" uses the hint area, showing the value "120cm" as a subtitle below its title, for example to reflect a set filter._
 
 #### Icons, status and more
 
@@ -279,7 +279,7 @@ Maximum 2 icons in the header area, keep it simple to reduce visual clutter.
 
 ![Icons, status and more](accordion/icons-status-and-more-18443-6402.png)
 
-_Figure: An accordion component with the variant "accordion-single" in an enabled state, medium size, and right expansion indicator. It is not expanded and is not flush. The header area includes two icons: one for system feedback of type error and another indicating a connected status. The accordion contains sections labeled "Smart connector", "Details", "Documents", "My dealer", and "Technical informations", with additional information such as "SN: 9834657865" and "Connected" under "Smart connector". The design guideline suggests using the custom hint area for additional information and limiting the header area to a maximum of two icons to keep it simple and reduce visual clutter._
+_Figure: Accordion group with closed items "Smart connector", "Details", "Documents", "My dealer" and "Technical informations". The "Smart connector" header uses the custom hint area with two small icons and text: a device icon followed by "SN: 9834657865" and a Bluetooth icon followed by "Connected", showing at most 2 icons._
 
 #### Do not use images
 
@@ -287,7 +287,7 @@ Photos and content icons in the custom hint area are not allowed.
 
 ![Do not use images](accordion/do-not-use-images-18842-10884.png)
 
-_Figure: An accordion component in a medium size with the expansion indicator on the right, currently not expanded, and not flush with its container. It includes sections labeled "Smart Connector", "Details", "Documents", "My Dealer", and "Technical informations". The board is marked as a "Don't" example because it contains images, specifically photos and content icons, which are not allowed in the custom hint area according to the design documentation._
+_Figure: Don't example: accordion with closed items "Smart Connector", "Details", "Documents", "My Dealer" and "Technical informations" where the custom hint area of "Smart Connector" contains a product photo of a chainsaw and an AK System battery logo. Photos and content images in the hint area are not allowed._
 
 #### Number Indicator
 
@@ -303,7 +303,7 @@ Only use the number indicator when necessary to keep the visual load low. Avoid 
 
 ![Number Indicator](accordion/number-indicator-26774-5677.png)
 
-_Figure: An accordion component in a medium size, with the expansion indicator positioned to the right and in a non-expanded state. It includes four filter list items labeled "Category", "Price", "User Groups", and "Area of usage", with "Category" showing "5" and "Area of usage" showing "10" as number indicators. The number indicators show how many filter items are selected within each category._
+_Figure: Filter accordion with four closed items "Category", "Price", "User Groups" and "Area of usage". "Category" shows a grey number indicator "5" and "Area of usage" shows "10", each placed left of the chevron, giving the count of selected filter items; "Price" and "User Groups" show none._
 
 #### Minimized number Indicator
 
@@ -311,7 +311,7 @@ Although the minimal selection indicator is **technically supported** in the com
 
 ![Minimized number Indicator](accordion/minimized-number-indicator-35782-2824.png)
 
-_Figure: An accordion component in its minimized state, with four sections labeled "Category", "Price", "User Groups", and "Area of usage". The accordion is of medium size, has the expansion indicator on the right, is not expanded, and is not flush with its surroundings. The text mentions that using an orange highlight as a minimal selection indicator is not recommended because it is typically reserved for important notifications or alerts, and combining it with a number indicator in the same section should be avoided._
+_Figure: Filter accordion with four closed items "Category", "Price", "User Groups" and "Area of usage". Only "Category" shows a small orange dot, the minimized selection indicator, placed left of the chevron. This orange highlight is not recommended and must not be combined with a number indicator in the same section._
 
 #### Don't combine the number indicator and hint.
 
@@ -325,7 +325,7 @@ When applying a filter as an accordion, only use the number indicator since it p
 
 ![Don't combine the number indicator and hint.](accordion/don-t-combine-the-number-indicator-and-hint-26774-5692.png)
 
-_Figure: An accordion component with two variants, both in the enabled state and medium size, with the expansion indicator on the right and not expanded. The first variant includes a subtitle or hint and a number indicator, while the second variant only includes the number indicator. The example demonstrates a "Don't" by combining the number indicator and hint, which is advised against to avoid overcrowding the component and keeping the visual load low. The text labels include "Category", "5", "Hint with a subtitle", "Price", "User Groups", and "Area of usage"._
+_Figure: Don't example: filter accordion with items "Category", "Price", "User Groups" and "Area of usage" where "Category" combines the number indicator "5" next to the chevron with the subtitle "Hint with a subtitle". A hint and a number indicator must not be combined, because it overcrowds the component; use only the number indicator for filters._
 
 #### Don't use number indicator for content accordions.
 
@@ -337,7 +337,7 @@ Avoid using a number indicator if the accordion content is static or cannot be q
 
 ![Don't use number indicator for content accordions.](accordion/don-t-use-number-indicator-for-content-accordions-26774-5710.png)
 
-_Figure: An accordion component with a number indicator, in an enabled state, medium size, and right-aligned expansion indicator. The accordion is not expanded and is not flush with its container. The number indicator is marked as a "Don't" example because the content is static and cannot be quantified. The callouts point to static text instructions for a task, specifically "01. Teile ölen" and subsequent steps, which do not involve quantities or dynamic values._
+_Figure: Don't example: an opened accordion item titled "01. Teile ölen" with a number indicator "1" next to an upward chevron, followed by German instruction text about oiling the parts and a photo of a man oiling a board at a workbench. The number indicator is wrong here because the content is static, descriptive text that cannot be quantified._
 
 ### Custom content area
 
@@ -351,7 +351,7 @@ Insert data tables, images and forms inside an accordion if needed.
 
 ![Layout and elements](accordion/layout-and-elements-17260-2348.png)
 
-_Figure: An Accordion component with three sections, each in an open state. Each section contains a header with a dropdown arrow and a content area that can include various layouts such as single large items, two smaller items side by side, or three smaller items in a row. The text mentions that any layout can be used within the content area, including data tables, images, and forms, and emphasizes the importance of ensuring the content is easily findable and usable._
+_Figure: Wireframe of three open accordion items, each with a grey header bar and an upward chevron, showing the content area layouts possible inside: the first has one wide purple block, the second two equal blocks side by side, the third three smaller blocks in a row._
 
 ### Accordion group
 
@@ -363,7 +363,7 @@ It immediately gives users a sense of what information is available in the accor
 
 ![Tip: open first accordion](accordion/tip-open-first-accordion-17993-7590.png)
 
-_Figure: An accordion component with three sections, where the first section is open and the others are closed. The open section is labeled "01. Teile ölen" and contains text instructions. The other sections are labeled "02. Seitenteile zusammenschrauben" and "03. Rahmen verschrauben". The accordion is in the medium size, has the expansion indicator on the right, is not flush, and is in the enabled state. The open first accordion provides users with an immediate sense of the available information, improving clarity and encouraging interaction._
+_Figure: Accordion group of three items where only the first, "01. Teile ölen", is open with an upward chevron, showing German instruction text and a photo of a man oiling a board at a workbench. The other two items, "02. Seitenteile zusammenschrauben" and "03. Rahmen verschrauben", are closed with downward chevrons._
 
 #### Amount of accordion elements
 
@@ -373,7 +373,7 @@ Users must easily navigate through open and closed accordions as content switche
 
 ![Amount of accordion elements](accordion/amount-of-accordion-elements-17993-7585.png)
 
-_Figure: An accordion component in a vertical layout on a mobile viewport. It shows multiple accordion elements in a closed state, demonstrating how they appear in a list. The text emphasizes keeping the list overview clear on mobile, avoiding long lists that exceed the viewport when closed, and ensuring easy navigation between open and closed accordions._
+_Figure: Wireframe of a mobile page with a header bar, a headline placeholder, an image placeholder and a list of accordion elements, each with a chevron on the right. Five accordions are closed, the sixth is open with its content area visible, and two more closed accordions follow, so the list is cut off at the bottom of the viewport._
 
 #### Don’t combine sizes.
 
@@ -383,7 +383,7 @@ Ideally, it is not even within the same viewport or page.
 
 ![Don’t combine sizes.](accordion/don-t-combine-sizes-18428-22293.png)
 
-_Figure: An accordion-group with a combination of medium and small accordion elements, labeled "Accordion Element M" and "Accordion Element S" respectively. The accordion elements are laid out vertically with expansion indicators on the right. The example is marked as a "Don't" because it combines small and medium accordions in the same group, which is not recommended._
+_Figure: Don't: a single accordion group stacks three "Accordion Element M" rows, then five smaller "Accordion Element S" rows, then another "Accordion Element M" row, each with a chevron on the right. Mixing medium and small accordions in the same group is wrong._
 
 #### Don’t nest accordions
 
@@ -391,7 +391,7 @@ Nesting accordions within other accordions is not allowed.
 
 ![Don’t nest accordions](accordion/don-t-nest-accordions-18428-22298.png)
 
-_Figure: An example of nested accordions, which is marked as a "Don't" example. It includes two accordion-single components, one with the expansion-indicator on the right and the other on the left. The first accordion is not expanded and contains another accordion within its content, demonstrating improper nesting. The text "Don't nest accordions" indicates that nesting accordions within other accordions is not allowed._
+_Figure: Don't: an accordion list with two closed "Summary of the accordion content" rows, then an open accordion "Title of accordion" containing lorem ipsum text and a "Show more" expandable section, followed by two more closed rows. Placing an accordion inside another accordion's content is not allowed._
 
 #### Layout type: content-heavy
 
@@ -401,7 +401,7 @@ Add a compelling headline above to convey the purpose of the accordion group.
 
 ![Layout type: content-heavy](accordion/layout-type-content-heavy-17462-2282.png)
 
-_Figure: An example of the Accordion component in the content-heavy layout type, marked as a "Do" example. It includes at least three accordions with a headline above them. This layout is recommended for conveying the purpose of the accordion group effectively._
+_Figure: Do: a wireframe of a content-heavy page with image and text placeholders and, further down, a small headline above a group of three closed accordions with chevrons on the right, followed by more content blocks. A content-heavy layout should use at least three accordions with a headline above that conveys the group's purpose._
 
 ### Accordion single
 
@@ -413,7 +413,7 @@ Mainly, use it when you have an extended content area but the title is very shor
 
 ![Expandable section](accordion/expandable-section-18722-8816.png)
 
-_Figure: An "expandable section," a variant of the single accordion component. The accordion is in an enabled state, medium size, with the expansion indicator positioned to the left of the title and is not expanded. The title is short, and the content area is extended. The example is marked as a "Do" because it correctly places the icon on the left of the title for an expandable section with a short title and extended content area. The text "Technical details" is shown as the title of the accordion._
+_Figure: Do: an expandable section in its closed state, with a small triangle icon on the left of the short title "Technical details". This variant of the single accordion puts the icon left of the title and suits an extended content area with a very short title._
 
 #### Layout type: content-heavy
 
@@ -421,7 +421,7 @@ Avoid using a single accordion in a text-heavy layout. It is crucial to ensure t
 
 ![Layout type: content-heavy](accordion/layout-type-content-heavy-18842-13688.png)
 
-_Figure: An example labeled "Don't" for the Accordion component in a content-heavy layout type. It illustrates a single accordion in a text-heavy layout, which is advised against. The text next to the figure emphasizes avoiding this design choice to prevent overlooking crucial information._
+_Figure: Don't: a wireframe of a text-heavy page with image and text placeholders and only one single accordion row, shown with a small triangle icon and a short bar, between large content blocks. A single accordion in a content-heavy layout is easily overlooked and should be avoided._
 
 #### Edge case: notification
 
@@ -431,7 +431,7 @@ Especially with warnings or errors, as information can be crucial.
 
 ![Edge case: notification](accordion/edge-case-notification-18443-9645.png)
 
-_Figure: An edge case of an accordion component in a notification layout. It includes a close-button of variant ghost, state enabled, size small, with no icon and hidden label, aligned flush. The accordion-single is of state enabled, size medium, with the expansion indicator on the left, not expanded, and flush alignment. There are two buttons: one labeled "Update now" of variant outline, state enabled, size small, and not flush aligned, and another labeled "Update later" of variant ghost, state enabled, size small, and not flush aligned. The notification text mentions that a new update is required, including essential features and fixes, with options to view a summary of features and fixes..._
+_Figure: Edge case: a yellow warning notification with a warning icon and a close button (ghost, small, icon-only) on the right. The text reads "A new update is required. It includes essential features and fixes. Please update now to continue using the service." Below it is a closed accordion with the left-placed triangle titled "Summary of features and fixes", then the buttons "Update now" (outline, small) and "Update later" (ghost, small). Use accordions in notifications with care, especially for warnings or errors, because the information can be crucial._
 
 ### Navigation
 
@@ -441,7 +441,7 @@ A single accordion can be used in the sidebar to expand and reveal the next leve
 
 ![Sidebar Navigation](accordion/sidebar-navigation-35782-5263.png)
 
-_Figure: A sidebar navigation component with an accordion in two states: expanded and collapsed. The accordion is labeled "Fleet Management" and contains items such as "Equipment," "Connected Hub," and "Energy Evaluation." When expanded, the "Equipment" section reveals "Filtered lists" with options "List 1," "List 2," "List 3," and an "Add filtered list" button. The collapsed state shows a condensed view of these items. The numbers indicate the count of filtered lists._
+_Figure: Two sidebar navigations side by side, with a dashed purple outline marking the accordion in each. Under "Accordion expanded" the "Filtered lists" accordion with a count badge of 3 is open and shows "List 1" (selected), "List 2", "List 3" and "Add filtered list" below "Equipment" and above "Connected Hub". Under "Accordion collapsed" only the "Filtered lists" row with badge 3 is shown, followed by "Connected Hub", "Energy Evaluation" and an "Organization" section with "Teams"; both sidebars start with the "Fleet Management" heading._
 
 ## Behavior
 
@@ -451,7 +451,7 @@ Avoid system feedback above or inside the accordion element that corresponds to 
 
 ![Avoid system feedback](accordion/avoid-system-feedback-18443-16974.png)
 
-_Figure: An accordion component in a medium size, with the expansion indicator on the left, not expanded, and not flush. The accordion displays a warning message "Some required fields are left empty" above the accordion summary titled "Summary of the accordion content". This is marked as a "Don't" example because it shows system feedback above the accordion element, which is advised against in the design system guidelines._
+_Figure: Don't: a red error icon with the message "Some required fields are left empty" is placed directly above a closed accordion titled "Summary of the accordion content". System feedback that relates to content inside the accordion should not be shown above or inside the accordion element._
 
 ### Focus management
 
@@ -459,7 +459,7 @@ Elements within the header are not focusable. The whole header has one focus.
 
 ![Focus management](accordion/focus-management-18443-9584.png)
 
-_Figure: An accordion component in a focused state, with the header entirely focusable and no individual elements within the header being focusable. The accordion is expanded, has a subtitle or hint, and the expansion indicator is positioned to the right. The text within the accordion reads "Summary of the accordion content" as the title, "Hint with a subtitle" as the hint, and a lorem ipsum paragraph as the content. The accordion is of medium size and is not flush with its surroundings._
+_Figure: An open medium accordion with a chevron pointing up on the right, a title "Summary of the accordion content" and a hint "Hint with a subtitle". One dark focus outline surrounds the whole header, showing that the header has a single focus and its inner elements are not focusable; a lorem ipsum paragraph is shown below as the content._
 
 ### The user is in control
 
@@ -467,7 +467,7 @@ The user must click/tap proactively to change the state. The system or system se
 
 ![The user is in control](accordion/the-user-is-in-control-17260-2438.png)
 
-_Figure: An accordion component in the "hover" state, medium size, with the expansion indicator positioned to the right. The accordion is not expanded and is not flush with its surroundings. The text "Summary of the accordion content" is visible, indicating the summary of the content that will be revealed when the accordion is expanded. A cursor icon is shown hovering over the text, demonstrating that the user must click or tap to change the state of the accordion._
+_Figure: A closed medium accordion in hover state with a grey background, the title "Summary of the accordion content" and a chevron pointing down on the right. A hand cursor sits over the title, showing that the user has to click or tap actively to change the state._
 
 ## Examples/Variants
 
@@ -477,7 +477,7 @@ Accordions in portals and platforms are great to reduce the visual clutter. The 
 
 ![SaaS (Software as a Service)](accordion/saas-software-as-a-service-18443-9640.png)
 
-_Figure: An Accordion component in a SaaS (Software as a Service) layout. It shows multiple collapsible sections with visible and hidden content, controlled by the user to manage interface visibility. The accordion includes expand and collapse indicators, with some sections expanded and others collapsed to reduce visual clutter._
+_Figure: Wireframe of a SaaS portal with an orange logo area in the top bar, a left navigation, a list of items with small green status squares, and a detail pane. In the detail pane a stack of accordions with chevrons on the right has one open accordion showing a small image and text placeholders, while the others are closed, which keeps the interface uncluttered._
 
 ### Content articles
 
@@ -485,7 +485,7 @@ Use accordions for step-by-step guides and other lists with additional details.
 
 ![Content articles](accordion/content-articles-17993-7600.png)
 
-_Figure: An accordion component in a medium size, with the expansion indicator on the right, and it is not expanded or flush. The accordion is used in a content article for a step-by-step guide titled "Content articles: Use accordions for step-by-step guides and other lists with additional details." Each numbered callout points to a step in the guide: "01. Bretter zurechtsägen," "02. Teile ölen," "03. Seitenteile zusammenschrauben," "04. Rahmen verschrauben," "05. Aussteifungen anbringen," "06. Latten anschrauben," "07. Erste Seitenwand festschrauben," "08. Bodenleiste festschrauben," "09. Zweite Seitenwand festschrauben." The text next to "02. Teile ölen" reads..._
+_Figure: A STIHL web page with a top bar ("Fachhandel finden", icons, "Produktsuche") above a step-by-step guide built from accordions with chevrons on the right. The steps are "01. Bretter zurechtsägen", "02. Teile ölen" (open, with an instruction text and a photo of a man oiling boards on a workbench), "03. Seitenteile zusammenschrauben", "04. Rahmen verschrauben" and "05. Aussteifungen anbringen", with further steps cut off below._
 
 ### Filter
 
@@ -493,7 +493,7 @@ A common use case for accordions is group filters in a [drawer component](https:
 
 ![Filter](accordion/filter-17993-7595.png)
 
-_Figure: An accordion component used for filtering options within a drawer. It includes various buttons with different variants, states, and sizes, such as a ghost button, a filled button labeled "Show results (34)", an outline button labeled "Clear selection", and a number-indicator. The layout features a search bar at the top, a list of filter categories like "Length", "Drive link gauge", "Saw chain pitch", and "Guide bars", along with navigation links and product information for the MS 180 chain saw. The number-indicator "34" next to "Show results" indicates the count of filtered results. The "Clear selection" button is disabled, suggesting no filters have been applied yet._
+_Figure: A STIHL service page for the MS 180 chain saw dimmed behind a "Filter and Sort" drawer on the right with a close button. The drawer holds closed accordions "Length" (with the hint "120cm"), "Drive link gauge", "Saw chain pitch" (with a number indicator "123") and "Guide bars", and at the bottom a filled button "Show results (34)" and an outline button "Clear selection" with an x icon._
 
 ### Extra spacing for drawers
 
@@ -505,4 +505,4 @@ Use extra spacing on the top and bottom. In this example, use the medium accordi
 
 ![Extra spacing for drawers](accordion/extra-spacing-for-drawers-17611-7090.png)
 
-_Figure: An accordion component in the STIHL Design System, specifically the medium variant. It illustrates extra spacing for drawers, showing measurements for the top and bottom spacing to ensure a sufficient click area. The layout includes a list of filter and sort options on the right side, with each option having ample space around it. The example demonstrates proper spacing to enhance readability and usability, ensuring users can skim and read the titles faster._
+_Figure: A STIHL service page for the MS 180 chain saw dimmed behind a "Filter and Sort" drawer on the right, with closed medium accordions "Sort by" (hint "Relevance"), "Length", "Drive link gauge", "Saw chain pitch", "Guide bars" and "Saw chains", and the buttons "Show results (34)" and "Clear selection" at the bottom. Light purple bands above and below each accordion mark the extra spacing at the top and bottom that gives the click area enough room._

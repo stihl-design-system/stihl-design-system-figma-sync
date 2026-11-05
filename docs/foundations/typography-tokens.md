@@ -14,7 +14,7 @@ figmaNodeId: 2154:911
 figmaVersion: "2256555008264774628"
 figmaVersionLabel: DS-1117 Design | 34em
 figmaVersionCreatedAt: 2025-08-26T11:13:29Z
-syncedAt: 2026-11-04T14:13:14.909Z
+syncedAt: 2026-11-05T21:31:29.431Z
 sourceUrl: https://www.figma.com/design/d9wrOp4aCplDsV9AVC87Xn?node-id=2154-911
 ---
 
@@ -28,7 +28,7 @@ A consistent usage of typography throughout all digital applications is essentia
 
 ![Typography: core tokens](typography-tokens/typography-core-tokens-2154-959.png)
 
-_Figure: A table of typography core tokens used in the STIHL Design System, detailing font family, weight, size, and line height. Each measurement label such as 10px, 12px, 14px, and so on, refers to the specific font size in pixels. The table includes rows for different font families like "family-display-title", "family-text", and "family-text-demi", each with corresponding values and examples. Additionally, it lists font weights like "weight-regular" and "weight-bold", along with their examples. The line height section provides various line height values in pixels, such as 16px, 20px, 24px, and so on. Measurements in the figure: 18px, 22px, 26px, 30px, 28px, 32px, 38px._
+_Figure: Four tables of typography core tokens, each with the columns Name, Value and Example. Family: family-display-title is STIHL Contraface Digital Display Title (example "AA"), family-text is STIHL Contraface Digital Text (example "Aa" in bold) and family-text-demi is STIHL Contraface Digital Text Demi (example "Aa"). Weight: weight-regular is Regular (examples "AA, Aa") and weight-bold is Bold (example "Aa"). Size: size-10 (10px), size-12 (12px), size-14 (14px), size-16 (16px), size-18 (18px), size-20 (20px), size-22 (22px), size-24 (24px), size-26 (26px) and size-30 (30px), with a light blue square growing with each value. Line height: line-height-16 (16px), line-height-20 (20px), line-height-24 (24px), line-height-28 (28px), line-height-32 (32px) and line-height-38 (38px), also with growing light blue squares._
 
 ### Contribute
 

@@ -14,7 +14,7 @@ figmaNodeId: 7:9014
 figmaVersion: "2402427732341939128"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-09-23T14:01:21Z
-syncedAt: 2026-11-04T14:14:45.470Z
+syncedAt: 2026-11-05T21:31:56.539Z
 sourceUrl: https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps?node-id=7-9014
 ---
 
@@ -30,7 +30,7 @@ Overview:
 
 ![Shadows](shadows/shadows-7-13445.png)
 
-_Figure: An overview of shadows in the STIHL Design System, detailing three shadow variants: shadow-m, shadow-m-hover, and shadow-l. Each variant lists usage examples, box-shadow values, and visual representations. The box-shadow values specify horizontal offset, vertical offset, blur radius, spread radius, and color with opacity. Shadow-m is used for elements above content, shadow-m-hover for link card hover states, and shadow-l for elements over or moving the content._
+_Figure: Table of three shadow tokens with the columns Name, Usage examples, Value and Look (a white square showing the shadow). shadow-m is used for Toast notifications, Input chips hover, Popover (Popup tip), Tooltip, Floating action buttons, Modal - Popup's (SSC) and Cards, with box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.08), 0px 1px 2px 0px rgba(0, 0, 0, 0.16). shadow-m-hover is used for Link Card hover, with box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.16), 0px 1px 2px 0px rgba(0, 0, 0, 0.20). shadow-l is used for Side Sheet / Bottom Sheet, Side Bar / Navigation, Modal - Flyout and Cookie banner, with box-shadow: 0px 8px 48px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px 0px rgba(0, 0, 0, 0.04), a larger and softer shadow._
 
 ### Contribute
 
@@ -48,7 +48,7 @@ While multiple elements may overlap, their use should remain minimal to avoid vi
 
 ![Shadow M](shadows/shadow-m-7-13574.png)
 
-_Figure: The Shadow M variant from the STIHL Design System, which is applied to elements like Toast Notifications to give them a slightly elevated appearance. The shadow helps in providing subtle visual emphasis without causing visual clutter. The example shown is a Toast Notification with a message "You're not allowed bar & chain finders" indicating restricted access._
+_Figure: Screenshot of the STIHL Service Communication (SSC) web application, a spare parts page for the MS 180 chain saw showing a Motor housing exploded diagram, with a purple frame highlighting a red error Toast notification at the top centre that reads You're not allowed and has a close button. The toast floats above the page header and navigation and carries Shadow M._
 
 ### Shadow M hover
 
@@ -58,7 +58,7 @@ This style is currently used for the Cards.
 
 ![Shadow M hover](shadows/shadow-m-hover-485-64.png)
 
-_Figure: A UI design system example featuring a card component with a hover state. The card is highlighted with a purple annotation circle at the bottom, indicating the area where the Shadow M hover style is applied. Callout 1 points to the card that demonstrates the hover effect, which is used to enhance interactive elements that cannot rely solely on fill color changes._
+_Figure: Screenshot of a STIHL website page with a search field and navigation, showing three story Cards in a row. A purple frame highlights the first Card, an Interview with Dr Michael Prochaska with a photo, teaser text and the tags People and Stories and Interview, which is in hover state with the mouse pointer on it and shows the Shadow M hover shadow. The other two cards, One lab for all with the tags Backstage and Background Story, are not hovered._
 
 ### Shadow L
 
@@ -66,4 +66,4 @@ Shadow L is used for elements that are clearly elevated above the main content l
 
 ![Shadow L](shadows/shadow-l-7-13649.png)
 
-_Figure: The use of Shadow L in a UI design system, specifically highlighting a sidebar component. Shadow L is applied to elements that are elevated above the main content or overlay other content. The sidebar in the image demonstrates this shadow effect, with a visible shadow around its edges to indicate elevation. The measurements refer to the shadow's spread and blur, emphasizing the visual separation from the main content layer._
+_Figure: Screenshot of the STIHL Service Communication (SSC) spare parts page for the MS 180 with a Motor housing diagram, overlaid on the right by a sidebar titled Alternate spare parts that lists Rapid Super 3 parts with availability, delivery dates, prices and an Added to picklist button. A purple frame highlights the sidebar, which sits over the content and carries Shadow L._

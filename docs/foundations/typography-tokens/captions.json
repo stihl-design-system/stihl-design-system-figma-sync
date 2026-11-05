@@ -1,7 +1,7 @@
 {
   "f1bcc0f1be6294c99bc8e39e15067a7300fe09e6c1906b5a66160c7198dee979": {
     "nodeId": "2154:959",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A table of typography core tokens used in the STIHL Design System, detailing font family, weight, size, and line height. Each measurement label such as 10px, 12px, 14px, and so on, refers to the specific font size in pixels. The table includes rows for different font families like \"family-display-title\", \"family-text\", and \"family-text-demi\", each with corresponding values and examples. Additionally, it lists font weights like \"weight-regular\" and \"weight-bold\", along with their examples. The line height section provides various line height values in pixels, such as 16px, 20px, 24px, and so on."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four tables of typography core tokens, each with the columns Name, Value and Example. Family: family-display-title is STIHL Contraface Digital Display Title (example \"AA\"), family-text is STIHL Contraface Digital Text (example \"Aa\" in bold) and family-text-demi is STIHL Contraface Digital Text Demi (example \"Aa\"). Weight: weight-regular is Regular (examples \"AA, Aa\") and weight-bold is Bold (example \"Aa\"). Size: size-10 (10px), size-12 (12px), size-14 (14px), size-16 (16px), size-18 (18px), size-20 (20px), size-22 (22px), size-24 (24px), size-26 (26px) and size-30 (30px), with a light blue square growing with each value. Line height: line-height-16 (16px), line-height-20 (20px), line-height-24 (24px), line-height-28 (28px), line-height-32 (32px) and line-height-38 (38px), also with growing light blue squares."
   }
 }

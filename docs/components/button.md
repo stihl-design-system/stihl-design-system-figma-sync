@@ -20,7 +20,7 @@ figmaNodeId: 162:126
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:19:44.788Z
+syncedAt: 2026-11-05T21:32:07.237Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=162-126
 ---
 
@@ -30,7 +30,7 @@ sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=162-126
 
 ![Button](button/button-168-3988.png)
 
-_Figure: Various states and variants of a button component in both light and dark themes. It includes button variants such as highlight, filled, outline, ghost (default), ghost (flush), and utility, each shown in states like enabled, hover/pressed, focus, disabled, disabled focus, and loading. Each button example illustrates different icon positions (none, left, right), label hiding options, and flush alignment settings. The figure provides a comprehensive visual guide to the button component's appearance and behavior across different conditions and themes._
+_Figure: Overview matrix of the Button component in a light theme (top) and a dark theme on a black background (bottom). Rows are the variants highlight, filled, outline, ghost (default), ghost (flush) and utility; columns are the states enabled, hover / pressed, focus, disabled, disabled focus and loading. Each cell shows medium and small buttons with no icon, an icon on the left, an icon on the right and an icon-only button, all labelled "Button", with spinner icons in the loading column._
 
 ## Overview
 
@@ -73,7 +73,7 @@ In this case keep in mind that there is no disabled and loading state, since the
 
 ![Anatomy](button/anatomy-1881-8630.png)
 
-_Figure: The anatomy of a Button component in the STIHL Design System. The button is of the highlight variant, enabled state, medium size, and has an icon position on the left. Callout 1 points to the Icon Left, callout 2 points to the Container, and callout 3 points to the Icon Right. The Button label is centered within the Container. The icons on the left and right are optional elements of the button's layout._
+_Figure: Anatomy of a highlight (orange) Button with a plus icon to the left of the label "Button Label". Callout 1 points at the left edge of the orange Container, callout 2 at the top edge of the Container above the label, and callout 3 at the plus icon, which is the optional Icon Left / Right._
 
 ### Variants
 
@@ -87,7 +87,7 @@ Use button variants to define visual emphasis, action hierarchy, and context.
 
 ![Variants](button/variants-1881-8266.png)
 
-_Figure: Five button variants: Highlight, Filled, Outline, Ghost, and Utility. Each button is in an enabled state, medium size, with no icon, visible label, and standard alignment except for the Utility button which has flush alignment. The numbered callouts point to each button variant in order from left to right: 1 points to the Highlight button, 2 to the Filled button, 3 to the Outline button, 4 to the Ghost button, and 5 to the Utility button._
+_Figure: The five button variants side by side from left to right, each with a numbered callout below it: 1 is Highlight (orange filled), 2 is Filled (dark filled), 3 is Outline (dark border, no fill), 4 is Ghost (text only, no container) and 5 is Utility (small blue text)._
 
 ### Size
 
@@ -105,7 +105,7 @@ For **Ghost Accent Buttons** the height is smaller, the button is flush and has 
 
 ![Size](button/size-1881-8664.png)
 
-_Figure: The size specifications for buttons in the STIHL Design System, detailing two sizes: medium and small. Each numbered callout points to a specific button variant and size: 1 points to a medium-sized highlight button with 24px top padding, 8px bottom padding, and 48px width, 2 points to a small-sized highlight button with 16px top padding, 8px bottom padding, and 32px width, 3 points to a medium-sized ghost flush button with -12px left and right padding, 4 points to a small-sized ghost flush button with -8px left and right padding, 5 points to a medium-sized ghost accent flush button with -4px left and right padding... Measurements in the figure: 20px, 10px._
+_Figure: Size specifications with redlines in six numbered rows, each button with a 16px icon. Callout 1 is the medium highlight Button, 48px high, with 24px padding at the left edge and 8px between icon and label; callout 2 is the small Button, 32px high, with 16px left padding and 8px between icon and label. Callout 3 is the medium "Ghost (flush)" button, 48px high, with -12px left offset and 8px gap; callout 4 is the small "Ghost (flush)", 32px high, with -8px offset and 8px gap. Callout 5 is the medium "Ghost Accent", 20px high, with -4px offset, 6px gap and a 12px icon; callout 6 is the small "Ghost Accent", 16px high, with -2px offset, 4px gap and a 10px icon._
 
 ### Icon
 
@@ -115,7 +115,7 @@ The text label can be hidden. Icon only buttons should only be used for function
 
 ![Icon](button/icon-1881-8732.png)
 
-_Figure: Three buttons, all of the filled variant, enabled state, and medium size. The first button has the text "Download" with an icon on the left, the second button has the text "See all products" with an icon on the right, and the third button is an icon-only button without a visible text label. The buttons demonstrate how icons can be placed to the left or right of the text label, or used alone for specific functions like closing a modal._
+_Figure: Three dark filled buttons in a row: "Download" with a download icon on the left, "See all products" with a chevron icon on the right, and an icon-only button with a close (X) icon and no label._
 
 ### Icon Placement
 
@@ -126,7 +126,7 @@ Icons can freely be placed in front of or after the label .
 
 ![Icon Placement](button/icon-placement-1881-6421.png)
 
-_Figure: Three ghost buttons of medium size, each with different icon placements. Callout 1 points to a button labeled "Anchor Link" with an icon on the left, and callout 2 points to a button labeled "Teaser Button" with an icon on the right. The text mentions that icons are typically placed to the left due to reading direction, but exceptions like the "Teaser Button" can have the icon on the right for specific use cases._
+_Figure: Ghost buttons with icon placement. Callout 1 points at the left-placed icons, the preferred position: "Anchor Link" with a down arrow and "Download" with a download icon, both before the label. Callout 2 points at "Teaser Button" with a chevron icon placed to the right of the label, the exception for specific use cases._
 
 ## Pairings and alignment
 
@@ -144,7 +144,7 @@ In case a hierarchy is not relevant, use a Outline oder Ghost button.
 
 ![Hierarchies](button/hierarchies-1908-6502.png)
 
-_Figure: The hierarchies of button components in a UI design system, specifying how different button variants should be paired. It displays three numbered callouts: the first callout points to combinations of Highlight with Filled, Outline, or Ghost buttons; the second callout points to combinations of Filled with Outline or Ghost buttons; the third callout points to a combination of Outline with Ghost button. Each button is shown in an enabled state and medium size, with the Ghost variant including a right-aligned icon. The layout demonstrates correct pairing semantics to indicate hierarchy, ensuring that in cases where hierarchy is not relevant, an Outline or Ghost button should be used._
+_Figure: Allowed button pairings by hierarchy. Callout 1: Highlight (orange) combined with Filled, with Outline and with Ghost. Callout 2: Filled (dark) combined with Outline and with Ghost. Callout 3: Outline combined with Ghost. The Ghost buttons have a chevron icon on the right._
 
 #### Horizontal pairing
 
@@ -157,7 +157,7 @@ When pairing buttons horizontally keep the following in mind:
 
 ![Horizontal pairing](button/horizontal-pairing-1883-9804.png)
 
-_Figure: Guidelines for horizontally pairing buttons in a UI design system. Each numbered callout demonstrates different scenarios: 1 shows two buttons, "Filled" and "Outline," with the same height of 48px, 2 shows buttons with varying widths based on content length labeled "y" and "x," 3 displays three buttons where two are "Outline" and one is "Filled," and 4 shows buttons with icons positioned consistently to the right. The measurements indicate that all buttons should have the same height, and their widths should adjust according to the content._
+_Figure: Four examples of horizontal button pairing. Callout 1: "Filled" and "Outline" buttons side by side, both with the same height of 48px. Callout 2: "Long content" and "Short" buttons whose widths follow the content, with the widths marked y and x. Callout 3: three buttons in a row, "Filled", "Outline" and "Outline", limited to two button types. Callout 4: "Filled" with a chevron and "Outline" with a download icon, both icons placed on the right._
 
 #### Vertical pairing
 
@@ -170,7 +170,7 @@ When pairing buttons **vertically** keep the following in mind:
 
 ![Vertical pairing](button/vertical-pairing-1912-6921.png)
 
-_Figure: Vertical pairing of buttons in a UI design system, showing different button variants and sizes. The measurements 48px and 32px refer to the heights of the medium and small buttons, respectively. Callout 1 points to a pair of buttons with different heights but equal widths, callout 2 shows buttons adapting to the longest content width, callout 3 demonstrates three vertically aligned buttons with equal widths, and callout 4 illustrates buttons with icons aligned to the right. The examples show correct button pairing by maintaining consistent widths and icon positions._
+_Figure: Four examples of vertical button pairing. Callout 1: a "Filled" button 48px high above a smaller "Outline" button 32px high, both of equal width. Callout 2: "Long content" above "Short", where the Short button stretches to the same width x as the long one, and next to it a ghost "Short" button with a chevron that keeps its own narrower width x instead of the width y of the long button (flush ghost exception). Callout 3: "Filled", "Outline" and "Outline" stacked with equal widths, limited to two button types. Callout 4: "Filled" with a chevron and "Outline" with a download icon stacked, both icons on the right._
 
 #### Spacing
 
@@ -178,7 +178,7 @@ _Figure: Vertical pairing of buttons in a UI design system, showing different bu
 
 ![Spacing](button/spacing-1883-9823.png)
 
-_Figure: Two buttons with different variants: a filled button and an outline button. The spacing between these buttons is labeled as 16px, indicating the minimum spacing required between or to the next element to optimize for mobile usability. The buttons are arranged horizontally and vertically, each maintaining a 16px gap from the adjacent button._
+_Figure: Minimum spacing between buttons. On the left a dark "Button" and an outline "Button" sit side by side with a 16px horizontal gap; on the right a dark "Button" is stacked above an outline "Button" with a vertical gap of 16._
 
 ### Alignment
 
@@ -190,7 +190,7 @@ For center alignment the default ghost button setting can be used **(2)**.
 
 ![Flush alignment for ghost buttons](button/flush-alignment-for-ghost-buttons-1923-7483.png)
 
-_Figure: Two layouts of buttons, including a filled button and ghost buttons. Callout 1 points to a layout where a ghost button labeled "Ghost flush" is aligned flush with a filled button labeled "Filled: Long content" to the left, demonstrating flush alignment for ghost buttons. Callout 2 points to a layout where a ghost button labeled "Ghost default" is centered below a filled button labeled "Filled: Long content," showing the default alignment for ghost buttons. The flush alignment is exclusive to ghost buttons and is used for visual alignment with other elements._
+_Figure: Alignment of ghost buttons below a grey content placeholder and a "Filled: Long content" button. Callout 1: on the left, "Ghost flush" with a chevron sits flush with the left edge of the content and the filled button; on the right, "Ghost flush" sits flush with the right edge, with purple guide lines marking the aligned edges. Callout 2: for centre alignment, "Ghost default" with a chevron is centred below the centred filled button and content, with a vertical centre guide line._
 
 #### Align buttons with the content
 
@@ -198,7 +198,7 @@ As a general rule make sure that the buttons are aligned with the content within
 
 ![Align buttons with the content](button/align-buttons-with-the-content-1912-7076.png)
 
-_Figure: Four examples of button alignment within a layout. Each example shows a button aligned differently: left, center, and right. The buttons are aligned with the content within a card-like layout, demonstrating proper alignment practices for UI design._
+_Figure: Four wireframe cards, each with a heading bar, a content block and orange button(s). In the first the orange button is aligned to the left edge of the content, in the second centred under the content, in the third aligned to the right edge of the content, with purple guide lines marking the alignment. In the fourth the content spans the full card width, an outline button sits at the left edge and an orange button at the right edge, both aligned to the content._
 
 #### Dialog or forms: align the primary button on the left
 
@@ -210,7 +210,7 @@ A secondary buttons would appear on the right or, if there is not enough space, 
 
 ![Dialog or forms: align the primary button on the left](button/dialog-or-forms-align-the-primary-button-on-the-left-1883-9885.png)
 
-_Figure: A dialog or form layout with a primary button aligned to the left. The primary button is positioned next to a secondary button, which is on the right. The primary button is aligned with the input fields within the form._
+_Figure: Wireframe of a dialog or form with several input field placeholders and a text area. Below the fields the orange primary button sits on the left, aligned with the left edge of the inputs, and a secondary outline button follows to its right._
 
 #### Flow or process: align the primary button on the right
 
@@ -222,7 +222,7 @@ A secondary buttons appears on the left.
 
 ![Flow or process: align the primary button on the right](button/flow-or-process-align-the-primary-button-on-the-right-1883-9903.png)
 
-_Figure: Two screens illustrating the layout of buttons in a UI design system. Each screen shows a primary button aligned to the right and a secondary button aligned to the left. The text explains that for multi-screen flows, the primary button should be on the right to indicate the next step, with a secondary button on the left. It also notes that this guideline may not apply to mobile and suggests usability testing for mobile products._
+_Figure: Two wireframe screens of a multi-step flow, each with a four-step stepper at the top (first step outlined, second step active, the rest inactive). In both, the secondary outline button is on the left and the orange primary button is on the right at the bottom, next to the content. The left screen is full width; the right one shows the same flow inside a smaller centred white panel with two columns of fields._
 
 **In case an iFrame is build into the webpage:** the buttons are aligned to the content elements and their grid. A good example therefore are the digital advisors.
 
@@ -230,7 +230,7 @@ _Figure: Two screens illustrating the layout of buttons in a UI design system. E
 
 ![Flow or process: align the primary button on the right](button/flow-or-process-align-the-primary-button-on-the-right-1883-9956.png)
 
-_Figure: The layout of buttons within an iFrame on a webpage, focusing on the alignment of the primary button to the right. The buttons are aligned according to the content elements and their grid, as exemplified by digital advisors. The callouts indicate different button states and their positions relative to the grid._
+_Figure: Wireframe of a page with a column grid overlay (red-tinted content columns on the left, blue-tinted columns on the right holding a vertical step list with four steps). Under the content blocks, a secondary outline button is aligned to the left edge of the content columns and an orange primary button to the right edge of the content columns, following the grid._
 
 #### Mobile: primary action at the top
 
@@ -238,7 +238,7 @@ It is recommended to lead with the primary button first on mobile devices, even 
 
 ![Mobile: primary action at the top](button/mobile-primary-action-at-the-top-1883-9997.png)
 
-_Figure: A mobile layout with two buttons: a primary action button labeled "Continue" and a secondary button labeled "Back". The "Continue" button is of the highlight variant, enabled state, medium size, and has no icon. The "Back" button is of the ghost variant, enabled state, medium size, with an icon positioned to the left. The primary action button is positioned at the top, followed by the secondary button below it._
+_Figure: Mobile layout with a grey content placeholder, a divider line, then a full-width orange highlight button "Continue" at the top, and below it a ghost button "Back" with a left-pointing chevron icon on its left._
 
 ## Foreground and background combinations
 
@@ -250,13 +250,13 @@ Buttons should only be used on plain backgrounds as following:
 
 ![Light mode](button/light-mode-1883-10642.png)
 
-_Figure: Various button variants in light mode against different background colors: white background, grey background, and orange background. The button variants shown are Highlight, Filled, Outline, Ghost, and Utility, all in an enabled state and medium size. Each button is labeled with its respective variant name, and the layout demonstrates how these buttons appear against contrasting backgrounds._
+_Figure: Buttons in light mode on three backgrounds. On the "white background" and the "grey background" the variants Highlight, Filled, Outline, Ghost and Utility are stacked vertically. On the "orange background" only the dark "Filled" button is shown._
 
 #### Dark mode
 
 ![Dark mode](button/dark-mode-12704-2147.png)
 
-_Figure: Buttons in dark mode against three different backgrounds: grey deep background, grey dark background, and orange background. It includes five button variants: Highlight, Filled, Outline, Ghost, and Utility, all shown in the enabled state and medium size. Each button variant is labeled with its respective text: Highlight, Filled, Outline, Ghost, and Utility._
+_Figure: Buttons in dark mode on three backgrounds. On the "grey deep background" (black) and the "grey dark background" the variants Highlight, Filled (light), Outline (light border), Ghost (white text) and Utility (light blue text) are stacked vertically. On the "orange background" only the light "Filled" button is shown._
 
 ### Images and other backgrounds
 
@@ -266,13 +266,13 @@ Button placement on images and not plain coloured backgrounds should be avoided.
 
 ![Light mode](button/light-mode-12704-2122.png)
 
-_Figure: Two buttons in light mode with an image background. The first button has the text "Highlight", is of the highlight variant, is enabled, is of medium size, has no icon, does not hide the label, and is not flush aligned. The second button has the text "Filled", is of the filled variant, is enabled, is of medium size, has no icon, does not hide the label, and is not flush aligned._
+_Figure: Light mode: two enabled, medium-size buttons without icons, stacked vertically on a photo of sunlit grass labeled "image background". The upper button is the orange highlight variant with the text "Highlight" in dark type, the lower one is the dark filled variant with the text "Filled" in white type._
 
 #### Dark mode
 
 ![Dark mode](button/dark-mode-1883-10667.png)
 
-_Figure: Two buttons in dark mode with an image background. One button is labeled "Highlight" with the variant highlight, and the other is labeled "Filled" with the variant filled. Both buttons are enabled, medium in size, have no icons, do not hide their labels, and do not have flush alignment._
+_Figure: Dark mode: two enabled, medium-size buttons without icons, stacked vertically on a photo of grass labeled "image background". The upper button is the orange highlight variant with the text "Highlight" in dark type, the lower one is the filled variant in white with the text "Filled" in dark type._
 
 ## Usage
 
@@ -293,11 +293,11 @@ Use the **Ghost Button** for standalone elements or spacious layouts where the b
 
 ![Ghost](button/ghost-55888-36280.png)
 
-_Figure: A Ghost Button variant within a UI design system, specifically in a popover layout. The Ghost Button labeled "Create Account" is shown alongside a filled button labeled "Log in." The layout includes various action items such as "Contact," "Dealer," "Wishlist," and "Cart," each with an icon and in an enabled state. A vertical divider separates these items from a utility menu aligned to the right, which includes an active anchor element labeled "Login" with a chevron icon. The Ghost Button is used to create visual hierarchy without adding too much weight, suitable for spacious layouts like banners, teasers, popovers, and cards._
+_Figure: Ghost Button used in a login popover of a web header. The header shows the enabled items "Contact", "Dealer", "Wishlist", "Cart" (with an orange badge showing 3), a vertical divider, "STIHL World" with a chevron and the active "Login" item with an up chevron. The opened popover below contains a dark filled button "Log in" and, beneath it, the ghost button "Create Account" as text only, followed by a divider and the list entries "My Orders", "My saved items" and "My reservations" with icons._
 
 ![Ghost](button/ghost-55977-33497.png)
 
-_Figure: A ghost button component with the text "Button" and an icon positioned to the right, in an enabled state and medium size. The layout includes vertical spacers with measurements of 40px and 24px, and a 16px measurement likely indicating the button's padding or margin. The text "Insights mollit esse" and "Efficiency excepteur quis" are headers and body text accompanying the button, illustrating its use within a content block._
+_Figure: Content teaser with the heading "INSIGHTS MOLLIT ESSE", a photo of a STIHL dealer counter on the left (two people looking at a tablet, orange "100% STIHL Service" badge) and on the right the subheading "Efficiency excepteur quis", a paragraph of placeholder text and a text-only ghost button labeled "Button" with a chevron icon on its right. Measurements in the figure: 40px, 24px, 16px._
 
 #### Utility Button
 
@@ -314,7 +314,7 @@ The accent color improves visibility and discoverability without turning the act
 
 ![Utility Button](button/utility-button-56400-3759.png)
 
-_Figure: Two Utility Buttons in a small size, both in an enabled state, with text labels "Change online seller" and "Change adress," respectively. Each button has an icon positioned to the right, the label is visible, and the buttons are aligned flush. The Utility Button is designed for dense or information-heavy UI layouts to provide more visual emphasis than a Ghost Button but less than a Highlight Button._
+_Figure: Product detail page for "MSA 220 C-B" with tabs, the price $906.99, an article selector, quantity stepper, orange "Add to cart" button, wishlist button, "Compare" checkbox and Pickup and Delivery options. Two Utility Buttons appear as small, enabled, blue text links with a pencil icon on the right, aligned flush: "Change adress" next to "Delivery to 12456" and "Change online seller" next to "Pickup at Taylor's Do it Center"._
 
 ## Content
 
@@ -327,7 +327,7 @@ _Figure: Two Utility Buttons in a small size, both in an enabled state, with tex
 
 ![Labels](button/labels-16187-3974.png)
 
-_Figure: A dialog component with a header and a footer, shown in a desktop viewport. The header contains the text "Are you sure you want to discard your changes?" and a close button. The footer includes two horizontally aligned buttons: "Discard changes" and "Return to editing," with "Discard changes" in the primary position on the left. The example is marked as a "Do" because it uses clear, concise, and action-oriented labels such as "Discard changes" and "Return to editing._
+_Figure: Do: a dialog titled "Are you sure you want to discard your changes?" with a close icon. Its two buttons, an outlined "Discard changes" on the left and a text-only "Return to editing" on the right, are correct because the labels are clear, concise and action-oriented, describing what will happen on click._
 
 **Don’t**
 
@@ -335,7 +335,7 @@ Avoid generic terms like "Yes" or "No".
 
 ![Labels](button/labels-16187-3987.png)
 
-_Figure: A dialog component with a header-dialog containing the text "Are you sure you want to discard your changes?" and a close button, and a footer-dialog with two buttons labeled "Yes" and "No" arranged horizontally. The example is marked as a "Don't" because it uses generic terms like "Yes" or "No", which should be avoided. The primary button position is on the left._
+_Figure: Don't: a dialog titled "Are you sure you want to discard your changes?" with a close icon and two buttons, a filled "Yes" on the left and an outlined "No" on the right. This is wrong because generic labels like "Yes" or "No" do not say what action the button performs._
 
 #### Sentence case
 
@@ -345,7 +345,7 @@ In some cases the label is a sentence - capitalize the first letter and use lowe
 
 ![Sentence case](button/sentence-case-1883-9719.png)
 
-_Figure: Two buttons, both of the filled variant, enabled state, medium size, and without icons. The first button has the text "Go to Timbersports page" and is labeled with callout 1, demonstrating sentence case with a proper noun. The second button has the text "Jetzt Dokument herunterladen" and is labeled with callout 2, showing sentence case in German where nouns are capitalized._
+_Figure: Two enabled, medium-size filled buttons without icons, stacked vertically. Callout 1 marks "Go to Timbersports page", where only the first letter and the proper name Timbersports are capitalized. Callout 2 marks the German "Jetzt Dokument herunterladen", where the noun Dokument is capitalized as required in German._
 
 #### Maximum character
 
@@ -358,7 +358,7 @@ For longer application the use of Ghost Buttons is recommended.
 
 ![Maximum character](button/maximum-character-1881-6403.png)
 
-_Figure: Two buttons of the filled variant in the enabled state and medium size. Callout 1 points to a button with 18 characters of text and no icon, while callout 2 points to a button with 16 characters of text and an icon positioned to the right. The measurements refer to the maximum number of characters recommended for buttons to prevent them from breaking into two lines._
+_Figure: Two enabled, medium-size filled buttons stacked vertically, each filled with the letter "m" to show the maximum label length. Callout 1 marks a button without icon holding 18 characters (the maximum), callout 2 marks a button with an icon on the right holding 16 characters (the maximum), so neither label breaks into two lines._
 
 #### Overflow
 
@@ -366,7 +366,7 @@ Although its not recommended, overflow can occur. [In this case use ghost button
 
 ![Overflow](button/overflow-1881-6413.png)
 
-_Figure: Two ghost buttons with the text "Example of a button with two lines." Both buttons are in the enabled state and medium size. One button has the icon positioned to the right of the text, while the other has the icon to the left. The text is aligned centered to the icon and does not exceed two lines. The buttons demonstrate how to handle text overflow in a UI design system, emphasizing the use of ghost buttons when overflow occurs._
+_Figure: Two enabled, medium-size ghost buttons with the text "Example of a button with two lines" wrapped onto two lines. In the left button the chevron icon sits to the right of the text, in the right button the chevron sits to the left of the text; in both the icon is vertically centered to the two-line text._
 
 ## Behavior
 
@@ -376,7 +376,7 @@ After interacting with a button: offer system feedback close to the button.
 
 ![System feedback](button/system-feedback-1881-6372.png)
 
-_Figure: A "button" labeled "Continue" with the variant "filled," state "enabled," size "medium," and no icon. Near the button, there is feedback text stating "Some required fields are left empty." The example is marked as a "Do" example, indicating that providing system feedback close to the button is the correct approach._
+_Figure: Do: an enabled, medium-size filled button with the text "Continue" and no icon. Directly above it, close to the button, a red warning icon and the system feedback text "Some required fields are left empty" are shown, which is correct because feedback after interacting with a button should appear near the button._
 
 ### Toast notification
 
@@ -386,13 +386,13 @@ After interacting with a button: in some cases, consider system feedback to the 
 
 ![Toast notification](button/toast-notification-1881-6387.png)
 
-_Figure: A toast notification component with the text "All files lorem ipsum" and a success icon, indicating a successful action. This toast notification is marked as a "Do" example, suggesting it is a correct implementation. The layout includes a green checkmark icon on the left, the text in the center, and a close button on the right._
+_Figure: Do: a green success toast notification with a green checkmark icon on the left, the text "All files lorem ipsum" in the center and a close icon on the right. It shows system feedback through a toast notification after a button interaction._
 
 ## Button Round
 
 ![Button Round](button/button-round-168-4061.png)
 
-_Figure: The Button Round component in both light and dark variants, displaying different states: enabled, hover / pressed, focus, disabled, disabled focus, and loading. Each variant shows two styles, highlight and filled, across these states. The layout is organized in a grid format, with rows representing the styles and columns representing the states._
+_Figure: Overview of the round button in two grids, "Button Round: light" on a light background and "Button Round: dark" on a black background. In each grid the columns are the states enabled, hover / pressed, focus, disabled, disabled focus and loading, and the rows are the styles highlight (orange) and filled (dark in light mode, white in dark mode). Every style is shown in a larger and a smaller size with an image icon; focus adds a ring around the circle, disabled and loading appear grey, and loading shows a spinner instead of the icon._
 
 ## Overview
 
@@ -421,7 +421,7 @@ The **Filled Round Button** is currently only used for the for the refresh actio
 
 ![Anatomy](button/anatomy-1932-8054.png)
 
-_Figure: The anatomy of a round button component in the STIHL Design System. Callout 1 points to the Container, and callout 2 points to the Icon. The button is in the highlight variant, enabled state, and small size._
+_Figure: Anatomy of a small, enabled, orange highlight round button with a plus icon. Callout 1 points at the circular container, callout 2 points at the icon in its center._
 
 ### Variants
 
@@ -432,7 +432,7 @@ Use different variants for different emphasis on the buttons.
 
 ![Variants](button/variants-1932-8064.png)
 
-_Figure: Two small round button variants from the STIHL Design System: a highlight variant and a filled variant, both in the enabled state. Callout 1 points to the highlight variant, and callout 2 points to the filled variant. These variants are used to convey different levels of emphasis on buttons._
+_Figure: Two enabled round buttons side by side. Callout 1 points at the orange highlight variant with a chevron icon, callout 2 points at the dark filled variant with a refresh icon; the variants give the buttons different emphasis._
 
 ### Size
 
@@ -445,7 +445,7 @@ Two sizes have been defined for round buttons:
 
 ![Size](button/size-50728-9838.png)
 
-_Figure: Two sizes of round buttons in the highlight variant and enabled state: a medium size button and a small size button. The measurement of 12px and 40px refers to the height and width of the medium size button, respectively, while 8px and 32px refer to the height and width of the small size button, respectively. Callout 1 points to the medium size button, and callout 2 points to the small size button._
+_Figure: Two orange highlight round buttons with an image icon, enabled. Callout 1 marks the medium button, 40px high, with a 12px measurement between the container edge and the icon. Callout 2 marks the small button, 32px high, with an 8px measurement between the container edge and the icon._
 
 ## Foreground and background combinations
 
@@ -457,13 +457,13 @@ Round buttons should only be used on plain backgrounds as following:
 
 ![Light mode](button/light-mode-1943-11505.png)
 
-_Figure: Two round buttons in light mode, each in a different variant and state, against white and grey backgrounds. The first button is of variant highlight, state enabled, and size small, while the second button is of variant filled, state enabled, and size small. The text labels "white background" and "grey background" indicate the different background colors used in the layout._
+_Figure: Light mode round buttons, small and enabled, on three backgrounds. On the "white background" and the "grey background" panels both an orange highlight button and a dark filled button are shown, stacked vertically. The third panel is solid orange and only shows the dark filled button, since an orange highlight button would not be visible there._
 
 #### Dark mode
 
 ![Dark mode](button/dark-mode-1943-11545.png)
 
-_Figure: Two round button variants, one highlighted and one filled, both in the enabled state and small size, against three different backgrounds: grey deep background, grey dark background, and orange background. Each background showcases the buttons' visibility and contrast. The text labels identify the background colors used in the dark mode examples._
+_Figure: Dark mode round buttons, small and enabled, on three backgrounds. On the "grey deep background" (black) and the "grey dark background" panels both an orange highlight button and a white filled button are shown, stacked vertically. The third panel, "orange background", only shows the white filled button._
 
 ### Images and other backgrounds
 
@@ -473,19 +473,19 @@ Round button placement on images and not plain coloured backgrounds should be av
 
 ![Light mode](button/light-mode-12983-4279.png)
 
-_Figure: Two round buttons in light mode with an image background. The first button is of variant highlight, state enabled, and size small, and the second button is of variant filled, state enabled, and size small. The text "image background" indicates that the buttons are placed over a background image._
+_Figure: Light mode round buttons, small and enabled, on a photo of grass labeled "image background". An orange highlight button sits above a dark filled button, both with an image icon._
 
 #### Dark mode
 
 ![Dark mode](button/dark-mode-12983-4300.png)
 
-_Figure: Two round buttons in dark mode with an image background. One button is of variant highlight, state enabled, and size small, and the other is of variant filled, state enabled, and size small. The buttons are placed over a blurred image background labeled "image background"._
+_Figure: Dark mode round buttons, small and enabled, on a photo of grass labeled "image background". An orange highlight button sits above a white filled button, both with an image icon._
 
 ## Floating Action Button
 
 ![Floating Action Button](button/floating-action-button-168-5140.png)
 
-_Figure: The Floating Action Button component in both light and dark variants, showing different states: enabled, hover/pressed, focus, disabled, disabled focus, and loading. It includes two sizes: default and small. Each state is visually represented for both light and dark themes, illustrating how the button appears under various conditions._
+_Figure: Matrix of the Floating Action Button in two blocks, Button Fab: light on a light background and Button Fab: dark on a black background. Each block has columns enabled, hover / pressed, focus, disabled, disabled focus and loading, and rows default and small. All buttons are round with a centered image icon; hover / pressed is shaded grey, focus and disabled focus have a thick outline ring, disabled is faded, and loading replaces the icon with a dotted spinner._
 
 ## Overview
 
@@ -508,7 +508,7 @@ A FAB is used when a certain action needs to be available at all time. It sticks
 
 ![Anatomy](button/anatomy-1943-11787.png)
 
-_Figure: The anatomy of a fab-light button component in the enabled state and medium size. Callout 1 points to the Container, and callout 2 points to the Icon. The layout shows the Icon positioned within the Container._
+_Figure: Anatomy of the fab-light button in the enabled state and medium size: a round white button with a plus icon. Callout 1 points at the Container, the white circle, and callout 2 points at the Icon, the plus sign centered inside it._
 
 ### Size
 
@@ -519,7 +519,7 @@ Two sizes have been defined for FABs:
 
 ![Size](button/size-1943-12094.png)
 
-_Figure: Two sizes of a Floating Action Button (FAB) component labeled as fab-light in the enabled state. Callout 1 points to the medium size FAB with a measurement of 56px, which is the default size used when the FAB hovers over all content. Callout 2 points to the small size FAB with a measurement of 32px, used when the FAB belongs to a specific module, such as a menu drawer in the sidebar navigation._
+_Figure: The two sizes of the fab-light button in the enabled state, each a round white button with an image icon. Callout 1 marks the medium size with a height of 56px, the default, mainly used when the FAB hovers over all content. Callout 2 marks the small size with a height of 32px, mainly used when the FAB belongs to a certain module such as the menu drawer of the sidebar navigation._
 
 ## Colour combinations
 
@@ -531,13 +531,13 @@ FABs can be on **all** **backgrounds** as shown below:
 
 ![Light mode](button/light-mode-1943-11932.png)
 
-_Figure: The fab-light component in the light mode with two states: enabled and two sizes: medium and small. The components are shown against four different backgrounds: white background, grey ultra-light background, image background, and orange background. Each background features both the medium and small fab-light components._
+_Figure: The fab-light button in the enabled state on four backgrounds, labeled white background, grey ultra-light background, image background (green grass photo) and orange background. Each background shows a medium white round button above a small white round button, both with an image icon._
 
 #### Dark mode
 
 ![Dark mode](button/dark-mode-1943-12013.png)
 
-_Figure: The fab-dark component in enabled states and two sizes, medium and small, against four different backgrounds: grey deep background, grey dark background, image background, and orange background. The layout shows two buttons in each background scenario, with the medium-sized button positioned above the small-sized button. The figure illustrates how the fab-dark component appears in various dark mode environments._
+_Figure: The fab-dark button in the enabled state on four backgrounds, labeled grey deep background (near black), grey dark background, image background (green grass photo) and orange background. Each background shows a medium black round button above a small black round button, both with a white image icon and a subtle light edge glow._
 
 ## Button Nav
 
@@ -556,7 +556,7 @@ Overview:
 
 ![Button Nav](button/button-nav-34553-28439.png)
 
-_Figure: The Button Nav component, a navigation-specific variant of the standard Button component, in various states: enabled, hover/pressed, focus, and disabled. It illustrates the component's appearance across two viewport sizes: XL/L and M/S, with icon positions labeled as none, left, and right. Each cell in the grid shows how the Button Nav looks in different states and configurations, demonstrating responsive typography and icon placement._
+_Figure: Matrix of the Button nav with columns enabled, hover / pressed, focus and disabled. Rows are grouped by viewport XL/L and viewport M/S, each with icon-position none, left and right, using the label Button nav with an image icon where applicable. Enabled is plain bold text, hover / pressed has a grey background, focus has a dark outline box, disabled is greyed out, and the M/S text is larger than the XL/L text._
 
 ### Further guidelines
 
@@ -586,7 +586,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Elements](button/elements-35507-13816.png)
 
-_Figure: A Button component with two variants, each labeled "Button nav". Both buttons are in an enabled state and are designed for large (l) and extra-large (xl) breakpoints. Callout 1 points to the Button Label in both variants. Callout 2 indicates the Icon Right, which is conditional and shown as a chevron icon, suggesting a navigation action like a dropdown. Callout 3 points to the Icon Left, which is optional and positioned to visually support the label depending on the context._
+_Figure: Two enabled Button nav examples for the l and xl breakpoints. The top one shows the label with an icon on its right, the bottom one shows an icon on the left of the label. Callout 1 points at the Button Label in both, callout 2 points at the Icon Right (conditional) in the top button, and callout 3 points at the Icon Left (optional) in the bottom button._
 
 #### Viewport Varaiant
 
@@ -597,7 +597,7 @@ Two sizes are defined for the navigation variant of the Button, based on breakpo
 
 ![Viewport Varaiant](button/viewport-varaiant-35507-13827.png)
 
-_Figure: The Viewport Variant of the Button component in the navigation style, showing two different sizes based on breakpoints. Callout number 1 points at the Button nav in the enabled state for breakpoints l & xl, optimized for visual hierarchy. Callout number 2 points at the Button nav in the enabled state for breakpoints s & m, adjusted for touch interaction and maintaining hierarchy within the Mobile Menu._
+_Figure: Two enabled Button nav labels without icons, one above the other. Callout 1 points at the smaller text for breakpoints l and xl, sized to create visual hierarchy within the navigation. Callout 2 points at the larger text for breakpoints s and m, used in the Mobile Menu with improved tap targets._
 
 ### States
 
@@ -612,7 +612,7 @@ Navigation items should never be shown in a **disabled state**. If loading is re
 
 ![States](button/states-35507-13837.png)
 
-_Figure: A button-nav component in three different states: enabled, hover/pressed, and focus. Each numbered callout points to a specific state of the button-nav: callout 1 indicates the enabled state, callout 2 indicates the hover/pressed state, and callout 3 indicates the focus state. The buttons are shown for the l + xl breakpoints and do not include an icon._
+_Figure: Three Button nav examples labeled Button nav, without an icon, for the l + xl breakpoints, in a row. Callout 1 points at the enabled state, plain bold text. Callout 2 points at the hover / pressed state, text on a grey background. Callout 3 points at the focus state, text inside a dark outline box._
 
 ## Content and Assets
 
@@ -630,7 +630,7 @@ Right-aligned icons are used to clarify the action triggered by the nav item. Th
 
 ![Icon Right](button/icon-right-35507-13854.png)
 
-_Figure: Three variants of the Button Nav component with right-aligned icons. Callout 1 points to a Button Nav with a Chevron Down icon, indicating the default state for a Dropdown Menu. Callout 2 points to a Button Nav with a Chevron Right icon, used for drilldown navigation in a Mobile Menu. Callout 3 points to a Button Nav with an External Link icon, signifying a link to an external page. The Button Nav in callout 1 is shown for larger breakpoints labeled l + xl, while the Button Nav in callout 2 is shown for smaller breakpoints labeled s + m._
+_Figure: Three Button nav examples with a right-aligned icon, stacked vertically. Callout 1 points at a chevron down icon (l + xl), the default for a Dropdown Menu that switches to chevron up when expanded. Callout 2 points at a larger chevron right icon (s + m), for drilldown navigation in a Mobile Menu. Callout 3 points at an external link icon, for a link to an external page._
 
 #### Icon Left
 
@@ -641,7 +641,7 @@ A left-aligned icon can be added before the label to support visual scanning and
 
 ![Icon Left](button/icon-left-35507-13865.png)
 
-_Figure: A button-nav component in the enabled state and for the l + xl breakpoints, featuring an icon aligned to the left of the label "Settings". The icon is used to support visual scanning and clarify the button's purpose. The text advises using the left-aligned icon sparingly and only when it provides meaningful context, and not to combine it with a right icon to avoid visual clutter._
+_Figure: A single enabled Button nav for the l + xl breakpoints with the label Settings and a gear icon placed to the left of the label. The icon supports visual scanning and clarifies the item's purpose; it should be used sparingly and not combined with a right icon._
 
 ## Usage
 
@@ -653,4 +653,4 @@ The primary use of the Button Nav variant is within the Nav Bar, as part of the 
 
 ![Nav Bar](button/nav-bar-35507-13876.png)
 
-_Figure: A Nav Bar component with a main variant for a large viewport. It includes a top-bar with two areas: one for the STIHL logo and another for a search bar labeled "Search Site." Below the top-bar, there are eight "Button nav" components arranged horizontally for navigation. Additionally, there are five icons labeled "Label" placed to the right of the search bar._
+_Figure: Nav Bar for a large viewport on a white background. The top bar contains the orange STIHL logo at the left, a rounded search field with the placeholder Search Site and a magnifier icon, and six small image icons with the caption Label, four grouped and two more after a thin vertical divider. Below a separator line, seven bold Button nav items sit in a horizontal row with no icons._

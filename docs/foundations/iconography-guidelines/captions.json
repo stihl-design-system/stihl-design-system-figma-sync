@@ -1,32 +1,32 @@
 {
   "1e2f692ed904536943d3e1cafffe1ec056940a83bfba7f8876dec7a6f7bcca8a": {
     "nodeId": "9899:675",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A button with the text \"Search\", an outline variant, enabled state, medium size, and an icon positioned to the left. The measurements \"x\" and \"½ x\" refer to the size of the icon and the required clear space around it, respectively. The clear space is maintained equally around the icon to ensure proper visibility and usability."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A rectangular outlined button containing a magnifying glass icon on the left and the bold text Search to its right. A vertical dimension marked x on the left shows the icon size, and a narrow dashed gap between the icon and the text is marked ½ x, meaning the clear space around the icon is half of the icon size."
   },
   "1eeb1cb47c1d28f46495ede29212ec60298532fbca4e3ed41ab2777dc7f30a0c": {
     "nodeId": "9863:51",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A magnifying glass icon at five different sizes, scaled proportionally. Each size represents different recommended dimensions for use in various UI components. The measurements 16 × 16px, 24 × 24px, 12 × 12px, 10 × 10px, and 8 × 8px refer to the pixel dimensions for default components, larger use cases, and small detailed use cases respectively. The text advises to always scale icons proportionally to maintain line consistency and to avoid overly large sizes to prevent icons from appearing coarse."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "The same dark magnifying glass icon shown five times in a row on a light background, scaled proportionally from very small on the left to large on the right, illustrating the recommended sizes 8 x 8px, 10 x 10px, 12 x 12px, 16 x 16px and 24 x 24px. The line thickness grows with the icon so the icon stays consistent and does not look coarse."
   },
   "47fd80c1de121357cbbe100f27c8394b696e87a14755395999cd0a2e5a2c4b8f": {
     "nodeId": "9899:682",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "An infinity symbol icon with blue dots around its perimeter. The blue dots likely indicate anchor points or nodes used for editing the icon's shape. The icon is filled with a solid black color and is set against a white background."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A large thick-lined black chainsaw icon, drawn diagonally with a handle loop at the upper left and a guide bar at the upper right, shown in vector edit mode. Small blue anchor points and bezier handles sit along its outline, as in a draft icon being created in the Figma Playground."
   },
   "577dfe1c5be1d29dbacd58868b6b4a18bf3804ce11cdc66ae8a5334604828361": {
     "nodeId": "9899:619",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Six Functional Icons arranged in two rows of three. Each icon features a minimal, low-detail style for use in UI components and digital interfaces. The icons from left to right, top to bottom, are: search, download, shopping cart, user, pencil, and email."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Six dark, minimal line-style Functional Icons on a light background in two rows of three: search (magnifying glass), download (arrow pointing down onto a line) and shopping cart in the top row, and user (person), paperclip and email (envelope) in the bottom row."
   },
   "6682d80c06e49f15aef86a555d14e03ab7ae08059a9003e88b54e4b96e32d315": {
     "nodeId": "9863:45",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Three icons: a speedometer, a speedometer with a prohibition sign over it, and a cloud with raindrops. These icons are examples of Functional Icons from the STIHL Design System. The speedometer icon represents speed or velocity, the speedometer with a prohibition sign indicates a restriction or limitation on speed, and the cloud with raindrops signifies rain or wet conditions."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three white pictograms, each inside a grey circle of a different size, on a background split into a darker grey left half and a lighter grey right half: a small speedometer gauge at the top left, a crossed-out pair of ear protection headphones at the top right, and a large cloud with two raindrops at the bottom centre."
   },
   "f264f07c07007c859d80c5a5ab53244bb06158db6efbf478db3ac91b55d29a34": {
     "nodeId": "9867:83",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A magnifying glass icon with a default size of 16 pixels by 16 pixels. The measurement labels indicate the width and height of the icon, both of which are 16 pixels. This icon is part of the Iconography Guidelines in the STIHL Design System and adheres to the specified design specifications, including a minimal style, low detail, and a square shape with a 1:1 aspect ratio."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A dark magnifying glass icon inside a thin square outline that marks its bounding box. A vertical dimension arrow on the left is labelled 16px for the icon height and a horizontal dimension arrow below is labelled 16px for the icon width, showing the default 1:1 size of 16 x 16px."
   }
 }

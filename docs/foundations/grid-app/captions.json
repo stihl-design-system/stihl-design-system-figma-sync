@@ -1,22 +1,22 @@
 {
   "39a4dca48b77ef26162a38a843ac917871a48596d005d14ac3d71627e793eae8": {
     "nodeId": "2692:5279",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A grid layout for an app, showing 8 columns with a gutter of 16px and a margin of 16px. The most used screen size is 360px. The grid width adjusts with the viewport size, and content areas within the grid define placement for content and modules."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "App grid shown as a strip of 8 light pink columns separated by white gutters, with a darker pink margin at the left and right edge. The labels below read: >> most used screen: 360px, gutter: 16px, margin: 16px, columns: 8."
   },
   "4732cb60d3c0722404b3844eb98c905ff7c7c037e01724d08d19558b049d8d58": {
     "nodeId": "2692:5902",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Different content areas within a grid layout for a UI design system. The grid includes four labeled areas: \"Full\" spans the entire screen width, \"Main\" aligns with the central grid columns, and \"First half\" and \"Sercond half\" divide the grid into two proportional segments. These areas define how content and modules can be placed within the grid for various layout needs."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Phone-shaped app grid with three stacked content area overlays. FULL (purple) spans the whole width including the margins, MAIN (orange) spans the columns between the margins, and FIRST HALF and SERCOND HALF (pink, spelled this way in the image) sit side by side, each covering half of the columns between the margins."
   },
   "7fff9a40ee6447f661cdac24f16ae9a035955b5aa4ca32e6f846ab1cedbd33cf": {
     "nodeId": "2692:6350",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The layout of a grid system used in a UI design. Callout 1 points to the Margins, which are the spaces separating the grid from the left and right edges and vary with the viewport size. Callout 2 points to the Columns, which are the areas designated for content placement and adjust based on the grid size. Callout 3 points to the Gutters, which are the fixed spaces between the columns that help separate the content and have consistent widths."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "App grid strip with three numbered callouts. Callout 1 points at the dark pink margin at the left edge, callout 2 points at a light pink column, and callout 3 points at a white gutter between two columns."
   },
   "d78bd21de62d60513da63231fe1e48d080a0d795d5d20702b8d604d8ea85dcee": {
     "nodeId": "2692:6260",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The recommended text width for body text in the STIHL Design System. It shows a text block with a maximum width of 544 pixels, which is derived from a base font size of 16 pixels multiplied by 34. This width ensures that body text does not exceed 80 characters per line, maintaining optimal readability. Headlines should match this width for visual consistency."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Sample block with a bold uppercase headline (LOREM IPSUM DOLOR SIT AMET CONSECTETUR.) above a four-line body paragraph, both aligned to the same width. A purple double-headed arrow below spans the full text width and is labelled 544px (16px*34)."
   }
 }

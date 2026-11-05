@@ -17,7 +17,7 @@ figmaNodeId: 9857:3242
 figmaVersion: "2418055142655843337"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T16:16:31Z
-syncedAt: 2026-11-05T19:18:54.797Z
+syncedAt: 2026-11-05T21:31:36.197Z
 sourceUrl: https://www.figma.com/design/U218NNP4OsipaHOtv5flns?node-id=9857-3242
 ---
 
@@ -39,7 +39,7 @@ All other categories can be found in the [STIHL Brand Portal](https://brandporta
 
 ![About STIHL Icons](iconography-guidelines/about-stihl-icons-9863-45.png)
 
-_Figure: Three icons: a speedometer, a speedometer with a prohibition sign over it, and a cloud with raindrops. These icons are examples of Functional Icons from the STIHL Design System. The speedometer icon represents speed or velocity, the speedometer with a prohibition sign indicates a restriction or limitation on speed, and the cloud with raindrops signifies rain or wet conditions._
+_Figure: Three white pictograms, each inside a grey circle of a different size, on a background split into a darker grey left half and a lighter grey right half: a small speedometer gauge at the top left, a crossed-out pair of ear protection headphones at the top right, and a large cloud with two raindrops at the bottom centre._
 
 ### Functional Icons
 
@@ -51,7 +51,7 @@ Use Functional Icons for all UI components and digital interfaces.
 
 ![Functional Icons](iconography-guidelines/functional-icons-9899-619.png)
 
-_Figure: Six Functional Icons arranged in two rows of three. Each icon features a minimal, low-detail style for use in UI components and digital interfaces. The icons from left to right, top to bottom, are: search, download, shopping cart, user, pencil, and email._
+_Figure: Six dark, minimal line-style Functional Icons on a light background in two rows of three: search (magnifying glass), download (arrow pointing down onto a line) and shopping cart in the top row, and user (person), paperclip and email (envelope) in the bottom row._
 
 ### Design Specifications
 
@@ -87,7 +87,7 @@ Icons should appear clean, balanced, and visually consistent with STIHL’s bran
 
 ![Design Specifications](iconography-guidelines/design-specifications-9867-83.png)
 
-_Figure: A magnifying glass icon with a default size of 16 pixels by 16 pixels. The measurement labels indicate the width and height of the icon, both of which are 16 pixels. This icon is part of the Iconography Guidelines in the STIHL Design System and adheres to the specified design specifications, including a minimal style, low detail, and a square shape with a 1:1 aspect ratio. Measurements in the figure: 16px._
+_Figure: A dark magnifying glass icon inside a thin square outline that marks its bounding box. A vertical dimension arrow on the left is labelled 16px for the icon height and a horizontal dimension arrow below is labelled 16px for the icon width, showing the default 1:1 size of 16 x 16px._
 
 ### Usage Guidelines
 
@@ -105,7 +105,7 @@ Recommended sizes:
 
 ![Scaling](iconography-guidelines/scaling-9863-51.png)
 
-_Figure: A magnifying glass icon at five different sizes, scaled proportionally. Each size represents different recommended dimensions for use in various UI components. The measurements 16 × 16px, 24 × 24px, 12 × 12px, 10 × 10px, and 8 × 8px refer to the pixel dimensions for default components, larger use cases, and small detailed use cases respectively. The text advises to always scale icons proportionally to maintain line consistency and to avoid overly large sizes to prevent icons from appearing coarse._
+_Figure: The same dark magnifying glass icon shown five times in a row on a light background, scaled proportionally from very small on the left to large on the right, illustrating the recommended sizes 8 x 8px, 10 x 10px, 12 x 12px, 16 x 16px and 24 x 24px. The line thickness grows with the icon so the icon stays consistent and does not look coarse._
 
 #### Protected Area
 
@@ -115,7 +115,7 @@ E.g., for a 16px icon, keep an 8px distance from adjacent elements.
 
 ![Protected Area](iconography-guidelines/protected-area-9899-675.png)
 
-_Figure: A button with the text "Search", an outline variant, enabled state, medium size, and an icon positioned to the left. The measurements "x" and "½ x" refer to the size of the icon and the required clear space around it, respectively. The clear space is maintained equally around the icon to ensure proper visibility and usability._
+_Figure: A rectangular outlined button containing a magnifying glass icon on the left and the bold text Search to its right. A vertical dimension marked x on the left shows the icon size, and a narrow dashed gap between the icon and the text is marked ½ x, meaning the clear space around the icon is half of the icon size._
 
 ### Need a Specific Icon?
 
@@ -129,7 +129,7 @@ If the icon you need is not available in the library, follow this process:
 
 ![Need a Specific Icon?](iconography-guidelines/need-a-specific-icon-9899-682.png)
 
-_Figure: An infinity symbol icon with blue dots around its perimeter. The blue dots likely indicate anchor points or nodes used for editing the icon's shape. The icon is filled with a solid black color and is set against a white background._
+_Figure: A large thick-lined black chainsaw icon, drawn diagonally with a handle loop at the upper left and a guide bar at the upper right, shown in vector edit mode. Small blue anchor points and bezier handles sit along its outline, as in a draft icon being created in the Figma Playground._
 
 ### Complete Icon Guidelines
 

@@ -16,7 +16,7 @@ figmaNodeId: 23527:3393
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:19:50.824Z
+syncedAt: 2026-11-05T21:32:11.338Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=23527-3393
 ---
 
@@ -34,7 +34,7 @@ Overview:
 
 ![Breadcrumb](breadcrumb/breadcrumb-23527-3837.png)
 
-_Figure: A breadcrumb component with two states: expanded and collapsed. In the expanded state, all navigation levels from "Home" to "Current" are visible, separated by slashes. In the collapsed state, intermediate levels are hidden behind a truncation button labeled with an ellipsis (...), showing only "Home", "Previous level", and "Current". The "home" link is always visible, as is the "current-page" link labeled "Current", which is in an active state. The "previous-page" link labeled "Previous level" is also always visible. The breadcrumb is designed to provide orientation within a website or application, with the layout always left-aligned and superior to the page title and content._
+_Figure: Two breadcrumbs inside a dashed purple outline. With "expanded: true" all levels are shown: "Home / Level 2 / Level 3 / Level 4 / Level 5 / Level 6 / Previous level / Current". With "expanded: false" the middle levels are replaced by a truncation button "...", giving "Home / ... / Previous level / Current"; in both, "Current" is underlined as the active page._
 
 ### Further guidelines
 
@@ -61,7 +61,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](breadcrumb/anatomy-23527-3856.png)
 
-_Figure: Two variants of the breadcrumb component, illustrating different states and layouts. The first breadcrumb shows a truncated list with a truncation button, while the second breadcrumb shows an expanded list of all levels. Callout 1 points to a standalone link labeled "Home," callout 2 points to the truncation button labeled "...", callout 3 points to a standalone link labeled "Previous level," and callout 4 points to the active standalone link labeled "Current." The breadcrumb components include dividers represented by "/", and various levels labeled "Level 2," "Level 3," "Level 4," "Level 5," and "Level 6._
+_Figure: Two breadcrumbs with numbered callouts. The upper one is truncated, "Home / ... / Previous level / Current", with 1 at "Home" (standalone link), 2 at the truncation button "...", 3 at the divider symbol "/" before "Current" and 4 at the active standalone link "Current". The lower one is fully expanded, "Home / Level 2 / Level 3 / Level 4 / Level 5 / Level 6 / Previous level / Current", with 1 at "Home", 3 at a divider symbol and 4 at "Current"._
 
 #### Exception: truncation button
 
@@ -71,7 +71,7 @@ _Figure: Two variants of the breadcrumb component, illustrating different states
 
 ![Exception: truncation button](breadcrumb/exception-truncation-button-24917-50541.png)
 
-_Figure: A breadcrumb component with a truncation button variant, showing how it handles truncation when there are many levels. The truncation button is a small ghost button with adjusted paddings to match the links and avoid layout shifts. Callout 1 points to the truncation button in a hover state, and callout 2 points to the truncation button in a focus state. The breadcrumb levels shown are "Home", "...", "Previous level", and "Current"._
+_Figure: Three truncated breadcrumbs, each "Home / ... / Previous level / Current", stacked vertically. The first shows the truncation button in its default state, callout 1 marks the second where the "..." button has a grey background and a hand cursor (hover), and callout 2 marks the third where the button has a dark rectangular outline (focus)._
 
 #### Show all links
 
@@ -81,7 +81,7 @@ _Figure: A breadcrumb component with a truncation button variant, showing how it
 
 ![Show all links](breadcrumb/show-all-links-23532-364.png)
 
-_Figure: A breadcrumb component with two states: truncated and expanded. Callout 1 points to the truncated state where links are hidden behind a button labeled with three dots "...", and callout 2 points to the expanded state where all links are shown. The breadcrumb shows levels labeled "Home", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "Previous level", and "Current", with the expanded state revealing all levels on click._
+_Figure: A truncated breadcrumb "Home / ... / Previous level / Current" marked with callout 1, where the "..." button is hovered with a hand cursor and a tooltip "Show all links". A purple arrow points down to the same breadcrumb marked with callout 2, now expanded to "Home / Level 2 / Level 3 / Level 4 / Level 5 / Level 6 / Previous level / Current"._
 
 #### Amount of links shown
 
@@ -93,7 +93,7 @@ _Figure: A breadcrumb component with two states: truncated and expanded. Callout
 
 ![Amount of links shown](breadcrumb/amount-of-links-shown-23532-310.png)
 
-_Figure: Two breadcrumb components. The first breadcrumb is at level 2, showing "Home / Level 2 / Previous level / Current" with all levels visible. The second breadcrumb is at level 6 and above, showing "Home / ... / Previous level / Current" with only the first and last two levels visible, and intermediate levels replaced by an ellipsis._
+_Figure: Two breadcrumbs. The upper one for levels 2 to 4 shows all four levels, "Home / Level 2 / Previous level / Current". The lower one for level 5 and above shows only the first and last two levels, "Home / ... / Previous level / Current", with a truncation button "..." in place of the hidden levels._
 
 ### Alignment
 
@@ -107,7 +107,7 @@ Note: This guidelines assumes a left-to-right reading direction.
 
 ![Left alignment](breadcrumb/left-alignment-23532-409.png)
 
-_Figure: A breadcrumb component with left alignment. The breadcrumb is positioned in the top left corner, below an implied main navigation, and above the page title and content. This layout is marked as a "Do" example because it follows the guideline of left alignment to reduce cognitive load, assuming a left-to-right reading direction._
+_Figure: Do: a browser window mockup with a breadcrumb of three placeholder links separated by slashes, aligned to the left edge in the top left corner below the browser bar and above the grey content block. A dashed vertical guide runs along the left edge shared by the breadcrumb and the content, showing that the breadcrumb is left aligned._
 
 #### Center alignment
 
@@ -115,7 +115,7 @@ A breadcrumb cannot be centered, as it is uncommon and goes against the mental m
 
 ![Center alignment](breadcrumb/center-alignment-24496-177.png)
 
-_Figure: A breadcrumb component with center alignment. This is marked as a "Don't" example because centering a breadcrumb is uncommon and does not align with the typical mental model of a breadcrumb. The text "/ " is shown to represent the breadcrumb items._
+_Figure: Don't: a browser window mockup with a breadcrumb of three placeholder links separated by slashes, centred horizontally above the grey content block. A dashed vertical guide through the middle of the window shows the breadcrumb is centred, which is wrong because it is uncommon and goes against the mental model of a breadcrumb._
 
 ## Content and Assets
 
@@ -126,7 +126,7 @@ _Figure: A breadcrumb component with center alignment. This is marked as a "Don'
 
 ![First and last link in the list](breadcrumb/first-and-last-link-in-the-list-23532-427.png)
 
-_Figure: A breadcrumb component at level 6, shown in an expanded state. The breadcrumb includes the following text elements: "Home", "/", "About STIHL", "International production and distribution", and "STIHL in Brazil". The text next to the figure warns that using full page titles as link labels in breadcrumbs can make them hard to comprehend._
+_Figure: Breadcrumb with four items separated by slashes: "Home", "About STIHL", "International production and distribution" and "STIHL in Brazil". The first link is "Home" and the last item, "STIHL in Brazil", is underlined as the current page. The long label "International production and distribution" is a full page title, which makes the breadcrumb hard to comprehend._
 
 ### Ideal length
 
@@ -135,7 +135,7 @@ _Figure: A breadcrumb component at level 6, shown in an expanded state. The brea
 
 ![Ideal length](breadcrumb/ideal-length-23527-3887.png)
 
-_Figure: A breadcrumb component in an expanded state. It shows a sequence of links labeled "Home", "Sustainability", and "Environmental protection", separated by slashes. The ideal length for each link label is specified as 1 or 2 words, with a maximum of 2-3 words. The last link, "Environmental protection", is underlined, indicating it is the current page._
+_Figure: Breadcrumb with three items separated by slashes: "Home", "Sustainability" and "Environmental protection", the last one underlined as the current page. Each label is short, one to two words, up to two to three words at most._
 
 ### Length warning
 
@@ -143,7 +143,7 @@ Full page titles as a link label might lead to breadcrumbs that are hard to comp
 
 ![Length warning](breadcrumb/length-warning-23532-445.png)
 
-_Figure: A breadcrumb component at level 6, shown in an expanded state. The breadcrumb includes the following text elements: "Home", "/", "About STIHL", "International production and distribution", and "STIHL in Brazil". The text next to the figure warns that using full page titles as link labels in breadcrumbs can make them hard to comprehend._
+_Figure: Breadcrumb with four items separated by slashes: "Home", "About STIHL", "International production and distribution" and "STIHL in Brazil". The first link is "Home" and the last item, "STIHL in Brazil", is underlined as the current page. The long label "International production and distribution" is a full page title, which makes the breadcrumb hard to comprehend._
 
 ### Always call home ‘Home’
 
@@ -151,7 +151,7 @@ Do not use marketing language in the breadcrumb. E.g. “The STIHL World” inst
 
 ![Always call home ‘Home’](breadcrumb/always-call-home-home-23711-3742.png)
 
-_Figure: A breadcrumb component in an expanded state with three items: "The STIHL World", "Sustainability", and "Environmental protection". The example is marked as a "Don't" because it uses marketing language "The STIHL World" instead of "Home". The design documentation advises against using marketing language in the breadcrumb._
+_Figure: Don't: a breadcrumb reading "The STIHL World", "Sustainability" and "Environmental protection" separated by slashes, the last one underlined as the current page. The first item uses marketing language; it should be called "Home"._
 
 ### Use of icons
 
@@ -161,7 +161,7 @@ _Figure: A breadcrumb component in an expanded state with three items: "The STIH
 
 ![Use of icons](breadcrumb/use-of-icons-23722-315.png)
 
-_Figure: A breadcrumb component in an expanded state with a simple hierarchical structure. It includes an icon leading the label "Home," followed by text labels "Level 2" and "Current," separated by slashes. The text explains that icons are permitted when paired with a label, must be placed before the label, and should only be used in simple hierarchical structures to avoid taking up too much space._
+_Figure: Breadcrumb with three items separated by slashes: "Home" with a small house icon in front of the label, then "Level 2", then "Current" underlined as the current page. The icon is leading and sits together with a label._
 
 ### Longer link lists
 
@@ -173,7 +173,7 @@ In some middle sized screens, it may be two lines.
 
 ![1 line on bigger screens](breadcrumb/1-line-on-bigger-screens-24995-651.png)
 
-_Figure: A breadcrumb component in its initial state on a bigger screen, ideally fitting within one line. The breadcrumb includes six levels of navigation, with the title "Title Component" shown in a large size. The text "Example with \>5 levels" indicates that the breadcrumb can handle more than five levels..._
+_Figure: STIHL website header on a wide screen with the logo, a search field "Search site", Kontakt and Login, a main navigation (Produkte, Ratgeber und Projekte, Services und Events, Lösungen für Profis) and a blue banner "Jetzt Cashback sichern mit dem Code "Cashback2024"". Below it the breadcrumb "Startseite / Ratgeber und Projekte / Gartenpflege / Heckenpflege / Buchsbaum-Formschnitt / Wie Sie einen Buchsbaum zur Spirale schneiden" fits on one line above the heading "TITLE COMPONENT". Caption: "Example with \>5 levels"._
 
 #### 2-3 lines on small devices
 
@@ -184,7 +184,7 @@ Ideally, the initial state of the breadcrumb navigation does not exceed two line
 
 ![2-3 lines on small devices](breadcrumb/2-3-lines-on-small-devices-23711-3749.png)
 
-_Figure: Two variants of the breadcrumb component in the STIHL Design System. The first example shows a breadcrumb with more than five levels, including "Startseite", "...", "Gartenpflege", and "Rasenpflege", demonstrating a state where the breadcrumb navigation exceeds two lines. The second example shows a breadcrumb with four levels, including "Startseite", "STIHL Technologie", "STIHL Akku-Technologie", and "STIHL Akku AP-System", illustrating a state where the breadcrumb navigation is expanded. The text indicates that ideally, the breadcrumb navigation should not exceed two lines, three lines are allowed, but four lines should be avoided._
+_Figure: Two mobile STIHL page headers with logo, Suche, Warenkorb and Menü, each showing a breadcrumb wrapped over multiple lines. Left, "Example with \>5 levels": "Startseite / ... / Gartenpflege /" on the first line and "Rasenpflege" underlined on the second. Right, "Example with 4 levels": "Startseite / STIHL Technologie /" then "STIHL Akku-Technologie /" then "STIHL Akku AP-System" underlined on a third line._
 
 ## Behavior
 
@@ -194,7 +194,7 @@ The browser tooltip explains the action to the user. This explanation is also pr
 
 ![Browser default tooltip](breadcrumb/browser-default-tooltip-23532-213.png)
 
-_Figure: A breadcrumb component with levels labeled "Home", "Chainsaws", and "MS 211", with an ellipsis indicating additional hidden links. The cursor is shown as a pointer over the ellipsis, triggering a browser default tooltip that says "Show all links". The tooltip explains the action to the user and is also accessible via screenreader. The breadcrumb is in a collapsed state with expanded set to false._
+_Figure: Collapsed breadcrumb "Home / ... / Chainsaws / MS 211" with the last item underlined as the current page. The mouse cursor, shown as a pointing hand, hovers over the ellipsis and a small browser default tooltip below it reads "Show all links"._
 
 ## Examples/Variants
 
@@ -206,7 +206,7 @@ Example: The longest expanded breadcrumb in the stihl.de advisory has six levels
 
 ![Complex navigation](breadcrumb/complex-navigation-23527-3897.png)
 
-_Figure: A breadcrumb component in a complex navigation structure with six levels, shown in both desktop and mobile viewports. The breadcrumb levels are expanded, and the title component is labeled "Title Component" with size xl. The text "Cashback sichern mit dem Code “Cashback2024”" is present in both views, along with navigation items such as "Produkte," "Ratgeber und Projekte," "Services und Events," and "Lösungen für Profis." The breadcrumb levels include "Startseite," "Gartenpflege," "Heckenpflege," "Buchsbaum-Formschnitt," and "Wie Sie einen Buchsbaum zur Spirale schneiden._
+_Figure: Breadcrumb on a stihl.de advisory page in a desktop view (top) and a mobile view (bottom), below the orange STIHL logo header and a blue "Cashback sichern mit dem Code “Cashback2024”" banner. The desktop navigation shows "Produkte", "Ratgeber und Projekte", "Services und Events" and "Lösungen für Profis". The expanded six-level breadcrumb "Startseite / Ratgeber und Projekte / Gartenpflege / Heckenpflege / Buchsbaum-Formschnitt / Wie Sie einen Buchsbaum zur Spirale schneiden" runs on one line on desktop, with the last level underlined as the current page, and wraps over four lines on mobile, above a "TITLE COMPONENT" heading of size xl._
 
 ### Simple navigation
 
@@ -216,4 +216,4 @@ In some cases it can still enhance navigation efficiency and offer context.
 
 ![Simple navigation](breadcrumb/simple-navigation-23532-440.png)
 
-_Figure: A breadcrumb component in a simple navigation layout. The breadcrumb trail includes the labels "Home", "Saw chain finder", and "Search results", with "Search results" highlighted to indicate the current page. The text next to the figure explains that in shallow navigation structures, a breadcrumb might be optional but can still improve navigation efficiency and provide context._
+_Figure: Breadcrumb in a shallow navigation structure on a STIHL Service Communication page with a search field and the menu items "Catalogue", "Bar & Chain Finders" and "Utilities". The breadcrumb reads "Home / Saw chain finder / Search results", with "Search results" underlined as the current page, and sits above the heading "Search for “MS 180” (34)", tabs for "Product variants", "Parts", "Documents" and "Support news", a "Sort by: Variant" dropdown and cards titled "Model plate MS 180"._

@@ -1,252 +1,252 @@
 {
   "1487a0c8000ee32d56d9a71e1ec9639b01f71834be044cce3ebac5e2b9c28522": {
     "nodeId": "1881:8630",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The anatomy of a Button component in the STIHL Design System. The button is of the highlight variant, enabled state, medium size, and has an icon position on the left. Callout 1 points to the Icon Left, callout 2 points to the Container, and callout 3 points to the Icon Right. The Button label is centered within the Container. The icons on the left and right are optional elements of the button's layout."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of a highlight (orange) Button with a plus icon to the left of the label \"Button Label\". Callout 1 points at the left edge of the orange Container, callout 2 at the top edge of the Container above the label, and callout 3 at the plus icon, which is the optional Icon Left / Right."
   },
   "25be7caaed29a797ea11c1ee5793f9e901e8ad2708b52a3fb167aad36fd7754b": {
     "nodeId": "1883:9823",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two buttons with different variants: a filled button and an outline button. The spacing between these buttons is labeled as 16px, indicating the minimum spacing required between or to the next element to optimize for mobile usability. The buttons are arranged horizontally and vertically, each maintaining a 16px gap from the adjacent button."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Minimum spacing between buttons. On the left a dark \"Button\" and an outline \"Button\" sit side by side with a 16px horizontal gap; on the right a dark \"Button\" is stacked above an outline \"Button\" with a vertical gap of 16."
   },
   "296835e616b505b25a2257e84ef7dc7a0b31a9009685d3da93db41c741f5df74": {
     "nodeId": "1881:8732",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Three buttons, all of the filled variant, enabled state, and medium size. The first button has the text \"Download\" with an icon on the left, the second button has the text \"See all products\" with an icon on the right, and the third button is an icon-only button without a visible text label. The buttons demonstrate how icons can be placed to the left or right of the text label, or used alone for specific functions like closing a modal."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three dark filled buttons in a row: \"Download\" with a download icon on the left, \"See all products\" with a chevron icon on the right, and an icon-only button with a close (X) icon and no label."
   },
   "2a95a92ff8a0a7312d19cd4a45474a63655c8521b53a7039bda37b312a1f0129": {
     "nodeId": "1883:9903",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two screens illustrating the layout of buttons in a UI design system. Each screen shows a primary button aligned to the right and a secondary button aligned to the left. The text explains that for multi-screen flows, the primary button should be on the right to indicate the next step, with a secondary button on the left. It also notes that this guideline may not apply to mobile and suggests usability testing for mobile products."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two wireframe screens of a multi-step flow, each with a four-step stepper at the top (first step outlined, second step active, the rest inactive). In both, the secondary outline button is on the left and the orange primary button is on the right at the bottom, next to the content. The left screen is full width; the right one shows the same flow inside a smaller centred white panel with two columns of fields."
   },
   "2e7bb51094ab585d8c9aa6fa9a60da6fefd5bed88346ed224d8485bff37bb3b6": {
     "nodeId": "1881:6413",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two ghost buttons with the text \"Example of a button with two lines.\" Both buttons are in the enabled state and medium size. One button has the icon positioned to the right of the text, while the other has the icon to the left. The text is aligned centered to the icon and does not exceed two lines. The buttons demonstrate how to handle text overflow in a UI design system, emphasizing the use of ghost buttons when overflow occurs."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two enabled, medium-size ghost buttons with the text \"Example of a button with two lines\" wrapped onto two lines. In the left button the chevron icon sits to the right of the text, in the right button the chevron sits to the left of the text; in both the icon is vertically centered to the two-line text."
   },
   "2f3ce4608e4e1c89fbcff6ab67a9620bf2e19f27326992417573a65bfb2c3e45": {
     "nodeId": "12983:4300",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two round buttons in dark mode with an image background. One button is of variant highlight, state enabled, and size small, and the other is of variant filled, state enabled, and size small. The buttons are placed over a blurred image background labeled \"image background\"."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Dark mode round buttons, small and enabled, on a photo of grass labeled \"image background\". An orange highlight button sits above a white filled button, both with an image icon."
   },
   "31b3e83e17e0afbacf8a437e7b75258750f823503563807a222469d686ea1b78": {
     "nodeId": "12704:2122",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two buttons in light mode with an image background. The first button has the text \"Highlight\", is of the highlight variant, is enabled, is of medium size, has no icon, does not hide the label, and is not flush aligned. The second button has the text \"Filled\", is of the filled variant, is enabled, is of medium size, has no icon, does not hide the label, and is not flush aligned."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Light mode: two enabled, medium-size buttons without icons, stacked vertically on a photo of sunlit grass labeled \"image background\". The upper button is the orange highlight variant with the text \"Highlight\" in dark type, the lower one is the dark filled variant with the text \"Filled\" in white type."
   },
   "33455ca164ab70f4c244676a05a9e86f1c343e5eb8871d226f15986b4a550d35": {
     "nodeId": "1923:7483",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two layouts of buttons, including a filled button and ghost buttons. Callout 1 points to a layout where a ghost button labeled \"Ghost flush\" is aligned flush with a filled button labeled \"Filled: Long content\" to the left, demonstrating flush alignment for ghost buttons. Callout 2 points to a layout where a ghost button labeled \"Ghost default\" is centered below a filled button labeled \"Filled: Long content,\" showing the default alignment for ghost buttons. The flush alignment is exclusive to ghost buttons and is used for visual alignment with other elements."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Alignment of ghost buttons below a grey content placeholder and a \"Filled: Long content\" button. Callout 1: on the left, \"Ghost flush\" with a chevron sits flush with the left edge of the content and the filled button; on the right, \"Ghost flush\" sits flush with the right edge, with purple guide lines marking the aligned edges. Callout 2: for centre alignment, \"Ghost default\" with a chevron is centred below the centred filled button and content, with a vertical centre guide line."
   },
   "3c8c00428a13553c4caa2ed2de7fdd19f57860e561a2e446e33bea1a1ada523a": {
     "nodeId": "168:3988",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Various states and variants of a button component in both light and dark themes. It includes button variants such as highlight, filled, outline, ghost (default), ghost (flush), and utility, each shown in states like enabled, hover/pressed, focus, disabled, disabled focus, and loading. Each button example illustrates different icon positions (none, left, right), label hiding options, and flush alignment settings. The figure provides a comprehensive visual guide to the button component's appearance and behavior across different conditions and themes."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview matrix of the Button component in a light theme (top) and a dark theme on a black background (bottom). Rows are the variants highlight, filled, outline, ghost (default), ghost (flush) and utility; columns are the states enabled, hover / pressed, focus, disabled, disabled focus and loading. Each cell shows medium and small buttons with no icon, an icon on the left, an icon on the right and an icon-only button, all labelled \"Button\", with spinner icons in the loading column."
   },
   "427e68becfb29581184ff85f47f332652da1e840fe4ef1be83f4d11a80d26f85": {
     "nodeId": "35507:13816",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A Button component with two variants, each labeled \"Button nav\". Both buttons are in an enabled state and are designed for large (l) and extra-large (xl) breakpoints. Callout 1 points to the Button Label in both variants. Callout 2 indicates the Icon Right, which is conditional and shown as a chevron icon, suggesting a navigation action like a dropdown. Callout 3 points to the Icon Left, which is optional and positioned to visually support the label depending on the context."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two enabled Button nav examples for the l and xl breakpoints. The top one shows the label with an icon on its right, the bottom one shows an icon on the left of the label. Callout 1 points at the Button Label in both, callout 2 points at the Icon Right (conditional) in the top button, and callout 3 points at the Icon Left (optional) in the bottom button."
   },
   "482877378d8f01575384cf2da206b33bc48236426837dc2dfb6d18a0053fb662": {
     "nodeId": "16187:3974",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A dialog component with a header and a footer, shown in a desktop viewport. The header contains the text \"Are you sure you want to discard your changes?\" and a close button. The footer includes two horizontally aligned buttons: \"Discard changes\" and \"Return to editing,\" with \"Discard changes\" in the primary position on the left. The example is marked as a \"Do\" because it uses clear, concise, and action-oriented labels such as \"Discard changes\" and \"Return to editing."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do: a dialog titled \"Are you sure you want to discard your changes?\" with a close icon. Its two buttons, an outlined \"Discard changes\" on the left and a text-only \"Return to editing\" on the right, are correct because the labels are clear, concise and action-oriented, describing what will happen on click."
   },
   "498cf1b380a9ad56a32379e3f91e10cc046259e30ce8a7192288f6b07ba4b5e2": {
     "nodeId": "12704:2147",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Buttons in dark mode against three different backgrounds: grey deep background, grey dark background, and orange background. It includes five button variants: Highlight, Filled, Outline, Ghost, and Utility, all shown in the enabled state and medium size. Each button variant is labeled with its respective text: Highlight, Filled, Outline, Ghost, and Utility."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Buttons in dark mode on three backgrounds. On the \"grey deep background\" (black) and the \"grey dark background\" the variants Highlight, Filled (light), Outline (light border), Ghost (white text) and Utility (light blue text) are stacked vertically. On the \"orange background\" only the light \"Filled\" button is shown."
   },
   "4df0ef5df02de3bcac9849290910a3e3f5cd9ebdf3d8c57e19fd8cbba7494840": {
     "nodeId": "1883:10667",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two buttons in dark mode with an image background. One button is labeled \"Highlight\" with the variant highlight, and the other is labeled \"Filled\" with the variant filled. Both buttons are enabled, medium in size, have no icons, do not hide their labels, and do not have flush alignment."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Dark mode: two enabled, medium-size buttons without icons, stacked vertically on a photo of grass labeled \"image background\". The upper button is the orange highlight variant with the text \"Highlight\" in dark type, the lower one is the filled variant in white with the text \"Filled\" in dark type."
   },
   "505d1bce46b75e8e353f5fc3753408d306b06a7e9117362293ee87eb300ea798": {
     "nodeId": "1881:8664",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The size specifications for buttons in the STIHL Design System, detailing two sizes: medium and small. Each numbered callout points to a specific button variant and size: 1 points to a medium-sized highlight button with 24px top padding, 8px bottom padding, and 48px width, 2 points to a small-sized highlight button with 16px top padding, 8px bottom padding, and 32px width, 3 points to a medium-sized ghost flush button with -12px left and right padding, 4 points to a small-sized ghost flush button with -8px left and right padding, 5 points to a medium-sized ghost accent flush button with -4px left and right padding..."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Size specifications with redlines in six numbered rows, each button with a 16px icon. Callout 1 is the medium highlight Button, 48px high, with 24px padding at the left edge and 8px between icon and label; callout 2 is the small Button, 32px high, with 16px left padding and 8px between icon and label. Callout 3 is the medium \"Ghost (flush)\" button, 48px high, with -12px left offset and 8px gap; callout 4 is the small \"Ghost (flush)\", 32px high, with -8px offset and 8px gap. Callout 5 is the medium \"Ghost Accent\", 20px high, with -4px offset, 6px gap and a 12px icon; callout 6 is the small \"Ghost Accent\", 16px high, with -2px offset, 4px gap and a 10px icon."
   },
   "53da51e03ce445477f60b500136626bf8825b7d4c3ef7b4f022b9bf56569ccd0": {
     "nodeId": "34553:28439",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The Button Nav component, a navigation-specific variant of the standard Button component, in various states: enabled, hover/pressed, focus, and disabled. It illustrates the component's appearance across two viewport sizes: XL/L and M/S, with icon positions labeled as none, left, and right. Each cell in the grid shows how the Button Nav looks in different states and configurations, demonstrating responsive typography and icon placement."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Matrix of the Button nav with columns enabled, hover / pressed, focus and disabled. Rows are grouped by viewport XL/L and viewport M/S, each with icon-position none, left and right, using the label Button nav with an image icon where applicable. Enabled is plain bold text, hover / pressed has a grey background, focus has a dark outline box, disabled is greyed out, and the M/S text is larger than the XL/L text."
   },
   "541f3f618b23aa7d81219ed196da4addd9f1a0830e4e4045104774312205a7fe": {
     "nodeId": "1912:6921",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Vertical pairing of buttons in a UI design system, showing different button variants and sizes. The measurements 48px and 32px refer to the heights of the medium and small buttons, respectively. Callout 1 points to a pair of buttons with different heights but equal widths, callout 2 shows buttons adapting to the longest content width, callout 3 demonstrates three vertically aligned buttons with equal widths, and callout 4 illustrates buttons with icons aligned to the right. The examples show correct button pairing by maintaining consistent widths and icon positions."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four examples of vertical button pairing. Callout 1: a \"Filled\" button 48px high above a smaller \"Outline\" button 32px high, both of equal width. Callout 2: \"Long content\" above \"Short\", where the Short button stretches to the same width x as the long one, and next to it a ghost \"Short\" button with a chevron that keeps its own narrower width x instead of the width y of the long button (flush ghost exception). Callout 3: \"Filled\", \"Outline\" and \"Outline\" stacked with equal widths, limited to two button types. Callout 4: \"Filled\" with a chevron and \"Outline\" with a download icon stacked, both icons on the right."
   },
   "5458e44631dae1521e950ca132cc26a0c83cf9bda594251ab016226485add3f4": {
     "nodeId": "35507:13865",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A button-nav component in the enabled state and for the l + xl breakpoints, featuring an icon aligned to the left of the label \"Settings\". The icon is used to support visual scanning and clarify the button's purpose. The text advises using the left-aligned icon sparingly and only when it provides meaningful context, and not to combine it with a right icon to avoid visual clutter."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A single enabled Button nav for the l + xl breakpoints with the label Settings and a gear icon placed to the left of the label. The icon supports visual scanning and clarifies the item's purpose; it should be used sparingly and not combined with a right icon."
   },
   "61249cd92bcb97ffcabdcf22a8758e69bfa6e4fc5fe6c04b12f72ea482353149": {
     "nodeId": "1943:11932",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The fab-light component in the light mode with two states: enabled and two sizes: medium and small. The components are shown against four different backgrounds: white background, grey ultra-light background, image background, and orange background. Each background features both the medium and small fab-light components."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "The fab-light button in the enabled state on four backgrounds, labeled white background, grey ultra-light background, image background (green grass photo) and orange background. Each background shows a medium white round button above a small white round button, both with an image icon."
   },
   "620d6d07f6db3ec01e9c0356321afc16d8d4b7b5c28eee5f0ba1d15fbd4dab69": {
     "nodeId": "1883:9956",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The layout of buttons within an iFrame on a webpage, focusing on the alignment of the primary button to the right. The buttons are aligned according to the content elements and their grid, as exemplified by digital advisors. The callouts indicate different button states and their positions relative to the grid."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Wireframe of a page with a column grid overlay (red-tinted content columns on the left, blue-tinted columns on the right holding a vertical step list with four steps). Under the content blocks, a secondary outline button is aligned to the left edge of the content columns and an orange primary button to the right edge of the content columns, following the grid."
   },
   "65fd2ec88435d2c99544232119697156aafd5fae2ee21526692f53a15c0724b0": {
     "nodeId": "1932:8054",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The anatomy of a round button component in the STIHL Design System. Callout 1 points to the Container, and callout 2 points to the Icon. The button is in the highlight variant, enabled state, and small size."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of a small, enabled, orange highlight round button with a plus icon. Callout 1 points at the circular container, callout 2 points at the icon in its center."
   },
   "6db931744690030a67d4a27c38db04856a2ea15ca9645ed22e9244276823b638": {
     "nodeId": "35507:13837",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A button-nav component in three different states: enabled, hover/pressed, and focus. Each numbered callout points to a specific state of the button-nav: callout 1 indicates the enabled state, callout 2 indicates the hover/pressed state, and callout 3 indicates the focus state. The buttons are shown for the l + xl breakpoints and do not include an icon."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three Button nav examples labeled Button nav, without an icon, for the l + xl breakpoints, in a row. Callout 1 points at the enabled state, plain bold text. Callout 2 points at the hover / pressed state, text on a grey background. Callout 3 points at the focus state, text inside a dark outline box."
   },
   "6f6c672d2d3afbc3f2e091affc456003ba4287ee1d1421882a8fb946b3876dc3": {
     "nodeId": "1883:9997",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A mobile layout with two buttons: a primary action button labeled \"Continue\" and a secondary button labeled \"Back\". The \"Continue\" button is of the highlight variant, enabled state, medium size, and has no icon. The \"Back\" button is of the ghost variant, enabled state, medium size, with an icon positioned to the left. The primary action button is positioned at the top, followed by the secondary button below it."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Mobile layout with a grey content placeholder, a divider line, then a full-width orange highlight button \"Continue\" at the top, and below it a ghost button \"Back\" with a left-pointing chevron icon on its left."
   },
   "77b6526c9cd558d625fbbaa97b8ad4e5b9998f5de4eecb838de05228c7704b9d": {
     "nodeId": "50728:9838",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two sizes of round buttons in the highlight variant and enabled state: a medium size button and a small size button. The measurement of 12px and 40px refers to the height and width of the medium size button, respectively, while 8px and 32px refer to the height and width of the small size button, respectively. Callout 1 points to the medium size button, and callout 2 points to the small size button."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two orange highlight round buttons with an image icon, enabled. Callout 1 marks the medium button, 40px high, with a 12px measurement between the container edge and the icon. Callout 2 marks the small button, 32px high, with an 8px measurement between the container edge and the icon."
   },
   "7bfb81cd108ad4d32f0da7fb4fc99f75f24d3a93183c7b41e5a85a91e9102ed8": {
     "nodeId": "12983:4279",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two round buttons in light mode with an image background. The first button is of variant highlight, state enabled, and size small, and the second button is of variant filled, state enabled, and size small. The text \"image background\" indicates that the buttons are placed over a background image."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Light mode round buttons, small and enabled, on a photo of grass labeled \"image background\". An orange highlight button sits above a dark filled button, both with an image icon."
   },
   "7da37d51ccc23b6d3752e5fea78c4b4aa747f4c01113fbbdb17d17901e626e4f": {
     "nodeId": "1883:9804",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Guidelines for horizontally pairing buttons in a UI design system. Each numbered callout demonstrates different scenarios: 1 shows two buttons, \"Filled\" and \"Outline,\" with the same height of 48px, 2 shows buttons with varying widths based on content length labeled \"y\" and \"x,\" 3 displays three buttons where two are \"Outline\" and one is \"Filled,\" and 4 shows buttons with icons positioned consistently to the right. The measurements indicate that all buttons should have the same height, and their widths should adjust according to the content."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four examples of horizontal button pairing. Callout 1: \"Filled\" and \"Outline\" buttons side by side, both with the same height of 48px. Callout 2: \"Long content\" and \"Short\" buttons whose widths follow the content, with the widths marked y and x. Callout 3: three buttons in a row, \"Filled\", \"Outline\" and \"Outline\", limited to two button types. Callout 4: \"Filled\" with a chevron and \"Outline\" with a download icon, both icons placed on the right."
   },
   "7e7f2af4db437d13ce1329ff282b6407fc05b9fde218fe530d93372dfaaeb8da": {
     "nodeId": "16187:3987",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A dialog component with a header-dialog containing the text \"Are you sure you want to discard your changes?\" and a close button, and a footer-dialog with two buttons labeled \"Yes\" and \"No\" arranged horizontally. The example is marked as a \"Don't\" because it uses generic terms like \"Yes\" or \"No\", which should be avoided. The primary button position is on the left."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't: a dialog titled \"Are you sure you want to discard your changes?\" with a close icon and two buttons, a filled \"Yes\" on the left and an outlined \"No\" on the right. This is wrong because generic labels like \"Yes\" or \"No\" do not say what action the button performs."
   },
   "7f44332e032a03902790031ae3940c8144e8a4421d448f4df6beb7659709bad4": {
     "nodeId": "1883:9719",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two buttons, both of the filled variant, enabled state, medium size, and without icons. The first button has the text \"Go to Timbersports page\" and is labeled with callout 1, demonstrating sentence case with a proper noun. The second button has the text \"Jetzt Dokument herunterladen\" and is labeled with callout 2, showing sentence case in German where nouns are capitalized."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two enabled, medium-size filled buttons without icons, stacked vertically. Callout 1 marks \"Go to Timbersports page\", where only the first letter and the proper name Timbersports are capitalized. Callout 2 marks the German \"Jetzt Dokument herunterladen\", where the noun Dokument is capitalized as required in German."
   },
   "821abfe4923643b04612874d6646943c6aa907d9926bbf441fb22e268802ef99": {
     "nodeId": "1943:12094",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two sizes of a Floating Action Button (FAB) component labeled as fab-light in the enabled state. Callout 1 points to the medium size FAB with a measurement of 56px, which is the default size used when the FAB hovers over all content. Callout 2 points to the small size FAB with a measurement of 32px, used when the FAB belongs to a specific module, such as a menu drawer in the sidebar navigation."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "The two sizes of the fab-light button in the enabled state, each a round white button with an image icon. Callout 1 marks the medium size with a height of 56px, the default, mainly used when the FAB hovers over all content. Callout 2 marks the small size with a height of 32px, mainly used when the FAB belongs to a certain module such as the menu drawer of the sidebar navigation."
   },
   "85f8e09a4cf9d43fc58d5a638152aa34e0a0c18d8b9f693cb32f289e66b84726": {
     "nodeId": "1943:12013",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The fab-dark component in enabled states and two sizes, medium and small, against four different backgrounds: grey deep background, grey dark background, image background, and orange background. The layout shows two buttons in each background scenario, with the medium-sized button positioned above the small-sized button. The figure illustrates how the fab-dark component appears in various dark mode environments."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "The fab-dark button in the enabled state on four backgrounds, labeled grey deep background (near black), grey dark background, image background (green grass photo) and orange background. Each background shows a medium black round button above a small black round button, both with a white image icon and a subtle light edge glow."
   },
   "860bd8822f85e1439bd2945dfb54df541fdb6f4a1480ca8cf8ef5340239bd7c5": {
     "nodeId": "1912:7076",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Four examples of button alignment within a layout. Each example shows a button aligned differently: left, center, and right. The buttons are aligned with the content within a card-like layout, demonstrating proper alignment practices for UI design."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four wireframe cards, each with a heading bar, a content block and orange button(s). In the first the orange button is aligned to the left edge of the content, in the second centred under the content, in the third aligned to the right edge of the content, with purple guide lines marking the alignment. In the fourth the content spans the full card width, an outline button sits at the left edge and an orange button at the right edge, both aligned to the content."
   },
   "86a10b2e0e5486c5132096560516d9f7e96551332be38fe8f2a74cbacb745e94": {
     "nodeId": "1881:6421",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Three ghost buttons of medium size, each with different icon placements. Callout 1 points to a button labeled \"Anchor Link\" with an icon on the left, and callout 2 points to a button labeled \"Teaser Button\" with an icon on the right. The text mentions that icons are typically placed to the left due to reading direction, but exceptions like the \"Teaser Button\" can have the icon on the right for specific use cases."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Ghost buttons with icon placement. Callout 1 points at the left-placed icons, the preferred position: \"Anchor Link\" with a down arrow and \"Download\" with a download icon, both before the label. Callout 2 points at \"Teaser Button\" with a chevron icon placed to the right of the label, the exception for specific use cases."
   },
   "8aafe8ec4cccd1d6ff7b0f4b80bc1c9d6095911b2ce866f5c309ccf1abbfba9d": {
     "nodeId": "1881:6372",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A \"button\" labeled \"Continue\" with the variant \"filled,\" state \"enabled,\" size \"medium,\" and no icon. Near the button, there is feedback text stating \"Some required fields are left empty.\" The example is marked as a \"Do\" example, indicating that providing system feedback close to the button is the correct approach."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do: an enabled, medium-size filled button with the text \"Continue\" and no icon. Directly above it, close to the button, a red warning icon and the system feedback text \"Some required fields are left empty\" are shown, which is correct because feedback after interacting with a button should appear near the button."
   },
   "9869f0a8e99e6df96b13453e0218b30e0a10205add021c2429ba160395f5e1d4": {
     "nodeId": "168:5140",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The Floating Action Button component in both light and dark variants, showing different states: enabled, hover/pressed, focus, disabled, disabled focus, and loading. It includes two sizes: default and small. Each state is visually represented for both light and dark themes, illustrating how the button appears under various conditions."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Matrix of the Floating Action Button in two blocks, Button Fab: light on a light background and Button Fab: dark on a black background. Each block has columns enabled, hover / pressed, focus, disabled, disabled focus and loading, and rows default and small. All buttons are round with a centered image icon; hover / pressed is shaded grey, focus and disabled focus have a thick outline ring, disabled is faded, and loading replaces the icon with a dotted spinner."
   },
   "9cc0cef5d8895488085908dd1c855e16db23f13827bad52d27d1219cc9425b69": {
     "nodeId": "1943:11787",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The anatomy of a fab-light button component in the enabled state and medium size. Callout 1 points to the Container, and callout 2 points to the Icon. The layout shows the Icon positioned within the Container."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the fab-light button in the enabled state and medium size: a round white button with a plus icon. Callout 1 points at the Container, the white circle, and callout 2 points at the Icon, the plus sign centered inside it."
   },
   "9d98b4a1e6b3bdfc4ceec51a5da436bb373aaa7d0bfcb2a533235709f3358527": {
     "nodeId": "55888:36280",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A Ghost Button variant within a UI design system, specifically in a popover layout. The Ghost Button labeled \"Create Account\" is shown alongside a filled button labeled \"Log in.\" The layout includes various action items such as \"Contact,\" \"Dealer,\" \"Wishlist,\" and \"Cart,\" each with an icon and in an enabled state. A vertical divider separates these items from a utility menu aligned to the right, which includes an active anchor element labeled \"Login\" with a chevron icon. The Ghost Button is used to create visual hierarchy without adding too much weight, suitable for spacious layouts like banners, teasers, popovers, and cards."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Ghost Button used in a login popover of a web header. The header shows the enabled items \"Contact\", \"Dealer\", \"Wishlist\", \"Cart\" (with an orange badge showing 3), a vertical divider, \"STIHL World\" with a chevron and the active \"Login\" item with an up chevron. The opened popover below contains a dark filled button \"Log in\" and, beneath it, the ghost button \"Create Account\" as text only, followed by a divider and the list entries \"My Orders\", \"My saved items\" and \"My reservations\" with icons."
   },
   "a694a1f94d3859bc7ef10ffb518c1ebb39232f4240cb91bb12fdaadc9bf3eba7": {
     "nodeId": "1883:10642",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Various button variants in light mode against different background colors: white background, grey background, and orange background. The button variants shown are Highlight, Filled, Outline, Ghost, and Utility, all in an enabled state and medium size. Each button is labeled with its respective variant name, and the layout demonstrates how these buttons appear against contrasting backgrounds."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Buttons in light mode on three backgrounds. On the \"white background\" and the \"grey background\" the variants Highlight, Filled, Outline, Ghost and Utility are stacked vertically. On the \"orange background\" only the dark \"Filled\" button is shown."
   },
   "aa5f633fac103637fa5d82e74f996dc29e3865435b75eb17d73f8e769b6cbb8f": {
     "nodeId": "1881:8266",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Five button variants: Highlight, Filled, Outline, Ghost, and Utility. Each button is in an enabled state, medium size, with no icon, visible label, and standard alignment except for the Utility button which has flush alignment. The numbered callouts point to each button variant in order from left to right: 1 points to the Highlight button, 2 to the Filled button, 3 to the Outline button, 4 to the Ghost button, and 5 to the Utility button."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "The five button variants side by side from left to right, each with a numbered callout below it: 1 is Highlight (orange filled), 2 is Filled (dark filled), 3 is Outline (dark border, no fill), 4 is Ghost (text only, no container) and 5 is Utility (small blue text)."
   },
   "ba78380b88c7630e49c7e2d592613f761ecf3f7c89c169da0e5cccd7c4cf638a": {
     "nodeId": "35507:13854",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Three variants of the Button Nav component with right-aligned icons. Callout 1 points to a Button Nav with a Chevron Down icon, indicating the default state for a Dropdown Menu. Callout 2 points to a Button Nav with a Chevron Right icon, used for drilldown navigation in a Mobile Menu. Callout 3 points to a Button Nav with an External Link icon, signifying a link to an external page. The Button Nav in callout 1 is shown for larger breakpoints labeled l + xl, while the Button Nav in callout 2 is shown for smaller breakpoints labeled s + m."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three Button nav examples with a right-aligned icon, stacked vertically. Callout 1 points at a chevron down icon (l + xl), the default for a Dropdown Menu that switches to chevron up when expanded. Callout 2 points at a larger chevron right icon (s + m), for drilldown navigation in a Mobile Menu. Callout 3 points at an external link icon, for a link to an external page."
   },
   "badc96457efcfddcf7986b8b20837423b6aef34231132441d4ab153ee8b5ad2f": {
     "nodeId": "35507:13876",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A Nav Bar component with a main variant for a large viewport. It includes a top-bar with two areas: one for the STIHL logo and another for a search bar labeled \"Search Site.\" Below the top-bar, there are eight \"Button nav\" components arranged horizontally for navigation. Additionally, there are five icons labeled \"Label\" placed to the right of the search bar."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Nav Bar for a large viewport on a white background. The top bar contains the orange STIHL logo at the left, a rounded search field with the placeholder Search Site and a magnifier icon, and six small image icons with the caption Label, four grouped and two more after a thin vertical divider. Below a separator line, seven bold Button nav items sit in a horizontal row with no icons."
   },
   "bb2611b220c48a23804ee060e94925ef6c84c916cfeea4987fa744981e34ace4": {
     "nodeId": "1881:6403",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two buttons of the filled variant in the enabled state and medium size. Callout 1 points to a button with 18 characters of text and no icon, while callout 2 points to a button with 16 characters of text and an icon positioned to the right. The measurements refer to the maximum number of characters recommended for buttons to prevent them from breaking into two lines."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two enabled, medium-size filled buttons stacked vertically, each filled with the letter \"m\" to show the maximum label length. Callout 1 marks a button without icon holding 18 characters (the maximum), callout 2 marks a button with an icon on the right holding 16 characters (the maximum), so neither label breaks into two lines."
   },
   "bc2d2c833fdf812dca40dfe24c3f337ccb66aac91dcfc0730f5ae70874e37767": {
     "nodeId": "1883:9885",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A dialog or form layout with a primary button aligned to the left. The primary button is positioned next to a secondary button, which is on the right. The primary button is aligned with the input fields within the form."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Wireframe of a dialog or form with several input field placeholders and a text area. Below the fields the orange primary button sits on the left, aligned with the left edge of the inputs, and a secondary outline button follows to its right."
   },
   "bfcf91fdfb97b634ac1f8a9cd283df7255485c5ed6d15d43263f073b90fba799": {
     "nodeId": "168:4061",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The Button Round component in both light and dark variants, displaying different states: enabled, hover / pressed, focus, disabled, disabled focus, and loading. Each variant shows two styles, highlight and filled, across these states. The layout is organized in a grid format, with rows representing the styles and columns representing the states."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview of the round button in two grids, \"Button Round: light\" on a light background and \"Button Round: dark\" on a black background. In each grid the columns are the states enabled, hover / pressed, focus, disabled, disabled focus and loading, and the rows are the styles highlight (orange) and filled (dark in light mode, white in dark mode). Every style is shown in a larger and a smaller size with an image icon; focus adds a ring around the circle, disabled and loading appear grey, and loading shows a spinner instead of the icon."
   },
   "d72d804cb5a171847d8234f8dad806c3229ef51982d052fc2d51f62f759bca57": {
     "nodeId": "1943:11505",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two round buttons in light mode, each in a different variant and state, against white and grey backgrounds. The first button is of variant highlight, state enabled, and size small, while the second button is of variant filled, state enabled, and size small. The text labels \"white background\" and \"grey background\" indicate the different background colors used in the layout."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Light mode round buttons, small and enabled, on three backgrounds. On the \"white background\" and the \"grey background\" panels both an orange highlight button and a dark filled button are shown, stacked vertically. The third panel is solid orange and only shows the dark filled button, since an orange highlight button would not be visible there."
   },
   "da5fb23de9cbbc590c7324910c7b90c69dda70b80208f605aab7de1df193a9cc": {
     "nodeId": "1932:8064",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two small round button variants from the STIHL Design System: a highlight variant and a filled variant, both in the enabled state. Callout 1 points to the highlight variant, and callout 2 points to the filled variant. These variants are used to convey different levels of emphasis on buttons."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two enabled round buttons side by side. Callout 1 points at the orange highlight variant with a chevron icon, callout 2 points at the dark filled variant with a refresh icon; the variants give the buttons different emphasis."
   },
   "ef028c3f8514e77ee00e0fc7fa1d6eb129fa957bc24a6848db39d828a4232706": {
     "nodeId": "1908:6502",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The hierarchies of button components in a UI design system, specifying how different button variants should be paired. It displays three numbered callouts: the first callout points to combinations of Highlight with Filled, Outline, or Ghost buttons; the second callout points to combinations of Filled with Outline or Ghost buttons; the third callout points to a combination of Outline with Ghost button. Each button is shown in an enabled state and medium size, with the Ghost variant including a right-aligned icon. The layout demonstrates correct pairing semantics to indicate hierarchy, ensuring that in cases where hierarchy is not relevant, an Outline or Ghost button should be used."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Allowed button pairings by hierarchy. Callout 1: Highlight (orange) combined with Filled, with Outline and with Ghost. Callout 2: Filled (dark) combined with Outline and with Ghost. Callout 3: Outline combined with Ghost. The Ghost buttons have a chevron icon on the right."
   },
   "ef33b354f8c0c166c381a9ed3a432da40a7008095446408ce495590b36f834bf": {
     "nodeId": "56400:3759",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two Utility Buttons in a small size, both in an enabled state, with text labels \"Change online seller\" and \"Change adress,\" respectively. Each button has an icon positioned to the right, the label is visible, and the buttons are aligned flush. The Utility Button is designed for dense or information-heavy UI layouts to provide more visual emphasis than a Ghost Button but less than a Highlight Button."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Product detail page for \"MSA 220 C-B\" with tabs, the price $906.99, an article selector, quantity stepper, orange \"Add to cart\" button, wishlist button, \"Compare\" checkbox and Pickup and Delivery options. Two Utility Buttons appear as small, enabled, blue text links with a pencil icon on the right, aligned flush: \"Change adress\" next to \"Delivery to 12456\" and \"Change online seller\" next to \"Pickup at Taylor's Do it Center\"."
   },
   "f2b8520e268d234bf8c25c299838b9bc4f5b7cac36659e5dba2dd5696c464b9b": {
     "nodeId": "1943:11545",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two round button variants, one highlighted and one filled, both in the enabled state and small size, against three different backgrounds: grey deep background, grey dark background, and orange background. Each background showcases the buttons' visibility and contrast. The text labels identify the background colors used in the dark mode examples."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Dark mode round buttons, small and enabled, on three backgrounds. On the \"grey deep background\" (black) and the \"grey dark background\" panels both an orange highlight button and a white filled button are shown, stacked vertically. The third panel, \"orange background\", only shows the white filled button."
   },
   "f45a1e8fe15c6ca3609eaa95670e7e614ee92a5e0dab3e70d2f279bd11c01211": {
     "nodeId": "35507:13827",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The Viewport Variant of the Button component in the navigation style, showing two different sizes based on breakpoints. Callout number 1 points at the Button nav in the enabled state for breakpoints l & xl, optimized for visual hierarchy. Callout number 2 points at the Button nav in the enabled state for breakpoints s & m, adjusted for touch interaction and maintaining hierarchy within the Mobile Menu."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two enabled Button nav labels without icons, one above the other. Callout 1 points at the smaller text for breakpoints l and xl, sized to create visual hierarchy within the navigation. Callout 2 points at the larger text for breakpoints s and m, used in the Mobile Menu with improved tap targets."
   },
   "fb265fc53fdc3754a0495725c0cff2902bc6882cdd06f75d0d10b70ef5fffe90": {
     "nodeId": "55977:33497",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A ghost button component with the text \"Button\" and an icon positioned to the right, in an enabled state and medium size. The layout includes vertical spacers with measurements of 40px and 24px, and a 16px measurement likely indicating the button's padding or margin. The text \"Insights mollit esse\" and \"Efficiency excepteur quis\" are headers and body text accompanying the button, illustrating its use within a content block."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Content teaser with the heading \"INSIGHTS MOLLIT ESSE\", a photo of a STIHL dealer counter on the left (two people looking at a tablet, orange \"100% STIHL Service\" badge) and on the right the subheading \"Efficiency excepteur quis\", a paragraph of placeholder text and a text-only ghost button labeled \"Button\" with a chevron icon on its right."
   },
   "fca3923f14b3db7e75e763769d9f3ac8ae56ee7d8c12f6f39eac214f4c6d7b92": {
     "nodeId": "1881:6387",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A toast notification component with the text \"All files lorem ipsum\" and a success icon, indicating a successful action. This toast notification is marked as a \"Do\" example, suggesting it is a correct implementation. The layout includes a green checkmark icon on the left, the text in the center, and a close button on the right."
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do: a green success toast notification with a green checkmark icon on the left, the text \"All files lorem ipsum\" in the center and a close icon on the right. It shows system feedback through a toast notification after a button interaction."
   }
 }

@@ -21,7 +21,7 @@ figmaNodeId: 26075:11591
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:21:06.684Z
+syncedAt: 2026-11-05T21:32:34.564Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11591
 ---
 
@@ -37,7 +37,7 @@ Each Card type has a defined interaction model. Interactive elements must suppor
 
 ![Card Types by Primary Interaction](card/card-types-by-primary-interaction-47366-8396.png)
 
-_Figure: A "link-card-vertical" component from the STIHL Design System, which is used to group related content and media. This card type includes a "Promo Flag" at the top, a media area with a placeholder image, a heading labeled "Charging and energy management in the STIHL AP system," a description starting with "Benefit now from the expertise of our experts," metadata labeled "Metadata," and three "Flag" elements in the footer. The card has medium padding and content sizing set to "hug._
+_Figure: Vertical card on a white surface with a thin border, showing a purple placeholder image with an orange Promo Flag at its top left. Below are a small purple icon, the bold heading Charging and energy management in the STIHL AP system, a truncated description starting Benefit now from the expertise of our experts, the text Metadata, and three grey Flag tags. There are no buttons or controls._
 
 **Link Card: Navigation**
 
@@ -51,7 +51,7 @@ _Figure: A "link-card-vertical" component from the STIHL Design System, which is
 
 ![Card Types by Primary Interaction](card/card-types-by-primary-interaction-47366-8402.png)
 
-_Figure: A Link Card component from the STIHL Design System, specifically the "action-card-vertical" variant. This card includes a "Promo Flag" at the top, a media slot with an image, a title "Charging and energy management in the STIHL AP system," a description, metadata section with "Flag" labels, two "Button" elements, and an "Accordion copy" section at the bottom. The card is designed for navigation, where the entire card acts as a single link to another page or destination. The layout has medium padding and content sizing set to "hug._
+_Figure: Vertical card with a purple placeholder image and orange Promo Flag, a small purple icon, the bold heading Charging and energy management in the STIHL AP system, a truncated description, Metadata, and three grey Flag tags. Below are a filled dark Button and an outlined Button side by side, and at the bottom a separated row labeled Accordion copy with a chevron down icon._
 
 **Action Card: Explicit actions**
 
@@ -63,7 +63,7 @@ _Figure: A Link Card component from the STIHL Design System, specifically the "a
 
 ![Card Types by Primary Interaction](card/card-types-by-primary-interaction-47366-8408.png)
 
-_Figure: An Action Card component variant named selectable-card-vertical. This card includes a checkbox control, content sizing set to hug, medium padding, and a media slot. The card features a promo flag, a title "Charging and energy management in the STIHL AP system," a description, metadata section, and three flags labeled "Flag." The layout is vertical with interactive elements such as buttons or accordions for explicit user actions._
+_Figure: Vertical card with a purple placeholder image and an orange Promo Flag at its top left, and a white square with an empty checkbox at the top right corner of the image. Below are a small purple icon, the bold heading Charging and energy management in the STIHL AP system, a truncated description, Metadata and three grey Flag tags._
 
 **Selectable Card — Selection**
 
@@ -75,7 +75,7 @@ _Figure: An Action Card component variant named selectable-card-vertical. This c
 
 ![Card Types by Primary Interaction](card/card-types-by-primary-interaction-47366-8418.png)
 
-_Figure: A Selectable Card component from the STIHL Design System, specifically a product-card in grid view with content sizing set to hug. This card includes elements such as "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", and "Compare". The entire card is interactive, serving as a single selection target, and does not support additional independent interactive elements._
+_Figure: Product card with a purple placeholder image, a yellow AKI SYSTEM logo at its top left and a heart outline icon at its top right. Below are a black Promo Flag, the bold name Productname, a star rating of 3.5 (80) with three and a half orange stars, the text Categorie, Short description of the product, a green dot with Available now, the price 11.199,00 € with incl. VAT, an empty checkbox labeled Compare, and a round orange cart button at the bottom right._
 
 **Product Card — Product exploration**
 
@@ -152,7 +152,7 @@ See [Carousel](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075
 
 ![Avoid Swipe Conflicts](card/avoid-swipe-conflicts-57309-24474.png)
 
-_Figure: Two layouts of the link-card component: one for mobile in a vertical orientation and one for tablet in a horizontal orientation. Each card includes a media area, heading copy "Charging and energy management in the STIHL AP system," description copy, metadata, footer, and flags. The cards have medium padding and content sizing set to hug. The text "Avoid Swipe Conflicts" indicates that swipe interactions within the card content should not conflict with gestures of the parent container, especially when cards are inside carousels._
+_Figure: Two device frames with scrolling card lists, labeled Mobile and Tablet. On Mobile, a vertical card shows a purple placeholder image on top, then the heading Charging and energy management in the STIHL AP system, a truncated description, Metadata and three Flag tags, with the top of a second card cut off below. On Tablet, three horizontal cards stacked vertically each show the image at the left and the same heading, description, Metadata and Flag tags at the right._
 
 This section provides general touchscreen principles only.
 
@@ -180,7 +180,7 @@ Used when a single card requires focused attention.
 
 ![Standalone](card/standalone-56949-32326.png)
 
-_Figure: A standalone card component in two different layouts, one for a desktop and one for a mobile device. The card includes a placeholder for an image with an aspect ratio of 4:3, labeled as "image" and "media-area". This variant is used to highlight a single card that requires focused attention, suitable for featured content, high-priority information, or isolated tasks or actions._
+_Figure: Standalone layout shown in a wide desktop browser frame and a narrow mobile frame. In each, one single card with a purple placeholder image and grey placeholder bars for text, a button and tags is displayed on its own, centered on the desktop page and filling the width of the mobile page._
 
 #### Grid
 
@@ -201,7 +201,7 @@ The primary layout for displaying multiple cards in a structured collection.
 
 ![Grid](card/grid-56949-32331.png)
 
-_Figure: A grid layout of card components, each containing a media-area with a 4:3 aspect ratio. The grid layout is shown on both a desktop and a mobile device, demonstrating how multiple cards are arranged in a structured collection. The layout supports scanning, comparison, and efficient use of available space, making it suitable for content collections, dashboards, product listings, and overview pages._
+_Figure: Grid layout shown in a wide desktop browser frame and a narrow mobile frame. On desktop, cards with a purple placeholder image and grey placeholder bars are arranged in rows of four, with a second row partly cut off at the bottom. On mobile, one card is shown in a single column._
 
 #### Carousel
 
@@ -217,7 +217,7 @@ Carousels support horizontal browsing and allow users to discover content withou
 
 ![Carousel](card/carousel-56949-32336.png)
 
-_Figure: A carousel component with a layout of four cards, each containing a media-area with a 4:3 aspect ratio. There are two round buttons, one in a disabled state and the other in an enabled state, both of small size and filled variant. The scrollmarker labeled 6=false indicates the absence of a scroll marker. The carousel is designed for horizontal browsing, allowing users to explore content without displaying all items at once._
+_Figure: Carousel layout shown in a wide desktop browser frame and a narrow mobile frame. On desktop, a row of four cards with purple placeholder images sits between a light disabled round previous arrow button at the left and a dark enabled round next arrow button at the right, with three pagination dots below, the first elongated as active. On mobile, one card is fully visible with the edge of the next card peeking in at the right, and three pagination dots below, the first active, and no arrow buttons._
 
 #### List
 
@@ -237,7 +237,7 @@ Suitable when additional horizontal space is available and higher information de
 
 ![List](card/list-56949-32341.png)
 
-_Figure: A List variant of the Card component in a UI design system, shown in both desktop and mobile layouts. The cards include a media-area with a 4:3 aspect ratio. This layout is used when additional horizontal space is available and higher information density is required, prioritizing readability, comparison, and structured information._
+_Figure: List layout of the Card component in a desktop browser frame and a mobile frame. On desktop, cards are stacked as full-width rows, each with a square media area on the left, text lines and a content block in the middle, and a column of metadata and small tag placeholders on the right. On mobile, a single card stacks the media area on top, followed by text lines, a content block, and tag placeholders below._
 
 ## Sizing 1/3
 
@@ -294,7 +294,7 @@ Orientation changes are determined by the available Card width and the defined s
 
 ![Orientation Changes](card/orientation-changes-57176-28915.png)
 
-_Figure: Orientation changes for a Card component in the STIHL Design System, showing both vertical and horizontal layouts. The measurements indicate the minimum and maximum width constraints for switching orientations: "Link Card Vertical Minimum width: 134px" and "Link Card Vertical Maximum width: 719px" for the vertical orientation, and "Link Card Horizontal Content Orientation: Vertical Minimum width: 688px" and "Link Card Horizontal Content Orientation: Vertical Minimum width: 859px" for the horizontal orientation. The figure demonstrates how the card's orientation changes based on its width, independent of viewport breakpoints or content length..._
+_Figure: Row of six cards showing how a Link Card changes orientation as its width grows, with arrows labelled "bigger" and "smaller" between them and Figma component panels above showing the "content orientation" option switching between vertical, horizontal (with footer) and horizontal (without footer). The Link Card Vertical runs from "Minimum width: 134px" to "Maximum width: 719px"; the Link Card Horizontal with "Content Orientation: Vertical" runs from "Minimum width: 688px" to "Minimum width: 859px"; the Link Card Horizontal with "Content Orientation: Horizontal" runs from "Minimum width: 860px" to "Minimum width: 1435px". Each card shows a media area with a Promo Flag, the heading "Charging and energy management in the STIHL AP system", a description, metadata, flags and a Decorative Link, with the layout becoming wider and more spread out at each step._
 
 ## Content & Assets
 
@@ -304,13 +304,13 @@ The default heading style is Headline M. Other heading styles may be used when a
 
 ![Content & Assets](card/content-assets-66560-37174.png)
 
-_Figure: The link-card-vertical component with varying heading styles labeled as headline s, headline m (default), headline l, and headline xl. Each card contains the same text: "Charging and energy management in the STIHL AP system" as the heading and "Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances." as the description. The cards have medium padding and content sizing set to hug._
+_Figure: Four cards side by side that differ only in heading size, labelled "headline s", "headline m (default)", "headline l" and "headline xl". Each card has the heading "Charging and energy management in the STIHL AP system" above a description that starts "Benefit now from the expertise of our experts" and is truncated after three lines; the heading and card grow larger from left to right._
 
 **Don’t use uppercase, as it reduces readability and scannability.**
 
 ![Content & Assets](card/content-assets-66560-37239.png)
 
-_Figure: A vertical card component labeled as selectable-card-vertical with a checkbox control, content sizing set to hug, medium padding, and a media slot. The card contains an image with the text "Our recommended service", a heading "STIHL Pro Servicing", a description "Ensures safety compliance, preventive parts replacement, and thorough cleaning", and three buttons labeled "Flag". The board is marked as a "Don't" example because it uses uppercase text, which reduces readability and scannability._
+_Figure: Don't example: a vertical selectable card with a round selection control in the top right of a photo of a technician working on an orange robotic mower, an orange "Our recommended service" flag, the heading "STIHL PRO SERVICING" set in uppercase, the description "Ensures safety compliance, preventive parts replacement, and thorough cleaning" and three "Flag" tags. It is wrong because the uppercase heading reduces readability and scannability._
 
 **Graphic Area Sizes**
 
@@ -327,7 +327,7 @@ Additional sizes may be introduced if required by specific use cases.
 
 ![Content & Assets](card/content-assets-66560-37291.png)
 
-_Figure: A "link-card-vertical" component with two different sizes of a Graphic Area, which is a placeholder for images. The measurements 32px and 48px refer to the dimensions of the Graphic Area, both of which use a 1:1 aspect ratio. The component includes a heading titled "Charging and energy management in the STIHL AP system" and a description starting with "Benefit now from the expertise of our experts"._
+_Figure: Two vertical link cards with a small purple graphic placeholder above the heading "Charging and energy management in the STIHL AP system" and a description starting "Benefit now from the expertise of our experts". Dashed guide lines and arrows mark the graphic area height as 32px on the left card and 48px on the right card; both graphic areas are square (1:1)._
 
 **Flag Elements**
 
@@ -341,7 +341,7 @@ For usage guidelines, limitations, and behavior, see the [Flag component documen
 
 ![Content & Assets](card/content-assets-66560-37472.png)
 
-_Figure: Two orientations of an action card component: Vertical Orientation and Horizontal Orientation. The numbered callouts point to specific areas within these orientations: callout 1 highlights the Promo Flag area, callout 2 indicates the Top Flags area, and callout 3 marks the Bottom Flags area. The figure demonstrates how the Flag Elements, including the Promo Flag, Top Flags, and Bottom Flags, are positioned within the action card for both vertical and horizontal layouts._
+_Figure: Action card shown in "Vertical Orientation" and "Horizontal Orientation", both with the heading "Seasonal Battery Tune-Up", the description "Our most popular service for longer life and reliable power." and a dark "Make an appointment" button. Callout 1 marks the "Promo Flag" in the top left corner of the media area, callout 2 marks the row of three "Flag" tags above the heading (Top Flags), and callout 3 marks the row of tags "Battery Health", "Maintenance" and "Seasonal" below the description (Bottom Flags)._
 
 **Image Aspect Ratio**
 
@@ -367,7 +367,7 @@ These ratios are optimized for common layout scenarios and visual balance. Custo
 
 ![Content & Assets](card/content-assets-66560-37612.png)
 
-_Figure: Different variants of the Card component with a Media Slot, illustrating various aspect ratios for both vertical and horizontal orientations. The measurements 16:9, 4:3, 3:4, and 1:1 refer to the aspect ratios of the images within the cards, indicating how much visual emphasis is placed on the image versus the content. The vertical orientation cards include ratios 16:9, 4:3, and 3:4, while the horizontal orientation cards include ratios 3:4 and 1:1. Each card contains a title "Charging and energy management in the STIHL AP system," descriptive text, and two buttons labeled "Button._
+_Figure: Cards with a media slot showing the available image aspect ratios. Under "Vertical Orientation" three cards with the image on top are labelled 16:9 (shortest image, most space for text), 4:3 (medium) and 3:4 (tallest image, least space for text). Under "Horizontal Orientation" three cards with the image on the left are labelled 3:4, 1:1 and 4:3, with the image getting wider from top to bottom. Every card shows the heading "Charging and energy management in the STIHL AP system", a description and two "Button" buttons, one filled and one outlined._
 
 **Text Overflow**
 
@@ -384,13 +384,13 @@ Specific card variants or layouts may define different limits based on their con
 
 ![Content & Assets](card/content-assets-66560-37760.png)
 
-_Figure: Two variants of an action card component: a vertical layout labeled with annotation-circle number 1 and a horizontal layout labeled with annotation-circle number 2. The vertical layout demonstrates text overflow with a heading truncated to three lines and metadata truncated to two lines, as indicated by the "Figma Sidebar" settings. The horizontal layout shows a full view of the content without truncation. The text examples illustrate proper text sizing and wrapping within the specified limits for headings, descriptions, and metadata._
+_Figure: Text overflow in action cards with an overlong placeholder title. Callout 1 marks a vertical card whose heading is cut off after three lines with an ellipsis ("This is an extremely long action card title designed to test line w..."), whose description also ends with an ellipsis, and whose metadata line ("Last updated 3 minutes ago • Generated automatically • Applies to all active users • Re...") is cut after two lines. Callout 2 marks a larger horizontal card showing the same text in full, without truncation. On the right, a "Figma Sidebar" panel "Type settings" has the "Max lines" field, set to 3, highlighted; both cards end with a "Continue with this Action" button._
 
 **Don’t mix different content structures within a group of related Cards.** Keep the same types of content in a consistent order and position to support scanning and comparison.
 
 ![Content & Assets](card/content-assets-66439-54667.png)
 
-_Figure: Five link-card-vertical components arranged horizontally, each with different content structures and layouts. Each card has a heading "Charging and energy management in the STIHL AP system" and a description starting with "Benefit now from the expertise of our experts...". The cards vary in their inclusion of a media area, graphic area, flags, description, metadata, and footer. The example is marked as a "Don't" because it mixes different content structures within a group of related cards, which is inconsistent and can hinder scanning and comparison._
+_Figure: Don't example: five vertical link cards in a row, all with the heading "Charging and energy management in the STIHL AP system", but with inconsistent content. Cards 1, 3 and 5 have a media area with a Promo Flag, and cards 2 and 4 have only a small graphic placeholder; descriptions, "Metadata" text and "Flag" tags appear in different combinations and positions from card to card. It is wrong because related cards should keep the same types of content in the same order and position, which makes scanning and comparison hard here._
 
 ## Surfaces 1/2
 
@@ -404,7 +404,7 @@ The card container displays an outline. Recommended for most layouts, as it inte
 
 ![Outlined (default)](card/outlined-default-57166-24569.png)
 
-_Figure: Two variants of a card component: link-card-vertical and link-card-horizontal, both in the outlined state. Each card includes a graphic area, heading, description, metadata, footer, and flags, with medium padding and content sizing set to hug. The link-card-vertical has a vertical content orientation, while the link-card-horizontal has a vertical content orientation with the graphic area positioned to the left. The text "Promo Flag" is shown in both cards. The circled callouts highlight areas where additional details or flags are located._
+_Figure: Outlined (default) Card shown as a vertical link card and a horizontal link card, each with an outlined container, a media area with a "Promo Flag", a small graphic placeholder, the heading "Charging and energy management in the STIHL AP system", a truncated description, "Metadata" and three "Flag" tags. A purple circle on the bottom right corner of each card magnifies the thin outline of the container._
 
 #### Elevated
 
@@ -414,7 +414,7 @@ Elevation **is not** an indicator of interactivity.
 
 ![Elevated](card/elevated-57166-24630.png)
 
-_Figure: Two variants of a card component in an elevated state, which includes a shadow to visually highlight the cards. The first card is a vertical link-card with a heading "Charging and energy management in the STIHL AP system," a description, metadata, and flags. The second card is a horizontal link-card with the same heading and description, also including metadata and flags. Both cards have a medium padding and content sizing set to hug. The text "Promo Flag" is shown on both cards._
+_Figure: Elevated Card shown as a vertical link card and a horizontal link card, each with a drop shadow instead of an outline, a media area with a "Promo Flag", a small graphic placeholder, the heading "Charging and energy management in the STIHL AP system", a truncated description, "Metadata" and three "Flag" tags. A purple circle on the bottom right corner of each card magnifies the soft shadow of the container._
 
 ## Surfaces 2/2
 
@@ -430,7 +430,7 @@ By default, cards should be placed on background-color / primary.
 
 ![Primary Background](card/primary-background-57309-21214.png)
 
-_Figure: Two variants of a card component in the STIHL Design System: link-card-vertical and link-card-horizontal. Both variants include a media area, heading, description, flags, metadata, and footer. The link-card-vertical variant is shown in a horizontal layout with medium padding and content sizing set to hug, while the link-card-horizontal variant is shown in a vertical layout with the same padding and content sizing. The text "Primary Background" indicates that by default, cards should be placed on a background color labeled as primary._
+_Figure: Cards on the primary (white) background in two panels. Under "Vertical Orientation" eight vertical cards sit in a grid of two rows of four, each with a media area on top, the heading "Charging and energy management in the STIHL AP system", a truncated description and three "Flag" tags. Under "Horizontal Orientation" four horizontal cards are stacked in a list, each with the media area on the left and heading, description, "Metadata" and "Flag" tags on the right, and a fifth card is cut off at the bottom._
 
 #### Secondary Background
 
@@ -438,7 +438,7 @@ background-color / secondary may be used to increase visual separation between c
 
 ![Secondary Background](card/secondary-background-57309-22319.png)
 
-_Figure: Two variants of a card component in the STIHL Design System: link-card-vertical and link-card-horizontal. Both variants use a secondary background to increase visual separation between cards and surrounding content. The link-card-vertical variant shows cards arranged in a vertical orientation with a medium padding and content sizing set to hug. The link-card-horizontal variant shows cards arranged in a horizontal orientation, also with medium padding and content sizing set to hug, and includes a vertical content orientation. Each card contains a media area, heading, description, flags, metadata, and a footer..._
+_Figure: Cards on the secondary (light grey) background in two panels. Under "Vertical Orientation" eight vertical cards sit in a grid of two rows of four, each with a media area, the heading "Charging and energy management in the STIHL AP system", a truncated description and three "Flag" tags. Under "Horizontal Orientation" four horizontal cards are stacked in a list with the media area on the left and heading, description, "Metadata" and "Flag" tags on the right, and a fifth card is cut off at the bottom; the white cards stand out clearly from the grey surface._
 
 ## Layout 2/3
 
@@ -464,7 +464,7 @@ See [Responsive behavior](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?no
 
 ![Orientation](card/orientation-66560-35291.png)
 
-_Figure: Two orientation variants of a Card component: Vertical Orientation (Default) and Horizontal Orientation. Callout 1 points to the Vertical Orientation, where slots are stacked vertically, and callout 2 points to the Horizontal Orientation, where slots are arranged horizontally. Each orientation includes a Media Slot, Header Slot, Footer Slot, and Supplementary Slot. The Figma Component Panel shows the component names xx-card-vertical and xx-card-horizontal, with settings for padding and content sizing._
+_Figure: Slot layout of the two Card orientations as colored blocks. Callout 1, "Vertical Orientation (Default)" (Figma component "xx-card-vertical"), stacks the "Media Slot" on top, then the "Header Slot", the "Footer Slot" and a full-width "Supplementary Slot" at the bottom. Callout 2, "Horizontal Orientation" (Figma component "xx-card-horizontal"), places the "Media Slot" on the left, the "Header Slot" above the "Footer Slot" on the right, and the "Supplementary Slot" spanning the full width below._
 
 **Horizontal Orientation Variants**
 
@@ -486,7 +486,7 @@ The horizontal orientation supports two layout variants.
 
 ![Orientation](card/orientation-66560-35321.png)
 
-_Figure: Two orientation variants of the Card component in the STIHL Design System: Vertical Content and Horizontal Content. Callout 1 points to the Vertical Content variant, where the Media Slot is on the left, the Header Slot and Footer Slot are stacked vertically on the right, and the Supplementary Slot is below. Callout 2 points to the Horizontal Content variant, where the Media Slot, Header Slot, and Footer Slot are placed side by side, with the Header Slot taking up 2/3 of the container grid and the Footer Slot taking up 1/3, and the Supplementary Slot is below. The Figma Component Panel shows settings for padding, alignment, and content orientation for each variant._
+_Figure: Two layouts of the horizontal Card as colored slot blocks, each next to a Figma Component Panel with the options "padding", "alignment" (hug) and "content orientation" (horizontal or vertical). Callout 1, "Vertical Content": the "Media Slot" is on the left, the "Header Slot" and "Footer Slot" are stacked on the right, and the "Supplementary Slot" runs along the bottom. Callout 2, "Horizontal Content": the "Media Slot", "Header Slot" and "Footer Slot" sit side by side with the "Supplementary Slot" below, and the Header Slot spans "2/3" and the Footer Slot "1/3" of the content width._
 
 ## Sizing 2/3
 
@@ -512,7 +512,7 @@ The card height is determined by its content.
 
 ![Figma: Content Sizing](card/figma-content-sizing-57309-23431.png)
 
-_Figure: Two orientations of a Card component: Vertical Orientation and Horizontal Orientation. It shows how the Content Sizing property in Figma affects the Card's height, with options for "hug" and "fill." The "hug" setting makes the card height determined by its content, while "fill" adapts the card to the available height. The figure includes examples of link-card-vertical and link-card-horizontal components with specified properties such as padding, content sizing, and content orientation. The Figma Component Panel indicates settings like padding and content sizing._
+_Figure: Card Content Sizing "hug" shown as colored blocks for "Vertical Orientation" (two cards) and "Horizontal Orientation" (two cards), each with a "Media Area", a "Header" and a "Footer" placed directly below it. The cards have different heights because the height follows the content (the Header block is taller in one card than in the other), with no space stretched between Header and Footer. On the right, the "Figma Component Panel" shows the "content sizing" dropdown with "hug" checked and "fill" as the other option, with "padding" set to medium._
 
 **Fill**
 
@@ -530,7 +530,7 @@ The card stretches to fill the available vertical space defined by its container
 
 ![Figma: Content Sizing](card/figma-content-sizing-57309-23770.png)
 
-_Figure: The Card component in the STIHL Design System, demonstrating both vertical and horizontal orientations. It shows how the card stretches to fill the available vertical space defined by its container, with the header anchored to the top and the footer to the bottom. The figure includes examples of content sizing set to "fill," ensuring consistent card height across items, which is useful for grids or structured collections to improve visual alignment, readability, and comparison. The Figma Component Panel indicates settings like padding set to "medium" and content sizing set to "fill," with an option for content orientation set to "vertical._
+_Figure: Card Content Sizing "fill" shown as colored blocks for "Vertical Orientation" (two cards of equal height) and "Horizontal Orientation" (two cards), each with a "Media Area", a "Header" anchored to the top and a "Footer" anchored to the bottom. Purple double-headed arrows labelled "Stretch" mark the empty space between Header and Footer, which grows so that the card fills the available height. On the right, the "Figma Component Panel" shows the "content sizing" dropdown with "fill" checked and "hug" as the other option, with "padding" set to medium._
 
 ## Layout 3/3
 
@@ -547,7 +547,7 @@ Component-specific restrictions are documented on the respective Card page.
 
 ![Padding](card/padding-66560-36325.png)
 
-_Figure: Two padding variants for card components in a UI design system: Medium (default) and Small. Callout 1 points to the Medium padding variant, which has a bottom padding of 24px, while callout 2 points to the Small padding variant, which has a bottom padding of 16px. The 32px measurement refers to the bottom padding of the Medium horizontal card. These padding options are used to adapt to different content densities and layout contexts, such as content-rich layouts for Medium and compact layouts like dashboards for Small._
+_Figure: Card padding options, each with a vertical and a horizontal card containing the heading "Energy Management", a description, two "Button" buttons and an "Accordion copy" row, with the padded content area outlined in purple. Callout 1, "Medium (default)": the padding below the buttons is marked as 24px in the vertical card and 32px in the horizontal card. Callout 2, "Small": the padding below the buttons is marked as 16px in both the vertical and the horizontal card._
 
 ## Sizing 3/3
 
@@ -568,7 +568,7 @@ Size constraints can inform responsive behavior, while the rules for orientation
 
 ![Vertical Orientation](card/vertical-orientation-66680-42184.png)
 
-_Figure: The vertical orientation of a card component in a UI design system, specifically the action-card-vertical variant. The minimum width of 134px is for minimal card variants with up to two content elements, while the maximum width is 719px. The figure shows two examples: one with a small padding and hug content sizing, and another with medium padding and hug content sizing, both including a media slot and supplementary slot._
+_Figure: Vertical Orientation of the Card at its width limits. A narrow card with a media area, the truncated heading "Charging and energy managem..." and a "Button" is marked "Min. width: 134px" by a dashed measurement line below it. A much wider card with a large media area, the heading "Charging and energy management in the STIHL AP system", a description, two "Button" buttons and an "Accordion copy" row is marked "Max. width: 719px"._
 
 #### Horizontal Orientation — Content Vertical
 
@@ -581,7 +581,7 @@ _Figure: The vertical orientation of a card component in a UI design system, spe
 
 ![Horizontal Orientation — Content Vertical](card/horizontal-orientation-content-vertical-66680-42207.png)
 
-_Figure: Two variants of a card component with horizontal orientation and vertical content layout. The minimum width of 292px is for minimal card variants with up to two content elements, while the maximum width is 1435px. The first card has a small padding and includes an image, text labeled "Management," and a "Button." The second card has a medium padding and includes an image, a heading "Charging and energy management in the STIHL AP system," a subheading starting with "Benefit now from the expertise of our experts," two buttons labeled "Button," and an accordion element labeled "Accordion copy._
+_Figure: Horizontal Orientation with Content Vertical of the Card at its width limits. A small card with the media area on the left, the heading "Management" and a "Button" is marked "Min. width: 292px" by a dashed measurement line below it. A much wider card with the media area on the left, the heading "Charging and energy management in the STIHL AP system", a description, two "Button" buttons and an "Accordion copy" row below is marked "Max. width: 1435px"._
 
 #### Horizontal Orientation — Content Horizontal
 
@@ -594,7 +594,7 @@ _Figure: Two variants of a card component with horizontal orientation and vertic
 
 ![Horizontal Orientation — Content Horizontal](card/horizontal-orientation-content-horizontal-66680-42230.png)
 
-_Figure: Two variants of the "action-card-horizontal" component with a horizontal content orientation. The minimum width of 450px applies to minimal card variants with up to three content elements, while the maximum width is 1435px. The first card has small padding and includes a header with text and a button, while the second card has medium padding, includes an image, header text, metadata, two buttons, and an accordion._
+_Figure: Shows action-card-horizontal (padding=small, content sizing=hug, content orientation=horizontal); action-card-horizontal (supplementary slot, media slot, padding=medium, content sizing=hug, content orientation=horizontal). Text in the figure: "Horizontal Orientation: Content Horizontal", "Charging and energy management in the STIHL AP system", "Button", "Min. width: 450px", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Accordion copy", "Max. width: 1435px"._
 
 ## Link Card
 
@@ -734,7 +734,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](card/anatomy-44431-13650.png)
 
-_Figure: The anatomy of a Card component in both vertical and horizontal orientations. Each numbered callout points to specific parts of the card: 1 points to the Card Container, 2 points to the Media Area, 3 points to the Header, and 4 points to the Footer. The vertical orientation includes detailed annotations for the Promo Flag, Media Content, Graphic Area, Heading, Description, Metadata, and Decorative Link, while the horizontal orientation shows a similar structure but laid out horizontally._
+_Figure: Shows link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading copy=Charging and energy management in the STIHL AP system, decorative link, media area, metadata, footer, padding=medium, content sizing=fill); annotation-circle (number=2a, type=left, color=blue); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., graphic area, heading icon, decorative link, heading copy=Charging and energy management in the STIHL AP system, flags, media area, description, metadata, footer, padding=medium, content sizing=hug); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=2b, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=3a, type=left, color=blue); annotation-circle (number=3b, type=left, color=blue); annotation-circle (number=3d, type=right, color=blue); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=3c, type=left, color=blue); annotation-circle (number=4a, type=left, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "Vertical Orientation", "2a", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Decorative Link", "Media Area", "2b", "3a", "3b", "3d", "Header", "3c", "4a", "4b", "Footer", "4c", "Horizontal Orientation"._
 
 ### Layout
 
@@ -750,7 +750,7 @@ The Footer can be toggled off when it is not required.
 
 ![Layout](card/layout-44431-13753.png)
 
-_Figure: The vertical orientation layout of a Link Card component named link-card-vertical. This layout stacks the fixed content areas vertically, including a Media Area, Header, and Footer, with medium padding and content sizing set to hug. The Figma Component Panel shows the component's properties, including options to toggle the Footer on or off._
+_Figure: Shows link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., decorative link, heading copy=Charging and energy management in the STIHL AP system, media area, footer, padding=medium, content sizing=hug); Figma Component Panel (Show Dropdown?=false). Text in the figure: "Vertical Orientation", "Figma Component Panel", "Media Area", "Header", "Footer", "link-card-vertical", "Core Components", "Variant", "Option", "Instance Swap", "Text", "Type...", "Boolean true", "Boolean false"._
 
 **Horizontal Orientation Variants**
 
@@ -764,7 +764,8 @@ Link Cards use fixed content areas and support the following configurations:
 
 ![Layout](card/layout-44898-28733.png)
 
-_Figure: Three layout variants of a Link Card component in a UI design system. Each numbered callout points to a different content orientation: 1 indicates Vertical Content orientation where the Media Area is on the left and the Header and Footer are stacked vertically on the right, 2 shows Horizontal Content orientation with Footer where Media Area, Header, and Footer are side by side with specific width ratios, and 3 depicts Horizontal Content orientation without Footer where the Footer is removed and the Header uses the full available content area. The Figma Component Panel shows the content orientation options: vertical, horizontal with footer, and horizontal without footer._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); link-card-horizontal (decorative link, media area, heading copy=Charging and energy management in the STIHL AP system, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., footer, padding=medium, content sizing=hug, content orientation=vertical); row type (type=variant); row type (type=boolean true); annotation-circle (number=2, type=center, color=blue); link-card-horizontal (heading copy=Charging and energy management in the STIHL AP system, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., media area, footer, metadata, padding=medium, content sizing=hug, content orientation=horizontal (with footer)); annotation-circle (number=3, type=center, color=blue); link-card-horizontal (heading copy=Charging and energy management in the STIHL AP system
+, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., footer, metadata, flags, media area, padding=medium, content sizing=hug, content orientation=horizontal (without footer)). Callouts 1, 2, 3. Text in the figure: "Content orientation: Vertical", "Figma Component Panel", "padding", "medium", "alignment", "hug", "content orientation", "vertical", "media area", "graphic area", "vertical horizontal (with footer) horizontal (without footer)", "Header", "Media Area", "Footer", "Content orientation: Horizontal (with Footer)", "Header: 2/3", "Footer: 1/3", "Content orientation: Horizontal (without Footer)", "Charging and energy management in the STIHL AP system"._
 
 ### Size Constraints
 
@@ -799,7 +800,7 @@ A Link Card should not exceed the following elements:
 
 ![Maximum Number of Elements](card/maximum-number-of-elements-44615-15227.png)
 
-_Figure: Two variants of a Link Card component: one with a vertical orientation and the other with a horizontal orientation. Each card includes a Promo Flag, Media Area, Graphic Area, Heading, Description, Metadata, Flags, and a Decorative Link. The vertical orientation card is laid out with elements stacked vertically, while the horizontal orientation card arranges elements side by side. The Heading is mandatory for accessibility, serving as the label for screen readers. The cards demonstrate the maximum number of elements allowed, including up to six Flags and two lines of Metadata._
+_Figure: Shows link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., graphic area, decorative link, heading copy=Charging and energy management in the STIHL AP system, flags, media area, description, metadata, footer, padding=medium, content sizing=hug); link-card-horizontal (graphic area, flags, media area, heading copy=Charging and energy management in the STIHL AP system, description, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., metadata, footer, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Vertical Orientation", "Horizontal Orientation", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Decorative Link"._
 
 #### Minimum 2 Elements required
 
@@ -812,7 +813,7 @@ A Link Card must contain at least two elements:
 
 ![Minimum 2 Elements required](card/minimum-2-elements-required-44964-12860.png)
 
-_Figure: Various layouts of a Link Card component from the STIHL Design System, each containing a heading and at least one additional element. The elements include media area, graphic area, description, heading icon, metadata, flags, and decorative link. Each card has medium padding and content sizing set to hug, with content orientation being vertical in some horizontal layouts. The heading is mandatory for accessibility, serving as the label for screen readers, while other elements are optional._
+_Figure: Shows link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading copy=Charging and energy management in the STIHL AP system, flags, media area, metadata, padding=medium, content sizing=hug); link-card-horizontal (flags, media area, heading copy=Charging and energy management in the STIHL AP system, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., metadata, padding=medium, content sizing=hug, content orientation=vertical); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., graphic area, heading copy=Charging and energy management in the STIHL AP system, metadata, padding=medium, content sizing=hug); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading copy=Charging and energy management in the STIHL AP system, flags, description, metadata, padding=medium, content sizing=hug); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading icon, heading copy=Charging and energy, metadata, padding=medium, content sizing=hug); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading copy=Charging and energy management in the STIHL AP system, metadata, footer, padding=medium, content sizing=hug); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading copy=Charging and energy management in the STIHL AP system, flags, footer, padding=medium, content sizing=hug); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., decorative link, heading copy=Charging and energy management in the STIHL AP system, footer, padding=medium, content sizing=hug). Text in the figure: "Heading + Media Area", "Heading + Graphic Area", "Heading + Description", "Heading + Heading Icon", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Charging and energy", "Heading + Metadata", "Heading + Flags", "Heading + Decorative Link", "Jan 13, 2024", "Product information", "Flag", "Decorative Link"._
 
 ### Elements
 
@@ -840,7 +841,7 @@ For shared usage guidelines, limitations, and behavior, see [Foundations: Flag E
 
 ![Elements](card/elements-54975-18248.png)
 
-_Figure: Two variants of the Link Card component: Vertical Orientation and Horizontal Orientation. Each card includes a Promo Flag at the top, a media area, heading text, description text, metadata, and footer with flags. The numbered callouts point to the Promo Flag areas (number 1) and the bottom flags (number 2) in both orientations. The cards follow shared guidelines for heading styles, graphic area sizes, image aspect ratio, and text overflow._
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading copy=Charging and energy management in the STIHL AP system, flags, media area, description, metadata, footer, padding=medium, content sizing=hug); link-card-horizontal (flags, media area, heading copy=Charging and energy management in the STIHL AP system, description, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., metadata, footer, padding=medium, content sizing=hug, content orientation=vertical); annotation-circle (number=2, type=bottom, color=blue); annotation-circle (number=2, type=left, color=blue). Callouts 1, 2. Text in the figure: "Vertical Orientation", "Horizontal Orientation", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
 
 **Heading Icon**
 
@@ -855,7 +856,7 @@ Intended for short headings in cards leading to i.e. categories or overview page
 
 ![Elements](card/elements-48813-9929.png)
 
-_Figure: Two variants of a link-card component with a heading icon, specifically a chevron, indicating navigation. Callout 1 points to a vertical link-card with a heading only, while callout 2 points to both a vertical and a horizontal link-card that include a heading, image, and additional content. The heading icon is used to signify that these cards lead to categories or overview pages._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading icon, heading copy=Energy management , flags, metadata, padding=medium, content sizing=hug); link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading icon, heading copy=Energy management ressources, flags, media area, metadata, padding=medium, content sizing=hug); link-card-horizontal (heading icon, flags, media area, heading copy=Energy management ressources, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., metadata, padding=medium, content sizing=hug, content orientation=vertical). Callouts 1, 2. Text in the figure: "Energy management", "Energy management ressources"._
 
 **Decorative Link**
 
@@ -875,7 +876,7 @@ The Decorative Link is available in two style variants: **Ghost** and **Filled**
 
 ![Elements](card/elements-44961-12404.png)
 
-_Figure: Various styles of a Decorative Link component used in a UI design system. It shows different combinations of variants (filled and ghost), sizes (medium and small), and icon positions (none, left, right). Each button is labeled with its specific configuration, such as "filled medium" for a filled variant with a medium size and no icon, or "ghost small" for a ghost variant with a small size and an icon on the right._
+_Figure: Shows decorative-link (button text=Decorative Link, variant=filled, size=medium, icon position=none); decorative-link (button text=Decorative Link, variant=filled, size=medium, icon position=left); decorative-link (button text=Decorative Link, variant=filled, size=medium, icon position=right); decorative-link (button text=Decorative Link, variant=filled, size=small, icon position=none); decorative-link (button text=Decorative Link, variant=filled, size=small, icon position=left); decorative-link (button text=Decorative Link, variant=filled, size=small, icon position=right); decorative-link (button text=Decorative Link, variant=ghost, size=medium, icon position=left); decorative-link (button text=Decorative Link, variant=ghost, size=medium, icon position=right); decorative-link (button text=Decorative Link, variant=ghost, size=small, icon position=left); decorative-link (button text=Decorative Link, variant=ghost, size=small, icon position=right). Text in the figure: "icon: none", "icon: left", "icon: right", "filled medium", "Decorative Link", "filled small", "ghost medium", "ghost small"._
 
 ## Behavior & Usage
 
@@ -893,7 +894,7 @@ Link Cards support both **Outlined** and **Elevated** surface variants. Surface 
 
 ![Interactivity](card/interactivity-44431-13715.png)
 
-_Figure: Link Cards in both vertical and horizontal orientations, showcasing their interactive states: enabled, hover/pressed, and focus. It includes outlined and elevated surface variants, with each card featuring a graphic area, heading, description, metadata, and footer. The cards are interactive by default, with visual feedback for hover/pressed and focus states, and support both outlined and elevated appearances. The padding is medium, and content sizing is set to hug. The cursor type is pointer, indicating that the cards are clickable for navigation._
+_Figure: Shows link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., graphic area, heading copy=Charging and energy management in the STIHL AP system, flags, media area, description, metadata, footer, padding=medium, content sizing=hug); link-card-horizontal (graphic area, flags, media area, heading copy=Charging and energy management in the STIHL AP system, description, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., metadata, footer, padding=medium, content sizing=hug, content orientation=vertical); cursor (type=pointer). Text in the figure: "Vertical Orientation", "Horizontal Orientation", "enabled", "hover / pressed", "focus", "outlined", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "elevated"._
 
 ### Usage in Context
 
@@ -925,7 +926,7 @@ The Heading is **mandatory** for every Link Card. It provides the accessible nam
 
 ![Heading = Accessible Label](card/heading-accessible-label-44615-15160.png)
 
-_Figure: A Link Card component variant named link-card-vertical. It includes a mandatory Accessible Label as the Heading, which is "Charging and energy management in the STIHL AP system." The component has a description that reads, "Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances." The card has medium padding and content sizing set to hug. The Heading provides a clear and descriptive name for screen readers, ensuring the card is accessible._
+_Figure: Shows link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading copy=Charging and energy management in the STIHL AP system, flags, description, metadata, padding=medium, content sizing=hug). Text in the figure: "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an..."._
 
 ### Interaction Principle
 
@@ -954,7 +955,7 @@ The Decorative Link is purely visual and is not an interactive element. The enti
 
 ![Interaction Principle](card/interaction-principle-44615-15179.png)
 
-_Figure: Two variants of a Link Card component: one in vertical orientation and the other in horizontal orientation. Both variants include a Promo Flag, media area, heading titled "Charging and energy management in the STIHL AP system," a description, metadata with flags, a decorative link, and a footer. The decorative link is visually indicated with a pointer cursor, reinforcing that the entire card is clickable and navigates to another destination. The horizontal variant has medium padding, content sizing set to hug, and content orientation set to vertical. The decorative link is used to enhance the recognition of the card's clickability..._
+_Figure: Shows link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading copy=Charging and energy management in the STIHL AP system, decorative link, flags, media area, description, metadata, footer); link-card-horizontal (decorative link, flags, media area, heading copy=Charging and energy management in the STIHL AP system, description, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., metadata, footer, padding=medium, content sizing=hug, content orientation=vertical); cursor (type=pointer). Text in the figure: "Vertical Orientation", "Horizontal Orientation", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Decorative Link"._
 
 ### Keyboard Navigation
 
@@ -968,7 +969,7 @@ Link Cards must be fully operable using a keyboard.
 
 ![Keyboard Navigation](card/keyboard-navigation-56651-18034.png)
 
-_Figure: Two variants of a link-card component: vertical orientation and horizontal orientation. Each card includes a promo flag, heading, description, metadata with flags, a decorative link, and a media area. The cards are designed to be fully operable using a keyboard, meaning the entire card is a single focusable element that navigates to its destination when Enter is pressed. The padding is medium, and the content sizing is set to hug the content. The best practice is to avoid placing additional focusable elements inside a link card, ensuring all content within the card belongs to a single navigation target._
+_Figure: Shows link-card-vertical (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., decorative link, heading copy=Charging and energy management in the STIHL AP system, flags, media area, description, metadata, footer, padding=medium, content sizing=hug); link-card-horizontal (decorative link, flags, media area, heading copy=Charging and energy management in the STIHL AP system, description, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., metadata, footer, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Vertical Orientation", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Decorative Link", "Horizontal Orientation"._
 
 ## Examples
 
@@ -980,7 +981,7 @@ A grid of Link Cards used to surface editorial articles and navigate to individu
 
 ![Corporate STIHL Journal](card/corporate-stihl-journal-44615-15304.png)
 
-_Figure: A grid of Link Card Vertical components used in the Corporate STIHL Journal to showcase editorial articles. Each Link Card Vertical includes a media area, description, footer, and has medium padding with content sizing set to either hug or fill. The layout features a top-bar in the grid variant with two areas and a nav-bar in the main variant, both at the xl breakpoint. The text elements include headings, descriptions, and flags within each card, with navigation options like "Search Site," "Contact," and "English" in the top-bar._
+_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); link-card-vertical (description copy=Dr Michael Prochaska, Member of the Executive Board for Human Resources and Legal Affairs, talked with us about challenges HR is currently facing worldwide, how these changes are being tackled and which foundations remain unchanged despite everything., heading copy=Interview with Dr Michael Prochaska, flags, media area, description, footer, padding=medium, content sizing=hug); link-card-vertical (description copy=Electromagnetic compatibility (EMC) tests are carried out on all STIHL appliances before they are launched on the market as part of the approval process. In our, heading copy=One lab for all, flags, media area, description, footer, padding=medium, content sizing=fill); link-card-vertical (description copy=Electromagnetic compatibility (EMC) tests are carried out on all STIHL appliances before they are launched on the market as part of the approval process. In our, heading copy=Charging and energy management in the STIHL AP system, flags, media area, description, footer, padding=medium, content sizing=fill); link-card-vertical (description copy=The STIHL chain factory in Switzerland: manufacturer of all chains for STIHL chainsaws and more than 30 different hedge trimmer blades for over 50 years. . This, heading copy=Charging and energy management in the STIHL AP system, flags, media area, description, footer, padding=medium, content sizing=fill). Text in the figure: "Search Site", "Contact", "English", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "Interview with Dr Michael Prochaska", "Dr Michael Prochaska, Member of the Executive Board for Human Resources and L...", "People and Stories", "Interview", "One lab for all", "Electromagnetic compatibility (EMC) tests are carried out on all STIHL applia...", "Backstage", "Background Story", "Charging and energy management in the STIHL AP system", "The STIHL chain factory in Switzerland: manufacturer of all chains for STIHL...", "Corporate Development"._
 
 ### STIHL Career — Job Listings
 
@@ -988,7 +989,7 @@ A list of Link Cards presenting job openings where each card links to the respec
 
 ![STIHL Career — Job Listings](card/stihl-career-job-listings-44974-29810.png)
 
-_Figure: A section of the STIHL Career page titled "Stellenangebote" featuring a list of job openings presented as Link Cards. Each Link Card is a horizontal component with a heading, description, flags, footer, medium padding, content sizing set to hug, and a horizontal content orientation with a footer. The top of the page includes a top-bar in the grid variant for the main breakpoint without the brand add-on, and a nav-bar in the main variant for the main breakpoint. The cards include job titles such as "Praktikum Group Compliance Management" and locations like "Waiblingen" and "Dieburg._
+_Figure: Shows top-bar (grid variant=main, breakpoint=xl, brand add-on=false, number areas=2); nav-bar (variant=main, breakpoint=xl); link-card-horizontal (heading copy=Praktikum Group Compliance Management, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., flags, footer, padding=medium, content sizing=hug, content orientation=horizontal (with footer)); link-card-horizontal (heading copy=Abschlussarbeit Datengetriebene Analyse und KI-gestützte Bewertung  von Prüfstands-Messdaten, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., flags, footer, padding=medium, content sizing=hug, content orientation=horizontal (with footer)); link-card-horizontal (heading copy=Praktikum Forschung Werkstofftechnik - Chemielabor, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., flags, footer, padding=medium, content sizing=hug, content orientation=horizontal (with footer)); link-card-horizontal (heading copy=Praktikum Optimieren von physikalischen Modellen für Lithium-Ionen-Zellen, description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., flags, footer, padding=medium, content sizing=hug, content orientation=horizontal (with footer)). Text in the figure: "Search Site", "Contact", "English", "About STIHL", "Sustainability", "Careers", "STIHL Journal", "Press", "Stellenangebote ƒ", "Praktikum Group Compliance Management", "befristet", "Waiblingen", "Forschung & Entwicklung", "Abschlussarbeit Datengetriebene Analyse und KI-gestützte Bewertung von Prüfst...", "Auf Anfrage", "Praktikum Forschung Werkstofftechnik - Chemielabor", "Dieburg", "Marketing & Vertrieb PR", "Praktikum Optimieren von physikalischen Modellen für Lithium-Ionen-Zellen"._
 
 ## Action Card
 
@@ -1138,7 +1139,7 @@ In Figma, each card variant is delivered pre-filled with recommended content str
 
 ![Anatomy](card/anatomy-56725-21257.png)
 
-_Figure: The anatomy of an Action Card component in both vertical and horizontal orientations, detailing its slot-based structure. Each numbered callout points to specific slots within the card: 1 points to the entire Card container, 2 points to the Media Slot, 3 points to the Header Slot, 4 points to the Footer Slot, and 5 points to the Supplementary Slot. The figure shows the recommended content structure for each slot, including elements like the Promo Flag, Header Slot content, Footer Slot content, and Accordion copy._
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); action-card-vertical (supplementary slot, media slot, padding=medium, content sizing=hug); annotation-circle (number=2a, type=left, color=blue); annotation-circle (number=2b, type=left, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3a, type=left, color=blue); annotation-circle (number=3b, type=left, color=blue); annotation-circle (number=3c, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=3d, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=4a, type=left, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Vertical Orientation", "Slots", "Slots content", "Media Slot", "Header Slot", "Footer Slot", "Supplementary Slot", "2a", "Promo Flag", "Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Button", "Accordion copy", "2b", "3a", "3b", "3c", "3d", "4a", "4b", "4c", "5a"._
 
 ### Layout
 
@@ -1170,7 +1171,7 @@ However, avoid overcrowding the card to ensure it remains scannable, easy to und
 
 ![Maximum Number of Elements](card/maximum-number-of-elements-47366-8361.png)
 
-_Figure: Two variants of an Action Card component: one with a vertical orientation and the other with a horizontal orientation. Both variants include a supplementary slot, a media slot, medium padding, and content sizing set to hug. The vertical orientation has content arranged in a column, while the horizontal orientation arranges content in a row with vertical content orientation. The text elements include a "Promo Flag," a title "Charging and energy management in the STIHL AP system," descriptive text, "Metadata," "Flag," "Button," and "Accordion copy." The documentation advises against overcrowding the card to maintain scannability and adaptability to smaller screens._
+_Figure: Shows action-card-vertical (supplementary slot, media slot, padding=medium, content sizing=hug); action-card-horizontal (supplementary slot, media slot, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Vertical Orientation", "Horizontal Orientation", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Button", "Accordion copy"._
 
 #### Minimum Number of Elements
 
@@ -1183,7 +1184,7 @@ An Action Card must contain at least two elements:
 
 ![Minimum Number of Elements](card/minimum-number-of-elements-47366-8368.png)
 
-_Figure: An action-card-vertical component with padding set to medium and content sizing set to hug. It includes a heading that reads "Charging and energy management in the STIHL AP system" and a button labeled "Button text." The heading is mandatory for accessibility, serving as the label for screen readers, while the button is an example of an action element._
+_Figure: Shows action-card-vertical (padding=medium, content sizing=hug). Text in the figure: "Charging and energy management in the STIHL AP system", "Button text"._
 
 ### Slot Elements
 
@@ -1220,7 +1221,7 @@ This configuration allows flexible layouts while giving designers control over b
 
 ![Slot Elements](card/slot-elements-48944-13201.png)
 
-_Figure: Various layouts of an Action Card component, specifically the "action-card-vertical" and "action-card-horizontal" variants. It illustrates two main layout options: "Non-stretch (default)" and "Stretch," each showing different configurations of buttons within the card's footer slot. The cards include elements such as headings, flag elements, graphic areas, and text overflow, with buttons that either wrap or stretch based on available space. The "Non-stretch" layout shows buttons keeping their intrinsic width and wrapping when space is insufficient, while the "Stretch" layout shows buttons stretching to fill available space..._
+_Figure: Shows action-card-vertical (media slot, padding=medium, content sizing=hug); action-card-horizontal (media slot, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Non-stretch (default)", "vertical card: wrap, two buttons", "vertical card: wrap, two buttons (long copy)", "vertical card: wrap, one button", "horizontal card: wrap, two buttons", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Button text", "Button", "Button long text", "Stretch", "vertical card: stretch, horizontal, two buttons", "vertical card: stretch, vertical, two buttons", "vertical card: stretch, horizontal, one button", "horizontal card: stretch, horizontal, two buttons"._
 
 **Accordion**
 
@@ -1232,7 +1233,7 @@ If the main focus is expanding/collapsing information → use an **Expandable Ca
 
 ![Slot Elements](card/slot-elements-48944-13226.png)
 
-_Figure: Two variants of an action card component: one with vertical orientation and one with horizontal orientation. Both variants include a supplementary slot, a media slot, medium padding, and content sizing set to hug. The vertical orientation shows the action card with an accordion component that expands vertically to reveal additional content when activated. The horizontal orientation shows the action card with an accordion component that expands to the right to reveal additional content. The text "Charging and energy management in the STIHL AP system" is used as an example title, and "Button text" and "Button" are placeholders for action buttons..._
+_Figure: Shows action-card-vertical (supplementary slot, media slot, padding=medium, content sizing=hug); action-card-horizontal (supplementary slot, media slot, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Vertical Orientation", "Horizontal Orientation", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Button text", "Button", "Accordion copy", "Lorem ipsum dolor sit amet consectetur. Imperdiet fringilla aliquam libero he..."._
 
 ### Custom Slot Content
 
@@ -1253,7 +1254,7 @@ This allows designers to incorporate custom designs for use cases not covered by
 
 ![Custom Slot Content](card/custom-slot-content-57292-24205.png)
 
-_Figure: Two variants of an Action Card component: "Vertical Orientation" and "Horizontal Orientation." Each variant includes a header slot with a heading copy "Charging and energy management in the STIHL AP system," a description copy "Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances," a graphic area, and flags at the top. Both variants have a supplementary slot, media slot, medium padding, and content sizing set to hug. The vertical orientation has content orientation set to horizontal, while the horizontal orientation has it set to vertical..._
+_Figure: Shows action-card-vertical (supplementary slot, media slot, padding=medium, content sizing=hug); action-card-horizontal (supplementary slot, media slot, padding=medium, content sizing=hug, content orientation=vertical); header slot (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., graphic area, heading copy=Charging and energy management in the STIHL AP system, description, flags top). Text in the figure: "Vertical Orientation", "Horizontal Orientation", "Promo Flag", "Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Button", "Accordion copy", "Swappable component instance"._
 
 ## Behavior & Usage
 
@@ -1263,7 +1264,7 @@ _Figure: Two variants of an Action Card component: "Vertical Orientation" and "H
 
 ![Interactivity](card/interactivity-49138-47624.png)
 
-_Figure: Two variants of an Action Card component: "action-card-vertical" and "action-card-horizontal". Both variants include a supplementary slot, media slot, medium padding, and content sizing set to hug. The vertical orientation stacks elements vertically, while the horizontal orientation arranges elements side by side with content oriented vertically. The text "Charging and energy management in the STIHL AP system" and "Benefit now from the expertise of our experts - because you deserve advice an..." is shown within both card variants. Each card contains interactive elements such as "Button" and "Accordion copy". By default, the cards are non-interactive..._
+_Figure: Shows action-card-vertical (supplementary slot, media slot, padding=medium, content sizing=hug); action-card-horizontal (supplementary slot, media slot, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Vertical orientation", "Horizontal orientation", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Button", "Accordion copy"._
 
 ### Usage in Context
 
@@ -1295,7 +1296,7 @@ The Heading is **mandatory** for every Action Card. It identifies the Card and p
 
 ![Heading = Accessible Label](card/heading-accessible-label-47366-8349.png)
 
-_Figure: An Action Card component, specifically the action-card-vertical variant. This card includes a media slot at the top with medium padding and content sizing set to hug. The Accessible Label, which is mandatory, is shown as "Charging and energy management in the STIHL AP system." Below the heading, there is additional descriptive text and a button labeled "Continue with this Action." The Heading identifies the card and provides context for its actions, ensuring it is descriptive and meaningful out of context._
+_Figure: Shows action-card-vertical (media slot, padding=medium, content sizing=hug). Text in the figure: "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Continue with this Action"._
 
 ### Keyboard Navigation
 
@@ -1308,7 +1309,7 @@ Action Cards must be fully operable using a keyboard.
 
 ![Keyboard Navigation](card/keyboard-navigation-56821-19622.png)
 
-_Figure: An action-card-vertical component with a vertical layout, featuring a supplementary slot, a media slot, medium padding, and content sizing set to hug. The card includes a title "Charging and energy management in the STIHL AP system", a description "Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-perf...", two buttons labeled "Button", and an accordion element labeled "Accordion copy". The figure emphasizes that action cards must be fully operable using a keyboard, with interactive elements independently focusable and following the visual reading order..._
+_Figure: Shows action-card-vertical (supplementary slot, media slot, padding=medium, content sizing=hug). Text in the figure: "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Button", "Accordion copy"._
 
 ## Examples
 
@@ -1317,8 +1318,6 @@ _Figure: An action-card-vertical component with a vertical layout, featuring a s
 ### My STIHL Website Product Details Page
 
 ![My STIHL Website Product Details Page](card/my-stihl-website-product-details-page-54975-19134.png)
-
-_Figure: A Card component on the My STIHL Website Product Details Page. It includes three product price cards with different availability statuses: "Available now," "In stock within 2-3 weeks," and "Out of stock." Each price card shows a price and an orange arrow button. Below the price cards, there is a section for scheduling service appointments and a list of service protocols with PDF icons and creation dates. The service appointment section includes a photo of a technician, a description, a next service date, and two buttons labeled "Make an appointment" and "Set or change reminder." The service protocols section lists two protocols with titles and creation dates._
 
 ## Selectable Card
 
@@ -1370,15 +1369,15 @@ Selectable Card – Control type: Checkbox
 
 ![Selectable Card](card/selectable-card-64762-37015.png)
 
-_Figure: Various layouts and states of a Selectable Card component from the STIHL Design System. It shows cards with and without a media slot, different content sizing options (hug and fill), and two control types (checkbox and radio). The figure illustrates padding variations (medium and small) and demonstrates how the entire card acts as an interaction target, with no additional interactive elements like buttons or accordions. Each card structure includes a footer slot and is shown in an enabled, unselected, and valid state. The "Promo Flag" and "Charging and energy management in the STIHL AP system" text are used as examples within the cards._
+_Figure: Shows card-structure (footer slot, state=enabled, selected=no, invalid=no, internal (do not modify) - media slot=⛔️ internal (do not modify) - yes, internal (do not modify) - control=⛔️ internal (do not modify) - checkbox); card-structure (footer slot, state=enabled, selected=no, invalid=no, internal (do not modify) - media slot=⛔️ internal (do not modify) - no, internal (do not modify) - control=⛔️ internal (do not modify) - checkbox); card-structure (footer slot, state=enabled, selected=no, invalid=no, internal (do not modify) - media slot=⛔️ internal (do not modify) - yes, internal (do not modify) - control=⛔️ internal (do not modify) - radio); card-structure (footer slot, state=enabled, selected=no, invalid=no, internal (do not modify) - media slot=⛔️ internal (do not modify) - no, internal (do not modify) - control=⛔️ internal (do not modify) - radio). Text in the figure: "Selectable Card Vertical", "with media slot", "without media slot", "content sizing: hug", "content sizing: fill", "control: checkbox", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "padding: medium", "padding: small", "control: radio"._
 
 ![Selectable Card](card/selectable-card-64762-37030.png)
 
-_Figure: Various layouts and states of a "Selectable Card Horizontal" component from the STIHL Design System. It shows cards with different content orientations (vertical and horizontal with footer), padding sizes (medium and small), content sizing (hug and fill), and control types (checkbox and radio). Each card includes a media slot, a promo flag, a title, a description, metadata, and flags, illustrating how these elements are arranged based on the specified parameters._
+_Figure: Shows card-structure (media slot, state=enabled, selected=no, invalid=no, internal (do not modify) - control=⛔️ internal (do not modify) - checkbox, internal (do not modify) - content orientation=⛔️ internal (do not modify) - vertical); card-structure (media slot, state=enabled, selected=no, invalid=no, internal (do not modify) - control=⛔️ internal (do not modify) - checkbox, internal (do not modify) - content orientation=⛔️ internal (do not modify) - horizontal); card-structure (media slot, state=enabled, selected=no, invalid=no, internal (do not modify) - control=⛔️ internal (do not modify) - radio, internal (do not modify) - content orientation=⛔️ internal (do not modify) - vertical); card-structure (media slot, state=enabled, selected=no, invalid=no, internal (do not modify) - control=⛔️ internal (do not modify) - radio, internal (do not modify) - content orientation=⛔️ internal (do not modify) - horizontal). Text in the figure: "Selectable Card Horizontal", "control: checkbox", "padding: medium", "content sizing: hug", "content sizing: fill", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "content orientation: vertical", "content orientation: horizontal (with footer)", "padding: small", "control: radio"._
 
 ![Selectable Card](card/selectable-card-64762-37057.png)
 
-_Figure: Various configurations and states of a "Selectable Card" component from the STIHL Design System. It includes different aspect ratios for images such as 16:9, 4:3, and 1:1, and shows components like the "graphic-area," "flag," "card-surface," "media-slot," and "building-element-radio." Each layout demonstrates how these elements are arranged within the card, including header and footer slots, and different states like enabled, hover, disabled, and invalid for the radio control. The measurements refer to the size of graphic areas and aspect ratios of image placeholders. The figure also highlights the use of flags with labels like "Flag" and "Promo Flag," and their respective colors._
+_Figure: Shows swap me (aspect ratio=1:1); graphic-area (size=32px); flag (label=Flag, color=status: info); placeholder: image (aspect ratio=16:9); flag (label=Promo Flag, color=promo: highlight); placeholder: image (aspect ratio=4:3); placeholder: image (aspect ratio=1:1); card-surface (variant=outlined); media-slot (promo flag, aspect ratio=16:9); building-element-radio (label=Radio Label, type=label, state=enabled, checked=false, invalid=false); header-slot (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., graphic area, heading copy=Charging and energy management in the STIHL AP system, description); footer-slot (metadata copy=Metadata, metadata, flags bottom, alignment=left). Text in the figure: "Building Blocks", "Card Surface (Variant)", "Header slot", "Footer slot", "Graphic Area", "elevated", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "outlined", "Media Slot: Vertical", "Media Slot: Horizontal", "Promo Flag", "aspect ratio: 16:9", "aspect ratio: 4:3", "aspect ratio: 1:1", "aspect ratio: 3:4", "Card structure vertical", "control: radio", "enabled", "hover", "disabled", "invalid"._
 
 ### Further guidelines
 
@@ -1435,7 +1434,7 @@ Available content may vary depending on the use case, while the Control and Head
 
 ![Anatomy](card/anatomy-66439-55402.png)
 
-_Figure: The anatomy of a Selectable Card component in both vertical and horizontal orientations, detailing its structure and various slots. The numbered callouts point to specific parts of the card: 1 indicates the Card Container, 2 points to the Control Indicator, 3 highlights the Media Slot, 4 refers to the Header Slot, and 5 indicates the Footer Slot. The figure also shows different states and content sizing options, such as the checkbox selection control and the hug content sizing, with medium padding and a media slot included._
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); annotation-circle (number=2a, type=top, color=blue); annotation-circle (number=2b, type=top, color=blue); selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true); annotation-circle (number=3a, type=left, color=blue); annotation-circle (number=2, type=right, color=blue); building-element-radio (label=Radio Label, type=label, state=enabled, checked=false, invalid=false); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=3b, type=left, color=blue); annotation-circle (number=4a, type=left, color=blue); annotation-circle (number=4b, type=left, color=blue); annotation-circle (number=4, type=left, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Vertical Orientation", "Slots", "Slots content", "2a", "2b", "Optimizing Charging and Energy Management in the STIHL AP System", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Media Slot", "Header Slot", "Footer Slot", "3a", "Promo Flag", "Charging and energy management in the STIHL AP system", "3b", "4a", "4b", "4c", "4d", "5a", "5b", "Horizontal Orientation"._
 
 #### Don’t modify Figma properties labeled “⛔️ Internal (do not modify)
 
@@ -1445,7 +1444,7 @@ Use the corresponding configurable properties provided on the main component ins
 
 ![Don’t modify Figma properties labeled “⛔️ Internal (do not modify)](card/don-t-modify-figma-properties-labeled-internal-do-not-modify-67169-48192.png)
 
-_Figure: The Figma property panel of the Selectable Card Component, specifically the selectable-card-xx variant. It shows various configurable properties such as control type, content sizing, padding, and media slot, as well as internal properties labeled "⛔️ Internal (do not modify)" which should not be altered. The example is marked as a "Don't" because it demonstrates properties that are internally managed and should not be modified to ensure the component functions correctly._
+_Figure: Don't example. Shows iconography (function=more actions); row type (type=variant); row type (type=boolean true); row type (type=boolean false). Text in the figure: "Figma property panel of the Selectable Card Componentent", "selectable-card-xx", "control", "checkbox", "content sizing", "hug", "padding", "medium", "media slot", "card-structure", "↳ state", "enabled", "↳ selected", "↳ invalid", "⛔️ internal (do not modify) - media slot", "⛔️ internal (do not modify) - yes", "⛔️ internal (do not modify) - control", "⛔️ internal (do not modify) - radio", "↳ footer slot", "card-surface", "↳ variant", "outlined"._
 
 ### Layout
 
@@ -1467,7 +1466,7 @@ See [Selectable Card Group: Responsive Behavior](https://www.figma.com/design/qX
 
 ![Sizing & Constraints](card/sizing-constraints-66439-55734.png)
 
-_Figure: Two vertical selectable cards, one with a media slot and one without. The default minimum width for the vertical selectable card with a media slot is 186 pixels, while the global minimum width for cards without images is 134 pixels. The reduced minimum width should only be used for cards without images to prevent the selection control from covering too much of the image._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=small, media slot=true); selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=small, media slot=false). Text in the figure: "Heading", "Description text", "Default min. width: 186px", "Global min. width: 134px"._
 
 ### Resizing Behavior
 
@@ -1493,13 +1492,13 @@ The Control and Heading are always present. The additional element provides the 
 
 ![Minimum Number of Elements](card/minimum-number-of-elements-66439-55199.png)
 
-_Figure: Two variants of a Selectable Card component in a vertical layout. The first card includes a checkbox control, a heading, and description text, while the second card includes a checkbox control, a heading, and an image. Callout 1 points at the checkbox control, callout 2 points at the heading, and callout 3 points at the additional element, which is either description text or an image. The cards demonstrate the minimum number of elements required for a Selectable Card, which are a control, a heading, and at least one additional element to provide context._
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); selectable-card-vertical (control=checkbox, content sizing=hug, padding=medium, media slot=true); selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue). Callouts 1, 2, 3. Text in the figure: "Heading", "Description text"._
 
 **Don’t use a Selectable Card when options only require a Heading. Use standard Radio Buttons or Checkboxes instead.**
 
 ![Minimum Number of Elements](card/minimum-number-of-elements-66439-55209.png)
 
-_Figure: A "Don't" example of using a Selectable Card when options only require a Heading. Instead, it suggests using standard Radio Buttons or Checkboxes. The figure includes a Selectable Card with a checkbox and a Radio Button labeled "Radio Label". The text "use a radio button instead" indicates the recommended alternative._
+_Figure: Don't example. Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false). Text in the figure: "Radio label", "Radio Label", "use a radio button instead"._
 
 #### Additional Content
 
@@ -1517,7 +1516,7 @@ There is no defined maximum number of elements. Avoid adding content that does n
 
 ![Additional Content](card/additional-content-66439-55219.png)
 
-_Figure: A vertical variant of a selectable card component with a checkbox control and medium padding. The numbered callouts point to the following elements: 1 refers to the main content area with a title and description, 2 points to the media slot containing an image placeholder, 3 indicates a promo flag in the top right corner, 4 highlights the title and description text, and 5 points to the metadata section at the bottom with flags. The card includes additional content such as a description, media content, a promo flag, a graphic area, and metadata to help users understand, distinguish, or evaluate the available options._
+_Figure: Shows annotation-circle (number=3, type=left, color=blue); selectable-card-vertical (control=checkbox, content sizing=hug, padding=medium, media slot=true); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=5, type=left, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
 
 **Do use a consistent content structure across Selectable Cards within the same group where possible.**
 
@@ -1525,7 +1524,7 @@ Similar types of information should be presented in the same position and order 
 
 ![Additional Content](card/additional-content-66439-55226.png)
 
-_Figure: Three selectable-card-vertical components with a checkbox selection control, medium padding, and a media slot. Each card has a consistent structure: a title, a description, and a price note. The cards are laid out horizontally, demonstrating a "Do" example of maintaining a consistent content structure across selectable cards within the same group to support scanning and comparison. The first card is highlighted with an "Our recommended service" label._
+_Figure: Do example. Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Our recommended service", "STIHL Pro Servicing", "Ensures safety compliance, preventive parts replacement, and thorough cleaning", "Price on request", "STIHL Servicing", "Includes checking device functionality, replacing parts, and cleaning", "STIHL Check", "A fundamental diagnostic check to ensure that all Stihl tools are functioning..."._
 
 ### Heading
 
@@ -1537,7 +1536,7 @@ See [Foundations: Heading](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?n
 
 ![Heading](card/heading-66439-55239.png)
 
-_Figure: Three instances of the selectable-card-vertical component, each with a checkbox control, hug content sizing, medium padding, and a media slot. Each card has a Heading that identifies the selectable option: "Pickup," "Delivery," and "Shipping." The cards include additional text such as "Ready in: 2 hours," "Free," "No dealer available," "Arrives by: Thu, May 24," and "Shipping: $50." The first card is highlighted with a bold border, indicating it is selected._
+_Figure: Shows selectable-card-vertical (control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Pickup", "Ready in: 2 hours", "Free", "Delivery", "No dealer available", "Shipping", "Arrives by: Thu, May 24", "Shipping: $50"._
 
 ### Description
 
@@ -1547,7 +1546,7 @@ Keep descriptions concise and focused on information that is relevant to the sel
 
 ![Description](card/description-66439-55263.png)
 
-_Figure: Two variants of a selectable card component: one with a vertical orientation and the other with a horizontal orientation. Each card includes a checkbox for selection control, a promo flag, a heading titled "Charging and energy management in the STIHL AP system," a description providing additional information, metadata, and three flag labels. The vertical orientation has content sizing set to hug and medium padding, while the horizontal orientation has content sizing set to hug, medium padding, and a vertical content orientation._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true); selctable-card-horizontal (selection control=checkbox, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Vertical Orientation", "Horizontal Orientation", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
 
 ### Media & Graphic Content
 
@@ -1565,7 +1564,7 @@ Images follow the shared Card image proportions and resizing behavior. See [Foun
 
 ![Image](card/image-66439-55302.png)
 
-_Figure: A vertical orientation selectable-card-group with four selectable cards, each containing an image, text, and a radio button for selection control. Each card includes a title and description, with the images following shared card image proportions. The group is labeled "sägen und schneiden (6)" at the top. The text next to the figure advises consistent use of images within the same selectable card group and notes that mixing cards with and without images can reduce visual consistency and comparability._
+_Figure: Shows selectable-card-group (legend=Selectable Card Group Legend, radio-group=\[object Object\], hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, selection control=radio button, invalid=false). Text in the figure: "sägen und schneiden (6)", "MSA Motorsägen", "Für Fällarbeiten und Holz ablängen. Für Stammdurchmesser 40 cm", "HLA Heckenschneider", "Für Baumpflege-Arbeiten. Für Stammdurchmesser bis 30 cm", "HSA Heckenscheren"._
 
 ### Interactive Content
 
@@ -1581,7 +1580,7 @@ When a Card contains additional actions and users need to independently select a
 
 ![Interactive Content](card/interactive-content-66439-55376.png)
 
-_Figure: Correct and incorrect usage of interactive content within cards in a UI design system. The "Don't" example shows a card-surface with an outlined variant and enabled state, containing a switch labeled "Label" which is incorrect because a switch should not be used in place of a control for selection. Instead, the correct usage is shown with a selectable-card-vertical using a radio button or checkbox for selection, and an action card with a checkbox labeled "Checkbox Label". The layout includes a media slot with a 16:9 aspect ratio, a header slot with descriptive text and heading, and a card-button-group..._
+_Figure: Don't example. Shows card-surface (variant=outlined, state=enabled); media slot (aspect ratio=16:9); header slot (description copy=Benefit now from the expertise of our experts - because you deserve advice and service just as much as high-performance appliances., heading copy=Charging and energy management in the STIHL AP system, description); card-button-group (flow=wrap, stretch=false); switch (Label=Label, state=enabled, checked=false); selectable-card-vertical (selection control=radio, content sizing=hug, padding=medium, media slot=true); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false). Text in the figure: "Don’t use a Switch in place of a Control.", "Use a Selectable Card with Radio or Checkbox behavior", "Use an Action Card with a Checkbox", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Button", "Metadata", "Flag", "Checkbox Label", "Instead"._
 
 ## Behavior & Usage
 
@@ -1595,7 +1594,7 @@ For Radio and Checkbox selection rules, see [Selectable Card Group: Control Type
 
 ![Interactivity](card/interactivity-66439-55915.png)
 
-_Figure: Two variants of a vertical Selectable Card component: one with a Radio selection control and the other with a Checkbox selection control. Both cards have a "Promo Flag" at the top, an image placeholder, a title "Charging and energy management in the STIHL AP system," a description starting with "Benefit now from the expertise of our experts," and a section labeled "Metadata" with tags labeled "Flag." The cards have medium padding and the content size is set to hug the content. The cursor type is pointer, indicating interactivity. The entire card acts as a single selection target, changing its selection state when clicked or tapped._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true); cursor (type=pointer). Text in the figure: "Radio", "Checkbox", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
 
 ### States
 
@@ -1633,7 +1632,7 @@ Selectable Cards communicate both their current interaction state and selection 
 
 ![States](card/states-66439-55932.png)
 
-_Figure: Selectable-card-vertical components with a checkbox selection control, medium padding, and a media slot, illustrating various states and variants. The cards are shown in outlined and elevated styles across different states such as enabled, hover/pressed, focus, disabled, and enabled + invalid. Each state demonstrates how the card appears when selected, hovered, focused, or invalid, with visual distinctions to indicate interaction availability and selection status. The text and layout remain consistent across states, with variations in border, background color, and focus indicators to convey interactivity and selection clearly._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true); selectable-card-vertical (control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "enabled", "hover / pressed", "focus", "Disabled", "enabled + invalid", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "outlined", "elevated", "hover / pressed + invalid", "focus + invalid", "selected + enabled", "selected + hover / pressed", "selected + focus", "Optimizing Charging and Energy Management in the STIHL AP System", "selected + disabled", "selected + enabled + invalid", "selected + hover / p. + invalid", "selected + focus + invalid"._
 
 ### Usage in Context
 
@@ -1660,7 +1659,7 @@ The Card presentation and Card-level interaction target must not change or repla
 
 ![Semantics](card/semantics-66439-55846.png)
 
-_Figure: Two variants of a Card component: one with a radio button and another with a checkbox. Each card has a label "Charging and energy management in the STIHL AP system" and additional text describing benefits. The radio button card includes a "Radio Label" and the checkbox card includes a "Checkbox Label." The radio button and checkbox preserve their native semantics and states, ensuring that the card presentation does not alter the expected behavior of these controls._
+_Figure: Shows s-card-skeleton (state=enabled, selection control=radio button, selected=no, invalid=no, media area=no); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); s-card-skeleton (state=enabled, selection control=checkbox, selected=no, invalid=no, media area=no); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false). Text in the figure: "Radio", "Checkbox", "Radio Button", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Radio Label", "Checkbox Label"._
 
 ### Accessible Name
 
@@ -1676,7 +1675,7 @@ Group-level labeling is defined separately. See [Selectable Card Group: Legend](
 
 ![Accessible Name](card/accessible-name-66439-55867.png)
 
-_Figure: Three selectable-card-vertical components, each with a checkbox selection control, medium padding, and a media slot. Each card includes a heading, description, and price information. The headings are "STIHL Pro Servicing," "STIHL Servicing," and "STIHL Check," which serve as the accessible names for the underlying checkboxes. The first card has an additional label "Our recommended service." The content sizing is set to hug, meaning the content determines the size of the card._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Our recommended service", "STIHL Pro Servicing", "Ensures safety compliance, preventive parts replacement, and thorough cleaning", "Price on request", "STIHL Servicing", "Includes checking device functionality, replacing parts, and cleaning", "STIHL Check", "A fundamental diagnostic check to ensure that all Stihl tools are functioning..."._
 
 ### Focus
 
@@ -1690,7 +1689,7 @@ Focus must remain visible across all Card states, including when the Card is sel
 
 ![Visible Focus](card/visible-focus-66439-55879.png)
 
-_Figure: A selectable-card-vertical component with visible focus. The Card has a checkbox for selection control, medium padding, and includes a media slot at the top. The focus indicator highlights the entire Card, indicating which option currently has keyboard focus. The text "Focus" at the top signifies the focus state, and the Card includes content such as "STIHL Check" and "Price on request". The focus must remain visible in all states, including when the Card is selected or invalid._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Focus", "STIHL Check", "A fundamental diagnostic check to ensure that all Stihl tools are functioning...", "Price on request"._
 
 #### Focus vs. Selected
 
@@ -1700,7 +1699,7 @@ Keyboard navigation and focus movement between Selectable Cards are defined at g
 
 ![Focus vs. Selected](card/focus-vs-selected-66439-55886.png)
 
-_Figure: Two variants of a selectable-card-vertical component, illustrating the "Focus" and "Selected + Focus" states. The "Focus" variant shows a card with a focus indicator, while the "Selected + Focus" variant shows a card with both a selection indicator and a focus indicator. The cards have a medium padding, hug content sizing, and include a media slot. The text next to the figure explains that focus and selection communicate different states and must remain visually distinguishable, with the selected styling not replacing or obscuring the focus indicator._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Focus", "Selected + Focus", "STIHL Servicing", "Includes checking device functionality, replacing parts, and cleaning", "Price on request", "STIHL Check", "A fundamental diagnostic check to ensure that all Stihl tools are functioning..."._
 
 ### Touch Target
 
@@ -1710,7 +1709,7 @@ For general touchscreen guidance, see [Foundations: Touchscreen Device Considera
 
 ![Touch Target](card/touch-target-66439-55897.png)
 
-_Figure: A vertical selectable card component from the STIHL Design System. The entire card acts as the touch target, not just the visible checkbox control. The card includes a title "STIHL Servicing", a description "Includes checking device functionality, replacing parts, and cleaning", and a price note "Price on request". The card has a media slot with an image at the top, medium padding, and content sizing set to hug._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "STIHL Servicing", "Includes checking device functionality, replacing parts, and cleaning", "Price on request"._
 
 ## Selectable Card Group
 
@@ -1734,7 +1733,7 @@ The control property determines whether the group uses [**Radio**](https://www.f
 
 ![Selectable Card Group](card/selectable-card-group-64762-38167.png)
 
-_Figure: A Selectable Card Group component, showcasing both horizontal and vertical orientations with radio and checkbox controls. It displays various states such as valid and invalid, and includes elements like system feedback messages and promo flags. The measurements refer to properties like content sizing, padding, and the presence of media slots. Each card variant is labeled with specific attributes such as control type, content sizing, padding, and content orientation._
+_Figure: Shows selectable-card-vertical (control=radio, content sizing=hug, padding=medium, media slot=true); system-feedback (type=error); selectable-card-vertical (control=checkbox, content sizing=hug, padding=medium, media slot=true); selctable-card-horizontal (control=radio, padding=medium, content sizing=hug, content orientation=vertical); selctable-card-horizontal (control=checkbox, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Selectable Card Group", "Orientation: Horizontal", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "System Feedback Message", "control = radio", "invalid = false", "invalid = true", "control = checkbox", "Orientation: Vertical"._
 
 ### Further guidelines
 
@@ -1770,7 +1769,7 @@ The Selectable Card Group combines related Selectable Cards into a single select
 
 ![Anatomy](card/anatomy-66439-54413.png)
 
-_Figure: The anatomy of a Selectable Card Group component in a horizontal layout, highlighting its structure and various elements. Callout 1 points to the legend labeled "Selectable Card Group Legend," which identifies the group's purpose. Callout 2 points to the optional info button, which opens additional information. Callout 3 indicates the hint text, providing supporting guidance. Callout 4 shows the system feedback message area, and callout 5 points to the individual selectable cards within the group, each containing a promo flag, title, description, metadata, and flags. The group includes four selectable cards with radio buttons for selection, and the group is marked as invalid._
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, ℹ️ info-button, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=true); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=5, type=left, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "System Feedback Message", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
 
 ### Layout
 
@@ -1785,7 +1784,7 @@ Responsive changes to the arrangement and Card orientation are defined under [Re
 
 ![Layout](card/layout-66439-54431.png)
 
-_Figure: Two orientations for the Selectable Card Group component: Horizontal and Vertical. In the Horizontal orientation, Selectable Cards are arranged side by side, each using a Vertical layout to support comparison. In the Vertical orientation, Selectable Cards are stacked one below the other, each using a Horizontal layout. Both orientations use radio buttons for selection control and include a legend and hint text labeled "Selectable Card Group Legend" and "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget." respectively. Each card contains an image, title, description, metadata, and flags._
+_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false); selectable-card-group (legend=Selectable Card Group Legend, legend, radio-group=\[object Object\], hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, selection control=radio button, invalid=false). Text in the figure: "Horizontal Orientation", "Vertical Orientation", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Optimizing Charging and Energy Management in the STIHL AP System"._
 
 ### Sizing & Constraints
 
@@ -1799,7 +1798,7 @@ See [Selectable Card: Sizing & Constraints](https://www.figma.com/design/85WZPFz
 
 ![Sizing & Constraints](card/sizing-constraints-66439-54458.png)
 
-_Figure: The sizing and constraints of a Selectable Card Group component, demonstrating how it adapts to the width of its parent container. Callout 1 points to the Selectable Card Group evenly distributing within a row and filling the available space. Callout 2 shows the cards respecting their defined minimum width of 186px, while callout 3 indicates the cards reaching their maximum width of 719px and remaining left-aligned within the group. The labels "fill", "container width", "fill (max.719px)", and "fill (min.186px)" refer to the flexible sizing constraints of the cards within the group._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); helper-selectable-card (Show Ellipse 6, style=default); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue). Callouts 1, 2, 3. Text in the figure: "fill", "container width", "fill (max.719px)", "fill (min.186px)"._
 
 ## Behavior & Usage
 
@@ -1827,7 +1826,7 @@ Selection requirements and related error handling are defined under [Validation]
 
 ![Control Types](card/control-types-66439-54694.png)
 
-_Figure: Two variants of the Selectable Card Group component: Radio and Checkbox. Each variant shows four cards in a horizontal layout, with the Radio variant allowing single selection and the Checkbox variant allowing multiple selections. The Radio variant has one card selected, indicated by an orange dot, while the Checkbox variant has three cards selected, indicated by checkmarks. Each card contains the text "Charging and energy management in the STIHL AP system" and a hint text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget." The legend text "Selectable Card Group Legend" is shown above the cards._
+_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "Radio", "Checkbox", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Optimizing Charging and Energy Management in the STIHL AP System"._
 
 ### Validation
 
@@ -1849,7 +1848,7 @@ Validation timing follows the behavior of the surrounding form. Once the selecti
 
 ![Validation](card/validation-66439-54725.png)
 
-_Figure: Two variants of a selectable-card-group component: one using radio buttons and the other using checkboxes, both in an invalid state with a horizontal orientation. The radio group is labeled "Radio" and indicates an error message "Select an option" because no option is selected. The checkbox group is labeled "Checkbox" and shows an error message "Select no more than 3 options" because the selection exceeds the defined maximum. Each card within the groups has a title "Charging and energy management in the STIHL AP system" and a subtitle "Benefit now from the expertise of our experts - because you deserve advice an..."..._
+_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=true). Text in the figure: "Radio", "Checkbox", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Select an option", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Select no more than 3 options"._
 
 ### Responsive Behavior
 
@@ -1871,7 +1870,7 @@ See [Selectable Card: Sizing & Constraints](https://www.figma.com/design/85WZPFz
 
 ![Orientation](card/orientation-66439-54759.png)
 
-_Figure: The Selectable Card Group component in both horizontal and vertical orientations. In the horizontal orientation, cards are arranged side by side and wrap to additional rows when space is insufficient. In the vertical orientation, cards are stacked vertically and switch to a vertical layout when the container width is too narrow. The component includes a legend labeled "Selectable Card Group Legend" and a hint text starting with "Lorem ipsum dolor sit amet". The selection control is a radio button, and the component is shown in a valid state._
+_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false); selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nun c amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false); selectable-card-group (legend=Selectable Card Group Legend, legend, radio-group=\[object Object\], hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, selection control=radio button, invalid=false). Text in the figure: "Horizontal Orientation", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Optimizing Charging and Energy Management in the STIHL AP System", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nun c amet maur...", "Vertical Orientation", "Charging and energy management in the STIHL AP system"._
 
 #### Figma: Maintaining Card Size When Wrapping
 
@@ -1879,7 +1878,7 @@ _Figure: The Selectable Card Group component in both horizontal and vertical ori
 
 ![Figma: Maintaining Card Size When Wrapping](card/figma-maintaining-card-size-when-wrapping-66439-54809.png)
 
-_Figure: A "selectable-card-group" component in a horizontal orientation with a legend titled "Selectable Card Group Legend" and a hint text. Callout 1 points to the first group of cards with two layout helpers visible, while callout 2 points to another group of cards with one layout helper visible. The layout helpers, labeled "📐 layout helper 1" and "📐 layout helper 2," ensure that cards maintain their size when wrapping, especially when card positions remain empty._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false); annotation-circle (number=2, type=center, color=blue). Callouts 1, 2. Text in the figure: "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Optimizing Charging and Energy Management in the STIHL AP System", "📐 layout helper 1", "📐 layout helper 2"._
 
 #### Spacing
 
@@ -1891,7 +1890,7 @@ Ensure that the appropriate Variable Mode is applied to your design.
 
 ![Spacing](card/spacing-66439-54841.png)
 
-_Figure: A selectable-card-group component in a horizontal orientation, showing its layout at two different breakpoints: Breakpoint XL and Breakpoint M. The cards are spaced dynamically based on the active Variable Mode, not the container width. Each card includes a radio button for selection, a title "Charging and energy management in the STIHL AP system", and a description starting with "Benefit now from the expertise of our experts - because you deserve advice an...". The legend above the cards reads "Selectable Card Group Legend" and includes a hint text starting with "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri..."._
+_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "Breakpoint XL", "Breakpoint M", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an..."._
 
 ### Placement
 
@@ -1905,7 +1904,7 @@ The Selectable Card Group is ideally placed within the appropriate Grid Content 
 
 ![Placement](card/placement-66439-54867.png)
 
-_Figure: The placement of the Selectable Card Group component within different Grid Content Areas. Callout 1 points to the Main area, which is used for spacious layouts. Callout 2 points to the Narrow Left area, which is used for more compact layouts. Callout 3 points to the Two Thirds area, commonly used when a Stepper is positioned to the left or right of the main content._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue). Callouts 1, 2, 3. Text in the figure: "main", "Narrow left", "Back", "Next", "Two Thirds"._
 
 ## Accessibility
 
@@ -1921,19 +1920,19 @@ Each Selectable Card retains its own accessible name through its Heading.
 
 ![Legend](card/legend-66439-55024.png)
 
-_Figure: Two variants of a selectable-card-group component with a legend labeled "Delivery Method." The first variant shows the legend as visible by default, while the second variant shows the legend hidden but still accessible to screen readers. Each card within the group represents different delivery options: "Pickup," "Delivery," and "Shipping," each with its own details and selection control via radio buttons. The legend provides context for the selection field and is programmatically associated with all selectable cards._
+_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, selection control=radio button, invalid=false); selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "Default: Visible Legend", "Visible hidden but available to screen readers", "Delivery Method", "Pickup", "Ready in: 2 hours", "Free", "Delivery", "No dealer available", "Shipping", "Arrives by: Thu, May 24", "Shipping: $50", "“Legend content”"._
 
 **Do provide a Legend that clearly describes what users are selecting.**
 
 ![Legend](card/legend-66439-55054.png)
 
-_Figure: A selectable-card-group component with a horizontal orientation and radio buttons for selection control. It includes a legend labeled "Delivery Method" and three cards: "Pickup" with details "Ready in: 2 hours" and "Free," "Delivery" with the note "No dealer available," and "Shipping" with details "Arrives by: Thu, May 24" and "Shipping: $50." This example is marked as a "Do" because it provides a clear legend that describes what users are selecting._
+_Figure: Do example. Shows selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "Delivery Method", "Pickup", "Ready in: 2 hours", "Free", "Delivery", "No dealer available", "Shipping", "Arrives by: Thu, May 24", "Shipping: $50"._
 
 **Don’t remove the Legend from the accessibility tree when hiding it visually.**
 
 ![Legend](card/legend-66439-55070.png)
 
-_Figure: A "selectable-card-group" component with the legend "Delivery Method" and a hint text. It includes three selectable cards labeled "Pickup," "Delivery," and "Shipping," each with specific details such as "Ready in: 2 hours," "No dealer available," and "Arrives by: Thu, May 24." The board is marked as a "Don't" example, indicating that the legend should not be removed from the accessibility tree when hiding it visually._
+_Figure: Don't example. Shows selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "“ – ”", "Pickup", "Ready in: 2 hours", "Free", "Delivery", "No dealer available", "Shipping", "Arrives by: Thu, May 24", "Shipping: $50"._
 
 ### Keyboard Navigation
 
@@ -1948,7 +1947,7 @@ Tab moves focus into and out of the Radio Group rather than between individual R
 
 ![Keyboard Navigation](card/keyboard-navigation-66439-55095.png)
 
-_Figure: The keyboard navigation for the selectable-card-vertical component in the STIHL Design System, which uses checkboxes for selection control, hugs content sizing, has medium padding, and includes a media slot. It shows three Radio Selectable Cards with the focus moving between them using the arrow left or arrow right keys, automatically selecting the focused option. The text describes how navigation works, specifying that arrow keys move focus between cards and replace the previous selection._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Move focus between Radio Selectable Cards and automatically select the focuse...", "Arrow left", "or", "Arrow right", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
 
 **Checkbox**
 
@@ -1960,7 +1959,7 @@ Each Checkbox Selectable Card is an individual Tab stop.
 
 ![Keyboard Navigation](card/keyboard-navigation-66439-55115.png)
 
-_Figure: Three Checkbox Selectable Cards in a horizontal layout, each representing a selectable-card-vertical component with a checkbox selection control, medium padding, and a media slot. The cards are labeled "Charging and energy management in the STIHL AP system" and include additional text and flags. The first card is highlighted to indicate it is focused. The text explains that the Tab key moves focus between the cards, and the Space key toggles the selection state of the focused card. Arrow keys do not navigate between the cards._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Move focus between Checkbox Selectable Cards:", "Tab", "Space toggles the selection state of the focused Card:", "Space", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
 
 ## Examples
 
@@ -1972,7 +1971,7 @@ Delivery selection during the checkout process (Radio).
 
 ![STIHL Website](card/stihl-website-66439-55139.png)
 
-_Figure: A selectable-card-group component for choosing a delivery method during the checkout process on the STIHL Website. This component includes three radio buttons labeled "Pickup," "Delivery," and "Shipping," arranged horizontally. The "Pickup" option is selected and indicates it is ready in 2 hours for free, while the "Delivery" option is unavailable, and the "Shipping" option arrives by Thursday, May 24, with a cost of $50._
+_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, control=radio button, invalid=false). Text in the figure: "Delivery Method", "Pickup", "Ready in: 2 hours", "Free", "Delivery", "No dealer available", "Shipping", "Arrives by: Thu, May 24", "Shipping: $50"._
 
 ### STIHL App
 
@@ -1980,7 +1979,7 @@ Service package selection for STIHL tools (Radio).
 
 ![STIHL App](card/stihl-app-66439-55144.png)
 
-_Figure: Three vertical selectable cards labeled "STIHL Servicing," "STIHL Check," and "STIHL Pro Servicing," each with a checkbox for selection. Each card includes an image, a title, a brief description, and a "Price on request" button. The card for "STIHL Pro Servicing" has an additional label "Our recommended service." The cards have medium padding and content sizing that hugs the content._
+_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "STIHL Servicing", "Includes checking device functionality, replacing parts, and cleaning", "Price on request", "STIHL Check", "A fundamental diagnostic check to ensure that all Stihl tools are functioning...", "Our recommended service", "STIHL Pro Servicing", "Ensures safety compliance, preventive parts replacement, and thorough cleaning"._
 
 ### STIHL.de
 
@@ -1988,7 +1987,7 @@ Tool selection during battery advisor steps (Checkbox).
 
 ![STIHL.de](card/stihl-de-66439-55155.png)
 
-_Figure: A vertical stepper component with a selectable-card-group labeled "1 Gerätekategorien" and a hint text asking users to select all relevant tool categories. The selectable-card-group includes three cards with radio buttons for selection, each representing different types of tools such as "MSA Motorsägen," "HLA Heckenschneider," and "HSA Heckenscheren." The numbered callouts on the right side, labeled "1" through "6," point to placeholder labels with an optional hint, indicating where additional labels and hints can be added._
+_Figure: Shows stepper (orientation=vertical); selectable-card-group (legend=Selectable Card Group Legend, radio-group=\[object Object\], hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, selection control=radio button, invalid=false). Text in the figure: "Händler finden", "Mein STIHL", "Warenkorb", "Suchen", "English", "Produkte", "Ratgeber und Projekte", "Service und events", "Startseite", "Produkt- und zubehörberater", "Akkuberater", "Akkuberater ƒ", "1 Gerätekategorien", "Bitte wählen Sie alle Gerätekategorien aus, für die Sie sich interessieren.", "1", "Label", "Hint opt.", "2", "3", "4", "5", "6", "sägen und schneiden (6)", "MSA Motorsägen"._
 
 ## Product Card
 
@@ -2128,7 +2127,7 @@ Available elements and their positioning vary between Grid View and List View.
 
 ![Anatomy](card/anatomy-54990-20630.png)
 
-_Figure: The anatomy of a product card component in Grid View, illustrating the available elements and their positioning. The numbered callouts indicate specific areas: 1 points to the Media Slot, which can be an Image (i) or Carousel (ii), 2 points to the Product Information section including Promo Flag, Productname, Rating, Product Category, Description, and Status, and 3 points to the Footer Slot containing Price Information, Add-to-Cart Button, and Compare Checkbox. The annotations highlight different parts of the card, showing how elements are positioned within the Grid View layout._
+_Figure: Shows product-card: grid view (content sizing=hug); annotation-circle (number=1b, type=left, color=blue); annotation-circle (number=1c, type=right, color=blue); annotation-circle (number=1c, type=left, color=blue); annotation-circle (number=1a, type=left, color=blue); annotation-circle (number=1, type=right, color=blue); annotation-circle (number=ii, type=right, color=blue); annotation-circle (number=i, type=left, color=blue); annotation-circle (number=2a, type=left, color=blue); annotation-circle (number=2b, type=left, color=blue); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=2c, type=left, color=blue). Callouts 1, 2, 3. Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "1b", "1c", "1a", "ii", "i", "2a", "2b", "2c", "2d", "2e", "2f", "3a", "3b", "3c"._
 
 **List view**
 
@@ -2150,7 +2149,7 @@ _Figure: The anatomy of a product card component in Grid View, illustrating the 
 
 ![Anatomy](card/anatomy-55180-25794.png)
 
-_Figure: A product card in list view layout from the STIHL Design System. The numbered callouts indicate specific elements within the card: 1a points to the Media Slot containing an Image and a Battery Logo, 1b points to the Header Slot, 2 points to the Promo Flag, 2a points to the Product Name, 2b points to the Rating, 2c points to the Product Category, 2d points to the Description, 2e points to the Footer Slot, 3 points to the Price Information, 3a points to the Status, 3b points to the Add-to-Cart Button, 3c points to the Add-to-Favorite Button, 3d points to the Compare Checkbox, and 3e points to the Compare Checkbox label..._
+_Figure: Shows annotation-circle (number=2, type=top, color=blue); product-card: list view (container query=1435 - 766px, content sizing=fill); annotation-circle (number=1b, type=left, color=blue); annotation-circle (number=2a, type=center, color=blue); annotation-circle (number=3a, type=right, color=blue); annotation-circle (number=2b, type=center, color=blue); annotation-circle (number=1a, type=left, color=blue); annotation-circle (number=3b, type=right, color=blue); annotation-circle (number=2c, type=center, color=blue); annotation-circle (number=2d, type=center, color=blue); annotation-circle (number=3c, type=left, color=blue); annotation-circle (number=3d, type=right, color=blue). Callouts 2, 3. Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "1b", "2a", "3a", "2b", "1a", "3b", "2c", "2d", "3c", "3d", "2e", "3e"._
 
 ### View types
 
@@ -2175,7 +2174,7 @@ Optimized for browsing and exploratory experiences.
 
 ![View types](card/view-types-54990-20687.png)
 
-_Figure: The Product Card component in a grid view layout, showing both desktop and mobile variants. The grid view emphasizes product imagery with reduced information density, including elements like Promo Flag, Productname, rating, Categorie, a short description, availability status, price including VAT, and a Compare checkbox. The grid view is optimized for browsing and exploratory experiences, supporting quick scanning across multiple products._
+_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "desktop", "mobile", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
 
 **List view**
 
@@ -2197,7 +2196,7 @@ Optimized for comparison and decision-making.
 
 ![View types](card/view-types-55161-21932.png)
 
-_Figure: The product-card component in list view, showing two different layouts: one for desktop and one for mobile. The desktop layout is optimized for a container query between 1435px and 766px with content sizing set to fill, while the mobile layout is for a container query between 419px and 272px with content sizing set to hug. Each card includes elements such as "Promo Flag," "Productname," rating, "Categorie," description, price, availability status, "Add to cart" button, and a "Compare" checkbox. The list view is designed to increase information density, support side-by-side evaluation, and is best suited for detailed product comparison and decision-making._
+_Figure: Shows product-card: list view (container query=1435 - 766px, content sizing=fill); product-card: list view (container query=419 - 272px, content sizing=hug). Text in the figure: "desktop", "mobile", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "Lorem ipsum · Quam · Adipiscing ultricies", "Add"._
 
 ### Sizing & Constraints
 
@@ -2212,7 +2211,7 @@ Size constraints can inform responsive behavior, while view-specific responsive 
 
 ![Grid View](card/grid-view-54990-20824.png)
 
-_Figure: A product-card component in a grid view layout, showing both minimum and maximum width constraints. The minimum width of 148px refers to the smallest size the card can be resized to while maintaining functionality, and the maximum width of 719px refers to the largest size the card can be resized to. The card includes elements such as "Promo Flag", "Productname", rating "3.5 (80)", "Categorie", "Short description of the product", "Available now", price "11.199,00 € incl. VAT", and a "Compare" checkbox._
+_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Min. width: 148px", "Max. width: 719px"._
 
 #### List View
 
@@ -2221,7 +2220,7 @@ _Figure: A product-card component in a grid view layout, showing both minimum an
 
 ![List View](card/list-view-54990-20846.png)
 
-_Figure: The "product-card" component in a "list view" variant, showing two different width states. The minimum width of 272px and the maximum width of 1435px refer to the container sizes for this component. The component includes elements such as "Promo Flag", "Productname", rating "3.5 (80)", "Categorie", description text, price "11.199,00 € incl. VAT", availability status "Available now", and action buttons "Add" or "Add to cart"._
+_Figure: Shows product-card: list view (container query=419 - 272px, content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum · Quam · Adipiscing ultricies", "11.199,00 €", "incl. VAT", "Available now", "Add", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Add to cart", "Compare", "Max. width: 1435px", "Min. width: 272px"._
 
 #### Height Guidance
 
@@ -2238,7 +2237,7 @@ Product Cards should maintain a consistent visual rhythm while supporting their 
 
 ![Height Guidance](card/height-guidance-54990-20903.png)
 
-_Figure: Two layouts for Product Cards: Grid View and List View. Callout 1 points to the Grid View, which shows cards with larger heights to emphasize product imagery, and callout 2 points to the List View, which shows cards with compact heights to maximize information density. Both views illustrate consistent heights within their respective collections, with the Grid View supporting varied heights based on content and image proportions, and the List View preferring consistent heights for efficient comparison._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); card surface (variant=outlined, state=enabled); media slot (media type=image); annotation-circle (number=2, type=center, color=blue); media slot; button (button text=Add to cart, variant=highlight, state=enabled, size=small, icon position=left, hide label=off, flush alignment=off); favorites (states=enabled, selected=false); media slot (image size=small). Callouts 1, 2. Text in the figure: "Grid View", "List View"._
 
 ### Resizing Behavior
 
@@ -2256,7 +2255,7 @@ Applies to all card variants unless stated otherwise.
 
 ![Card Width Behavior](card/card-width-behavior-54990-21065.png)
 
-_Figure: The width behavior of a card component in different layouts, specifically grid view and list view. The card component shown is in the outlined variant and enabled state, featuring a media slot with an image, a button labeled "Add to cart" in the highlight variant and small size, and a favorites icon in the enabled and unselected state. The measurements labeled "Fill" indicate the width of each card within its container, while "Container width" refers to the total width of the container holding the cards. When a card is on its own, it can either fill the container width or have a user-defined width. When placed in a grid or list, cards evenly fill the available space._
+_Figure: Shows card surface (variant=outlined, state=enabled); media slot (media type=image); media slot; button (button text=Add to cart, variant=highlight, state=enabled, size=small, icon position=left, hide label=off, flush alignment=off); favorites (states=enabled, selected=false). Text in the figure: "Grid View", "Card on its own", "Card placed alongside other cards i.e. in a grid", "Fill", "Container width", "Fill to container (standard) or User Defined (width)", "List View", "Card placed alongside other cards i.e. in a list"._
 
 #### Card Height Behavior
 
@@ -2268,7 +2267,7 @@ Applies to all card variants unless stated otherwise.
 
 ![Card Height Behavior](card/card-height-behavior-54990-21452.png)
 
-_Figure: The height behavior of a card component in different layouts and states. The card component, in an outlined variant and enabled state, demonstrates how its height can either hug its content or be user-defined to fill available vertical space. The figure compares cards on their own and cards placed alongside other cards in both grid view and list view, showing how the height adjusts based on the layout and content._
+_Figure: Shows card surface (variant=outlined, state=enabled); media slot (media type=image); media slot (image size=medium); button (button text=Add to cart, variant=highlight, state=enabled, size=small, icon position=left, hide label=off, flush alignment=off); favorites (states=enabled, selected=false). Text in the figure: "Grid View", "Card on its own (Hug)", "Card on its own (Fill)", "Card placed alongside other cards i.e. in a grid", "Hug to content", "Fill", "User Defined", "List View", "Card placed alongside other cards i.e. grid"._
 
 **Image Sizes and Behavior**
 
@@ -2282,7 +2281,7 @@ Image behavior differs depending on whether the Product Card is displayed in Gri
 
 ![Card Height Behavior](card/card-height-behavior-54990-22574.png)
 
-_Figure: Two layouts, Grid View and List View, for a product card component, detailing how images behave in each. Callout 1 points to the Grid View, where images maintain a locked aspect ratio and scale proportionally to fill the card width. Callout 2 points to the List View, where images have fixed dimensions that adapt to the layout width, with supported sizes labeled as large, medium, and small, each with specific pixel ranges._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); product-card: list view (container query=765 - 540px, content sizing=hug); product-card: grid view (content sizing=hug); product-card: list view (container query=539 - 420px, content sizing=hug); product-card: list view (container query=419 - 272px, content sizing=hug). Callouts 1, 2. Text in the figure: "Grid View", "List View", "Grows with Card width", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum · Quam · Adipiscing ultricies", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Short description of the product", "Aspect Ratio locked", "Hug to content", "Fixed Height", "Fixed Width", "Fill to Card", "Image size: large (from 765px to 540px)", "Image size: medium (from 539px to 420px)", "Image size: small (from 419px to 272px)"._
 
 ## Content and Assets
 
@@ -2302,7 +2301,7 @@ The example shown on the right illustrates a recommended content density for Pro
 
 ![Maximum Number of Elements](card/maximum-number-of-elements-54990-22500.png)
 
-_Figure: Two variants of a Product Card component: "Grid View" and "List View". The "Grid View" shows a compact layout with essential details, while the "List View" provides a more detailed layout with additional information. Both views include elements such as "Promo Flag", "Productname", rating "3.5 (80)", "Categorie", "Short description of the product", availability status "Available now", "Set Price" with original and discounted prices, a "Compare" checkbox, and an "Add to cart" button. The example illustrates a recommended content density for maintaining scannability, ease of understanding, and adaptability to smaller screens._
+_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Grid View", "List View", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "Set Price", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "Compare", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Add to cart"._
 
 #### Minimum Number of Elements
 
@@ -2312,7 +2311,7 @@ There is no defined minimum number of elements for Product Cards.
 
 ![Minimum Number of Elements](card/minimum-number-of-elements-54990-22507.png)
 
-_Figure: Two variants of a Product Card component: "Grid View" and "List View." The "Grid View" shows a product image, product name, rating, status, and price. The "List View" includes all of these elements plus a description. The measurements refer to the container query range for the list view and the content sizing for both views. The text provides examples of required and strongly recommended elements for the Product Card component._
+_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Grid View", "List View", "Productname", "3.5", "(80)", "Available now", "11.199,00 €", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p..."._
 
 ### Elements
 
@@ -2342,7 +2341,7 @@ Use a Carousel when multiple images provide additional value and help users bett
 
 ![Elements](card/elements-54990-22517.png)
 
-_Figure: A Grid View layout of a product card component with two media types: Image and Carousel. Callout 1 points to a product card displaying a single Image, while callout 2 points to a product card displaying a Carousel with multiple images. Each product card includes the product name, rating, availability status, and price labeled as "11.199,00 €"._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); product-card: grid view (content sizing=hug). Callouts 1, 2. Text in the figure: "Grid View", "Image", "Carousel", "Productname", "3.5", "(80)", "Available now", "11.199,00 €"._
 
 **List View**
 
@@ -2352,19 +2351,19 @@ This view is optimized for product comparison and decision-making, where structu
 
 ![Elements](card/elements-62140-17233.png)
 
-_Figure: A comparison between two layouts of a product card component: "List View" and "Carousel". The numbered callout 1 points at the "List View" layout, which supports images only and is optimized for product comparison and decision-making. The numbered callout 2 points at the "Carousel" layout, which is crossed out to indicate it is not supported. The "List View" layout includes elements such as "Productname", rating "3.5 (80)", "Categorie", description text starting with "Lorem ipsum dolor sit amet consectetur.", price "11.199,00 € incl. VAT", availability status "Available now", "Add to cart" button, and a "Compare" checkbox._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); product-card: list view (container query=1435 - 766px, content sizing=fill). Callouts 1, 2. Text in the figure: "List View", "Image", "Carousel", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare"._
 
 **Do use the same media type within the same set of cards.**
 
 ![Elements](card/elements-62140-18172.png)
 
-_Figure: A grid layout of product cards in a UI design system, demonstrating two different content sizing variants: "hug" and "fill". Each card includes elements such as product name, rating, description, availability, and price. The example marked as a "Do" indicates that within the same set of cards, the same media type should be used, ensuring consistency in visual presentation. The cards display various states such as "Offer", "New", and availability statuses like "Available now" and "In stock within 2–3 weeks"._
+_Figure: Do example. Shows product-card: grid view (content sizing=hug); product-card: grid view (content sizing=fill). Text in the figure: "Offer", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "MS 231", "In stock within 2–3 weeks", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "New", "MS 162", "Lawn mower", "Lorem ipsum dolor sit amet consectetur. At senectus mauris interdum nibh cras.", "Socks STRIPES 3-pack Black / White / Grey", "Socks", "Set Price"._
 
 **Don’t mix different media types within the same set of cards.**
 
 ![Elements](card/elements-62140-18182.png)
 
-_Figure: A grid layout of product cards, illustrating two different content sizing variants: "hug" and "fill." The "Don't" example shows a mix of different media types within the same set of cards, which is incorrect because it leads to inconsistent presentation. Each card contains elements such as product name, rating, description, availability, and price, with specific cards labeled as "Offer," "New," or having special notes like "In stock within 2–3 weeks" or "In-store only._
+_Figure: Don't example. Shows product-card: grid view (content sizing=hug); product-card: grid view (content sizing=fill). Text in the figure: "Offer", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "MS 231", "In stock within 2–3 weeks", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "New", "MS 162", "Lawn mower", "Lorem ipsum dolor sit amet consectetur. At senectus mauris interdum nibh cras.", "Socks STRIPES 3-pack Black / White / Grey", "Socks", "Set Price"._
 
 **Media Content: Sizes**
 
@@ -2374,7 +2373,7 @@ _Figure: A grid layout of product cards, illustrating two different content sizi
 
 ![Elements](card/elements-55243-29329.png)
 
-_Figure: The layout and optimization of a Product Card image container within a UI design system. The image container uses a fixed 4:3 aspect ratio, as indicated by the label "Image Format: 4:3". Callout 1 points to a placeholder image demonstrating this aspect ratio. Callout 2 shows current product assets in their original formats, including horizontal, vertical, and square images. Callout 3 demonstrates balanced visuals where product imagery is aligned and art-directed to appear proportionally similar, ensuring a consistent presentation across collections and grids._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue); placeholder: image (aspect ratio=4:3). Callouts 1, 2, 3. Text in the figure: "Image Format: 4:3", "Current Product assets", "Balanced visuals"._
 
 **Battery Logos**
 
@@ -2384,7 +2383,7 @@ Up to two battery logos may be displayed within the Media Slot and are always po
 
 ![Elements](card/elements-61290-16722.png)
 
-_Figure: Product-card components in both grid view and list view layouts, illustrating different states based on the presence of battery logos: no logo, one logo, and two logos. The grid view shows content sizing set to hug, while the list view shows content sizing set to fill within a container query range of 1435 to 766 pixels. Each card includes elements such as Promo Flag, Productname, rating, Categorie, Short description of the product, availability status, price including VAT, a Compare checkbox, and an Add to cart button. Battery logos, when present, are positioned in the top-left corner of the card within the Media Slot._
+_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=fill). Text in the figure: "Grid View", "List View", "no logo", "one logo", "two logos", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Add to cart"._
 
 **Add-to-Favorites Button**
 
@@ -2394,7 +2393,7 @@ This feature can support product discovery and increase conversion potential by 
 
 ![Elements](card/elements-55002-26533.png)
 
-_Figure: Two layouts, Grid View and List View, of a product-card component. Each product-card includes elements such as a Promo Flag, Productname, rating, Categorie, a Short description of the product, availability status, price including VAT, a Compare checkbox, and an Add-to-Favorites button. The Add-to-Favorites button is shown in two states: selected: false and selected: true. The measurements refer to the container query sizes for the List View, specifically 1435 - 766px, and content sizing set to hug._
+_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Grid View", "List View", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Add to cart", "selected: false", "selected: true"._
 
 **Max. Content**
 
@@ -2417,7 +2416,7 @@ _Figure: Two layouts, Grid View and List View, of a product-card component. Each
 
 ![Elements](card/elements-55002-27538.png)
 
-_Figure: Two variants of a product-card component: "Grid View" and "List View." The "Grid View" shows a product card with content limited to three lines for both the product name and description to maintain scannability and consistent card heights. The "List View" allows for a description with up to six bullet points to support detailed product information and structured comparison. The text "Max. Content Default Rule" advises against using text-based content that exceeds three lines, except for the "List View Description," which can have up to six bullet points._
+_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Grid View", "List View", "Promo Flag", "MS 261 C-M without Battery and Charger Lorem ipsum dolor sit amet consectetur...", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Add to cart", "Product name: max. three lines", "Description: max. three lines", "Description: max. six bullets"._
 
 **Naming and category**
 
@@ -2443,7 +2442,7 @@ Regardless of the approach, naming and category structures must remain:
 
 ![Elements](card/elements-55193-27720.png)
 
-_Figure: Two variants of a product card component in a grid view layout. Callout 1 points to a product card where the product name "MS 261 C-M" is separate from the category "Chainsaw." Callout 2 points to a product card where the product name "MS 261 C-M Chainsaw" combines both the product name and category. Each card includes details such as rating "3.5 (80)", description "Powerful for chopping firewood", availability "Available now", price "11.199,00 € incl. VAT", and an option to "Compare"._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); product-card: grid view (content sizing=hug). Callouts 1, 2. Text in the figure: "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Powerful for chopping firewood", "Available now", "11.199,00 €", "incl. VAT", "Compare", "MS 261 C-M Chainsaw"._
 
 **Rating**
 
@@ -2453,7 +2452,7 @@ If the rating element is being used, it must always be displayed, even when no r
 
 ![Elements](card/elements-55002-26547.png)
 
-_Figure: A product-card component in grid view with two variants: one where rated is false and one where rated is true. The card includes elements such as "Productname," "Categorie," "Short description of the product," "Available now," price "11.199,00 € incl. VAT," and a "Compare" option. The rating section shows "0.0 (0)" for rated false and "3.5 (80)" for rated true, demonstrating how ratings can be displayed to support user trust and influence conversion._
+_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Productname", "0.0", "(0)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "3.5", "(80)", "rated = false", "rated = true"._
 
 **Description: List View**
 
@@ -2475,7 +2474,7 @@ Media query changes are independent of the Product Card's responsive breakpoints
 
 ![Elements](card/elements-55296-37837.png)
 
-_Figure: Two variants of a product-card component in list view, illustrating changes based on media query ranges. The first variant, for a media query range of 1192px to 766px, shows key specs as a bullet list with detailed descriptions. The second variant, for a media query range of 765px to 272px, condenses the key specs to reduce vertical space usage. Each product-card includes elements such as "Productname," rating, "Categorie," description, price, availability status, "Add to cart" button, and a "Compare" checkbox._
+_Figure: Shows product-card: list view (container query=1435 - 766px, content sizing=hug); product-card: list view (container query=765 - 540px, content sizing=hug). Text in the figure: "Media Query Change", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "Lorem ipsum · Quam · Adipiscing ultricies", "Description: Key specs as bullet list", "Description: Key specs condensed"._
 
 **Status**
 
@@ -2492,7 +2491,7 @@ Product Cards support different types of product availability and status informa
 
 ![Elements](card/elements-55002-26554.png)
 
-_Figure: A grid layout of product cards, each representing different product availability statuses: "Available", "Out of stock", "In stock soon", and "In store only". Each card includes elements such as "Productname", rating, category, short description, price, and a "Compare" checkbox. The status labels indicate the product's availability, with recommendations to include a "Notify me" button for "Out of stock" or "In stock soon" products to allow users to receive updates._
+_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Out of stock", "In stock within 2–3 weeks", "In-store only", "Available", "In stock soon", "In store only"._
 
 **Button Text: List View**
 
@@ -2513,7 +2512,7 @@ To prevent buttons from becoming visually compressed on smaller screen sizes, th
 
 ![Elements](card/elements-55002-27988.png)
 
-_Figure: A product card component in list view, showing two different button text labels based on screen size. The longer label "Add to cart" is used when the screen width is between 765 and 540 pixels, with a maximum of 18 characters. For narrower screens, the label shortens to "Add," with a maximum of 10 characters, to prevent visual compression. The example illustrates how the button text adapts to different screen sizes to maintain clarity and usability._
+_Figure: Shows product-card: list view (container query=765 - 540px, content sizing=hug). Text in the figure: "media query change: shorter label", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum · Quam · Adipiscing ultricies", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Add", "max. Characters: 18", "max. Characters: 10"._
 
 **Price variations**
 
@@ -2542,7 +2541,7 @@ Supported Price Elements:
 
 ![Elements](card/elements-55002-27739.png)
 
-_Figure: Two product-card components in a grid view layout with different price-related elements. Callout 1 points to the product name, callout 2a points to the set price, callout 2b points to the original price, callout 3 points to the save amount and percentage, callout 4 points to the VAT information, and callout 5 points to the discounted price. The components illustrate price variations, including set price, discounted price, and VAT information, to support flexible pricing scenarios and maintain a consistent user experience across STIHL platforms._
+_Figure: Shows product-card: grid view (content sizing=hug); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2a, type=left, color=blue); annotation-circle (number=2b, type=left, color=blue); annotation-circle (number=3, type=right, color=blue); annotation-circle (number=3, type=bottom, color=blue); annotation-circle (number=4, type=bottom, color=blue); annotation-circle (number=5, type=bottom, color=blue). Callouts 1, 3, 4, 5. Text in the figure: "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "Set Price", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "2a", "2b"._
 
 **Compare Checkbox**
 
@@ -2558,7 +2557,7 @@ Due to limited screen space, comparing multiple products on smaller viewports ca
 
 ![Elements](card/elements-55002-27270.png)
 
-_Figure: A product-card component in a grid view layout with two variants: one where the compare checkbox is unselected (Selected = false) and one where it is selected (Selected = true). The product-card includes elements such as "Productname", rating "3.5 (80)", "Categorie", "Short description of the product", availability status "Available now", price "11.199,00 € incl. VAT", and a compare checkbox labeled "Compare". The best practice advises against implementing the comparison functionality on mobile devices due to limited screen space, which can reduce usability._
+_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Selected = false", "Selected = true"._
 
 ## Behavior & Usage
 
@@ -2578,7 +2577,7 @@ See Foundations: Interaction & Interactive Content for the interaction models ac
 
 ![Interactivity](card/interactivity-55272-30240.png)
 
-_Figure: A Product Card component in a grid view layout with content sizing set to "hug." The numbered callouts point to specific elements on the card: Callout 1 points to the "Promo Flag," Callout 2 points to the "Productname" and "Categorie," and Callout 3 points to the "Short description of the product." The card includes interactive elements such as "Add to Cart," "Add to Favorites," and "Compare," which perform actions without navigating to the Product Detail Page. The card also displays the price "11.199,00 € incl. VAT" and the availability status "Available now._
+_Figure: Shows product-card: grid view (content sizing=hug); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=1, type=right, color=blue). Callouts 1, 2, 3. Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
 
 ### Usage in Context
 
@@ -2624,7 +2623,7 @@ Product Cards can be used across different layout contexts depending on the brow
 
 ![Usage in Context](card/usage-in-context-54990-22034.png)
 
-_Figure: Different layout contexts for Product Cards in the STIHL Design System, including Standalone, Grid, and Carousel views. Each numbered callout points to examples of these views: 1 points to the Standalone view, 2 points to the Grid view, 3 points to the Carousel view, and 4 points to the List view. The components shown include card surfaces, media slots, round indicators, buttons, and favorites icons, each in various states and sizes. The layouts demonstrate how Product Cards can be used in different browsing and decision-making experiences._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue); card surface (variant=outlined, state=enabled); media slot (media type=image); round (variant=filled, state=disabled, size=small); round (variant=filled, state=enabled, size=small); scrollmarker (6=false); annotation-circle (number=4, type=center, color=blue); media slot; button (button text=Add to cart, variant=highlight, state=enabled, size=small, icon position=left, hide label=off, flush alignment=off); favorites (states=enabled, selected=false). Callouts 1, 2, 3, 4. Text in the figure: "Standalone", "Grid", "Carousel", "Grid View", "List", "List View"._
 
 ### Responsive behavior
 
@@ -2640,7 +2639,7 @@ Product Cards use a Product Card–specific responsive model that differs from t
 
 ![Responsive behavior](card/responsive-behavior-54990-22427.png)
 
-_Figure: The responsive behavior of the product-card component in both grid view and list view across different breakpoints: Breakpoint XL, Breakpoint L, Breakpoint M, and Breakpoint S. Each breakpoint demonstrates how the product-card scales responsively within the available grid layout, maintaining defined minimum and maximum widths, and ensuring product imagery and content scale proportionally. The product-card includes elements such as the Promo Flag, Productname, model number (e.g., 3.5), customer rating (e.g., (80)), Categorie, Short description of the product, availability status (Available now), price (e.g., 11.199,00 € incl. VAT), and a Compare option._
+_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Breakpoint XL", "Breakpoint L", "Breakpoint M", "Breakpoint S", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
 
 **List View**
 
@@ -2663,7 +2662,7 @@ Media queries control the positioning and alignment of elements:
 
 ![Responsive behavior](card/responsive-behavior-55296-38098.png)
 
-_Figure: The responsive behavior of the product-card component in list view, showing different layouts based on screen width. Each measurement refers to the viewport width in pixels, indicating how the layout adapts within specific ranges: 1435px – 766px, 765px – 540px, 539px – 420px, and 419px – 272px. The figure demonstrates how the image and content are displayed side by side or stacked depending on the available width, optimizing for both structured comparison and readability on smaller viewports._
+_Figure: Shows product-card: list view (container query=1435 - 766px, content sizing=fill); product-card: list view (container query=765 - 540px, content sizing=hug); product-card: list view (container query=419 - 272px, content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug); product-card: list view (container query=539 - 420px, content sizing=hug). Text in the figure: "Breakpoint XL", "Breakpoint L", "Breakpoint M", "Breakpoint S", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "Lorem ipsum · Quam · Adipiscing ultricies", "Add", "Media Querries", "1435px - 766px", "765px - 540px", "539px - 420px", "419px - 272px"._
 
 ## Accessiblity
 
@@ -2675,7 +2674,7 @@ The Product Name is **mandatory** for every Product Card. It provides the access
 
 ![Product Name = Accessible Label](card/product-name-accessible-label-55296-40755.png)
 
-_Figure: A product-card in grid view layout with content sizing set to fill. The product-card includes a "Promo Flag", the Product Name "MSA 300 ohne Akku und Ladegerät", a rating of "3.5" out of 5 with "80" reviews, a "Categorie" label, a "Short description of the product", an "In-store only" label, and a price of "11.199,00 € incl. VAT". The Product Name is mandatory and serves as the accessible label for screen readers, ensuring the card’s destination is clearly described._
+_Figure: Shows product-card: grid view (content sizing=fill). Text in the figure: "Promo Flag", "MSA 300 ohne Akku und Ladegerät", "3.5", "(80)", "Categorie", "Short description of the product", "In-store only", "11.199,00 €", "incl. VAT"._
 
 ### Keyboard Navigation
 
@@ -2688,7 +2687,7 @@ The embedded Carousel follows the accessibility requirements defined by the [Car
 
 ![Keyboard Navigation](card/keyboard-navigation-57285-25731.png)
 
-_Figure: A product-card component in a grid view layout with two variants, illustrating keyboard navigation. Each variant shows the same product-card with elements such as "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", and "Compare". The callouts indicate the focusable areas, including the heart icon, rating stars, price, and compare button, demonstrating the focus order and accessibility requirements for secondary actions._
+_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
 
 ## Examples
 
@@ -2700,7 +2699,7 @@ Product Cards in a grid on a Product Overview Page.
 
 ![STIHL Website](card/stihl-website-54990-20583.png)
 
-_Figure: A grid layout of product cards on a STIHL Website Product Overview Page, showing two variants of the product-card component: one with content sizing set to "hug" and another with content sizing set to "fill". Each card includes details such as product name (e.g., "MS 261 C-M"), rating (e.g., "3.5 (80)"), product type (e.g., "Chainsaw"), description, availability status (e.g., "Available now"), price (e.g., "11.199,00 € incl. VAT"), and special offers (e.g., "Save 50,00 € (14%)"). Some cards have additional labels like "Offer", "New", or "In-store only"._
+_Figure: Shows product-card: grid view (content sizing=hug); product-card: grid view (content sizing=fill). Text in the figure: "Offer", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "MS 231", "In stock within 2–3 weeks", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "New", "MS 162", "Lawn mower", "Lorem ipsum dolor sit amet consectetur. At senectus mauris interdum nibh cras.", "Socks STRIPES 3-pack Black / White / Grey", "Socks", "Set Price"._
 
 ### STIHL Website
 
@@ -2708,4 +2707,4 @@ iMow Product Cards in a list with detailed specs.
 
 ![STIHL Website](card/stihl-website-55296-40861.png)
 
-_Figure: A list view of product cards for STIHL iMOW lawn mower robots on the STIHL website. Each product card includes details such as the product name, rating, price, availability, and specifications. The layout is designed for a container query between 1435 and 766 pixels, with content sizing set to hug the container. The product cards shown are for iMOW® 4, iMOW® 3, and iMOW® 6, each with varying specifications and prices._
+_Figure: Shows product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "iMOW® 4", "3.7", "(7)", "Lawn Mower Robot", "Lawn mower robot for lawns up to 1,000 m² and slopes up to 40% Precise mowing...", "799,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "iMOW® 3", "4.5", "(14)", "Lawn mower robot for lawns up to 500 m² and slopes up to 40% Precise mowing s...", "699,00 €", "iMOW® 6", "4.1", "(10)", "Lawn mower robot for lawns up to 3,000 m² and slopes up to 40% Precise mowing...", "1.299,00 €", "In-store only"._

@@ -15,7 +15,7 @@ figmaNodeId: 1:1253
 figmaVersion: "2315997626726619921"
 figmaVersionLabel: DS-1185 Docu | Global | Add Connected Contact to the disclaimer of Sidebar Grid
 figmaVersionCreatedAt: 2026-02-02T16:02:45Z
-syncedAt: 2026-11-04T14:14:26.004Z
+syncedAt: 2026-11-05T21:31:47.586Z
 sourceUrl: https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ?node-id=1-1253
 ---
 
@@ -33,7 +33,7 @@ Our spacing system uses 8px as a base unit - meaning that each spacing value is 
 
 ![Spacing system](spacing/spacing-system-2-2086.png)
 
-_Figure: A spacing system with a base unit of 8px, displaying a horizontal ruler with measurements marked at intervals of 8px. Each measurement label, such as 8px, 16px, 24px, and so on up to 104px, represents a spacing value that is a multiple of the base unit. The ruler extends from 0px to 104px, indicating the defined spacings within the system. Measurements in the figure: 32px, 40px, 48px, 56px, 64px, 72px, 80px, 88px, 96px._
+_Figure: A horizontal ruler on a light blue band with a long tick every 8px and shorter ticks between them, labelled 0, 8px, 16px, 24px, 32px, 40px, 48px, 56px, 64px, 72px, 80px, 88px, 96px and 104px, showing that spacing values are multiples of the 8px base unit._
 
 ## Spacing: Token System
 
@@ -53,7 +53,7 @@ We categorize spacing tokens into four layers, starting with general numerical v
 
 ![Spacing token layers](spacing/spacing-token-layers-2-1975.png)
 
-_Figure: The categorization of spacing tokens into four layers: Values, Core Tokens, Semantic Tokens, and Component Tokens. The measurement 8px refers to a raw pixel unit under Values. The label spacing-8 is an example of Core Tokens, which store raw pixel units, while spacing-dynamic-m is an example of Semantic Tokens that reference core tokens and suggest a general intent. Padding-between-buttons is an example of Component Tokens, which define specific contexts of use, although it is noted that component tokens are not currently used. The figure also indicates that specificity increases from Values to Component Tokens._
+_Figure: Four stacked boxes with a downward purple arrow labelled specificity, meaning specificity increases from top to bottom. Each box is linked by a line to an example: Values is 8px, Core Tokens is spacing-8, Semantic Tokens is spacing-dynamic-m, and Component Tokens, shown in a lighter greyed style because they are not used for now, is padding-between-buttons._
 
 ### Spacing token syntax structure
 
@@ -67,7 +67,7 @@ Our general token syntax structure combines three main areas. Relevant for spaci
 
 ![Spacing token syntax structure](spacing/spacing-token-syntax-structure-2-2012.png)
 
-_Figure: The syntax structure for spacing tokens in a UI design system, breaking it down into three main areas: Namespace, Type, and Modifiers. The Namespace can include system, theme, or domain, Type refers specifically to the property such as spacing, and Modifiers include variants and scales. The example token $ds-subbrand-web-spacing-dynamic-m demonstrates this structure, where "subbrand" is the theme, "web" is the domain, "spacing" is the property, "dynamic" is the variant, and "m" is the scale. The figure also indicates that some components like category, concept, state, and mode are not relevant for spacing._
+_Figure: Diagram of the token syntax with three column groups: Namespace (system, i.e. name, acronym; (theme), i.e. subbrand; (domain), i.e. web, app), Type (category, i.e. background, content, border; property, i.e. spacing; concept, i.e. feedback, interaction) and Modifiers (variant, i.e. primary, dynamic; state, i.e. hover, disabled; scale, i.e. numbers, t-shirt sizes; mode, i.e. ondark, onorange). The legend marks basic parts as bold, optional parts in parentheses and parts not relevant for spacing as greyed out, so category, concept, state and mode are greyed. Below, the example token $ds-subbrand-web-spacing-dynamic-m is annotated: system is ds, theme is subbrand, domain is web, property is spacing, variant is dynamic and scale is m._
 
 ### Variables handover
 
@@ -75,7 +75,7 @@ The Figma plugin “variables2json” is used to export the Figma variables to a
 
 ![Variables handover](spacing/variables-handover-2-2071.png)
 
-_Figure: A screenshot of the Figma plugin named "variables2json." The plugin interface includes three tabs labeled Variables, Composites, and Settings. Under the Variables tab, there are categories for Colors, Numbers, Strings, and Booleans, with the Colors category containing 82 items and the others showing 0 items. The interface also includes icons for importing and exporting variables, as well as a toggle for viewing variables in JSON format._
+_Figure: Screenshot of the Figma plugin "variables2json" on a dark panel with the tabs Variables (active), Composites and Settings. Below a toolbar with expand and collapse icons and a list/JSON view toggle, the collapsed groups are Colors with 82 items, Numbers with 0 items, Strings with 0 items and Booleans with 0 items._
 
 ## Spacing: Core Tokens
 
@@ -89,7 +89,7 @@ These tokens are intended as static spacings that stay consistent across all scr
 
 ![Spacing: Core Tokens](spacing/spacing-core-tokens-2-1913.png)
 
-_Figure: A table of spacing core tokens used in the STIHL Design System. Each row in the table lists a token name, its corresponding pixel value, and a visual example. The pixel values range from 0px to 160px, with each token name indicating its specific pixel value, such as spacing-2 representing 2 pixels. The table includes tokens like spacing-0, spacing-2, spacing-4, up to spacing-160, and notes that spacing-0 and spacing-56 are new and not yet added to the Figma components. The examples visually represent the spacing values to provide a clear understanding of each token's application. Measurements in the figure: 2px, 4px, 6px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 56px, 64px, 80px, 96px, 128px._
+_Figure: Table of the spacing core tokens with the columns Name, Value and Example, where each example is a light blue square of the token's pixel size. The rows are spacing-0 (0px), spacing-2 (2px), spacing-4 (4px), spacing-6 (6px), spacing-8 (8px), spacing-12 (12px), spacing-16 (16px), spacing-20 (20px), spacing-24 (24px), spacing-32 (32px), spacing-40 (40px), spacing-48 (48px), spacing-56 (56px), spacing-64 (64px), spacing-80 (80px), spacing-96 (96px), spacing-128 (128px) and spacing-160 (160px), with spacing-0 showing no square._
 
 ### Contribute
 
@@ -107,7 +107,7 @@ In our system, these tokens provide dynamic spacings that adapt according to bre
 
 ![Spacing: Semantic Tokens](spacing/spacing-semantic-tokens-2-1944.png)
 
-_Figure: A table of semantic tokens for spacing styles in the STIHL Design System, detailing how spacing values adapt across different breakpoints. Each row in the table lists a semantic token name and its corresponding spacing values for breakpoints labeled Breakpoint S: 320px, Breakpoint M: 768px, Breakpoint L: 1024px, Breakpoint XL: 1536px, and Breakpoint XXL: 1668px. A warning notification indicates that the Breakpoint XXL is not included in Figma Variables due to license limitations. The table includes tokens such as spacing-dynamic-xs, spacing-dynamic-s, spacing-dynamic-m, spacing-dynamic-l, spacing-dynamic-xl, and spacing-dynamic-xxl, each with specific spacing values like spacing-16..._
+_Figure: Table of the semantic spacing tokens with one column per breakpoint (Breakpoint S: 320px, Breakpoint M: 768px, Breakpoint L: 1024px, Breakpoint XL: 1536px, Breakpoint XXL: 1668px), each cell showing a square and the core token it links to. spacing-dynamic-xs maps to spacing-16, spacing-24, spacing-24, spacing-32, spacing-32; spacing-dynamic-s to spacing-24, spacing-32, spacing-32, spacing-40, spacing-40; spacing-dynamic-m to spacing-32, spacing-40, spacing-40, spacing-48, spacing-48; spacing-dynamic-l to spacing-40, spacing-48, spacing-48, spacing-56, spacing-56; spacing-dynamic-xl to spacing-56, spacing-64, spacing-64, spacing-80, spacing-80; spacing-dynamic-xxl to spacing-80, spacing-96, spacing-96, spacing-128, spacing-128. A yellow warning box at the right says the breakpoint XXL isn't included in Figma Variables because the current license permits a maximum of four modes, and asks to reach out if this breakpoint is used more frequently than the others._
 
 ### Contribute
 
@@ -138,7 +138,7 @@ Used for small and compact elements:
 
 ![Core Tokens (Static spacings)](spacing/core-tokens-static-spacings-2-5166.png)
 
-_Figure: A button labeled "Button" with an outline variant, enabled state, small size, and no icon. It also shows a checkbox labeled "Checkbox Label" in the default state, unchecked, and not invalid. Additionally, there is an input field labeled "Label" with a hint text "Lorem ipsum dolor sit amet, consectetur adipiscing elit." The layout includes vertical spacing between these components, illustrating the use of static spacing tokens for small and compact elements such as padding within smaller components and spacing between labels and elements inside a component._
+_Figure: Three small components with light purple overlays marking static core spacings: a Button with the overlay on its top and bottom padding, a Checkbox Label with the overlay on the gap between the checkbox and its label, and an input with a Label and the hint text "Lorem ipsum dolor sit amet, consectetur adipiscing elit." with overlays on the gap between label and hint and on the gap between hint and input field._
 
 **Medium**
 
@@ -159,7 +159,7 @@ Used for larger and less dense elements:
 
 ![Core Tokens (Static spacings)](spacing/core-tokens-static-spacings-2-5190.png)
 
-_Figure: The use of medium spacing styles within UI components. It shows a toast with the text "All files lorem ipsum" and an info icon, and a fieldset with the label "Label." The medium spacing, ranging from spacing-12 to spacing-24, is used for padding within larger components like toasts and for vertical and horizontal spacing between elements inside components or patterns, such as fieldsets._
+_Figure: Examples of medium core spacings (spacing-12 to spacing-24) shown as purple overlays: on the left a toast with an info icon, the text "All files lorem ipsum" and a close icon, with the overlay on its padding around the content; on the right two stacked inputs, each with a Label, with the overlay on the vertical gap between the first input and the second label._
 
 **Large**
 
@@ -179,7 +179,7 @@ Used for the largest elements and layout:
 
 ![Core Tokens (Static spacings)](spacing/core-tokens-static-spacings-2-5213.png)
 
-_Figure: The use of vertical spacing core tokens ranging from spacing-32 to spacing-160. These spacings are used for the largest elements and layout, specifically for space between elements inside a bigger pattern or on a page, such as between modules and buttons. The components in the figure are spacers of type core token, arranged in a vertical direction._
+_Figure: Wireframe of a page with two stacked entries, each made of an image placeholder next to a heading and text lines, followed by a centered dark button. A purple overlay marks the large core spacing (spacing-32 to spacing-160) between the second entry and the button._
 
 ### Semantic Tokens (Dynamic spacings)
 
@@ -189,7 +189,7 @@ They are mainly used for spacings between elements in a layout (i.e. between mod
 
 ![Semantic Tokens (Dynamic spacings)](spacing/semantic-tokens-dynamic-spacings-2-5245.png)
 
-_Figure: The use of semantic tokens for dynamic spacings in a UI design system. It shows a layout with vertical spacings between elements, including a dialog with text and buttons. The dialog contains a button labeled "Add service" with a ghost variant, enabled state, small size, no icon, hidden label, and non-flush alignment, and another button labeled "Cancel". The spacings adapt based on the breakpoint and are used for padding within the dialog and spacing between layout elements._
+_Figure: Two examples of dynamic semantic spacings shown as teal overlays. On the left a page wireframe has teal bars between its content blocks and above the footer area. On the right a dialog has a teal overlay as padding around its content, which is a heading "Lorem ipsum dolor sit amet consectetur. In bibendum diam nulla suspendisse dictumst laoreet ut.", a close icon and two buttons, a dark "Add service" and an outlined "Cancel"._
 
 **Horizontal spacing watchout**
 
@@ -207,7 +207,7 @@ It’s essential to remember that horizontal and vertical spacings are perceived
 
 ![Semantic Tokens (Dynamic spacings)](spacing/semantic-tokens-dynamic-spacings-2-5279.png)
 
-_Figure: The use of spacing tokens in a UI design system, comparing core tokens and semantic tokens. Callout 1 shows horizontal spacing of 24 pixels using the dynamic token spacing-dynamic-xs on small desktop screens, which shifts to 16 pixels vertical spacing on mobile screens. Callout 2 demonstrates the same dynamic token applied vertically with multiple elements. The core token spacing-24 is shown as a static vertical spacing of 24 pixels._
+_Figure: Two rows, each with a desktop wireframe and a narrow mobile wireframe, and a legend at the right: Core Tokens (Static spacings) in purple labelled "Core Spacing" and Semantic Tokens (Dynamic spacings) in teal labelled "Dynamic Spacing". Callout 1: two images with captions side by side separated by a vertical teal gutter labelled spacing-dynamic-xs (24px) on desktop, which becomes a horizontal teal gap labelled spacing-dynamic-xs (16px) between the stacked images on mobile. Callout 2: an image next to a text block separated by a vertical teal gutter labelled spacing-dynamic-xs (24px) on desktop, while on mobile the stacked image and text are separated by a purple gap labelled spacing-24 (24px), a static core token._
 
 ### Inspection of variables for developers
 
@@ -218,7 +218,7 @@ Ensure you use the appropriate spacing variables in your designs so developers c
 
 ![Inspection of variables for developers](spacing/inspection-of-variables-for-developers-166-3459.png)
 
-_Figure: The inspection of spacing variables in a UI design system. Callout 1 shows a list of spacing variables available in the design tool, with "s" selected, indicating a spacing value of 24. Callout 2 highlights a selected element in the design interface, displaying its dimensions and padding values directly. Callout 3 demonstrates the right-side panel in the design tool where spacing specifications, including padding and gap values, are shown for a selected element, with specific references to "spacing-dynamic/m", "spacing-dynamic/s", and "spacing-16"._
+_Figure: Three callouts on inspecting spacing variables. Callout 1: the Figma variable picker listing spacing-160 (160), margin (16) and the spacing-dynamic variables xs (16), s (24, selected), m (32), l (40) and xl (56), next to the Auto layout panel with direction gap 16 and padding fields 24 and 32. Callout 2: a Heading with a close icon in Dev Mode, with the padding and gap spacings drawn as blue hatched areas and labelled lines directly on the selected element. Callout 3: a Figma browser window with the header-dialog component selected and its right-side panel with its Padding and Gap section enlarged at the right to show Top spacing-dynamic/m, Right spacing-dynamic/s, Bottom spacing-dynamic/m, Left spacing-dynamic/s and Gap spacing-16._
 
 ## Spacing: Web usage example
 
@@ -228,7 +228,7 @@ _Figure: The inspection of spacing variables in a UI design system. Callout 1 sh
 
 ![Example with spacers](spacing/example-with-spacers-2-2240.png)
 
-_Figure: Various spacing styles within the STIHL Design System, demonstrating how different components are spaced using core and dynamic tokens. Measurements such as 24px refer to the spacing between UI elements, with labels like "Core Spacing" and "Dynamic Spacing" indicating static and dynamic spacing tokens respectively. The figure includes components like buttons, input fields, links, and titles, each with specified variants and states, arranged to show spacing at different breakpoints such as "Breakpoint S: 320px" and "Breakpoint XL: 1536px._
+_Figure: Five longer page layouts of the example page, labelled Breakpoint S: 320px, Breakpoint M: 768px, Breakpoint L: 1024px, Breakpoint XL: 1536px and Breakpoint XXL: 1668px, with a legend at the top for Core Tokens (Static spacings) in purple (Core Spacing) and Semantic Tokens (Dynamic spacings) in teal (Dynamic Spacing). Each page has an orange STIHL logo, a gray image with a TITLE COMPONENT box, HEADING 2, HEADING 3 and HEADING 4 text sections with a Button, a fieldset of labelled inputs with a Button, gray image-and-text modules and rows of image cards with Button links, a gray LOREM IPSUM banner with a Button, and a footer of Heading 4 link columns. The spacings are overlaid and labelled, for example spacing-dynamic-xl, spacing-dynamic-xs, spacing-24 and spacing-16; the page is a single column at S, with side-by-side modules, four-column card rows and footer columns on the wider breakpoints._
 
 ### Example without spacers
 
@@ -244,4 +244,4 @@ _Figure: Shows logo (type=deafult, logos=main); title (title text=Protection mak
 
 ![Spacing: Basic web template Dev](spacing/spacing-basic-web-template-dev-2-4618.png)
 
-_Figure: A basic web template for the STIHL Design System, illustrating spacing styles across different breakpoints and viewports. It includes components such as a logo, title, spacers, button, input, and link, each with specified variants and states. The measurements refer to spacing tokens, both dynamic and core, used to maintain consistent spacing throughout the design. The breakpoints are labeled as S: 320px, M: 768px, L: 1024px, XL: 1536px, and 1668px, indicating responsive design adjustments for different screen sizes. The title component is shown in both mobile and desktop viewports, with various spacing tokens like spacing-dynamic-xl, spacing-16, and spacing-24 applied to different elements._
+_Figure: Five page layouts of the same basic web template side by side, labelled Breakpoint S: 320px, Breakpoint M: 768px, Breakpoint L: 1024px, Breakpoint XL: 1536px and Breakpoint XXL: 1668px, with core spacings overlaid in purple and dynamic spacings in teal. Each page has an orange STIHL logo, a gray image with a white TITLE COMPONENT box, then a teal spacing-dynamic-xl gap, a HEADING 2 with two text paragraphs separated by spacing-16 and a spacing-24 gap above a dark Button, a teal spacing-dynamic-l gap, a gray image and a teal spacing-dynamic-xxl gap, a second HEADING 2 with a Fieldset Legend and hint text and a stack of five labelled inputs separated by spacing-24 with a spacing-32 gap above a dark Button, another teal spacing-dynamic-xxl gap, and a gray footer between teal spacing-dynamic-l gaps with Heading 4 link columns (Link Default) spaced by spacing-16 and spacing-8 and separated by vertical spacing-dynamic-xs gaps. The footer has two columns per row at S and four columns at M and wider, and the content column gets wider on the larger breakpoints._
