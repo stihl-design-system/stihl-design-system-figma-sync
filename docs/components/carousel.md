@@ -17,7 +17,7 @@ figmaNodeId: 26075:11524
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-06T15:43:02.191Z
+syncedAt: 2026-11-06T15:47:32.926Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11524
 ---
 
@@ -959,7 +959,7 @@ _Figure: Multi item Carousel with four visible items, "Placeholder Item 1" to "P
 
 ![Configuration with Navigation Controls](carousel/configuration-with-navigation-controls-62524-14825.png)
 
-_Figure: Shows annotation-circle (number=1a, type=center, color=blue); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); annotation-circle (number=1b, type=center, color=blue); annotation-circle (number=1c, type=center, color=blue). Text in the figure: "1a", "Move to the next focusable Item:", "Tab", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "MS 162", "Lawn mower", "1b", "Move to Previous Navigation Control:", "1c"._
+_Figure: Two keyboard-navigation diagrams of a multi-item carousel with navigation controls, showing three product cards (MS 261 C-M chainsaw, MSA 300 without battery and charger brush cutter, MS 162 lawn mower) with previous and next arrow buttons and a scrollmarker below. Callout 1a, "Move to the next focusable Item: Tab", shows the first card focused with arrows running from its cart button to the second card and on to the third card's cart button. Callout 1b, "Move to Previous Navigation Control: Tab", shows an arrow from the last visible cart button around the bottom of the carousel to the previous arrow button, marked 1c._
 
 1. **Previous Navigation Control**
    1. Enter moves to the previous page while retaining focus on the control.
@@ -968,7 +968,7 @@ _Figure: Shows annotation-circle (number=1a, type=center, color=blue); carousel 
 
 ![Configuration with Navigation Controls](carousel/configuration-with-navigation-controls-62646-100836.png)
 
-_Figure: Shows annotation-circle (number=2a, type=center, color=blue); annotation-circle (number=2b, type=center, color=blue); annotation-circle (number=2c, type=center, color=blue); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "2a", "Move to Previous Page:", "Enter", "2b", "Move to Next / Previous Pages:", "Arrow left", "or", "Arrow right", "2c", "Move to Next Navigation Control:", "Tab", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "MS 162", "Lawn mower"._
+_Figure: Keyboard-navigation diagram of a multi-item carousel with navigation controls: three product cards are fully visible with dashed peek areas of the neighbouring items on both sides. Callout 2a, "Move to Previous Page: Enter", and callout 2b, "Move to Next / Previous Pages: Arrow left or Arrow right", point at the focused previous arrow button on the left, with arrows leading to the previous page. Callout 2c, "Move to Next Navigation Control: Tab", is an arrow from the previous button around the top of the carousel to the next arrow button on the right, and 2b also arrows from the bottom toward the next page._
 
 1. **Next Navigation Control**
    1. Enter moves to the next page while retaining focus on the control.
@@ -977,7 +977,7 @@ _Figure: Shows annotation-circle (number=2a, type=center, color=blue); annotatio
 
 ![Configuration with Navigation Controls](carousel/configuration-with-navigation-controls-62646-101704.png)
 
-_Figure: Shows annotation-circle (number=3a, type=center, color=blue); annotation-circle (number=3b, type=center, color=blue); annotation-circle (number=3c, type=center, color=blue); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "3a", "Move to Next Page:", "Enter", "3b", "Move to Next / Previous Pages:", "Arrow left", "or", "Arrow right", "3c", "Move to Scrollmarker:", "Tab", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "MS 162", "Lawn mower"._
+_Figure: Keyboard-navigation diagram of a multi-item carousel with navigation controls, showing three product cards with dashed peeks of neighbouring items and the next arrow button focused. Callout 3a, "Move to Next Page: Enter", and callout 3b, "Move to Next / Previous Pages: Arrow left or Arrow right", point from the focused next button to the next page on the right, with 3b also looping around the top back to the previous page on the left. Callout 3c, "Move to Scrollmarker: Tab", is an arrow from the next button around the bottom to the dashed scrollmarker below the cards._
 
 1. **Scrollmarker**
    1. Arrow Left / Right moves to Next / Previous Pages and move focus to the new active marker.
@@ -986,7 +986,7 @@ _Figure: Shows annotation-circle (number=3a, type=center, color=blue); annotatio
 
 ![Configuration with Navigation Controls](carousel/configuration-with-navigation-controls-62646-101937.png)
 
-_Figure: Shows annotation-circle (number=4a, type=center, color=blue); annotation-circle (number=4b, type=center, color=blue); annotation-circle (number=4c, type=center, color=blue); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); 1 (state=enabled); 3 (state=enabled). Text in the figure: "4a", "Move to Next / Previous Pages:", "Arrow left", "or", "Arrow right", "4b", "Move to next focusable Item:", "Tab", "4c", "Leave Carousel:", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "MS 162", "Lawn mower"._
+_Figure: Keyboard-navigation diagram of a multi-item carousel with navigation controls and three product cards, where the scrollmarker below the cards is focused. Callout 4a, "Move to Next / Previous Pages: Arrow left or Arrow right", shows arrows from the active marker to the markers on either side. Callout 4b, "Move to next focusable Item: Tab", shows an arrow from the scrollmarker up to the first card, and callout 4c, "Leave Carousel: Tab", shows an arrow from the scrollmarker down to a dashed area below the carousel._
 
 #### Configuration without Navigation Controls
 
@@ -996,7 +996,7 @@ _Figure: Shows annotation-circle (number=4a, type=center, color=blue); annotatio
 
 ![Configuration without Navigation Controls](carousel/configuration-without-navigation-controls-62646-102180.png)
 
-_Figure: Shows annotation-circle (number=1a, type=center, color=blue); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); scrollmarker (6=false); annotation-circle (number=1b, type=center, color=blue). Text in the figure: "1a", "Move to the next focusable Item:", "Tab", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "MS 162", "Lawn mower", "1b", "Move to Scrollmarker:"._
+_Figure: Two keyboard-navigation diagrams of a multi-item carousel without navigation controls, showing the first two product cards fully and a third card cut off at the right, with a scrollmarker below. Callout 1a, "Move to the next focusable Item: Tab", shows the first card's cart button focused with arrows leading to the second card and the scrollmarker. Callout 1b, "Move to Scrollmarker: Tab", shows an arrow from the second card's focused button to the dashed scrollmarker below._
 
 1. **Scrollmarker**
    1. Arrow Left / Right moves to Next / Previous Pages and move focus to the new active marker.
@@ -1005,13 +1005,13 @@ _Figure: Shows annotation-circle (number=1a, type=center, color=blue); carousel 
 
 ![Configuration without Navigation Controls](carousel/configuration-without-navigation-controls-62646-103102.png)
 
-_Figure: Shows annotation-circle (number=4a, type=center, color=blue); annotation-circle (number=4b, type=center, color=blue); annotation-circle (number=4c, type=center, color=blue); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); 1 (state=enabled); 3 (state=enabled). Text in the figure: "4a", "Move to Next / Previous Pages:", "Arrow left", "or", "Arrow right", "4b", "Move to next focusable Item:", "Tab", "4c", "Leave Carousel:", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "MS 162", "Lawn mower"._
+_Figure: Keyboard-navigation diagram of a multi-item carousel without navigation controls, showing two product cards and a third cut off at the right, with the scrollmarker focused below. Callout 4a, "Move to Next / Previous Pages: Arrow left or Arrow right", shows arrows from the active marker to the markers on either side. Callout 4b, "Move to next focusable Item: Tab", shows an arrow up to the first card, and callout 4c, "Leave Carousel: Tab", shows an arrow down to a dashed area below the carousel._
 
 **Don’t make hidden Items reachable using keyboard navigation or expose them to assistive technologies.**
 
 ![Configuration without Navigation Controls](carousel/configuration-without-navigation-controls-62524-14393.png)
 
-_Figure: Don't example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); scrollmarker (6=false). Text in the figure: "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "MS 162", "Lawn mower"._
+_Figure: Don't example for a multi-item carousel without navigation controls: only the first product card (MS 261 C-M chainsaw, 11.199,00 € incl. VAT) is visible and focused, with the next card cut off and dashed at its right and a scrollmarker below. An arrow runs from the scrollmarker to the cut-off card, showing that hidden items are reachable by keyboard navigation, which is wrong because hidden items must not be focusable or exposed to assistive technologies._
 
 ### Motion
 
@@ -1035,7 +1035,7 @@ The Item supports compact, repeatable content. It may contain:
 
 ![Item content](carousel/item-content-61435-1775.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "Interview with Dr Michael Prochaska", "Dr Michael Prochaska, Member of the Executive Board for Human Resources and L...", "People and Stories", "Interview", "One lab for all", "Electromagnetic compatibility (EMC) tests are carried out on all STIHL applia...", "Backstage", "Background Story", "Charging and energy management in the STIHL AP system", "The STIHL chain factory in Switzerland: manufacturer of all chains for STIHL...", "Corporate Development"._
+_Figure: Multi-item carousel at the large breakpoint with previous and next arrow buttons and a scrollmarker, showing three content cards, each with a photo, a headline, a truncated description and two tags: "Interview with Dr Michael Prochaska" (tags "People and Stories", "Interview"), "One lab for all" (tags "Backstage", "Background Story"), and "Charging and energy management in the STIHL AP system" (tags "Corporate Development", "Background Story"). It illustrates that items can hold compact, repeatable content such as cards._
 
 #### Recommended amount of Items
 
@@ -1048,7 +1048,7 @@ If additional pages are required, the Scrollmarker provides an optimized overflo
 
 ![Recommended amount of Items](carousel/recommended-amount-of-items-61435-1806.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "Default (for less than 6 pages)", "❖ Placeholder Item 1", "❖ Placeholder Item 2", "❖ Placeholder Item 3", "❖ Placeholder Item 4", "Overflow (for more than 6 pages)"._
+_Figure: Two schematic multi-item carousels, each with four equally sized placeholder items per page. "Default (for less than 6 pages)" shows a scrollmarker of three dots with the first, active one elongated. "Overflow (for more than 6 pages)" shows a scrollmarker of five dots with the active one elongated and the last dot smaller, indicating further pages._
 
 #### Content consistency
 
@@ -1058,7 +1058,7 @@ Consistent layouts help users focus on the changing content rather than adapting
 
 ![Content consistency](carousel/content-consistency-62489-12106.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "MS 162", "Lawn mower"._
+_Figure: Multi-item carousel with a disabled previous arrow, an enabled next arrow and a three-dot scrollmarker, showing three product cards with identical structure: brand logo, favourite heart icon, product image, name (MS 261 C-M, MSA 300 without battery and charger, MS 162), 3.5 star rating (80), product type, short description, availability, price 11.199,00 € incl. VAT and a cart button. The consistent layout across all items lets users focus on the changing content._
 
 ## Formatting and Construction 2/4
 
@@ -1077,7 +1077,7 @@ The container is the outermost wrapper of the Carousel. The container:
 
 ![Container](carousel/container-61435-1979.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); left nav control (chevron=left, state=disabled, variant=filled); right nav control (chevron=right, state=enabled, variant=filled); scrollmarker (6=false). Text in the figure: "Single-Item variant", "Multi-Item variant", "Desktop (XL)", "Item 1", "Item 2", "Item 3", "Item 4", "Desktop (L)"._
+_Figure: Carousel container outlined with a dashed purple border over a 12-column grid, shown for the Single-Item variant (one full-width Item 1) on the left and the Multi-Item variant (Item 1 to Item 4) on the right, each at Desktop (XL) and Desktop (L). In every example the round navigation controls sit just outside the container on its left (disabled, light grey) and right (enabled, dark), and three scrollmarker dots with the first one active sit centered below it._
 
 #### Viewport
 
@@ -1089,7 +1089,7 @@ The viewport defines the visible area of the Carousel. The viewport:
 
 ![Viewport](carousel/viewport-62064-22158.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "Single-Item variant", "Item 1", "Item 2 (hidden)", "Item 2", "Multi-Item variant", "Item 3", "Item 4", "Item 5 (hidden)", "Item 6 (hidden)", "Item 7 (hidden)", "Item 8 (hidden)", "Item 9 (hidden)", "Item 10 (hidden)"._
+_Figure: Viewport of the Carousel as a dashed purple frame around the visible items. In the Single-Item variant only Item 1 is inside the viewport while Item 2 (hidden) and part of the next item continue faded to the right outside the frame; in the Multi-Item variant Item 1 to Item 4 are inside the viewport and Item 5 (hidden) to Item 10 (hidden) are faded outside it, clipped at the edge._
 
 #### Track
 
@@ -1102,7 +1102,7 @@ The track contains all items and moves within the viewport. The track:
 
 ![Track](carousel/track-62064-22400.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "Single-Item variant", "Item 2 (hidden)", "Item 2", "Item 3 (hidden)", "Multi-Item variant", "Item 1 (hidden)", "Item 3", "Item 4", "Item 5 (hidden)", "Item 6 (hidden)", "Item 7 (hidden)", "Item 8 (hidden)"._
+_Figure: Carousel track shown as a long horizontal strip of items extending beyond both sides, with a purple double-headed arrow marking the visible viewport range. In the Single-Item variant the viewport is partly over Item 2 while Item 2 (hidden) and Item 3 (hidden) lie beside it, and in the Multi-Item variant Item 3 and Item 4 are fully visible with parts of Item 2 and Item 5 at the edges, while Item 1 and Item 5 to Item 8 are marked (hidden)._
 
 #### Navigation Controls
 
@@ -1120,7 +1120,7 @@ The Navigation Controls provide sequential navigation through the Carousel. The 
 
 ![Navigation Controls](carousel/navigation-controls-61435-2013.png)
 
-_Figure: Shows navigation control (chevron=left, state=enabled, variant=filled); navigation control (chevron=right, state=enabled, variant=filled); navigation control (chevron=left, state=hover / pressed, variant=filled); navigation control (chevron=right, state=hover / pressed, variant=filled); navigation control (chevron=left, state=focus, variant=filled); navigation control (chevron=right, state=focus, variant=filled); navigation control (chevron=left, state=disabled, variant=filled); navigation control (chevron=right, state=disabled, variant=filled); navigation control (chevron=left, state=disabled focus, variant=filled); navigation control (chevron=right, state=disabled focus, variant=filled); annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue). Callouts 1, 2. Text in the figure: "enabled", "hover/pressed", "focus", "disabled", "disabled focus", "Filled", "Inverse"._
+_Figure: Navigation Controls as pairs of round buttons with a left and a right chevron, in the five state columns enabled, hover/pressed, focus, disabled and disabled focus. Row 1 Filled shows dark buttons with white chevrons on a light background, and row 2 Inverse shows white buttons with dark chevrons on a black background; hover/pressed turns the buttons grey, focus adds a ring around them, and disabled shows light grey buttons with grey chevrons._
 
 #### Don’t mix Navigation Control variants within the same Carousel.
 
@@ -1128,7 +1128,7 @@ Use either Filled or Filled Inverse consistently. Navigation Control variants sh
 
 ![Don’t mix Navigation Control variants within the same Carousel.](carousel/don-t-mix-navigation-control-variants-within-the-same-carous-61435-2019.png)
 
-_Figure: Don't example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Page 2", "Page 3"._
+_Figure: Don't example with two Carousel pages side by side. Page 2 shows a chainsaw photo with white round navigation controls and a white scrollmarker pill, while Page 3 shows a battery and charger photo with dark navigation controls and a dark scrollmarker pill, so the Navigation Control variant changes between pages, which is wrong._
 
 #### Scrollmarker
 
@@ -1150,7 +1150,7 @@ The Scrollmarker indicates the current page within the Carousel and provides dir
 
 ![Scrollmarker](carousel/scrollmarker-61435-2032.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); scrollmarker building element (dot 3 (optional), variant=ghost); scrollmarker building element (background=ghost, active slide=first); scrollmarker building element (background=ghost, active slide=middle); scrollmarker building element (background=ghost, active slide=last); annotation-circle (number=2, type=center, color=blue); scrollmarker building element (dot 3 (optional), variant=filled); scrollmarker building element (background=filled, active slide=first); scrollmarker building element (background=filled, active slide=middle); scrollmarker building element (background=filled, active slide=last); annotation-circle (number=3, type=center, color=blue); scrollmarker building element (dot 3 (optional), variant=inverse). Callouts 1, 2, 3. Text in the figure: "Ghost", "Filled", "Inverse", "Overflow"._
+_Figure: Scrollmarker variants in rows: 1 Ghost with dots directly on the background, 2 Filled inside a dark pill, and 3 Inverse inside a white pill. Each row shows a three-page marker with the first page active, and a six-dot marker with the active elongated dot at the first, middle and last position; the active dot is a wide pill and the outer dots shrink when more pages exist. Below, Overflow shows six dots with the first active and the last one smaller, indicating more than five pages._
 
 #### Tap Zones
 
@@ -1164,7 +1164,7 @@ The Tap Zones provide additional touch interaction areas for sequential navigati
 
 ![Tap Zones](carousel/tap-zones-61435-2043.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=m). Text in the figure: "❖ Placeholder Item"._
+_Figure: Single-item Carousel with a Placeholder Item inside a dashed purple frame and three scrollmarker dots below. The slightly darker purple strips at the far left and far right edges of the item mark the Tap Zones, the invisible touch areas for going to the previous or next page._
 
 ## Figma Implementation Notes
 
@@ -1176,7 +1176,7 @@ Peek is part of the supported Multi-Item configuration on smaller breakpoints. I
 
 ![Peek requires manual adjustment](carousel/peek-requires-manual-adjustment-62524-12709.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=s); carousel (slot: visible items=\[object Object\], slot: peek=\[object Object\], variant=multi item, breakpoint=s). Measurements: 450px, 288px, 136px. Text in the figure: "Carousel is set to hug to grow in height depending on content", "❖ Placeholder Item 1", "❖ Placeholder Item 2", "❖ Placeholder Item 3", "❖ Placeholder Item 4", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "When changing the width of the carousel or when adding/deleting items, the it...", "The width of the item within the peek needs to be set automatically to the sa..."._
+_Figure: Flow diagram on manual adjustment of the Peek in the Multi-Item Carousel on small breakpoints. A phone frame with a Placeholder Item is replaced by a card Carousel set to hug to grow in height depending on content; when changing the width of the carousel or when adding/deleting items, the item within the peek doesn't adapt automatically, shown with a 450px wide first item and a 288px wide peek, or two 136px items and a 288px peek. The final step reads: the width of the item within the peek needs to be set automatically to the same width of the other items, shown as 450px for both the main item and the peek._
 
 ### In Figma, Peek is represented using an overlay rather than clipping the Track.
 
@@ -1184,7 +1184,7 @@ This is a Figma-specific implementation technique and does not define the implem
 
 ![In Figma, Peek is represented using an overlay rather than clipping the Track.](carousel/in-figma-peek-is-represented-using-an-overlay-rather-than-cl-62524-12755.png)
 
-_Figure: Shows carousel (slot: visible items=\[object Object\], slot: peek=\[object Object\], variant=multi item, breakpoint=s); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=s). Text in the figure: "Overlay added to component for display purposes", "Overflow of peek not visible on component itself", "❖ Placeholder Item 1", "❖ Placeholder Item 2", "Overflow is hidden when component is placed inside an artboard", "❖ Placeholder Item 3", "❖ Placeholder Item 4"._
+_Figure: Three-step diagram of how Peek is shown in Figma. First, the label Overlay added to component for display purposes shows Placeholder Item 1 with a faded second item behind an overlay; next, Overflow of peek not visible on component itself shows Placeholder Item 1 and Placeholder Item 2 side by side without the overlay; finally, Overflow is hidden when component is placed inside an artboard shows a phone frame with Placeholder Item 1 and only a sliver of the second item visible at the right edge._
 
 ## Formatting and Construction 3/4
 
@@ -1202,7 +1202,7 @@ The Item represents the primary content of the Single-Item Carousel. The Item:
 
 ![Item](carousel/item-61435-2265.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Item 1", "Item 2 (hidden)", "Item 2", "Viewport width"._
+_Figure: Single-Item Carousel inside a browser window mockup, with Item 1 filling the full dashed purple viewport, a faded left arrow and a grey right arrow on its sides, and three scrollmarker dots below. A dimension line below is labeled Viewport width and spans the full width of Item 1, while Item 2 (hidden) continues faded to the right outside the viewport._
 
 **Do keep all Items the same height.**
 

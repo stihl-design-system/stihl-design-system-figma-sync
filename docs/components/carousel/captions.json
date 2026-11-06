@@ -14,6 +14,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Page-based navigation shown for two carousels, each with a dashed viewport on the left (previous and next arrows, three scrollmarker dots) and an arrow pointing from a solid purple area on the right into the viewport. The first, Single-Item carousel, has one page containing only Item 1, which fills the whole viewport. The second, Multi-Item carousel, has a page containing Item 1, Item 2, Item 3 and Item 4 side by side, and the whole page moves in at once. The solid area on the right at the top is labeled Page."
   },
+  "0cb2cf4cd0f54176fd27a368a03341b71ad93eabd7a06a6bc1977fa8c661213e": {
+    "nodeId": "62646:101704",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Keyboard-navigation diagram of a multi-item carousel with navigation controls, showing three product cards with dashed peeks of neighbouring items and the next arrow button focused. Callout 3a, \"Move to Next Page: Enter\", and callout 3b, \"Move to Next / Previous Pages: Arrow left or Arrow right\", point from the focused next button to the next page on the right, with 3b also looping around the top back to the previous page on the left. Callout 3c, \"Move to Scrollmarker: Tab\", is an arrow from the next button around the bottom to the dashed scrollmarker below the cards."
+  },
   "179282c580d45ddb4545234ce0a7b26d9b436a3e577334145c283a00860838b4": {
     "nodeId": "60750:43799",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -39,10 +44,20 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Single-Item carousel used inside product cards of a product grid, with the scrollmarker inside the card image. In the XL-L browser mockup eight product cards sit in two rows of four, and in the M-S mobile mockup one product card is shown. Each card has a placeholder image with three scrollmarker dots (first active) at its bottom edge, then Productname, a 3.5 (80) star rating, Categorie, Short description of the product, Available now, the price 11.199,00 € incl. VAT, a Compare checkbox and an orange cart button."
   },
+  "2791a313018b8109db50a16ded0f5469dfd1ea6022b0374a6aba09e487448d94": {
+    "nodeId": "62524:12709",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Flow diagram on manual adjustment of the Peek in the Multi-Item Carousel on small breakpoints. A phone frame with a Placeholder Item is replaced by a card Carousel set to hug to grow in height depending on content; when changing the width of the carousel or when adding/deleting items, the item within the peek doesn't adapt automatically, shown with a 450px wide first item and a 288px wide peek, or two 136px items and a 288px peek. The final step reads: the width of the item within the peek needs to be set automatically to the same width of the other items, shown as 450px for both the main item and the peek."
+  },
   "2b0b1378df3c1ca135a72c762831fe488227dd1ffdfc40c84b629131bd5d974e": {
     "nodeId": "62753:23523",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Single item Carousel at the last page, showing end behaviour. The previous Navigation Control on the left is active (dark), while the next Navigation Control on the right is greyed out as disabled and marked with a dashed outline; it stays focusable. Of the three Scrollmarker dots below, the last, elongated one is the current page and is also marked with a dashed outline, since navigation stops at the last page and does not loop."
+  },
+  "2cf88f41ba4465d3a9b998a991d95ffe71c4eea2b1c713ac7dc251f91b976f62": {
+    "nodeId": "62524:14825",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two keyboard-navigation diagrams of a multi-item carousel with navigation controls, showing three product cards (MS 261 C-M chainsaw, MSA 300 without battery and charger brush cutter, MS 162 lawn mower) with previous and next arrow buttons and a scrollmarker below. Callout 1a, \"Move to the next focusable Item: Tab\", shows the first card focused with arrows running from its cart button to the second card and on to the third card's cart button. Callout 1b, \"Move to Previous Navigation Control: Tab\", shows an arrow from the last visible cart button around the bottom of the carousel to the previous arrow button, marked 1c."
   },
   "30f61f66a6ee4902ca82fbb80a698065e0915cb1f19c507e8be8d6923cc24370": {
     "nodeId": "61435:1960",
@@ -53,6 +68,11 @@
     "nodeId": "62753:23487",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Single item Carousel with \"Item 1\", \"Item 2\" and \"Item 3\": the visible \"Item 2\" is outlined with a dashed frame, and parts of \"Item 1\" and \"Item 3\" peek in on either side. A round previous Navigation Control sits at the left edge and a next Navigation Control at the right edge of the visible item, each with a curved arrow pointing towards the neighbouring item to show sequential navigation to the previous or next page. Three Scrollmarker dots below show the middle one as current."
+  },
+  "33ee75733a59f511400563b8ffadcce896a8648744cd153a87053b0d909f35bd": {
+    "nodeId": "62646:102180",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two keyboard-navigation diagrams of a multi-item carousel without navigation controls, showing the first two product cards fully and a third card cut off at the right, with a scrollmarker below. Callout 1a, \"Move to the next focusable Item: Tab\", shows the first card's cart button focused with arrows leading to the second card and the scrollmarker. Callout 1b, \"Move to Scrollmarker: Tab\", shows an arrow from the second card's focused button to the dashed scrollmarker below."
   },
   "36aaa398735b4a080461f277ca2257f31b62e86912523570f9ded2b8cf47aee9": {
     "nodeId": "62753:23547",
@@ -68,6 +88,11 @@
     "nodeId": "61818:3150",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Multi-Item carousel shown at four breakpoints, one below the other. XL shows four wide placeholder items (Placeholder Item 1 to 4) with previous and next arrows and scrollmarker dots. L shows four narrower items, also with arrows and dots. M shows two full items and a sliver of a third, without arrows or dots. S shows one full item and a thin sliver of the next, without arrows or dots; the item width shrinks as the breakpoint gets smaller."
+  },
+  "44b9710c07c3d7c803a7eb0bc3a9c48bc6d7349db7a649f2d57588c0da49c7cd": {
+    "nodeId": "62524:12755",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three-step diagram of how Peek is shown in Figma. First, the label Overlay added to component for display purposes shows Placeholder Item 1 with a faded second item behind an overlay; next, Overflow of peek not visible on component itself shows Placeholder Item 1 and Placeholder Item 2 side by side without the overlay; finally, Overflow is hidden when component is placed inside an artboard shows a phone frame with Placeholder Item 1 and only a sliver of the second item visible at the right edge."
   },
   "4b8c73410c1a9a0f879455d4c124695fdc8a9878fa10a9f7cb3422ec4431bd63": {
     "nodeId": "62753:23534",
@@ -89,6 +114,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Multi item Carousel with three product cards: \"MS 261 C-M\" (Chainsaw, 3.5 (80), \"Short description of the product\", \"Available now\", \"11.199,00 € incl. VAT\"), \"MSA 300 without battery and charger\" (Brush cutter, 3.5 (80), \"In-store only\", \"11.199,00 € incl. VAT\", greyed-out cart button) and \"MS 162\" (Lawn mower, 3.5 (80), \"Available now\", \"11.199,00 € incl. VAT\"). Each card has a heart icon and a cart button. A dark focus frame surrounds the first card and its cart button has a visible focus ring. The previous Navigation Control on the left is greyed out and the next one on the right is dark with a focus ring. Three Scrollmarker dots sit below, the first one current."
   },
+  "535d761bd586bf82c780737dcdaf30fd216c75067a643f84a406c98473963efc": {
+    "nodeId": "62064:22400",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Carousel track shown as a long horizontal strip of items extending beyond both sides, with a purple double-headed arrow marking the visible viewport range. In the Single-Item variant the viewport is partly over Item 2 while Item 2 (hidden) and Item 3 (hidden) lie beside it, and in the Multi-Item variant Item 3 and Item 4 are fully visible with parts of Item 2 and Item 5 at the edges, while Item 1 and Item 5 to Item 8 are marked (hidden)."
+  },
   "5639540f66097d2375952726eb16c2785308aedfd0ef916a97a203713785b03b": {
     "nodeId": "61653:2312",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -104,6 +134,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Multi item Carousel with four visible items, \"Placeholder Item 1\" to \"Placeholder Item 4\", between a dark previous Navigation Control on the left and a next Navigation Control with a focus ring on the right. Three Scrollmarker dots sit below, the middle one being current. A speech bubble at the lower right of the fourth item reads \"Items 1 – 4 of 12\", the accessible announcement of the visible range."
   },
+  "5f0c73a89fd7c172dfd1bb75d5588d2659bdb184ef946c1f7eb4de21642f72b6": {
+    "nodeId": "62524:14393",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example for a multi-item carousel without navigation controls: only the first product card (MS 261 C-M chainsaw, 11.199,00 € incl. VAT) is visible and focused, with the next card cut off and dashed at its right and a scrollmarker below. An arrow runs from the scrollmarker to the cut-off card, showing that hidden items are reachable by keyboard navigation, which is wrong because hidden items must not be focusable or exposed to assistive technologies."
+  },
   "62e96e7925abfd2aa7cc514b9751fa28f0bb366458e0f8602372abe647189e58": {
     "nodeId": "61695:2715",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -113,6 +148,11 @@
     "nodeId": "62581:18823",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Anatomy of the Single-Item Variant on mobile in a phone frame showing Item 1 with a dashed purple outline, with Item 2 (hidden) and Item 3 (hidden) continuing to the right outside the phone. Callout 1 marks the Container and 2 the Viewport, callout 3 marks the Track, with 3a the one visible item and 3b the hidden items. Callout 4 marks the Scrollmarker of three dots below the item. Callouts 5a and 5b mark the darker Tap zones at the left and right edges of the item, Previous and Next."
+  },
+  "66fef96764f2048f2f4f5b79e335824ffcff6e2e2baea59fb7e65719449d307d": {
+    "nodeId": "62489:12106",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Multi-item carousel with a disabled previous arrow, an enabled next arrow and a three-dot scrollmarker, showing three product cards with identical structure: brand logo, favourite heart icon, product image, name (MS 261 C-M, MSA 300 without battery and charger, MS 162), 3.5 star rating (80), product type, short description, availability, price 11.199,00 € incl. VAT and a cart button. The consistent layout across all items lets users focus on the changing content."
   },
   "6ac920d88d11d5b42c306df1036d77524f38db3e861b13fa94d2aa82b7e8d630": {
     "nodeId": "62753:23501",
@@ -134,6 +174,16 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Two stacked purple placeholder bars for a Single-Item Carousel, each with a Scrollmarker below. Under the label \"Default (for less than 6 pages)\" the Scrollmarker shows three dots, the first one active and elongated. Under the label \"Overflow (for more than 6 pages)\" it shows an active elongated dot followed by four regular dots and a smaller fifth dot at the end, indicating further pages beyond the visible dots."
   },
+  "8a5cd8f06c2bebd046da03c096a50dd973b75b911263a5a54631ec110158c709": {
+    "nodeId": "62646:100836",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Keyboard-navigation diagram of a multi-item carousel with navigation controls: three product cards are fully visible with dashed peek areas of the neighbouring items on both sides. Callout 2a, \"Move to Previous Page: Enter\", and callout 2b, \"Move to Next / Previous Pages: Arrow left or Arrow right\", point at the focused previous arrow button on the left, with arrows leading to the previous page. Callout 2c, \"Move to Next Navigation Control: Tab\", is an arrow from the previous button around the top of the carousel to the next arrow button on the right, and 2b also arrows from the bottom toward the next page."
+  },
+  "91007994b4abee63836dab34a31466471c77a9c402d8829460cf5f21461ccf3a": {
+    "nodeId": "62064:22158",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Viewport of the Carousel as a dashed purple frame around the visible items. In the Single-Item variant only Item 1 is inside the viewport while Item 2 (hidden) and part of the next item continue faded to the right outside the frame; in the Multi-Item variant Item 1 to Item 4 are inside the viewport and Item 5 (hidden) to Item 10 (hidden) are faded outside it, clipped at the edge."
+  },
   "935b01cbfd507068e556299937ffbc5ce892bca62d3702efd8ff2c40a4eb5778": {
     "nodeId": "61695:2633",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -148,6 +198,26 @@
     "nodeId": "62753:23563",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Don't: mobile screen showing a multi item Carousel of product cards at breakpoint s, with the next card peeking in on the right and a hand icon with a leftward arrow indicating a horizontal swipe. Each card has an image placeholder with its own three-dot image Scrollmarker, a \"Promo Flag\", \"Productname\", a 3.5 (80) rating, \"Categorie\", \"Short description of the product\", \"Available now\", \"11.199,00 € incl. VAT\", a \"Compare\" checkbox and an orange cart button. Three Scrollmarker dots sit below the cards. The image slider inside a card is a second swipeable Carousel nested in the outer one, which is not supported because it is technically unstable, particularly on mobile devices."
+  },
+  "a0732a6459dfdb2b9c7b7e3a563a510353baa41c34bb4e59349c04df12703435": {
+    "nodeId": "61435:2265",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Single-Item Carousel inside a browser window mockup, with Item 1 filling the full dashed purple viewport, a faded left arrow and a grey right arrow on its sides, and three scrollmarker dots below. A dimension line below is labeled Viewport width and spans the full width of Item 1, while Item 2 (hidden) continues faded to the right outside the viewport."
+  },
+  "a18d0b8b0f463140d36ecf9ad4817f03ed9b190792a67bb596b941aa14165cea": {
+    "nodeId": "61435:1806",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two schematic multi-item carousels, each with four equally sized placeholder items per page. \"Default (for less than 6 pages)\" shows a scrollmarker of three dots with the first, active one elongated. \"Overflow (for more than 6 pages)\" shows a scrollmarker of five dots with the active one elongated and the last dot smaller, indicating further pages."
+  },
+  "a2f0032b3c5dd791213ae06b5b488f9a1dd5f534c3826066b9b65a9391352881": {
+    "nodeId": "62646:101937",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Keyboard-navigation diagram of a multi-item carousel with navigation controls and three product cards, where the scrollmarker below the cards is focused. Callout 4a, \"Move to Next / Previous Pages: Arrow left or Arrow right\", shows arrows from the active marker to the markers on either side. Callout 4b, \"Move to next focusable Item: Tab\", shows an arrow from the scrollmarker up to the first card, and callout 4c, \"Leave Carousel: Tab\", shows an arrow from the scrollmarker down to a dashed area below the carousel."
+  },
+  "a5d508bd74fc226b8d07cebbd87d271a40386fdc0f017ff10f1d72704415b053": {
+    "nodeId": "61435:1979",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Carousel container outlined with a dashed purple border over a 12-column grid, shown for the Single-Item variant (one full-width Item 1) on the left and the Multi-Item variant (Item 1 to Item 4) on the right, each at Desktop (XL) and Desktop (L). In every example the round navigation controls sit just outside the container on its left (disabled, light grey) and right (enabled, dark), and three scrollmarker dots with the first one active sit centered below it."
   },
   "af13822329f7b4f627655e1760dd7c2d9974b258763b36aeaa26ee276f70bb67": {
     "nodeId": "61435:2249",
@@ -169,6 +239,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Two carousel examples with product cards showing a photo, a bold title and a short description. In the XL-L example three cards (IPX 5, AS System, AI Range) are fully visible with a grey previous arrow on the left, a dark next arrow on the right and three scrollmarker dots below, the first one active. In the M-S example one card (IPX 5) is fully visible and a sliver of the next card peeks in from the right, with the three scrollmarker dots below and no arrows."
   },
+  "c0d13d77a6618e59bb392c21e879719d46f16bc08ff057d3201ddaa18bc4c907": {
+    "nodeId": "61435:2043",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Single-item Carousel with a Placeholder Item inside a dashed purple frame and three scrollmarker dots below. The slightly darker purple strips at the far left and far right edges of the item mark the Tap Zones, the invisible touch areas for going to the previous or next page."
+  },
   "d3881f5c00a13b1f56cdeb56fdfea814807dff0fab8cba0dcc76145fa369518e": {
     "nodeId": "61767:3041",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -184,24 +259,49 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Two mobile phone frames of a single-item Carousel with a Placeholder Item. Under the heading Tap Zones, narrow darker strips on the left and right edges of the item mark the tap areas, and a tapping hand on the right strip indicates navigation to the next page. Under the heading Scrollmarker, a tapping hand on the second dot of the three-dot Scrollmarker below the item indicates direct navigation to that page."
   },
+  "db04b56bff8b3bd9f69f395ea32743c9327d2acc73d6adf1081e9da0bd95a25d": {
+    "nodeId": "62646:103102",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Keyboard-navigation diagram of a multi-item carousel without navigation controls, showing two product cards and a third cut off at the right, with the scrollmarker focused below. Callout 4a, \"Move to Next / Previous Pages: Arrow left or Arrow right\", shows arrows from the active marker to the markers on either side. Callout 4b, \"Move to next focusable Item: Tab\", shows an arrow up to the first card, and callout 4c, \"Leave Carousel: Tab\", shows an arrow down to a dashed area below the carousel."
+  },
   "e24ae4648adc4558c9f9ab02ee6554242b41a8f7b1a79bec36af0f4f0adabb13": {
     "nodeId": "62565:18667",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Single-Item carousel with navigation controls and scrollmarker inside the item, shown for XL-L and M-S. In XL-L the placeholder labeled Item 1 has a grey previous arrow and a white next arrow overlaid at its left and right edges, and a white pill with three dots (first active) overlaid at its bottom centre. In M-S Item 1 has only the overlaid scrollmarker pill at its bottom and no arrows (navigation controls hidden)."
+  },
+  "e28f537d2068dcd0f671ac587ed1aacf861be25343894d62bd9700551d88f0cd": {
+    "nodeId": "61435:2019",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example with two Carousel pages side by side. Page 2 shows a chainsaw photo with white round navigation controls and a white scrollmarker pill, while Page 3 shows a battery and charger photo with dark navigation controls and a dark scrollmarker pill, so the Navigation Control variant changes between pages, which is wrong."
   },
   "ebad24232ddc28530d27c5e952881fa435a0e1d49fc7cf61fec5bb15d0b8bec2": {
     "nodeId": "61435:2196",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Single-Item carousel with navigation controls and scrollmarker outside the item, shown for XL-L and M-S. In XL-L one large placeholder labeled Item 1 is flanked by a grey previous arrow on the left and a dark next arrow on the right, with three scrollmarker dots (first active) below the item. In M-S a smaller Item 1 is shown with the three dots below it and no arrows (navigation controls hidden)."
   },
+  "f4d13efa5283c761aba17f9f0fed0702915aae09f7b0dee4dfdc90ba10b546d2": {
+    "nodeId": "61435:1775",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Multi-item carousel at the large breakpoint with previous and next arrow buttons and a scrollmarker, showing three content cards, each with a photo, a headline, a truncated description and two tags: \"Interview with Dr Michael Prochaska\" (tags \"People and Stories\", \"Interview\"), \"One lab for all\" (tags \"Backstage\", \"Background Story\"), and \"Charging and energy management in the STIHL AP system\" (tags \"Corporate Development\", \"Background Story\"). It illustrates that items can hold compact, repeatable content such as cards."
+  },
   "f75d37d52617fd8123880a69f729d7202949eee89c55103af2a33641ea02fa93": {
     "nodeId": "62581:20794",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "A mobile phone frame showing a single-item Carousel with a Placeholder Item and a three-dot Scrollmarker. To the right a hand icon with a left-pointing arrow shows a horizontal swipe, and to the left of the phone purple double-headed arrows cross in both horizontal and vertical directions, indicating that horizontal swipe must not interfere with vertical page scrolling."
   },
+  "f85b13c37e82937da99e8581f253023ad8ac2397a5ae8e8503a72ffd854699d3": {
+    "nodeId": "61435:2013",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Navigation Controls as pairs of round buttons with a left and a right chevron, in the five state columns enabled, hover/pressed, focus, disabled and disabled focus. Row 1 Filled shows dark buttons with white chevrons on a light background, and row 2 Inverse shows white buttons with dark chevrons on a black background; hover/pressed turns the buttons grey, focus adds a ring around them, and disabled shows light grey buttons with grey chevrons."
+  },
   "fd16c9156cd3cfc043e827feffa0d851bf417158e0ef8a846589bb7fdc5b4aa3": {
     "nodeId": "62039:21422",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Anatomy of the Multi-Item Variant on desktop in a browser window showing Item 1 to Item 4 side by side inside a dashed purple outline, with Item 5 (hidden) to Item 9 (hidden) continuing to the right outside the window. Callout 1 marks the Container and 2 the Viewport at the top left corner, callout 3 marks the Track, with 3a the visible items and 3b the hidden items. Callouts 4a and 4b mark the Previous control (left, disabled) and the Next control (right, enabled) at the sides, and callout 5 marks the Scrollmarker below."
+  },
+  "fd708ef6b7e6611defd62767f93f0b89741e6bbdf5824c97061fb04774192472": {
+    "nodeId": "61435:2032",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Scrollmarker variants in rows: 1 Ghost with dots directly on the background, 2 Filled inside a dark pill, and 3 Inverse inside a white pill. Each row shows a three-page marker with the first page active, and a six-dot marker with the active elongated dot at the first, middle and last position; the active dot is a wide pill and the outer dots shrink when more pages exist. Below, Overflow shows six dots with the first active and the last one smaller, indicating more than five pages."
   }
 }
