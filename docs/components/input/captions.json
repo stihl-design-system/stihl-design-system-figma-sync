@@ -114,6 +114,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "An input labelled \"9-stellige Maschinennummer\" with the hint \"Nummer ohne Leerzeichen und Bindestriche eintragen\" and an info button next to the label, hovered with a pointer cursor. A white popover with an arrow pointing at the button opens above it, with the text \"Bei STIHL FS94 finden Sie die Maschinennummer in der Regel an der in den Abbildungen gezeigten Stelle.\" and two line drawings of STIHL machines (a petrol trimmer engine unit and a full trimmer), each with a line pointing to an \"XXXXXXXXX\" placeholder for the machine number."
   },
+  "344c515678ef224093f31ab92c1a99f23cdee309e6c150f48dbe5b9918273025": {
+    "nodeId": "39634:11170",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a file upload field with the label \"Label\" and an info button next to it, with the pointer cursor on the button. A white popover with an arrow pointing down at the button reads \"For best results, upload high-resolution images (at least 1200×800 px)\", which is supplementary, non-critical information. Below is the dashed dropzone with an upload icon, \"Drag and drop files here or\", a \"Browse files\" button and \"Max file size: 7 MB. Supported file types: .jpg and .png\"."
+  },
   "367a9c0916f64c76ae8dba837741215a86851fdeb0576f41f1c3d9aa3f6e6e08": {
     "nodeId": "32314:6605",
     "model": "github-copilot/claude-sonnet-4.5",

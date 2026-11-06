@@ -1,7 +1,1 @@
-{
-  "179282c580d45ddb4545234ce0a7b26d9b436a3e577334145c283a00860838b4": {
-    "nodeId": "60750:43799",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Overview of the Carousel in a \"Single-Item\" and a \"Multi-Item\" section across Breakpoints XL, L, M and S. Single-Item shows one large \"Placeholder Item\" per page; for XL and L two variants are shown, \"Scrollmarker position: outside, navigation control position: outside\" (previous and next arrow buttons beside the item, dots below it) and \"Scrollmarker position: inside, navigation control position: inside\" (arrows and dots overlaid on the item), while M and S show only \"Scrollmarker position: outside\" and \"inside\" with no arrow buttons. Multi-Item shows four items (\"Placeholder Item 1\" to \"4\") at XL and L with a disabled left arrow, an enabled dark right arrow and three scrollmarker dots below; at M items 1 and 2 are fully visible while item 3 is partly cut by a vertical line and items 3 and 4 are faded, and at S only item 1 is fully visible with items 2 to 4 faded behind a vertical line, with dots below and no arrows."
-  }
-}
+{}
