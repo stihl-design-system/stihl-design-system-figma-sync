@@ -13,10 +13,10 @@ figmaFile: Web Pattern Library
 figmaProject: 03. Platform Libraries
 figmaFileKey: Ie2r0R9QwjEc7O3nrFbXhV
 figmaNodeId: 7171:9055
-figmaVersion: "2418090261531524003"
-figmaVersionLabel: "Bug Fix: popover slot implementation / content loss"
-figmaVersionCreatedAt: 2026-11-04T18:34:21Z
-syncedAt: 2026-11-05T19:51:59.661Z
+figmaVersion: "2418677864587928954"
+figmaVersionLabel: "Reset Version: 1.2.8 | 30.06.CW24 Rasentrimmer"
+figmaVersionCreatedAt: 2026-11-06T09:09:39Z
+syncedAt: 2026-11-06T09:45:19.712Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7171-9055
 ---
 
@@ -71,7 +71,7 @@ The Promo Banner consists of two main parts:
 
 ![Elements](banner/elements-7171-11173.png)
 
-_Figure: Two banners with numbered callouts. Callout 1 on the left marks the container, a light grey bar holding a purple "Placeholder" area for content such as text, links or buttons. Callout 2 on the right marks the optional close button (X) at the right end of a second banner with an image icon, "Promo Banner Link" and a right chevron._
+_Figure: Shows banner (variant=secondary, viewport=m, content=placeholder, close-button=false); annotation-circle (number=1, type=left, color=blue); banner (variant=secondary, viewport=m, content=promo, close-button=true); annotation-circle (number=2, type=right, color=blue). Callouts 1, 2. Text in the figure: "❖ Placeholder", "Promo Banner Link"._
 
 #### Variants
 
@@ -268,7 +268,7 @@ Components are chosen based on their level of urgency:
 
 ![Functionality & Priority](banner/functionality-priority-9902-2911.png)
 
-_Figure: Three components ordered by urgency. Callout 1 marks a dialog with the heading "Heading", a close icon, a purple "Placeholder" content area and three buttons (a filled one and an outlined one on the left, an outlined one on the right). Callout 3 marks a grey info notification with the text "This is a notification message that guides the user.", a close icon and two buttons, below it a smaller toast with an info icon and the text "All files lorem ipsum", and a second callout 3 marks a dark promo banner with an image icon, "Promo Banner Link", a right chevron and a close icon._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=desktop); footer-dialog (first button, second button, third button, viewport=desktop, direction=horizontal, primary position=left); annotation-circle (number=3, type=center, color=blue); notification (action, close button, type=info, icon=True); toast (text=All files lorem ipsum, icon, type=info); banner (variant=default, viewport=m, content=promo, close-button=true). Callouts 1, 3. Text in the figure: "Heading", "❖ Placeholder", "Button", "This is a notification message that guides the user.", "All files lorem ipsum", "Promo Banner Link"._
 
 ### Use Cases
 

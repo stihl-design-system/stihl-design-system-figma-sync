@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 19511:2443
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T21:33:06.663Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-06T09:42:09.917Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=19511-2443
 ---
 
@@ -340,7 +340,7 @@ These components serve different purposes and should not be used interchangeably
 
 ![Status Flag vs. System Feedback vs. Notification](flag/status-flag-vs-system-feedback-vs-notification-19819-198.png)
 
-_Figure: Shows Frame 3465161 (icon, label=Confirmed, color=status: success); Frame 3465162 (icon, label=Needs review, color=status: warning); Frame 3465172 (icon, label=Rejected, color=status: error); Frame 3465173 (icon, label=In review, color=status: info); system-feedback (type=success); system-feedback (type=warning); system-feedback (type=error); notification (custom action area=\[object Object\], children=\[object Object\], close button, type=success, icon=True); notification (custom action area=\[object Object\], children=\[object Object\], close button, type=warning, icon=True); notification (children=\[object Object\], custom action area=\[object Object\], close button, type=error, icon=True); notification (custom action area=\[object Object\], children=\[object Object\], close button, type=info, icon=True); toast (text=All files updated, icon, type=success). Callouts 1, 2, 3, 4. Text in the figure: "Confirmed", "Needs review", "Rejected", "In review", "Connector linked successfully", "Connector not found", "Connector unknown", "Success: All files have been successfully uploaded. Thank you for your patience.", "Warning: Connection unstable. Unsaved progress might be lost. Please save you...", "Error: There was an issue uploading your files. Please try again or contact s...", "Note: Enhance your experience by customizing your preferences in the settings...", "All files updated", "You have unsaved changes", "A new update is available"._
+_Figure: Shows Frame 3465161 (icon, label=Confirmed, color=status: success); Frame 3465162 (icon, label=Needs review, color=status: warning); Frame 3465172 (icon, label=Rejected, color=status: error); Frame 3465173 (icon, label=In review, color=status: info); system-feedback (type=success); system-feedback (type=warning); system-feedback (type=error); notification (close button, type=success, icon=True); notification (close button, type=warning, icon=True); notification (close button, type=error, icon=True); notification (close button, type=info, icon=True); toast (text=All files updated, icon, type=success). Callouts 1, 2, 3, 4. Text in the figure: "Confirmed", "Needs review", "Rejected", "In review", "Connector linked successfully", "Connector not found", "Connector unknown", "Success: All files have been successfully uploaded. Thank you for your patience.", "Warning: Connection unstable. Unsaved progress might be lost. Please save you...", "Error: There was an issue uploading your files. Please try again or contact s...", "Note: Enhance your experience by customizing your preferences in the settings...", "All files updated", "You have unsaved changes", "A new update is available"._
 
 ## Examples
 

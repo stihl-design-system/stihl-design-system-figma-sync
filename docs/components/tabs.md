@@ -15,10 +15,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 24564:312
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:26:18.952Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-06T09:44:43.339Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=24564-312
 ---
 
@@ -408,6 +408,14 @@ _Figure: STIHL dealer search web app titled "FIND A DEALER" with a search field 
 
 ## Tabs navigation
 
+Overview:
+
+- The components main function is to navigate to another page url.
+   - In case the other tabs activate a content pane to switch, use the tabs in-page (see above)
+- Tabs navigation can be extended beyond the grid to span the full width of the full content area.
+- Left alignment is default and preferred option, as it aligns with typical user reading behavior, also known as the ‘F-pattern’.
+- The tabs navigation component is a link list and often used as secondary navigation.
+
 > Tabs in-page and tabs navigation are stored together as a single component in Figma.
 
 ![Tabs navigation](tabs/tabs-navigation-25290-6868.png)
@@ -417,8 +425,6 @@ _Figure: Tabs navigation variants in a matrix of "alignment: left" and "alignmen
 ![Tabs navigation](tabs/tabs-navigation-25290-7285.png)
 
 _Figure: Tab item states in a matrix of "enabled", "hover/pressed" and "focus" columns against "selected: false" and "selected: true" rows. Unselected tabs show a regular "Tab" label; selected tabs show a bold label with an orange underline. Hover/pressed adds a light grey background and focus adds a dark outline around the tab._
-
-> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 

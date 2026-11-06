@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 2659:3954
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T21:32:52.297Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-06T09:41:23.879Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=2659-3954
 ---
 
@@ -124,7 +124,7 @@ Less than 8 columns is also possible in different combinations.
 
 ![Maximum width](combobox/maximum-width-9039-21450.png)
 
-_Figure: Do example: a form with the heading "Legend", a radio group with the legend "Radio Group Legend" and two "Radio Label" options, followed by a "Select" field with a chevron and several "Label" text inputs, laid over a 12-column grid. All fields stay within the left 8 columns, at most two fields share a row (a short and a long field, or a long and a short one), and the right 4 columns remain empty._
+_Figure: Do example. Shows radio-group (item 4, legend, item 5, legend=Radio Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false); button (button text=Button, variant=ghost, state=enabled, size=medium, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Legend", "Radio Group Legend", "Radio Label", "Label", "Select"._
 
 #### Maximum width
 
@@ -168,7 +168,7 @@ _Figure: Don't example. Shows button (button text=Button, variant=ghost, state=e
 
 ![Amount of items in the list](combobox/amount-of-items-in-the-list-8472-30050.png)
 
-_Figure: Do example with three callouts. Callout 1 points at the horizontal radio group "Form of address" with the options "Mr." (selected), "Mrs." and "other", used for fewer than 5 items. Callout 2 points at the "Options" combobox with the placeholder "Select" and a chevron, opened to a list with "Label", "Label", "Option 3" and "Label" (5 to 20 items, opens on click). Callout 3 points at the "Country" combobox with typed input "B|" and a clear button, showing a filtered list of "Label", "Label", "Bangladesh", "Label" and "Label" (more than 20 items, opens after typing)._
+_Figure: Do example. Shows radio-group (item 4, legend, item 5, item 3, legend=Form of address, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false); combobox (dropdown, state=active/focus, invalid=false). Callouts 1, 2, 3. Text in the figure: "Form of address", "Mr.", "Mrs.", "other", "Options", "Select", "Label", "Option 3", "Country", "B|", "Bangladesh"._
 
 ![Amount of items in the list](combobox/amount-of-items-in-the-list-8472-30091.png)
 
@@ -248,7 +248,7 @@ For mor Guidance on this topic see the [Popover documentation](https://www.figma
 
 ![Info Button](combobox/info-button-39621-13634.png)
 
-_Figure: Don't example: a white popover with the text "Select max. 3 different products" opened from the info button of a combobox with the label "Product Name". The popover covers most of the input, leaving only its clear button visible at the right edge, and a pointer cursor sits inside the popover. This is wrong because required information such as the selection limit is hidden behind the info button instead of being shown as a hint._
+_Figure: Don't example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); input-combobox (system feedback, ℹ️ info-button, label=Product Name, clear button, input text, state=default, size=medium, invalid=false); cursor (type=pointer). Text in the figure: "Select max. 3 different products", "Product Name", "FSA 45, FSA 70, FSA 50"._
 
 ## Behavior
 

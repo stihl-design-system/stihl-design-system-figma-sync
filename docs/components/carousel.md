@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 26075:11524
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T21:32:41.459Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-06T09:40:49.128Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11524
 ---
 
@@ -80,7 +80,7 @@ The Carousel is available in two variants:
 
 ![Carousel](carousel/carousel-60750-43799.png)
 
-_Figure: Shows carousel building block (slot: visible items=\[object Object\], scrollmarker position=outside, navigation control position=outside); carousel building block (slot: visible items=\[object Object\], scrollmarker position=outside); left nav control (chevron=left, state=disabled, variant=filled); right nav control (chevron=right, state=enabled, variant=filled); scrollmarker (6=false); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=xl); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=m); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Text in the figure: "Carousel", "Single-Item", "❖ Placeholder Item", "❖ Placeholder Item 1", "❖ Placeholder Item 2", "❖ Placeholder Item 3", "❖ Placeholder Item 4", "❖ PlaceholderItem 3", "❖ PlaceholderItem 4", "Scrollmarker position: outside, navigation control position: outside", "Scrollmarker position: inside, navigation control position: inside", "Breakpoint: XL", "Breakpoint: L", "Scrollmarker position: outside", "Scrollmarker position: inside", "Breakpoint: M", "Breakpoint: S", "Multi-Item"._
+_Figure: Overview of the Carousel in a "Single-Item" and a "Multi-Item" section across Breakpoints XL, L, M and S. Single-Item shows one large "Placeholder Item" per page; for XL and L two variants are shown, "Scrollmarker position: outside, navigation control position: outside" (previous and next arrow buttons beside the item, dots below it) and "Scrollmarker position: inside, navigation control position: inside" (arrows and dots overlaid on the item), while M and S show only "Scrollmarker position: outside" and "inside" with no arrow buttons. Multi-Item shows four items ("Placeholder Item 1" to "4") at XL and L with a disabled left arrow, an enabled dark right arrow and three scrollmarker dots below; at M items 1 and 2 are fully visible while item 3 is partly cut by a vertical line and items 3 and 4 are faded, and at S only item 1 is fully visible with items 2 to 4 faded behind a vertical line, with dots below and no arrows._
 
 ![Carousel](carousel/carousel-60750-43802.png)
 

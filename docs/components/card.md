@@ -18,10 +18,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 26075:11591
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T21:32:34.564Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-06T09:40:16.858Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11591
 ---
 
@@ -1498,7 +1498,7 @@ _Figure: Shows annotation-circle (number=1, type=top, color=blue); selectable-ca
 
 ![Minimum Number of Elements](card/minimum-number-of-elements-66439-55209.png)
 
-_Figure: Don't example. Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false). Text in the figure: "Radio label", "Radio Label", "use a radio button instead"._
+_Figure: Don't example. Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false). Text in the figure: "Radio label", "Radio Label", "use a radio button instead"._
 
 #### Additional Content
 
@@ -1659,7 +1659,7 @@ The Card presentation and Card-level interaction target must not change or repla
 
 ![Semantics](card/semantics-66439-55846.png)
 
-_Figure: Shows s-card-skeleton (state=enabled, selection control=radio button, selected=no, invalid=no, media area=no); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); s-card-skeleton (state=enabled, selection control=checkbox, selected=no, invalid=no, media area=no); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false). Text in the figure: "Radio", "Checkbox", "Radio Button", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Radio Label", "Checkbox Label"._
+_Figure: Shows s-card-skeleton (state=enabled, selection control=radio button, selected=no, invalid=no, media area=no); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); s-card-skeleton (state=enabled, selection control=checkbox, selected=no, invalid=no, media area=no); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false). Text in the figure: "Radio", "Checkbox", "Radio Button", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Radio Label", "Checkbox Label"._
 
 ### Accessible Name
 
@@ -1959,7 +1959,7 @@ Each Checkbox Selectable Card is an individual Tab stop.
 
 ![Keyboard Navigation](card/keyboard-navigation-66439-55115.png)
 
-_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Move focus between Checkbox Selectable Cards:", "Tab", "Space toggles the selection state of the focused Card:", "Space", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
+_Figure: Three Checkbox Selectable Cards in a row, each with a checkbox in the top right corner, a small image placeholder, the title "Charging and energy management in the STIHL AP system", a truncated description, the text "Metadata" and three "Flag" labels. The first card has a thick dark focus outline and a checked checkbox, the other two have dashed purple outlines and empty checkboxes. Purple arrows from the first card to the second and from the second to the third, together with the notes "Move focus between Checkbox Selectable Cards: Tab" and "Space toggles the selection state of the focused Card: Space", show that Tab moves focus from card to card and Space toggles the focused card._
 
 ## Examples
 
@@ -1971,7 +1971,7 @@ Delivery selection during the checkout process (Radio).
 
 ![STIHL Website](card/stihl-website-66439-55139.png)
 
-_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, control=radio button, invalid=false). Text in the figure: "Delivery Method", "Pickup", "Ready in: 2 hours", "Free", "Delivery", "No dealer available", "Shipping", "Arrives by: Thu, May 24", "Shipping: $50"._
+_Figure: Selectable Card group with the label "Delivery Method" on a white panel, used for delivery selection in the STIHL Website checkout, with three radio cards side by side. "Pickup" (store icon, "Ready in: 2 hours", flag "Free") is selected with a thick dark outline and a filled orange radio button, "Delivery" (truck icon, "No dealer available", flag "Free") and "Shipping" (box icon, "Arrives by: Thu, May 24", flag "Shipping: $50") are unselected with empty radio buttons._
 
 ### STIHL App
 
@@ -1979,7 +1979,7 @@ Service package selection for STIHL tools (Radio).
 
 ![STIHL App](card/stihl-app-66439-55144.png)
 
-_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "STIHL Servicing", "Includes checking device functionality, replacing parts, and cleaning", "Price on request", "STIHL Check", "A fundamental diagnostic check to ensure that all Stihl tools are functioning...", "Our recommended service", "STIHL Pro Servicing", "Ensures safety compliance, preventive parts replacement, and thorough cleaning"._
+_Figure: Three vertical Selectable Cards for choosing a service package in the STIHL App, each with a photo of a workshop technician at the top, a radio button in the top right corner, a title, a short description and a "Price on request" flag. "STIHL Servicing" ("Includes checking device functionality, replacing parts, and cleaning") is selected with a thick dark outline and a filled orange radio button, "STIHL Check" ("A fundamental diagnostic check to ensure all Stihl tools are functioning optimally.") and "STIHL Pro Servicing" ("Ensures safety compliance, preventive parts replacement, and thorough cleaning") are unselected, and "STIHL Pro Servicing" carries an orange flag "Our recommended service" over its photo._
 
 ### STIHL.de
 
@@ -1987,7 +1987,7 @@ Tool selection during battery advisor steps (Checkbox).
 
 ![STIHL.de](card/stihl-de-66439-55155.png)
 
-_Figure: Shows stepper (orientation=vertical); selectable-card-group (legend=Selectable Card Group Legend, radio-group=\[object Object\], hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, selection control=radio button, invalid=false). Text in the figure: "Händler finden", "Mein STIHL", "Warenkorb", "Suchen", "English", "Produkte", "Ratgeber und Projekte", "Service und events", "Startseite", "Produkt- und zubehörberater", "Akkuberater", "Akkuberater ƒ", "1 Gerätekategorien", "Bitte wählen Sie alle Gerätekategorien aus, für die Sie sich interessieren.", "1", "Label", "Hint opt.", "2", "3", "4", "5", "6", "sägen und schneiden (6)", "MSA Motorsägen"._
+_Figure: Tool selection step of the STIHL.de battery advisor on a white panel: an orange-edged heading "1 GERÄTEKATEGORIEN" with the text "Bitte wählen Sie alle Gerätekategorien aus, für die Sie sich interessieren.", a banner "SÄGEN UND SCHNEIDEN (6)" and below it horizontal Selectable Cards with a checkbox at the right and a product photo at the left, titled "MSA Motorsägen", "HLA Heckenschneider" and "HSA Heckenscheren", all unchecked. On the right a vertical stepper lists six steps numbered 1 to 6, each with "Label" and "Hint opt.", where step 1 is highlighted in orange._
 
 ## Product Card
 
@@ -2127,7 +2127,7 @@ Available elements and their positioning vary between Grid View and List View.
 
 ![Anatomy](card/anatomy-54990-20630.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); annotation-circle (number=1b, type=left, color=blue); annotation-circle (number=1c, type=right, color=blue); annotation-circle (number=1c, type=left, color=blue); annotation-circle (number=1a, type=left, color=blue); annotation-circle (number=1, type=right, color=blue); annotation-circle (number=ii, type=right, color=blue); annotation-circle (number=i, type=left, color=blue); annotation-circle (number=2a, type=left, color=blue); annotation-circle (number=2b, type=left, color=blue); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=2c, type=left, color=blue). Callouts 1, 2, 3. Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "1b", "1c", "1a", "ii", "i", "2a", "2b", "2c", "2d", "2e", "2f", "3a", "3b", "3c"._
+_Figure: Anatomy of the Product Card in Grid View, shown twice with a media slot above a text area and a footer; the left card is annotated and the right card shows the carousel variant. Callout 1 marks the Media Slot with 1a the image, 1b the battery logo and 1c the add-to-favorite heart button, with i marking an image and ii a carousel with scrollmarker dots as the media type. Callout 2 marks the Header Slot with 2a "Promo Flag", 2b "Productname", 2c the rating "3.5 (80)", 2d "Categorie", 2e "Short description of the product" and 2f the status "Available now"; callout 3 marks the Footer Slot with 3a the price "11.199,00 € incl. VAT", 3b the round orange add-to-cart button and 3c the "Compare" checkbox._
 
 **List view**
 
@@ -2149,7 +2149,7 @@ _Figure: Shows product-card: grid view (content sizing=hug); annotation-circle (
 
 ![Anatomy](card/anatomy-55180-25794.png)
 
-_Figure: Shows annotation-circle (number=2, type=top, color=blue); product-card: list view (container query=1435 - 766px, content sizing=fill); annotation-circle (number=1b, type=left, color=blue); annotation-circle (number=2a, type=center, color=blue); annotation-circle (number=3a, type=right, color=blue); annotation-circle (number=2b, type=center, color=blue); annotation-circle (number=1a, type=left, color=blue); annotation-circle (number=3b, type=right, color=blue); annotation-circle (number=2c, type=center, color=blue); annotation-circle (number=2d, type=center, color=blue); annotation-circle (number=3c, type=left, color=blue); annotation-circle (number=3d, type=right, color=blue). Callouts 2, 3. Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "1b", "2a", "3a", "2b", "1a", "3b", "2c", "2d", "3c", "3d", "2e", "3e"._
+_Figure: Anatomy of the Product Card in List View with three columns inside one wide card. Callout 1 marks the Media Slot on the left with 1a the image and 1b the battery logo; callout 2 marks the Header Slot in the middle with 2a "Promo Flag", 2b "Productname", 2c the rating "3.5 (80)", 2d "Categorie" and 2e a bulleted description; callout 3 marks the Footer Slot on the right with 3a the price "11.199,00 € incl. VAT", 3b the status "Available now", 3c the orange "Add to cart" button, 3d the add-to-favorite heart button next to it and 3e the "Compare" checkbox at the bottom._
 
 ### View types
 
@@ -2174,7 +2174,7 @@ Optimized for browsing and exploratory experiences.
 
 ![View types](card/view-types-54990-20687.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "desktop", "mobile", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
+_Figure: Product Card in Grid View: a large single card on the left with a chainsaw image, battery logo, heart button, "Promo Flag", "Productname", rating "3.5 (80)", "Categorie", "Short description of the product", "Available now", price "11.199,00 € incl. VAT", round add-to-cart button and "Compare" checkbox. On the right, a browser mockup labeled "desktop" shows four of these cards side by side in one row, and a mockup labeled "mobile" shows the cards stacked in a single column._
 
 **List view**
 
@@ -2196,7 +2196,7 @@ Optimized for comparison and decision-making.
 
 ![View types](card/view-types-55161-21932.png)
 
-_Figure: Shows product-card: list view (container query=1435 - 766px, content sizing=fill); product-card: list view (container query=419 - 272px, content sizing=hug). Text in the figure: "desktop", "mobile", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "Lorem ipsum · Quam · Adipiscing ultricies", "Add"._
+_Figure: Product Card in List View: a wide single card on the left with a small chainsaw image and battery logo, "Promo Flag", "Productname", rating "3.5 (80)", "Categorie", a bulleted description, price "11.199,00 € incl. VAT", "Available now", an orange "Add to cart" button with a heart button, and a "Compare" checkbox. On the right, a browser mockup labeled "desktop" shows three of these cards stacked vertically, each spanning the width, and a mockup labeled "mobile" shows narrower stacked cards with a shorter "Add" button._
 
 ### Sizing & Constraints
 
@@ -2211,7 +2211,7 @@ Size constraints can inform responsive behavior, while view-specific responsive 
 
 ![Grid View](card/grid-view-54990-20824.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Min. width: 148px", "Max. width: 719px"._
+_Figure: Two Grid View Product Cards at their width limits, both containing a chainsaw image, battery logo, heart button, "Promo Flag", "Productname", rating "3.5 (80)", "Categorie", "Short description of the product", "Available now", price "11.199,00 € incl. VAT", "Compare" checkbox and round add-to-cart button. The narrow card on the left is measured "Min. width: 148px" with a dashed horizontal dimension line below it, the large card on the right is measured "Max. width: 719px"._
 
 #### List View
 
@@ -2220,7 +2220,7 @@ _Figure: Shows product-card: grid view (content sizing=hug). Text in the figure:
 
 ![List View](card/list-view-54990-20846.png)
 
-_Figure: Shows product-card: list view (container query=419 - 272px, content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum · Quam · Adipiscing ultricies", "11.199,00 €", "incl. VAT", "Available now", "Add", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Add to cart", "Compare", "Max. width: 1435px", "Min. width: 272px"._
+_Figure: Two List View Product Cards at their width limits. The narrow card on the left is measured "Min. width: 272px" and stacks its content in a small image column and a text column with the price, "Available now" and a short "Add" button with a heart button. The wide card on the right is measured "Max. width: 1435px" and shows image, "Promo Flag", "Productname", rating "3.5 (80)", "Categorie" and a bulleted description on the left, and price "11.199,00 € incl. VAT", "Available now", "Add to cart" button, heart button and "Compare" checkbox on the right._
 
 #### Height Guidance
 
@@ -2237,7 +2237,7 @@ Product Cards should maintain a consistent visual rhythm while supporting their 
 
 ![Height Guidance](card/height-guidance-54990-20903.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); card surface (variant=outlined, state=enabled); media slot (media type=image); annotation-circle (number=2, type=center, color=blue); media slot; button (button text=Add to cart, variant=highlight, state=enabled, size=small, icon position=left, hide label=off, flush alignment=off); favorites (states=enabled, selected=false); media slot (image size=small). Callouts 1, 2. Text in the figure: "Grid View", "List View"._
+_Figure: Wireframe comparison of Product Card heights in a desktop browser frame and a mobile frame. Callout 1 "Grid View" shows four tall cards in a row with large image placeholders, text lines and a round orange button each, plus a single tall card on mobile; callout 2 "List View" shows three wide, low cards stacked vertically, each with a small image, text lines, an orange button and a checkbox, plus two such cards on mobile._
 
 ### Resizing Behavior
 
@@ -2255,7 +2255,7 @@ Applies to all card variants unless stated otherwise.
 
 ![Card Width Behavior](card/card-width-behavior-54990-21065.png)
 
-_Figure: Shows card surface (variant=outlined, state=enabled); media slot (media type=image); media slot; button (button text=Add to cart, variant=highlight, state=enabled, size=small, icon position=left, hide label=off, flush alignment=off); favorites (states=enabled, selected=false). Text in the figure: "Grid View", "Card on its own", "Card placed alongside other cards i.e. in a grid", "Fill", "Container width", "Fill to container (standard) or User Defined (width)", "List View", "Card placed alongside other cards i.e. in a list"._
+_Figure: Wireframe of Product Card width behavior in two sections. Under "Grid View", a "Card on its own" is measured "Fill to container (standard) or User Defined (width)", and "Card placed alongside other cards i.e. in a grid" shows four cards in a browser frame, each measured "Fill" within an overall "Container width". Under "List View", a wide "Card on its own" has the same measure "Fill to container (standard) or User Defined (width)", and "Card placed alongside other cards i.e. in a list" shows three stacked list cards measured "Fill" inside a larger "Container width" that also spans empty grid columns._
 
 #### Card Height Behavior
 
@@ -2267,7 +2267,7 @@ Applies to all card variants unless stated otherwise.
 
 ![Card Height Behavior](card/card-height-behavior-54990-21452.png)
 
-_Figure: Shows card surface (variant=outlined, state=enabled); media slot (media type=image); media slot (image size=medium); button (button text=Add to cart, variant=highlight, state=enabled, size=small, icon position=left, hide label=off, flush alignment=off); favorites (states=enabled, selected=false). Text in the figure: "Grid View", "Card on its own (Hug)", "Card on its own (Fill)", "Card placed alongside other cards i.e. in a grid", "Hug to content", "Fill", "User Defined", "List View", "Card placed alongside other cards i.e. grid"._
+_Figure: Wireframe of Product Card height behavior in two sections. Under "Grid View", "Card on its own (Hug)" has its height measured "Hug to content", "Card on its own (Fill)" is taller with its height measured "User Defined" and a vertical "Fill" arrow marking the stretching space above the price, and "Card placed alongside other cards i.e. in a grid" shows four cards of equal height with "Fill" arrows in the inner content area. Under "List View", "Card on its own (Hug)" is measured "Hug to content", "Card on its own (Fill)" is measured "User Defined" with a "Fill" arrow in the content column, and "Card placed alongside other cards i.e. grid" shows two rows of two list cards with "Fill" arrows._
 
 **Image Sizes and Behavior**
 
@@ -2281,7 +2281,7 @@ Image behavior differs depending on whether the Product Card is displayed in Gri
 
 ![Card Height Behavior](card/card-height-behavior-54990-22574.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); product-card: list view (container query=765 - 540px, content sizing=hug); product-card: grid view (content sizing=hug); product-card: list view (container query=539 - 420px, content sizing=hug); product-card: list view (container query=419 - 272px, content sizing=hug). Callouts 1, 2. Text in the figure: "Grid View", "List View", "Grows with Card width", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum · Quam · Adipiscing ultricies", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Short description of the product", "Aspect Ratio locked", "Hug to content", "Fixed Height", "Fixed Width", "Fill to Card", "Image size: large (from 765px to 540px)", "Image size: medium (from 539px to 420px)", "Image size: small (from 419px to 272px)"._
+_Figure: Image behavior of the Product Card in two parts. Callout 1 "Grid View" ("Grows with Card width") shows a grid card plus a diagram of its image area with a diagonal line and the label "Aspect Ratio locked", measured "Fill to Card" horizontally and "Hug to content" vertically. Callout 2 "List View" ("Grows with Card width") shows a list card and a diagram of its image area measured "Fixed Width" and "Fixed Height", followed by three list cards with the image sizes "large (from 765px to 540px)", "medium (from 539px to 420px)" and "small (from 419px to 272px)", where the image becomes smaller as the card gets narrower._
 
 ## Content and Assets
 
@@ -2301,7 +2301,7 @@ The example shown on the right illustrates a recommended content density for Pro
 
 ![Maximum Number of Elements](card/maximum-number-of-elements-54990-22500.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Grid View", "List View", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "Set Price", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "Compare", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Add to cart"._
+_Figure: Product Card with the maximum content density in "Grid View" and "List View". Both cards show two battery logos, a chainsaw image, heart button, "Promo Flag", "Productname", rating "3.5 (80)", "Categorie", a description, "Available now", a "Set Price" block with the orange price "11.199,00 € incl. VAT", the struck-through old price "21.199,00 €" with "Save 50,00 € (14%)", and a "Compare" checkbox. The grid card ends with a round add-to-cart button, the list card has an "Add to cart" button with a heart button and a bulleted description._
 
 #### Minimum Number of Elements
 
@@ -2311,7 +2311,7 @@ There is no defined minimum number of elements for Product Cards.
 
 ![Minimum Number of Elements](card/minimum-number-of-elements-54990-22507.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Grid View", "List View", "Productname", "3.5", "(80)", "Available now", "11.199,00 €", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p..."._
+_Figure: Product Card with the minimum content in "Grid View" and "List View". The grid card shows only the chainsaw image, "Productname", rating "3.5 (80)", the status "Available now" and the price "11.199,00 €". The list card shows the image, "Productname", rating "3.5 (80)" and a bulleted description on the left, and the price "11.199,00 €" with "Available now" on the right, without buttons, flags or compare checkbox._
 
 ### Elements
 
@@ -2341,7 +2341,7 @@ Use a Carousel when multiple images provide additional value and help users bett
 
 ![Elements](card/elements-54990-22517.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); product-card: grid view (content sizing=hug). Callouts 1, 2. Text in the figure: "Grid View", "Image", "Carousel", "Productname", "3.5", "(80)", "Available now", "11.199,00 €"._
+_Figure: Grid View Product Cards showing the two media types of the Media Slot. Callout 1 "Image" marks a card with a single static chainsaw image. Callout 2 "Carousel" marks two cards that show the same chainsaw image with three scrollmarker dots (first one active) at the bottom of the media area, the second one with a zoomed-in image. All cards show "Productname", rating "3.5 (80)", "Available now" and the price "11.199,00 €"._
 
 **List View**
 
@@ -2351,19 +2351,19 @@ This view is optimized for product comparison and decision-making, where structu
 
 ![Elements](card/elements-62140-17233.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); product-card: list view (container query=1435 - 766px, content sizing=fill). Callouts 1, 2. Text in the figure: "List View", "Image", "Carousel", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare"._
+_Figure: List View Product Cards compared by media type. Callout 1 "Image" marks a list card with a single chainsaw image, battery logo, "Productname", rating "3.5 (80)", "Categorie", a bulleted description, price "11.199,00 € incl. VAT", "Available now", "Add to cart" button, heart button and "Compare" checkbox. Callout 2 "Carousel" marks the same card with scrollmarker dots under the image, crossed out with a red X to show that carousels are not supported in List View._
 
 **Do use the same media type within the same set of cards.**
 
 ![Elements](card/elements-62140-18172.png)
 
-_Figure: Do example. Shows product-card: grid view (content sizing=hug); product-card: grid view (content sizing=fill). Text in the figure: "Offer", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "MS 231", "In stock within 2–3 weeks", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "New", "MS 162", "Lawn mower", "Lorem ipsum dolor sit amet consectetur. At senectus mauris interdum nibh cras.", "Socks STRIPES 3-pack Black / White / Grey", "Socks", "Set Price"._
+_Figure: Do: a grid of Product Cards on a white panel where all four visible cards in the first row use the same media type, a carousel with three scrollmarker dots under the product image. The cards show varying content such as the flags "Offer" and "New", names "MS 261 C-M", "MS 231", "MSA 300 without battery and charger" and "MS 162", rating "3.5 (80)", statuses "Available now", "In stock within 2–3 weeks" and "In-store only", the price "11.199,00 € incl. VAT" (the first card with an orange sale price and "Save 50,00 € (14%)") and orange or grey add-to-cart buttons. A green "Do" label marks the correct example._
 
 **Don’t mix different media types within the same set of cards.**
 
 ![Elements](card/elements-62140-18182.png)
 
-_Figure: Don't example. Shows product-card: grid view (content sizing=hug); product-card: grid view (content sizing=fill). Text in the figure: "Offer", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "MS 231", "In stock within 2–3 weeks", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "New", "MS 162", "Lawn mower", "Lorem ipsum dolor sit amet consectetur. At senectus mauris interdum nibh cras.", "Socks STRIPES 3-pack Black / White / Grey", "Socks", "Set Price"._
+_Figure: Don't: a grid of Product Cards on a white panel that mixes media types, where only the third card "MSA 300 without battery and charger" shows carousel scrollmarker dots under its image while the other three cards ("MS 261 C-M" with the flag "Offer", "MS 231" and "MS 162" with the flag "New") show a plain single image. Ratings "3.5 (80)", statuses such as "Available now", "In stock within 2–3 weeks" and "In-store only", prices and add-to-cart buttons are the same as in the correct example. A red "Don't" label marks the incorrect example because it makes the set look inconsistent._
 
 **Media Content: Sizes**
 
@@ -2373,7 +2373,7 @@ _Figure: Don't example. Shows product-card: grid view (content sizing=hug); prod
 
 ![Elements](card/elements-55243-29329.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue); placeholder: image (aspect ratio=4:3). Callouts 1, 2, 3. Text in the figure: "Image Format: 4:3", "Current Product assets", "Balanced visuals"._
+_Figure: Three columns connected by arrows show how product images are fitted into the fixed 4:3 image container. Callout 1 "Image Format: 4:3" is an empty placeholder container with an image icon. Callout 2 "Current Product assets" shows a horizontal chainsaw image filling the full width with purple bands above and below, a tall vertical hedge trimmer image with purple bands left and right, and a nearly square ride-on mower image with thin bands at the sides. Callout 3 "Balanced visuals" shows the same three products scaled and art-directed so they appear proportionally similar, with more white space around the chainsaw and mower._
 
 **Battery Logos**
 
@@ -2383,7 +2383,7 @@ Up to two battery logos may be displayed within the Media Slot and are always po
 
 ![Elements](card/elements-61290-16722.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=fill). Text in the figure: "Grid View", "List View", "no logo", "one logo", "two logos", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Add to cart"._
+_Figure: Product cards in Grid View (three cards side by side) and List View (three cards stacked), each in the variants "no logo", "one logo" and "two logos". A dashed purple box in the top-left corner of the image area marks where battery logos sit: empty for no logo, one AK SYSTEM logo, or AK SYSTEM and AP SYSTEM logos together. Every card shows a chainsaw image, Promo Flag, Productname, 3.5 (80) rating, Categorie, availability "Available now", price "11.199,00 € incl. VAT" and a Compare checkbox; the Grid cards have a round orange add-to-cart button and heart icon, the List cards have a wide "Add to cart" button with a heart button and a bullet list of three description lines._
 
 **Add-to-Favorites Button**
 
@@ -2393,7 +2393,7 @@ This feature can support product discovery and increase conversion potential by 
 
 ![Elements](card/elements-55002-26533.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Grid View", "List View", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Add to cart", "selected: false", "selected: true"._
+_Figure: Product cards in Grid View (two cards) and List View (two cards stacked) show the Add-to-Favorites button, each outlined by a dashed purple box. In Grid View the heart icon sits at the top-right of the image area, in List View it sits as a square button next to the orange "Add to cart" button. The cards labelled "selected: false" show an outlined heart, the cards labelled "selected: true" show a filled black heart; all other content (Productname, 3.5 (80) rating, Categorie, description, "Available now", "11.199,00 € incl. VAT", Compare checkbox) is identical._
 
 **Max. Content**
 
@@ -2416,7 +2416,7 @@ _Figure: Shows product-card: grid view (content sizing=hug); product-card: list 
 
 ![Elements](card/elements-55002-27538.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "Grid View", "List View", "Promo Flag", "MS 261 C-M without Battery and Charger Lorem ipsum dolor sit amet consectetur...", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Add to cart", "Product name: max. three lines", "Description: max. three lines", "Description: max. six bullets"._
+_Figure: A Grid View card and a List View card with long content, annotated with limits. In Grid View the product name "MS 261 C-M without Battery and Charger Lorem ipsum dolor sit amet consectetur facilisis cum hendrerit consectetur amit..." is cut off with an ellipsis after three lines, and the description is also cut off with an ellipsis after three lines; annotations read "Product name: max. three lines" and "Description: max. three lines". In List View the product name "MS 261 C-M without Battery and Charger Lorem ipsum dolor sit amet consectetur facilisis cum hendrerit consectetur amit sol" fills three lines, annotated "Product name: max. three lines", and the description shows a bullet list of six items, annotated "Description: max. six bullets"._
 
 **Naming and category**
 
@@ -2442,7 +2442,7 @@ Regardless of the approach, naming and category structures must remain:
 
 ![Elements](card/elements-55193-27720.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); product-card: grid view (content sizing=hug). Callouts 1, 2. Text in the figure: "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Powerful for chopping firewood", "Available now", "11.199,00 €", "incl. VAT", "Compare", "MS 261 C-M Chainsaw"._
+_Figure: Two Grid View product cards show two ways to structure name and category, each marked with dashed purple boxes. Callout 1: the product name "MS 261 C-M" sits in the Product Name slot and a separate small "Chainsaw" category line appears below the rating "3.5 (80)". Callout 2: the Product Name slot holds the combined "MS 261 C-M Chainsaw" and there is no category line. Both cards show "Powerful for chopping firewood", "Available now", "11.199,00 € incl. VAT", a Compare checkbox and an orange add-to-cart button._
 
 **Rating**
 
@@ -2452,7 +2452,7 @@ If the rating element is being used, it must always be displayed, even when no r
 
 ![Elements](card/elements-55002-26547.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Productname", "0.0", "(0)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "3.5", "(80)", "rated = false", "rated = true"._
+_Figure: Two Grid View product cards with the rating row highlighted by a dashed purple box. The card labelled "rated = false" shows five grey stars and "0.0 (0)", so the rating element is still displayed when no ratings exist. The card labelled "rated = true" shows three and a half orange stars and "3.5 (80)". The rest of both cards is identical: Productname, Categorie, short description, "Available now", "11.199,00 € incl. VAT", Compare checkbox and add-to-cart button._
 
 **Description: List View**
 
@@ -2474,7 +2474,7 @@ Media query changes are independent of the Product Card's responsive breakpoints
 
 ![Elements](card/elements-55296-37837.png)
 
-_Figure: Shows product-card: list view (container query=1435 - 766px, content sizing=hug); product-card: list view (container query=765 - 540px, content sizing=hug). Text in the figure: "Media Query Change", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "Lorem ipsum · Quam · Adipiscing ultricies", "Description: Key specs as bullet list", "Description: Key specs condensed"._
+_Figure: Titled "Media Query Change", two List View product cards connected by an arrow show how the description adapts. The wider card ("Description: Key specs as bullet list") has the image with an AK SYSTEM logo, name, rating, category, a dashed box around a bullet list of three spec lines, and a right column with price, availability, "Add to cart" plus heart button and a Compare checkbox. The narrower card ("Description: Key specs condensed") shows the specs as a single line "Lorem ipsum · Quam · Adipiscing ultricies" in a dashed box, with price, availability and the Add to cart and heart buttons stacked below and no Compare checkbox visible._
 
 **Status**
 
@@ -2491,7 +2491,7 @@ Product Cards support different types of product availability and status informa
 
 ![Elements](card/elements-55002-26554.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Out of stock", "In stock within 2–3 weeks", "In-store only", "Available", "In stock soon", "In store only"._
+_Figure: Four Grid View product cards show the status types, each with the availability line outlined by a dashed purple box. "Available" shows a green dot with "Available now" and an orange add-to-cart button. "Out of stock" shows a red dot with "Out of stock" and a black round button with an envelope icon. "In stock soon" shows a grey dot with "In stock within 2-3 weeks" and the same black envelope button. "In store only" shows a store icon with "In-store only" and an orange add-to-cart button. All cards share the same chainsaw image, Productname, rating, category, description, price and Compare checkbox._
 
 **Button Text: List View**
 
@@ -2512,7 +2512,7 @@ To prevent buttons from becoming visually compressed on smaller screen sizes, th
 
 ![Elements](card/elements-55002-27988.png)
 
-_Figure: Shows product-card: list view (container query=765 - 540px, content sizing=hug). Text in the figure: "media query change: shorter label", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum · Quam · Adipiscing ultricies", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Add", "max. Characters: 18", "max. Characters: 10"._
+_Figure: Titled "media query change: shorter label", two List View product cards connected by an arrow show the Add-to-Cart button label shrinking. The left card has the button "Add to cart" with a cart icon next to a heart button, captioned "max. Characters: 18". The right card, with a smaller image and the same button width, has the shorter label "Add" with the cart icon, captioned "max. Characters: 10". Both show Productname, rating 3.5 (80), Categorie, "Lorem ipsum · Quam · Adipiscing ultricies", "11.199,00 € incl. VAT" and "Available now"._
 
 **Price variations**
 
@@ -2541,7 +2541,7 @@ Supported Price Elements:
 
 ![Elements](card/elements-55002-27739.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2a, type=left, color=blue); annotation-circle (number=2b, type=left, color=blue); annotation-circle (number=3, type=right, color=blue); annotation-circle (number=3, type=bottom, color=blue); annotation-circle (number=4, type=bottom, color=blue); annotation-circle (number=5, type=bottom, color=blue). Callouts 1, 3, 4, 5. Text in the figure: "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "Set Price", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "2a", "2b"._
+_Figure: Two Grid View product cards with numbered callouts on the price area. In both cards callout 1 points to the small "Set Price" set indicator above the price. In the left card callout 2a points to the default price "11.199,00 €" and callout 3 to the "incl. VAT" text beside it. In the right card callout 2b points to the discounted price "11.199,00 €" shown in orange, callout 4 to the struck-through original price "21.199,00 €", callout 5 to the saving "Save 50,00 € (14%)", and callout 3 again to "incl. VAT"._
 
 **Compare Checkbox**
 
@@ -2557,7 +2557,7 @@ Due to limited screen space, comparing multiple products on smaller viewports ca
 
 ![Elements](card/elements-55002-27270.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "Selected = false", "Selected = true"._
+_Figure: Two Grid View product cards show the compare checkbox, outlined by a dashed purple box at the bottom-left of each card. The card labelled "Selected = false" has an empty "Compare" checkbox, the card labelled "Selected = true" has a checkbox with an orange check mark. Both cards otherwise show the same chainsaw image, heart icon, Productname, 3.5 (80) rating, Categorie, short description, "Available now", "11.199,00 € incl. VAT" and an orange add-to-cart button._
 
 ## Behavior & Usage
 
@@ -2577,7 +2577,7 @@ See Foundations: Interaction & Interactive Content for the interaction models ac
 
 ![Interactivity](card/interactivity-55272-30240.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=1, type=right, color=blue). Callouts 1, 2, 3. Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
+_Figure: A Grid View product card with a placeholder image and an AK SYSTEM battery logo, Promo Flag, Productname, 3.5 (80) rating, Categorie, short description, "Available now" and "11.199,00 € incl. VAT". Three independent actions are outlined in purple and numbered: callout 1 is the round orange add-to-cart button at the bottom-right (Add to Cart), callout 2 is the heart button at the top-right of the image (Add to Favorites), and callout 3 is the "Compare" checkbox at the bottom-left (Compare)._
 
 ### Usage in Context
 
@@ -2623,7 +2623,7 @@ Product Cards can be used across different layout contexts depending on the brow
 
 ![Usage in Context](card/usage-in-context-54990-22034.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue); card surface (variant=outlined, state=enabled); media slot (media type=image); round (variant=filled, state=disabled, size=small); round (variant=filled, state=enabled, size=small); scrollmarker (6=false); annotation-circle (number=4, type=center, color=blue); media slot; button (button text=Add to cart, variant=highlight, state=enabled, size=small, icon position=left, hide label=off, flush alignment=off); favorites (states=enabled, selected=false). Callouts 1, 2, 3, 4. Text in the figure: "Standalone", "Grid", "Carousel", "Grid View", "List", "List View"._
+_Figure: Wireframes of browser and phone screens show where Product Cards appear, with a top row for Grid View and a bottom row for List View. Callout 1 "Standalone": a single card centred on the page, in both Grid and List View. Callout 2 "Grid": four cards per row on desktop and one card per row on mobile. Callout 3 "Carousel": four Grid View cards in a row with previous and next arrows and three scrollmarker dots below on desktop, and a partly visible next card with dots on mobile. Callout 4 "List": cards stacked vertically, each with image at left, text lines, and an orange button at right on desktop, and a compact stacked version on mobile._
 
 ### Responsive behavior
 
@@ -2639,7 +2639,7 @@ Product Cards use a Product Card–specific responsive model that differs from t
 
 ![Responsive behavior](card/responsive-behavior-54990-22427.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Breakpoint XL", "Breakpoint L", "Breakpoint M", "Breakpoint S", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
+_Figure: Four Grid View layouts of product cards labelled Breakpoint XL, Breakpoint L, Breakpoint M and Breakpoint S. XL shows four large cards per row, L shows four smaller cards per row with the price and "incl. VAT" on separate lines, M shows three cards per row, and S shows a single card per row, with the next row cut off in each case. Every card has an AK SYSTEM logo, heart icon, Promo Flag, Productname, 3.5 (80) rating, Categorie, short description, "Available now", price, Compare checkbox and orange add-to-cart button, scaled proportionally._
 
 **List View**
 
@@ -2662,7 +2662,7 @@ Media queries control the positioning and alignment of elements:
 
 ![Responsive behavior](card/responsive-behavior-55296-38098.png)
 
-_Figure: Shows product-card: list view (container query=1435 - 766px, content sizing=fill); product-card: list view (container query=765 - 540px, content sizing=hug); product-card: list view (container query=419 - 272px, content sizing=hug); product-card: list view (container query=1435 - 766px, content sizing=hug); product-card: list view (container query=539 - 420px, content sizing=hug). Text in the figure: "Breakpoint XL", "Breakpoint L", "Breakpoint M", "Breakpoint S", "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Lorem ipsum dolor sit amet consectetur. Quam pretium diam consequat pretium p...", "11.199,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "Lorem ipsum · Quam · Adipiscing ultricies", "Add", "Media Querries", "1435px - 766px", "765px - 540px", "539px - 420px", "419px - 272px"._
+_Figure: Top: List View product cards at Breakpoint XL, L, M and S. XL and L show image left, bullet-list specs in the middle, and price, availability, "Add to cart" with heart button and Compare checkbox in a right column; M and S show condensed single-line specs "Lorem ipsum · Quam · Adipiscing ultricies" with price, availability and buttons stacked below, and S uses the short button label "Add". Bottom, titled "Media Querries": four cards with placeholder images for the width ranges "1435px - 766px" (large image, three-column layout with bullet specs and Compare checkbox), "765px - 540px" (large image, condensed layout), "539px - 420px" (smaller image) and "419px - 272px" (smallest image)._
 
 ## Accessiblity
 
@@ -2674,7 +2674,7 @@ The Product Name is **mandatory** for every Product Card. It provides the access
 
 ![Product Name = Accessible Label](card/product-name-accessible-label-55296-40755.png)
 
-_Figure: Shows product-card: grid view (content sizing=fill). Text in the figure: "Promo Flag", "MSA 300 ohne Akku und Ladegerät", "3.5", "(80)", "Categorie", "Short description of the product", "In-store only", "11.199,00 €", "incl. VAT"._
+_Figure: A single Grid View product card with a tall vertical hedge trimmer image, heart icon, Promo Flag, the bold product name "MSA 300 ohne Akku und Ladegerät", 3.5 (80) rating, Categorie, "Short description of the product", "In-store only" with a store icon, and "11.199,00 € incl. VAT". The round add-to-cart button at the bottom-right is greyed out and there is no Compare checkbox. The product name is the accessible label of the card._
 
 ### Keyboard Navigation
 
@@ -2687,7 +2687,7 @@ The embedded Carousel follows the accessibility requirements defined by the [Car
 
 ![Keyboard Navigation](card/keyboard-navigation-57285-25731.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
+_Figure: Two Grid View product cards with a placeholder image and purple arrows showing keyboard focus order between dashed-outlined focus targets. Left card: focus enters at the "Compare" checkbox, moves to the add-to-cart button, then to the heart button at the top-right of the image. Right card, which contains an embedded carousel with scrollmarker dots at the bottom of the image: focus goes from the Compare checkbox to the add-to-cart button, then to the carousel scrollmarkers, then to the heart button._
 
 ## Examples
 
@@ -2699,7 +2699,7 @@ Product Cards in a grid on a Product Overview Page.
 
 ![STIHL Website](card/stihl-website-54990-20583.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); product-card: grid view (content sizing=fill). Text in the figure: "Offer", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "21.199,00 €", "Save 50,00 € (14%)", "MS 231", "In stock within 2–3 weeks", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "New", "MS 162", "Lawn mower", "Lorem ipsum dolor sit amet consectetur. At senectus mauris interdum nibh cras.", "Socks STRIPES 3-pack Black / White / Grey", "Socks", "Set Price"._
+_Figure: A STIHL website product overview page showing twelve Grid View product cards in three rows of four on a white page. Cards show chainsaws, hedge trimmers, ride-on lawn mowers and a pair of socks, some with battery logos (AK, AP, AI, ASI) and flags "Offer" or "New", names such as "MS 261 C-M", "MS 231", "MS 162" and "MSA 300 without battery and charger", a 3.5 (80) rating, a category, and a status such as "Available now", "In stock within 2–3 weeks" or "In-store only". Two cards show a discounted orange price "11.199,00 €" with struck-through "21.199,00 €" and "Save 50,00 € (14%)", the sock card shows a "Set Price" label, the "In stock within 2–3 weeks" and "In-store only" cards have a greyed-out cart button, and no card has a Compare checkbox._
 
 ### STIHL Website
 
@@ -2707,4 +2707,4 @@ iMow Product Cards in a list with detailed specs.
 
 ![STIHL Website](card/stihl-website-55296-40861.png)
 
-_Figure: Shows product-card: list view (container query=1435 - 766px, content sizing=hug). Text in the figure: "iMOW® 4", "3.7", "(7)", "Lawn Mower Robot", "Lawn mower robot for lawns up to 1,000 m² and slopes up to 40% Precise mowing...", "799,00 €", "incl. VAT", "Available now", "Add to cart", "Compare", "iMOW® 3", "4.5", "(14)", "Lawn mower robot for lawns up to 500 m² and slopes up to 40% Precise mowing s...", "699,00 €", "iMOW® 6", "4.1", "(10)", "Lawn mower robot for lawns up to 3,000 m² and slopes up to 40% Precise mowing...", "1.299,00 €", "In-store only"._
+_Figure: Three List View product cards stacked on a STIHL website page, each with a robotic lawn mower image at left. They are "iMOW® 4" with rating 3.7 (7) and price "799,00 € incl. VAT", "iMOW® 3" with rating 4.5 (14) and price "699,00 € incl. VAT", and "iMOW® 6" with rating 4.1 (10) and price "1.299,00 € incl. VAT". Each shows the category "Lawn Mower Robot", a five-item bullet list of key specs such as lawn size and slope, "Available now" (iMOW® 6 shows "In-store only"), an orange "Add to cart" button with a heart button, and a Compare checkbox._
