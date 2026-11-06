@@ -68,7 +68,7 @@ async function writeIndex(config: SyncConfig): Promise<void> {
 async function main(): Promise<void> {
   loadEnv();
   const config = loadConfig();
-  const { documents, latest } = parseArgs(process.argv.slice(2));
+  const { documents, latest, pinned } = parseArgs(process.argv.slice(2));
   const client = createFigmaClient(requireToken());
   const resolveVersion = createVersionResolver(client, latest);
   const captionProvider = createCaptionProviderFromEnv();
@@ -80,7 +80,16 @@ async function main(): Promise<void> {
 
   for (const document of selectDocuments(config, documents)) {
     const { file } = document;
-    const target = await resolveVersion(file);
+    const previous = readFrontmatter(document.output);
+    // --pinned re-renders captions or template changes without following a new Figma version
+    const target =
+      pinned && previous?.figmaVersion
+        ? {
+            id: previous.figmaVersion,
+            label: previous.figmaVersionLabel ?? '',
+            createdAt: previous.figmaVersionCreatedAt ?? '',
+          }
+        : await resolveVersion(file);
     console.log(
       `Syncing ${document.id} from ${file.name} / ${document.nodeId} (version ${target.id}, ${target.label || 'current file state'})`
     );
@@ -101,7 +110,6 @@ async function main(): Promise<void> {
       headingLevels: headingLevelsFor(config, file),
     });
 
-    const previous = readFrontmatter(document.output);
     const imagePaths = await exportImages(blocks, {
       client,
       fileKey: file.fileKey,

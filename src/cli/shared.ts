@@ -14,11 +14,14 @@ export interface CliArgs {
   documents: string[];
   /** Use the current file state instead of the latest named version */
   latest: boolean;
+  /** Re-render at the version recorded in the existing frontmatter (no Figma version lookup) */
+  pinned: boolean;
 }
 
 export function parseArgs(argv: string[]): CliArgs {
   const documents: string[] = [];
   let latest = false;
+  let pinned = false;
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
     if (arg === '--document' || arg === '-d') {
@@ -31,9 +34,11 @@ export function parseArgs(argv: string[]): CliArgs {
       documents.push(arg.slice('--document='.length));
     } else if (arg === '--latest') {
       latest = true;
+    } else if (arg === '--pinned') {
+      pinned = true;
     }
   }
-  return { documents, latest };
+  return { documents, latest, pinned };
 }
 
 export interface TargetVersion {
