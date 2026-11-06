@@ -1,7 +1,107 @@
 {
+  "094b71a35e3e1243d0e9ef9897ff33c820f16a3fff9a8f6eb93776ceb2911978": {
+    "nodeId": "62565:16979",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Example of an image Carousel with reduced elements at two breakpoints, using a photo of an orange and white STIHL chainsaw with a \"100\" guide bar lying on logs. Under the label XL-L, the image fills the item with small white round previous and next controls inside at the left and right edges and a white-backed three-dot Scrollmarker overlaid at the bottom center. Under the label M-S, a much smaller version of the same image shows only the overlaid Scrollmarker and no controls."
+  },
+  "09ffe66defbfa2cb0c113ebac56aa7c89b114a94be7b5595192fa6a3193b16d7": {
+    "nodeId": "60750:43802",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Building elements overview of the Carousel. The Navigation control (round previous and next buttons) is shown in Filled and Inverse variants, the latter on a black background, in the states enabled, hover/pressed, focus, disabled and disabled focus. The Scrollmarker is shown for fewer than 6 and more than 6 items in Ghost, Filled and Inverse styles, including shifted positions with smaller overflow dots, followed by Scrollmarker element tables for Standard Dot (enabled, hover, active, active hover, active focus) and Overflow Dot (enabled, focus) on light and dark backgrounds. Below, Single item building blocks show purple Placeholder Items with navigation controls and Scrollmarker placed below or overlaid on the item, plus two-item layouts with the Scrollmarker below or overlaid."
+  },
   "179282c580d45ddb4545234ce0a7b26d9b436a3e577334145c283a00860838b4": {
     "nodeId": "60750:43799",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Overview of the Carousel in a \"Single-Item\" and a \"Multi-Item\" section across Breakpoints XL, L, M and S. Single-Item shows one large \"Placeholder Item\" per page; for XL and L two variants are shown, \"Scrollmarker position: outside, navigation control position: outside\" (previous and next arrow buttons beside the item, dots below it) and \"Scrollmarker position: inside, navigation control position: inside\" (arrows and dots overlaid on the item), while M and S show only \"Scrollmarker position: outside\" and \"inside\" with no arrow buttons. Multi-Item shows four items (\"Placeholder Item 1\" to \"4\") at XL and L with a disabled left arrow, an enabled dark right arrow and three scrollmarker dots below; at M items 1 and 2 are fully visible while item 3 is partly cut by a vertical line and items 3 and 4 are faded, and at S only item 1 is fully visible with items 2 to 4 faded behind a vertical line, with dots below and no arrows."
+  },
+  "236a2a2a2fe7e7d4e8a306f662087900166756a1f5fc7be2a663c5afc8ee9bfa": {
+    "nodeId": "62565:16968",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Specification of the Single-Item Carousel with Inverse controls and Scrollmarker in two layouts. Under the label XL-L, a desktop browser window shows Item 1 filling the grid, with white round previous and next controls placed inside the item at the left and right edges and a white-backed Scrollmarker of three dots overlaid at the bottom center of the item, within an orange MAIN label. Under the label M-S, a phone frame shows Item 1 with only the Scrollmarker overlaid at the bottom of the item and no navigation controls, also labeled MAIN."
+  },
+  "24dc6c6091ddbeebaef2d30983d8dfb83f3981b25ec036395b5e83a500de3373": {
+    "nodeId": "62581:20768",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two mobile phone frames comparing navigation feedback. Under the heading Only Scrollmarker, a single Placeholder Item fills the width with a three-dot Scrollmarker below, the first dot active. Under the heading Peek + Scrollmarker, Placeholder Item 1 is narrower so that the edge of the next item peeks in at the right side, with the same three-dot Scrollmarker below."
+  },
+  "252135cbe438b9b37afe93f01bab69ea0e9bba28ee597180e38abe459aa5865d": {
+    "nodeId": "61435:1736",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a single-item Carousel item with one clear primary message. The grey content block shows the headline \"Win a Trip to Canada, Range Rover, and More!\", one line of supporting text and a single dark call-to-action button \"Participate now\", next to a forest photo with a \"100 Years\" logo that is cut off at the right edge. A previous control sits at the left and a three-dot Scrollmarker below, the first dot active."
+  },
+  "4138f69ec4b5e69a9799dab350f699a2dda68f7acf15f55da6f5b8072d46f233": {
+    "nodeId": "62581:18965",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the Multi-Item Variant on mobile in a phone frame showing Item 1 with a narrow strip of the next item peeking in at the right edge of the viewport, followed by Item 2 (hidden) to Item 5 (hidden) outside the phone. Callout 1 marks the Container and 2 the Viewport, callout 3 marks the Track, with 3a the visible items and 3b the hidden items. Callouts 4a and 4b mark the darker Tap zones at the left and right edges, Previous and Next, and callout 5 marks the Scrollmarker of dots below, whose last dot is smaller as an overflow dot."
+  },
+  "517dac73b3bf59b3181b933dbf611753e9e62a98f17f449e75d6c11a317422aa": {
+    "nodeId": "62581:20508",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two mobile phone frames of a single-item Carousel with a Placeholder Item, each with a three-dot Scrollmarker below. Under the heading Tap Zones, the darker strips on the left and right edge of the item are each 48px wide, as measured on the left strip. Under the heading Scrollmarker, the interactive area around a dot is 24px wide, although the visible dot is smaller."
+  },
+  "51e5a7cfe848eaa0df0e16e9b5fe70eacdf17a08ded56ddafe64209b00657bb0": {
+    "nodeId": "61435:1726",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A single-item Carousel on desktop whose item combines a content block and an image. On the left, a light grey block holds the headline \"Win a Trip to Canada, Range Rover, and More!\", the text \"As a thank you for registering your products, we're giving you the chance to win incredible prizes!\" and a dark button \"Participate now\". On the right, a forest photo with a \"100 Years\" logo and a forester with a chainsaw is separated by an orange vertical line carrying an orange round gift icon. A grey previous control sits at the left, a black next control at the right, and a three-dot Scrollmarker below with the first dot active."
+  },
+  "5639540f66097d2375952726eb16c2785308aedfd0ef916a97a203713785b03b": {
+    "nodeId": "61653:2312",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A Carousel with a consistent item structure. The first item has a grey content block on the left with the headline \"Win a Trip to Canada, Range Rover, and More!\", supporting text and a \"Participate now\" button, and a forest photo with an orange gift icon on the right. The next item peeks in at the right edge with the same structure, showing greyed placeholder text \"Lorem ipsum dolor\", two lines of body text, a button \"Lorem ipsum\" and the start of an image. A previous control sits at the left, a next control between the items, and a three-dot Scrollmarker below."
+  },
+  "5677c47d89cfa8ca4d3ad98ca1236eb11beb01a67495e46d5bb81d46d2c3d86f": {
+    "nodeId": "61435:1861",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A mobile phone frame showing a single-item Carousel with one purple Placeholder Item and a Scrollmarker of three dots below it, the first one active. A hand icon beside the item with an arrow pointing left illustrates a horizontal swipe gesture as the primary interaction on touch devices."
+  },
+  "62e96e7925abfd2aa7cc514b9751fa28f0bb366458e0f8602372abe647189e58": {
+    "nodeId": "61695:2715",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Specification of the Multi-Item Carousel with Filled controls in two layouts. Under the label XL-L, a desktop browser window shows Item 1, Item 2, Item 3 and Item 4 side by side across the grid, with the grey previous and black next control outside on the left and right and a Ghost Scrollmarker of three dots below, within an orange MAIN label. Under the label M-S, a phone frame shows Item 1 spanning most of the width with the start of the next item peeking in at the right edge, a Scrollmarker below, no controls, and a green EXTENDED label marking the Extended content area."
+  },
+  "645fa0f5f112a5367eab90533dbbc9c5cd8cc3a08dc71254fd3229c433ba5f57": {
+    "nodeId": "62581:18823",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the Single-Item Variant on mobile in a phone frame showing Item 1 with a dashed purple outline, with Item 2 (hidden) and Item 3 (hidden) continuing to the right outside the phone. Callout 1 marks the Container and 2 the Viewport, callout 3 marks the Track, with 3a the one visible item and 3b the hidden items. Callout 4 marks the Scrollmarker of three dots below the item. Callouts 5a and 5b mark the darker Tap zones at the left and right edges of the item, Previous and Next."
+  },
+  "7bb9fdaac8dd0849599c420a8c7b409f2ed24e3f8a9addcf7bbd7ca9ec892e32": {
+    "nodeId": "61435:1746",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a single-item Carousel item with competing messages. The grey content block shows the headline \"Win a Trip to Canada, Range Rover, and More!\", supporting text and two calls to action side by side, the dark button \"Participate now\" and the text link \"Find out more\" with a chevron, next to a forest photo with a \"100 Years\" logo. This is wrong because competing calls to action reduce clarity and make the content harder to scan."
+  },
+  "85cb5b5c2c35b2298a5c6add639e83406246e72de5127d11a4f8fdb0666f7197": {
+    "nodeId": "62641:98804",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two stacked purple placeholder bars for a Single-Item Carousel, each with a Scrollmarker below. Under the label \"Default (for less than 6 pages)\" the Scrollmarker shows three dots, the first one active and elongated. Under the label \"Overflow (for more than 6 pages)\" it shows an active elongated dot followed by four regular dots and a smaller fifth dot at the end, indicating further pages beyond the visible dots."
+  },
+  "950892a8f16cad87453c2a0d2ddfb06597781c3d2b48c455434212025472feae": {
+    "nodeId": "60833:7849",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the Single-Item Variant on desktop in a browser window showing Item 1 with a dashed purple outline, with Item 2 (hidden) and further items continuing to the right outside the window. Callout 1 marks the Container and 2 the Viewport, both at the top left corner of the outline. Callout 3 marks the Track, with 3a the one visible item and 3b the hidden items. Callouts 4a and 4b mark the Previous control (left, disabled) and the Next control (right, enabled) at the sides of the item, and callout 5 marks the Scrollmarker of three dots below."
+  },
+  "b1a07814c113b29b1267dbb924b2f19dedf3957e4c387dc2d088ce331d7fa465": {
+    "nodeId": "61435:2092",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Example of a hero-stage style Carousel, for the My STIHL use case, at two breakpoints. Under the label XL-L, the item has a grey content block on the left with the headline \"Win a Trip to Canada, Range Rover, and More!\", the text \"As a thank you for registering your products, we're giving you the chance to win incredible prizes!\" and a \"Participate now\" button, and a forest photo with an orange gift icon on the right, with controls at the sides and a three-dot Scrollmarker below. Under the label M-S, the same content is stacked: photo on top, then headline, text and button, with the Scrollmarker below and no controls."
+  },
+  "d74ef7ab800d060fd4f85e2e811bd598b85297770777a5d4967ae8253de776b4": {
+    "nodeId": "61695:2340",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Specification of the Single-Item Carousel with Filled controls in two layouts. Under the label XL-L, a desktop browser window shows Item 1 spanning the full width of the grid, with the grey previous control and black next control outside the item on the left and right, and a Ghost Scrollmarker of three dots below it, all within an orange MAIN label marking the Main content area. Under the label M-S, a phone frame shows Item 1 across the grid columns with only the Scrollmarker below and no navigation controls, also labeled MAIN."
+  },
+  "d84964d7f6ddc580a791efae326fedbad9abe44e8c32d828d40dab44eaef0fa6": {
+    "nodeId": "62581:20534",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two mobile phone frames of a single-item Carousel with a Placeholder Item. Under the heading Tap Zones, narrow darker strips on the left and right edges of the item mark the tap areas, and a tapping hand on the right strip indicates navigation to the next page. Under the heading Scrollmarker, a tapping hand on the second dot of the three-dot Scrollmarker below the item indicates direct navigation to that page."
+  },
+  "f75d37d52617fd8123880a69f729d7202949eee89c55103af2a33641ea02fa93": {
+    "nodeId": "62581:20794",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "A mobile phone frame showing a single-item Carousel with a Placeholder Item and a three-dot Scrollmarker. To the right a hand icon with a left-pointing arrow shows a horizontal swipe, and to the left of the phone purple double-headed arrows cross in both horizontal and vertical directions, indicating that horizontal swipe must not interfere with vertical page scrolling."
+  },
+  "fd16c9156cd3cfc043e827feffa0d851bf417158e0ef8a846589bb7fdc5b4aa3": {
+    "nodeId": "62039:21422",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the Multi-Item Variant on desktop in a browser window showing Item 1 to Item 4 side by side inside a dashed purple outline, with Item 5 (hidden) to Item 9 (hidden) continuing to the right outside the window. Callout 1 marks the Container and 2 the Viewport at the top left corner, callout 3 marks the Track, with 3a the visible items and 3b the hidden items. Callouts 4a and 4b mark the Previous control (left, disabled) and the Next control (right, enabled) at the sides, and callout 5 marks the Scrollmarker below."
   }
 }

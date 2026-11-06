@@ -17,7 +17,7 @@ figmaNodeId: 26075:11524
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-06T09:49:29.807Z
+syncedAt: 2026-11-06T11:59:28.772Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11524
 ---
 
@@ -84,7 +84,7 @@ _Figure: Overview of the Carousel in a "Single-Item" and a "Multi-Item" section 
 
 ![Carousel](carousel/carousel-60750-43802.png)
 
-_Figure: Shows round (variant=filled, state=enabled, size=small); round (variant=filled, state=hover / pressed, size=small); round (variant=filled, state=focus, size=small); round (variant=filled, state=disabled, size=small); round (variant=filled, state=disabled focus, size=small); scrollmarker building element (dot 3 (optional), variant=ghost); scrollmarker building element (background=ghost, active slide=first); 1 (state=active); 2 (state=enabled); 3 (state=enabled); 4 (state=enabled); 5 (state=enabled). Text in the figure: "Building Elements Carousel", "Navigation control", "Scrollmarker", "Scrollmarker element: Standard Dot", "Scrollmarker element: Overflow Dot", "enabled", "hover/pressed", "focus", "disabled", "disabled focus", "\< 6", "\> 6", "on background:", "light", "dark", "Filled", "hover", "active", "Inverse", "Ghost", "active hover", "active focus", "Single item building block", "❖ Placeholder Item"._
+_Figure: Building elements overview of the Carousel. The Navigation control (round previous and next buttons) is shown in Filled and Inverse variants, the latter on a black background, in the states enabled, hover/pressed, focus, disabled and disabled focus. The Scrollmarker is shown for fewer than 6 and more than 6 items in Ghost, Filled and Inverse styles, including shifted positions with smaller overflow dots, followed by Scrollmarker element tables for Standard Dot (enabled, hover, active, active hover, active focus) and Overflow Dot (enabled, focus) on light and dark backgrounds. Below, Single item building blocks show purple Placeholder Items with navigation controls and Scrollmarker placed below or overlaid on the item, plus two-item layouts with the Scrollmarker below or overlaid._
 
 ### Further guidelines
 
@@ -123,7 +123,7 @@ Users should be able to interrupt, reverse, or continue swipe gestures at any ti
 
 ![Primary Interaction](carousel/primary-interaction-61435-1861.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Text in the figure: "❖ Placeholder Item"._
+_Figure: A mobile phone frame showing a single-item Carousel with one purple Placeholder Item and a Scrollmarker of three dots below it, the first one active. A hand icon beside the item with an arrow pointing left illustrates a horizontal swipe gesture as the primary interaction on touch devices._
 
 ### Secondary Navigation
 
@@ -143,7 +143,7 @@ Secondary navigation methods improve discoverability and provide alternative way
 
 ![Secondary Navigation](carousel/secondary-navigation-62581-20534.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Text in the figure: "Tap Zones", "Scrollmarker", "❖ Placeholder Item"._
+_Figure: Two mobile phone frames of a single-item Carousel with a Placeholder Item. Under the heading Tap Zones, narrow darker strips on the left and right edges of the item mark the tap areas, and a tapping hand on the right strip indicates navigation to the next page. Under the heading Scrollmarker, a tapping hand on the second dot of the three-dot Scrollmarker below the item indicates direct navigation to that page._
 
 ### Touch Experience
 
@@ -153,7 +153,7 @@ Interactive elements such as tap zones and Scrollmarkers should provide sufficie
 
 ![Large Touch Targets](carousel/large-touch-targets-62581-20508.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Measurements: 48px, 24px. Text in the figure: "Tap Zones", "Scrollmarker", "❖ Placeholder Item"._
+_Figure: Two mobile phone frames of a single-item Carousel with a Placeholder Item, each with a three-dot Scrollmarker below. Under the heading Tap Zones, the darker strips on the left and right edge of the item are each 48px wide, as measured on the left strip. Under the heading Scrollmarker, the interactive area around a dot is 24px wide, although the visible dot is smaller._
 
 #### Clear Navigation Feedback
 
@@ -167,7 +167,7 @@ This can be achieved through Scrollmarkers and Peek.
 
 ![Clear Navigation Feedback](carousel/clear-navigation-feedback-62581-20768.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s); carousel (slot: visible items=\[object Object\], slot: peek=\[object Object\], variant=multi item, breakpoint=s). Text in the figure: "Only Scrollmarker", "Peek + Scrollmarker", "❖ Placeholder Item", "❖ Placeholder Item 1", "❖ Placeholder Item 2", "❖ Placeholder Item 3", "❖ Placeholder Item 4"._
+_Figure: Two mobile phone frames comparing navigation feedback. Under the heading Only Scrollmarker, a single Placeholder Item fills the width with a three-dot Scrollmarker below, the first dot active. Under the heading Peek + Scrollmarker, Placeholder Item 1 is narrower so that the edge of the next item peeks in at the right side, with the same three-dot Scrollmarker below._
 
 #### Avoid gesture conflicts
 
@@ -175,7 +175,7 @@ Horizontal swipe interactions should not interfere with vertical page scrolling.
 
 ![Avoid gesture conflicts](carousel/avoid-gesture-conflicts-62581-20794.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Text in the figure: "❖ Placeholder Item"._
+_Figure: A mobile phone frame showing a single-item Carousel with a Placeholder Item and a three-dot Scrollmarker. To the right a hand icon with a left-pointing arrow shows a horizontal swipe, and to the left of the phone purple double-headed arrows cross in both horizontal and vertical directions, indicating that horizontal swipe must not interfere with vertical page scrolling._
 
 #### No Hover States
 
@@ -211,7 +211,7 @@ See [Element Details – Shared Elements](https://www.figma.com/design/qXldpLO6g
 
 ![Single-Item Variant](carousel/single-item-variant-60833-7849.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); annotation-circle (number=3b, type=center, color=blue); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=4a, type=top, color=blue); annotation-circle (number=4b, type=top, color=blue); annotation-circle (number=3, type=bottom, color=blue); annotation-circle (number=5, type=left, color=blue). Callouts 1, 2, 3, 5. Text in the figure: "Item 1", "3a", "Item 2 (hidden)", "Item 2", "3b", "4a", "4b"._
+_Figure: Anatomy of the Single-Item Variant on desktop in a browser window showing Item 1 with a dashed purple outline, with Item 2 (hidden) and further items continuing to the right outside the window. Callout 1 marks the Container and 2 the Viewport, both at the top left corner of the outline. Callout 3 marks the Track, with 3a the one visible item and 3b the hidden items. Callouts 4a and 4b mark the Previous control (left, disabled) and the Next control (right, enabled) at the sides of the item, and callout 5 marks the Scrollmarker of three dots below._
 
 **Mobile**
 
@@ -229,7 +229,7 @@ See [Element Details – Shared Elements](https://www.figma.com/design/qXldpLO6g
 
 ![Single-Item Variant](carousel/single-item-variant-62581-18823.png)
 
-_Figure: Shows annotation-circle (number=4, type=left, color=blue); annotation-circle (number=3, type=bottom, color=blue); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3b, type=center, color=blue). Callouts 1, 2, 3, 4. Text in the figure: "Item 1", "3a", "5a", "5b", "Item 2 (hidden)", "Item 3 (hidden)", "3b"._
+_Figure: Anatomy of the Single-Item Variant on mobile in a phone frame showing Item 1 with a dashed purple outline, with Item 2 (hidden) and Item 3 (hidden) continuing to the right outside the phone. Callout 1 marks the Container and 2 the Viewport, callout 3 marks the Track, with 3a the one visible item and 3b the hidden items. Callout 4 marks the Scrollmarker of three dots below the item. Callouts 5a and 5b mark the darker Tap zones at the left and right edges of the item, Previous and Next._
 
 #### Multi-Item Variant
 
@@ -251,7 +251,7 @@ See [Element Details – Shared Elements](https://www.figma.com/design/qXldpLO6g
 
 ![Multi-Item Variant](carousel/multi-item-variant-62039-21422.png)
 
-_Figure: Shows annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=center, color=blue); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); annotation-circle (number=3b, type=center, color=blue); annotation-circle (number=4a, type=top, color=blue); annotation-circle (number=4b, type=top, color=blue); annotation-circle (number=3, type=bottom, color=blue); annotation-circle (number=5, type=left, color=blue). Callouts 1, 2, 3, 5. Text in the figure: "Item 1", "Item 2", "Item 3", "Item 4", "3b", "Item 5 (hidden)", "Item 6 (hidden)", "Item 7 (hidden)", "Item 8 (hidden)", "Item 9 (hidden)", "4a", "4b"._
+_Figure: Anatomy of the Multi-Item Variant on desktop in a browser window showing Item 1 to Item 4 side by side inside a dashed purple outline, with Item 5 (hidden) to Item 9 (hidden) continuing to the right outside the window. Callout 1 marks the Container and 2 the Viewport at the top left corner, callout 3 marks the Track, with 3a the visible items and 3b the hidden items. Callouts 4a and 4b mark the Previous control (left, disabled) and the Next control (right, enabled) at the sides, and callout 5 marks the Scrollmarker below._
 
 **Mobile**
 
@@ -270,7 +270,7 @@ See [Element Details – Shared Elements](https://www.figma.com/design/qXldpLO6g
 
 ![Multi-Item Variant](carousel/multi-item-variant-62581-18965.png)
 
-_Figure: Shows carousel (slot: visible items=\[object Object\], slot: peek=\[object Object\], variant=multi item, breakpoint=s); annotation-circle (number=3b, type=center, color=blue); annotation-circle (number=1, type=left, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=bottom, color=blue); annotation-circle (number=5, type=left, color=blue). Callouts 1, 2, 3, 5. Text in the figure: "Item 1", "3a", "4a", "4b", "Item 2 (hidden)", "Item 3 (hidden)", "Item 4 (hidden)", "Item 5 (hidden)", "3b"._
+_Figure: Anatomy of the Multi-Item Variant on mobile in a phone frame showing Item 1 with a narrow strip of the next item peeking in at the right edge of the viewport, followed by Item 2 (hidden) to Item 5 (hidden) outside the phone. Callout 1 marks the Container and 2 the Viewport, callout 3 marks the Track, with 3a the visible items and 3b the hidden items. Callouts 4a and 4b mark the darker Tap zones at the left and right edges, Previous and Next, and callout 5 marks the Scrollmarker of dots below, whose last dot is smaller as an overflow dot._
 
 ## Content and Assets 1/2
 
@@ -289,7 +289,7 @@ The Item supports rich and flexible content. It may contain:
 
 ![Item content](carousel/item-content-61435-1726.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Win a Trip to Canada, Range Rover, and More!", "As a thank you for registering your products, we’re giving you the chance to...", "Participate now"._
+_Figure: A single-item Carousel on desktop whose item combines a content block and an image. On the left, a light grey block holds the headline "Win a Trip to Canada, Range Rover, and More!", the text "As a thank you for registering your products, we're giving you the chance to win incredible prizes!" and a dark button "Participate now". On the right, a forest photo with a "100 Years" logo and a forester with a chainsaw is separated by an orange vertical line carrying an orange round gift icon. A grey previous control sits at the left, a black next control at the right, and a three-dot Scrollmarker below with the first dot active._
 
 **Do use one clear primary message per Item.**
 
@@ -297,7 +297,7 @@ Each Item should communicate a single idea or call to action to help users quick
 
 ![Item content](carousel/item-content-61435-1736.png)
 
-_Figure: Do example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Win a Trip to Canada, Range Rover, and More!", "As a thank you for registering your products, we’re giving you the chance to...", "Participate now"._
+_Figure: Do example: a single-item Carousel item with one clear primary message. The grey content block shows the headline "Win a Trip to Canada, Range Rover, and More!", one line of supporting text and a single dark call-to-action button "Participate now", next to a forest photo with a "100 Years" logo that is cut off at the right edge. A previous control sits at the left and a three-dot Scrollmarker below, the first dot active._
 
 **Don’t combine multiple competing messages within a single Item.**
 
@@ -305,7 +305,7 @@ Avoid competing call to action as they reduce clarity and make the content more 
 
 ![Item content](carousel/item-content-61435-1746.png)
 
-_Figure: Don't example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Win a Trip to Canada, Range Rover, and More!", "As a thank you for registering your products, we’re giving you the chance to...", "Participate now", "Find out more"._
+_Figure: Don't example: a single-item Carousel item with competing messages. The grey content block shows the headline "Win a Trip to Canada, Range Rover, and More!", supporting text and two calls to action side by side, the dark button "Participate now" and the text link "Find out more" with a chevron, next to a forest photo with a "100 Years" logo. This is wrong because competing calls to action reduce clarity and make the content harder to scan._
 
 #### Recommended amount of pages
 
@@ -319,7 +319,7 @@ If additional pages are required, the Scrollmarker provides an optimized overflo
 
 ![Recommended amount of pages](carousel/recommended-amount-of-pages-62641-98804.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Default (for less than 6 pages)", "❖ Placeholder Item", "Overflow (for more than 6 pages)"._
+_Figure: Two stacked purple placeholder bars for a Single-Item Carousel, each with a Scrollmarker below. Under the label "Default (for less than 6 pages)" the Scrollmarker shows three dots, the first one active and elongated. Under the label "Overflow (for more than 6 pages)" it shows an active elongated dot followed by four regular dots and a smaller fifth dot at the end, indicating further pages beyond the visible dots._
 
 #### Content consistency
 
@@ -329,7 +329,7 @@ Consistent layouts help users focus on the changing content rather than adapting
 
 ![Content consistency](carousel/content-consistency-61653-2312.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel building block (slot: visible items=\[object Object\], scrollmarker position=outside, navigation control position=outside). Text in the figure: "Win a Trip to Canada, Range Rover, and More!", "As a thank you for registering your products, we’re giving you the chance to...", "Participate now", "Lorem ipsum dolor", "Lorem ipsum dolor sit amet consectetur. Arcu a dictumst ligula sit id vel fer...", "Lorem ipsum"._
+_Figure: A Carousel with a consistent item structure. The first item has a grey content block on the left with the headline "Win a Trip to Canada, Range Rover, and More!", supporting text and a "Participate now" button, and a forest photo with an orange gift icon on the right. The next item peeks in at the right edge with the same structure, showing greyed placeholder text "Lorem ipsum dolor", two lines of body text, a button "Lorem ipsum" and the start of an image. A previous control sits at the left, a next control between the items, and a three-dot Scrollmarker below._
 
 ## Supported configurations
 
@@ -401,7 +401,7 @@ Grid
 
 ![Specifications](carousel/specifications-61695-2340.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "XL-L", "M-S", "Item 1", "main"._
+_Figure: Specification of the Single-Item Carousel with Filled controls in two layouts. Under the label XL-L, a desktop browser window shows Item 1 spanning the full width of the grid, with the grey previous control and black next control outside the item on the left and right, and a Ghost Scrollmarker of three dots below it, all within an orange MAIN label marking the Main content area. Under the label M-S, a phone frame shows Item 1 across the grid columns with only the Scrollmarker below and no navigation controls, also labeled MAIN._
 
 #### Example
 
@@ -416,7 +416,7 @@ My STIHL
 
 ![Example](carousel/example-61435-2092.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Text in the figure: "XL-L", "M-S", "Win a Trip to Canada, Range Rover, and More!", "As a thank you for registering your products, we’re giving you the chance to...", "Participate now", "win a trip to canada, range rover, and more!"._
+_Figure: Example of a hero-stage style Carousel, for the My STIHL use case, at two breakpoints. Under the label XL-L, the item has a grey content block on the left with the headline "Win a Trip to Canada, Range Rover, and More!", the text "As a thank you for registering your products, we're giving you the chance to win incredible prizes!" and a "Participate now" button, and a forest photo with an orange gift icon on the right, with controls at the sides and a three-dot Scrollmarker below. Under the label M-S, the same content is stacked: photo on top, then headline, text and button, with the Scrollmarker below and no controls._
 
 ### Configuration: Single-Item – Navigation Controls Inside, Scrollmarker Inside
 
@@ -480,7 +480,7 @@ Grid
 
 ![Specifications](carousel/specifications-62565-16968.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "XL-L", "M-S", "Item 1", "main"._
+_Figure: Specification of the Single-Item Carousel with Inverse controls and Scrollmarker in two layouts. Under the label XL-L, a desktop browser window shows Item 1 filling the grid, with white round previous and next controls placed inside the item at the left and right edges and a white-backed Scrollmarker of three dots overlaid at the bottom center of the item, within an orange MAIN label. Under the label M-S, a phone frame shows Item 1 with only the Scrollmarker overlaid at the bottom of the item and no navigation controls, also labeled MAIN._
 
 #### Example
 
@@ -492,7 +492,7 @@ Image Carousel
 
 ![Example](carousel/example-62565-16979.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Text in the figure: "XL-L", "M-S"._
+_Figure: Example of an image Carousel with reduced elements at two breakpoints, using a photo of an orange and white STIHL chainsaw with a "100" guide bar lying on logs. Under the label XL-L, the image fills the item with small white round previous and next controls inside at the left and right edges and a white-backed three-dot Scrollmarker overlaid at the bottom center. Under the label M-S, a much smaller version of the same image shows only the overlaid Scrollmarker and no controls._
 
 ### Configuration: Multi-Item – Navigation Controls Outside, Scrollmarker Outside
 
@@ -552,7 +552,7 @@ Grid Main (XL-L) Grid Extended (M-S)
 
 ![Specifications](carousel/specifications-61695-2715.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); carousel (slot: visible items=\[object Object\], slot: peek=\[object Object\], variant=multi item, breakpoint=s). Text in the figure: "XL-L", "M-S", "Item 1", "Item 2", "Item 3", "Item 4", "Extended", "main"._
+_Figure: Specification of the Multi-Item Carousel with Filled controls in two layouts. Under the label XL-L, a desktop browser window shows Item 1, Item 2, Item 3 and Item 4 side by side across the grid, with the grey previous and black next control outside on the left and right and a Ghost Scrollmarker of three dots below, within an orange MAIN label. Under the label M-S, a phone frame shows Item 1 spanning most of the width with the start of the next item peeking in at the right edge, a Scrollmarker below, no controls, and a green EXTENDED label marking the Extended content area._
 
 #### Example
 
