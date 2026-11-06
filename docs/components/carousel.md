@@ -17,7 +17,7 @@ figmaNodeId: 26075:11524
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-06T11:59:28.772Z
+syncedAt: 2026-11-06T15:43:02.191Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11524
 ---
 
@@ -567,7 +567,7 @@ My STIHL
 
 ![Example](carousel/example-61695-2748.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); carousel (slot: visible items=\[object Object\], slot: peek=\[object Object\], variant=multi item, breakpoint=s). Text in the figure: "XL-L", "M-S", "IPX 5", "IPX 5 Certificated & Reliable Starts down to -20°C", "AS System", "Battery-operated machines are ideal for small household", "AI Range", "AI machines handle all your small garden tasks"._
+_Figure: Two carousel examples with product cards showing a photo, a bold title and a short description. In the XL-L example three cards (IPX 5, AS System, AI Range) are fully visible with a grey previous arrow on the left, a dark next arrow on the right and three scrollmarker dots below, the first one active. In the M-S example one card (IPX 5) is fully visible and a sliver of the next card peeks in from the right, with the three scrollmarker dots below and no arrows._
 
 ### Configuration: Single-Item Embedded – Navigation Controls Hidden, Scrollmarker Inside
 
@@ -621,7 +621,7 @@ Flex
 
 ![Specifications](carousel/specifications-61695-2600.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "XL-L", "M-S", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
+_Figure: Single-Item carousel used inside product cards of a product grid, with the scrollmarker inside the card image. In the XL-L browser mockup eight product cards sit in two rows of four, and in the M-S mobile mockup one product card is shown. Each card has a placeholder image with three scrollmarker dots (first active) at its bottom edge, then Productname, a 3.5 (80) star rating, Categorie, Short description of the product, Available now, the price 11.199,00 € incl. VAT, a Compare checkbox and an orange cart button._
 
 #### Example
 
@@ -634,7 +634,7 @@ STIHL.de: Product Grid
 
 ![Example](carousel/example-61695-2633.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug); product-card: grid view (content sizing=fill). Text in the figure: "XL-L", "M-S", "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "MSA 300 without battery and charger", "MS 162", "Lawn mower", "incl. VAT", "Lorem ipsum dolor sit amet consectetur. At senectus mauris interdum nibh cras.", "Brush cutter", "Socks STRIPES 3-pack Black / White / Grey", "Socks", "Set Price"._
+_Figure: Product grid in which each product card contains a single-item image carousel. The XL-L example shows a row of four cards (chainsaw MS 261 C-M twice, MSA 300 without battery and charger, and a ride-on mower), the M-S example shows one MS 261 C-M card. Every card has a product image with three scrollmarker dots (first active) below it, a heart icon, a 3.5 (80) rating, the category Chainsaw, Short description of the product, Available now, the price 11.199,00 € and an orange cart button._
 
 ## Responsive Layout
 
@@ -668,7 +668,7 @@ No
 
 ![Configuration: Single-Item — Navigation Controls Outside, Scrollmarker Outside](carousel/configuration-single-item-navigation-controls-outside-scroll-61435-2196.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Text in the figure: "XL-L", "M-S", "Item 1"._
+_Figure: Single-Item carousel with navigation controls and scrollmarker outside the item, shown for XL-L and M-S. In XL-L one large placeholder labeled Item 1 is flanked by a grey previous arrow on the left and a dark next arrow on the right, with three scrollmarker dots (first active) below the item. In M-S a smaller Item 1 is shown with the three dots below it and no arrows (navigation controls hidden)._
 
 #### Configuration: Single-Item — Navigation Controls Inside, Scrollmarker Inside
 
@@ -696,7 +696,7 @@ No
 
 ![Configuration: Single-Item — Navigation Controls Inside, Scrollmarker Inside](carousel/configuration-single-item-navigation-controls-inside-scrollm-62565-18667.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Text in the figure: "XL-L", "M-S", "Item 1"._
+_Figure: Single-Item carousel with navigation controls and scrollmarker inside the item, shown for XL-L and M-S. In XL-L the placeholder labeled Item 1 has a grey previous arrow and a white next arrow overlaid at its left and right edges, and a white pill with three dots (first active) overlaid at its bottom centre. In M-S Item 1 has only the overlaid scrollmarker pill at its bottom and no arrows (navigation controls hidden)._
 
 #### Configuration: Multi-Item — Navigation Controls Outside, Scrollmarker Outside
 
@@ -728,7 +728,7 @@ Yes
 
 ![Configuration: Multi-Item — Navigation Controls Outside, Scrollmarker Outside](carousel/configuration-multi-item-navigation-controls-outside-scrollm-61767-3041.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=s). Text in the figure: "XL-L", "M-S", "❖ Placeholder Item 1", "❖ Placeholder Item 2", "❖ Placeholder Item 3", "❖ Placeholder Item 4"._
+_Figure: Multi-Item carousel with navigation controls and scrollmarker outside, shown for XL-L and M-S. In XL-L four dashed placeholders (Placeholder Item 1 to Placeholder Item 4) are visible side by side between a grey previous arrow on the left and a dark next arrow on the right, with three scrollmarker dots (first active) below. In M-S Placeholder Item 1 is fully visible and the next item peeks in at the right edge, with the three dots below and no arrows (navigation controls hidden)._
 
 #### Configuration: Single-Item Embedded — Navigation Controls Hidden, Scrollmarker Inside
 
@@ -754,7 +754,7 @@ No
 
 ![Configuration: Single-Item Embedded — Navigation Controls Hidden, Scrollmarker Inside](carousel/configuration-single-item-embedded-navigation-controls-hidde-61767-2955.png)
 
-_Figure: Shows product-card: grid view (content sizing=hug). Text in the figure: "XL-L", "M-S", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare"._
+_Figure: Single-Item Embedded carousel with navigation controls hidden and scrollmarker inside, shown for XL-L and M-S. XL-L shows four product cards in one row and M-S shows one larger product card. Each card has a placeholder image with three scrollmarker dots (first active) at its bottom edge, then Productname, a 3.5 (80) rating, Categorie, Short description of the product, Available now, the price 11.199,00 € incl. VAT, a Compare checkbox and an orange cart button, and no arrows are shown._
 
 ### Sizing
 
@@ -776,7 +776,7 @@ The Carousel adapts to the available layout while maintaining consistent proport
 
 ![Multi-Item](carousel/multi-item-61818-3150.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=xl); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=m); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=s). Text in the figure: "XL", "❖ Placeholder Item 1", "❖ Placeholder Item 2", "❖ Placeholder Item 3", "❖ Placeholder Item 4", "L", "M", "❖ PlaceholderItem 3", "❖ PlaceholderItem 4", "S"._
+_Figure: Multi-Item carousel shown at four breakpoints, one below the other. XL shows four wide placeholder items (Placeholder Item 1 to 4) with previous and next arrows and scrollmarker dots. L shows four narrower items, also with arrows and dots. M shows two full items and a sliver of a third, without arrows or dots. S shows one full item and a thin sliver of the next, without arrows or dots; the item width shrinks as the breakpoint gets smaller._
 
 #### Minimum Width
 
@@ -784,7 +784,7 @@ The minimum supported Carousel width is 176px. Carousels are not supported below
 
 ![Minimum Width](carousel/minimum-width-61435-2249.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Measurements: 176px._
+_Figure: Carousel at its minimum width: a purple placeholder image with three scrollmarker dots (first active) at its bottom edge, with a dimension line below it labeled 176px that spans the full width of the carousel._
 
 ## Behavior
 
@@ -806,7 +806,7 @@ Page-based navigation is the default. Item-based is configurable but not the sta
 
 ![Page-based navigation](carousel/page-based-navigation-62753-23460.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "Page", "Item 1", "Item 2", "Item 3", "Item 4"._
+_Figure: Page-based navigation shown for two carousels, each with a dashed viewport on the left (previous and next arrows, three scrollmarker dots) and an arrow pointing from a solid purple area on the right into the viewport. The first, Single-Item carousel, has one page containing only Item 1, which fills the whole viewport. The second, Multi-Item carousel, has a page containing Item 1, Item 2, Item 3 and Item 4 side by side, and the whole page moves in at once. The solid area on the right at the top is labeled Page._
 
 #### Navigation Controls
 
@@ -815,7 +815,7 @@ _Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[obj
 
 ![Navigation Controls](carousel/navigation-controls-62753-23487.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Item 1", "Item 2", "Item 3"._
+_Figure: Single item Carousel with "Item 1", "Item 2" and "Item 3": the visible "Item 2" is outlined with a dashed frame, and parts of "Item 1" and "Item 3" peek in on either side. A round previous Navigation Control sits at the left edge and a next Navigation Control at the right edge of the visible item, each with a curved arrow pointing towards the neighbouring item to show sequential navigation to the previous or next page. Three Scrollmarker dots below show the middle one as current._
 
 #### Scrollmarker
 
@@ -824,7 +824,7 @@ _Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[obj
 
 ![Scrollmarker](carousel/scrollmarker-62753-23501.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); scrollmarker (6=true). Text in the figure: "Item 1", "Item 2", "Go to Page 6", "Go to Page 3", "Go to next page (Page 2)"._
+_Figure: Scrollmarker row below a single item Carousel, with an elongated dark current-page marker followed by four round dots. Three dots are called out with leader lines: the first dot after the current one "Go to next page (Page 2)" and points up to the peeking next item, the second dot is "Go to Page 3", and the last dot is "Go to Page 6", showing that each marker allows direct navigation to a specific page._
 
 #### Drag
 
@@ -833,7 +833,7 @@ _Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[obj
 
 ![Drag](carousel/drag-62939-27758.png)
 
-_Figure: Shows carousel building block (slot: visible items=\[object Object\], scrollmarker position=outside, navigation control position=outside). Text in the figure: "Item 1", "Item 2", "Item 3"._
+_Figure: Drag variant of the Carousel with the visible "Item 2" in a dashed frame, "Item 1" peeking in on the left and "Item 3" on the right, previous and next Navigation Controls at the frame edges and three Scrollmarker dots below. Two hand icons inside the frame each have a horizontal arrow: the left hand points right and the right hand points left, showing that the Carousel is dragged horizontally with pointer input in either direction to reach the previous or next item._
 
 Please find the navigation behavior with touch input [here](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=61435-1831).
 
@@ -845,7 +845,7 @@ Please find the navigation behavior with touch input [here](https://www.figma.co
 
 ![End Behaviour](carousel/end-behaviour-62753-23523.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l)._
+_Figure: Single item Carousel at the last page, showing end behaviour. The previous Navigation Control on the left is active (dark), while the next Navigation Control on the right is greyed out as disabled and marked with a dashed outline; it stays focusable. Of the three Scrollmarker dots below, the last, elongated one is the current page and is also marked with a dashed outline, since navigation stops at the last page and does not loop._
 
 ### Consistency
 
@@ -853,13 +853,13 @@ _Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[obj
 
 ![Consistency](carousel/consistency-62753-23534.png)
 
-_Figure: Do example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Page 2", "Page 3", "❖ Placeholder Item"._
+_Figure: Do: two single item Carousels, "Page 2" and "Page 3", each with a "Placeholder Item". In both, the round dark Navigation Controls sit outside the item on its left and right, and the four Scrollmarker dots sit below the item, with the elongated marker moving from the second to the third dot. One navigation style is used consistently across pages._
 
 **Don’t switch Navigation Control and Scrollmarker placement within the same Carousel.**
 
 ![Consistency](carousel/consistency-62753-23547.png)
 
-_Figure: Don't example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Page 2", "Page 3", "❖ Placeholder Item"._
+_Figure: Don't: two single item Carousels, "Page 2" and "Page 3", each with a "Placeholder Item". On Page 2 the dark Navigation Controls sit outside the item at its sides and the Scrollmarker dots sit below it. On Page 3 the light Navigation Controls and the Scrollmarker, in a white pill, are placed inside the item, with the Scrollmarker at the bottom. Switching Navigation Control and Scrollmarker placement within the same Carousel is inconsistent and wrong._
 
 ### Nested swipe behaviour
 
@@ -869,7 +869,7 @@ Nested swipe behavior is discouraged because it's technically unstable and can c
 
 ![Nested swipe behaviour](carousel/nested-swipe-behaviour-62753-23563.png)
 
-_Figure: Don't example. Shows carousel (slot: visible items=\[object Object\], slot: peek=\[object Object\], variant=multi item, breakpoint=s). Text in the figure: "Promo Flag", "Productname", "3.5", "(80)", "Categorie", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "Compare", "❖ Placeholder Item 3", "❖ Placeholder Item 4"._
+_Figure: Don't: mobile screen showing a multi item Carousel of product cards at breakpoint s, with the next card peeking in on the right and a hand icon with a leftward arrow indicating a horizontal swipe. Each card has an image placeholder with its own three-dot image Scrollmarker, a "Promo Flag", "Productname", a 3.5 (80) rating, "Categorie", "Short description of the product", "Available now", "11.199,00 € incl. VAT", a "Compare" checkbox and an orange cart button. Three Scrollmarker dots sit below the cards. The image slider inside a card is a second swipeable Carousel nested in the outer one, which is not supported because it is technically unstable, particularly on mobile devices._
 
 ## Motion
 
@@ -897,7 +897,7 @@ The Carousel uses motion to communicate navigation while maintaining orientation
 
 ![Drag Motion](carousel/drag-motion-61435-1960.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Measurements: 700ms. Text in the figure: "Item 1"._
+_Figure: Drag motion of a single item Carousel: a dashed frame at the left holds the empty visible area with the previous Navigation Control greyed out, the next Navigation Control dark and three Scrollmarker dots below, the first being current. "Item 1" is drawn outside the frame to the right, with an arrow pointing left and labelled "700ms", showing the Track settling onto the page after the drag is released, using the defined Carousel easing._
 
 ## Accessibility
 
@@ -915,7 +915,7 @@ The Carousel must be fully operable using a keyboard. Users must be able to navi
 
 ![Keyboard requirements](carousel/keyboard-requirements-62524-14316.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "MS 261 C-M", "3.5", "(80)", "Chainsaw", "Short description of the product", "Available now", "11.199,00 €", "incl. VAT", "MSA 300 without battery and charger", "Brush cutter", "In-store only", "MS 162", "Lawn mower"._
+_Figure: Multi item Carousel with three product cards: "MS 261 C-M" (Chainsaw, 3.5 (80), "Short description of the product", "Available now", "11.199,00 € incl. VAT"), "MSA 300 without battery and charger" (Brush cutter, 3.5 (80), "In-store only", "11.199,00 € incl. VAT", greyed-out cart button) and "MS 162" (Lawn mower, 3.5 (80), "Available now", "11.199,00 € incl. VAT"). Each card has a heart icon and a cart button. A dark focus frame surrounds the first card and its cart button has a visible focus ring. The previous Navigation Control on the left is greyed out and the next one on the right is dark with a focus ring. Three Scrollmarker dots sit below, the first one current._
 
 ### Screen Reader Support
 
@@ -939,7 +939,7 @@ The Carousel must allow the user to access the interactive content within the It
 
 ![Accessible Interactive Content](carousel/accessible-interactive-content-62524-14322.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "❖ Placeholder Item 1", "❖ Placeholder Item 2", "❖ Placeholder Item 3", "❖ Placeholder Item 4", "“Items 1 – 4 of 12”"._
+_Figure: Multi item Carousel with four visible items, "Placeholder Item 1" to "Placeholder Item 4", between a dark previous Navigation Control on the left and a next Navigation Control with a focus ring on the right. Three Scrollmarker dots sit below, the middle one being current. A speech bubble at the lower right of the fourth item reads "Items 1 – 4 of 12", the accessible announcement of the visible range._
 
 ### Focus Order
 

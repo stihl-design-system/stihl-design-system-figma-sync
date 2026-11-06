@@ -21,7 +21,7 @@ figmaNodeId: 26075:11591
 figmaVersion: "2418039224414387070"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-06T11:59:20.274Z
+syncedAt: 2026-11-06T15:42:54.108Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11591
 ---
 
@@ -1827,7 +1827,7 @@ Selection requirements and related error handling are defined under [Validation]
 
 ![Control Types](card/control-types-66439-54694.png)
 
-_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "Radio", "Checkbox", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Optimizing Charging and Energy Management in the STIHL AP System"._
+_Figure: Two Selectable Card Groups side by side, labeled Radio and Checkbox, each with the legend "Selectable Card Group Legend", a hint text and four vertical cards with a purple image placeholder, a heading starting "Charging and energy management in t..." and a truncated description. In the Radio group the first card is selected (thick dark border, orange filled radio button) and the other three show empty round radio buttons; in the Checkbox group the first three cards are selected (thick dark border, orange checkmark) and the fourth shows an empty square checkbox._
 
 ### Validation
 
@@ -1849,7 +1849,7 @@ Validation timing follows the behavior of the surrounding form. Once the selecti
 
 ![Validation](card/validation-66439-54725.png)
 
-_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=true). Text in the figure: "Radio", "Checkbox", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Select an option", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Select no more than 3 options"._
+_Figure: Two Selectable Card Groups in the invalid state, labeled Radio and Checkbox, each with the legend "Selectable Card Group Legend", a hint text, a red error icon with a single error message below it and four horizontal cards with red borders and red unselected controls. The Radio group shows the error "Select an option" because no card is selected; the Checkbox group shows the error "Select no more than 3 options" and its four empty square checkboxes are outlined red._
 
 ### Responsive Behavior
 
@@ -1871,7 +1871,7 @@ See [Selectable Card: Sizing & Constraints](https://www.figma.com/design/85WZPFz
 
 ![Orientation](card/orientation-66439-54759.png)
 
-_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false); selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nun c amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false); selectable-card-group (legend=Selectable Card Group Legend, legend, radio-group=\[object Object\], hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, selection control=radio button, invalid=false). Text in the figure: "Horizontal Orientation", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Optimizing Charging and Energy Management in the STIHL AP System", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nun c amet maur...", "Vertical Orientation", "Charging and energy management in the STIHL AP system"._
+_Figure: Responsive behavior of a Selectable Card Group with checkboxes, shown with dashed purple outlines around the group and arrows between container widths. Under "Horizontal Orientation", four vertical cards sit side by side, then wrap into a two-by-two grid in a narrower container, then stack in one column in the narrowest container. Under "Vertical Orientation", four horizontal cards with the image on the left, the heading "Charging and energy management in the STIHL AP system" and the checkbox on the right are stacked in a wide container, keep that layout in a medium container with the heading wrapping to three lines, and switch to four stacked vertical cards in the narrowest container._
 
 #### Figma: Maintaining Card Size When Wrapping
 
@@ -1879,7 +1879,7 @@ _Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Sele
 
 ![Figma: Maintaining Card Size When Wrapping](card/figma-maintaining-card-size-when-wrapping-66439-54809.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false); annotation-circle (number=2, type=center, color=blue). Callouts 1, 2. Text in the figure: "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Optimizing Charging and Energy Management in the STIHL AP System", "📐 layout helper 1", "📐 layout helper 2"._
+_Figure: Two horizontal Selectable Card Groups with the legend "Selectable Card Group Legend", each with three cards per row and an incomplete second row filled by dashed purple placeholders. Callout 1 marks the group with four cards, where the last two positions in the second row hold "layout helper 1" and "layout helper 2"; callout 2 marks the group with five cards, where the last position holds "layout helper 1". The helpers keep the cards at the correct size when wrapping._
 
 #### Spacing
 
@@ -1891,7 +1891,7 @@ Ensure that the appropriate Variable Mode is applied to your design.
 
 ![Spacing](card/spacing-66439-54841.png)
 
-_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "Breakpoint XL", "Breakpoint M", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an..."._
+_Figure: The same horizontal Selectable Card Group with radio buttons shown at two breakpoints. Under "Breakpoint XL" the four cards with heading "Charging and energy management in the STIHL AP system" sit in one row with wider gaps between them; under "Breakpoint M" the cards are narrower, wrap into a two-by-two grid and have tighter gaps, because spacing follows the active Variable Mode rather than the container width._
 
 ### Placement
 
@@ -1905,7 +1905,7 @@ The Selectable Card Group is ideally placed within the appropriate Grid Content 
 
 ![Placement](card/placement-66439-54867.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue). Callouts 1, 2, 3. Text in the figure: "main", "Narrow left", "Back", "Next", "Two Thirds"._
+_Figure: Three schematic browser windows over a column grid showing where a Selectable Card Group is placed, with a dashed purple outline and a colored label under each content area. Callout 1 shows four cards spanning the full width of the Main area. Callout 2 shows three cards in the Narrow Left area, in two variants: the area at the left edge of the grid and the area placed further in from the left. Callout 3 shows four cards in the Two Thirds area, with a stepper to the right of the content and Back and Next buttons below the cards._
 
 ## Accessibility
 
@@ -1921,19 +1921,19 @@ Each Selectable Card retains its own accessible name through its Heading.
 
 ![Legend](card/legend-66439-55024.png)
 
-_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, selection control=radio button, invalid=false); selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "Default: Visible Legend", "Visible hidden but available to screen readers", "Delivery Method", "Pickup", "Ready in: 2 hours", "Free", "Delivery", "No dealer available", "Shipping", "Arrives by: Thu, May 24", "Shipping: $50", "“Legend content”"._
+_Figure: Two variants of a Selectable Card Group with three radio cards: Pickup ("Ready in: 2 hours", "Free", selected), Delivery ("No dealer available", "Free", disabled and greyed) and Shipping ("Arrives by: Thu, May 24", "Shipping: $50"). The left variant, "Default: Visible Legend", shows the legend text "Delivery Method" above the cards with a blue speech bubble reading "Legend content" pointing at it. The right variant, "Visible hidden but available to screen readers", has no visible legend text but the same speech bubble "Legend content" is attached to the group, indicating the legend is still exposed to assistive technology._
 
 **Do provide a Legend that clearly describes what users are selecting.**
 
 ![Legend](card/legend-66439-55054.png)
 
-_Figure: Do example. Shows selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "Delivery Method", "Pickup", "Ready in: 2 hours", "Free", "Delivery", "No dealer available", "Shipping", "Arrives by: Thu, May 24", "Shipping: $50"._
+_Figure: Do example, marked with a green "Do" label: a Selectable Card Group with the visible legend "Delivery Method" above three radio cards, Pickup ("Ready in: 2 hours", "Free", selected), Delivery ("No dealer available", "Free", disabled) and Shipping ("Arrives by: Thu, May 24", "Shipping: $50"). It is correct because the legend clearly describes what users are selecting._
 
 **Don’t remove the Legend from the accessibility tree when hiding it visually.**
 
 ![Legend](card/legend-66439-55070.png)
 
-_Figure: Don't example. Shows selectable-card-group (radio-group=\[object Object\], legend=Delivery Method, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, selection control=radio button, invalid=false). Text in the figure: "“ – ”", "Pickup", "Ready in: 2 hours", "Free", "Delivery", "No dealer available", "Shipping", "Arrives by: Thu, May 24", "Shipping: $50"._
+_Figure: Don't example, marked with a red "Don't" label: a Selectable Card Group with three radio cards, Pickup (selected), Delivery (disabled, "No dealer available") and Shipping, and no visible legend. A blue speech bubble pointing at the group contains only an empty value (quotation marks around an underscore), meaning the legend has been removed from the accessibility tree. It is wrong because hiding the legend visually must not remove it from the accessibility tree._
 
 ### Keyboard Navigation
 
@@ -1948,7 +1948,7 @@ Tab moves focus into and out of the Radio Group rather than between individual R
 
 ![Keyboard Navigation](card/keyboard-navigation-66439-55095.png)
 
-_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Move focus between Radio Selectable Cards and automatically select the focuse...", "Arrow left", "or", "Arrow right", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
+_Figure: Keyboard navigation for radio Selectable Cards, with the purple instruction "Move focus between Radio Selectable Cards and automatically select the focused option:" followed by the key labels "Arrow left" or "Arrow right". Three cards sit in a row, each with a small image icon, the heading "Charging and energy management in the STIHL AP system", a truncated description, "Metadata" and three "Flag" tags. The first card is selected and focused (thick dark focus frame, orange radio button), and two curved arrows lead from it to the second and third cards, which are unselected (dashed outlines, empty radio buttons)._
 
 **Checkbox**
 

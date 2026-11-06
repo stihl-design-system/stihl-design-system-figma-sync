@@ -84,6 +84,16 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Do: three vertical Selectable Cards with checkbox control, medium padding and a media slot, placed side by side. Each uses the same content structure of title, description and price note, and the first card carries the label \"Our recommended service\". Consistent structure and positions support scanning and comparison within the group."
   },
+  "27532979933a8dcf7bdbc83ba270cd978e36d3ee8ade8d1f6c9ba7703df6d77e": {
+    "nodeId": "66439:55054",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example, marked with a green \"Do\" label: a Selectable Card Group with the visible legend \"Delivery Method\" above three radio cards, Pickup (\"Ready in: 2 hours\", \"Free\", selected), Delivery (\"No dealer available\", \"Free\", disabled) and Shipping (\"Arrives by: Thu, May 24\", \"Shipping: $50\"). It is correct because the legend clearly describes what users are selecting."
+  },
+  "2d0ec50495d41d107df113f11b3e29f3300d802fa4bd1d18d9601ca0c5c02cb7": {
+    "nodeId": "66439:54759",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Responsive behavior of a Selectable Card Group with checkboxes, shown with dashed purple outlines around the group and arrows between container widths. Under \"Horizontal Orientation\", four vertical cards sit side by side, then wrap into a two-by-two grid in a narrower container, then stack in one column in the narrowest container. Under \"Vertical Orientation\", four horizontal cards with the image on the left, the heading \"Charging and energy management in the STIHL AP system\" and the checkbox on the right are stacked in a wide container, keep that layout in a medium container with the heading wrapping to three lines, and switch to four stacked vertical cards in the narrowest container."
+  },
   "2f61bf34b5d2eb17360294934ec0b0caf3d69ebe152843afe13c094c0d98e569": {
     "nodeId": "54990:20583",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -204,6 +214,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Product Card with the minimum content in \"Grid View\" and \"List View\". The grid card shows only the chainsaw image, \"Productname\", rating \"3.5 (80)\", the status \"Available now\" and the price \"11.199,00 €\". The list card shows the image, \"Productname\", rating \"3.5 (80)\" and a bulleted description on the left, and the price \"11.199,00 €\" with \"Available now\" on the right, without buttons, flags or compare checkbox."
   },
+  "674216d1b411d2a633e29f71fa563217ddbdb90df81f62c5c86936482fc4f540": {
+    "nodeId": "66439:55070",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example, marked with a red \"Don't\" label: a Selectable Card Group with three radio cards, Pickup (selected), Delivery (disabled, \"No dealer available\") and Shipping, and no visible legend. A blue speech bubble pointing at the group contains only an empty value (quotation marks around an underscore), meaning the legend has been removed from the accessibility tree. It is wrong because hiding the legend visually must not remove it from the accessibility tree."
+  },
   "6826e98a7f9299deb4cd0686b1449c19307efe8ddef5421d3565dbab1426bae9": {
     "nodeId": "66439:55219",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -248,6 +263,16 @@
     "nodeId": "47366:8408",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Vertical card with a purple placeholder image and an orange Promo Flag at its top left, and a white square with an empty checkbox at the top right corner of the image. Below are a small purple icon, the bold heading Charging and energy management in the STIHL AP system, a truncated description, Metadata and three grey Flag tags."
+  },
+  "742a9a6f9e097862cd74f1038cb97481dc251c805314d923b76a86e382bcaf57": {
+    "nodeId": "66439:54841",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "The same horizontal Selectable Card Group with radio buttons shown at two breakpoints. Under \"Breakpoint XL\" the four cards with heading \"Charging and energy management in the STIHL AP system\" sit in one row with wider gaps between them; under \"Breakpoint M\" the cards are narrower, wrap into a two-by-two grid and have tighter gaps, because spacing follows the active Variable Mode rather than the container width."
+  },
+  "76bde9a99165908dde6ba6846f12cf1f3bd5ac16b3225f6fa28fcdb73c335a8a": {
+    "nodeId": "66439:54694",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two Selectable Card Groups side by side, labeled Radio and Checkbox, each with the legend \"Selectable Card Group Legend\", a hint text and four vertical cards with a purple image placeholder, a heading starting \"Charging and energy management in t...\" and a truncated description. In the Radio group the first card is selected (thick dark border, orange filled radio button) and the other three show empty round radio buttons; in the Checkbox group the first three cards are selected (thick dark border, orange checkmark) and the fourth shows an empty square checkbox."
   },
   "772cacef6a9ae7caad4aedf0bbb1490a73ec2d317cf118f3f0e48e0a3b5511d3": {
     "nodeId": "66439:55115",
@@ -333,6 +358,11 @@
     "nodeId": "55002:27739",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Two Grid View product cards with numbered callouts on the price area. In both cards callout 1 points to the small \"Set Price\" set indicator above the price. In the left card callout 2a points to the default price \"11.199,00 €\" and callout 3 to the \"incl. VAT\" text beside it. In the right card callout 2b points to the discounted price \"11.199,00 €\" shown in orange, callout 4 to the struck-through original price \"21.199,00 €\", callout 5 to the saving \"Save 50,00 € (14%)\", and callout 3 again to \"incl. VAT\"."
+  },
+  "8c84e42155f87f1174deb8ad380c7f895dc2e3de5d3c717c379cfbdafefd536f": {
+    "nodeId": "66439:54725",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two Selectable Card Groups in the invalid state, labeled Radio and Checkbox, each with the legend \"Selectable Card Group Legend\", a hint text, a red error icon with a single error message below it and four horizontal cards with red borders and red unselected controls. The Radio group shows the error \"Select an option\" because no card is selected; the Checkbox group shows the error \"Select no more than 3 options\" and its four empty square checkboxes are outlined red."
   },
   "8fccc17fa54ea2d4fdde2ff3289da0cada9b707358093d13cf493d44778409b8": {
     "nodeId": "57309:23770",
@@ -429,6 +459,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Link Cards in \"Vertical Orientation\" and \"Horizontal Orientation\", each with a \"Promo Flag\" on the media area, heading \"Charging and energy management in the STIHL AP system\", description, \"Metadata\", three \"Flag\" tags and a \"Decorative Link\" with chevron. The vertical card is shown with a raised shadow and a hand cursor near the bottom right, and the horizontal card with a hand cursor inside its content area, indicating that the whole card is clickable."
   },
+  "aea4936f6d5c111dca852c2c04f9f6a58a3cfc0e9ceb482eb11b727127544e5b": {
+    "nodeId": "66439:54809",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two horizontal Selectable Card Groups with the legend \"Selectable Card Group Legend\", each with three cards per row and an incomplete second row filled by dashed purple placeholders. Callout 1 marks the group with four cards, where the last two positions in the second row hold \"layout helper 1\" and \"layout helper 2\"; callout 2 marks the group with five cards, where the last position holds \"layout helper 1\". The helpers keep the cards at the correct size when wrapping."
+  },
   "afa93e13c7f6a7d6ef87005567125860334e114debc0b22ef32b57bd97dbecd3": {
     "nodeId": "55161:21932",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -453,6 +488,11 @@
     "nodeId": "54990:22427",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Four Grid View layouts of product cards labelled Breakpoint XL, Breakpoint L, Breakpoint M and Breakpoint S. XL shows four large cards per row, L shows four smaller cards per row with the price and \"incl. VAT\" on separate lines, M shows three cards per row, and S shows a single card per row, with the next row cut off in each case. Every card has an AK SYSTEM logo, heart icon, Promo Flag, Productname, 3.5 (80) rating, Categorie, short description, \"Available now\", price, Compare checkbox and orange add-to-cart button, scaled proportionally."
+  },
+  "c4f4d274857e6898c6472b758d536fc7db2233442d4619e76e4696e869e23116": {
+    "nodeId": "66439:55095",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Keyboard navigation for radio Selectable Cards, with the purple instruction \"Move focus between Radio Selectable Cards and automatically select the focused option:\" followed by the key labels \"Arrow left\" or \"Arrow right\". Three cards sit in a row, each with a small image icon, the heading \"Charging and energy management in the STIHL AP system\", a truncated description, \"Metadata\" and three \"Flag\" tags. The first card is selected and focused (thick dark focus frame, orange radio button), and two curved arrows lead from it to the second and third cards, which are unselected (dashed outlines, empty radio buttons)."
   },
   "c5cdb988af46d13c2759eb89b9b5bbd90ca7be782411c4e2c52b12f1b24b7e1b": {
     "nodeId": "48944:13226",
@@ -488,6 +528,11 @@
     "nodeId": "64762:37015",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Overview of Selectable Card layouts in the enabled, unselected, valid state: with and without a media slot, content sizing hug and fill, medium and small padding, and the two control types checkbox and radio. Each card carries a footer slot and example content such as a \"Promo Flag\" and the heading \"Charging and energy management in the STIHL AP system\". The whole card is the interaction target and contains no buttons or accordions."
+  },
+  "da04300a30b78ce5415834ad7c9c356017f72c51875e397273a5f0a98d393121": {
+    "nodeId": "66439:54867",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three schematic browser windows over a column grid showing where a Selectable Card Group is placed, with a dashed purple outline and a colored label under each content area. Callout 1 shows four cards spanning the full width of the Main area. Callout 2 shows three cards in the Narrow Left area, in two variants: the area at the left edge of the grid and the area placed further in from the left. Callout 3 shows four cards in the Two Thirds area, with a stepper to the right of the content and Back and Next buttons below the cards."
   },
   "da9e3a2759421962a427c95a7069bc1924161799c1a54e4878efeb330672f26d": {
     "nodeId": "62140:17233",
@@ -543,5 +588,10 @@
     "nodeId": "66439:55263",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Two Selectable Cards, one vertical and one horizontal, each with a checkbox control, a promo flag, the heading \"Charging and energy management in the STIHL AP system\", a description, metadata and three flags. Both use hug content sizing and medium padding, and the horizontal card additionally has vertical content orientation."
+  },
+  "ffae76e7dae4f824778c6fcf73904eb352b4b93c2d2c3640bf3ab6f14fed9585": {
+    "nodeId": "66439:55024",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two variants of a Selectable Card Group with three radio cards: Pickup (\"Ready in: 2 hours\", \"Free\", selected), Delivery (\"No dealer available\", \"Free\", disabled and greyed) and Shipping (\"Arrives by: Thu, May 24\", \"Shipping: $50\"). The left variant, \"Default: Visible Legend\", shows the legend text \"Delivery Method\" above the cards with a blue speech bubble reading \"Legend content\" pointing at it. The right variant, \"Visible hidden but available to screen readers\", has no visible legend text but the same speech bubble \"Legend content\" is attached to the group, indicating the legend is still exposed to assistive technology."
   }
 }
