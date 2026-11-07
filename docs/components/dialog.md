@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 14115:4051
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T21:32:59.835Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-07T04:29:14.032Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=14115-4051
 ---
 
@@ -424,7 +424,7 @@ Components are chosen based on their level of urgency:
 
 ![Functionality & Priority](dialog/functionality-priority-40483-6579.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=desktop); footer-dialog (first button, second button, third button, viewport=desktop, direction=horizontal, primary position=left); annotation-circle (number=3, type=center, color=blue); notification (custom action area=\[object Object\], custom action area, children=\[object Object\], close button, type=info, icon=True); toast (text=All files lorem ipsum, icon, type=info); banner (variant=default, viewport=m, content=promo, close-button=true). Callouts 1, 3. Text in the figure: "Heading", "❖ Placeholder", "Button", "This is a notification message that guides the user.", "All files lorem ipsum", "Promo Banner Link"._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=desktop); footer-dialog (first button, second button, third button, viewport=desktop, direction=horizontal, primary position=left); annotation-circle (number=3, type=center, color=blue); notification (action, close button, type=info, icon=True); toast (text=All files lorem ipsum, icon, type=info); banner (variant=default, viewport=m, content=promo, close-button=true). Callouts 1, 3. Text in the figure: "Heading", "❖ Placeholder", "Button", "This is a notification message that guides the user.", "All files lorem ipsum", "Promo Banner Link"._
 
 ### Use Cases
 
@@ -437,7 +437,7 @@ _Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dia
 
 ![System / Mandatory](dialog/system-mandatory-40483-6597.png)
 
-_Figure: Shows header-dialog (heading, viewport=desktop); placeholder: text + image; footer-dialog (first button, third button, viewport=desktop, direction=horizontal, primary position=left); notification (custom action area=\[object Object\], children=\[object Object\], close button, type=info, icon=True); toast (text=Settings have been saved., icon, type=success); notification (custom action area=\[object Object\], children=\[object Object\], type=warning, icon=True). Text in the figure: "Cookies help us improve your experience.", "By clicking “Accept all,” you agree to the use of cookies as described in our...", "Accept all", "Manage preferences", "The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.", "Settings have been saved.", "Recall notice: Product XY has been recalled. Please visit www.example.com for..."._
+_Figure: Shows header-dialog (heading, viewport=desktop); placeholder: text + image; footer-dialog (first button, third button, viewport=desktop, direction=horizontal, primary position=left); notification (close button, type=info, icon=True); toast (text=Settings have been saved., icon, type=success); notification (type=warning, icon=True). Text in the figure: "Cookies help us improve your experience.", "By clicking “Accept all,” you agree to the use of cookies as described in our...", "Accept all", "Manage preferences", "The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.", "Settings have been saved.", "Recall notice: Product XY has been recalled. Please visit www.example.com for..."._
 
 #### Marketing / Engagement
 
@@ -469,7 +469,7 @@ The dialog component is suited for tasks (use cases) that are closely connected 
 
 ![Use for tasks in main flows](dialog/use-for-tasks-in-main-flows-14943-5492.png)
 
-_Figure: Shows header-dialog (heading, close button, viewport=desktop); building-element-radio (label=Not recurring, custom area=\[object Object\], label, type=label, state=enabled, checked=true, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Date, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=15:00, function, label=Start time, input, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=15:00, function, label=End time, input, size=medium, state=enabled, invalid=false); select (label, input, state=enabled, invalid=false, size=medium); notification (custom action area=\[object Object\], children=\[object Object\], type=warning, icon=True); footer-dialog (first button, second button, viewport=desktop, direction=horizontal, primary position=left). Text in the figure: "New active time", "Not recurring", "weekly recurring", "Date", "DD/MM/YY", "Start time", "15:00", "End time", "Mowing zone", "Automatic", "2 mowing jobs per week left", "Add active time", "Cancel"._
+_Figure: Shows header-dialog (heading, close button, viewport=desktop); building-element-radio (label=Not recurring, label, type=label, state=enabled, checked=true, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., placeholder, input=Input, function, label=Date, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=15:00, function, label=Start time, input, size=medium, state=enabled, invalid=false); input-medium (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=15:00, function, label=End time, input, size=medium, state=enabled, invalid=false); select (label, input, state=enabled, invalid=false, size=medium); notification (type=warning, icon=True); footer-dialog (first button, second button, viewport=desktop, direction=horizontal, primary position=left). Text in the figure: "New active time", "Not recurring", "weekly recurring", "Date", "DD/MM/YY", "Start time", "15:00", "End time", "Mowing zone", "Automatic", "2 mowing jobs per week left", "Add active time", "Cancel"._
 
 ### Common use cases
 
