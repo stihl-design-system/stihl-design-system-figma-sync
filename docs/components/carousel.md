@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 26075:11524
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-06T15:47:32.926Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-07T04:28:51.637Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11524
 ---
 
