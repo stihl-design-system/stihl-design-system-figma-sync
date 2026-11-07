@@ -18,10 +18,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 26075:11591
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-06T15:42:54.108Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-07T14:21:24.373Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11591
 ---
 
@@ -1660,7 +1660,7 @@ The Card presentation and Card-level interaction target must not change or repla
 
 ![Semantics](card/semantics-66439-55846.png)
 
-_Figure: Shows s-card-skeleton (state=enabled, selection control=radio button, selected=no, invalid=no, media area=no); building-element-radio (custom area=\[object Object\], label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); s-card-skeleton (state=enabled, selection control=checkbox, selected=no, invalid=no, media area=no); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false). Text in the figure: "Radio", "Checkbox", "Radio Button", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Radio Label", "Checkbox Label"._
+_Figure: Shows s-card-skeleton (state=enabled, selection control=radio button, selected=no, invalid=no, media area=no); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); s-card-skeleton (state=enabled, selection control=checkbox, selected=no, invalid=no, media area=no); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false). Text in the figure: "Radio", "Checkbox", "Radio Button", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Radio Label", "Checkbox Label"._
 
 ### Accessible Name
 

@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 8139:4888
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:51:41.854Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-07T14:22:29.666Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=8139-4888
 ---
 
@@ -100,7 +100,7 @@ _Figure: Select field with the label "Salutation" and its native operating-syste
 
 ![Amount of items in the list](select/amount-of-items-in-the-list-9537-4731.png)
 
-_Figure: Do example for choosing a component by the amount of items, with three callouts. Callout 1 points at the label "Salutation" with a horizontal radio group "Mr." (selected), "Mrs." and "other", used for fewer than 5 items. Callout 2 points at a select labelled "Label" with its native menu open showing "Select" (checked), "Option 1", "Option 2", "Option 3" and "Option 4", used for 5 to 20 items. Callout 3 points at a combobox labelled "Country" where "B" has been typed with a clear icon and a dropdown list with "Label", "Label", "Bangladesh", "Label" and "Label" appears, used for more than 20 items._
+_Figure: Do example. Shows radio-group (item 4, legend, item 5, item 3, legend=Salutation, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=horizontal, show title=false); select (label, placeholder, state=enabled, invalid=false, size=medium); combobox (dropdown, state=active/focus, invalid=false). Callouts 1, 2, 3. Text in the figure: "Salutation", "Mr.", "Mrs.", "other", "Label", "Select", "Option 1", "Option 2", "Option 3", "Option 4", "Country", "B|", "Bangladesh"._
 
 ![Amount of items in the list](select/amount-of-items-in-the-list-9537-4741.png)
 

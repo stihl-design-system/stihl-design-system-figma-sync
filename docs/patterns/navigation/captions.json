@@ -14,16 +14,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Schematic of how navigation content is distributed on mobile and tablet across three panels. Header contains \"Top Bar Items (Primary)\" at the top and \"Utility Menu Items (Optional)\" in the middle; Mobile Menu contains \"Nav Bar Items\" with \"Utility Menu Items (Optional)\" inside it and \"Top Bar Items (Secondary)\" below; \"Mobile Menu - Drilldown\" contains \"Mega Menu Items\"."
   },
-  "040417c7d24f3c944dc5b9e983a749bf50e7f0c517c26666cc671391742204bd": {
-    "nodeId": "7401:41152",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Desktop header with a top bar (logo, \"Search Site\" field, Contact, Dealer, Wishlist, Cart with badge \"3\", the \"STIHL World\" button and \"Login\"), a nav bar (\"Products\" open, \"Accessories\", \"Professionals\", \"Advice\", \"Support\") and a full-width mega menu below it. The mega menu lists \"Sawing and cutting\" (active), \"Mowing and planting\", \"Cleaning and clearing\", \"Garden size\", \"Offers and promotions\", \"Merchandise\" and \"All products\" on the left, and the group \"Sawing and cutting\" with \"Chainsaws and Power Saws\", \"Pole Saws\", \"Hedge Trimmers and Cutters\", \"Combination and Multi-Tool Systems\", \"Pruners, Garden Shears, Loppers, and Branch Saws\" and \"Axes, Hatchets, Hammers, and Forestry Tools\" on the right. The Utility Menu is a popover open under the \"STIHL World\" button, titled \"STIHL World\" with STIHL Website, MY STIHL, STIHL Connected, iMOW® Web App, Product Advisor and the link \"All Services & Apps\"."
-  },
-  "04a440d13c6e4af48f430c1b3d93e820e0e541e95f091e9e62275c2d5e9ddf1f": {
-    "nodeId": "7979:40713",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Don't example: two desktop headers side by side with different menu types in the same nav bar. In the left header \"Products\" is open and shows a mega menu with \"Sawing and cutting\" active and its list of product groups; in the right header \"Accessories\" is open and shows a small dropdown menu (\"STIHL sustainability strategy\", \"Education and people\", \"Economic sustainability\", \"Social engagement\", \"Climate strategy\", \"Environmental protection\", \"STIHL and the rainforest\"). This is wrong because Nav Bar Items must all open the same menu type, either all dropdown menus or all mega menus."
-  },
   "0534cd7b4269c6aa2a3d3466426601118769850b555338ab5001d6ab2f341e59": {
     "nodeId": "6583:85997",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -54,11 +44,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Three Sidebar Menu variants side by side, each shown in a default and a scrolling version: \"Sidebar: simple\" with Group Title headings and plain Label action items, \"Sidebar: expandable\" with icon labels, an Accordion item with a count badge \"123\" and indented child labels, and \"Sidebar: collapsed\" showing only icons with small labels. In every variant the first Label is active (grey background, orange left bar, bold) and a collapse button sits at the bottom."
   },
-  "09ae268bc92914d1f01014050ccdddc0ff9bceb5b7a655a7145337dce355b1ac": {
-    "nodeId": "7388:48224",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Desktop header of STIHL Corporate with the \"Corporate\" brand add-on, \"Search Site\" field, \"Contact\" and \"English\", and a nav bar with \"About STIHL\", \"Sustainability\" (open), \"Careers\", \"STIHL Journal\" and \"Press\". A dropdown menu under \"Sustainability\" shows \"STIHL sustainability strategy\", \"Education and people\", \"Economic sustainability\", \"Social engagement\", \"Climate strategy\", \"Environmental protection\" and \"STIHL and the rainforest\"."
-  },
   "0c79faa583a5bc59100e0e8892683372b737a4c0cf3354f798dc41badc492a3d": {
     "nodeId": "7133:36200",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -84,11 +69,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "E-shop desktop header with a promo banner above it (\"Free shipping on orders over €49\", \"Delivery or local pickup available\", \"30-day return policy\"), the top bar with logo, \"Search Site\" field and Contact, Dealer, Wishlist, Cart (badge 3), STIHL World and Login, and the nav bar Products (open), Accessories, Professionals, Advice, Support. The Products mega menu shows seven category items with chevrons on the left (Sawing and cutting active) and the title \"Sawing and cutting\" with six subcategory links on the right, overlaying page content with images below."
   },
-  "1c6f21bc68bbf065dc23d4d66566c75a1cf54e95a8c6c33f606191a9b4e28224": {
-    "nodeId": "7422:38402",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Desktop header of STIHL Corporate with a top bar (logo, \"corporate\", \"Search Site\" field, \"Contact\" and an open \"English\" button) and a nav bar with \"About STIHL\", \"Sustainability\" (open), \"Careers\", \"STIHL Journal\" and \"Press\". Two popovers are open: a dropdown menu under \"Sustainability\" (\"STIHL sustainability strategy\", \"Education and people\", \"Economic sustainability\", \"Social engagement\", \"Climate strategy\", \"Environmental protection\", \"STIHL and the rainforest\"), and the Utility Menu under \"English\" with a \"Search Language\" field, the group \"Global Sites\" (\"Global / English\", \"Global / Español\", \"Global / Français\", \"Global / Portugals\") and the group \"Local Sites\" with \"Deutschland / Deutsch\" selected and \"Argentina / Español\"."
-  },
   "1da2665115b957d06d1fdb740ad46e4cf055522f1fb673bae1d73366f756663a": {
     "nodeId": "7422:37754",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -99,30 +79,10 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Reduced Top Bar (grid variant main, breakpoint l, brand add-on false, number areas 1) for a focused flow: only the orange STIHL logo on the left and a lock icon with the text \"Sicherer Checkout-Prozess\" next to it, with no search, action items or avatar, above an empty page area."
   },
-  "2226de1c2dcf16d0011fa6e2c5afb2b4486af2081294c5417660c5600253cadf": {
-    "nodeId": "7399:40871",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Utility Menu container shown as a white popover with callouts on its left. Callout 1a points at the bold \"Main Title\", callout 2 at the dashed purple area \"Placeholder - Replace this content\", callout 1b at the first \"Group Title\", callout 3 at one of the four \"Label\" action items of that group, callout 1c at the grey \"Text\" line, and callout 4 at the \"Button\" with an icon at the bottom. Separators divide the placeholder, the two groups of four \"Label\" items each (the second with its own \"Group Title\"), the \"Text\" line and the button."
-  },
   "23bb7dd939c8829a49395b5ce404d59157e398709da370cadf8842bb294e5e60": {
     "nodeId": "7364:35484",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Standard Mega Menu with Top Bar, Nav Bar and Mega Menu: the Top Bar shows the STIHL logo, a \"Search Site\" field and Contact, Dealer, Wishlist and Cart (badge 3) items, and the Nav Bar lists Products (open, active), Accessories, Professionals, Advice and Support. Below, the Mega Menu shows a left column with Sawing and cutting (active), Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise and All products, and on the right the group title \"Sawing and cutting\" with six links from Chainsaws and Power Saws to Axes, Hatchets, Hammers, and Forestry Tools."
-  },
-  "23e8788e63207fb570f7481a3fab70ae2ddd94685aaf5a42e65143cab1b77214": {
-    "nodeId": "6897:84371",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Mobile \"Header\" with the STIHL logo and \"PLATFORM NAME\", a \"Search Site\" field and a \"Menu\" button with a hamburger icon, next to the opened \"Mobile Menu\" panel with a close icon that lists only \"STIHL World\", \"Dealer\" and \"Wishlist\" with icons, the lower-priority top bar items moved into the menu."
-  },
-  "241d57ae2d0129f1b4f32743f214f559a34239eaddf9e7c39866a70da68203d4": {
-    "nodeId": "7408:41024",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Second level of the drilldown mobile menu with a back button labelled \"Main Menu\" with a left arrow at the top left (callout 1), a close button at the top right, the main title \"Category 1\" and \"Sub Category\" action items with icons and right chevrons below it."
-  },
-  "27d18405c25918ba3429f070a1974faed0dac91961cc76e5f8d168fa34767cef": {
-    "nodeId": "6576:48656",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Search behaviour on desktop and on a mobile screen. In both, the search field contains the typed text \"Ab |\" with a clear and a search icon, and a popover below it lists suggestions in two groups: \"Products\" with four entries and \"Advice\" with two entries, each shown as \"Abxxxx\" with the typed letters bold. The desktop header also shows the logo, \"Contact\", \"Dealer support\", \"Wishlist\", \"Cart\", \"STIHL World\" and \"Login\" above a nav bar with \"Products\" and \"Accessories\"; the mobile header shows the logo, \"Cart\", \"Login\" and \"Menu\" with the search field below it."
   },
   "28e3b83f46cd7b07034e2ca9b976f18c8ba6efa332b1480ac45f82d41a1e1ad2": {
     "nodeId": "7376:38507",
@@ -154,11 +114,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Three Top Bars in the two-area layout, each with a Brand Area (a, logo plus \"Brand Add-on\") on the left and a Primary Area (b) to its right. Callout 1 points at the Top Bar Nav action items (Contact, Dealer, Wishlist, Cart with badge 3, STIHL World, \"MM\" avatar), callout 2 at the \"Search Site\" field in the second bar and at the icon-text combination \"Secure Checkout\" in the third bar."
   },
-  "311a370c3298940655e3d1c83c3a2af76b7b35db4e12bcb68dbbd0c3a499443b": {
-    "nodeId": "6263:59296",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Overview of the mobile menu as a drawer with a close button, in four columns (\"Variant: Drilldown - Level 1\", \"Variant: Drilldown - Level 2\", \"Variant: List - Level 1\", \"Variant: List - Level 2\") and two rows (\"Overflow: false\" and \"Overflow: true\"). Drilldown Level 1 lists bold \"Button nav\" items with icons, a divider and three icon \"Label\" action items; Drilldown Level 2 has a back \"Button\" and close button in the header, the \"Main Titel\" and \"Label\" items with icons and right chevrons. List Level 1 shows \"Group Title\" sections with an active \"Label\", an expanded \"Accordion\" (badge \"123\") with nested \"Label\" items and further bold \"Label\" items separated by a divider; List Level 2 adds the back \"Button\" and \"Main Titel\" on top of the same list structure. With \"Overflow: true\" the content is cut off at the bottom and a scrollbar appears, with a line under the header."
-  },
   "32048a512cc1d9259ef1e61921f88a679cdf85cf94357e45abf7b81a4e2c1d0e": {
     "nodeId": "6830:53546",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -174,20 +129,10 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Responsive behavior of the three-area Top Bar, as schematic blocks (Brand Area, Primary Area, Secondary Area) next to real bars at breakpoints xl, l, m and s. Callout 1, \"Three-area layout (Default)\": all three areas are in one row at xl and l; at m and s the Primary Area with the \"Search Site\" field drops below the Brand Area and Secondary Area. Callout 2, \"Three-area layout (with Brand Add-On)\": same at xl and l and at m; at s the Brand Area with Brand Add-On is on top and the Primary Area and Secondary Area sit side by side below it."
   },
-  "34f4fd1e22b0f35d514090f9e5e836b1fc532891daf6df59c5a684555da72de2": {
-    "nodeId": "7422:44871",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Three mobile screens of the standard Dropdown Navigation. The \"Header\" shows the orange STIHL logo with \"CORPORATE\", a \"Search Site\" field and a \"Menu\" button. The \"Mobile Menu\" lists the Nav Bar items \"About STIHL\", \"Sustainability\", \"Careers\", \"STIHL Journal\" and \"Press\", each with a right chevron, plus a close button, and below a divider the secondary items \"English\" and \"Contact\". The \"Mobile Menu – Drilldown\" shows the second level with a \"Main Menu\" back arrow and close button, the heading \"Sustainability\" and the entries \"STIHL sustainability strategy\", \"Education and people\", \"Economic sustainability\", \"Social engagement\", \"Climate strategy\", \"Environmental protection\" and \"STIHL and the rainforest\"."
-  },
   "355a40c4d7cb785ae0f7397d169c1ca563e433fd18ba988751627ccc2d388db5": {
     "nodeId": "7366:46669",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Building element \"Top Bar – Nav\": rows of icon Action Items labelled \"Label\" with a vertical divider separating the last two, shown for \"alignment: right\" (all items grouped on the right) and \"alignment: center\"; an example Top Bar with logo, search and Contact, Dealer, Wishlist, Cart (badge), STIHL World and an \"MM\" avatar illustrates the placement."
-  },
-  "366b1b4e9641ad7acc06a72ac111201b4e621b2ebe5206bf25bcc20bca046b07": {
-    "nodeId": "7408:39983",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Two mobile menu drawers of the drilldown variant showing alignment and overflow. In the left drawer, callout 1 marks the group of \"Button nav\" items with chevrons at the top and callout 2 marks the group of three icon \"Label\" action items at the bottom; between them an arrow labelled \"variable\" (callout 3a) shows the vertical spacing, which varies. The right drawer shows overflow: seven \"Button nav\" items fill the space, a divider and one \"Label\" are partly visible, a scrollbar appears and callout 3b points at the scrolling content, so the spacing shrinks and the menu scrolls."
   },
   "37fcba5d33192ee2b136fa11b86e062f22830940e2e4c9e99a71eca7f467be0f": {
     "nodeId": "6938:104404",
@@ -209,11 +154,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Layout with a Nav Bar (Products, Accessories, Professionals, Advice, Support) between the Top Bar and the expandable Sidebar. Markers A (Top Bar), B (Nav Bar), C (sidebar items) and an optional dashed D (filtered list items) map to the \"Example IA\" tree: Level 1: Service Homepage, Level 2: Page, Level 3: Sub-Page, Level 4: Filtered Views or In-Page Sections (Optional). A second layout shows the breadcrumb \"Home / Products / Fleet Management: Equipment\" with arrows to the Top Bar, the Nav Bar item, the optional section header and the active sidebar item."
   },
-  "396d772848a965c87be57f7ff4b5785e61715385aa03aa88ef94e28fe6ca5504": {
-    "nodeId": "7446:41809",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Dropdown menu popover with seven entries, each outlined with a focus frame and labelled by a numbered callout in focus order from top to bottom: 1 \"STIHL sustainability strategy\", 2 \"Education and people\", 3 \"Economic sustainability\", 4 \"Social engagement\", 5 \"Climate strategy\", 6 \"Environmental protection\", 7 \"STIHL and the rainforest\"."
-  },
   "3c61012197fd953db1c2325671e57cc013e2c5e972b246a101595857a71534b9": {
     "nodeId": "6583:60167",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -223,11 +163,6 @@
     "nodeId": "6263:49227",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "\"Nav Bar – Group\" with seven \"Button nav\" items in four overflow states: overflow right: false and overflow left: false shows all items; overflow right: true shows a dark right arrow button over a partly cut last item; overflow left: true shows a dark left arrow button over a partly cut first item; both true shows arrow buttons on both sides."
-  },
-  "3e4c380f34657af304a796a2293d3ce8283c51de3343fbc878cf3bef92a37b15": {
-    "nodeId": "7408:40850",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Mobile menu drawer with a close button at the top right and four bold \"Button nav\" items, each followed by a right-pointing chevron that marks an item leading to a deeper navigation level."
   },
   "3e9b273b850b94aba284e8aafdc6818720a2a7a918fcd0200fcfff0358b007ea": {
     "nodeId": "7408:40310",
@@ -249,25 +184,10 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Brand Area elements on a light background. Callout 1 points at the orange STIHL logo alone; the second group shows the logo with a brand add-on in three variants: 2a \"This is a Platform name\" as a single-line title, 2b \"Official importer\" with the second line \"Company name goes here\" as a double-line title, and 2c a dashed purple \"Placeholder\" instance for an additional logo."
   },
-  "43a379604f67d81717e022577fa35f05d83afbfcc6b53c57a3a78f8225f784bf": {
-    "nodeId": "7401:59653",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Three mobile screens of the Sidebar Menu replaced by drilldown navigation. The \"Header\" shows the \"CONNECTED\" logo, the \"MM\" avatar and a \"Menu\" button. The \"Mobile Menu\" lists \"Products\", \"Accessories\", \"Professionals\", \"Advice\" and \"Support\" with chevrons. The \"Mobile Menu – Drilldown\" opens \"Products\" under a \"Main Menu\" back arrow, showing the sidebar content: \"Fleet Management\" with \"Equipment\", \"Filtered lists\" (badge \"3\") with \"List 1\" selected, \"List 2\", \"List 3\", \"Add filtered list\", \"Connected Hub\" and \"Energy Evaluation\", then \"Organization\" with \"Teams\" and \"Employees\", in a scrollable area."
-  },
   "4433b4eadc2f5de3dd87403be06edac159a1f365213f51352416325ae4a99139": {
     "nodeId": "7456:44092",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Utility Menu for a signed-in user (\"Tim Timber\") with focus outlines on every focusable element, showing the focus order. Callouts 1a and 1b mark the \"Konto verwalten\" link and the avatar edit button in the placeholder area, 2a to 2e mark the action items \"Rechtliche Unterlagen\", \"Cookies verwalten\", \"Sicherheit & Passwort\", \"Nutzungsbedingungen\" and \"STIHL Fachhandel\" from top to bottom, and callout 3 marks the \"Sign out\" button at the end; \"iMOW Account\", \"STIHL Account\" and \"App-Version: 1.80.2\" are non-focusable text."
-  },
-  "4471aa54e6630487d5a567209732ef4d04eba322c3c14c32893eefb83cd01272": {
-    "nodeId": "7408:38680",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "List variant of the mobile menu in two levels. Level 1 has a close button (callout 1), the text variant \"Group Title\" (callout 2), an active \"Label\" with an orange marker, an expanded \"Accordion\" with badge \"123\" (callout 3) containing four \"Label\" items (callout 4 points at the second), bold \"Label\" items, a divider (callout 5) and a second \"Group Title\" with two \"Label\" items. Level 2 adds the back button \"Main Menu\" (callout 6) and the main title \"Category 1\" (callout 5), repeats the close button (callout 1), and shows the same group, accordion and label structure with callout 4 pointing at an accordion \"Label\" item."
-  },
-  "46202ab4b0781aaec0135225fa6d2f808566b35faa2a08bf8e9a44debd0fc08c": {
-    "nodeId": "7399:38747",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Desktop header with the STIHL logo, the \"Search Site\" field, \"Contact\", \"Dealer\", \"Wishlist\", \"Cart\" with a badge of 3, the open \"STIHL World\" action item and \"Login\". The App Switcher popover below it has callouts on its left: 1 the bold title \"STIHL World\", 2 the separator below the title, 3 the action items with app images (\"STIHL Website\", \"MY STIHL\", \"STIHL Connected\", \"iMOW® Web App\", \"Product Advisor\"), and 4 the button \"All Services & Apps\" with an external link icon at the bottom."
   },
   "47770fe210599cfa8abcc71211c903827950ba236c226ad09bb4ed1d7e5a8597": {
     "nodeId": "6897:71478",
@@ -294,25 +214,10 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Don't example: \"Top Bar - Logo selected\" shows a top bar with the STIHL logo selected directly (highlighted in purple) next to six icon items labeled \"Label\", and the \"Property panel of the logo component\" shows the logo component with its type dropdown (default) highlighted and logos set to main. Modifying the logo element directly this way may cause unexpected behaviour."
   },
-  "4d7e2d6f1b226e873748fba252787d2697faea96670de9aa31d40cfd17de8fd8": {
-    "nodeId": "6897:84398",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Three mobile screens: the \"Header\" with the STIHL logo, \"Cart\" with a badge of 3, \"Login\" and \"Menu\" above a \"Search Site\" field; the \"Mobile Menu\" listing \"Products\", \"Accessories\", \"Professionals\", \"Advice\", \"Support\", a separator, and \"STIHL World\", \"Dealer\", \"Wishlist\"; and a \"Dialog\" opened over the menu from \"STIHL World\", titled \"STIHL World\" with a close icon, listing the action items with app images \"STIHL Website\", \"MY STIHL\", \"STIHL Connected\", \"iMOW® Web App\", \"Product Advisor\" and the button \"All Services & Apps\" with an external link icon."
-  },
   "4dab971936c21f8319feba88b0d46655da28068bdacefe1d84b77e9ec674b102": {
     "nodeId": "7367:35912",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "[unverified] Rendered blank (plain light grey background with no visible content); per the surrounding text it is meant to illustrate that Mega Menu content taller than the available height becomes scrollable with a vertical scrollbar, and that overflow should be avoided by reducing items or using multiple columns of Action Items for 3rd-level navigation."
-  },
-  "4e3f4a0671edc39a6f61ab2b8c41e7f96f2392e29e76c9a862ce45e2aebfff87": {
-    "nodeId": "7391:38046",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Responsive behavior of the Sidebar Menu list variation with blue numbered callouts. Under \"Desktop (breakpoint l & xl)\": callout 1 marks the Top Bar items (the open \"STIHL World\" action item and the \"MM\" avatar), callout 2 the purple sidebar (\"Fleet Management\" with \"Equipment\", \"Filtered lists\" with badge \"3\" and \"List 1\" selected, \"Connected Hub\", \"Energy Evaluation\", the \"Organization\" entries, \"Contact\" and \"Legal Information\"), and callout 3 the green Utility Menu popover \"STIHL World\" with \"STIHL Website\", \"MY STIHL\", \"STIHL Connected\", \"iMOW® Web App\", \"Product Advisor\" and \"All Services & Apps\". Under \"Tablet and Mobile (breakpoint s & m)\": \"1st level (Mobile Menu closed)\" shows the header with \"STIHL World\" and \"MM\" (1) and the \"Menu\" button (4a), with no sidebar; an arrow leads from \"Menu\" to \"2nd level (Mobile Menu open)\", where the sidebar content fills the open Mobile Menu (2, with the badge reading \"123\" and callout 4 at the panel's top right); and an arrow leads from \"STIHL World\" to a \"Dialog\" showing the same \"STIHL World\" links (3a)."
-  },
-  "4f3611b8d0df13330c934fd5254382420ae566fd9e35f37e62f57b2f7615610a": {
-    "nodeId": "7472:40034",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Three Utility Menu popovers side by side. The first shows the plain placeholder (\"Main Title\", dashed purple \"Placeholder\", \"Group Title\" with three \"Label\" items). Callout 1 marks a placeholder that holds a \"Search Language\" search field above \"Global Sites\" (\"Global / English\", \"Global / Español\", \"Global / Français\", \"Global / Portugals\") and \"Local Sites\" (\"Deutschland / Deutsch\" selected, \"Argentina / Español\"). Callout 2 marks a placeholder that holds an avatar area with the name \"Max Mustermann\", the link \"Konto verwalten\" and an \"MM\" avatar with an edit icon, followed by the groups \"iMOW Account\" (\"Rechtliche Unterlagen\", \"Cookies verwalten\") and \"STIHL Account\" (\"Sicherheit & Passwort\", \"Nutzungsbedingungen\", \"STIHL Fachhandel\"), \"App-Version: 1.80.2\" and a \"Sign out\" button."
   },
   "50b17016ee1498ef57f40684ae85d26559d2a5c2bef0a01ed14787f24b564342": {
     "nodeId": "6885:71180",
@@ -324,16 +229,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Utility Menu with alignment=left in the expanded state, showing an anchor element with an image icon, the label \"Label\" and an upward chevron, with a popover below it. Callout 1 points at the anchor element; callout 2 points at the utility menu container, which holds the \"Main Title\", a purple dashed \"Placeholder\" slot, a separator, the \"Group Title\" and four \"Label\" action items."
   },
-  "53fe653fdd0e2f113faab2bb8e9e12adbb49fd4f8e6af88a8ea1ac948c98af30": {
-    "nodeId": "7373:42468",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Three mobile screens of the Mega Menu navigation, labelled \"Header\", \"Mobile Menu\" and \"Mobile Menu - Drilldown\". The header has the logo, Cart with badge \"3\", \"Login\", a \"Menu\" button and a \"Search Site\" field. The open mobile menu lists \"Products\", \"Accessories\", \"Professionals\", \"Advice\" and \"Support\" with chevrons, then a divider and the secondary items \"STIHL World\", \"Dealer\", \"Wishlist\" and \"Contact\". The drilldown screen, with a back arrow \"Main Menu\" and a close button, shows the title \"Products\" and one level at a time: \"Sawing and cutting\", \"Mowing and planting\", \"Cleaning and clearing\", \"Garden size\", \"Offers and promotions\", \"Merchandise\" and \"All products\"."
-  },
-  "54005680ce0c665f4aff72277881a9ce6b9108a2c0e27adf1c33e04da920e2b1": {
-    "nodeId": "7422:36672",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Top section \"Breakpoints l and xl\": a browser window with a Utility Menu popover containing a placeholder, and two arrows leading to \"Breakpoints m and s\", one labelled \"Dialog\" to a mobile screen with a centered dialog with a close icon and placeholder (callout 1), and one labelled \"Page\" to a full mobile page with placeholder (callout 2). Callout 1 example, \"Example Language selector\": on l and xl the \"English\" action item opens a Utility Menu with \"Search Language\", \"Global Sites\" and \"Local Sites\" lists (\"Deutschland / Deutsch\" selected), on m and s it becomes a dialog titled \"Language\" with a close icon, a search \"Input\" and the same lists. Callout 2 example, \"Example Login\": on l and xl the \"Login\" action item opens a Utility Menu with \"Log in\", \"Create Account\", \"My Orders\", \"My saved items\" and \"My reservations\", on m and s it redirects to a page \"LOGIN AND REGISTRATION\" with the header (\"Cart\", \"Login\", \"Menu\"), a \"Search Site\" field and a sign in form with \"Email\" and \"Password\"."
-  },
   "54f214fe8c8750252074a4342d631995b8e194c45a8ab5d6df09be46de838574": {
     "nodeId": "7446:43588",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -343,11 +238,6 @@
     "nodeId": "7376:40138",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Figma layout handling for Action Items with icon, \"Label\", chevron and number indicator \"3\". On the left, the Layout panel shows width W set to \"Hug\" and height H \"Hug\", and three stacked items labeled \"hug content\" are only as wide as their content inside the \"Container\", with the number directly after the chevron. On the right, the Layout panel shows W \"Fill\", H \"Hug\" and spacing \"Auto\", and the three items labeled \"fill container\" stretch across the full \"Container\" width, with the number indicator \"3\" pushed to the right edge; in both versions the third item is shown with a grey hover background."
-  },
-  "596a35645dc86397032646d93c604312ba7c0686818fbd3e90590e6827b1a74a": {
-    "nodeId": "6583:79430",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Desktop header with the STIHL logo, a \"Search Site\" field, the top bar items \"Contact\", \"Dealer\", \"Wishlist\", \"Cart\" with a badge of 3, the open \"STIHL World\" action item and \"Login\", above a nav bar with \"Products\", \"Accessories\", \"Professionals\", \"Advice\" and \"Support\". The utility menu opens below \"STIHL World\" as a popover with the title \"STIHL World\", the action items \"STIHL Website\", \"MY STIHL\", \"STIHL Connected\", \"iMOW® Web App\" and \"Product Advisor\" with app icons, a separator and the \"All Services & Apps\" button with an external link icon."
   },
   "5b93929ece4c6be4545a2423e31d5e11b54a622f5e82f55fe1e9e1cb19b82c24": {
     "nodeId": "6240:50805",
@@ -364,11 +254,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Building element \"Top Bar – Text with icon\": a \"Placerholder text\" element with icon and an info notice stating that it should not be used alongside navigation items, is reserved for critical information such as security messages during checkout, and has a maximum of 60 characters; the example shows a Top Bar with the STIHL logo and a lock icon with the text \"Secure Checkout\"."
   },
-  "5f6ece85e723186b27256796fcce1e91289f189cf2bf19aabbd6e960f2183d8d": {
-    "nodeId": "7402:43883",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Corporate header (STIHL logo with \"CORPORATE\", \"Search Site\" field, nav bar \"About STIHL\", \"Sustainability\" (highlighted), \"Careers\", \"STIHL Journal\", \"Press\") with the \"English\" action item open at the top right and its Language Selector popover below. Callout 1 points at the \"Search Language\" search input, callout 2 at the group label \"Global Sites\", and callout 3 at the action item \"Global / English\"; the list continues with \"Global / Español\", \"Global / Français\", \"Global / Portugals\", then the group \"Local Sites\" with \"Deutschland / Deutsch\" selected (orange bar) and \"Argentina / Español\". The action items have no icons."
-  },
   "5ff22c2210f86413fab3b530440c3615ad3e5ac18180e9daa70a78b6641a3c78": {
     "nodeId": "6897:72346",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -384,11 +269,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Sidebar expanded and collapsed side by side, with an arrow from expanded to collapsed. The expanded sidebar shows the group title \"Fleet Management\" (3), Equipment (1), the expandable \"Filtered lists\" with List 1, List 2, List 3 and \"Add filtered list\" (4), Connected Hub, Energy Evaluation, a divider (2) and the \"Organization\" group with Teams, Employees, Organization Settings and Maintenance Settings. The collapsed sidebar keeps only the top-level action items (1) as vertically stacked icon plus label, and the divider lines (2), while group titles and the expandable item are removed."
   },
-  "6390b13f0d0d575d2c612aa899e57840d79d606c1c4767e284a009dc88c7ea27": {
-    "nodeId": "7402:43961",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Responsive behavior of the Dropdown Navigation, with colour-coded areas (Top Bar items salmon, Nav Bar items blue, Dropdown Menu purple, Utility Menu green) and blue numbered callouts. Under \"Desktop (breakpoint l & xl)\": callout 1 marks the Top Bar items (\"Search Site\" field, \"Contact\" and the open \"English\" item), callout 2 the Nav Bar (\"About STIHL\", \"Sustainability\" open, \"Careers\", \"STIHL Journal\", \"Press\"), callout 3 the Dropdown Menu with seven Sustainability entries from \"STIHL sustainability strategy\" to \"STIHL and the rainforest\", and callout 4 the Utility Menu below \"English\" with \"Search Language\", \"Global Sites\" and \"Local Sites\" (\"Deutschland / Deutsch\" selected). Under \"Tablet and Mobile (breakpoint s & m)\": \"1st level (Mobile Menu closed)\" shows the STIHL logo with the \"Search Site\" field (1a) and the \"Menu\" button (4), an arrow leading to \"2nd level (Mobile Menu open)\", which lists the Nav Bar items \"About STIHL\", \"Sustainability\", \"Careers\", \"STIHL Journal\" and \"Press\" with chevrons (2) and below a divider the relocated \"English\" and \"Contact\" items (1b); arrows lead from \"About STIHL\" to \"3rd level (Mobile Menu open - Drilldown 1)\", showing a \"Main Menu\" back arrow, the heading \"Sustainability\" and its seven entries (3, with callout 5 at the panel's top right), and from \"English\" to a \"Dialog\" titled \"Language\" with a search input, \"Global Sites\" and \"Local Sites\" lists (3)."
-  },
   "65954e7b9d3f9353879d7400be9ba31ca60ae32e5d651421b70888477b05c132": {
     "nodeId": "7376:45509",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -403,11 +283,6 @@
     "nodeId": "6307:72264",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Overview matrix of all Action Item variants under the heading \"Component\", with state columns \"enabled\", \"hover / pressed\", \"active\", \"focus\", \"active-focus\" and \"disabled\". Hover shows a grey background, active shows an orange bar on the left edge with bold text, focus shows a dark outline, active-focus combines the bar, grey background and outline, and disabled shows greyed-out text. Row groups, each with and without a trailing chevron, cover: text-only labels in regular and bold weight and an indented text-only version; the same three with an icon; the same three with an image placeholder (\"helper_action-item_image-placeholder\", a purple dashed square); and, at the bottom, vertical items with the icon above the \"Label\", with a down chevron that turns into an up chevron in the active and active-focus states."
-  },
-  "695ecbfd009f8688b4b9d98ace4d95b4be0a8831b876af1d4c86d48794267c61": {
-    "nodeId": "6897:80662",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Two annotated header layouts. \"Desktop (breakpoint l & xl)\": the top bar items (\"Contact\", \"Dealer\", \"Wishlist\", \"Cart\", \"STIHL World\", \"Login\") are highlighted orange with callout 1, the nav bar (\"Products\", \"Accessories\", \"Professionals\", \"Advice\", \"Support\") is highlighted blue with callout 2, and the open \"STIHL World\" Utility Menu popover is highlighted green with callout 3. \"Tablet and Mobile (breakpoint s & m)\": the closed header (\"1st level (Mobile Menu closed)\") shows only \"Cart\" and \"Login\" as top bar items (1a) and a \"Menu\" button (4a); an arrow leads to the \"2nd level (Mobile Menu open)\" with a close icon (4), the nav bar items in blue (2) and the remaining top bar items \"STIHL World\", \"Dealer\", \"Wishlist\", \"Contact\" in orange (1b); an arrow from \"STIHL World\" leads to a \"Dialog\" titled \"STIHL World\" in green (3) listing the app items and \"All Services & Apps\"."
   },
   "69d1d962fdefa319e26deb9a716d502617e765b0bb7750e570b751f1dc71dd62": {
     "nodeId": "7379:37092",
@@ -429,16 +304,6 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Webshop top bar with the STIHL logo, \"Search Site\" field and the vertical action items \"Contact\", \"Dealer\", \"Wishlist\", \"Cart\" (badge 3), \"STIHL World\" and the active \"Login\" with an up chevron. Callout 1 points at \"Login\" in the top bar, a vertical action item with an icon above its label. Callout 2 points at the open utility menu below it, which holds a filled \"Log in\" button, a ghost \"Create Account\" button, a horizontal divider and the horizontal action items \"My Orders\", \"My saved items\" and \"My reservations\", each with a leading icon."
   },
-  "6f0e2435a368c0cd4a07cd3ce70508cd3615210cf4d4a5317b4fe47dba83811c": {
-    "nodeId": "7408:38652",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Two mobile menu drawers side by side, each with a close button at the top right. Callout 1 points at the Drilldown variant on the left, which lists bold \"Button nav\" items with right chevrons, a divider and three icon \"Label\" action items. Callout 2 points at the List variant on the right, which shows \"Group Title\" sections, an active \"Label\", an expanded \"Accordion\" (badge \"123\") with nested \"Label\" items and bold \"Label\" items separated by a divider."
-  },
-  "724e9663e384e77808a42d351353619c73fa73d56bdfcdad3d7ff2eee5460dad": {
-    "nodeId": "7391:41543",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Responsive behavior of the Sidebar Menu drilldown variation with blue numbered callouts. Under \"Desktop (breakpoint l & xl)\": callout 1 marks the Top Bar items (\"Notifications\" with an orange dot, \"Wishlist\", \"English\", the open \"STIHL World\" action item and the \"MM\" avatar), callout 2 the purple sidebar (\"Fleet Management\" with \"Equipment\", \"Filtered lists\" with \"List 1\" selected, \"Connected Hub\", \"Energy Evaluation\", and the \"Organization\" entries), and callout 3 the green \"STIHL World\" Utility Menu popover with \"STIHL Website\", \"MY STIHL\", \"STIHL Connected\", \"iMOW® Web App\", \"Product Advisor\" and \"All Services & Apps\". Under \"Tablet and Mobile (breakpoint s & m)\": \"1st level (Mobile Menu closed)\" shows only \"STIHL World\" and \"MM\" (1a) and the \"Menu\" button (4a); \"2nd level (Mobile Menu open)\" lists \"Fleet Management\" (5) and \"Organization\" (2a) with chevrons, then \"Contact\" and \"Legal Information\", and in a salmon block the relocated \"English\", \"Wishlist\" and \"Notifications\" (1b); \"3rd level (Mobile Menu open - Drilldown)\" shows a \"Main Menu\" back arrow, the heading \"Fleet Management\" and the sidebar entries with the badge \"123\" (2b); callout 4 sits at the top right of both open menu panels; and a \"Dialog\" with the \"STIHL World\" links opens from the \"STIHL World\" action item via an arrow (3)."
-  },
   "750f1a7b46b4ec78e81c6c0c2316b7dba6dc5a5f23e0399b16873cb350c71870": {
     "nodeId": "7430:42921",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -458,26 +323,6 @@
     "nodeId": "6583:60172",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Three example Nav Bar labels with their character counts, under the note \"recommended maximum 25 character:\": \"Akkus und Ladegeräte\" (DE: 22 characters), \"Batteries and Chargers\" (EN: 24 characters) and \"Baterias e carregadores\" (PT: 25 characters)."
-  },
-  "7bfea36e2626e565fde1cb9078c9e3c1308f18cb4b32f12a1a78859d3bc4d8f1": {
-    "nodeId": "7401:57910",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "The standard Sidebar Menu page enhanced with a Utility Menu. The Top Bar shows the \"CONNECTED\" logo, an open \"STIHL World\" action item and the \"MM\" avatar. A popover titled \"STIHL World\" lists \"STIHL Website\", \"MY STIHL\", \"STIHL Connected\", \"iMOW® Web App\" and \"Product Advisor\", and below a divider \"All Services & Apps\" with an external-link icon. The Nav Bar (\"Products\", \"Accessories\", \"Professionals\", \"Advice\", \"Support\") and the sidebar (\"Fleet Management\", \"Organization\", \"Contact\", \"Legal Information\") are as in the standard version, with \"List 1\" selected."
-  },
-  "7c3860f910ad02fab028cd4c221e89acf4116f81e510cffe3ac314585e94e2d5": {
-    "nodeId": "7408:38663",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Drilldown variant of the mobile menu in two levels. Level 1 has a close button (callout 1 at the top right), bold items \"Category 1\" to \"Category 5\" with right chevrons (callout 2 points at \"Category 1\"), a divider and three \"Top Bar Item\" action items with icons (callout 3 points at the first one). Level 2 has a back button labelled \"Main Menu\" at the top left (callout 4), the close button (callout 1), the main title \"Category 1\" (callout 5) and seven \"Sub Category\" action items with icons and right chevrons (callout 6 points at the second one)."
-  },
-  "7f4e53f08a36b4bef56f24766c0a9897dad8aae08be8fc1accb5c112c4b52eb2": {
-    "nodeId": "7434:45618",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Keyboard interaction diagram for the nav bar (\"Products\", \"Accessories\", \"Professionals\", \"Advice\", \"Support\", \"Chainsaws\", \"Vacuum Shredders\" with a scroll arrow at the right), one row per action. \"Move to next focusable element:\" Tab, with the focus moving from \"Products\" to \"Accessories\". \"Move to previous focusable element:\" Tab + Shift, with the focus moving back from \"Accessories\" to \"Products\". \"Scroll the container horizontally:\" Arrow left or Arrow right, shown twice with a double-headed arrow and the bar scrolled so that \"Products\" is partly cut off behind a left scroll button. \"Open Menu with:\" Space or Enter, with a dashed menu area appearing below \"Products\". \"Close Menu with:\" Esc, where the open \"Products\" menu closes. \"Navigate to page:\" Enter, with a wide dashed page area appearing below the focused \"Products\"."
-  },
-  "802340165a2a9fa637c3eb0f6d18f571b75fc420c81829ca6f8637efa3eafb55": {
-    "nodeId": "7401:59702",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Four mobile screens of the Sidebar Menu drilldown with a Utility Menu. The \"Header\" shows the \"CONNECTED\" logo with a \"STIHL World\" action item, the \"MM\" avatar and a \"Menu\" button. The \"Mobile Menu\" lists \"Products\", \"Accessories\", \"Professionals\", \"Advice\" and \"Support\". The \"Mobile Menu – Drilldown\" shows \"Products\" with the sidebar content (\"Fleet Management\", \"Equipment\", \"Filtered lists\", \"List 1\" to \"List 3\", \"Connected Hub\", \"Energy Evaluation\", \"Organization\", \"Teams\", \"Employees\"). The \"Dialog\" titled \"STIHL World\" opens over the dimmed header and lists \"STIHL Website\", \"MY STIHL\", \"STIHL Connected\", \"iMOW® Web App\", \"Product Advisor\" and \"All Services & Apps\"."
   },
   "843276ac8ce6235bd23be9144ce78af711f58ac6149064ecde945f6a6afa69ec": {
     "nodeId": "7247:37646",
@@ -534,16 +379,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Open mega menu with focus outlines drawn around every focusable element and numbered markers giving the focus order: 1a is the active Sawing and cutting item, 3a to 3f are the remaining third-level items in order (Mowing and planting, Cleaning and clearing, Garden size, Offers and promotions, Merchandise, All products), 2a to 2f are the fourth-level links under the \"Sawing and cutting\" title (Chainsaws and Power Saws, Pole Saws, Hedge Trimmers and Cutters, Combination and Multi-Tool Systems, Pruners, Garden Shears, Loppers, and Branch Saws, Axes, Hatchets, Hammers, and Forestry Tools), and callout 3 marks the image placeholder on the right; the header behind is blurred."
   },
-  "952e6d7274277753b3d07531723e6050076b6a1bf19ca01a575fd8b7114da02a": {
-    "nodeId": "7399:38648",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Browser window with an open anchor element \"Label\" (icon with chevron up) at the top right and its Utility Menu popover below, containing \"Main Title\", a \"Placeholder\", two groups of \"Group Title\" with four \"Label\" items each, \"Text\" and a \"Button\" that is cut off at the bottom and a scrollbar at the right edge of the popover. A purple dashed line marks the bottom of the menu and an arrow dimension \"min. 48px\" shows the minimum distance between the menu container and the bottom edge of the viewport."
-  },
-  "95db8e32f6957bcbdce35f11ddee3a72df69336e674cd76f4fe7090fe7ef6f68": {
-    "nodeId": "7401:42093",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Four mobile screens of the Mega Menu navigation with Utility Menu, labelled \"Header\", \"Mobile Menu\", \"Mobile Menu - Drilldown\" and \"Dialog\". The header has the logo, Cart with badge \"3\", \"Login\", \"Menu\" and a \"Search Site\" field; the mobile menu lists \"Products\", \"Accessories\", \"Professionals\", \"Advice\", \"Support\" and below a divider \"STIHL World\", \"Dealer\", \"Wishlist\", \"Contact\"; the drilldown shows \"Products\" with \"Sawing and cutting\" through \"All products\" under a back arrow \"Main Menu\". The dialog opens on top of the dimmed mobile menu with the heading \"STIHL World\", a close button, the entries \"STIHL Website\", \"MY STIHL\", \"STIHL Connected\", \"iMOW® Web App\", \"Product Advisor\" and the link \"All Services & Apps\"."
-  },
   "9a7ebe67f45e341057323306bd2241f68a63828c5f6f81820ab17487d823ac7e": {
     "nodeId": "6897:84351",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -578,16 +413,6 @@
     "nodeId": "7999:41871",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Don't example: two desktop headers side by side with different menu types in the same nav bar. The left header has \"Products\" open with a mega menu (\"Sawing and cutting\" active, product groups on the right); the right header has \"Accessories\" open with a small dropdown menu (\"STIHL sustainability strategy\" to \"STIHL and the rainforest\"). This is wrong because Nav Bar Items must trigger one consistent menu type, either all dropdown menus or all mega menus, never a mix."
-  },
-  "a034af97f4a0381ad6a9607752afc7fa050ce11579225113e4382b14f56d0d6e": {
-    "nodeId": "6583:57826",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Three header states in sequence with arrows between them. In the first, callout 1 points at the \"English\" action item (with globe icon) between \"Contact\" and \"Wishlist\", hovered by a pointer; the caption reads \"Clicking the “Language” Action Item opens a Utility Menu\". In the second, the corporate header shows \"English\" open with a utility menu (callout 2) containing the \"Search Language\" field, \"Global Sites\" (\"Global / English\", \"Global / Español\", \"Global / Français\", \"Global / Portugals\") and \"Local Sites\" (\"Deutschland / Deutsch\" selected, \"Argentina / Español\"); the caption reads \"The selected language appears as the label in Action Item.\" In the third, the header is German (\"Seite durchsuchen\", \"Kontakt\", \"Favoriten\") and callout 3 points at the action item now labelled \"Deutsch\"."
-  },
-  "a0c79576d98d3749d9685e508277032f0c79c9d86d778f1483d03ece65dc02fd": {
-    "nodeId": "6897:84384",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Mobile \"Header\" with the STIHL logo, \"Cart\" with a badge of 3 and a \"Menu\" button above a \"Search Site\" field, next to the opened \"Mobile Menu\" that lists the nav bar items \"Products\", \"Accessories\", \"Professionals\", \"Advice\" and \"Support\" in bold, a separator, and then the top bar items \"STIHL World\", \"Dealer\" and \"Wishlist\" with icons."
   },
   "a4fae2a266e669775c1c153c1ab937b6fd8968c4d8fc4953baa32975a285d04c": {
     "nodeId": "7376:45148",
@@ -638,11 +463,6 @@
     "nodeId": "6833:55655",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two mobile screens of the Connected portal, closed and open. The closed screen shows the top-bar with the Connected logo, \"STIHL World\", the avatar \"MM\" and a \"Menu\" button above the heading \"EQUIPMENT (12)\", a Filter button, a search field and a table with the Nickname column. The open screen shows a side menu with a close icon and the groups Fleet Management (Equipment active, Filtered lists with badge 3, Connected Hub, Energy Evaluation), Organization (Teams, Employees, Organization Settings, Maintenance Settings) and Contact and Legal Information, with the page behind dimmed."
-  },
-  "b02103aefcb7a5c0bd49290e033410a90feddcec5e1993795d711d65f86c0c38": {
-    "nodeId": "7362:33373",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Desktop Top Bar with the STIHL logo, a \"Search Site\" field and action items \"Contact\", \"Dealer\", \"Wishlist\", \"Cart\" (badge \"3\"), \"STIHL World\" and \"Login\". The \"STIHL World\" item is pressed and carries an up chevron next to its label, and the \"Login\" item shows a down chevron, indicating that they open a Utility Menu. Below \"STIHL World\" the opened popover lists \"STIHL World\", \"STIHL Website\", \"MY STIHL\", \"STIHL Connected\", \"iMOW® Web App\", \"Product Advisor\" and, after a divider, \"All Services & Apps\" with an external-link icon."
   },
   "b0e297f312359b25eb48fc046a96fb5bc5ba68e15acc652c8cdc93038b0f1e3f": {
     "nodeId": "7362:33347",
@@ -709,11 +529,6 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Don't example: a sidebar section where the group title \"Fleet Management and Equipment overview\" is so long that it wraps onto two lines inside a dashed purple frame, pushing the list below it (\"Equipment\", \"Connected Hub\", \"Energy Evaluation\", each with an icon) down. A red \"Don't\" badge marks this as wrong because the text should stay concise and not break into a second line."
   },
-  "c3389db7d9f4607638081fb4e43f23f03b2bc36786ccd34ed2cfe997bf33870b": {
-    "nodeId": "6833:55224",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Desktop open state of the corporate header in a browser frame: the STIHL logo with \"CORPORATE\", a \"Search Site\" field, \"Contact\" and the \"English\" action item with an open arrow, and a nav bar with \"About STIHL\", \"Sustainability\" (open), \"Careers\", \"STIHL Journal\" and \"Press\". The \"Sustainability\" dropdown lists \"STIHL sustainability strategy\", \"Education and people\", \"Economic sustainability\", \"Social engagement\", \"Climate strategy\", \"Environmental protection\" and \"STIHL and the rainforest\". The language utility menu is also open below \"English\" with a \"Search Language\" field, \"Global Sites\" (\"Global / English\", \"Global / Español\", \"Global / Français\", \"Global / Portugals\") and \"Local Sites\" (\"Deutschland / Deutsch\" selected, \"Argentina / Español\"). The page below shows a hero image with the title \"WELCOME TO STIHL\"."
-  },
   "c6e48ddf2e357c538f607ee4e7fb00afe0d79dbec5470d1e9c9355482e35cda3": {
     "nodeId": "7313:34144",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -753,11 +568,6 @@
     "nodeId": "7446:43601",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Three sidebar keyboard states. \"Move to next focusable element: Tab\" shows the focus ring on Equipment with an arrow to a dashed Connected Hub below. \"Move to previous focusable element: Tab + Shift\" shows focus on Connected Hub with an arrow back up to a dashed Equipment. \"Open page with: Enter\" shows Equipment as active, focus on Connected Hub, and an arrow from it to the dashed content area where the page opens."
-  },
-  "d22d25e7be506101224c7ef8ae51409efb60d286ae01c0c94cf2b5f8bc85da6f": {
-    "nodeId": "6924:85787",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Responsiveness overview with numbered callouts, colour-coded by area: orange for Top Bar Items, blue for Nav Bar Items, purple for Mega Menu Items, green for the Utility Menu. The upper part, \"Desktop (breakpoint l & xl)\", shows the full header with the mega menu and the \"STIHL World\" popover open (callouts 1 top bar, 2 nav bar, 3 mega menu, 4 utility menu). The lower part, \"Tablet and Mobile (breakpoint s & m)\", shows the header with only Cart and Login visible (1a) next to the \"Menu\" button (4a), the \"2nd level (Mobile Menu open)\" with nav bar items (2) and the moved top bar items STIHL World, Dealer, Wishlist and Contact (1b), the \"3rd level (Mobile Menu open - Drilldown 1)\" and \"4th level (Mobile Menu open - Drilldown 2)\" with the mega menu levels (3a, 3b), and a \"Dialog\" titled \"STIHL World\" opened from the STIHL World item."
   },
   "d5e6830f22c240880b69fa3c8a01923d6394c5df0e2528d644250ddec64051fc": {
     "nodeId": "13494:38914",
@@ -834,11 +644,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Five keyboard interaction examples, each with a key label above a menu: \"Tab\" (\"Move to next focusable element:\") moves focus from Sawing and cutting to Mowing and planting; \"Tab\" + \"Shift\" (\"Move to previous focusable element:\") moves focus back from Mowing and planting to Sawing and cutting; \"Arrow left\" or \"Arrow right\" and \"Arrow down\" or \"Arrow up\" (\"Switch between levels + items:\") move focus between the left column and the right column (to Chainsaws and Power Saws) and between items; \"Enter\" (\"Open Utility Menu with:\") moves focus from the Products nav item into the dashed menu area; \"Esc\" (\"Close Utility Menu with:\") closes the open menu, with an arrow pointing out of the menu to a close mark."
   },
-  "e61a4a6eca9045862ed67f92d531cfc81ae7afbfb86891dbc88653188dcc940b": {
-    "nodeId": "7446:41855",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Four keyboard interaction diagrams. \"Move to next focusable element\" with the key Tab: focus moves from \"STIHL sustainability strategy\" to \"Education and people\" in a dropdown menu. \"Move to previous focusable element\" with Tab + Shift: focus moves back from \"Education and people\" to \"STIHL sustainability strategy\". \"Open Utility Menu with\" Space or Enter: with focus on the nav bar item \"Products\", an arrow points to the menu area that opens below it. \"Close Utility Menu with\" Esc: with the \"Products\" menu open and \"Sawing and cutting\" focused in the list (\"Mowing and planting\", \"Cleaning and clearing\", \"Garden size\", \"Offers and promotions\", \"Merchandise\", \"All products\"), an arrow points to a close (x) symbol."
-  },
   "e64d550e91ac9290611a9394ca572c101e419c5d0ecce81754aed9cee48cb401": {
     "nodeId": "6885:69223",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -853,16 +658,6 @@
     "nodeId": "7624:39905",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Four stacked states of the navigation scroll behavior, each a white frame with colored bars labeled \"Top Bar\" and \"Nav Bar\". Callout 1 shows Top Bar above Nav Bar at the page top; callout 2 shows only the Top Bar after scrolling down (mouse icon with a downward double chevron); callout 3 shows Top Bar and Nav Bar again after scrolling up (upward double chevron above a mouse icon); callout 4 shows Top Bar and Nav Bar in the final state."
-  },
-  "ee543ad714eeaf21e77a293673125c3db3496c7340f233183c34ee8a19965fae": {
-    "nodeId": "7391:43896",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Responsive behavior of the Sidebar Menu with a Nav Bar, with blue numbered callouts. Under \"Desktop (breakpoint l & xl)\": callout 1 marks the Top Bar items (\"Notifications\", \"Wishlist\", \"English\", the open \"STIHL World\" item and \"MM\" avatar), callout 2 the blue Nav Bar (\"Products\", \"Accessories\", \"Professionals\", \"Advice\", \"Support\"), callout 3 the purple sidebar below it (\"Fleet Management\" with \"Equipment\", \"Filtered lists\", \"List 1\" selected, \"Connected Hub\", \"Energy Evaluation\", \"Organization\" entries), and callout 4 the green \"STIHL World\" Utility Menu popover with its app links and \"All Services & Apps\". Under \"Tablet and Mobile (breakpoint s & m)\": \"1st level (Mobile Menu closed)\" shows \"STIHL World\" and \"MM\" (1a) and the \"Menu\" button (4a); \"2nd level (Mobile Menu open)\" lists the Nav Bar items \"Products\", \"Accessories\", \"Professionals\", \"Advice\" and \"Support\" with chevrons (2 and 5) and the relocated \"English\", \"Wishlist\" and \"Notifications\" in a salmon block (1b); \"3rd level (Mobile Menu open - Drilldown)\" opens \"Products\" under a \"Main Menu\" back arrow and shows the sidebar content (5, 3a), with callout 4 at the top right of the open menu panels; and a \"Dialog\" with the \"STIHL World\" links opens from \"STIHL World\" via an arrow (3)."
-  },
-  "f02cc81abcfc543538c75db923392824502fa5290ff43b9438b856c27da7f8ea": {
-    "nodeId": "7827:42668",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Mobile menu combining both variants. \"Level 1 (Drilldown)\" shows a close button, bold \"Category 1\" to \"Category 5\" with right chevrons, a divider and three \"Top Bar Item\" entries with icons. \"Level 2 (List)\" shows the back button \"Main Menu\", the close button, the main title \"Category 1\", a \"Group Title\" with an active \"Label\", an expanded \"Accordion\" (badge \"123\") with two \"Label\" items, a bold \"Label\", a divider and a second \"Group Title\" with two bold \"Label\" items."
   },
   "f0f53e72e9575cdf48e3d2acc06a2dfd480c653445fcbece83e16844f171f0c0": {
     "nodeId": "7366:46192",
@@ -908,11 +703,6 @@
     "nodeId": "7673:39283",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "The STIHL logo with the brand add-on title \"This is a Platform name\", each outlined in purple as a separate link target: \"Link 1\" for the logo and \"Link 2\" for the add-on title. Both are linkable, and they should preferably share the same destination."
-  },
-  "f6769f5b204c1a7a261b8b7ee081cb76d9e764b32eb62e96b168488662941f07": {
-    "nodeId": "7422:45483",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Four mobile screens of the Dropdown Navigation with Utility Menu items. The \"Header\" shows the STIHL \"CORPORATE\" logo, a \"Search Site\" field and a \"Menu\" button. The \"Mobile Menu\" lists \"About STIHL\", \"Sustainability\", \"Careers\", \"STIHL Journal\" and \"Press\" with chevrons, and \"English\" and \"Contact\" below a divider. The \"Mobile Menu – Drilldown\" shows \"Sustainability\" with its seven sub-entries under a \"Main Menu\" back arrow. The \"Dialog\" opens over the Mobile Menu after tapping \"English\" and is titled \"Language\", with a search input, the group \"Global Sites\" (Global / English, Español, Français, Portugals) and the group \"Local Sites\" with \"Deutschland / Deutsch\" selected and \"Argentina / Español\"."
   },
   "f6e892dd592e264efcc1fc9413a4035170a549c92d1f97d8accc8492a1d826b9": {
     "nodeId": "13494:38411",
