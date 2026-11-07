@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 35223:10505
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:24:38.365Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-07T14:22:23.897Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=35223-10505
 ---
 
@@ -337,11 +337,9 @@ _Figure: Popover used for additional guidance in the STIHL advisor "Schneidwerkz
 
 _Figure: Popover variants, each a rectangular container with a "Placeholder" content slot. "arrow: false, color: white" has no arrow. "arrow: true, color: white" and "arrow: true, color: grey" each show a grid of "arrow placement" (below, above, left, right) by "arrow alignment" (start, center, end), with the small arrow on the matching edge and corner position._
 
-> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
-
 ### Further guidelines
 
-[Storybook documentation](https://main--63440bbb95889041542a5ba3.chromatic.com/?path=/docs/components-popover--documentation)
+[Storybook documentation](https://main--63440bbb95889041542a5ba3.chromatic.com/?path=/docs/components-notification--documentation&globals=backgrounds.name:!undefined;backgrounds.value:!undefined)
 
 [Decision tree](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26738-47603)
 

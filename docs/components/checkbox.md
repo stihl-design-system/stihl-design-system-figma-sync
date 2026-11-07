@@ -15,10 +15,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 1017:2316
-figmaVersion: "2418039224414387070"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T21:32:45.319Z
+figmaVersion: "2418673789211182393"
+figmaVersionLabel: "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer"
+figmaVersionCreatedAt: 2026-11-06T08:58:38Z
+syncedAt: 2026-11-07T14:21:35.813Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1017-2316
 ---
 
@@ -35,8 +35,6 @@ sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1017-2316
 ![Checkbox](checkbox/checkbox-1017-2373.png)
 
 _Figure: Shows system-feedback (type=error); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false); checkbox (system feedback, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false); checkbox (label, system feedback, label=Checkbox Label, state=default, checked=true, indeterminate=false, invalid=false); checkbox (system feedback, label=Checkbox Label, state=default, checked=true, indeterminate=false, invalid=false); checkbox (label, system feedback, label=Checkbox Label, state=default, checked=false, indeterminate=true, invalid=false); checkbox (system feedback, label=Checkbox Label, state=default, checked=false, indeterminate=true, invalid=false); checkbox (label=Checkbox Label, label, system feedback, state=default, checked=false, indeterminate=false, invalid=true); checkbox (label=Checkbox Label, label, state=default, checked=false, indeterminate=false, invalid=true). Text in the figure: "Checkbox", "default", "hover/pressed", "focus", "disabled", "Checkbox Label", "System Feedback Message", "checked false /indeterminate false", "checked true", "indeterminate true", "invalid true", "checked false", "true", "false", "Show Label", "Show System Feedback"._
-
-> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 
@@ -180,9 +178,7 @@ Overview:
 
 ![Checkbox Group](checkbox/checkbox-group-5596-5885.png)
 
-_Figure: Shows checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false); checkbox-group (children=\[object Object\], legend=Checkbox Group Legend, description=\[object Object\], invalid, legend, description, direction=vertical); checkbox-group (description=\[object Object\], children=\[object Object\], legend=Checkbox Group Legend, legend, invalid, description, direction=horizontal). Text in the figure: "Checkbox Group", "vertical", "horizontal", "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label", "invalid true", "System Feedback Message"._
-
-> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
+_Figure: Shows checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false); checkbox-group (legend=Checkbox Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., invalid, legend, hint, direction=vertical); checkbox-group (legend=Checkbox Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., invalid, hint, direction=horizontal). Text in the figure: "Checkbox Group", "vertical", "horizontal", "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label", "invalid true", "System Feedback Message"._
 
 ### Further guidelines
 
@@ -216,7 +212,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Checkbox group](checkbox/checkbox-group-5665-767.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); checkbox-group (children=\[object Object\], legend=Checkbox Group Legend, description=\[object Object\], ℹ️ info-button, invalid, legend, description, direction=vertical); annotation-circle (number=3, type=right, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=4, type=right, color=blue); annotation-circle (number=5, type=right, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "System Feedback Message", "Checkbox Label"._
+_Figure: Shows annotation-circle (number=1, type=top, color=blue); checkbox-group (legend=Checkbox Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., ℹ️ info-button, invalid, legend, hint, direction=vertical); annotation-circle (number=3, type=right, color=blue); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=4, type=right, color=blue); annotation-circle (number=5, type=right, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "System Feedback Message", "Checkbox Label"._
 
 ### Direction
 
@@ -226,7 +222,7 @@ In case the amount of checkbox is (below) 3 and the copy is short, consider a ho
 
 ![Horizontal](checkbox/horizontal-5665-780.png)
 
-_Figure: Shows checkbox-group (children=\[object Object\], description=\[object Object\], legend=Checkbox Group Legend, legend, direction=horizontal). Text in the figure: "Checkbox Group Legend", "Checkbox Label"._
+_Figure: Shows checkbox-group (legend=Checkbox Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., direction=horizontal). Text in the figure: "Checkbox Group Legend", "Checkbox Label"._
 
 #### Vertical
 
@@ -234,7 +230,7 @@ In case of longer copy, use vertical direction.
 
 ![Vertical](checkbox/vertical-5665-788.png)
 
-_Figure: Shows checkbox-group (children=\[object Object\], legend=Checkbox Group Legend, description=\[object Object\], legend, description, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label lorem ipsum dolor sit amet, consectetur"._
+_Figure: Shows checkbox-group (legend=Checkbox Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, hint, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label lorem ipsum dolor sit amet, consectetur"._
 
 ## Content and Assets
 
@@ -246,7 +242,7 @@ The use of checkbox groups is very versatile, examples are:
 
 ![Content and Assets](checkbox/content-and-assets-5665-1018.png)
 
-_Figure: Shows checkbox-group (children=\[object Object\], legend=Checkbox Group Legend, description=\[object Object\], legend, description, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._
+_Figure: Shows checkbox-group (legend=Checkbox Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, hint, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._
 
 ### Content design
 
@@ -256,7 +252,7 @@ E.g. format the first words bold, following by an ‘:’.
 
 ![Content design](checkbox/content-design-14930-8871.png)
 
-_Figure: Do example. Shows checkbox-group (children=\[object Object\], legend=Which of the following characteristics do you believe contribute significantly to the creation of your garden?, description=\[object Object\], legend, description, direction=vertical). Text in the figure: "Which of the following characteristics do you believe contribute significantl...", "Select all that apply", "Plant Diversity: Variety of plants ensuring seasonal interest and visual appeal.", "Design and Layout: Structured, balanced layout for organized, aesthetic garde...", "Functional Areas: Designated sections for flowers, vegetables, and other plants.", "Water Features: Ponds, fountains add visual, auditory interest; promote relax...", "Wildlife Attraction: Bird feeders, insect hotels enhance biodiversity, garden..."._
+_Figure: Do example. Shows checkbox-group (legend=Which of the following characteristics do you believe contribute significantly to the creation of your garden?, hint=Select all that apply, legend, hint, direction=vertical). Text in the figure: "Which of the following characteristics do you believe contribute significantl...", "Select all that apply", "Plant Diversity: Variety of plants ensuring seasonal interest and visual appeal.", "Design and Layout: Structured, balanced layout for organized, aesthetic garde...", "Functional Areas: Designated sections for flowers, vegetables, and other plants.", "Water Features: Ponds, fountains add visual, auditory interest; promote relax...", "Wildlife Attraction: Bird feeders, insect hotels enhance biodiversity, garden..."._
 
 ### Mixed label lengths
 
@@ -264,7 +260,7 @@ Don’t mix long and short checkbox labels.
 
 ![Mixed label lengths](checkbox/mixed-label-lengths-14930-8911.png)
 
-_Figure: Don't example. Shows checkbox-group (children=\[object Object\], legend=Checkbox Group Legend, description=\[object Object\], legend, direction=vertical). Text in the figure: "Checkbox Group Legend", "Checkbox Label", "Checkbox Label: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras..."._
+_Figure: Don't example. Shows checkbox-group (legend=Checkbox Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, direction=vertical). Text in the figure: "Checkbox Group Legend", "Checkbox Label", "Checkbox Label: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras..."._
 
 ### Info Button
 
@@ -274,7 +270,7 @@ Popover content should be **limited to supplementary, non-critical information**
 
 ![Info Button](checkbox/info-button-39621-8498.png)
 
-_Figure: Shows checkbox-group (children=\[object Object\], legend=Product name, description=\[object Object\], ℹ️ info-button, legend, direction=vertical); cursor (type=pointer). Text in the figure: "You will usually find the Product name in the location shown in the illustrat...", "Product name", "FSA 45", "FSA 50", "FSA 70", "FSA 135", "Checkbox Label"._
+_Figure: Shows checkbox-group (legend=Product name, hint=Choose the Name , ℹ️ info-button, legend, direction=vertical); cursor (type=pointer). Text in the figure: "You will usually find the Product name in the location shown in the illustrat...", "Product name", "FSA 45", "FSA 50", "FSA 70", "FSA 135", "Checkbox Label"._
 
 **Don’t use the popover for critical or required information**, use the hint instead as critical information should net be hidden
 
@@ -282,7 +278,7 @@ For mor Guidance on this topic see the [Popover documentation](https://www.figma
 
 ![Info Button](checkbox/info-button-39621-8516.png)
 
-_Figure: Don't example. Shows popover (children=\[object Object\], arrow=true, arrow placement=below, arrow alignment=center, color=white); checkbox-group (children=\[object Object\], legend=Product name, description=\[object Object\], ℹ️ info-button, legend, direction=vertical); cursor (type=pointer). Text in the figure: "Select all that apply", "Product name", "FSA 45", "FSA 50", "FSA 70", "FSA 135", "Checkbox Label"._
+_Figure: Don't example. Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); checkbox-group (legend=Product name, hint=Choose the Name , ℹ️ info-button, legend, direction=vertical); cursor (type=pointer). Text in the figure: "Select all that apply", "Product name", "FSA 45", "FSA 50", "FSA 70", "FSA 135", "Checkbox Label"._
 
 ## Behavior
 
@@ -298,7 +294,7 @@ The error message should be **aligned with the checkbox.**
 
 ![System feedback](checkbox/system-feedback-5665-1294.png)
 
-_Figure: Shows checkbox-group (children=\[object Object\], legend=Checkbox Group Legend, description=\[object Object\], invalid, legend, description, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Choose at least 1 item in the list", "Lorem ipsum dolor sit amet, consectetur adipiscing"._
+_Figure: Shows checkbox-group (legend=Checkbox Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., invalid, legend, hint, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Choose at least 1 item in the list", "Lorem ipsum dolor sit amet, consectetur adipiscing"._
 
 ### Radio Button vs. Checkbox
 
@@ -310,11 +306,11 @@ Checkboxes allow the user to select multiple items in a set, whereas radio butto
 
 ![Radio Button vs. Checkbox](checkbox/radio-button-vs-checkbox-5665-1332.png)
 
-_Figure: Do example. Shows radio-group (description=\[object Object\], item 5, legend, legend=Radio Group Legend, item 4, description, orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label"._
+_Figure: Do example. Shows radio-group (item 5, legend, legend=Radio Group Legend, item 4, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, show title=false). Text in the figure: "Radio Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Radio Label"._
 
 ![Radio Button vs. Checkbox](checkbox/radio-button-vs-checkbox-5665-1337.png)
 
-_Figure: Do example. Shows checkbox-group (children=\[object Object\], legend=Checkbox Group Legend, description=\[object Object\], legend, description, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._
+_Figure: Do example. Shows checkbox-group (legend=Checkbox Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, hint, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._
 
 ### Click area
 
@@ -322,7 +318,7 @@ The label must be clickable and trigger the activation.
 
 ![Click area](checkbox/click-area-14930-8797.png)
 
-_Figure: Shows checkbox-group (children=\[object Object\], legend=Checkbox Group Legend, description=\[object Object\], legend, description, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._
+_Figure: Shows checkbox-group (legend=Checkbox Group Legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, hint, direction=vertical). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._
 
 ## Currently used variations ⚠️ The following example is not part of the code component
 
@@ -332,4 +328,4 @@ In case the amount of checkboxes is high and the copy is short, consider a horiz
 
 ![Horizontal + vertical](checkbox/horizontal-vertical-5698-11629.png)
 
-_Figure: Shows checkbox-group (children=\[object Object\], description=\[object Object\], legend=Checkbox Group Legend, legend, description, direction=horizontal); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false); checkbox (label, system feedback, label=Checkbox Label, state=default, checked=true, indeterminate=false, invalid=false). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._
+_Figure: Shows checkbox-group (legend=Checkbox Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, direction=horizontal); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false); checkbox (label, system feedback, label=Checkbox Label, state=default, checked=true, indeterminate=false, invalid=false). Text in the figure: "Checkbox Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._

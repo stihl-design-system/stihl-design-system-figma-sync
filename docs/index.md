@@ -237,7 +237,7 @@ Keywords: typography, tokens, font size, line height.
 `DSAccordion` from `@stihl-design-system/components`. Keywords: accordion, disclosure, expandable section, details.
 
 - Document: [components/accordion.md](components/accordion.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=17260-166) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=17260-166) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Accordion single](components/accordion.md#accordion-single)
     - [Further guidelines](components/accordion.md#further-guidelines)
@@ -273,7 +273,7 @@ Keywords: typography, tokens, font size, line height.
 `DSBreadcrumb` from `@stihl-design-system/components`. Keywords: breadcrumb, navigation path, hierarchy.
 
 - Document: [components/breadcrumb.md](components/breadcrumb.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=23527-3393) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=23527-3393) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Breadcrumb](components/breadcrumb.md#breadcrumb-1)
     - [Further guidelines](components/breadcrumb.md#further-guidelines)
@@ -300,7 +300,7 @@ Keywords: typography, tokens, font size, line height.
 `DSButton`, `DSButtonRound`, `DSFloatingActionButton` from `@stihl-design-system/components`. Keywords: button, round button, fab, floating action button, cta.
 
 - Document: [components/button.md](components/button.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=162-126) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=162-126) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Button](components/button.md#button-1)
   - [Overview](components/button.md#overview)
@@ -364,7 +364,7 @@ Keywords: typography, tokens, font size, line height.
 `DSLinkCard`, `DSActionCard`, `DSActionCardGroup` from `@stihl-design-system/components`. Keywords: card, link card, action card, product card, selectable card, tile.
 
 - Document: [components/card.md](components/card.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11591) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11591) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Card Types by Primary Interaction](components/card.md#card-types-by-primary-interaction)
   - [Touchscreen Device Considerations](components/card.md#touchscreen-device-considerations)
@@ -526,7 +526,7 @@ Keywords: typography, tokens, font size, line height.
 `DSCarousel` from `@stihl-design-system/components`. Keywords: carousel, slider, slideshow, gallery.
 
 - Document: [components/carousel.md](components/carousel.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11524) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11524) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Carousel](components/carousel.md#carousel-1)
     - [Further guidelines](components/carousel.md#further-guidelines)
@@ -581,7 +581,7 @@ Keywords: typography, tokens, font size, line height.
 `DSCheckbox`, `DSCheckboxGroup` from `@stihl-design-system/components`. Keywords: checkbox, checkbox group, multi select, form.
 
 - Document: [components/checkbox.md](components/checkbox.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1017-2316) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1017-2316) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Checkbox](components/checkbox.md#checkbox-1)
     - [Further guidelines](components/checkbox.md#further-guidelines)
@@ -623,7 +623,7 @@ Keywords: typography, tokens, font size, line height.
 `DSChipGroup`, `DSChip` from `@stihl-design-system/components`. Keywords: chip, chip group, filter chip, tag.
 
 - Document: [components/chip-group.md](components/chip-group.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=18691-978) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=18691-978) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Chip Group](components/chip-group.md#chip-group-1)
     - [Further guidelines](components/chip-group.md#further-guidelines)
@@ -658,7 +658,7 @@ Keywords: typography, tokens, font size, line height.
 `DSCombobox` from `@stihl-design-system/components`. Keywords: combobox, autocomplete, typeahead, searchable select.
 
 - Document: [components/combobox.md](components/combobox.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=2659-3954) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=2659-3954) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Combobox](components/combobox.md#combobox-1)
     - [Further guidelines](components/combobox.md#further-guidelines)
@@ -689,7 +689,7 @@ Keywords: typography, tokens, font size, line height.
 `DSDialog` from `@stihl-design-system/components`. Keywords: dialog, modal, overlay, confirmation.
 
 - Document: [components/dialog.md](components/dialog.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=14115-4051) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=14115-4051) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Dialog](components/dialog.md#dialog-1)
     - [Component](components/dialog.md#component)
@@ -722,7 +722,7 @@ Keywords: typography, tokens, font size, line height.
 Keywords: divider, separator, rule, border.
 
 - Document: [components/divider.md](components/divider.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11725) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11725) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Divider](components/divider.md#divider-1)
 
@@ -731,7 +731,7 @@ Keywords: divider, separator, rule, border.
 `DSDrawer` from `@stihl-design-system/components`. Keywords: drawer, side panel, off-canvas, sheet.
 
 - Document: [components/drawer.md](components/drawer.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=16282-9317) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=16282-9317) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Drawer](components/drawer.md#drawer-1)
     - [Further guidelines](components/drawer.md#further-guidelines)
@@ -762,7 +762,7 @@ Keywords: divider, separator, rule, border.
 `DSFlag` from `@stihl-design-system/components`. Keywords: flag, badge, label, status marker.
 
 - Document: [components/flag.md](components/flag.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=19511-2443) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=19511-2443) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Flag](components/flag.md#flag-1)
     - [Further guidelines](components/flag.md#further-guidelines)
@@ -793,7 +793,7 @@ Keywords: divider, separator, rule, border.
 `DSInput`, `DSInputPassword`, `DSInputSearch`, `DSInputNumber`, `DSSlider` from `@stihl-design-system/components`. Keywords: input, text field, password, search, number, slider, form.
 
 - Document: [components/input.md](components/input.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1591-2) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1591-2) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Input](components/input.md#input-1)
     - [Further guidelines](components/input.md#further-guidelines)
@@ -927,7 +927,7 @@ Keywords: divider, separator, rule, border.
 `DSLink`, `DSLinkButton` from `@stihl-design-system/components`. Keywords: link, inline link, standalone link, link button, anchor.
 
 - Document: [components/link.md](components/link.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26711-8034) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26711-8034) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Link](components/link.md#link-1)
   - [Overview](components/link.md#overview)
@@ -984,7 +984,7 @@ Keywords: divider, separator, rule, border.
 `DSLogo` from `@stihl-design-system/components`. Keywords: logo, brand, favicon, 100 year logo.
 
 - Document: [components/logo.md](components/logo.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=9050-2) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=9050-2) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Logo](components/logo.md#logo-1)
     - [Further guidelines](components/logo.md#further-guidelines)
@@ -1006,7 +1006,7 @@ Keywords: divider, separator, rule, border.
 `DSNotification` from `@stihl-design-system/components`. Keywords: notification, alert, inline message, system feedback.
 
 - Document: [components/notification.md](components/notification.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=7251-8) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=7251-8) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Notification](components/notification.md#notification-1)
     - [Further guidelines](components/notification.md#further-guidelines)
@@ -1035,7 +1035,7 @@ Keywords: divider, separator, rule, border.
 `DSPagination` from `@stihl-design-system/components`. Keywords: pagination, pager, page navigation.
 
 - Document: [components/pagination.md](components/pagination.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11456) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11456) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Pagination](components/pagination.md#pagination-1)
     - [Alternative Loading Patterns](components/pagination.md#alternative-loading-patterns)
@@ -1062,7 +1062,7 @@ Keywords: divider, separator, rule, border.
 `DSPopover` from `@stihl-design-system/components`. Keywords: popover, flyout, contextual overlay.
 
 - Document: [components/popover.md](components/popover.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=35223-10505) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=35223-10505) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Formatting and Construction](components/popover.md#formatting-and-construction)
     - [Anatomy](components/popover.md#anatomy)
@@ -1097,7 +1097,7 @@ Keywords: divider, separator, rule, border.
 `DSRadioGroup`, `DSRadio` from `@stihl-design-system/components`. Keywords: radio, radio group, radio with image, single select, form.
 
 - Document: [components/radio-group.md](components/radio-group.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=860-2728) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=860-2728) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Radio Group](components/radio-group.md#radio-group-1)
     - [Further guidelines](components/radio-group.md#further-guidelines)
@@ -1109,6 +1109,7 @@ Keywords: divider, separator, rule, border.
     - [Sizing](components/radio-group.md#sizing)
     - [Images](components/radio-group.md#images)
   - [Content and Assets](components/radio-group.md#content-and-assets)
+    - [Amount of radio buttons](components/radio-group.md#amount-of-radio-buttons)
     - [Overflow behaviour](components/radio-group.md#overflow-behaviour)
     - [Long texts](components/radio-group.md#long-texts)
     - [Required and optional indicators](components/radio-group.md#required-and-optional-indicators)
@@ -1141,7 +1142,7 @@ Keywords: divider, separator, rule, border.
 `DSSelect` from `@stihl-design-system/components`. Keywords: select, dropdown, form.
 
 - Document: [components/select.md](components/select.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=8139-4888) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=8139-4888) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Select](components/select.md#select-1)
     - [Further guidelines](components/select.md#further-guidelines)
@@ -1165,7 +1166,7 @@ Keywords: divider, separator, rule, border.
 `DSSkeleton` from `@stihl-design-system/components`. Keywords: skeleton, loading placeholder, shimmer.
 
 - Document: [components/skeleton.md](components/skeleton.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=49465-7294) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=49465-7294) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Skeleton](components/skeleton.md#skeleton-1)
     - [Related components and patterns](components/skeleton.md#related-components-and-patterns)
@@ -1194,7 +1195,7 @@ Keywords: divider, separator, rule, border.
 `DSSkipToContent` from `@stihl-design-system/components`. Keywords: skip link, skip to content, accessibility, keyboard navigation.
 
 - Document: [components/skip-link.md](components/skip-link.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=16333-2371) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=16333-2371) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Skip Link](components/skip-link.md#skip-link-1)
     - [Further guidelines](components/skip-link.md#further-guidelines)
@@ -1208,7 +1209,7 @@ Keywords: divider, separator, rule, border.
 `DSSpinner` from `@stihl-design-system/components`. Keywords: spinner, loading indicator, progress.
 
 - Document: [components/spinner.md](components/spinner.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26-3) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26-3) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Spinner](components/spinner.md#spinner-1)
     - [Further guidelines](components/spinner.md#further-guidelines)
@@ -1220,7 +1221,7 @@ Keywords: divider, separator, rule, border.
 `DSStepper` from `@stihl-design-system/components`. Keywords: stepper, wizard, progress steps, multi step.
 
 - Document: [components/stepper.md](components/stepper.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-10497) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-10497) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Stepper](components/stepper.md#stepper-1)
     - [Further guidelines](components/stepper.md#further-guidelines)
@@ -1261,7 +1262,7 @@ Keywords: divider, separator, rule, border.
 `DSSwitch` from `@stihl-design-system/components`. Keywords: switch, toggle, on off.
 
 - Document: [components/switch.md](components/switch.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=513-2) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=513-2) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Switch](components/switch.md#switch-1)
     - [Further guidelines](components/switch.md#further-guidelines)
@@ -1288,7 +1289,7 @@ Keywords: divider, separator, rule, border.
 `DSTabs`, `DSNavigationTabs` from `@stihl-design-system/components`. Keywords: tabs, in-page tabs, navigation tabs, tab bar.
 
 - Document: [components/tabs.md](components/tabs.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=24564-312) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=24564-312) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Tabs in-page](components/tabs.md#tabs-in-page)
     - [Further guidelines](components/tabs.md#further-guidelines)
@@ -1337,7 +1338,7 @@ Keywords: divider, separator, rule, border.
 `DSTextarea` from `@stihl-design-system/components`. Keywords: textarea, multiline input, form.
 
 - Document: [components/textarea.md](components/textarea.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=4937-4402) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=4937-4402) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Textarea](components/textarea.md#textarea-1)
     - [Further guidelines](components/textarea.md#further-guidelines)
@@ -1359,7 +1360,7 @@ Keywords: divider, separator, rule, border.
 `DSToast`, `DSToastProvider` from `@stihl-design-system/components`. Keywords: toast, snackbar, transient message, system feedback.
 
 - Document: [components/toast.md](components/toast.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=8844-4923) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=8844-4923) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Toast](components/toast.md#toast-1)
     - [Further guidelines](components/toast.md#further-guidelines)
@@ -1390,7 +1391,7 @@ Keywords: divider, separator, rule, border.
 Keywords: tooltip, hint, info bubble.
 
 - Document: [components/tooltip.md](components/tooltip.md)
-- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=36194-1244) (version "Components published", 2026-11-04)
+- Figma: [Core Components](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=36194-1244) (version "Reset Version: 1.2.13 | 14.10.2026 | CW39 Erdbohrer", 2026-11-06)
 - Chapters:
   - [Tooltip](components/tooltip.md#tooltip-1)
     - [Further guidelines](components/tooltip.md#further-guidelines)
@@ -1426,7 +1427,7 @@ Keywords: tooltip, hint, info bubble.
 `DSBanner` from `@stihl-design-system/components`. Keywords: banner, announcement, page level message.
 
 - Document: [patterns/banner.md](patterns/banner.md)
-- Figma: [Web Pattern Library](https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7171-9055) (version "Bug Fix: popover slot implementation / content loss", 2026-11-04)
+- Figma: [Web Pattern Library](https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7171-9055) (version "Reset Version: 1.2.8 | 30.06.CW24 Rasentrimmer", 2026-11-06)
 - Chapters:
   - [Banner](patterns/banner.md#banner-1)
     - [Further guidelines](patterns/banner.md#further-guidelines)
@@ -1455,7 +1456,7 @@ Keywords: tooltip, hint, info bubble.
 `DSFieldset` from `@stihl-design-system/components`. Keywords: fieldset, form group, legend, form.
 
 - Document: [patterns/fieldset.md](patterns/fieldset.md)
-- Figma: [Web Pattern Library](https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=8-154) (version "Bug Fix: popover slot implementation / content loss", 2026-11-04)
+- Figma: [Web Pattern Library](https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=8-154) (version "Reset Version: 1.2.8 | 30.06.CW24 Rasentrimmer", 2026-11-06)
 - Chapters:
   - [Fieldset](patterns/fieldset.md#fieldset-1)
     - [Further guidelines](patterns/fieldset.md#further-guidelines)
@@ -1482,7 +1483,7 @@ Keywords: tooltip, hint, info bubble.
 `DSHeader`, `DSMegaMenu`, `DSTopBar` from `@stihl-design-system/components`. Keywords: navigation, header, mega menu, dropdown menu, top bar, mobile navigation.
 
 - Document: [patterns/navigation.md](patterns/navigation.md)
-- Figma: [Web Pattern Library](https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=5381-18) (version "Bug Fix: popover slot implementation / content loss", 2026-11-04)
+- Figma: [Web Pattern Library](https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=5381-18) (version "Reset Version: 1.2.8 | 30.06.CW24 Rasentrimmer", 2026-11-06)
 - Chapters:
   - [Navigation: Introduction](patterns/navigation.md#navigation-introduction)
     - [Navigation Structural Patterns](patterns/navigation.md#navigation-structural-patterns)
@@ -1689,7 +1690,7 @@ Keywords: tooltip, hint, info bubble.
 `DSTitle` from `@stihl-design-system/components`. Keywords: title, page title, headline, subtitle.
 
 - Document: [patterns/title.md](patterns/title.md)
-- Figma: [Web Pattern Library](https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7-19) (version "Bug Fix: popover slot implementation / content loss", 2026-11-04)
+- Figma: [Web Pattern Library](https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7-19) (version "Reset Version: 1.2.8 | 30.06.CW24 Rasentrimmer", 2026-11-06)
 - Chapters:
   - [Title](patterns/title.md#title-1)
     - [Related elements](patterns/title.md#related-elements)
