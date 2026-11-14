@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 17260:166
-figmaVersion: "2418039224414387070"
+figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T21:32:03.435Z
+figmaVersionCreatedAt: 2026-11-06T10:45:41Z
+syncedAt: 2026-11-14T04:27:44.308Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=17260-166
 ---
 
@@ -39,8 +39,6 @@ Overview:
 ![Accordion single](accordion/accordion-single-17260-2298.png)
 
 _Figure: Matrix of the single accordion with three columns for Size: medium, Size: small and Size: extra-small and rows for the states enabled, hover (gray background) and focus (dark outline). The rows are grouped by expansion indicator, flush and expanded: right with flush false, right with flush true, left with flush false and left with flush true, each collapsed (expanded: false) and expanded (expanded: true). Every accordion shows the summary "Summary of the accordion content" with a chevron on the right or a caret on the left, and the expanded ones show a purple dashed "Placeholder" content area below the header._
-
-> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 
