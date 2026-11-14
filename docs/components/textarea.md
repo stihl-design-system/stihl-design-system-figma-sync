@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 4937:4402
-figmaVersion: "2418039224414387070"
+figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:26:24.071Z
+figmaVersionCreatedAt: 2026-11-06T10:45:41Z
+syncedAt: 2026-11-14T04:30:13.493Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=4937-4402
 ---
 

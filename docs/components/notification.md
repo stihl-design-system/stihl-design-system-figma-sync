@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 7251:8
-figmaVersion: "2418039224414387070"
+figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:24:15.197Z
+figmaVersionCreatedAt: 2026-11-06T10:45:41Z
+syncedAt: 2026-11-14T04:29:30.626Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=7251-8
 ---
 
@@ -37,8 +37,6 @@ Overview:
 ![Notification](notification/notification-7251-17556.png)
 
 _Figure: Eight notifications in two columns, one per type (success green, error red, warning yellow, info gray) in rows, each with the text "This is a notification message that guides the user.", a close icon, an outline "Button" and a ghost "Button". The left column shows each type with its type icon, the right column without an icon._
-
-> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 
