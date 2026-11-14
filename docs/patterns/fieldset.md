@@ -14,10 +14,10 @@ figmaFile: Web Pattern Library
 figmaProject: 03. Platform Libraries
 figmaFileKey: Ie2r0R9QwjEc7O3nrFbXhV
 figmaNodeId: 8:154
-figmaVersion: "2418090261531524003"
-figmaVersionLabel: "Bug Fix: popover slot implementation / content loss"
-figmaVersionCreatedAt: 2026-11-04T18:34:21Z
-syncedAt: 2026-11-05T19:52:16.831Z
+figmaVersion: "2419476884217641914"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-08T14:09:24Z
+syncedAt: 2026-11-14T16:53:51.181Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=8-154
 ---
 
@@ -168,7 +168,7 @@ In both cases the elements are positioned within the narrow grid, that is optimi
 
 ![Mobile behavior](fieldset/mobile-behavior-8-2811.png)
 
-_Figure: Two layouts of the same fieldset on a light red column grid: "desktop-small (1024-1535px)" and "mobile (320-767px)". On desktop the heading "LEGEND" is followed by the "Radio Group Legend" with two radio labels side by side, then input fields where "Label" fields can sit next to each other (a narrow and a wide field, a wide and a narrow field) and a select with the placeholder "Select", all inside a narrow column of the grid. On mobile the same elements are stacked vertically at full width, with the radio labels listed one below the other and every input on its own row._
+_Figure: Shows building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Label, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false); building-element/select-field\_medium (Show Placeholder Text, Show System Feedback, state=default, Invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Addition to address (optional), input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Please enter the phone in the following format (e.g. +49013909023), hint, label=Phone Number (optional), input, size=medium, state=enabled, invalid=false); button (button text=Send From, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off). Text in the figure: "desktop-small (1024-1535px)", "mobile (320-767px)", "Legend", "Radio Group Legend", "Radio Label", "Label", "Select", "Addition to address (optional)", "Phone Number (optional)", "Please enter the phone in the following format (e.g. +49013909023)", "Send From"._
 
 ## Content and Assets
 
@@ -194,7 +194,7 @@ Examples
 
 ![Nesting fieldsets](fieldset/nesting-fieldsets-8-2885.png)
 
-_Figure: Nested fieldset structure with the heading "FIELDSET LEGEND HEADING STYLE" above two side-by-side inputs labelled "Label" and a single full-width "Label" input at the bottom. Callout 1 marks the pair of horizontally placed input fields, and callout 2 marks an inner group "Fieldset Legend Default Style" with a hint and five "Checkbox Label" items, a checkbox group in its own fieldset. The heading-style legend belongs to the main fieldset that spans all fields and fieldsets._
+_Figure: Shows input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Label, size=medium, state=enabled, invalid=false); annotation-cirlce (line=on, position=right). Callouts 1, 2. Text in the figure: "Fieldset Legend Heading Style", "Label", "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Checkbox Label"._
 
 ### Required indicator
 
@@ -260,4 +260,4 @@ This is an example of four following field sets, in a checkout form.
 
 ![Checkout form](fieldset/checkout-form-8-2468.png)
 
-_Figure: Checkout form "ORDER PROCESS" with the note "\*Mandatory Information", shown on desktop-small (1024-1535px) and mobile (320-767px) over a light red column grid with the STIHL logo header. It consists of four fieldsets: "BILLING ADDRESS" (checkbox "I am a business client", Title\* radios "Mr.", "Mrs.", "other", Surname\*, Name\*, Country\* select, ZIP-Code\*, City\*, Street name\*, Street number\*, Addition to address (optional), Phone Number (optional) with the hint "Please enter the phone in the following format (e.g. +49013909023)"), "DELIVERY ADDRESS" (checkbox "Billing Address and Delivery Adress are Identical" and the same fields), "Terms of Service" (checkbox "Accept Terms and Conditions") and "Newsletter" (checked checkbox "Sign up for the Newsletter"). On desktop radios and short fields such as ZIP-Code with City and Street name with Street number sit side by side, on mobile every element is stacked vertically._
+_Figure: Shows title (title text=Order Process, size=xl, viewport=desktop); building-element-radio (label=Mr., label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (label=Mrs., label, type=label, state=enabled, checked=false, invalid=false); building-element-radio (label=other, label, type=label, state=enabled, checked=false, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Surname\*, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Name\*, input, size=medium, state=enabled, invalid=false); building-element/select-field\_medium (Show Input Text, Show System Feedback, state=default, Invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=ZIP-Code\*, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=City\*, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., input=Input, label=Street name\*, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Street number\*, input, size=medium, state=enabled, invalid=false); input (system feedback, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., label=Addition to address (optional), input, size=medium, state=enabled, invalid=false). Text in the figure: "desktop-small (1024-1535px)", "mobile (320-767px)", "Order Process", "ƒ", "\*Mandatory Information", "Billing Address", "I am a business client", "Title\*", "Mr.", "Mrs.", "other", "Surname\*", "Name\*", "Country\*", "Input", "ZIP-Code\*", "City\*", "Street name\*", "Street number\*", "Addition to address (optional)", "Phone Number (optional)", "Please enter the phone in the following format (e.g. +49013909023)", "Delivery Address", "Billing Address and Delivery Adress are Identical"._

@@ -21,10 +21,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 1591:2
-figmaVersion: "2418039224414387070"
+figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:51:31.752Z
+figmaVersionCreatedAt: 2026-11-06T10:45:41Z
+syncedAt: 2026-11-14T16:52:10.259Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=1591-2
 ---
 
@@ -1408,7 +1408,7 @@ Popover content should be **limited to supplementary, non-critical information**
 
 ![Info Button](input/info-button-39634-11170.png)
 
-_Figure: Do example: a file upload field with the label "Label" and an info button next to it, with the pointer cursor on the button. A white popover with an arrow pointing down at the button reads "For best results, upload high-resolution images (at least 1200×800 px)", which is supplementary, non-critical information. Below is the dashed dropzone with an upload icon, "Drag and drop files here or", a "Browse files" button and "Max file size: 7 MB. Supported file types: .jpg and .png"._
+_Figure: Shows popover (arrow=true, arrow placement=below, arrow alignment=center, color=white); upload-field (ℹ️ info-button, dropzone=true, state=enabled, is invalid=false, hint-in-drop-zone=true); cursor (type=pointer). Text in the figure: "For best results, upload high-resolution images (at least 1200×800 px)", "Label", "Drag and drop files here or", "Browse files", "Max file size: 7 MB. Supported file types: .jpg and .png"._
 
 **Don’t use the popover for critical or required information**, use the hint instead. Critical information should not be hidden.
 
