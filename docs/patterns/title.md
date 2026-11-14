@@ -14,10 +14,10 @@ figmaFile: Web Pattern Library
 figmaProject: 03. Platform Libraries
 figmaFileKey: Ie2r0R9QwjEc7O3nrFbXhV
 figmaNodeId: 7:19
-figmaVersion: "2418090261531524003"
-figmaVersionLabel: "Bug Fix: popover slot implementation / content loss"
-figmaVersionCreatedAt: 2026-11-04T18:34:21Z
-syncedAt: 2026-11-05T19:52:17.623Z
+figmaVersion: "2419476884217641914"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-08T14:09:24Z
+syncedAt: 2026-11-14T16:53:52.677Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=7-19
 ---
 
@@ -92,6 +92,6 @@ The exact spacing depends on context — always prioritize clarity and readabili
 
 ![Spacing Guidelines](title/spacing-guidelines-9322-53.png)
 
-_Figure: Four page mockups with a STIHL header, the "Title Component" with stand line and a grey content area, annotated with spacing tokens. Callout 1 (top row) is the variant with breadcrumbs "Home / ... / Previous level / Current": "spacing-24" sits between header and breadcrumbs, "spacing-dynamic-m" between breadcrumbs and title, and below the title either "spacing-dynamic-xs" (left) or "spacing-0" (right, content directly below). Callout 2 (bottom row) is the variant without breadcrumbs: "spacing-dynamic-l" sits between header and title, and below the title again either "spacing-dynamic-xs" (left) or "spacing-0" (right). Measurements in the figure: 0px._
+_Figure: Shows annotation-circle (number=1, type=center, color=blue); top-bar (grid variant=main, breakpoint=l, brand add-on=false, number areas=1); spacer (type=core token, direction=vertical); breadcrumb (level 6, level 5, level 4, level 3, level 2, expanded=false); spacer (type=dynamic token, direction=vertical); title (title text=Title Component, size=xl, viewport=desktop); annotation-circle (number=2, type=center, color=blue). Measurements: 0px. Callouts 1, 2. Text in the figure: "Home", "/", "...", "Previous level", "Current", "Title Component", "ƒ", "spacing-24", "spacing-dynamic-m", "spacing-0", "spacing-dynamic-xs", "spacing-dynamic-l"._
 
 ## Examples

@@ -15,10 +15,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 18691:978
-figmaVersion: "2418039224414387070"
+figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T21:32:48.472Z
+figmaVersionCreatedAt: 2026-11-06T10:45:41Z
+syncedAt: 2026-11-14T16:51:28.514Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=18691-978
 ---
 
@@ -365,7 +365,7 @@ _Figure: Don't example. Shows combobox (dropdown, state=active/focus, invalid=fa
 
 ![Checkbox group, switch button or chip group?](chip-group/checkbox-group-switch-button-or-chip-group-19448-125.png)
 
-_Figure: Shows chip-group (lable, type=selectable, size=medium); switch (label links, Label=Battery-powered machines, state=enabled, checked=true); checkbox-group (children=\[object Object\], legend=Type of propulsion:, description=\[object Object\], legend, direction=vertical). Text in the figure: "Chip Group", "Type of propulsion:", "Battery", "Fuel", "Switch", "Battery-powered machines", "Checkbox Group"._
+_Figure: Shows chip-group (lable, type=selectable, size=medium); switch (label links, Label=Battery-powered machines, state=enabled, checked=true); checkbox-group (legend=Type of propulsion:, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., legend, direction=vertical). Text in the figure: "Chip Group", "Type of propulsion:", "Battery", "Fuel", "Switch", "Battery-powered machines", "Checkbox Group"._
 
 ### Chip group or radio group?
 
@@ -375,4 +375,4 @@ _Figure: Shows chip-group (lable, type=selectable, size=medium); switch (label l
 
 ![Chip group or radio group?](chip-group/chip-group-or-radio-group-20227-2976.png)
 
-_Figure: Shows chip-group (lable, type=selectable, size=medium); radio-group (description=\[object Object\], item 5, legend, item 3, legend=Cutting wheel diameter:, item 4, orientation=vertical, show title=false). Text in the figure: "Chip Group", "Diameter of your cutting wheel:", "230 mm", "300 mm", "250 mm", "400 mm", "Radio Group", "Cutting wheel diameter:", "350 mm"._
+_Figure: Shows chip-group (lable, type=selectable, size=medium); radio-group (item 5, legend, item 3, legend=Cutting wheel diameter:, item 4, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., orientation=vertical, show title=false). Text in the figure: "Chip Group", "Diameter of your cutting wheel:", "230 mm", "300 mm", "250 mm", "400 mm", "Radio Group", "Cutting wheel diameter:", "350 mm"._

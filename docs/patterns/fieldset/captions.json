@@ -14,11 +14,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two variants of overall system feedback for a fieldset with the legend \"Fieldset Legend Default Style\" and the invalid inputs \"Identification number\" and \"Name\" (plus a valid \"Branch\" input), each with a \"System feedback message\". Callout 1 is the inline feedback \"Invalid entries in your registration form. Please check the details below.\" below the legend; callout 2 is a Notification error summary above the fieldset with \"Invalid entries. Please check the details below.\" and the links \"Identification number not recognised.\" and \"Name is missing.\"."
   },
-  "360773eb9c304cccf7b4f7b4f41bef383b94ce3d6ffa9914cac72accbdab7949": {
-    "nodeId": "8:2811",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Two layouts of the same fieldset on a light red column grid: \"desktop-small (1024-1535px)\" and \"mobile (320-767px)\". On desktop the heading \"LEGEND\" is followed by the \"Radio Group Legend\" with two radio labels side by side, then input fields where \"Label\" fields can sit next to each other (a narrow and a wide field, a wide and a narrow field) and a select with the placeholder \"Select\", all inside a narrow column of the grid. On mobile the same elements are stacked vertically at full width, with the radio labels listed one below the other and every input on its own row."
-  },
   "4116c40f5ed002edce35199fc63ff95680655efa03f798f865e5b0a17da4b8a2": {
     "nodeId": "8:2588",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -44,11 +39,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two fieldsets side by side, each with legend \"Fieldset Legend Default Style\", a description and two labeled inputs. Callout 1 (left, default Utility M legend) marks a 2px gap between legend and description; callout 2 (right, used with heading styles) marks the increased 6px gap."
   },
-  "5c6b52006255130338dd86e126f64b5db1034e4782d8f0347cdc2c1453c2cc80": {
-    "nodeId": "8:2885",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Nested fieldset structure with the heading \"FIELDSET LEGEND HEADING STYLE\" above two side-by-side inputs labelled \"Label\" and a single full-width \"Label\" input at the bottom. Callout 1 marks the pair of horizontally placed input fields, and callout 2 marks an inner group \"Fieldset Legend Default Style\" with a hint and five \"Checkbox Label\" items, a checkbox group in its own fieldset. The heading-style legend belongs to the main fieldset that spans all fields and fieldsets."
-  },
   "62ea32c7d7180265ef775026e48ee69ef653239d6f2745b4f80ef65ebc6971b1": {
     "nodeId": "8:2681",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -73,11 +63,6 @@
     "nodeId": "8:2772",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Don't example: the same fieldset with the legend \"Fieldset Legend Default Style\", a description and five stacked inputs with \"Label\", but the description text container is stretched to the full width of the inputs and measured as \"greater than 476px\". This is wrong because the text container exceeds the 476px maximum, which hurts readability."
-  },
-  "ec35e555d353f4f6c2aeaf1a0be4debbf82bdbcba42c39f16168ea37a8d7b9cf": {
-    "nodeId": "8:2468",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Checkout form \"ORDER PROCESS\" with the note \"*Mandatory Information\", shown on desktop-small (1024-1535px) and mobile (320-767px) over a light red column grid with the STIHL logo header. It consists of four fieldsets: \"BILLING ADDRESS\" (checkbox \"I am a business client\", Title* radios \"Mr.\", \"Mrs.\", \"other\", Surname*, Name*, Country* select, ZIP-Code*, City*, Street name*, Street number*, Addition to address (optional), Phone Number (optional) with the hint \"Please enter the phone in the following format (e.g. +49013909023)\"), \"DELIVERY ADDRESS\" (checkbox \"Billing Address and Delivery Adress are Identical\" and the same fields), \"Terms of Service\" (checkbox \"Accept Terms and Conditions\") and \"Newsletter\" (checked checkbox \"Sign up for the Newsletter\"). On desktop radios and short fields such as ZIP-Code with City and Street name with Street number sit side by side, on mobile every element is stacked vertically."
   },
   "fd77f554df210208477aa3912b83e1b2ab54f07623e4e3ef45734fa55a2fefbf": {
     "nodeId": "8:2734",
