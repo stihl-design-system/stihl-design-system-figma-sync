@@ -18,10 +18,10 @@ figmaFile: Web Pattern Library
 figmaProject: 03. Platform Libraries
 figmaFileKey: Ie2r0R9QwjEc7O3nrFbXhV
 figmaNodeId: 5381:18
-figmaVersion: "2418090261531524003"
-figmaVersionLabel: "Bug Fix: popover slot implementation / content loss"
-figmaVersionCreatedAt: 2026-11-04T18:34:21Z
-syncedAt: 2026-11-05T19:52:15.462Z
+figmaVersion: "2419476884217641914"
+figmaVersionLabel: Components published
+figmaVersionCreatedAt: 2026-11-08T14:09:24Z
+syncedAt: 2026-11-18T15:18:44.953Z
 sourceUrl: https://www.figma.com/design/Ie2r0R9QwjEc7O3nrFbXhV?node-id=5381-18
 ---
 
@@ -890,7 +890,7 @@ Users can navigate through focusable elements in the Nav Bar using the keyboard:
 
 ![Keyboard Navigation](navigation/keyboard-navigation-7434-45618.png)
 
-_Figure: Keyboard interaction diagram for the nav bar ("Products", "Accessories", "Professionals", "Advice", "Support", "Chainsaws", "Vacuum Shredders" with a scroll arrow at the right), one row per action. "Move to next focusable element:" Tab, with the focus moving from "Products" to "Accessories". "Move to previous focusable element:" Tab + Shift, with the focus moving back from "Accessories" to "Products". "Scroll the container horizontally:" Arrow left or Arrow right, shown twice with a double-headed arrow and the bar scrolled so that "Products" is partly cut off behind a left scroll button. "Open Menu with:" Space or Enter, with a dashed menu area appearing below "Products". "Close Menu with:" Esc, where the open "Products" menu closes. "Navigate to page:" Enter, with a wide dashed page area appearing below the focused "Products"._
+_Figure: Keyboard interaction diagram for the nav bar ("Products", "Accessories", "Professionals", "Advice", "Support", "Chainsaws", "Vacuum Shredders" with a scroll arrow at the right), one row per action. "Move to next focusable element:" Tab, with the focus moving from "Products" to "Accessories". "Move to previous focusable element:" Tab + Shift, with the focus moving back from "Accessories" to "Products". "Scroll the container horizontally:" Arrow left or Arrow right, shown twice with a double-headed arrow and the bar scrolled so that "Products" is partly cut off behind a left scroll button. "Open Menu with:" Space or Enter, with a dashed menu area appearing below "Products". "Close Menu with:" Esc, with "Products" open and its dropdown listing "STIHL sustainability strategy" (focused), "Education and people", "Economic sustainability", "Social engagement", "Climate strategy", "Environmental protection" and "STIHL and the rainforest", and an arrow pointing to a close (x) symbol. "Navigate to page:" Enter, with a wide dashed page area appearing below the focused "Products"._
 
 ## Header: Utility Menu
 
@@ -959,7 +959,7 @@ The Utility Menu Container is flexible and can be customized. The current design
 
 ![Utility Menu Container](navigation/utility-menu-container-7399-40871.png)
 
-_Figure: Utility Menu container shown as a white popover with callouts on its left. Callout 1a points at the bold "Main Title", callout 2 at the dashed purple area "Placeholder - Replace this content", callout 1b at the first "Group Title", callout 3 at one of the four "Label" action items of that group, callout 1c at the grey "Text" line, and callout 4 at the "Button" with an icon at the bottom. Separators divide the placeholder, the two groups of four "Label" items each (the second with its own "Group Title"), the "Text" line and the button._
+_Figure: Utility Menu container shown as a white popover with callouts on its left. Callout 1a points at the bold "Main Title", callout 2 at the dashed purple area labelled "Placeholder -" (the text is cut off at the popover edge), callout 1b at the first "Group Title", callout 3 at one of the four "Label" action items of that group, callout 1c at the grey "Text" line, and callout 4 at the "Button" with an icon at the bottom. Separators divide the placeholder, the two groups of four "Label" items each (the second with its own "Group Title"), the "Text" line and the button._
 
 ### Sizing
 
@@ -988,7 +988,7 @@ If the content exceeds the available space, the Utility Menu Container becomes s
 
 ![Maximum height](navigation/maximum-height-7399-38648.png)
 
-_Figure: Browser window with an open anchor element "Label" (icon with chevron up) at the top right and its Utility Menu popover below, containing "Main Title", a "Placeholder", two groups of "Group Title" with four "Label" items each, "Text" and a "Button" that is cut off at the bottom and a scrollbar at the right edge of the popover. A purple dashed line marks the bottom of the menu and an arrow dimension "min. 48px" shows the minimum distance between the menu container and the bottom edge of the viewport._
+_Figure: Browser window with an open anchor element "Label" (icon with chevron up) at the top right and its Utility Menu popover below, containing "Main Title", a "Placeholder", two groups of "Group Title" with four "Label" items each, "Text" and a "Button" that is cut off at the bottom. A purple dashed line marks the bottom of the menu and an arrow dimension "min. 48px" shows the minimum distance between the menu container and the bottom edge of the viewport._
 
 ### Alignment
 

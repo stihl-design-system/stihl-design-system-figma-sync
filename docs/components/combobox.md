@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 2659:3954
-figmaVersion: "2418039224414387070"
+figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T21:32:52.297Z
+figmaVersionCreatedAt: 2026-11-06T10:45:41Z
+syncedAt: 2026-11-18T15:16:01.580Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=2659-3954
 ---
 
@@ -124,7 +124,7 @@ Less than 8 columns is also possible in different combinations.
 
 ![Maximum width](combobox/maximum-width-9039-21450.png)
 
-_Figure: Do example: a form with the heading "Legend", a radio group with the legend "Radio Group Legend" and two "Radio Label" options, followed by a "Select" field with a chevron and several "Label" text inputs, laid over a 12-column grid. All fields stay within the left 8 columns, at most two fields share a row (a short and a long field, or a long and a short one), and the right 4 columns remain empty._
+_Figure: Do example: a form with the heading "Legend", a radio group with the legend "Radio Group Legend" and two "Radio Label" options side by side in one row, followed by a "Select" field with a chevron and several "Label" text inputs, laid over a 12-column grid. All fields stay within the left 8 columns, at most two fields share a row (a short and a long field, or a long and a short one), and the right 4 columns remain empty._
 
 #### Maximum width
 
@@ -248,7 +248,7 @@ For mor Guidance on this topic see the [Popover documentation](https://www.figma
 
 ![Info Button](combobox/info-button-39621-13634.png)
 
-_Figure: Don't example: a white popover with the text "Select max. 3 different products" opened from the info button of a combobox with the label "Product Name". The popover covers most of the input, leaving only its clear button visible at the right edge, and a pointer cursor sits inside the popover. This is wrong because required information such as the selection limit is hidden behind the info button instead of being shown as a hint._
+_Figure: Don't example: a white popover with the text "Select max. 3 different products" opened from the info button next to the label "Product Name" of a combobox. The popover sits above the label with its arrow pointing down at the info button, the pointer cursor is on the info button, and the input below shows "FSA 45, FSA 70, FSA 50" with a clear button. This is wrong because required information such as the selection limit is hidden behind the info button instead of being shown as a hint._
 
 ## Behavior
 

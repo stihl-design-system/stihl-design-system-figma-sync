@@ -16,10 +16,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 860:2728
-figmaVersion: "2418039224414387070"
+figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-04T15:50:17Z
-syncedAt: 2026-11-05T19:51:40.375Z
+figmaVersionCreatedAt: 2026-11-06T10:45:41Z
+syncedAt: 2026-11-18T15:17:14.599Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=860-2728
 ---
 
@@ -41,8 +41,6 @@ _Figure: Overview of the Radio Group in the orientations vertical and horizontal
 ![Radio Group](radio-group/radio-group-860-2774.png)
 
 _Figure: "Building Element Radio Item" state matrix. Columns are default, hover/pressed, focus and disabled; rows are "checked: false", "checked: true", "invalid: true checked: false" and "invalid: true checked: true", each as a plain "Radio Label" and as a bold label with a hint text. Hover/pressed adds a grey fill, focus a dark outer ring, invalid a red ring, checked an orange dot, and disabled is greyed out with no invalid variants. Below, "Show label" true/false and "Show checked hint" true/false show the label hidden or the hint shown only when checked._
-
-> **Figma Slots in this component** This component supports Figma slots, which allow specific areas to be flexibly populated with your own content. You can find more information on how to use and customize slots in the official Figma documentation. [**Go to the Figma guide**](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)
 
 ### Further guidelines
 
@@ -122,7 +120,7 @@ To ensure good readability the maximum width should not exceed 544px (16px\*34em
 
 ![Maximum width of text container](radio-group/maximum-width-of-text-container-36086-14144.png)
 
-_Figure: Do example: a radio item with a long label text ("Lorem ipsum dolor sit amet, consetetur sadipiscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.") wrapping over three lines, with two image placeholders to its right. A dimension line below spans the full width of radio, text and images and is labelled "max. 544px", the maximum width of the text container._
+_Figure: Do example: a radio item with a long label text ("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.") wrapping over four lines, with two image placeholders to its right. A dimension line below spans the full width of radio, text and images and is labelled "max. 544px", the maximum width of the text container._
 
 Do not exceed 544px, even when the module or grid is wider.
 
@@ -164,7 +162,9 @@ Don’t insert function icons in the image area, as functional icons width a hei
 
 _Figure: Don't example: a radio group where function icons (calendar and clock, lock, coffee cup) are placed in the image area next to the "Radio Label" labels. Function icons lack hierarchy at this size and do not mesh well with the radio group; only logos or images belong there._
 
-#### Amount of radio buttons
+## Content and Assets
+
+### Amount of radio buttons
 
 - A radio group should contain at least 2 and no more than approximately 5 options.
 - For more than 5 options, consider using a Select Component instead.
@@ -174,8 +174,6 @@ _Figure: Don't example: a radio group where function icons (calendar and clock, 
 ![Amount of radio buttons](radio-group/amount-of-radio-buttons-1310-10275.png)
 
 _Figure: Two radio groups with the legend "Radio Group Legend" and hint text. The upper one is horizontal with two "Radio Label" options, the lower one is vertical with five "Radio Label" options, the first selected, showing the range of two to about five options._
-
-## Content and Assets
 
 ### Overflow behaviour
 
@@ -217,7 +215,7 @@ To enable this behavior, set “**Show title**” to **true**.
 
 ![Bold labels when hints are visible](radio-group/bold-labels-when-hints-are-visible-15589-1946.png)
 
-_Figure: Vertical radio group with show title true. The legend "Which of the following characteristics do you believe contributes the most to the creation of your garden?" is followed by the description "Choose the one that resonates the most:", then five radio items with bold labels each followed by a hint: "Radio Label" (selected, with the Lorem ipsum hint), "Design and Layout" (Structured, balanced layout for organized, aesthetic garden spaces.), "Functional Areas" (Designated sections for flowers, vegetables, and other plants.), "Water Features" (Ponds, fountains add visual, auditory interest; promote relaxation.) and "Wildlife Attraction" (Brd feeders, insect hotels enhance biodiversity, garden liveliness.)._
+_Figure: Vertical radio group with show title true. The legend "Which of the following characteristics do you believe contributes the most to the creation of your garden?" is followed by the description "Choose the one that resonates the most:", then five radio items with bold labels each followed by a hint: "Plant Diversity" (selected, Variety of plants ensuring seasonal interest and visual appeal.), "Design and Layout" (Structured, balanced layout for organized, aesthetic garden spaces.), "Functional Areas" (Designated sections for flowers, vegetables, and other plants.), "Water Features" (Ponds, fountains add visual, auditory interest; promote relaxation.) and "Wildlife Attraction" (Brd feeders, insect hotels enhance biodiversity, garden liveliness.)._
 
 ### Prompting the user with a call to action
 
@@ -230,7 +228,7 @@ _Figure: Vertical radio group with show title true. The legend "Which of the fol
 
 ![Prompting the user with a call to action](radio-group/prompting-the-user-with-a-call-to-action-23123-9795.png)
 
-_Figure: Vertical radio group with the question legend "Which of the following characteristics do you believe contributes the most to the creation of your garden?" and five radio items with bold labels and hints ("Radio Label", "Design and Layout", "Functional Areas", "Water Features", "Wildlife Attraction"). Callout 1 points from the left at the description line "Choose the one that resonates the most:", where an action verb is used; callout 2 points from the right at the colon at the end of that line._
+_Figure: Vertical radio group with the question legend "Which of the following characteristics do you believe contributes the most to the creation of your garden?" and five radio items with bold labels and hints ("Plant Diversity", "Design and Layout", "Functional Areas", "Water Features", "Wildlife Attraction"). Callout 1 points from the left at the description line "Choose the one that resonates the most:", where an action verb is used; callout 2 points from the right at the colon at the end of that line._
 
 ### The hint appears on activation
 
