@@ -14,5 +14,13 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true
   },
-  "include": ["src", "mcp/src", "test", "vitest.config.ts", "eslint.config.js"]
+  "include": [
+    "src",
+    "mcp/src",
+    "review/src",
+    "review/shared",
+    "test",
+    "vitest.config.ts",
+    "eslint.config.js"
+  ]
 }

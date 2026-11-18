@@ -1,0 +1,14 @@
+@use '@stihl-design-system/components/styles/scss/ds';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: ds.$spacing-16;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: ds.$spacing-12;
+  justify-content: flex-end;
+}

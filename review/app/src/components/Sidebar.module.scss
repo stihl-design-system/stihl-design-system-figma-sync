@@ -1,0 +1,113 @@
+@use '@stihl-design-system/components/styles/scss/ds';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border-right: ds.$border-width-1 solid ds.$theme-light-border-color-tertiary;
+  background: ds.$theme-light-background-color-primary;
+}
+
+.summary,
+.filters,
+.finish {
+  display: flex;
+  flex-direction: column;
+  gap: ds.$spacing-8;
+  padding: ds.$spacing-16;
+}
+
+.filters {
+  gap: ds.$spacing-12;
+  padding-top: 0;
+  border-bottom: ds.$border-width-1 solid ds.$theme-light-border-color-tertiary;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: ds.$spacing-4;
+
+  progress {
+    width: 100%;
+    height: ds.$spacing-8;
+    overflow: hidden;
+    border: 0;
+    border-radius: ds.$radius-full;
+    background: ds.$theme-light-background-color-tertiary;
+    appearance: none;
+
+    &::-webkit-progress-bar {
+      background: ds.$theme-light-background-color-tertiary;
+    }
+
+    &::-webkit-progress-value {
+      background: ds.$theme-light-background-color-primary-inverse;
+    }
+
+    &::-moz-progress-bar {
+      background: ds.$theme-light-background-color-primary-inverse;
+    }
+  }
+}
+
+.documents {
+  flex: 1;
+  min-height: 0;
+  padding: 0 ds.$spacing-16;
+  overflow-y: auto;
+}
+
+.empty {
+  padding-block: ds.$spacing-16;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: ds.$spacing-2;
+  margin: ds.$spacing-4 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  @include ds.utility-medium;
+
+  display: flex;
+  gap: ds.$spacing-8;
+  align-items: center;
+  width: 100%;
+  padding: ds.$spacing-8;
+  border: 0;
+  border-radius: ds.$radius-s;
+  background: none;
+  color: ds.$theme-light-content-color-primary;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    background: ds.$theme-light-background-color-primary-hover;
+  }
+
+  &:focus-visible {
+    outline: ds.$border-width-2 solid ds.$theme-light-border-color-focus;
+    outline-offset: calc(#{ds.$border-width-2} * -1);
+  }
+}
+
+.rowSelected {
+  @include ds.utility-medium-bold;
+
+  background: ds.$theme-light-background-color-tertiary;
+}
+
+.rowTitle {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.finish {
+  border-top: ds.$border-width-1 solid ds.$theme-light-border-color-tertiary;
+}

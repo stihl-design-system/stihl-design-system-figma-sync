@@ -1,0 +1,33 @@
+@use '@stihl-design-system/components/styles/scss/ds';
+
+.layout {
+  display: grid;
+  flex: 1;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  min-height: 0;
+
+  // Small screens stack: overview first, then the comparison at a usable height
+  @include ds.media-query-max('l') {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 40vh) minmax(480px, 1fr);
+    overflow-y: auto;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.main > * {
+  flex: 1;
+}
+
+.message {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: ds.$spacing-32 ds.$spacing-24;
+}

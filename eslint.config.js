@@ -10,13 +10,14 @@ export default tseslint.config(
       'docs',
       'test/fixtures',
       'mcp/public',
-      '.wrangler',
+      'review/public',
+      '**/.wrangler',
     ],
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: ['**/*.{ts,js}'],
+    files: ['**/*.{ts,tsx,js}'],
     languageOptions: {
       globals: { ...globals.node },
     },
@@ -27,6 +28,12 @@ export default tseslint.config(
         'error',
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
       ],
+    },
+  },
+  {
+    files: ['review/app/src/**/*.{ts,tsx}'],
+    languageOptions: {
+      globals: { ...globals.browser },
     },
   }
 );

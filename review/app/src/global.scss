@@ -1,0 +1,12 @@
+@use '@stihl-design-system/components/styles/scss/ds';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: ds.$theme-light-background-color-secondary;
+  color: ds.$theme-light-content-color-primary;
+}

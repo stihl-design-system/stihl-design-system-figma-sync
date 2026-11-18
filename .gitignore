@@ -3,3 +3,5 @@ node_modules
 .tmp
 mcp/public
 .wrangler
+review/public
+.dev.vars

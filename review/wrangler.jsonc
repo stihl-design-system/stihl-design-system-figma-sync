@@ -1,0 +1,30 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "design-review",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-11-04",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    // Every request passes the login first, including the app and its fonts
+    "run_worker_first": true,
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "design-review",
+      "database_id": "9b1176fb-c79b-4882-bfe4-56d1d7a88261",
+      "migrations_dir": "migrations",
+    },
+  ],
+  "vars": {
+    "REVIEW_USER": "designsystem",
+    "GITHUB_REPOSITORY": "stihl-design-system/stihl-design-system-figma-sync",
+  },
+  // Secrets (wrangler secret put): REVIEW_PASSWORD, REVIEW_PUBLISH_TOKEN, NOTIFY_WEBHOOK_URL
+  "observability": {
+    "enabled": true,
+  },
+}

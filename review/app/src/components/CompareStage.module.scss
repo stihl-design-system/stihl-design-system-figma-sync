@@ -1,0 +1,158 @@
+@use '@stihl-design-system/components/styles/scss/ds';
+
+$checker: ds.$color-core-grey-light;
+
+.stage {
+  position: relative;
+  display: flex;
+  gap: ds.$spacing-2;
+  flex: 1;
+  min-height: 0;
+  background: ds.$theme-light-border-color-tertiary;
+}
+
+.pane {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  background: ds.$theme-light-background-color-tertiary;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.board {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  // Shows through transparent parts of an export
+  background: repeating-conic-gradient(
+      $checker 0% 25%,
+      ds.$color-core-white-base 0% 50%
+    )
+    0 0 / 16px 16px;
+  box-shadow: 0 0 0 calc(1px * var(--inverse-scale))
+    ds.$theme-light-border-color-secondary;
+}
+
+.pixelated .layer,
+.pixelated .mask {
+  image-rendering: pixelated;
+}
+
+.layer,
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none;
+  pointer-events: none;
+}
+
+.faded {
+  filter: grayscale(1);
+  opacity: 0.2;
+}
+
+.clip {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: ds.$spacing-24;
+  margin-left: calc(#{ds.$spacing-24} / -2);
+  cursor: ew-resize;
+  touch-action: none;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: ds.$border-width-2;
+    margin-left: calc(#{ds.$border-width-2} / -2);
+    background: ds.$theme-light-background-color-primary-inverse;
+    box-shadow: 0 0 0 1px ds.$color-core-white-base;
+    content: '';
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    .knob {
+      outline: ds.$border-width-2 solid ds.$theme-light-border-color-focus;
+      outline-offset: ds.$spacing-2;
+    }
+  }
+}
+
+.knob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: ds.$spacing-32;
+  height: ds.$spacing-32;
+  margin: calc(#{ds.$spacing-32} / -2) 0 0 calc(#{ds.$spacing-32} / -2);
+  border: ds.$border-width-2 solid ds.$color-core-white-base;
+  border-radius: ds.$radius-circle;
+  background: ds.$theme-light-background-color-primary-inverse;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border: 5px solid transparent;
+    content: '';
+  }
+
+  &::before {
+    left: 1px;
+    border-right-color: ds.$color-core-white-base;
+  }
+
+  &::after {
+    right: 1px;
+    border-left-color: ds.$color-core-white-base;
+  }
+}
+
+.label {
+  @include ds.utility-small-bold;
+
+  position: absolute;
+  top: ds.$spacing-8;
+  left: ds.$spacing-8;
+  padding: ds.$spacing-2 ds.$spacing-8;
+  border-radius: ds.$radius-s;
+  background: ds.$theme-light-background-color-primary-inverse;
+  color: ds.$theme-light-content-color-primary-inverse;
+  pointer-events: none;
+}
+
+.labelRight {
+  right: ds.$spacing-8;
+  left: auto;
+}
+
+.status {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: ds.$spacing-24;
+  pointer-events: none;
+}
