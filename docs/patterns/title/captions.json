@@ -18,5 +18,10 @@
     "nodeId": "7:128",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "A white square showing the stand line, a short thick horizontal black bar, next to the heading \"SPECIAL CHARACTER\" and the keyboard shortcuts for typing it: \"Mac: Alt + F\" and \"PC: Alt + 0131\"."
+  },
+  "cd0645dd3b42eb20b42863ad4ff33b09ab94fb3d843a1d5cb1da62e8c6e586a2": {
+    "nodeId": "9322:53",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four page mockups with a STIHL header, the \"Title Component\" with stand line and a grey content area, annotated with spacing tokens. Callout 1 (top row) is the variant with breadcrumbs \"Home / ... / Previous level / Current\": \"spacing-24\" sits between header and breadcrumbs, \"spacing-dynamic-m\" between breadcrumbs and title, and below the title either \"spacing-dynamic-xs\" (left) or \"spacing-0\" (right, content directly below). Callout 2 (bottom row) is the variant without breadcrumbs: \"spacing-dynamic-l\" sits between header and title, and below the title again either \"spacing-dynamic-xs\" (left) or \"spacing-0\" (right)."
   }
 }

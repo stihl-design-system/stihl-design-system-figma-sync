@@ -19,6 +19,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two dark promo banners with a percent icon, the text \"Longer Promo Banner Copy Lorem ip sum dolor sit amet, consectetur\", a chevron and a close button. Callout 1 marks the wide banner (XL, L, M) where the text stays on a single line; callout 2 marks the narrow banner (S) where the text wraps onto two lines and the banner grows in height."
   },
+  "50915e761f4561ef5f56fa70a860c275f2de7265cf99041e9ee045c8a6824cd0": {
+    "nodeId": "7171:11173",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two banners with numbered callouts. Callout 1 on the left marks the container, a light grey bar holding a purple \"Placeholder\" area for content such as text, links or buttons. Callout 2 on the right marks the optional close button (X) at the right end of a second banner with an image icon, \"Promo Banner Link\" and a right chevron."
+  },
   "51739deccd60491850106d729376d5b044fe04684530e633f542790316b4dcef": {
     "nodeId": "7171:11212",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -103,6 +108,11 @@
     "nodeId": "7171:11432",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Four numbered states of a page header during scrolling. 1: \"Banner\", \"Top Bar\" and \"Nav Bar\" all visible. 2 (after scrolling down, mouse icon with a double down chevron): only \"Top Bar\". 3 (after scrolling up, mouse icon with a double up chevron): \"Top Bar\" and \"Nav Bar\" without the banner. 4 (back at the top): \"Banner\", \"Top Bar\" and \"Nav Bar\" visible again."
+  },
+  "df8469ac49ff67d7fc8aaf2fc8a91f20cd613c2a8cc901ea6e75e41f1dafc9b0": {
+    "nodeId": "9902:2911",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three components ordered by urgency. Callout 1 marks a dialog with the heading \"Heading\", a close icon, a purple \"Placeholder\" content area and three buttons (a filled one and an outlined one on the left, an outlined one on the right). Callout 3 marks a grey info notification with the text \"This is a notification message that guides the user.\", a close icon and two buttons, below it a smaller toast with an info icon and the text \"All files lorem ipsum\", and a second callout 3 marks a dark promo banner with an image icon, \"Promo Banner Link\", a right chevron and a close icon."
   },
   "e454939cb33b079c2e116ede83d523f5f9675b08bb9ef72a9be5c34c65b9f941": {
     "nodeId": "7171:11291",

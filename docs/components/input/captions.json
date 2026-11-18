@@ -149,6 +149,11 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two preview list items compared with Figma layout settings above each. Left: width set to \"Hug\", showing \"Filename.png\" with \"1.5 MB\" and an \"X\" button on one line. Right: width set to \"Fill\", where the long file name \"Quarterly_Financial_Report_Q1_2024_Updated_Version_Final_Reviewed_April_2_With_Annotations.pdf\" wraps over several lines within the container."
   },
+  "42f759f26d4293a1d67283060b0336665e697ff934c3f8b3075d817d0ea6b384": {
+    "nodeId": "39634:11170",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a file upload field with the label \"Label\" and an info button next to it, with the pointer cursor on the button. A white popover with an arrow pointing down at the button reads \"For best results, upload high-resolution images (at least 1200×800 px)\", which is supplementary, non-critical information. Below is the dashed dropzone with an upload icon, \"Drag and drop files here or\", a \"Browse files\" button and \"Max file size: 7 MB. Supported file types: .jpg and .png\"."
+  },
   "48a1e94c195e6803a254efccd4d7c6b8461df9c3b18c3f0c14bb7f74893cccd1": {
     "nodeId": "7342:1822",
     "model": "github-copilot/claude-sonnet-4.5",

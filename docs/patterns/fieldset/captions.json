@@ -1,4 +1,9 @@
 {
+  "188c3a9705f893b53ade6452399481d4b17da7b854f192fe15c8f765193f78f1": {
+    "nodeId": "8:2468",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Checkout form \"ORDER PROCESS\" with the note \"*Mandatory Information\", shown on desktop-small (1024-1535px) and mobile (320-767px) over a light red column grid with the STIHL logo header. It consists of four fieldsets: \"BILLING ADDRESS\" (checkbox \"I am a business client\", Title* radios \"Mr.\", \"Mrs.\", \"other\", Surname*, Name*, Country* select, ZIP-Code*, City*, Street name*, Street number*, Addition to address (optional), Phone Number (optional) with the hint \"Please enter the phone in the following format (e.g. +49013909023)\"), \"DELIVERY ADDRESS\" (checkbox \"Billing Address and Delivery Adress are Identical\" and the same fields), \"Terms of Service\" (checkbox \"Accept Terms and Conditions\") and \"Newsletter\" (checked checkbox \"Sign up for the Newsletter\"). On desktop radios and short fields such as ZIP-Code with City and Street name with Street number sit side by side, on mobile every element is stacked vertically."
+  },
   "1c5711400ad38e75c1ce48347c2d11a1848eff04b2b9b2fd067812da91107002": {
     "nodeId": "8:2925",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -29,10 +34,20 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two fieldsets side by side, one with the legend \"Fieldset Legend Default Style*\" in default style and one in heading style, each containing a \"Radio Group\" with a description and two \"Radio Label\" options (first selected), three inputs with \"Label\" and a \"Checkbox Label\". Callout 1 points at the asterisk shown next to each legend, marking the whole fieldset as required."
   },
+  "462b210357165c98e0b1ca351dbdefac490519da530f39b9ee54b1a1fcf500e8": {
+    "nodeId": "8:2811",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two layouts of the same fieldset on a light red column grid: \"desktop-small (1024-1535px)\" and \"mobile (320-767px)\". On desktop the heading \"LEGEND\" is followed by the \"Radio Group Legend\" with two radio labels side by side, then input fields where \"Label\" fields can sit next to each other (a narrow and a wide field, a wide and a narrow field) and a select with the placeholder \"Select\", all inside a narrow column of the grid. On mobile the same elements are stacked vertically at full width, with the radio labels listed one below the other and every input on its own row."
+  },
   "4d1bf5b600a34ec3240bb5d736f799df870a55debff76675150530c8e7d0af85": {
     "nodeId": "8:2331",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Top: the main fieldset component with the legend \"Fieldset Legend Default Style\", a description and five stacked inputs each with the label \"Label\", next to callout 1 stating that the fieldset is a container component, a pattern/template of the most common items that can be detached and filled with the form elements needed, with styling and spacing guidelines in the documentation. Bottom, \"Examples of content variations\": three fieldsets, one with five \"Variation: Input\" fields, one with Heading Style M legend containing a \"Variation: Radio Group\" with two \"Radio Label\" options (first checked), three inputs and a \"Variation: Checkbox\", and one with legend \"Variation: Heading Style Utility M\" and five labeled inputs."
+  },
+  "52a3e8ab2b6bdca191a7b6123ee11413266f1d96bd2fb2ce38f3bd3b4ba939a7": {
+    "nodeId": "8:2885",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Nested fieldset structure with the heading \"FIELDSET LEGEND HEADING STYLE\" above two side-by-side inputs labelled \"Label\" and a single full-width \"Label\" input at the bottom. Callout 1 marks the pair of horizontally placed input fields, and callout 2 marks an inner group \"Fieldset Legend Default Style\" with a hint and five \"Checkbox Label\" items, a checkbox group in its own fieldset. The heading-style legend belongs to the main fieldset that spans all fields and fieldsets."
   },
   "540dcd3e6973b244d8692d9c377be3f0dfcd8635e6c8b5bd6508acbfc697226c": {
     "nodeId": "8:2628",
