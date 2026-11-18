@@ -1,1 +1,147 @@
-{}
+{
+  "031d5b3e934aff7e9bb640cce0b941b56185b950f078946aefb98e5c4ac35a90": {
+    "nodeId": "19250:285",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Suggestion links under the label \"Popular searches:\", built as three small outline buttons with square corners in one row, in the enabled state and without icons: \"Sharpen chainsaw chain\", \"Chainsaw spare parts\" and \"Chainsaw oil\". Suggestions are technically links, not chips, so a small outline button is used instead of a chip."
+  },
+  "05344fed5c1e6028608cf6073cacd7d03b9e2cd8c99695f26511631df2ba75b5": {
+    "nodeId": "18693:1163",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of a removable chip group with four numbered callouts. Callout 1 points at the group label \"Label\" above the chips (optional). Callout 2 points at the leading icon of the first chip (optional). Callout 3 points at the chip label \"Chip\". Callout 4 points at the close icon (X) at the end of a chip (optional). Four medium chips, each with an image icon, \"Chip\" and a close icon, are lined up in a row."
+  },
+  "05669d19a003ec98670e8dc322cf12620e96097fe064e6d28c6dae3c22ca20f6": {
+    "nodeId": "18693:1177",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: three select fields in a row, \"Are of expertise\" with \"IT & Digital\", \"Location\" with \"Ludwigsburg, Waiblin...\" and \"Level of experience\" with \"Senior level\". A purple arrow points down to a purple dashed area directly below them, holding the label \"Results for:\" and four removable chips: \"IT & Digital\", \"Ludwigsburg\", \"Waiblingen\" and \"Senior Level\". The chips appear only after filtering, close to the filtered list."
+  },
+  "0fa6aeb2d965425302ef834ada8a9d585cf0c1fa50da2bc73465f2403b3ad8c6": {
+    "nodeId": "19230:87",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Chip group with the label \"Type of propulsion:\" and three unselected, medium-sized outlined chips of different lengths: \"Battery\", \"Fuel\" and \"Corded electric\". Labels in a group can be of diverse length, around 3 to 40 characters depending on the viewport, and must not be truncated."
+  },
+  "171f6612350134a63ed548da9be87502a63069be02bc8aaa7288b82a2c1da6c9": {
+    "nodeId": "19505:3523",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview of the chip group in two sizes, titled \"Chip group\", with the columns \"medium\" and \"small\" and the rows \"selectable\" and \"removable\". Each cell has the group label \"Label\" above wrapping rows of unselected chips with a leading icon and the text \"Chip\". The selectable medium group shows ten chips (six in the first row, four in the second), the small group ten chips (seven and three). The removable groups show ten chips with a close (X) icon each, in two rows of five for both medium and small; the small chips are lower and tighter."
+  },
+  "256a0eec1751daf0b22b751814bd02fda139c8b4835d54282b691c4c63c756df": {
+    "nodeId": "18693:1204",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Horizontal filter: three select fields in a row, \"Area of expertise\" with \"IT & Digital\", \"Location\" with \"Ludwigsburg, Waiblin...\" and \"Level of experience\" with \"Senior level\". Directly below is a row of four removable chips without a group label: \"IT & Digital\", \"Ludwigsburg\", \"Waiblingen\" and \"Senior level\", followed on the right by the ghost button \"Delete all filters\"."
+  },
+  "2d6e3d164c903da88b6504950492f524f161e08df8c40a0289b323a6f1805a0d": {
+    "nodeId": "19448:125",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Comparison of three components for the same choice, each labelled in purple at the left. \"Chip Group\" with the label \"Type of propulsion:\" shows the chip \"Battery\" selected (dark filled) and \"Fuel\" unselected (outlined); it takes up a lot of space and the list is harder to read. \"Switch\" shows \"Battery-powered machines\" with an orange switch turned on; the switch is not an input element and should not be used in filters. \"Checkbox Group\" with the legend \"Type of propulsion:\" shows \"Battery\" checked (orange check) and \"Fuel\" unchecked in a vertical list; it is recommended because it is compact and easy to read, as the checkboxes are all aligned."
+  },
+  "3a6e1555ecb3ff85be3c1af1c6146b13b2e373cd0ed4f1cf5d2d37b045ff3143": {
+    "nodeId": "19250:264",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two medium-sized chip groups with icons. Under the purple heading \"Library Icons\": \"Battery\" with a battery icon, \"Fuel\" with a fuel canister icon, and \"Corded electric\" with a plug icon, greyed out (disabled). Under the purple heading \"Custom Icons\": \"Team X\" with a green dot, \"Team Y\" with a blue dot, and \"Team Z\" with a magenta dot, greyed out (disabled). None of the enabled chips is selected."
+  },
+  "3f0bacbc398e64e280a7b4769d804a986b9e93b97c75f3ab9d263a2677e03892": {
+    "nodeId": "20673:1831",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Initial state with three empty select fields in a row, \"Are of expertise\", \"Location\" and \"Level of experience\", each showing the placeholder \"Select...\" and a chevron. A purple arrow points down to an empty purple dashed area below, where the chip group appears; no group label or chips are shown until a chip is selected."
+  },
+  "415f69ff76f8ff6fc5856478311129c586d9aa12ea881a78cb9ac63d1116a6e7": {
+    "nodeId": "19230:81",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: one row of five selectable chips with different purposes in the same group: \"Recommended for you\" (with a star icon), \"Cutting tools (2)\" (selected, dark filled), \"operating materials (5)\", \"Sharpening tools (1)\" and \"Workwear (4)\". The first chip is a recommendation while the others are category filters, so chips with a different function must not share one group."
+  },
+  "421f8e2c25d1202f5c72b72df45640c2057ab44870db71275c6ad76c86e211e0": {
+    "nodeId": "19230:76",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two selectable chip groups with four chips each: \"230 mm\", \"300 mm\", \"250 mm\" and \"400 mm\". Callout 1 points at the single select group \"Diameter of your machine:\", where only \"300 mm\" is selected (filled dark with white text). Callout 2 points at the multi select group \"What cutting wheel diameters are you interested in?\", where \"300 mm\" and \"250 mm\" are selected at the same time. Single select works like a radio group, multi select like a checkbox group."
+  },
+  "485f6dae38685b318c339585bba54ce68851bb0d00fe099d9c78e8dacbab9cb2": {
+    "nodeId": "19250:117",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the removable chip with three numbered callouts, captioned \"selected\". The chip has an outline, an image icon, the label \"Chip\" and a close (X) icon. Callout 1 points at the icon (optional), callout 2 points at the chip label and callout 3 points at the close icon."
+  },
+  "7660d6a71aadf35b05c65613970befc7567b70584e23d74ca99bed40d11f042d": {
+    "nodeId": "19250:74",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: wireframe of a page with a navigation column, a complex filter sidebar next to it that contains a long, wrapping list of about 20 small selectable chips of varying width, and a content area with collapsible accordion sections. Selectable chips inside a complex filter such as a sidebar are wrong because the lists add visual clutter and unnecessary cognitive load."
+  },
+  "7bf1b8636c347d25ea2ea84b3f5579c7ba139fb31dbadf2d05b0cc260756d41f": {
+    "nodeId": "20229:3219",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two layouts of a chip group with the label \"Label:\" and unselected outlined small chips \"Chip\". On the left, a wide purple arrow marked \"content\" spans the full width and ten chips wrap into rows of six and four. On the right, a narrower purple \"content\" arrow spans three chips per row, so the ten chips are stacked in rows of three, three, three and one. The container width adjusts to the content length; stacking is available when there are two or more items."
+  },
+  "888c627a5ad214b7c7c68b812ac6e8988fe7a996fee8ce0bfce9e361cdb88f70": {
+    "nodeId": "18693:1194",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Chip group with the label \"Safety classes:\" and three unselected, medium-sized outlined chips with short, simple labels: \"Class 0\", \"Class 1\" and \"Class 2\". Labels should use short words in simple language that are easy to understand, and abbreviations should be avoided for accessibility reasons."
+  },
+  "91826b482aba8f01a2687d2351fa89c91d80629b9fd98d57a667147af87cddb9": {
+    "nodeId": "19250:105",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Simple filter built as a selectable chip group of medium size with the group label \"Type of propulsion:\" above three outlined pill-shaped chips in one row, each with a leading icon: \"Battery\", \"Fuel\" and \"Corded electric\". None of the chips is selected. Suitable for a simple filter with around 5 attributes when the interface is spacious enough."
+  },
+  "926a06e5019a5647b22e7c4bc96ff93afe8b1a02466b94734b7d9549e464a57a": {
+    "nodeId": "19250:232",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: chip group with the label \"Easy start mechanisms:\" in which long chip labels break onto two lines. \"Smart start technology\" and \"Inertia-activated chain brake\" are each split over two lines inside taller chips, while \"decompression mechanism\", \"Automatic choke\" and \"Primer bulb\" stay on one line; all chips are unselected and wrap over three rows. A chip label cannot be two lines, so test the label length in all viewports."
+  },
+  "95611a95aaa8f433d8300e0f3d1e40090ada896b995309a999525c8cffc5c585": {
+    "nodeId": "19901:1638",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Mobile filter: a dark filled button \"Filter\" with a filter icon on the left. Directly below it are four removable chips without a group label in two rows, \"IT & Digital\" and \"Ludwigsburg\" in the first, \"Waiblingen\" and \"Senior level\" in the second, followed by a ghost button \"Delete all filters\" aligned flush left."
+  },
+  "aeb708c3b70dabfbce45048dcc42e093dbf5903dbc21a265b6b0fe9778fbb555": {
+    "nodeId": "19250:250",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two medium chips with an image icon and the label \"Chip\", each hovered by a hand cursor with the browser default tooltip below. Callout 1 points at a selected selectable chip (dark filled, no close icon) whose tooltip reads \"Deactivate property\", for example a machine status. Callout 2 points at a removable chip (light grey with an X icon) whose tooltip reads \"Remove filter\", for example a product category."
+  },
+  "bf045f92751f2b1e650f8c1ec78b115d3332506fc3ffa76244605851da2995b7": {
+    "nodeId": "19250:155",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two chip groups, each with the label \"Label:\" and two rows of small unselected outlined chips \"Chip\", placed on a twelve-column content grid shown as pink columns. One group starts at the first column, the other at the fourth; each wraps its chips after about six columns instead of stretching across the whole grid. The group width follows the width of the content grid \"narrow\"."
+  },
+  "c60f377a796199542a88bf19e244a48d8a850d907ecb85eec8524f1c0ab8c1f7": {
+    "nodeId": "19250:136",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the selectable chip with two numbered callouts, shown in two states. The left chip, captioned \"unselected\", is white with a thin dark outline, the right chip, captioned \"selected\", has a dark fill with white text and icon. Both contain an image icon and the label \"Chip\". Callout 1 points at the icon (optional) and callout 2 points at the chip label."
+  },
+  "cb37205a1e5ebf432a0690780966f30e84e98d6e0231acbd276c8a64ae82b86b": {
+    "nodeId": "19250:100",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: two wireframes of a product list page with a filter sidebar of grouped checkboxes on the left and a grid of product cards, connected by an arrow. Both wireframes have ticked checkboxes in the sidebar. The first shows no chips above the grid; in the second, a row of four small removable chips with a close icon (x) appears above the product grid, placed away from the filter and below the page heading."
+  },
+  "ce20c14f536cead6f5dc3d8ecf4cdb899a38de7048cd756812b59ba8fe774c3d": {
+    "nodeId": "19690:1627",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Selectable chip group with the group label \"Select a safety class:\", where the verb \"select\" and a trailing colon tell the user which action is needed. Below the label, three unselected outlined chips are laid out in one row: \"Class 0\", \"Class 1\" and \"Class 2\"."
+  },
+  "d45fb38cf1085e396a140fd13e241238056b1f835ad23509a913423a6e742b62": {
+    "nodeId": "19250:275",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a chip group with the label \"Easy start mechanisms:\" that wraps over four rows and mixes chip types: \"Smart start technology\", \"decompression mechanism\", \"Inertia-activated chain brake\", \"Automatic choke\", \"Primer bulb\" and \"AP System\". Callout 1 points at \"Automatic choke\", a selectable chip without a close icon. Callout 2 points at \"AP System\", a removable chip with an X icon. Selectable and removable chips must not be combined in the same list."
+  },
+  "d936b8e5afeafbf7ed11c693e9665fc8e812fb04e187b5939948cc47e2404a35": {
+    "nodeId": "19250:193",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two sizes of the selectable chip next to each other, both enabled and unselected with only the label \"Chip\" and no icon. Callout 1 points at the medium chip, which is taller with more padding. Callout 2 points at the small chip, which has less padding and is smaller. Only the padding differs between the sizes."
+  },
+  "df8ccdd2c5cc4d73b15a4402dad91c506a09afd877dcd02c4b1818642d94287c": {
+    "nodeId": "18693:1144",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Matrix of the chip in all states, titled \"Chip\". Columns are \"enabled\", \"hover/pressed\", \"focus\" and \"disabled\". The \"Selectable\" rows show a medium and a small chip with a leading image icon and the label \"Chip\", first for \"selected: false\" (white with a thin dark outline) and then for \"selected: true\" (filled dark with white text). Hover/pressed is a grey fill (a lighter grey when unselected, a lighter dark when selected), focus adds a double dark outline ring, and disabled is greyed out with grey text and icon. The \"Removable\" rows show a medium and a small chip with a close (X) icon after the label in enabled, hover/pressed (grey fill) and focus (double outline) states; there is no disabled removable chip."
+  },
+  "e827c941c382f4723645d6d40a2a2fc6c4e4858fd75b436d885c9ec3bfda04b0": {
+    "nodeId": "19690:1656",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a combobox labelled \"Garden maintenance\" with a focused empty input (text cursor) and an open dropdown panel that contains five unselected small selectable chips instead of a list: \"Lawn Care\", \"Pruning and Trimming\", \"Weed Control\", \"Soil and Mulching\" and \"Hardscape Maintenance\", wrapped over three rows with a scrollbar at the right. Selectable chips must not be used in a combobox because scrolling must be avoided; a checkbox group is recommended instead."
+  },
+  "ec93049bc69494d2782614ae1e6fae769f7503875d9829f5df44f426b2fa2bd4": {
+    "nodeId": "20227:2976",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Comparison of a chip group and a radio group for choosing one value, each labelled in purple at the left. \"Chip Group\" with the label \"Diameter of your cutting wheel:\" shows four chips in a row, \"230 mm\", \"300 mm\" (selected, dark filled), \"250 mm\" and \"400 mm\"; it takes up a lot of space and the list is harder to read. \"Radio Group\" with the legend \"Cutting wheel diameter:\" shows a vertical list \"230 mm\", \"300 mm\" (selected, orange dot), \"350 mm\" and \"400 mm\"; it is recommended because it is compact and easy to read, as the radios are all aligned."
+  },
+  "f941ec29ba165a9e2a50f53ef627cf6a0ed317833c96b2491d28b54246c1e9dc": {
+    "nodeId": "19448:119",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: chip group with the label \"Easy start mechanisms:\" that mixes chip sizes in one list. Small chips \"Smart start technology\", \"decompression mechanism\" and \"Inertia-activated chain brake\" sit next to taller, medium-sized chips \"Primer bulb\" and \"Automatic choke\", all unselected outlined chips wrapped over two rows. Different sizes may not be combined in the same list."
+  }
+}

@@ -17,7 +17,7 @@ figmaNodeId: 26075:11524
 figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-06T10:45:41Z
-syncedAt: 2026-11-18T15:15:45.747Z
+syncedAt: 2026-11-18T18:18:41.154Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11524
 ---
 
@@ -1210,7 +1210,7 @@ Using a consistent Item height prevents layout shifts during navigation and crea
 
 ![Item](carousel/item-61435-2275.png)
 
-_Figure: Do example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Item 2", "Item 1"._
+_Figure: Do example: single-item carousel on breakpoint l with equal item heights. The purple items "Item 1" and "Item 2" (and a third item cut off at the right edge) all sit exactly between the same top and bottom purple dashed lines, so every Item has the same height. The previous arrow is greyed out, the next arrow is active, and the scroll markers below show the first of three dots selected. Consistent Item height prevents layout shifts during navigation and gives a stable, predictable browsing experience._
 
 **Don’t mix Items with different heights.**
 
@@ -1218,7 +1218,7 @@ Items with varying heights cause layout shifts, reduce visual consistency, and d
 
 ![Item](carousel/item-61435-2285.png)
 
-_Figure: Don't example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l). Text in the figure: "Item 2", "Item 1"._
+_Figure: Don't example: single-item carousel on breakpoint l with items of different heights. "Item 1" fits between the purple dashed top and bottom lines, while "Item 2" is taller and extends above and below those lines, and the third item at the right edge has yet another height. Mixing Item heights causes layout shifts, reduces visual consistency and disrupts the browsing experience._
 
 #### Item Aspect Ratio
 
@@ -1232,13 +1232,13 @@ Aspect ratios can be used flexibly.
 
 ![Item Aspect Ratio](carousel/item-aspect-ratio-61435-2233.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=m); carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=s). Text in the figure: "Desktop", "Tablet", "Mobile", "16:9", "4:3", "1:1", "3:2"._
+_Figure: Recommended Item aspect ratios of the single-item carousel in three columns, each item shown as a purple image placeholder with scroll markers below. "Desktop": one carousel with previous and next arrows at "16:9". "Tablet": three carousels at "4:3", "3:2" and "16:9". "Mobile": three carousels of the same width, labelled "16:9", "1:1" (square) and "16:9", the last one flatter than the first. Aspect ratios can be used flexibly._
 
 **Don’t use aspect ratios that push the Carousel content or Scrollmarkers below the fold.**
 
 ![Item Aspect Ratio](carousel/item-aspect-ratio-61818-3135.png)
 
-_Figure: Don't example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=single item, breakpoint=l)._
+_Figure: Don't example: single-item carousel on breakpoint l inside a browser window mockup. The purple image item is so tall that its lower part, shown lighter, extends below the bottom edge of the browser window, marked by a dotted purple line, and the scroll markers sit below the fold as well. Aspect ratios that push the Carousel content or Scrollmarkers below the fold must not be used._
 
 ## Formatting and Construction 4/4
 
@@ -1257,7 +1257,7 @@ The Item represents the primary content of the Multi-Item Carousel. The Item:
 
 ![Item](carousel/item-61435-2304.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "Item 1", "Item 2", "Item 3", "Item 4", "Item 5 (hidden)", "Item 6 (hidden)", "Item 7 (hidden)", "Item 8 (hidden)", "Item 9 (hidden)", "1/x Viewport width"._
+_Figure: Multi-item carousel on breakpoint l inside a browser window. A purple dashed Viewport frame holds four equally wide Items, "Item 1" to "Item 4", with a grey previous button on the left, a dark next button on the right and three pagination dots below (the first one elongated). Each Item is marked below with a dashed dimension "1/x Viewport width", so the Items evenly fill the Viewport width. To the right, outside the browser window, the paler Items "Item 5 (hidden)", "Item 6 (hidden)", "Item 7 (hidden)", "Item 8 (hidden)" and "Item 9 (hidden)" continue the row and are not visible in the Viewport._
 
 **Do keep all Items the same height.**
 
@@ -1265,7 +1265,7 @@ Using a consistent Item height prevents layout shifts during navigation and crea
 
 ![Item](carousel/item-61435-2314.png)
 
-_Figure: Do example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "Item 5 (hidden)", "Item 6 (hidden)", "Item 7 (hidden)", "Item 8 (hidden)", "Item 9 (hidden)", "Item 1", "Item 2", "Item 3", "Item 4"._
+_Figure: Do example: keep all Items the same height. The multi-item carousel on breakpoint l shows "Item 1" to "Item 4" in the dashed purple Viewport and the paler hidden Items "Item 5 (hidden)" to "Item 9 (hidden)" continuing to the right, all with identical height that exactly fills the dashed frame, with previous and next buttons and three pagination dots below. A consistent Item height prevents layout shifts during navigation and creates a stable, predictable browsing experience._
 
 **Don’t mix Items with different heights.**
 
@@ -1273,7 +1273,7 @@ Items with varying heights cause layout shifts, reduce visual consistency, and d
 
 ![Item](carousel/item-61435-2324.png)
 
-_Figure: Don't example. Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=l). Text in the figure: "Item 5 (hidden)", "Item 6 (hidden)", "Item 7 (hidden)", "Item 8 (hidden)", "Item 9 (hidden)", "Item 1", "Item 2", "Item 3", "Item 4"._
+_Figure: Don't example: do not mix Items with different heights. The multi-item carousel on breakpoint l shows "Item 1" to "Item 4" and the hidden Items "Item 5 (hidden)" to "Item 9 (hidden)" with varying heights: some end above the bottom of the dashed purple frame, while "Item 2", "Item 3", "Item 6 (hidden)", "Item 7 (hidden)" and "Item 9 (hidden)" extend below it. Varying heights cause layout shifts, reduce visual consistency and disrupt the browsing experience._
 
 #### Peek
 
@@ -1286,4 +1286,4 @@ The Peek provides an affordance that indicates additional content is available a
 
 ![Peek](carousel/peek-61435-2335.png)
 
-_Figure: Shows carousel (slot: peek=\[object Object\], slot: visible items=\[object Object\], variant=multi item, breakpoint=s). Measurements: 10%. Text in the figure: "❖ Placeholder Item 1", "❖ Placeholder Item 2", "❖ Placeholder Item 3", "❖ Placeholder Item 4"._
+_Figure: Multi-item carousel on breakpoint s in a narrow mobile screen with three pagination dots below. The first Item, a pale dashed placeholder labelled "Placeholder Item 1", fills most of the width, and the next Item is partly revealed in stronger purple at the right edge of the Viewport as the Peek. A dashed dimension "10%" marks the width of the Peek, which should occupy approximately 10% of the Container width._

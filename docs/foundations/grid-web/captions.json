@@ -4,6 +4,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Web Grid without sidebar, shown as a single strip with a dark pink margin at the left and right edge and 12 light pink columns between them, separated by white gutters."
   },
+  "251577d1005fddcc25de4aaf30205970eae4cb1bce29b593c4c409cf5e6650cf": {
+    "nodeId": "3568:16519",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Text block of lorem ipsum placeholder copy in four lines, bounded left and right by purple dashed vertical lines. A purple double-headed arrow below the text spans the full width between the lines and is labelled \"34em based on text size\", showing that the maximum text width is 34 times the font size."
+  },
   "3bde02c7e09e9afcb3d48c84014d3607c214e2c466f49a444b73560897e3f45f": {
     "nodeId": "1:702",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -18,6 +23,11 @@
     "nodeId": "3493:8367",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Split View inside the \"CONNECTED\" web app with a top bar and an expandable sidebar menu (Fleet Management, Equipment, Connected Hub, Energy Evaluation, Organization, Teams, Employees, Contact, Legal Information). Callout 1 marks the primary area, highlighted in blue, with a search field, Filter, add and download buttons and a list of equipment entries named \"001 Placeholder, AP 500 S\" under a Nickname header. Callout 2 marks the secondary area, highlighted in blue, with the details of the selected item \"001 PLACEHOLDER\": a Back link, photo, map, Condition dropdown, Maintenance & Repair entry and Runtime heading."
+  },
+  "59889748f4582e61accaa77691f60d1b6b33e8289d75f1824199d6fe24d781c8": {
+    "nodeId": "3568:16534",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two grid diagrams with pale red column overlays, each with a blue \"CONTENT AREA NARROW\" bar above a lorem ipsum text block. Callout 1, \"viewport 1024px\": the content area is narrower than the maximum text width, so the text fills the container, marked by an arrow labelled \"container width smaller than max. text width\". Callout 2, \"viewport 1440px\": the content area is wider, so the text is capped at an arrow labelled \"max. text width\" that ends short of the right edge, while a second arrow below labelled \"container width greater than max. text width\" spans the whole container."
   },
   "5fe74fc2ed32c86eb6d4144b7c6974b838fde182dff6ed682e9810c1b2afb90c": {
     "nodeId": "1:723",

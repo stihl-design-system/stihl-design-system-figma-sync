@@ -79,6 +79,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Cards on the secondary (light grey) background in two panels. Under \"Vertical Orientation\" eight vertical cards sit in a grid of two rows of four, each with a media area, the heading \"Charging and energy management in the STIHL AP system\", a truncated description and three \"Flag\" tags. Under \"Horizontal Orientation\" four horizontal cards are stacked in a list with the media area on the left and heading, description, \"Metadata\" and \"Flag\" tags on the right, and a fifth card is cut off at the bottom; the white cards stand out clearly from the grey surface."
   },
+  "23b1213f7b9db55f1d1ee9a862c479d1b8b93dc61f0d75bd5331ba221dc5102d": {
+    "nodeId": "66439:55932",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Grid of the vertical selectable Card with checkbox, media area and \"Promo Flag\", in three blocks of five state columns, each block with an \"outlined\" row and an \"elevated\" row. Block 1: \"enabled\" (empty checkbox, thin border), \"hover / pressed\" (grey checkbox, slight shadow), \"focus\" (extra dark focus outline around the card, checkbox with inner frame), \"Disabled\" (faded purple media and greyed text) and \"enabled + invalid\" (red border and red checkbox outline). Block 2: \"hover / pressed + invalid\", \"focus + invalid\" (dark focus outline plus red border), \"selected + enabled\" (thick dark border, checked orange checkmark), \"selected + hover / pressed\" and \"selected + focus\" (extra focus outline; title \"Optimizing Charging and Energy Management in the STIHL AP System\"). Block 3: \"selected + disabled\" (faded, grey border, grey checkmark), a second column labelled \"focus + invalid\", \"selected + enabled + invalid\", \"selected + hover / p. + invalid\" and \"selected + focus + invalid\" (checked, red border). Every card shows the heading \"Charging and energy management in the STIHL AP system\", a truncated description, \"Metadata\" and three \"Flag\" tags unless noted."
+  },
   "264fc8e57d6976969dc3327b10a6e6edcf66579baa4830a57f9ee35ef9ec3e3c": {
     "nodeId": "66439:55226",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -148,6 +153,11 @@
     "nodeId": "47366:8418",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Product card with a purple placeholder image, a yellow AKI SYSTEM logo at its top left and a heart outline icon at its top right. Below are a black Promo Flag, the bold name Productname, a star rating of 3.5 (80) with three and a half orange stars, the text Categorie, Short description of the product, a green dot with Available now, the price 11.199,00 € with incl. VAT, an empty checkbox labeled Compare, and a round orange cart button at the bottom right."
+  },
+  "46cbe0ad4690ec5d9cbfbf421a535f596fca4c0463eed464dc03620f8e908105": {
+    "nodeId": "66439:55897",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Vertical selectable Card \"STIHL Servicing\" on a mobile phone screen, with a photo, a round selection control in the top right corner, the text \"Includes checking device functionality, replacing parts, and cleaning...\" and a \"Price on request\" tag. A hand tap icon touches the text area of the Card below the photo, away from the control, showing that the entire Card is the touch target, not only the visible control."
   },
   "4a62c5a90efef1c6e2453f1707e490ce32c9ec14602d0895355237383e3204a6": {
     "nodeId": "66680:42230",
@@ -269,6 +279,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "The same horizontal Selectable Card Group with radio buttons shown at two breakpoints. Under \"Breakpoint XL\" the four cards with heading \"Charging and energy management in the STIHL AP system\" sit in one row with wider gaps between them; under \"Breakpoint M\" the cards are narrower, wrap into a two-by-two grid and have tighter gaps, because spacing follows the active Variable Mode rather than the container width."
   },
+  "747709a5e55337205fa11c196b92aa70950503f279abf15d1707ec3006c36640": {
+    "nodeId": "66439:54458",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three browser-window diagrams of the Selectable Card Group width on a column grid. Callout 1: three cards each labelled \"fill\" spread evenly across the \"container width\". Callout 2: a narrow \"container width\" in which the cards are at their minimum width, labelled \"fill (min.186px)\", so only two fit per row and the third card wraps to a second row. Callout 3: two wide cards labelled \"fill (max.719px)\" side by side across the \"container width\", the maximum width a card grows to."
+  },
   "76bde9a99165908dde6ba6846f12cf1f3bd5ac16b3225f6fa28fcdb73c335a8a": {
     "nodeId": "66439:54694",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -278,6 +293,11 @@
     "nodeId": "66439:55115",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Three Checkbox Selectable Cards in a row, each with a checkbox in the top right corner, a small image placeholder, the title \"Charging and energy management in the STIHL AP system\", a truncated description, the text \"Metadata\" and three \"Flag\" labels. The first card has a thick dark focus outline and a checked checkbox, the other two have dashed purple outlines and empty checkboxes. Purple arrows from the first card to the second and from the second to the third, together with the notes \"Move focus between Checkbox Selectable Cards: Tab\" and \"Space toggles the selection state of the focused Card: Space\", show that Tab moves focus from card to card and Space toggles the focused card."
+  },
+  "783b15546e94e4fbfa9fcda4f7d7aa0cd9d43c3a324c827620d968a9635a4c2e": {
+    "nodeId": "64762:38167",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview board \"Selectable Card Group\" with eight groups inside a dashed purple frame, each with the \"Selectable Card Group Legend\", a lorem ipsum hint and four unselected Selectable Cards with a \"Promo Flag\", image, title, \"Metadata\" and three \"Flag\" tags. \"Orientation: Horizontal\" shows four narrow cards side by side, \"Orientation: Vertical\" shows four wide cards with the image on the left stacked one below another. For each orientation there are four variants: control = radio (round buttons) and control = checkbox (square boxes), each with invalid = false (grey card borders) and invalid = true (a red \"System Feedback Message\" with error icon above the group, red card borders and red controls)."
   },
   "79b637a8706e25f8612416c544f685b18d2b40217c0c03de3dd0c060948260cb": {
     "nodeId": "66560:37174",
@@ -333,6 +353,11 @@
     "nodeId": "44961:12404",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Matrix of the Decorative Link styles. Columns are \"icon: none\", \"icon: left\" and \"icon: right\"; rows are \"filled medium\", \"filled small\", \"ghost medium\" and \"ghost small\". Filled variants are dark buttons with white \"Decorative Link\" text, ghost variants are plain dark text, and the icon is a chevron before or after the text. Ghost variants exist only with an icon, the \"icon: none\" cells for \"ghost medium\" and \"ghost small\" are empty."
+  },
+  "84e3cdc46ca1f355b0ebd5153f5058adf6e16b1b27b874678482653fd0b62237": {
+    "nodeId": "66439:54413",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the Selectable Card Group with five numbered callouts, shown as a horizontal group of four cards with radio buttons in the invalid state (red card borders, first card selected with a thicker red border and filled radio button). Callout 1 points at the legend \"Selectable Card Group Legend\", callout 2 at the info button (circled i) next to the legend, callout 3 at the hint text (lorem ipsum), callout 4 at the \"System Feedback Message\" with error icon, and callout 5 at the group of Selectable Cards, each with \"Promo Flag\", title, \"Metadata\" and three \"Flag\" tags."
   },
   "8587f3815d2cdeb145bda8599cd5d8dbafafce57ebc5f175e1d88cafd8132caa": {
     "nodeId": "66560:37472",
@@ -429,6 +454,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Product cards in Grid View (three cards side by side) and List View (three cards stacked), each in the variants \"no logo\", \"one logo\" and \"two logos\". A dashed purple box in the top-left corner of the image area marks where battery logos sit: empty for no logo, one AK SYSTEM logo, or AK SYSTEM and AP SYSTEM logos together. Every card shows a chainsaw image, Promo Flag, Productname, 3.5 (80) rating, Categorie, availability \"Available now\", price \"11.199,00 € incl. VAT\" and a Compare checkbox; the Grid cards have a round orange add-to-cart button and heart icon, the List cards have a wide \"Add to cart\" button with a heart button and a bullet list of three description lines."
   },
+  "a4cd24c4c740d33d909963f8704f249829edd0a339ab6e5eef836bd771e22aa9": {
+    "nodeId": "66439:55886",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two vertical selectable Cards with a checkbox control side by side. Left, labelled \"Focus\": the unselected Card \"STIHL Servicing\" (\"Includes checking device functionality, replacing parts, and cleaning\", tag \"Price on request\") with an empty checkbox and a thin dark focus outline around the Card. Right, labelled \"Selected + Focus\": the Card \"STIHL Check\" (\"A fundamental diagnostic check to ensure that all Stihl tools are functioning optimally.\", tag \"Price on request\") with a checked orange checkmark, a thick dark selected border inside and the separate thin focus outline around it, so both states stay distinguishable."
+  },
   "a95e79f1556a21a9c92d4ed51977ef997e2adf10a4cab0576c73631feb658bbd": {
     "nodeId": "55193:27720",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -464,15 +494,30 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Two horizontal Selectable Card Groups with the legend \"Selectable Card Group Legend\", each with three cards per row and an incomplete second row filled by dashed purple placeholders. Callout 1 marks the group with four cards, where the last two positions in the second row hold \"layout helper 1\" and \"layout helper 2\"; callout 2 marks the group with five cards, where the last position holds \"layout helper 1\". The helpers keep the cards at the correct size when wrapping."
   },
+  "af51f0321a8c7b53b369553b894124ed56e198487ac4ec5fc52ec140220b5d4d": {
+    "nodeId": "66439:55867",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Row of three vertical selectable Cards with photos and a round radio control at the top right, each with a heading, description and a \"Price on request\" tag. \"STIHL Pro Servicing\" has the orange flag \"Our recommended service\" and the description \"Ensures safety compliance, preventive parts replacement, and thorough cleaning\". \"STIHL Servicing\" is selected (thick dark border, filled orange radio) with \"Includes checking device functionality, replacing parts, and cleaning\". \"STIHL Check\" has \"A fundamental diagnostic check to ensure that all Stihl tools are functioning optimally.\" The bold headings are the accessible names that distinguish the options."
+  },
   "afa93e13c7f6a7d6ef87005567125860334e114debc0b22ef32b57bd97dbecd3": {
     "nodeId": "55161:21932",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Product Card in List View: a wide single card on the left with a small chainsaw image and battery logo, \"Promo Flag\", \"Productname\", rating \"3.5 (80)\", \"Categorie\", a bulleted description, price \"11.199,00 € incl. VAT\", \"Available now\", an orange \"Add to cart\" button with a heart button, and a \"Compare\" checkbox. On the right, a browser mockup labeled \"desktop\" shows three of these cards stacked vertically, each spanning the width, and a mockup labeled \"mobile\" shows narrower stacked cards with a shorter \"Add\" button."
   },
+  "b020dda74fd06c81b26938eda1f30964cf6287a69550ddaf2c5da39bdc3719e7": {
+    "nodeId": "66439:55879",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Vertical selectable Card with a checkbox control in focus state, labelled \"Focus\" in purple. A dark focus outline surrounds the whole Card, not only the control. The Card has a photo of a technician working on a chainsaw with an empty checkbox in the top right corner, the title \"STIHL Check\", the text \"A fundamental diagnostic check to ensure that all Stihl tools are functioning optimally.\" and a \"Price on request\" tag."
+  },
   "b0c18890d15ee91a7e8faf1498b6342110118bb480a34b47045d0968877218a0": {
     "nodeId": "44615:15227",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Link Cards with the maximum number of elements, in \"Vertical Orientation\" and \"Horizontal Orientation\". Both show a \"Promo Flag\" on the media area, a graphic area, the heading \"Charging and energy management in the STIHL AP system\", a description and \"Metadata\". The vertical card additionally shows six \"Flag\" tags and a \"Decorative Link\" with chevron, the horizontal card shows three \"Flag\" tags."
+  },
+  "b45d6f0e802d62b8cabbe927189343d0b94b9ffbde629af3519fc6a68b734284": {
+    "nodeId": "66439:54431",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two Selectable Card Group orientations with radio buttons, side by side, each with the \"Selectable Card Group Legend\" and a lorem ipsum hint. \"Horizontal Orientation\" arranges four narrow vertical cards in one row, with the image on top, a title truncated to \"Charging and energy management in t...\", \"Metadata\" and three \"Flag\" tags. \"Vertical Orientation\" stacks four wide horizontal cards one below another, with the image on the left and the full title \"Optimizing Charging and Energy Management in the STIHL AP System\"."
   },
   "b966fb0e5c95aba5186cdcd51c16572ef22231d1c6dd58b4f16365a7918852da": {
     "nodeId": "57292:24205",
@@ -568,6 +613,11 @@
     "nodeId": "54990:20687",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Product Card in Grid View: a large single card on the left with a chainsaw image, battery logo, heart button, \"Promo Flag\", \"Productname\", rating \"3.5 (80)\", \"Categorie\", \"Short description of the product\", \"Available now\", price \"11.199,00 € incl. VAT\", round add-to-cart button and \"Compare\" checkbox. On the right, a browser mockup labeled \"desktop\" shows four of these cards side by side in one row, and a mockup labeled \"mobile\" shows the cards stacked in a single column."
+  },
+  "ef2adbfb41b9cdd2ad120f0ffed954ac737ce052455f1c93c542391850582259": {
+    "nodeId": "66439:55846",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two text-only selectable Cards, each with the heading \"Charging and energy management in the STIHL AP system\", a truncated description and an unselected control in the top right corner, mapped to their native control. Under \"Radio\", the round control on the Card is circled in purple with an arrow to a standalone \"Radio Button\" with the label \"Radio Label\". Under \"Checkbox\", the square control is circled with an arrow to a standalone \"Checkbox\" with the label \"Checkbox Label\"."
   },
   "f26f3962da88131adf99a27bc0309d81a6f7044cf9f8d63923ccfbe37b6c10c7": {
     "nodeId": "57166:24630",

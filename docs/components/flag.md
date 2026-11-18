@@ -17,7 +17,7 @@ figmaNodeId: 19511:2443
 figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-06T10:45:41Z
-syncedAt: 2026-11-18T15:16:21.912Z
+syncedAt: 2026-11-18T18:18:24.136Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=19511-2443
 ---
 
@@ -34,7 +34,7 @@ Overview:
 
 ![Flag](flag/flag-19511-2452.png)
 
-_Figure: Text in the figure: "status:", "Flag", "success", "warning", "error", "info", "promo:", "neutral", "highlight"._
+_Figure: Overview of the Flag component in its two variants, each flag with an image icon and the label "Flag", listed in a purple dashed frame. Under "status:" are four flags: "success" (light green background), "warning" (light yellow), "error" (light red) and "info" (light grey). Under "promo:" are two flags: "neutral" (black background, white text) and "highlight" (orange background)._
 
 ### Further guidelines
 
@@ -63,7 +63,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](flag/anatomy-19655-22.png)
 
-_Figure: Shows flag (icon, label=Flag, color=status: info). Callouts 1, 2. Text in the figure: "Flag"._
+_Figure: Anatomy of the Flag with two numbered callouts, shown on an info flag (light grey) with an image icon and the label "Flag". Callout 1 points at the icon on the left (optional); callout 2 points at the label._
 
 #### Variants
 
@@ -80,7 +80,7 @@ Flags have two variants: **Status and Promo**.
 
 ![Variants](flag/variants-52869-26154.png)
 
-_Figure: Shows flag (icon, label=Flag, color=status: success); flag (icon, label=Flag, color=status: warning); flag (icon, label=Flag, color=status: error); flag (icon, label=Flag, color=status: info); flag (icon, label=Flag, color=promo: neutral); flag (icon, label=Flag, color=promo: highlight). Text in the figure: "1a", "Flag", "1b", "1c", "1d", "2a", "2b"._
+_Figure: Six flags stacked vertically, each with an image icon and the label "Flag", marked with callouts for the two variants. Status variant (callout 1): 1a is success (light green), 1b is warning (light yellow), 1c is error (light red), 1d is info (light grey). Promo variant (callout 2): 2a is neutral (black background, white text), 2b is highlight (orange background)._
 
 ### Sizing
 
@@ -90,7 +90,7 @@ The width of the flag adjusts to the label length.
 
 ![As long as text](flag/as-long-as-text-19711-50.png)
 
-_Figure: Shows Frame 3465160 (label=Flag Short, color=status: info); flag (label=Flag content with a long text or description, color=status: info). Text in the figure: "content", "Flag Short", "Flag content with a long text or description"._
+_Figure: Two light grey info flags without icons showing that the flag width follows the label length. The short flag "Flag Short" and the wide flag "Flag content with a long text or description" each have a purple double arrow above them labelled "content", spanning the full width of the flag._
 
 ### Spacing
 
@@ -100,7 +100,7 @@ If needed, wrap the items in the group. Vertical spacing is also 8px.
 
 ![Spacing](flag/spacing-19711-76.png)
 
-_Figure: Measurements: 8px. Text in the figure: "Tipps", "Gerätepflege", "Arbeitstechnik", "Akku-Pflege", "Lithium-Ionen-Akkus richtig lagern", "ƒ", "Der richtige Umgang mit einem Akku ist entscheidend für eine lange Lebensdaue...", "03.07.2024"._
+_Figure: Spacing of flags on an article teaser card. Four light grey flags "Tipps", "Gerätepflege", "Arbeitstechnik" and "Akku-Pflege" sit above the heading "Lithium-Ionen-Akkus richtig lagern" and a short German intro text about handling batteries. The first three flags are in one row and "Akku-Pflege" wraps to a second row. Purple markers labelled "8px" show the horizontal gap between neighbouring flags and the vertical gap between the rows._
 
 ## Content and Assets
 
@@ -112,7 +112,7 @@ Use short words in simple language. They must be easy to understand. Also, avoid
 
 ![Do use concise labels](flag/do-use-concise-labels-53310-1856.png)
 
-_Figure: Do example. Shows Frame 3465194 (label=Offer, color=promo: highlight); Frame 3465195 (label=Enrolled, color=status: info); Frame 3465196 (label=Rejected, color=status: error); Frame 3465197 (label=Accepted, color=status: success); Frame 3465185 (label=New, color=status: success); Frame 3465188 (icon, label=In assessment, color=status: warning); Frame 3465186 (icon, label=Rejected, color=status: error); Frame 3465187 (icon, label=Enrolled, color=status: info). Text in the figure: "Offer", "Enrolled", "Rejected", "Accepted", "New", "In assessment"._
+_Figure: Do example: use concise labels, with short simple words and no abbreviations. Four flags without icons are stacked: "Offer" (orange, highlight), "Enrolled" (light grey, info), "Rejected" (light red, error) and "Accepted" (light green, success). A green "Do" badge with a check mark is at the lower left._
 
 #### Don’t repeat the subject in flag labels.
 
@@ -120,7 +120,7 @@ It creates unnecessary length.
 
 ![Don’t repeat the subject in flag labels.](flag/don-t-repeat-the-subject-in-flag-labels-19711-94.png)
 
-_Figure: Don't example. Shows flag (label=Document denied, color=status: error); Frame 3465160 (label=Document pending, color=status: warning). Text in the figure: "Document denied", "Document pending"._
+_Figure: Don't example: the subject is repeated in the flag labels, which creates unnecessary length. Two flags without icons are stacked: "Document denied" (light red, error) and "Document pending" (light yellow, warning). A red "Don't" badge with a cross is at the lower left._
 
 #### Don’t use similar or synonymous terms across flags.
 
@@ -128,7 +128,7 @@ E.g. “Rejected” and “Declined”.
 
 ![Don’t use similar or synonymous terms across flags.](flag/don-t-use-similar-or-synonymous-terms-across-flags-53310-1922.png)
 
-_Figure: Don't example. Shows Frame 3465181 (label=Rejected, color=status: error); Frame 3465184 (label=Declined, color=status: error). Text in the figure: "Rejected", "Declined"._
+_Figure: Don't example: similar or synonymous terms are used across flags. Two light red error flags without icons are stacked, "Rejected" and "Declined", which mean the same thing. A red "Don't" badge with a cross is at the lower left._
 
 ### Icons
 
@@ -140,7 +140,7 @@ When used, icons should support quick visual recognition and help users understa
 
 ![Icon usage with purpose](flag/icon-usage-with-purpose-19819-458.png)
 
-_Figure: Shows Frame 3465191 (icon, label=Approved, color=status: success); Frame 3465193 (icon, label=Plan cancels soon, color=status: warning); Frame 3465190 (icon, label=Rejected, color=status: error); Frame 3465192 (icon, label=In assessment, color=status: info). Text in the figure: "Approved", "Plan cancels soon", "Rejected", "In assessment"._
+_Figure: Four status flags with a leading icon that supports the meaning of the label, stacked vertically: "Approved" (check mark, light green, success), "Plan cancels soon" (clock, light yellow, warning), "Rejected" (cross, light red, error) and "In assessment" (document icon, light grey, info)._
 
 #### Icon type
 
@@ -149,7 +149,7 @@ _Figure: Shows Frame 3465191 (icon, label=Approved, color=status: success); Fram
 
 ![Icon type](flag/icon-type-52929-21249.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); Frame 3465191 (icon, label=Approved, color=status: success); Frame 3465185 (icon, label=Confirmed, color=status: success); Frame 3465193 (icon, label=Plan cancels soon, color=status: warning); Frame 3465188 (icon, label=In assessment, color=status: warning); Frame 3465190 (icon, label=Rejected, color=status: error); Frame 3465186 (icon, label=Rejected, color=status: error); Frame 3465192 (icon, label=In review, color=status: info); Frame 3465194 (icon, label=In review, color=status: info); Frame 3465195 (icon, label=Discount, color=promo: highlight); Frame 3465196 (icon, label=Promotion, color=promo: neutral). Callouts 1, 2. Text in the figure: "Approved", "Confirmed", "Plan cancels soon", "In assessment", "Rejected", "In review", "Discount", "Promotion"._
+_Figure: Two columns of flags with icons comparing icon types. Callout 1 marks Functional Icons (the default), used on all variants: "Approved" (check mark, success), "Plan cancels soon" (clock, warning), "Rejected" (cross, error), "In review" (document, info), "Discount" (orange highlight promo flag with a discount icon) and "Promotion" (black neutral promo flag with a tag icon). Callout 2 marks System Feedback Icons, available for the Status variants only: "Confirmed" (green filled check circle, success), "In assessment" (warning triangle, warning), "Rejected" (red diamond with exclamation mark, error) and "In review" (grey filled info circle, info)._
 
 #### Do use icons consistently within each variant
 
@@ -162,7 +162,7 @@ For example:
 
 ![Do use icons consistently within each variant](flag/do-use-icons-consistently-within-each-variant-52929-20369.png)
 
-_Figure: Do example. Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue); footer slot (button group, metadata copy=Jan 13, 2024 MSA 300, MSA 301 S-T, MS 402  + 5 more, flags bottom, alignment=left); Frame 3465185 (label=New, color=status: success); Frame 3465188 (icon, label=In assessment, color=status: warning); Frame 3465186 (icon, label=Rejected, color=status: error); Frame 3465187 (icon, label=Enrolled, color=status: info). Callouts 1, 2. Text in the figure: "Required", "Product information", "Seasonal", "Battery-Powered Only", "New", "In assessment", "Rejected", "Enrolled"._
+_Figure: Do example: icons are used consistently within each Flag variant. Callout 1 points at a group of four flags: a yellow warning flag "Required" with an exclamation icon, followed by the icon-free grey info flags "Product information", "Seasonal" and "Battery-Powered Only". Callout 2 points at a group where an orange promo flag "New" has a bell icon, followed by the icon-free grey info flags "Product information", "Seasonal" and "Battery-Powered Only". Flags with and without icons may be used together as long as usage is consistent within each variant._
 
 #### Don’t mix icon usage within the same variant
 
@@ -170,7 +170,7 @@ Avoid combining flags with and without icons within a single variant, as this cr
 
 ![Don’t mix icon usage within the same variant](flag/don-t-mix-icon-usage-within-the-same-variant-52929-20679.png)
 
-_Figure: Don't example. Shows flag (label=Completed, color=status: success); flag (label=Approved, color=status: success); flag (icon, label=Checked, color=status: success). Text in the figure: "Completed", "Approved", "Checked"._
+_Figure: Don't example: three light green success flags in a row, "Completed" and "Approved" without an icon and "Checked" with a check mark icon. Mixing flags with and without icons within a single variant creates inconsistency and reduces clarity._
 
 ### Numbers
 
@@ -180,7 +180,7 @@ Use a number indicator component instead.
 
 ![Don’t use flags with numbers only.](flag/don-t-use-flags-with-numbers-only-53360-17021.png)
 
-_Figure: Don't example. Shows Frame 3465192 (label=12, color=status: error). Text in the figure: "12"._
+_Figure: Don't example: a single small red error flag that contains only the number "12" with no text label. Flags must not show numbers only; a number indicator component should be used instead._
 
 #### Do pair numbers with a label when displaying counts.
 
@@ -188,7 +188,7 @@ Use brackets for secondary counts (e.g. “Comments (3)”).
 
 ![Do pair numbers with a label when displaying counts.](flag/do-pair-numbers-with-a-label-when-displaying-counts-53360-16955.png)
 
-_Figure: Do example. Shows Frame 3465190 (label=Rejected (12), color=status: error); Frame 3465185 (label=New, color=status: success); Frame 3465188 (icon, label=In assessment, color=status: warning); Frame 3465186 (icon, label=Rejected, color=status: error); Frame 3465187 (icon, label=Enrolled, color=status: info). Text in the figure: "Rejected (12)", "New", "In assessment", "Rejected", "Enrolled"._
+_Figure: Do example: a single red error flag labelled "Rejected (12)", where the number is paired with a text label and the secondary count is written in brackets (like "Comments (3)")._
 
 ## Usage
 
@@ -208,7 +208,7 @@ or to provide neutral contextual labeling:
 
 ![Status](flag/status-53360-17048.png)
 
-_Figure: Shows flag (icon, label=Flag, color=status: success); flag (icon, label=Flag, color=status: warning); flag (icon, label=Flag, color=status: error); flag (icon, label=Flag). Callouts 1, 2, 3, 4. Text in the figure: "Flag"._
+_Figure: Status flag variants stacked vertically, each labelled "Flag" with an image icon. Callout 1 points at the green success flag (successful, completed or approved state). Callout 2 points at the yellow warning flag (potential issue that requires attention). Callout 3 points at the red error flag (failure, critical issue or negative outcome). Callout 4 points at the grey info flag (neutral or ongoing state, or non-semantic labels such as categories, tags or metadata)._
 
 #### Promo
 
@@ -219,7 +219,7 @@ Promo Flags are typically used alongside a button, but can also appear without o
 
 ![Promo](flag/promo-53360-17091.png)
 
-_Figure: Shows flag (icon, label=Flag, color=promo: highlight); flag (icon, label=Flag, color=promo: neutral). Callouts 1, 2. Text in the figure: "Flag"._
+_Figure: Two Promo flag variants stacked vertically, each labelled "Flag" with an image icon. Callout 1 points at the orange Highlight flag, used with a primary button or no button. Callout 2 points at the dark, almost black Neutral flag with light text, used alongside a Highlight (brand) button._
 
 ### Groupings and combinations
 
@@ -229,7 +229,7 @@ Ensure each group has a clear and distinguishable purpose.
 
 ![Combining multiple Flags in one section are allowed.](flag/combining-multiple-flags-in-one-section-are-allowed-52929-19872.png)
 
-_Figure: Shows action-card-vertical (media slot, padding=medium, content sizing=hug); action-card-vertical (padding=medium, content sizing=hug). Text in the figure: "Seasonal Tune-Up", "Battery Health", "Maintenance", "Seasonal", "Express Available", "RZ Financing Program", "Required", "Product information", "Battery-Powered Only", "Best Seller", "Our most popular service for longer life and reliable power.", "Make an appointment"._
+_Figure: Combining multiple flags in one section is allowed, as long as each group has a clear, distinguishable purpose. Top row, three cards: "Seasonal Tune-Up" with a battery photo and the grey flags "Battery Health", "Maintenance", "Seasonal" and "Express Available"; "RZ Financing Program" with a photo of a person working on a chainsaw, a yellow warning flag "Required" with an exclamation icon and grey flags "Product information", "Seasonal" and "Battery-Powered Only"; and a photo-less card with an orange flag "Best Seller", grey flags "Maintenance" and "Seasonal", the title "Seasonal Tune-Up", the text "Our most popular service for longer life and reliable power." and a dark button "Make an appointment" with a calendar icon. Below, a data table with the columns "Title", "Type and Status", "Product affiliation", "Published on" and "Add to bookmark"; its rows hold small grey type flags such as "Dealer news", "Technical bulletin", "Diagnostics" and "Product information", and one small green flag "Confirmed" with a check mark._
 
 #### Don’t combine too many different Flag variants in one section.
 
@@ -237,7 +237,7 @@ It makes scanning and comprehension more difficult. Use a max. of two Flag types
 
 ![Don’t combine too many different Flag variants in one section.](flag/don-t-combine-too-many-different-flag-variants-in-one-sectio-53251-11339.png)
 
-_Figure: Don't example. Shows action-card-vertical (media slot, padding=medium, content sizing=hug). Text in the figure: "Seasonal Tune-Up", "New", "Maintenance", "Seasonal", "Express Available", "Needs check", "Rejected"._
+_Figure: Don't example: a card with a battery photo and the title "Seasonal Tune-Up", followed by too many different flag variants in one section: an orange promo flag "New", grey info flags "Maintenance", "Seasonal" and "Express Available", a yellow warning flag "Needs check" with an exclamation icon and a red error flag "Rejected" with a cross icon. This makes scanning and comprehension harder; use a maximum of two flag types per section._
 
 #### Do use separate sections for each Flag variant.
 
@@ -245,7 +245,7 @@ It makes content easier to scan and understand.
 
 ![Do use separate sections for each Flag variant.](flag/do-use-separate-sections-for-each-flag-variant-54222-11448.png)
 
-_Figure: Do example. Shows action-card-vertical (media slot, padding=medium, content sizing=hug); Frame 3465185 (label=New, color=status: success); Frame 3465188 (icon, label=In assessment, color=status: warning); Frame 3465186 (icon, label=Rejected, color=status: error); Frame 3465187 (icon, label=Enrolled, color=status: info). Text in the figure: "New", "Needs check", "Rejected", "Seasonal Tune-Up", "Maintenance", "Seasonal", "Express Available", "In assessment", "Enrolled"._
+_Figure: Do example: each flag variant has its own section on the "Seasonal Tune-Up" card, which makes content easier to scan. The orange promo flag "New" sits on the top left of the photo, the yellow warning flag "Needs check" (exclamation icon) and red error flag "Rejected" (cross icon) sit together above the title, and the grey info flags "Maintenance", "Seasonal" and "Express Available" sit below it._
 
 #### Don’t use multiple Promo Flags within a group.
 
@@ -253,13 +253,13 @@ Promo Flags should stand out and not compete with one another.
 
 ![Don’t use multiple Promo Flags within a group.](flag/don-t-use-multiple-promo-flags-within-a-group-53310-12673.png)
 
-_Figure: Don't example. Shows action-card-vertical (padding=medium, content sizing=hug). Text in the figure: "Best Seller", "New", "Maintenance", "Seasonal", "Seasonal Tune-Up", "Our most popular service for longer life and reliable power."._
+_Figure: Don't example: a card without a photo that shows two orange promo flags, "Best Seller" and "New", side by side above the grey flags "Maintenance" and "Seasonal", the title "Seasonal Tune-Up" and the text "Our most popular service for longer life and reliable power." Multiple Promo flags within a group compete with one another; a Promo flag should stand out._
 
 #### Use a maximum of two Promo Flags per group, ensuring one is highlighted and the other is neutral.
 
 ![Use a maximum of two Promo Flags per group, ensuring one is highlighted and the other is neutral.](flag/use-a-maximum-of-two-promo-flags-per-group-ensuring-one-is-h-54222-11619.png)
 
-_Figure: Do example. Shows action-card-vertical (padding=medium, content sizing=hug); Frame 3465185 (label=New, color=status: success); Frame 3465188 (icon, label=In assessment, color=status: warning); Frame 3465186 (icon, label=Rejected, color=status: error); Frame 3465187 (icon, label=Enrolled, color=status: info). Text in the figure: "Best Seller", "New", "Maintenance", "Seasonal", "Seasonal Tune-Up", "Our most popular service for longer life and reliable power.", "In assessment", "Rejected", "Enrolled"._
+_Figure: Do example: a white card titled "Seasonal Tune-Up" with the text "Our most popular service for longer life and reliable power." Above the title are four Flags in two rows: two Promo Flags, a highlighted orange "Best Seller" and a neutral dark "New", followed by two light grey Flags "Maintenance" and "Seasonal". It shows the rule of a maximum of two Promo Flags per group, one highlighted and one neutral._
 
 ### Promo usage
 
@@ -296,13 +296,13 @@ When introducing new colors, ensure they are accessible and behave consistently 
 
 ![Additional colors](flag/additional-colors-52929-20005.png)
 
-_Figure: Shows flag (label=Status Info, color=status: info); flag (label=Status Info Custom, color=status: info). Text in the figure: "Status Info", "Status Info Custom"._
+_Figure: Additional colors for the Flag. The standard light grey Flag "Status Info" is shown on its own in the upper row. Below it are three custom-colored Flags, each labelled "Status Info Custom": one light peach, one light purple and one pink, all with dark text. They illustrate additional label colors that stay visually distinct from the Status Flags._
 
 #### Don’t use custom-colored Flags for the STIHL battery systems.
 
 ![Don’t use custom-colored Flags for the STIHL battery systems.](flag/don-t-use-custom-colored-flags-for-the-stihl-battery-systems-19713-126.png)
 
-_Figure: Don't example. Shows flag (label=AI-System, color=promo: highlight); Frame 3465192 (label=AK-System, color=status: warning); Frame 3465189 (label=AP-System, color=status: info); Frame 3465191 (label=AS-System, color=status: success). Text in the figure: "AI-System", "AK-System", "AP-System", "AS-System"._
+_Figure: Don't example: four text-only Flags stacked vertically, each in a different color: "AI-System" light blue, "AK-System" light yellow, "AP-System" light grey and "AS-System" light green. This is wrong because the STIHL battery systems must not be shown as custom-colored Flags; the dedicated battery system logos are used instead._
 
 #### Do use the dedicated STIHL battery system logos .
 
@@ -310,7 +310,7 @@ Refer to the [STIHL brand portal](https://brandportal.stihl.com/de/basic-element
 
 ![Do use the dedicated STIHL battery system logos .](flag/do-use-the-dedicated-stihl-battery-system-logos-54222-11737.png)
 
-_Figure: Do example. Shows logo 4 (variant=ai); logo 2 (variant=ak-system); logo 1 (variant=ap-system); logo 3 (variant=as-system); Frame 3465185 (label=New, color=status: success); Frame 3465188 (icon, label=In assessment, color=status: warning); Frame 3465186 (icon, label=Rejected, color=status: error); Frame 3465187 (icon, label=Enrolled, color=status: info). Text in the figure: "New", "In assessment", "Rejected", "Enrolled"._
+_Figure: Do example: the four dedicated STIHL battery system logos stacked vertically, each drawn as a small battery icon: AI in blue, AK System in orange, AP System in grey and AS System in green. This is right because the official logos are used for battery systems instead of custom-colored Flags; details are in the STIHL brand portal._
 
 ### Related components
 
@@ -340,7 +340,7 @@ These components serve different purposes and should not be used interchangeably
 
 ![Status Flag vs. System Feedback vs. Notification](flag/status-flag-vs-system-feedback-vs-notification-19819-198.png)
 
-_Figure: Shows Frame 3465161 (icon, label=Confirmed, color=status: success); Frame 3465162 (icon, label=Needs review, color=status: warning); Frame 3465172 (icon, label=Rejected, color=status: error); Frame 3465173 (icon, label=In review, color=status: info); system-feedback (type=success); system-feedback (type=warning); system-feedback (type=error); notification (close button, type=success, icon=True); notification (close button, type=warning, icon=True); notification (close button, type=error, icon=True); notification (close button, type=info, icon=True); toast (text=All files updated, icon, type=success). Callouts 1, 2, 3, 4. Text in the figure: "Confirmed", "Needs review", "Rejected", "In review", "Connector linked successfully", "Connector not found", "Connector unknown", "Success: All files have been successfully uploaded. Thank you for your patience.", "Warning: Connection unstable. Unsaved progress might be lost. Please save you...", "Error: There was an issue uploading your files. Please try again or contact s...", "Note: Enhance your experience by customizing your preferences in the settings...", "All files updated", "You have unsaved changes", "A new update is available"._
+_Figure: Comparison of Status Flag, System Feedback and Notification with four numbered callouts. Callout 1 points at four Status Flags with icons: "Confirmed" (green), "Needs review" (yellow), "Rejected" (red) and "In review" (grey). Callout 2 points at three System Feedback messages, text with a status icon and no background: "Connector linked successfully", "Connector not found" and "Connector unknown". Callout 3 points at four full-width Notifications with colored left border, icon and close button: "Success: All files have been successfully uploaded. Thank you for your patience.", "Warning: Connection unstable. Unsaved progress might be lost. Please save your work and check your network connection.", "Error: There was an issue uploading your files. Please try again or contact support if the problem persists." and "Note: Enhance your experience by customizing your preferences in the settings. Visit the Settings page to get started." Callout 4 points at three smaller Toasts with shadow, icon and close button: "All files updated" (green), "You have unsaved changes" (yellow) and "A new update is available" (grey)._
 
 ## Examples
 
@@ -351,13 +351,15 @@ _Figure: Shows Frame 3465161 (icon, label=Confirmed, color=status: success); Fra
 
 ![STIHL Service Communication (SSC)](flag/stihl-service-communication-ssc-19836-286.png)
 
+_Figure: STIHL Service Communication (SSC) page "SUPPORT NEWS" with the intro "Here you will find general updates, releases, product announcements and more.", tabs "All" (active), "Mandatory", "Most recent" and "Featured by STIHL Inc. Tech Services", and filters "All types", "All time periods", "Published new - old" and a "Show only unread news" checkbox. A table with columns "Title", "Type", "Product affiliation", "Published on" and "Add to bookmark" lists news items with small grey Type Flags such as "Dealer news", "Product information", "Recall notice", "Technical bulletin" and "Diagnostics". Some rows also carry a yellow status Flag "Required" with a warning icon, and one row a green Flag "Confirmed" with a check icon. Pagination shows "Rows per page: 10" and "30 – 40 of 74 items"._
+
 ### Timbersports Article
 
 - Multiple Flags in articles to show categories
 
 ![Timbersports Article](flag/timbersports-article-20082-317.png)
 
-_Figure: Text in the figure: "Home", "/", "News", "World Trophy 2023 in Rotterdam", "Nachrichten", "Ergebnis", "Mit Weltrekord: Neuseeländer Jack Jordan verteidigt härtesten Sportholzfäller...", "ƒ", "10. Jun 2023Niederlande · Global"._
+_Figure: Timbersports article page with breadcrumb "Home / News / World Trophy 2023 in Rotterdam". Two light grey category Flags, "Nachrichten" and "Ergebnis", sit above the uppercase headline "Mit Weltrekord: Neuseeländer Jack Jordan verteidigt härtesten Sportholzfäller-Titel der Welt", followed by the date line "10. Jun 2023Niederlande · Global" and a large photo of a smiling athlete with a medal and the World Trophy 2023 trophy._
 
 ### Corporate STIHL Journal
 
@@ -365,8 +367,12 @@ _Figure: Text in the figure: "Home", "/", "News", "World Trophy 2023 in Rotterda
 
 ![Corporate STIHL Journal](flag/corporate-stihl-journal-19713-120.png)
 
+_Figure: Corporate STIHL Journal page with the STIHL logo, a search field "Search Site", "Contact" and "English" links, and a navigation bar with "About STIHL", "Sustainability", "Careers", "STIHL Journal" and "Press". A grid of Link Cards shows one large card "Interview with Dr Michael Prochaska" and two cards "One lab for all", each with a photo, a short teaser text and two small grey category Flags at the bottom: "People and Stories" and "Interview" on the large card, "Backstage" and "Background Story" on the others. A cut-off second row has four cards titled "Charging and energy management in the STIHL AP"._
+
 ### Product Overview Page
 
 - Proudct Card with a Promo Flag
 
 ![Product Overview Page](flag/product-overview-page-53360-15528.png)
+
+_Figure: Product overview page with a grid of four Product Cards per row, each with a chainsaw image, a heart icon, title, star rating, "Chainsaw" category, short description, "Available now", price, "Compare" checkbox and orange cart button. The first card "MS 261 C-M" carries a dark Promo Flag "New" above its title. The third card "MSA 300 without battery and charger" shows a grey AP System battery logo at its top left. The other cards "MS 231" and "MS 162" have no Flag. A second row of cards is cut off at the bottom._

@@ -1,1 +1,87 @@
-{}
+{
+  "0717759fc4c93e1d54a5939ebd9c9c1f6b5ad9e7010a40486235f949291782bb": {
+    "nodeId": "694:1151",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a green success toast notification with a green check icon, the text \"All files updated\" and a close button (X) on the right. System feedback after a switch action can be communicated to the user through such a toast notification."
+  },
+  "0b34c59b21cbeefb5c6b29674d74ba5eb1c5f52b948d66a32120e639c65cf54b": {
+    "nodeId": "1430:4323",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a single checked checkbox with an orange check mark and the two-line label \"Hiermit stimme ich den Allgemeinene Geschäftsbedingngen von STIHL Vertriebszentrale AG & Co. KG zu\". In a form, a single checkbox is used instead of a switch, because a switch is not an input element."
+  },
+  "0fb0605a690eaf59c34bc40de39019e557ce011349c3b57f66377a69c6be5e96": {
+    "nodeId": "694:1126",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Switch in the loading state: the label \"Label\" in grey text, followed by a small circular dotted spinner in place of the switch track and knob. The switch is not interactive while loading."
+  },
+  "2de55bd3f2ee6ca0db81f2378ea0e1d6ae87597674feda06198a6597e711c2a3": {
+    "nodeId": "641:312",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two checked switches with an orange track and the knob on the right, shown at normal size on the left and enlarged on the right. Instead of the standard check icon, the knob carries a custom open padlock icon in orange on white, illustrating the use of another icon."
+  },
+  "3af5a52f6e474be156aff04d6e31219927652f15cc47ac9751b6363c09bfcd83": {
+    "nodeId": "23696:10175",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example, marked with a red \"Don't\" badge: \"Label left & right\". A single unchecked switch has a label on both sides, \"cm\" on the left and \"inch\" on the right. This is wrong because a switch must not have a label on both sides; use one label at a time."
+  },
+  "400d945183624653d366ff5dad511b518f016de3f149b73bae850bd078bb1def": {
+    "nodeId": "1430:4337",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a desktop dialog with the title \"Change settings\", a close button (X) at the top right, the text \"The setting changes you made require a restart of the app. Do you want to proceed?\" and a dark primary button \"Restart now\" at the bottom left. For bigger changes that are hard to undo, ask the user for confirmation in a dialog."
+  },
+  "4396ed87b9ec49863af103bf41013abfa0435c51bc18a6d8710d39cb4f9eb924": {
+    "nodeId": "641:272",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Named group of switches under the heading \"General\", with a divider line below it. Three rows list the label on the left and the switch on the right: \"High contrast mode\" unchecked, \"Location awareness\" unchecked, and \"Location awareness\" checked (orange track, white thumb with checkmark). The group name lets users scan and judge relevance quickly."
+  },
+  "4563ef1c15809f553e3baa3d007d0c69a743abf9041ba74cc0e6bf7f4beeab3c": {
+    "nodeId": "694:1171",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Mobile settings list on a four-column grid (pink column overlay with outer margins) headed \"Settings\". Three rows have the label on the left and the switch right-aligned in the last column: \"Tracking\" (off), \"Darkmode\" (off) and \"Notification\" (on, orange track with a check icon)."
+  },
+  "46515ed4d000fa9674ed4d5caf9059d068325f2e6484f63552022c3f0e8207ea": {
+    "nodeId": "641:261",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two switch rows with short labels of about 2 to 4 words, text on the left and switch right-aligned: \"Airplane mode\" with an unchecked switch (white track, dark thumb) and \"Show on home screen\" with a checked switch (orange track, white thumb with checkmark)."
+  },
+  "585750b102626e6964063c0e53041f8ff3f19b9e55a9ef58fe7561e9e83e7aa5": {
+    "nodeId": "694:1135",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: an unchecked switch labelled \"High contrast mode\" (dark knob on the left) with a red warning icon and the error message \"High contrast mode can’t be enabled\" above it. This is wrong because error messages must not be combined with the switch; if the function does not execute, the switch simply stays in its former state."
+  },
+  "5cbafe733fe864bc2e36b3ac43df51b9a3abdd08cad9af987814c0d0ddaaa6ab": {
+    "nodeId": "641:222",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Group of three switches under the section title \"Section Title\", which has a thin divider line below it. Each row has the label \"Label\" on the left and its switch right-aligned: the first two are unchecked (white track, dark thumb) and the third is checked (orange track, white thumb with checkmark). Grouped switches are given a clear section title."
+  },
+  "696bf2eb792f083748968bfc37cbce5f29798a9e9f7fa66839d662eef4cc7d18": {
+    "nodeId": "641:198",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two switch alignments on a four-column grid with red margin bars and pink columns. Callout 1 is the stretched alignment: the label \"Label\" sits at the left edge and the unchecked switch at the far right edge of the grid. Callout 2 is the default alignment: the label \"Label\" followed directly by the unchecked switch on the left. Stretched is used for settings on small viewports and/or narrow columns."
+  },
+  "75e3dbb5dbc98ddbd35a942724d9cc5e56a0494f25ab25b6d789ab52617fe2a6": {
+    "nodeId": "641:292",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Group \"General\" with three switches: \"High contrast mode\" unchecked, \"Location awareness\" unchecked, and \"Photo album\" checked (orange track, white thumb with checkmark). The \"Photo album\" row is highlighted with a blue outline, and a light blue note to its right reads \"Label: Photo album access\", showing the aria label that clarifies the function of the switch beyond its ambiguous visible label."
+  },
+  "a97b49873ff4c8f3ad7d167afcf947b519bd95af194a0d54e659ab4eeeceda93": {
+    "nodeId": "641:181",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two unchecked, enabled switches side by side. \"Label left\" (the default, following reading direction) places the text \"Label\" to the left of the switch. \"Label right\" places the text \"Label\" to the right of the switch."
+  },
+  "da730cb69b4cdd917ccf508aacbe51cacac998e1ec426884549bafbf1342e07f": {
+    "nodeId": "641:161",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the Switch with three numbered callouts, shown twice with the label \"Label Utility M\" on the left: unchecked (white track, dark thumb on the left) above checked (orange track, white thumb with checkmark on the right). Callout 1 points at the switch track, callout 2 at the label text, callout 3 at the thumb of the checked switch. An orange measurement \"8px\" marks the horizontal gap between the label and the switch, and \"16px\" marks the vertical gap between the two stacked switches."
+  },
+  "dd095cf48ffbbfbd8d7340964775936d02315acbd6e04567def5615605072bde": {
+    "nodeId": "694:1113",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two switches in the focus state, stacked vertically, each with the label \"Label\" on the left. The upper switch is unchecked (white track, dark knob on the left), the lower one is checked (orange track, white knob with a check icon on the right). In both, a double outline ring around the switch element only, not around the label, marks the keyboard focus."
+  },
+  "dd7ca334c76a1eb92a850c1d11c78fd25687b393cd22481c4e9a668dfaf5e8e0": {
+    "nodeId": "513:166",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview of the Switch with the label \"Label\" on its left, in a dashed purple frame. Columns are the states \"enabled\", \"hover/pressed\", \"focus\", \"disabled\" and \"loading\"; rows are \"checked false\" and \"checked true\". Unchecked: white track with a dark thumb on the left. Checked: orange track with a white thumb carrying a checkmark on the right. Hover/pressed has a darker fill (grey unchecked, darker orange checked). Focus adds a double dark outline around the track. Disabled is greyed out (grey label; grey thumb when unchecked, grey track with a white thumb and grey checkmark when checked). Loading is shown only for unchecked: the greyed label with a dotted spinner instead of the switch."
+  }
+}

@@ -4,6 +4,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Example of an image Carousel with reduced elements at two breakpoints, using a photo of an orange and white STIHL chainsaw with a \"100\" guide bar lying on logs. Under the label XL-L, the image fills the item with small white round previous and next controls inside at the left and right edges and a white-backed three-dot Scrollmarker overlaid at the bottom center. Under the label M-S, a much smaller version of the same image shows only the overlaid Scrollmarker and no controls."
   },
+  "09fde8ea4f5639e022d070612974ce4c817a49931403d76731e81c219bce680c": {
+    "nodeId": "61435:2233",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Recommended Item aspect ratios of the single-item carousel in three columns, each item shown as a purple image placeholder with scroll markers below. \"Desktop\": one carousel with previous and next arrows at \"16:9\". \"Tablet\": three carousels at \"4:3\", \"3:2\" and \"16:9\". \"Mobile\": three carousels of the same width, labelled \"16:9\", \"1:1\" (square) and \"16:9\", the last one flatter than the first. Aspect ratios can be used flexibly."
+  },
   "09ffe66defbfa2cb0c113ebac56aa7c89b114a94be7b5595192fa6a3193b16d7": {
     "nodeId": "60750:43802",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -23,6 +28,11 @@
     "nodeId": "60750:43799",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Overview of the Carousel in a \"Single-Item\" and a \"Multi-Item\" section across Breakpoints XL, L, M and S. Single-Item shows one large \"Placeholder Item\" per page; for XL and L two variants are shown, \"Scrollmarker position: outside, navigation control position: outside\" (previous and next arrow buttons beside the item, dots below it) and \"Scrollmarker position: inside, navigation control position: inside\" (arrows and dots overlaid on the item), while M and S show only \"Scrollmarker position: outside\" and \"inside\" with no arrow buttons. Multi-Item shows four items (\"Placeholder Item 1\" to \"4\") at XL and L with a disabled left arrow, an enabled dark right arrow and three scrollmarker dots below; at M items 1 and 2 are fully visible while item 3 is partly cut by a vertical line and items 3 and 4 are faded, and at S only item 1 is fully visible with items 2 to 4 faded behind a vertical line, with dots below and no arrows."
+  },
+  "206a52f875b2541b49c3caf37e4c299153a8d0d74540f5160d1081cf7e2cf02c": {
+    "nodeId": "61435:2275",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: single-item carousel on breakpoint l with equal item heights. The purple items \"Item 1\" and \"Item 2\" (and a third item cut off at the right edge) all sit exactly between the same top and bottom purple dashed lines, so every Item has the same height. The previous arrow is greyed out, the next arrow is active, and the scroll markers below show the first of three dots selected. Consistent Item height prevents layout shifts during navigation and gives a stable, predictable browsing experience."
   },
   "236a2a2a2fe7e7d4e8a306f662087900166756a1f5fc7be2a663c5afc8ee9bfa": {
     "nodeId": "62565:16968",
@@ -79,6 +89,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Don't: two single item Carousels, \"Page 2\" and \"Page 3\", each with a \"Placeholder Item\". On Page 2 the dark Navigation Controls sit outside the item at its sides and the Scrollmarker dots sit below it. On Page 3 the light Navigation Controls and the Scrollmarker, in a white pill, are placed inside the item, with the Scrollmarker at the bottom. Switching Navigation Control and Scrollmarker placement within the same Carousel is inconsistent and wrong."
   },
+  "3c96a9a9085825064f5bf29ff5352daddc287acb0f2bf291d86b51e20e94a914": {
+    "nodeId": "61435:2304",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Multi-item carousel on breakpoint l inside a browser window. A purple dashed Viewport frame holds four equally wide Items, \"Item 1\" to \"Item 4\", with a grey previous button on the left, a dark next button on the right and three pagination dots below (the first one elongated). Each Item is marked below with a dashed dimension \"1/x Viewport width\", so the Items evenly fill the Viewport width. To the right, outside the browser window, the paler Items \"Item 5 (hidden)\", \"Item 6 (hidden)\", \"Item 7 (hidden)\", \"Item 8 (hidden)\" and \"Item 9 (hidden)\" continue the row and are not visible in the Viewport."
+  },
   "4138f69ec4b5e69a9799dab350f699a2dda68f7acf15f55da6f5b8072d46f233": {
     "nodeId": "62581:18965",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -129,6 +144,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "A mobile phone frame showing a single-item Carousel with one purple Placeholder Item and a Scrollmarker of three dots below it, the first one active. A hand icon beside the item with an arrow pointing left illustrates a horizontal swipe gesture as the primary interaction on touch devices."
   },
+  "5a15ba7e791f9b123c7475511878c717ddb2f28add2175a2f172457a80541706": {
+    "nodeId": "61435:2285",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: single-item carousel on breakpoint l with items of different heights. \"Item 1\" fits between the purple dashed top and bottom lines, while \"Item 2\" is taller and extends above and below those lines, and the third item at the right edge has yet another height. Mixing Item heights causes layout shifts, reduces visual consistency and disrupts the browsing experience."
+  },
   "5c3ba5f3a27adf0c7f588cec04c5bfc9b5433caa465fde204473d613056fa082": {
     "nodeId": "62524:14322",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -168,6 +188,16 @@
     "nodeId": "61435:1746",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Don't example: a single-item Carousel item with competing messages. The grey content block shows the headline \"Win a Trip to Canada, Range Rover, and More!\", supporting text and two calls to action side by side, the dark button \"Participate now\" and the text link \"Find out more\" with a chevron, next to a forest photo with a \"100 Years\" logo. This is wrong because competing calls to action reduce clarity and make the content harder to scan."
+  },
+  "839795787a120e336f7dd1f2b9026a64f8487dca5a496a058c752ffc319515b6": {
+    "nodeId": "61435:2324",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: do not mix Items with different heights. The multi-item carousel on breakpoint l shows \"Item 1\" to \"Item 4\" and the hidden Items \"Item 5 (hidden)\" to \"Item 9 (hidden)\" with varying heights: some end above the bottom of the dashed purple frame, while \"Item 2\", \"Item 3\", \"Item 6 (hidden)\", \"Item 7 (hidden)\" and \"Item 9 (hidden)\" extend below it. Varying heights cause layout shifts, reduce visual consistency and disrupt the browsing experience."
+  },
+  "84b88b90430bd9b5804e0f58921d94d6c655d40ba6d7420afcb80f6b12a8a3fe": {
+    "nodeId": "61435:2335",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Multi-item carousel on breakpoint s in a narrow mobile screen with three pagination dots below. The first Item, a pale dashed placeholder labelled \"Placeholder Item 1\", fills most of the width, and the next Item is partly revealed in stronger purple at the right edge of the Viewport as the Peek. A dashed dimension \"10%\" marks the width of the Peek, which should occupy approximately 10% of the Container width."
   },
   "85cb5b5c2c35b2298a5c6add639e83406246e72de5127d11a4f8fdb0666f7197": {
     "nodeId": "62641:98804",
@@ -228,6 +258,16 @@
     "nodeId": "61435:2092",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Example of a hero-stage style Carousel, for the My STIHL use case, at two breakpoints. Under the label XL-L, the item has a grey content block on the left with the headline \"Win a Trip to Canada, Range Rover, and More!\", the text \"As a thank you for registering your products, we're giving you the chance to win incredible prizes!\" and a \"Participate now\" button, and a forest photo with an orange gift icon on the right, with controls at the sides and a three-dot Scrollmarker below. Under the label M-S, the same content is stacked: photo on top, then headline, text and button, with the Scrollmarker below and no controls."
+  },
+  "b4b5e5160fe0146a315c4123076930f0ed3e64eafd8f1a042a084bcb7502f7e5": {
+    "nodeId": "61818:3135",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: single-item carousel on breakpoint l inside a browser window mockup. The purple image item is so tall that its lower part, shown lighter, extends below the bottom edge of the browser window, marked by a dotted purple line, and the scroll markers sit below the fold as well. Aspect ratios that push the Carousel content or Scrollmarkers below the fold must not be used."
+  },
+  "b5b9081388dbd98ee196a8efb190c117c0ff53686ea5cfd4c441f92bb18cb7ba": {
+    "nodeId": "61435:2314",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: keep all Items the same height. The multi-item carousel on breakpoint l shows \"Item 1\" to \"Item 4\" in the dashed purple Viewport and the paler hidden Items \"Item 5 (hidden)\" to \"Item 9 (hidden)\" continuing to the right, all with identical height that exactly fills the dashed frame, with previous and next buttons and three pagination dots below. A consistent Item height prevents layout shifts during navigation and creates a stable, predictable browsing experience."
   },
   "b607003b5e4db5a5f934fd3feebfe6c76358dad3ac169ff12aeb466fefa119dd": {
     "nodeId": "61767:2955",

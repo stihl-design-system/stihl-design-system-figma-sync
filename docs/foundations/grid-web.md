@@ -16,7 +16,7 @@ figmaNodeId: 1:132
 figmaVersion: "2315997626726619921"
 figmaVersionLabel: DS-1185 Docu | Global | Add Connected Contact to the disclaimer of Sidebar Grid
 figmaVersionCreatedAt: 2026-02-02T16:02:45Z
-syncedAt: 2026-11-05T21:31:43.901Z
+syncedAt: 2026-11-18T18:18:45.537Z
 sourceUrl: https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ?node-id=1-132
 ---
 
@@ -129,7 +129,7 @@ To maintain optimal readability, text should not exceed 80 characters per line. 
 
 ![Text behavior within the gird / content areas](grid-web/text-behavior-within-the-gird-content-areas-3568-16519.png)
 
-_Figure: Text in the figure: "Lorem ipsum dolor sit amet consectetur. Varius tellus donec molestie molestie...", "34em based on text size"._
+_Figure: Text block of lorem ipsum placeholder copy in four lines, bounded left and right by purple dashed vertical lines. A purple double-headed arrow below the text spans the full width between the lines and is labelled "34em based on text size", showing that the maximum text width is 34 times the font size._
 
 #### Maximum Width within Content Areas
 
@@ -144,7 +144,7 @@ This ensures text always respects both layout constraints and optimal readabilit
 
 ![Maximum Width within Content Areas](grid-web/maximum-width-within-content-areas-3568-16534.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); annotation-circle (number=2, type=center, color=blue). Callouts 1, 2. Text in the figure: "viewport 1024px", "Content area Narrow", "Lorem ipsum dolor sit amet consectetur. Varius tellus donec molestie molestie...", "container width smaller than max. text width", "viewport 1440px", "max. text width", "container width greater than max. text width"._
+_Figure: Two grid diagrams with pale red column overlays, each with a blue "CONTENT AREA NARROW" bar above a lorem ipsum text block. Callout 1, "viewport 1024px": the content area is narrower than the maximum text width, so the text fills the container, marked by an arrow labelled "container width smaller than max. text width". Callout 2, "viewport 1440px": the content area is wider, so the text is capped at an arrow labelled "max. text width" that ends short of the right edge, while a second arrow below labelled "container width greater than max. text width" spans the whole container._
 
 ## Grid Web: Content Placement Examples
 

@@ -1,1 +1,187 @@
-{}
+{
+  "0300cc1be0c0c71cbbd72ffddd77a8e0e04429d469d9e68bc7771554f124ce7e": {
+    "nodeId": "14272:48021",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop dialog \"Case access\" with a close button and two stacked text inputs, \"Case ID\" and \"Case password\", both showing the placeholder \"Input\". Below are a full-width primary button \"View case\" and a full-width outlined button \"Cancel\" in a vertical footer. Callout 1 points at the \"Case ID\" input, the first input field, which has a thicker dark border showing it has initial focus when the dialog opens."
+  },
+  "146d10a0a03dfadbf5f623608a6d791d7cd8cf597d79844633d4818993a51e52": {
+    "nodeId": "14272:47976",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four dialog header formats, each with a close icon at the top right and a numbered callout on the left. Callout 1: small \"Topline\" above the heading \"Heading L\". Callout 2: the uppercase heading \"HEADING M UPPERCASE\", better suited to large dialogs. Callout 3: the \"TITLE COMPONENT\" with a short dash below it, better suited to impactful and emotional headers. Callout 4: a grey round icon with a graduation cap to the left of \"Heading L\" and the bold \"Subline\" below it."
+  },
+  "19e0e0034f8279b16f1973ca654060c6918134441f94371ab96d52fd32f77b78": {
+    "nodeId": "14272:48011",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two button pairings, each with a purple plus sign between the buttons. Top row: a dark filled button \"Filled\" next to an outline button \"Outline\". Bottom row: the dark filled button \"Filled\" next to a ghost button \"Ghost\" with a chevron-right icon on the right and no border. In both pairings the filled button, as the primary action, comes first on the left."
+  },
+  "20a293c0fb979fa688d1a9ca9a2dd8e22ca60da5dff04c56225eb7097769ded3": {
+    "nodeId": "15905:5964",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Bottom part of a mobile dialog (the top is cropped) with lorem ipsum text above three full-width stacked footer buttons, all labelled \"CTA\": a dark filled primary button at the top, followed by two outline buttons. On mobile screens the footer buttons are stacked vertically, with the primary action usually at the top."
+  },
+  "24fb751ddfa046b90079bd2885a8106d26b7a4829719ff0574f8bfaf1aefb827": {
+    "nodeId": "14272:47830",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: loading state of the desktop dialog \"Edit active time\". It contains \"Active time Every Thursday\", time inputs \"Start time\" and \"End time\" (both \"15:00\"), a \"Mowing zone\" select with \"Automatic\", unchecked checkboxes \"Enable instance\" and \"Enable series\", and a yellow warning \"2 mowing jobs per week left\". In the footer the primary button is greyed out and shows a loading spinner instead of a label, while \"Cancel\" and \"Delete active time\" (with trash icon) are greyed out as disabled during the pending submit; the dialog stays open."
+  },
+  "2c7108100f5a1d183c3cbe97fe0f1edf077701abd6020dc25bc8cec61f7c95f8": {
+    "nodeId": "15855:11099",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Figma dialog component for desktop without overflow, a white panel on a grey backdrop, with three numbered callouts. Callout 1 points at the header area with the title \"Heading\" and a close button. Callout 2 points at the content area, a purple dashed \"Placeholder\" component that can be swapped for your own content. Callout 3 points at the footer area, whose first button is a filled dark primary \"Button\", followed by a second outlined \"Button\", with a third outlined \"Button\" at the right edge."
+  },
+  "32d49a67b33f8f2e693d3f7c541a54ffc70a369dbc344c001429e91f61984daf": {
+    "nodeId": "40483:6597",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Examples of components for system and mandatory messages. A dialog on the right with the heading \"Cookies help us improve your experience.\", the text \"By clicking “Accept all,” you agree to the use of cookies as described in our Cookie Policy.\" and the buttons \"Accept all\" (primary) and \"Manage preferences\" (outlined). On the left, a grey info notification \"The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.\" with a close button, a green success toast \"Settings have been saved.\" with a close button, and a yellow warning notification \"Recall notice: Product XY has been recalled. Please visit www.example.com for safety and return details.\""
+  },
+  "3664572f982d6c6a77e2c3486fd762539a33ec3af4678a2f590937da01049af9": {
+    "nodeId": "14272:47816",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the dialog with four numbered callouts: a white dialog panel on a grey backdrop contains three purple dashed slots stacked vertically. Callout 1 points at the custom header area, labelled \"Header Area\". Callout 2 points at the custom content area (optional), labelled \"Content Area\". Callout 3 points at the custom footer area (optional), labelled \"Footer Area\". Callout 4 sits on the grey backdrop below the panel and refers to the backdrop."
+  },
+  "3df35d1119aea1ff275c54def0d87ab35ffe4494d25e7ccd1e83549f3c22a9ee": {
+    "nodeId": "15427:8109",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop dialog with the uppercase heading \"Model lorem ipsum\" and a close button at the top right, whose custom area uses a 50/50 two-column layout and an empty footer. The left column holds a large iMOW robotic mower image with three thumbnails below (the first is selected). The right column shows \"IMOW® 5\", the price \"1999,00 €\", a bullet list of five German product features starting with \"Mähroboter für bis zu 1.500 m² große Rasenflächen und Steigungen bis 40 %\", and a full-width outline medium button \"Zur Produktseite\". Both columns are tinted light purple."
+  },
+  "4c509256b2bdbc11515b73d0d324038e650857bd1c49e1d31348bad698e864bf": {
+    "nodeId": "40483:6579",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three components stacked by urgency, each with a numbered callout. Callout 1 marks the desktop dialog with the heading \"Heading\", a close button, a purple \"Placeholder\" area and three \"Button\" buttons (highest urgency, requires explicit user action). Callout 3 marks, in a first group, a grey info notification \"This is a notification message that guides the user.\" with an outlined \"Button\", a text \"Button\" and a close button, plus a small info toast \"All files lorem ipsum\" with a close button. A second callout 3 marks a dark banner with an image icon, \"Promo Banner Link\", a chevron and a close button."
+  },
+  "4ed7400fa1252b22f0f16838ecd182b9abcf44a945489f14925300e59c0a0b5d": {
+    "nodeId": "14943:5492",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop dialog \"New active time\" on a dimmed backdrop, as a task closely connected to the main flow. It has a close button, radio buttons \"Not recurring\" (selected) and \"weekly recurring\", a \"Date\" input with the placeholder \"DD/MM/YY\" and calendar icon, \"Start time\" and \"End time\" inputs (both \"15:00\") side by side, a \"Mowing zone\" select with \"Automatic\", a yellow warning \"2 mowing jobs per week left\", and a footer with the primary button \"Add active time\" and the outlined button \"Cancel\"."
+  },
+  "5318c2092bd276c4d2b54f5b51198421f246833a06c6031a3a0d2ed7647e549c": {
+    "nodeId": "15905:6740",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Bottom part of a mobile dialog (the top is cropped) with lorem ipsum text containing an inline link, above four full-width stacked small buttons all labelled \"CTA\": one dark filled primary button at the top and three outline buttons below. Small buttons are used so the sticky footer takes less height; with 4 or more buttons small buttons should be used and inline links or buttons in the content area considered."
+  },
+  "6ea0a0cb6b3cf60b0453ed45363d651bb9d5ccdb2104fe0dd48621b07c58ea41": {
+    "nodeId": "14713:4655",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop dialog \"Edit active time\" on a dimmed backdrop, as a form to edit an object. It has a close button, \"Active time Every Thursday\", \"Start time\" and \"End time\" inputs (both \"15:00\"), a \"Mowing zone\" select with \"Automatic\", unchecked checkboxes \"Enable instance\" and \"Enable series\", and a yellow warning \"2 mowing jobs per week left\". The footer has the primary button \"Save\" and outlined \"Cancel\" on the left and the outlined \"Delete active time\" with a trash icon on the right."
+  },
+  "793bdddee57fe27515a0d48e2688db7f48239e22c53eac6f1b29a47876c6579c": {
+    "nodeId": "16231:16553",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Building elements of the dialog, shown in two purple dashed frames. \"Header\" contains the \"Heading\" with a close (X) button on the right, once for \"Desktop\" and once for \"Mobile\" (smaller heading). \"Footer\" is split into \"Desktop\" and \"Mobile\" with the rows \"Primary Position left\" and \"Primary Position right\", each with \"Direction: horizontal\" and \"Direction: vertical\". With primary position left, the horizontal desktop footer shows the filled primary \"Button\" and an outlined \"Button\" side by side on the left and a third outlined \"Button\" set apart on the right; with primary position right it is mirrored: one outlined \"Button\" on the left, then an outlined \"Button\" and the filled \"Button\" on the right. Vertical footers, on desktop and mobile, stack three full-width buttons with the filled \"Button\" on top and two outlined ones below; mobile has only the vertical layout."
+  },
+  "7d057b049e5877498ad9f3995e10a820bd086c1b994c7c77d1630c684089699b": {
+    "nodeId": "14684:4630",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop dialog using the header as the message. The heading spans three lines, \"Are you sure you want to add the “speech to Text” service to the node-test-app?\", with a close button at the top right, no content area, and a footer with the primary filled button \"Add service\" and the outlined button \"Cancel\" on the left."
+  },
+  "8007c57e14428b05886e06979da24511b60cbcca9d86d518eaee1f1a7e10cf0b": {
+    "nodeId": "40483:6611",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three full-width banners without close buttons for marketing and engagement. A dark default banner with a mail icon and \"Join our Newsletter\" with a chevron, an orange highlight banner with a percent icon and \"Up to 40% off all Chainsaw models\" with a chevron, and a light grey banner with three USPs, each with an icon: \"Versandkostenfreie ab 49€\", \"Lieferung oder Abholung vor Ort\" and \"30 Tage Rückgaberecht\"."
+  },
+  "81f90526dada7c66bf37d534474bbe081ae0962194fe692b878b4834d40ccfdc": {
+    "nodeId": "40483:6619",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Light grey secondary banner without a close button for informational messages, with a bell icon, the bold text \"We’ve just rolled out something new!\" followed by \"Check out the latest updates and improvements\" and a chevron."
+  },
+  "838c33e9a05f86a5504606f5a26850bd888fed49e3fcb187ac563fcfee06d3d9": {
+    "nodeId": "14272:47905",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four numbered dialog examples by number of action buttons, stacked vertically. Callout 1: a desktop dialog with zero action buttons, only the text \"The service “speech to text” is added.\" and a close icon, which is then mandatory. Callout 2: a desktop dialog with the question \"Are you sure you want to add the “speech to text” service to the node-test-app?\", a close icon and two left-aligned buttons, a filled \"Add service\" and an outline \"Cancel\". Callout 3: the same dialog with three buttons: filled \"Add service\" and outline \"Read details\" on the left and outline \"Cancel\" on the right. Callout 4: a narrow mobile dialog with the \"Heading\", a close icon, lorem ipsum text containing an inline link, and three full-width stacked buttons: filled \"Accept all\", outline \"Reject all\" and outline \"Cancel\"."
+  },
+  "9888524e9763fcbd2d5d27ed2411d8157cce81f57c96d5ef29752462ad7ec18f": {
+    "nodeId": "16231:16688",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview \"Variants and Elements to toggle on/off\" for the dialog header and footer; each variant is labelled with its toggles. \"Header\", \"Desktop\" and \"Mobile\": three rows in two columns each, the left column with the leading icon/function on and the right column with it off (drawer only). Rows: \"Heading\" with \"Subline\" and a close (X) button; \"Heading\" with close button only; close button only without heading. \"Footer\", \"Primary Position left\" and \"Primary Position Right\", each for \"Desktop\" (direction horizontal or vertical) and \"Mobile\" (no direction, buttons stacked): three rows show all three buttons, first and second button only, or the first button only. The primary button is filled and the others are outlined. In the primary-left horizontal layout the third button sits apart from the first two. With primary position right the order is reversed: the outlined button comes first and the filled primary button is last. The last mobile row of primary position right (first true, second false, third true) shows a single filled \"Button\"."
+  },
+  "98aacf0bad48598a280456951e75a01fefc00de964fde7dada58b8a72f2ea00f": {
+    "nodeId": "14741:8365",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Closing animation of the desktop dialog on a grey backdrop. The dialog shows \"Heading\", a close icon, a dashed purple \"Placeholder\" content area, and a primary \"Button\" and a second \"Button\" on the left and a third \"Button\" on the right. A purple arrow pointing up is labelled \"Drawer\": \"move: out from center to top\" and \"fade: opacity 100 > 0%\". A second purple label reads \"Backdrop\": \"fade: 100 > 0% Opacity (color: black 50%)\"."
+  },
+  "99466fa0c98874b643c6cd5865b1bb659fbee081aa0f68ce5db48c7324f445f6": {
+    "nodeId": "15905:5959",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two wireframes of browser windows showing button placement. Callout 1 shows a page with form field placeholders where a filled black button and an outline button sit left-aligned directly below the content (recommended: reached faster by eye or mouse). Callout 2 shows a centered dialog-like panel with a step progress bar and two columns of fields, where an outline button and a filled black button are right-aligned at the bottom, common for actions that proceed, such as \"Next\" or \"Submit\"."
+  },
+  "a7843f960db588a47f0b3e73f700b244caddf25597265698e47deb368c849f38": {
+    "nodeId": "14272:47938",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two schematic browser windows, a wide one and a narrow one, on a grey backdrop. In each, a white dialog wireframe with a heading bar, a close icon, a grey content block and a dark button sits in the middle. Purple dashed lines cross the viewport horizontally and vertically, showing that the dialog is centered in the viewport."
+  },
+  "aab9c578efb7e8a553909f9420beccb45fa870e88d6d5b6ad68f04db0f0fc2ed": {
+    "nodeId": "16004:5948",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two dialogs with long scrolling content. The desktop dialog has the header \"Heading\" with a close button, a long lorem ipsum text area with a scrollbar thumb, and a footer with a primary \"Button\" and a second \"Button\" on the left and a third \"Button\" on the right. The mobile dialog has the same header and scrolling text, and a footer with three full-width \"Button\" buttons stacked vertically, the primary on top. Header and footer stay fixed (sticky) and each is separated from the scrolling content area by a thin border line."
+  },
+  "ae5f51d7327d2ad2abecb753c0e61580d8275dafed39847c64d108fccb9a75ab": {
+    "nodeId": "15894:7760",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two schematic tall dialogs in browser windows showing the maximum height. On the left, a desktop window with the dialog centred: vertical arrow dimensions mark \"min. 40px\" between the top window edge and the dialog top and \"min. 40px\" between the dialog bottom and the bottom window edge. On the right, a narrow mobile window with the same gaps labelled \"min. 24px\" at top and bottom. Each dialog shows a header line, close button, large content block and a dark button."
+  },
+  "b0b28f58402ecbcb43f68692d69a2b7a00b3cacf3696aa207bc40090c0a91fd5": {
+    "nodeId": "14272:48031",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a dialog with short, optimized copy for mobile use. The white panel has the heading \"Update available\", a close (X) button, the two-line text \"A new version of the app is ready. Update now for the latest features and improvements.\", and a horizontal footer with the filled primary button \"Update now\" on the left and the outlined button \"Remind me later\" next to it."
+  },
+  "b4bc3cffa0b475d09a7dd365d8990281c0bc95d7677dabbd4ee574092a16ee30": {
+    "nodeId": "14272:47982",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop dialog with the heading \"Machine lorem ipsum\" and a close button (x) at the top right. The custom content area, outlined with a purple dashed line and tinted light purple, is filled with a large product image of a STIHL cordless chainsaw, illustrating that the dialog follows the size of a large content area such as an image or map. No footer buttons are shown."
+  },
+  "b7549f7abaa445ec80edf206a7413976408eedf238d924190d840fb19677c657": {
+    "nodeId": "14943:5487",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example, marked with a red \"Don't\" label and a red bar on the left edge: a desktop dialog with the heading \"Are you sure you want to add the “speech to Text” service to the node-test-app?\" and a close button, whose footer buttons, a filled \"Add service\" and an outline \"Cancel\", are centered horizontally. Wrong because the button or paired buttons must not be centered."
+  },
+  "c55354ed653acad506f177322fdfb329439979a80f1dd043b13572696cd02dd7": {
+    "nodeId": "14272:47847",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop dialog for an immediate response, a white panel on a light grey page with a close (X) button at the top right. It has the heading \"Leave page?\", the body text \"Your data will not be saved, and any information you have entered will be lost. This action cannot be undone.\", and a horizontal footer with the filled primary button \"Leave page\" on the left and the outlined secondary button \"Cancel\" next to it. It illustrates a confirmation for a destructive action."
+  },
+  "c8f4b63fa4a319269d5d6ac65b8c35237461cec7e3d8af13eeac43d21e8d2380": {
+    "nodeId": "14272:47797",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Dialog component variants on a grey backdrop in a 2x2 grid: columns \"Viewport: Desktop\" and \"Viewport: Mobile\", rows \"Overflow: false\" and \"Overflow: true\". Every dialog is a white panel with the header \"Heading\" and a close button (X), a purple dashed \"Placeholder\" content area and a footer with three \"Button\" buttons, the first one filled dark (primary). On desktop the footer buttons are in one horizontal row: primary and second button on the left, third button on the right. On mobile the three buttons are stacked vertically and full width, primary on top. With \"Overflow: false\" the dialog is only as tall as its content and has no dividers. With \"Overflow: true\" the content area is tall and scrolls (scrollbar visible), with divider lines between header, content and footer, so header and footer stay fixed."
+  },
+  "d0d080ad0fba340647a42d71042663c7ac4f97311bc705549beacb1af585d6fd": {
+    "nodeId": "14515:4626",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example, marked with a red bar on the left edge and a red \"Don't\" label: the dialog \"Case access\" with a close button contains a long paragraph of copy about the Case ID and password, followed by two empty input fields labelled \"Case ID\" and \"Password\", and the buttons \"View case\" (primary) and \"Cancel\". It is wrong because the copy is too long in combination with input fields; copy should be kept short."
+  },
+  "d68f7befccc73c94c53708359745b624bd5e18bf18d27ad228ff636277359284": {
+    "nodeId": "14884:5996",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop dialog showing the reading hierarchy. The heading \"You will read this first\" with a close button is read first, followed by the body text \"And then you will read this line next.\", and a footer with the primary filled button \"Accept all\" on the left and the outlined button \"Cancel\" next to it."
+  },
+  "e81d49dc9c1e91e3fa5effa630f541b633a0d149c3b498291096d26b0fd0c1a3": {
+    "nodeId": "14943:5481",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Exception example for slider and pagination: a wireframe of a small dialog on a dimmed browser window, with a header bar and close button, a large image placeholder, and a centered footer containing pagination controls (a small square, a wider bar and another small square). Pagination may be placed in the center of the custom footer area."
+  },
+  "f02846b5da78c5a340fda144c744201734a5b42445b1a89dba4fa3d68bcf787b": {
+    "nodeId": "14741:8360",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three schematic dialogs in browser windows showing the maximum width. At the top, on a large window, a dialog is centred and a horizontal arrow dimension below it, labelled \"max. content narrow\", marks that the dialog cannot be wider than the content narrow area. At the bottom left, on a medium window, a dialog fills most of the width and the arrow between the left window edge and the dialog is labelled \"min. 40px\", the minimum space on bigger screens. At the bottom right, on a narrow mobile window, the left gap is labelled \"min. 24px\", the minimum space on smaller screens."
+  },
+  "f0cb142cef4866ccd7e17f1c4e90bc2b140fe972358ac768abb5e65ff2113baa": {
+    "nodeId": "14303:49206",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Opening animation of the desktop dialog on a grey backdrop. The dialog shows \"Heading\", a close icon, a dashed purple \"Placeholder\" content area, and a primary \"Button\" and a second \"Button\" on the left and a third \"Button\" on the right. A purple arrow pointing down is labelled \"Drawer\": \"move: in from top to center\" and \"fade: opacity 0% > 100%\". A second purple label reads \"Backdrop\": \"fade: 0 > 100% Opacity (color: black 50%)\"."
+  },
+  "f4c455e4af282a9689dcce4689271112aa19110d8bc588a608e7b70f5a804ca2": {
+    "nodeId": "14836:5570",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop dialog with the heading \"Heading\", a close button at the top right, a purple dashed \"Placeholder\" content area and a horizontal footer with three buttons labelled \"Button\" (the primary dark button and one outlined button on the left, one outlined button on the right), on a dimmed grey backdrop. Callout 1 with a pointer cursor points at the close button: closing the dialog triggers the exit animation immediately. Callout 2 with a pointer cursor points at the dimmed backdrop outside the dialog: closing by click on the backdrop can be disabled; the default is enabled."
+  },
+  "f50e82fd611d8f1d62b636ca8fe9c2daa93a5879daea70ec3e36d137c9ff6047": {
+    "nodeId": "14272:47931",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two schematic dialogs, one in a desktop browser window and one in a narrow mobile window, each shown as a small white panel with a header line, close button, content block and dark button. Dashed purple vertical lines at the left and right edges of each dialog and a horizontal arrow dimension below it, labelled \"min. 272px\" in both cases, show the minimum dialog width, based on the smallest viewport size."
+  },
+  "faf0382ab5c03d6c107ee6d56611d610364c1accb25e20c910b4d51244226b3f": {
+    "nodeId": "14741:8353",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a mobile dialog with the heading \"Heading lorem\" and a close (X) button, separated by lines from a long body that has to be scrolled (visible scrollbar). The body is lorem ipsum text with several inline links placed close together, followed by a map image that is cut off at the bottom, and the footer has a single full-width filled \"Button\". It is wrong because it requires scrolling, has small touch targets from closely spaced inline links, and contains heavy content such as a map that may load slowly."
+  }
+}

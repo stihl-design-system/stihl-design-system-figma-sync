@@ -15,7 +15,7 @@ figmaNodeId: 1:1253
 figmaVersion: "2315997626726619921"
 figmaVersionLabel: DS-1185 Docu | Global | Add Connected Contact to the disclaimer of Sidebar Grid
 figmaVersionCreatedAt: 2026-02-02T16:02:45Z
-syncedAt: 2026-11-05T21:31:47.586Z
+syncedAt: 2026-11-18T18:18:47.486Z
 sourceUrl: https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ?node-id=1-1253
 ---
 
@@ -236,7 +236,7 @@ _Figure: Five longer page layouts of the example page, labelled Breakpoint S: 32
 
 ![Example without spacers](spacing/example-without-spacers-2-3441.png)
 
-_Figure: Shows logo (type=deafult, logos=main); title (title text=Protection making security, size=xl, viewport=mobile); spacer (type=dynamic token, direction=vertical); spacer (type=core token, direction=vertical); button (button text=Button, variant=filled, state=enabled, size=medium, icon position=none, hide label=off, flush alignment=off); button (button text=Button, variant=filled, state=enabled, size=small, icon position=none, hide label=off, flush alignment=off); input-medium (system feedback, state=enabled, invalid=false); button (button text=Button, variant=ghost, state=enabled, size=medium, icon position=right, hide label=off, flush alignment=on); button (button text=Button, variant=ghost, state=enabled, size=small, icon position=right, hide label=off, flush alignment=on); link-default (label=Link Default, variant=neutral, state=enabled, icon position=none); title (title text=Protection making security, size=xl, viewport=desktop). Measurements: 56px, 16px, 24px, 80px, 32px, 40px, 8px, 64px, 96px, 48px, 120px. Text in the figure: "Breakpoint S: 320px", "Breakpoint M: 768px", "Breakpoint L: 1024px", "Breakpoint XL: 1536px", "Breakpoint: 1668px", "Protection making security", "ƒ", "Infrastructure voluptate elit amet ex ecosystem", "Lorem ipsum dolor sit amet consectetur. Eget sollicitudin tellus id arcu soll...", "Button", "Modeling in tempor aute lorem sint management", "Nulla insights scalability minim nisi strategy", "Gotham artificial", "Fieldset Legend Default Style", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Label", "big artificial", "Analytics scalability making training infrastructure", "Big sint efficiency dolore amet", "Innovation velit support", "Insights mollit esse", "Efficiency excepteur quis", "Heading 4", "Link Default"._
+_Figure: Example page without spacers: five full-length page layouts side by side, labelled "Breakpoint S: 320px", "Breakpoint M: 768px", "Breakpoint L: 1024px", "Breakpoint XL: 1536px" and "Breakpoint: 1668px". Each page has the orange STIHL logo, a hero photo (a person with a lawn mower, cropped to lawn and trees on S) and a title box "Protection making security", followed by text modules with headings, lorem ipsum copy and dark "Button" buttons, a "Gotham artificial" form with the legend "Fieldset Legend Default Style", five empty "Label" inputs and a "Button", image-and-text modules ("Big artificial", "Insights mollit esse"), rows of image teasers with "Button" links ("Big sint efficiency dolore amet"), an orange "Innovation velit support" banner with a "Button" and a grey footer of "Heading 4" columns with "Link Default" links. Teasers stack in one column on S and sit in rows of three on M and four from L upwards; the footer is a 2 by 2 grid on S and four columns from M upwards. No spacer overlays or measurement labels are drawn; the spacer values in the layers of this board are 56px, 16px, 24px, 80px, 32px, 40px, 8px, 64px, 96px, 48px and 120px._
 
 ## Spacing: Basic web template Dev
 

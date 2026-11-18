@@ -4,14 +4,109 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Do example with three callouts. Callout 1 points at the horizontal radio group \"Form of address\" with the options \"Mr.\" (selected), \"Mrs.\" and \"other\", used for fewer than 5 items. Callout 2 points at the \"Options\" combobox with the placeholder \"Select\" and a chevron, opened to a list with \"Label\", \"Label\", \"Option 3\" and \"Label\" (5 to 20 items, opens on click). Callout 3 points at the \"Country\" combobox with typed input \"B|\" and a clear button, showing a filtered list of \"Label\", \"Label\", \"Bangladesh\", \"Label\" and \"Label\" (more than 20 items, opens after typing)."
   },
+  "1bf285979802e63878329b0c054cd1e02d1aa3d1c6f954591bb5973abcd7957c": {
+    "nodeId": "8196:33782",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Single select comboboxes labelled \"Options\" in two rows of three states each. Callout 1 points at the top row, type to filter: an empty field with the placeholder \"Type to filter\" and a text cursor and no chevron, then typed input \"O|\" with an open list of \"Label\", \"Label\", \"Option 3\" and \"Label\", then the chosen value \"Option 1\" with a clear button. Callout 2 points at the bottom row, opens on click: the placeholder \"Select\" with a chevron and a pointer hand, then an empty field with chevron and the open list \"Label\", \"Label\", \"Option 3\", \"Label\", then the chosen value \"Option 1\" with a chevron."
+  },
+  "2994ad786b5cf1108ad8a8ff3237dc317bca761f39dec39532958a424a728f23": {
+    "nodeId": "9039:21118",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two types of combobox with open dropdowns side by side. Callout 1 marks the single select: field \"Label\" with the value \"Label 1\" and a clear button; the list has a \"Group Label\" with \"Label 1\" selected and marked by an orange checkmark on the right, then two more \"Label\" items, the last outlined as focused, followed by a second \"Group Label\" with three \"Label\" items. Callout 2 marks the multi select: field \"Label\" with the value \"Label 1, Label 2\" and a clear button; the list has two groups headed \"Group Label (optional)\", where each \"Label\" item has a checkbox, the first two checked in orange and the other four unchecked."
+  },
+  "34da979e6693aa0d9736b9ae9587e56e168d1d8f141868a15183a097acfeafa3": {
+    "nodeId": "9039:21277",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Focused combobox with the label \"Label\", the typed input \"Inp|\" and a clear button (X), with an open dropdown below that contains a single entry \"Label\"."
+  },
+  "381f1bb3615a7ae980098046162ee59d4526efcd6e64b2fa0d00ede9b555f6af": {
+    "nodeId": "39621:13615",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Combobox with the label \"Machine Number\", an info button (circled i) right next to it and an empty input field with a clear button (X). A mouse pointer is on the info button, which has opened a popover above the field with the text \"You will usually find the Machine Number in the location shown in the illustrations\" and two line drawings of a STIHL machine, a petrol power head and a long-shaft trimmer, each with a leader line to the placeholder machine number \"XXXXXXXXX\"."
+  },
+  "46150942555d83e31eb94bba911506300d4613899a29c6fa832c51c041c89f3b": {
+    "nodeId": "9390:3252",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three empty-looking comboboxes in the default state. Callout 1 points at the label of the first, \"Country\", whose input has an empty placeholder (the default). The other two, both labelled \"Machine number\", show specific placeholder copy: \"Search machine\" and \"Type to filter\", which is the recommended way to word a placeholder."
+  },
+  "498a24f54339cad6e793f46c226383ad84f02cbf9f2dff9058bf302fd84b55ab": {
+    "nodeId": "8196:33759",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: two focused comboboxes with open dropdowns. The \"Country\" combobox contains the typed input \"B|\" with a clear button and shows a filtered list of \"Label\", \"Label\", \"Bangladesh\" and \"Label\" (type to filter, the dropdown opens after 1 character is typed). The \"Options\" combobox shows the placeholder \"Select\" with a chevron and an opened list of \"Label\", \"Label\", \"Option 3\" and \"Label\" (opens on click and shows the full list)."
+  },
+  "6df804de71527c04b2ee2db07dd5d9fb87d0e758dbfeb03d65e9df7191379ec5": {
+    "nodeId": "8196:33772",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three opened comboboxes showing long labels wrapping onto a second line instead of being cut off. \"Country\" with typed input \"U|\" lists \"Label\", a highlighted \"United Kingdom of Great Britain\" (selected, two lines, orange checkmark) and \"Label\", each with an image icon. The second \"Country\" lists \"Label\", \"United States of America\" (selected, two lines) and \"Uruguay\". \"Colors\" is a multi-select with checkboxes: \"Beige\" and \"Peanutbutter Brown\" checked, \"Burgundy\" unchecked."
+  },
+  "706ef20757ee20669d4c8d1044a2a2833b6616fe209d2cb6c49f5160c6a7aabb": {
+    "nodeId": "9039:20916",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the select menu in an open combobox dropdown, below a focused field with \"Label\", a lorem ipsum hint, typed text \"Inp|\" and a clear button. The list has two groups, each with a \"Group Label\" heading above a divider and three \"Label\" items, the third item of the first group outlined as focused. Callout 1 points at the first \"Group Label\" (the optional group label, which cannot be clicked) and callout 2 points at the list items below it (the clickable list items)."
+  },
+  "753947efe2d3a7141552db7b8b07792c552e7ae7f262613af474f2d0e3807f4d": {
+    "nodeId": "9039:21682",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Focused multi select combobox with the label \"Label\" and a dark border, whose selected values are shown as a comma-separated enumeration that is cut off with an ellipsis when too long: \"Label 1, Label 2, Label 3, Label 4, Lab...\". A clear button (X) sits at the right end of the field."
+  },
+  "7c8b8725575dfec2c102a73e4829c7fe5e9093f826a3c8b635720dd3107e452b": {
+    "nodeId": "8480:3195",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Combobox \"Options\" with an empty input and a chevron, opened to a dropdown list in which every item has an icon in front of its text: \"Option 1\" (selected, orange checkmark), \"Label\" and \"Option 3\". Icons are optional and only appear in the dropdown of a single-select combobox."
+  },
   "8047e76029ac4839e18ef1131a59e00bd7e01a95855e758d2d66fddd5812e755": {
     "nodeId": "9039:21450",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Do example: a form with the heading \"Legend\", a radio group with the legend \"Radio Group Legend\" and two \"Radio Label\" options side by side in one row, followed by a \"Select\" field with a chevron and several \"Label\" text inputs, laid over a 12-column grid. All fields stay within the left 8 columns, at most two fields share a row (a short and a long field, or a long and a short one), and the right 4 columns remain empty."
   },
+  "88f779cf4926fc999b1f96b75333a74965298f5d0b744b3e8d1c85b17be79d79": {
+    "nodeId": "9411:3055",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Multi select comboboxes labelled \"Options\" in two rows of three states. Callout 3 points at the top row, opens on click: the placeholder \"Select\" with a chevron and a pointer hand, then an open list with unchecked checkboxes \"Option 1\", \"Option 3\" and \"Option 4\", then the chosen values \"Option 1, Option 2, Option 3\" with a clear button and a chevron; callout 3d points at that clear button. Callout 4 points at the bottom row, type to filter: the placeholder \"Search\" with a text cursor and no chevron, then typed input \"O|\" with an open list of unchecked checkboxes \"Option 1\", \"Option 2\" and \"Option 3\", then the chosen values \"Option 1, Option 2, Option 3\" with only a clear button; callout 4c points at that clear button."
+  },
+  "893d10e4058915c98251539b6e0faca02fa132e554a7b64c04f05193477798c8": {
+    "nodeId": "5671:19983",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview board of the combobox (medium size) in a grid with columns \"default\", \"hover\", \"active/focus\" and \"disabled\" and rows \"invalid false\" and \"invalid true\", each field with \"Label\" and a lorem ipsum hint above it. Row \"invalid false\": default is an empty field with a thin dark border, hover has a grey filled field, active/focus has a thick dark border with typed text \"Inp|\", a clear (X) button and an open dropdown, disabled has an empty field with a lighter grey border. Row \"invalid true\": default has a red border, a clear button and a red error icon with \"System feedback message\"; active/focus has a thick dark border, a clear button, the same message and the open dropdown. The dropdown shows two groups, each headed \"Group Label (optional)\" with a divider and three \"Label\" items, the third item of the first group outlined as the focused item. Below, two open lists: \"select-item list: single-select\" with plain \"Label\" items, and \"select-item list: multi-select\" where each item has a checkbox, the first two checked in orange and the rest unchecked."
+  },
   "952ff07ad0a95a5af925cb1014d30e1a80bd8a407458a330a2f8d0a0b3f544cf": {
     "nodeId": "39621:13634",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Don't example: a white popover with the text \"Select max. 3 different products\" opened from the info button next to the label \"Product Name\" of a combobox. The popover sits above the label with its arrow pointing down at the info button, the pointer cursor is on the info button, and the input below shows \"FSA 45, FSA 70, FSA 50\" with a clear button. This is wrong because required information such as the selection limit is hidden behind the info button instead of being shown as a hint."
+  },
+  "986f17c32d48942689a1f46dcb45a15088c4cf054e4c650c85ed08c59e345383": {
+    "nodeId": "38133:4971",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: two dropdown lists side by side, a single select list (left, selected item marked with an orange check mark) and a multi select list (right, items with checkboxes, first one checked), each mixing ungrouped and grouped items. Each list starts with an ungrouped \"Label\" at the top, followed by two groups headed \"Group Label (optional)\" with a divider line, containing three and four \"Label\" items. Callout 1 points at an item inside a group; callout 2 marks the ungrouped items, the \"Label\" above the first group and the last \"Label\" at the bottom of each list. Grouped and ungrouped items must not be mixed in the same list."
+  },
+  "9fe758d4b623f6e7faad05aa78120ad24482e720adca465dd717374e28a59ab7": {
+    "nodeId": "9039:21287",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two combobox sizes side by side, both focused with typed text \"Inp|\", a clear button and an open dropdown. Callout 1 marks the medium variant (the recommended default) with a taller field and larger list rows. Callout 2 marks the small variant with a shorter field, smaller text and more compact rows, for designs with little space. Both dropdowns show two groups headed \"Group Label (optional)\" with three \"Label\" items each; the first two items of the first group have an orange checkmark and the third is outlined as focused."
+  },
+  "a65facbf05e81d628710d63ac724edfd8fe58b783ae55a6896d416ad2b723d48": {
+    "nodeId": "9039:21484",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: two comboboxes, each with the label \"Label\" and the text \"Input\" with a chevron, placed over a pink twelve-column grid. The first input spans roughly half of the grid, the second is stretched across the whole grid width, so the chevron sits far from its label. This is wrong because without a maximum width the click path between label and action becomes long and takes more time to reach (Fitts's Law)."
+  },
+  "b03f7adebb7105fa6a95332e445ff6fb03319214c7ad13a13f2fac4cfe29be18": {
+    "nodeId": "30853:6788",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two layouts of a combobox with a \"Label\", a short lorem ipsum helper text and an empty input field inside a light blue container named \"Content area Narrow\". In the top layout the input fills the whole container, and a purple \"Container Width\" arrow spans the same width as the input. In the bottom layout the container is wider, but the input stays at the width marked \"recommended max. width 544px\", while a longer \"Container Width\" arrow marks the full container."
+  },
+  "c033414bca4449d07636302595f33aa05711faafbdb40616def59f5ece55792f": {
+    "nodeId": "8472:30091",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example with one callout. Callout 1 points at the focused combobox \"Salutation\" with the placeholder \"Select\" and a chevron, opened to a list with only three items: \"Label\", \"Label\" and \"Other\". This is wrong because a combobox should not be used for such a short list of items."
+  },
+  "c2ba5ebb594a2ecaf057c5d4f4b43fce62d3f82bc4006e50e435fe2e9cfe0b13": {
+    "nodeId": "8196:33741",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the combobox select field with nine numbered callouts across three fields. First field (default, placeholder \"Select\"): callout 1 points at the \"Label\", callout 2 at the lorem ipsum hint text below it, callout 3 at the field itself and callout 4 at the placeholder text \"Select\". Second field (invalid, red border) with the selected value \"Input 1, Input 2\": callout 5 points at the red error icon next to \"System feedback message\", callout 6 at the entered value text and callout 7 at the clear (X) button. Third field with \"Label\" and the placeholder \"Select\": callout 9 points at the info icon next to the label and callout 8 at the chevron-down icon at the right end of the field."
+  },
+  "e0467106e195df945a0fede258664fc2007e77655afa3505c814b079cb758a0e": {
+    "nodeId": "19703:2118",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: two opened comboboxes where long labels are truncated with an ellipsis. \"Country\" lists \"Label\", \"United States of...\" (selected, orange checkmark) and \"Uruguay\". \"Colors\" is a multi-select with checkboxes: \"Beige\" and a cut-off \"Peanutbutter Br...\" checked, \"Burgundy\" unchecked. This is wrong because truncated text is not legible and therefore not accessible."
   }
 }

@@ -1,4 +1,159 @@
 {
+  "0ef306e13a591f3124f89708c938c9286157534a25b8b9e913cdcff17ca94b0b": {
+    "nodeId": "14928:5454",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: drawer header with the topline \"Hallo!\" above the heading \"Maxime Doe\" and a close button (X) at the right. It is wrong because the topline should reference the page, feature title or object to convey the drawer's purpose, and a greeting does not. Marked with a red \"Don't\" label and a red bar on the left edge."
+  },
+  "243693fd94c2482ef235b69fe1b0216ae170ce061cf3aa21fc7009b4cdd25b33": {
+    "nodeId": "15875:5717",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Figma drawer component with three numbered callouts: a white panel on the left beside a dimmed grey backdrop. Callout 1 points at the header area with a back arrow, the \"Heading\" and a close button (x) at the right. Callout 2 points at the content area, a purple dashed placeholder labelled \"❖ Placeholder - Replace this content\" that can be swapped for custom content. Callout 3 points at the footer area with three buttons in a row: the dark filled \"Primary CTA\" and the outlined \"Secondary CTA\" at the left, and the outlined \"Tertiary CTA\" at the right."
+  },
+  "2ceba57e752074bb6f7e11ba5039140923a6038eb5477bd9fea85d2348c5395f": {
+    "nodeId": "14303:48984",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the drawer with four numbered callouts: a white panel on the left with a dimmed grey backdrop on the right. Callout 1 points at the optional custom header area, a purple dashed slot labelled \"❖ Header\" at the top. Callout 2 points at the custom content area, the large purple dashed slot labelled \"❖ Content\". Callout 3 points at the optional custom footer area, a purple dashed slot labelled \"❖ Footer\" at the bottom. Callout 4 sits on the grey backdrop."
+  },
+  "307d1f56a147c51602a2ca8e225769f77a0e7be75e2aea2f52a2e81f19ad81a9": {
+    "nodeId": "16195:9078",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Opening animation of the drawer with backdrop. A white drawer on the left has a header with a back arrow, \"Heading\" and a close button (X), a purple placeholder area for content, and a footer with a filled \"Primary CTA\" button, an outlined \"Secondary CTA\" button and an outlined \"Tertiary CTA\" button on the right. The rest of the screen is a grey dimmed backdrop. Annotations: an arrow with \"Drawer\" and \"move: from left or right\", and \"Backdrop\" with \"fade: 0 > 100% Opacity (color: black 50%)\"."
+  },
+  "393a1618d3f27cd30d093baca926a328a0147e0ce4f8ad1576e3fec6a5177995": {
+    "nodeId": "17861:2451",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop drawer header with the heading \"Heading\". The back arrow button to the left of the heading is highlighted with a purple dashed box, and the close button (X) sits at the right end of the header, which is the preferred position for both left and right drawer placement."
+  },
+  "4e893babfa56a2f257ad92821008184619c65355df0109f92502eeea09f30362": {
+    "nodeId": "14875:5361",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two schematic drawers opening from the left, each with a close icon (X) at the top right of the header and a dimmed page strip on the right. Callout 1 points at a wide drawer with a tall content block and no button and no footer area, where the close icon is sufficient. Callout 2 points at a narrow drawer with a short content block and a dark button placed directly below the content, leaving the rest of the drawer empty."
+  },
+  "504f6d630af9db6877838b713c13d11c2f61ca72169c8bb6ace26ea5233eee2e": {
+    "nodeId": "16231:16827",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview \"Variants and Elements to toggle on/off\" of the drawer header and footer. \"Header\": \"Desktop\" and \"Mobile\" each show six variants in two columns. The left column has show leading icon/function true, the right column false (drawer only). Rows: \"Heading\" with \"Subline\", \"Heading\" only, and no heading (show heading and show subline false); close is always shown. Back arrow and close button are drawn in all variants except the mobile one without heading and with leading icon false, which shows only the close button. \"Footer\": \"Primary Position left\" and \"Primary Position Right\", each with \"Desktop\" in direction horizontal and vertical and \"Mobile\" with direction \"-\". Rows toggle show first button, show second button and show third: all three, first and second, and only first. Horizontal desktop footers with three buttons show a pair plus a detached \"Button\". The filled button is at the left with primary position left and at the right of the pair with primary position right. Vertical and mobile footers stack full-width buttons with the filled one on top. The last mobile row of primary position right (first true, second false, third true) shows a single filled \"Button\"."
+  },
+  "70326ed742be0c8e0deac79704ac77d9d991936a440b4905f99479050cc98e90": {
+    "nodeId": "16690:2337",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: three drawers stacked in a cascade, each on a dimmed page and each with a header bar, close button, dashed purple content area and dark button at the bottom. The content areas are labelled \"Level 1\", \"Level 2\" and \"Level 3\", and all three drawers have the same width. Deeper navigation levels are shown in the same drawer container with a consistent width, so the user sees fewer transitions and is distracted less."
+  },
+  "7120ab19394cb82fe35f2e97f41952beb942f8f41975194734094fdf1eaad3ec": {
+    "nodeId": "15747:6156",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: two drawers opened on top of each other. A dimmed first drawer on the left titled \"IMPRESSUM\" with a close button lists the menu \"STIHL INFOS\" with \"Kontaktformular\", \"Impressum\" and \"Rechtliche Unterlagen\", and \"APP-INFORMATIONEN\" with \"App-Version\" and \"Verwendete Bibiliotheken\". A second white drawer on the right, also titled \"IMPRESSUM\", shows the legal notice text starting with \"Diensteanbieter:\" and the STIHL Tirol GmbH address. Multiple layers must not be opened on top of each other; only one drawer at a time."
+  },
+  "732ae57bc556870b98a9ea32ce88772a99717eecb03aff8e01eafe48b5d09d66": {
+    "nodeId": "14928:5460",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Drawer opened from the left over a dimmed page, used for a secondary task. It has the heading \"Technical details\" with a close icon (X) at the top right and a striped table of specifications: \"Rated Voltage\" \"36 V\", \"Weight\" \"3.1 kg\", \"Sound Pressure Level\" \"77 dB(A)\", \"Sound Power Level\" \"91 dB(A)\", \"Vibration Value Left/Right\" \"3.7/2 m/s²\", \"Total Length\" \"168 cm\", \"Cutting Circle Diameter\" \"350 mm\", three \"Battery Runtime with AK\" rows (AK 10, AK 20, AK 30) with \"up to 13 min\", \"up to 30 min\" and \"up to 38 min\", \"Tool Battery Runtime 1\" \"AC C6-2; 2.0MM QUIET LINE\", \"Tool Battery Runtime 2\" \"PC 6-2\" and \"IP Protection Class\" \"N/A\"."
+  },
+  "74c00f8747237336eae0871c7040b7d2ef3a2ff1f0908b82ffc3c505f521c99b": {
+    "nodeId": "14912:5442",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Diagram of two drawers triggered from one page that slide in from different sides. In the center is a page with a highlighted \"Menu\" button at the top right and a highlighted \"Filter\" button (filter icon) in the content. A purple arrow from \"Filter\" points left to a drawer that slides in from the left edge, with a close button (X) at the top right of the drawer. A purple arrow from \"Menu\" points right to a drawer that slides in from the right edge, also with a close button; dashed lines and arrows at the outer edges mark the slide-in direction. The page stays visible as a dark strip beside each drawer."
+  },
+  "7569759a93c2a60a4f7d964d64d3f847dab77d12f853ebd181f8c4d2da3b70a6": {
+    "nodeId": "14741:8407",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Schematic drawer opening from the left with a header, a close icon (X) at the top right, a large content block and a small dark button at the bottom left, next to a dimmed page strip. Callout 1 points at that button, the first actionable element, which receives focus when the drawer opens."
+  },
+  "79514cb00e1f9269617a92ebe4024d377e3ac5fed7960eff9eaf4ada1cb42f8c": {
+    "nodeId": "15420:6080",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a full-screen drawer shown as a white panel with a header bar, close button, grey content area and dark button at the bottom. Purple arrow dimensions labelled \"100%\" mark that it takes the full height and the full width of the screen. This is wrong because the drawer component cannot be full-screen; the content should be placed on its own page instead."
+  },
+  "7a733249e1b5abe4d512d1c84a54596a4f8124aff9ac8aa8cc3bce5872a84010": {
+    "nodeId": "16282:7040",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Drawer titled \"Technical details\" on the left, listing a table of rows from \"Rated Voltage\" (\"36 V\") and \"Weight\" (\"3.1 kg\") down to \"IP Protection Class\", beside a dimmed backdrop filling the rest of the screen. Callout 1 points at the close icon in the top right of the drawer header, where a hand cursor is clicking it. Callout 2 points at the dimmed backdrop, where a hand cursor clicks to close the drawer; this can be disabled, default is enabled."
+  },
+  "7f7418451a0f29bf25a0d0b83d8cf682ffbdf76688e79ca319c6b6eb19ef1e68": {
+    "nodeId": "15950:5784",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Closing animation of the drawer with backdrop. A white drawer on the left has a header with a back arrow, \"Heading\" and a close button (X), a purple placeholder area for content, and a footer with a filled \"Primary CTA\" button, an outlined \"Secondary CTA\" button and an outlined \"Tertiary CTA\" button on the right. The rest of the screen is a grey dimmed backdrop. Annotations: an arrow with \"Drawer\" and \"move: out to left or right\", and \"Backdrop\" with \"fade: 100 > 0% Opacity (color: black 50%)\"."
+  },
+  "87d91dd1b292b1753ee5b189c07c9650a4009caaa1f75d448c8e4678d92676ed": {
+    "nodeId": "16004:6113",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three schematic drawers (white panel with close button, header bar, content block and dark button) at the left of a dimmed grey browser window, showing maximum width and minimum edge distance. The large drawer at the top has a purple dashed arrow measurement \"max. 1730px\" across its width, the most the drawer can reach. Below, a medium drawer on a bigger screen (breakpoint m-xl) has a measurement \"min. 80px\" for the space between the drawer and the browser edge. A narrow drawer on a small screen (breakpoint s) has the measurement \"min.32px\" for the same space."
+  },
+  "8a7ae9bb80e2cb8525f470927bf9c030bd1e88ab1b4a51ae3432f1e6c74e3d37": {
+    "nodeId": "16452:6536",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: drawer header with a back arrow and a close button (X) whose heading is a full sentence over two lines: \"Are you sure you want to add the “speech to Text” service to the node-test-app?\". It is wrong because full sentences must not be written in the header area. Marked with a red \"Don't\" label and a red bar on the left edge."
+  },
+  "8f26cc21898424a526ca72155fee81efab0e2546d718ab9b2ad73eeaf740e438": {
+    "nodeId": "15875:5688",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two schematic drawers with a header, a close icon (X) at the top right, a large content block and a small dark button in the footer. The left drawer slides in from the left with the dimmed page on its right, and its button is aligned to the left edge, marked by a dashed vertical line. The right drawer slides in from the right with the dimmed page on its left, and its button is aligned to the right edge, marked by a dashed vertical line."
+  },
+  "9e1bb4c544c0cfd49c06a8dcfef3a3753cbce82ad6372b8fd60420e9f40b80f6": {
+    "nodeId": "14741:8402",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Desktop drawer on the left of a dimmed page showing reading hierarchy. The header has the bold heading \"You will read this first\" with a close button (X) at the right, followed by the smaller body line \"And then you will read this line next.\" Below are two buttons: a filled primary \"Close\" on the left and an outlined \"Cancel\"."
+  },
+  "9f0deda56b04bc1f20b46ce4dca5ceaabe2aaca09df8b84caec7522809aeb3c8": {
+    "nodeId": "14303:48965",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview matrix of the drawer in two placements, \"Placement: left\" and \"Placement: right\", for \"Viewport: Desktop\" and \"Viewport: Mobile\", each with \"Overflow: false\" and \"Overflow: true\". On desktop the white drawer panel has a header with a back arrow, the \"Heading\" and a close button, a purple dashed \"Placeholder\" content area and a footer with three \"Button\" buttons in a row (first one dark and primary on the left, second outlined next to it, third outlined at the right edge), beside a dimmed grey backdrop that fills the rest of the screen. On mobile the drawer is narrow, has no back arrow, and the three \"Button\" buttons are stacked vertically at full width with the dark primary button on top; the backdrop is only a thin grey strip on the opposite side. With overflow true, thin divider lines separate header and footer from the content area and a scrollbar appears at the content edge, so header and footer stay fixed while the content scrolls."
+  },
+  "a02fe7a3b5ab860416621e5420af06e4bb5bd8e380ceed3662717f0dcc250081": {
+    "nodeId": "14911:5432",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two drawers with scrolling content: a wide desktop drawer on top and a narrow mobile drawer below. Both have a header with a back arrow, the title \"Heading\" and a close button, a long lorem ipsum text with a scrollbar, and a footer with three buttons labelled \"Button\". The header and footer stay fixed and show a thin outline line at the bottom of the header and the top of the footer while the content scrolls. On desktop the footer buttons are horizontal: the filled primary and one outlined button on the left, a third outlined button on the right. On mobile the three buttons are stacked full width, the primary filled one first."
+  },
+  "a59548d39843f062967400d9e010d300d1331e9c966b3d8e17af936fcb22e60b": {
+    "nodeId": "14875:5892",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Stepper navigation inside a drawer without a header, next to a dimmed page strip on the right. Steps \"1. STEP LABEL\" (green bar) and \"2. STEP LABEL\" (orange bar, expanded with a chevron up) show the text \"Lorem ipsum dolor sit\". Step 2 contains three sub-items: \"Lorem ipsum\" with a green check mark, \"Lorem ipsum\" in bold on a grey highlight, and a plain \"Lorem ipsum\". Below are the grey-bar steps \"3. STEP LABEL\" and \"6. STEP LABEL\", a divider, a \"Restart\" action with a restart icon in the content area, and a full-width dark \"Close\" button in the footer."
+  },
+  "ae41708a490eb20cfc80d050b7f98e5893c64bff1b8a00550c750621f14ff995": {
+    "nodeId": "14303:49011",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two pairs of page and drawer, showing that the drawer slides in from the side where the action is. Left pair: a hand cursor presses a dark button at the bottom left of the page, a dashed line marks the left screen edge, and a purple arrow points right as the drawer opens from the left edge, with the dimmed page on its right. Right pair: a hand cursor presses a small dark button in the top right header bar of the page, and a purple arrow points left as the drawer opens from the right edge, with the dimmed page on its left. Each drawer has a header bar, close button, content area and dark button."
+  },
+  "af4bdf2e7d843157a0405cc8a060ff14429b3f6236530417b37b2d6cb4c34375": {
+    "nodeId": "16231:16772",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Building elements of the drawer in two groups. \"Header\" for \"Desktop\" and \"Mobile\" in two styles: \"Style Heading\" with a back arrow, a bold \"Heading\" and a close button (the heading is larger on desktop), and \"Style Button\" with a back arrow followed by a small text button \"Button\" and a close button. \"Footer\" with a \"Desktop\" and a \"Mobile\" column, split by \"Primary Position left\" and \"Primary Position right\" and by \"Direction: horizontal\" and \"Direction: vertical\". With primary position left, the horizontal desktop footer shows a filled \"Button\" and an outlined \"Button\" side by side plus a third outlined \"Button\" set apart further right; with primary position right it is mirrored: one outlined \"Button\" set apart on the left, then an outlined \"Button\" and the filled \"Button\" at the right. The vertical footers, on desktop and mobile and for both positions, stack three full-width buttons with the filled \"Button\" on top and two outlined ones below. Mobile has no horizontal row."
+  },
+  "b5f1b79ce66505c4519dae314f47efaf349192c97273c7351e68966eb4d68b96": {
+    "nodeId": "16004:6078",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two schematic drawers, each a narrow white panel with a close button, header bar, content block and dark button, at the left edge of a dimmed grey browser window. A purple dashed measurement below each panel, \"min. 272px\", marks the minimum drawer width, which is based on the smallest viewport size. The left example is in a wide window; the right example is in a narrow window and the drawer has the same minimum width."
+  },
+  "c20f06b31b499842b5df1cf63ae252dc3e5a0404a32c751c450c6dfee71da9ee": {
+    "nodeId": "14741:8397",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Schematic drawer opening from the left with a close icon (X) at the top right of the header, next to a dimmed page strip. The content block is short, so the dark button sits directly below the content and the lower part of the drawer, including the footer area, is left empty."
+  },
+  "c55ef27df5daa6cb155f2d95204c8fa967cae1736020b92f13c39c4194e1591e": {
+    "nodeId": "16452:6447",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Three drawer header formats, each with a close button (X) at the right. Callout 1 points at a header with a back arrow, the small \"Topline\" above and the heading \"Heading L\". Callout 2 points at a header with a back arrow and the single-line heading \"Heading L Uppercase\". Callout 3 points at a header without back arrow that uses the \"Title Component\": the uppercase text \"TITLE COMPONENT\" with a short bar underneath, suited to impactful and emotional headers."
+  },
+  "c81838d8a95c949d5a5e26f30444595864f23c00a61a140b26c8927ca3ae4b84": {
+    "nodeId": "16208:7843",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four schematic drawers, each a white panel with a header bar, a content block and a dark button at the bottom, next to a dimmed page strip. Callout 1 points at the two drawers with the close icon (X) on the right of the header, preferred, shown for a drawer sliding in from the right and one from the left. Callout 2 points at the two drawers with the close icon on the left of the header, not ideal though acceptable, again for a right and a left drawer."
+  },
+  "d9e646ba233ddc4abbb3f589fb08eeafc3ca3f5461b2baa71977856c37be61c1": {
+    "nodeId": "16208:7823",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a desktop drawer opens as a white panel on the right of a greyed, dimmed page and is used as a form for creating or editing an object. The header has a back arrow, the heading \"New active time\" and a close button. The body shows \"Active Time\" with \"Every Thursday\", two time fields \"Start Time\" and \"End Time\" (both \"15:00\"), a \"Mowing Zone\" dropdown set to \"Automatic\", the checkboxes \"Enable instance\" and \"Enable series\" and a yellow warning \"2 mowing jobs per week left\". The footer has a filled \"Save\" button on the left and an outlined \"Cancel\" button. This is wrong because creating and editing objects are primary tasks; use a new page or the dialog component instead."
+  },
+  "dbeadcdc053f2739175f19080a36b09c09c08eb2f526cc4661f55ce666e2d392": {
+    "nodeId": "14943:5604",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two drawers side by side, joined by a purple arrow labelled \"content in drawer changes\". The left drawer holds a dashed purple content area labelled \"Content 1\", with a wide strip of dimmed page visible to its right. The right drawer holds a wider content area labelled \"Content 2\" and is itself wider, so less of the dimmed page remains visible. Both have a header bar with a close button and a dark button at the bottom. The drawer width adapts to the content while it is open."
+  },
+  "dd0e24dc2aad2bcd21c6bb503a161412d01ac00532dba565b9ffaac7fa454d49": {
+    "nodeId": "14911:5437",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two drawers of different widths, a wide one on the left and a narrow one on the right, each a white panel on the left of a dimmed page strip with a header bar, close button, content area and dark button. A purple vertical arrow dimension labelled \"100%\" next to each drawer shows that it spans the full height of the screen, between two dashed lines at the top and bottom edges. All drawer sizes cover the full screen height."
+  },
   "ff859bc99598f46f05fc609e07034befc49f5b559392df1dbd87f7c696f51ff1": {
     "nodeId": "14303:49141",
     "model": "github-copilot/claude-sonnet-4.5",

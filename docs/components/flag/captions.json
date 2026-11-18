@@ -3,5 +3,150 @@
     "nodeId": "53310:12800",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two cards using flags. Callout 1 points at a product card (chainsaw image, \"Productname\", rating \"3.5 (80)\", \"Categorie\", short description, \"Available now\", price \"11.199,00 €\" incl. VAT, \"Compare\" checkbox and an orange add-to-cart button) with a dark \"Promo Flag\" above the product name, the Promo Neutral variant used with a Highlight Button. Callout 2 points at a vertical link card with a photo, an orange \"Brand Flag\" on the image, the heading \"Charging and energy management in the STIHL AP system\", a truncated description and a \"Decorative Link\"."
+  },
+  "223049479768611d09950a0a4a22abedc7848f35e30988caf70c6a0b0c496924": {
+    "nodeId": "54222:11448",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: each flag variant has its own section on the \"Seasonal Tune-Up\" card, which makes content easier to scan. The orange promo flag \"New\" sits on the top left of the photo, the yellow warning flag \"Needs check\" (exclamation icon) and red error flag \"Rejected\" (cross icon) sit together above the title, and the grey info flags \"Maintenance\", \"Seasonal\" and \"Express Available\" sit below it."
+  },
+  "314c261ced54c4dab0880382e8e0e30da2f8dd73bbb665d856959c137db149e4": {
+    "nodeId": "54222:11737",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: the four dedicated STIHL battery system logos stacked vertically, each drawn as a small battery icon: AI in blue, AK System in orange, AP System in grey and AS System in green. This is right because the official logos are used for battery systems instead of custom-colored Flags; details are in the STIHL brand portal."
+  },
+  "351a8d0dce625a4f9a0aab786c721f54276a02f6332da5495e26826b8e3f836c": {
+    "nodeId": "52929:21249",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two columns of flags with icons comparing icon types. Callout 1 marks Functional Icons (the default), used on all variants: \"Approved\" (check mark, success), \"Plan cancels soon\" (clock, warning), \"Rejected\" (cross, error), \"In review\" (document, info), \"Discount\" (orange highlight promo flag with a discount icon) and \"Promotion\" (black neutral promo flag with a tag icon). Callout 2 marks System Feedback Icons, available for the Status variants only: \"Confirmed\" (green filled check circle, success), \"In assessment\" (warning triangle, warning), \"Rejected\" (red diamond with exclamation mark, error) and \"In review\" (grey filled info circle, info)."
+  },
+  "4340df33e937881d5e663ea8aa99af28a152d35cd5e979829ff965a3f892ebbd": {
+    "nodeId": "53310:12673",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a card without a photo that shows two orange promo flags, \"Best Seller\" and \"New\", side by side above the grey flags \"Maintenance\" and \"Seasonal\", the title \"Seasonal Tune-Up\" and the text \"Our most popular service for longer life and reliable power.\" Multiple Promo flags within a group compete with one another; a Promo flag should stand out."
+  },
+  "5e7d1e393256721d837c9c7e427dfbba5c5be2a00c01c0360aadb63cbd52f16e": {
+    "nodeId": "19711:50",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two light grey info flags without icons showing that the flag width follows the label length. The short flag \"Flag Short\" and the wide flag \"Flag content with a long text or description\" each have a purple double arrow above them labelled \"content\", spanning the full width of the flag."
+  },
+  "6f68ac60436a785aca1d01d74eab63ce5d4000e033187ffd80a17fe84af92aef": {
+    "nodeId": "19713:120",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Corporate STIHL Journal page with the STIHL logo, a search field \"Search Site\", \"Contact\" and \"English\" links, and a navigation bar with \"About STIHL\", \"Sustainability\", \"Careers\", \"STIHL Journal\" and \"Press\". A grid of Link Cards shows one large card \"Interview with Dr Michael Prochaska\" and two cards \"One lab for all\", each with a photo, a short teaser text and two small grey category Flags at the bottom: \"People and Stories\" and \"Interview\" on the large card, \"Backstage\" and \"Background Story\" on the others. A cut-off second row has four cards titled \"Charging and energy management in the STIHL AP\"."
+  },
+  "71903e3dca698282f3ad035fdfc5616c2695e0370d0b77b91a60010303e0f98e": {
+    "nodeId": "19836:286",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "STIHL Service Communication (SSC) page \"SUPPORT NEWS\" with the intro \"Here you will find general updates, releases, product announcements and more.\", tabs \"All\" (active), \"Mandatory\", \"Most recent\" and \"Featured by STIHL Inc. Tech Services\", and filters \"All types\", \"All time periods\", \"Published new - old\" and a \"Show only unread news\" checkbox. A table with columns \"Title\", \"Type\", \"Product affiliation\", \"Published on\" and \"Add to bookmark\" lists news items with small grey Type Flags such as \"Dealer news\", \"Product information\", \"Recall notice\", \"Technical bulletin\" and \"Diagnostics\". Some rows also carry a yellow status Flag \"Required\" with a warning icon, and one row a green Flag \"Confirmed\" with a check icon. Pagination shows \"Rows per page: 10\" and \"30 – 40 of 74 items\"."
+  },
+  "71aacd09c9eb292c55ceaf06229110aa7d3ac5f8f07a97874870df6c46fe5652": {
+    "nodeId": "19511:2452",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Overview of the Flag component in its two variants, each flag with an image icon and the label \"Flag\", listed in a purple dashed frame. Under \"status:\" are four flags: \"success\" (light green background), \"warning\" (light yellow), \"error\" (light red) and \"info\" (light grey). Under \"promo:\" are two flags: \"neutral\" (black background, white text) and \"highlight\" (orange background)."
+  },
+  "83a99122a085b57c59eaf0d2448976cfd7cdd8b88df60fa3bb42c55f22caa303": {
+    "nodeId": "53360:17048",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Status flag variants stacked vertically, each labelled \"Flag\" with an image icon. Callout 1 points at the green success flag (successful, completed or approved state). Callout 2 points at the yellow warning flag (potential issue that requires attention). Callout 3 points at the red error flag (failure, critical issue or negative outcome). Callout 4 points at the grey info flag (neutral or ongoing state, or non-semantic labels such as categories, tags or metadata)."
+  },
+  "92183071efe5276ff967b3705276a6ef5f44fa77e6f500e8689d32b22aaec142": {
+    "nodeId": "19711:94",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: the subject is repeated in the flag labels, which creates unnecessary length. Two flags without icons are stacked: \"Document denied\" (light red, error) and \"Document pending\" (light yellow, warning). A red \"Don't\" badge with a cross is at the lower left."
+  },
+  "9bb328cb739bc8561d8176f8c90dc138f976453a107af8dfd82608991888c24c": {
+    "nodeId": "20082:317",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Timbersports article page with breadcrumb \"Home / News / World Trophy 2023 in Rotterdam\". Two light grey category Flags, \"Nachrichten\" and \"Ergebnis\", sit above the uppercase headline \"Mit Weltrekord: Neuseeländer Jack Jordan verteidigt härtesten Sportholzfäller-Titel der Welt\", followed by the date line \"10. Jun 2023Niederlande · Global\" and a large photo of a smiling athlete with a medal and the World Trophy 2023 trophy."
+  },
+  "a0b3dedb5ee2dfafd4d4e38a9e4294d742f4be9d141e41756303230278110447": {
+    "nodeId": "19655:22",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Anatomy of the Flag with two numbered callouts, shown on an info flag (light grey) with an image icon and the label \"Flag\". Callout 1 points at the icon on the left (optional); callout 2 points at the label."
+  },
+  "a19ed5e1856a21342d38187ff3209557d0741131d42bbb44f1617205f5ba8134": {
+    "nodeId": "52929:20369",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: icons are used consistently within each Flag variant. Callout 1 points at a group of four flags: a yellow warning flag \"Required\" with an exclamation icon, followed by the icon-free grey info flags \"Product information\", \"Seasonal\" and \"Battery-Powered Only\". Callout 2 points at a group where an orange promo flag \"New\" has a bell icon, followed by the icon-free grey info flags \"Product information\", \"Seasonal\" and \"Battery-Powered Only\". Flags with and without icons may be used together as long as usage is consistent within each variant."
+  },
+  "b1ec5cc0260a7b0221b3bc3fe075166526919d97dc882bddf6c667fc0a2e7929": {
+    "nodeId": "54222:11619",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a white card titled \"Seasonal Tune-Up\" with the text \"Our most popular service for longer life and reliable power.\" Above the title are four Flags in two rows: two Promo Flags, a highlighted orange \"Best Seller\" and a neutral dark \"New\", followed by two light grey Flags \"Maintenance\" and \"Seasonal\". It shows the rule of a maximum of two Promo Flags per group, one highlighted and one neutral."
+  },
+  "b43cd3ba79526d2429835b7167b827fcbadcc132d8a66095b2ed2a1567172ebb": {
+    "nodeId": "53251:11339",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a card with a battery photo and the title \"Seasonal Tune-Up\", followed by too many different flag variants in one section: an orange promo flag \"New\", grey info flags \"Maintenance\", \"Seasonal\" and \"Express Available\", a yellow warning flag \"Needs check\" with an exclamation icon and a red error flag \"Rejected\" with a cross icon. This makes scanning and comprehension harder; use a maximum of two flag types per section."
+  },
+  "c33a923a5481163f3e8143e0499b50941acf59b4de389df0d52da7624913848e": {
+    "nodeId": "52929:20005",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Additional colors for the Flag. The standard light grey Flag \"Status Info\" is shown on its own in the upper row. Below it are three custom-colored Flags, each labelled \"Status Info Custom\": one light peach, one light purple and one pink, all with dark text. They illustrate additional label colors that stay visually distinct from the Status Flags."
+  },
+  "c4247d8fc7c57cb843231ee4240d8607554262023c5df37ef9eab112e160cff0": {
+    "nodeId": "52929:19872",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Combining multiple flags in one section is allowed, as long as each group has a clear, distinguishable purpose. Top row, three cards: \"Seasonal Tune-Up\" with a battery photo and the grey flags \"Battery Health\", \"Maintenance\", \"Seasonal\" and \"Express Available\"; \"RZ Financing Program\" with a photo of a person working on a chainsaw, a yellow warning flag \"Required\" with an exclamation icon and grey flags \"Product information\", \"Seasonal\" and \"Battery-Powered Only\"; and a photo-less card with an orange flag \"Best Seller\", grey flags \"Maintenance\" and \"Seasonal\", the title \"Seasonal Tune-Up\", the text \"Our most popular service for longer life and reliable power.\" and a dark button \"Make an appointment\" with a calendar icon. Below, a data table with the columns \"Title\", \"Type and Status\", \"Product affiliation\", \"Published on\" and \"Add to bookmark\"; its rows hold small grey type flags such as \"Dealer news\", \"Technical bulletin\", \"Diagnostics\" and \"Product information\", and one small green flag \"Confirmed\" with a check mark."
+  },
+  "c50fe4f1d523dc77d2e670c907328a66b07fb3116758e27ceff5b1e791a9ab8a": {
+    "nodeId": "52869:26154",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Six flags stacked vertically, each with an image icon and the label \"Flag\", marked with callouts for the two variants. Status variant (callout 1): 1a is success (light green), 1b is warning (light yellow), 1c is error (light red), 1d is info (light grey). Promo variant (callout 2): 2a is neutral (black background, white text), 2b is highlight (orange background)."
+  },
+  "c8c3de02ce7ab1affba9b4b3995baad318e13341c1e4eaace02291b73738a18e": {
+    "nodeId": "19713:126",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: four text-only Flags stacked vertically, each in a different color: \"AI-System\" light blue, \"AK-System\" light yellow, \"AP-System\" light grey and \"AS-System\" light green. This is wrong because the STIHL battery systems must not be shown as custom-colored Flags; the dedicated battery system logos are used instead."
+  },
+  "cbff7023dd01f0c49e6966cbd76d96dcb9aa6e0f4ddf906aa4d9044438a6c30e": {
+    "nodeId": "53360:17021",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a single small red error flag that contains only the number \"12\" with no text label. Flags must not show numbers only; a number indicator component should be used instead."
+  },
+  "d48397e5031e340a7e6c90e4c8efe97e2e27a2f2848b02efa16009c6fd8b2246": {
+    "nodeId": "19819:198",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Comparison of Status Flag, System Feedback and Notification with four numbered callouts. Callout 1 points at four Status Flags with icons: \"Confirmed\" (green), \"Needs review\" (yellow), \"Rejected\" (red) and \"In review\" (grey). Callout 2 points at three System Feedback messages, text with a status icon and no background: \"Connector linked successfully\", \"Connector not found\" and \"Connector unknown\". Callout 3 points at four full-width Notifications with colored left border, icon and close button: \"Success: All files have been successfully uploaded. Thank you for your patience.\", \"Warning: Connection unstable. Unsaved progress might be lost. Please save your work and check your network connection.\", \"Error: There was an issue uploading your files. Please try again or contact support if the problem persists.\" and \"Note: Enhance your experience by customizing your preferences in the settings. Visit the Settings page to get started.\" Callout 4 points at three smaller Toasts with shadow, icon and close button: \"All files updated\" (green), \"You have unsaved changes\" (yellow) and \"A new update is available\" (grey)."
+  },
+  "d49a92785a705855739aa90cbb6b389b63741766c173db1b27556f07c1c23c7a": {
+    "nodeId": "53360:16955",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a single red error flag labelled \"Rejected (12)\", where the number is paired with a text label and the secondary count is written in brackets (like \"Comments (3)\")."
+  },
+  "d4a138fd4624729da5d1e665b986c53d774b8b6a04272636b8a4bf2fabb9483a": {
+    "nodeId": "53360:15528",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Product overview page with a grid of four Product Cards per row, each with a chainsaw image, a heart icon, title, star rating, \"Chainsaw\" category, short description, \"Available now\", price, \"Compare\" checkbox and orange cart button. The first card \"MS 261 C-M\" carries a dark Promo Flag \"New\" above its title. The third card \"MSA 300 without battery and charger\" shows a grey AP System battery logo at its top left. The other cards \"MS 231\" and \"MS 162\" have no Flag. A second row of cards is cut off at the bottom."
+  },
+  "d6e4870a51efa0c1e3b0365b96e2380429203d50b988a576bbbbce7926133d42": {
+    "nodeId": "19711:76",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Spacing of flags on an article teaser card. Four light grey flags \"Tipps\", \"Gerätepflege\", \"Arbeitstechnik\" and \"Akku-Pflege\" sit above the heading \"Lithium-Ionen-Akkus richtig lagern\" and a short German intro text about handling batteries. The first three flags are in one row and \"Akku-Pflege\" wraps to a second row. Purple markers labelled \"8px\" show the horizontal gap between neighbouring flags and the vertical gap between the rows."
+  },
+  "dac09c47ff3ed551011d0e506194d8b6d63c8841cbea45afe4a7a8aedabf271c": {
+    "nodeId": "19819:458",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Four status flags with a leading icon that supports the meaning of the label, stacked vertically: \"Approved\" (check mark, light green, success), \"Plan cancels soon\" (clock, light yellow, warning), \"Rejected\" (cross, light red, error) and \"In assessment\" (document icon, light grey, info)."
+  },
+  "dc6eb64d617ff4c9fbf83b0fd111c6f26d41834c0d0b699a715f55c8d5e6a082": {
+    "nodeId": "53310:1922",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: similar or synonymous terms are used across flags. Two light red error flags without icons are stacked, \"Rejected\" and \"Declined\", which mean the same thing. A red \"Don't\" badge with a cross is at the lower left."
+  },
+  "e86228e78aa214b2a06fd5f16d1ce0b594632a9f9e5a23e1ce2743e7d1175f4d": {
+    "nodeId": "53310:1856",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: use concise labels, with short simple words and no abbreviations. Four flags without icons are stacked: \"Offer\" (orange, highlight), \"Enrolled\" (light grey, info), \"Rejected\" (light red, error) and \"Accepted\" (light green, success). A green \"Do\" badge with a check mark is at the lower left."
+  },
+  "fc085e7057bd038bc4e0c694d18bb6c56c6f0daa7b10a02ca00010fc2c5e3687": {
+    "nodeId": "53360:17091",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Two Promo flag variants stacked vertically, each labelled \"Flag\" with an image icon. Callout 1 points at the orange Highlight flag, used with a primary button or no button. Callout 2 points at the dark, almost black Neutral flag with light text, used alongside a Highlight (brand) button."
+  },
+  "fd3be355d700f4cc0758b6ebe9faaf12be525d1d399fca73f894c95638d638e6": {
+    "nodeId": "52929:20679",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: three light green success flags in a row, \"Completed\" and \"Approved\" without an icon and \"Checked\" with a check mark icon. Mixing flags with and without icons within a single variant creates inconsistency and reduces clarity."
   }
 }

@@ -21,7 +21,7 @@ figmaNodeId: 26075:11591
 figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-06T10:45:41Z
-syncedAt: 2026-11-18T15:15:32.417Z
+syncedAt: 2026-11-18T18:18:38.196Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26075-11591
 ---
 
@@ -1633,7 +1633,7 @@ Selectable Cards communicate both their current interaction state and selection 
 
 ![States](card/states-66439-55932.png)
 
-_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true); selectable-card-vertical (control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "enabled", "hover / pressed", "focus", "Disabled", "enabled + invalid", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "outlined", "elevated", "hover / pressed + invalid", "focus + invalid", "selected + enabled", "selected + hover / pressed", "selected + focus", "Optimizing Charging and Energy Management in the STIHL AP System", "selected + disabled", "selected + enabled + invalid", "selected + hover / p. + invalid", "selected + focus + invalid"._
+_Figure: Grid of the vertical selectable Card with checkbox, media area and "Promo Flag", in three blocks of five state columns, each block with an "outlined" row and an "elevated" row. Block 1: "enabled" (empty checkbox, thin border), "hover / pressed" (grey checkbox, slight shadow), "focus" (extra dark focus outline around the card, checkbox with inner frame), "Disabled" (faded purple media and greyed text) and "enabled + invalid" (red border and red checkbox outline). Block 2: "hover / pressed + invalid", "focus + invalid" (dark focus outline plus red border), "selected + enabled" (thick dark border, checked orange checkmark), "selected + hover / pressed" and "selected + focus" (extra focus outline; title "Optimizing Charging and Energy Management in the STIHL AP System"). Block 3: "selected + disabled" (faded, grey border, grey checkmark), a second column labelled "focus + invalid", "selected + enabled + invalid", "selected + hover / p. + invalid" and "selected + focus + invalid" (checked, red border). Every card shows the heading "Charging and energy management in the STIHL AP system", a truncated description, "Metadata" and three "Flag" tags unless noted._
 
 ### Usage in Context
 
@@ -1660,7 +1660,7 @@ The Card presentation and Card-level interaction target must not change or repla
 
 ![Semantics](card/semantics-66439-55846.png)
 
-_Figure: Shows s-card-skeleton (state=enabled, selection control=radio button, selected=no, invalid=no, media area=no); building-element-radio (label=Radio Label, label, type=label, state=enabled, checked=false, invalid=false); s-card-skeleton (state=enabled, selection control=checkbox, selected=no, invalid=no, media area=no); checkbox (system feedback, label, label=Checkbox Label, state=default, checked=false, indeterminate=false, invalid=false). Text in the figure: "Radio", "Checkbox", "Radio Button", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Radio Label", "Checkbox Label"._
+_Figure: Two text-only selectable Cards, each with the heading "Charging and energy management in the STIHL AP system", a truncated description and an unselected control in the top right corner, mapped to their native control. Under "Radio", the round control on the Card is circled in purple with an arrow to a standalone "Radio Button" with the label "Radio Label". Under "Checkbox", the square control is circled with an arrow to a standalone "Checkbox" with the label "Checkbox Label"._
 
 ### Accessible Name
 
@@ -1676,7 +1676,7 @@ Group-level labeling is defined separately. See [Selectable Card Group: Legend](
 
 ![Accessible Name](card/accessible-name-66439-55867.png)
 
-_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Our recommended service", "STIHL Pro Servicing", "Ensures safety compliance, preventive parts replacement, and thorough cleaning", "Price on request", "STIHL Servicing", "Includes checking device functionality, replacing parts, and cleaning", "STIHL Check", "A fundamental diagnostic check to ensure that all Stihl tools are functioning..."._
+_Figure: Row of three vertical selectable Cards with photos and a round radio control at the top right, each with a heading, description and a "Price on request" tag. "STIHL Pro Servicing" has the orange flag "Our recommended service" and the description "Ensures safety compliance, preventive parts replacement, and thorough cleaning". "STIHL Servicing" is selected (thick dark border, filled orange radio) with "Includes checking device functionality, replacing parts, and cleaning". "STIHL Check" has "A fundamental diagnostic check to ensure that all Stihl tools are functioning optimally." The bold headings are the accessible names that distinguish the options._
 
 ### Focus
 
@@ -1690,7 +1690,7 @@ Focus must remain visible across all Card states, including when the Card is sel
 
 ![Visible Focus](card/visible-focus-66439-55879.png)
 
-_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Focus", "STIHL Check", "A fundamental diagnostic check to ensure that all Stihl tools are functioning...", "Price on request"._
+_Figure: Vertical selectable Card with a checkbox control in focus state, labelled "Focus" in purple. A dark focus outline surrounds the whole Card, not only the control. The Card has a photo of a technician working on a chainsaw with an empty checkbox in the top right corner, the title "STIHL Check", the text "A fundamental diagnostic check to ensure that all Stihl tools are functioning optimally." and a "Price on request" tag._
 
 #### Focus vs. Selected
 
@@ -1700,7 +1700,7 @@ Keyboard navigation and focus movement between Selectable Cards are defined at g
 
 ![Focus vs. Selected](card/focus-vs-selected-66439-55886.png)
 
-_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "Focus", "Selected + Focus", "STIHL Servicing", "Includes checking device functionality, replacing parts, and cleaning", "Price on request", "STIHL Check", "A fundamental diagnostic check to ensure that all Stihl tools are functioning..."._
+_Figure: Two vertical selectable Cards with a checkbox control side by side. Left, labelled "Focus": the unselected Card "STIHL Servicing" ("Includes checking device functionality, replacing parts, and cleaning", tag "Price on request") with an empty checkbox and a thin dark focus outline around the Card. Right, labelled "Selected + Focus": the Card "STIHL Check" ("A fundamental diagnostic check to ensure that all Stihl tools are functioning optimally.", tag "Price on request") with a checked orange checkmark, a thick dark selected border inside and the separate thin focus outline around it, so both states stay distinguishable._
 
 ### Touch Target
 
@@ -1710,7 +1710,7 @@ For general touchscreen guidance, see [Foundations: Touchscreen Device Considera
 
 ![Touch Target](card/touch-target-66439-55897.png)
 
-_Figure: Shows selectable-card-vertical (selection control=checkbox, content sizing=hug, padding=medium, media slot=true). Text in the figure: "STIHL Servicing", "Includes checking device functionality, replacing parts, and cleaning", "Price on request"._
+_Figure: Vertical selectable Card "STIHL Servicing" on a mobile phone screen, with a photo, a round selection control in the top right corner, the text "Includes checking device functionality, replacing parts, and cleaning..." and a "Price on request" tag. A hand tap icon touches the text area of the Card below the photo, away from the control, showing that the entire Card is the touch target, not only the visible control._
 
 ## Selectable Card Group
 
@@ -1734,7 +1734,7 @@ The control property determines whether the group uses [**Radio**](https://www.f
 
 ![Selectable Card Group](card/selectable-card-group-64762-38167.png)
 
-_Figure: Shows selectable-card-vertical (control=radio, content sizing=hug, padding=medium, media slot=true); system-feedback (type=error); selectable-card-vertical (control=checkbox, content sizing=hug, padding=medium, media slot=true); selctable-card-horizontal (control=radio, padding=medium, content sizing=hug, content orientation=vertical); selctable-card-horizontal (control=checkbox, padding=medium, content sizing=hug, content orientation=vertical). Text in the figure: "Selectable Card Group", "Orientation: Horizontal", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "System Feedback Message", "control = radio", "invalid = false", "invalid = true", "control = checkbox", "Orientation: Vertical"._
+_Figure: Overview board "Selectable Card Group" with eight groups inside a dashed purple frame, each with the "Selectable Card Group Legend", a lorem ipsum hint and four unselected Selectable Cards with a "Promo Flag", image, title, "Metadata" and three "Flag" tags. "Orientation: Horizontal" shows four narrow cards side by side, "Orientation: Vertical" shows four wide cards with the image on the left stacked one below another. For each orientation there are four variants: control = radio (round buttons) and control = checkbox (square boxes), each with invalid = false (grey card borders) and invalid = true (a red "System Feedback Message" with error icon above the group, red card borders and red controls)._
 
 ### Further guidelines
 
@@ -1770,7 +1770,7 @@ The Selectable Card Group combines related Selectable Cards into a single select
 
 ![Anatomy](card/anatomy-66439-54413.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, ℹ️ info-button, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=true); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=left, color=blue); annotation-circle (number=5, type=left, color=blue). Callouts 1, 2, 3, 4, 5. Text in the figure: "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "System Feedback Message", "Promo Flag", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag"._
+_Figure: Anatomy of the Selectable Card Group with five numbered callouts, shown as a horizontal group of four cards with radio buttons in the invalid state (red card borders, first card selected with a thicker red border and filled radio button). Callout 1 points at the legend "Selectable Card Group Legend", callout 2 at the info button (circled i) next to the legend, callout 3 at the hint text (lorem ipsum), callout 4 at the "System Feedback Message" with error icon, and callout 5 at the group of Selectable Cards, each with "Promo Flag", title, "Metadata" and three "Flag" tags._
 
 ### Layout
 
@@ -1785,7 +1785,7 @@ Responsive changes to the arrangement and Card orientation are defined under [Re
 
 ![Layout](card/layout-66439-54431.png)
 
-_Figure: Shows selectable-card-group (radio-group=\[object Object\], legend=Selectable Card Group Legend, legend, hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=horizontal, selection control=radio button, invalid=false); selectable-card-group (legend=Selectable Card Group Legend, legend, radio-group=\[object Object\], hint=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauris turpis magna. Quisque ut mi rhoncus eget., hint, orientation=vertical, selection control=radio button, invalid=false). Text in the figure: "Horizontal Orientation", "Vertical Orientation", "Selectable Card Group Legend", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Charging and energy management in the STIHL AP system", "Benefit now from the expertise of our experts - because you deserve advice an...", "Metadata", "Flag", "Optimizing Charging and Energy Management in the STIHL AP System"._
+_Figure: Two Selectable Card Group orientations with radio buttons, side by side, each with the "Selectable Card Group Legend" and a lorem ipsum hint. "Horizontal Orientation" arranges four narrow vertical cards in one row, with the image on top, a title truncated to "Charging and energy management in t...", "Metadata" and three "Flag" tags. "Vertical Orientation" stacks four wide horizontal cards one below another, with the image on the left and the full title "Optimizing Charging and Energy Management in the STIHL AP System"._
 
 ### Sizing & Constraints
 
@@ -1799,7 +1799,7 @@ See [Selectable Card: Sizing & Constraints](https://www.figma.com/design/85WZPFz
 
 ![Sizing & Constraints](card/sizing-constraints-66439-54458.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); helper-selectable-card (Show Ellipse 6, style=default); annotation-circle (number=2, type=center, color=blue); annotation-circle (number=3, type=center, color=blue). Callouts 1, 2, 3. Text in the figure: "fill", "container width", "fill (max.719px)", "fill (min.186px)"._
+_Figure: Three browser-window diagrams of the Selectable Card Group width on a column grid. Callout 1: three cards each labelled "fill" spread evenly across the "container width". Callout 2: a narrow "container width" in which the cards are at their minimum width, labelled "fill (min.186px)", so only two fit per row and the third card wraps to a second row. Callout 3: two wide cards labelled "fill (max.719px)" side by side across the "container width", the maximum width a card grows to._
 
 ## Behavior & Usage
 

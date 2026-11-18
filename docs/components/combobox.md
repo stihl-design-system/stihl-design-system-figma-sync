@@ -17,7 +17,7 @@ figmaNodeId: 2659:3954
 figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-06T10:45:41Z
-syncedAt: 2026-11-18T15:16:01.580Z
+syncedAt: 2026-11-18T18:18:26.264Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=2659-3954
 ---
 
@@ -36,7 +36,7 @@ Overview:
 
 ![Combobox](combobox/combobox-5671-19983.png)
 
-_Figure: Shows input-combobox (system feedback, label=Label, hint, state=default, size=medium, invalid=false); input-combobox (system feedback, label=Label, hint, state=hover, size=medium, invalid=false); input-combobox (system feedback, input text, clear button, label=Label, hint, state=focus, size=medium, invalid=false); item-list (group label, variant=single-selelct, size=medum, grouped=true); input-combobox (system feedback, label=Label, hint, state=disabled, size=medium, invalid=false); input-combobox (label=Label, clear button, system feedback, hint, state=default, size=medium, invalid=true); input-combobox (clear button, label=Label, system feedback, hint, state=focus, size=medium, invalid=true); combobox (dropdown, state=active/focus, invalid=false). Text in the figure: "default", "hover", "active/focus", "disabled", "invalid false", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Inp|", "Group Label (optional)", "System feedback message", "invalid true", "select-item list: single-select", "select-item list: multi-select"._
+_Figure: Overview board of the combobox (medium size) in a grid with columns "default", "hover", "active/focus" and "disabled" and rows "invalid false" and "invalid true", each field with "Label" and a lorem ipsum hint above it. Row "invalid false": default is an empty field with a thin dark border, hover has a grey filled field, active/focus has a thick dark border with typed text "Inp|", a clear (X) button and an open dropdown, disabled has an empty field with a lighter grey border. Row "invalid true": default has a red border, a clear button and a red error icon with "System feedback message"; active/focus has a thick dark border, a clear button, the same message and the open dropdown. The dropdown shows two groups, each headed "Group Label (optional)" with a divider and three "Label" items, the third item of the first group outlined as the focused item. Below, two open lists: "select-item list: single-select" with plain "Label" items, and "select-item list: multi-select" where each item has a checkbox, the first two checked in orange and the rest unchecked._
 
 ### Further guidelines
 
@@ -84,7 +84,7 @@ A combobox contains of two elements:
 
 ![Anatomy](combobox/anatomy-8196-33741.png)
 
-_Figure: Shows annotation-circle (number=1, type=top, color=blue); combobox (dropdown, state=default, invalid=false); annotation-circle (number=2, type=left, color=blue); annotation-circle (number=3, type=left, color=blue); annotation-circle (number=4, type=bottom, color=blue); combobox (dropdown, state=default, invalid=true); annotation-circle (number=6, type=top, color=blue); annotation-circle (number=7, type=bottom, color=blue); annotation-circle (number=5, type=left, color=blue); annotation-circle (number=9, type=right, color=blue); annotation-circle (number=8, type=bottom, color=blue). Callouts 1, 2, 3, 4, 5, 6, 7, 8, 9. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Select", "Input 1, Input 2", "System feedback message"._
+_Figure: Anatomy of the combobox select field with nine numbered callouts across three fields. First field (default, placeholder "Select"): callout 1 points at the "Label", callout 2 at the lorem ipsum hint text below it, callout 3 at the field itself and callout 4 at the placeholder text "Select". Second field (invalid, red border) with the selected value "Input 1, Input 2": callout 5 points at the red error icon next to "System feedback message", callout 6 at the entered value text and callout 7 at the clear (X) button. Third field with "Label" and the placeholder "Select": callout 9 points at the info icon next to the label and callout 8 at the chevron-down icon at the right end of the field._
 
 **Select menu in a dropdown**
 
@@ -93,7 +93,7 @@ _Figure: Shows annotation-circle (number=1, type=top, color=blue); combobox (dro
 
 ![Anatomy](combobox/anatomy-9039-20916.png)
 
-_Figure: Shows combobox (dropdown, state=active/focus, invalid=false). Callouts 1, 2. Text in the figure: "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Inp|", "Group Label"._
+_Figure: Anatomy of the select menu in an open combobox dropdown, below a focused field with "Label", a lorem ipsum hint, typed text "Inp|" and a clear button. The list has two groups, each with a "Group Label" heading above a divider and three "Label" items, the third item of the first group outlined as focused. Callout 1 points at the first "Group Label" (the optional group label, which cannot be clicked) and callout 2 points at the list items below it (the clickable list items)._
 
 **Types of combobox**
 
@@ -102,7 +102,7 @@ _Figure: Shows combobox (dropdown, state=active/focus, invalid=false). Callouts 
 
 ![Anatomy](combobox/anatomy-9039-21118.png)
 
-_Figure: Shows combobox (dropdown, state=active/focus, invalid=false). Callouts 1, 2. Text in the figure: "Label", "Label 1", "Group Label", "Label 1, Label 2", "Group Label (optional)"._
+_Figure: Two types of combobox with open dropdowns side by side. Callout 1 marks the single select: field "Label" with the value "Label 1" and a clear button; the list has a "Group Label" with "Label 1" selected and marked by an orange checkmark on the right, then two more "Label" items, the last outlined as focused, followed by a second "Group Label" with three "Label" items. Callout 2 marks the multi select: field "Label" with the value "Label 1, Label 2" and a clear button; the list has two groups headed "Group Label (optional)", where each "Label" item has a checkbox, the first two checked in orange and the other four unchecked._
 
 ### Sizing
 
@@ -114,7 +114,7 @@ If the combobox is part of a field set, make sure the sizes are the same within 
 
 ![Medium and small input](combobox/medium-and-small-input-9039-21287.png)
 
-_Figure: Shows combobox (dropdown, state=active/focus, invalid=false). Callouts 1, 2. Text in the figure: "Label", "Inp|", "Group Label (optional)"._
+_Figure: Two combobox sizes side by side, both focused with typed text "Inp|", a clear button and an open dropdown. Callout 1 marks the medium variant (the recommended default) with a taller field and larger list rows. Callout 2 marks the small variant with a shorter field, smaller text and more compact rows, for designs with little space. Both dropdowns show two groups headed "Group Label (optional)" with three "Label" items each; the first two items of the first group have an orange checkmark and the third is outlined as focused._
 
 #### Maximum width
 
@@ -138,7 +138,7 @@ If multiple sliders are used within the same form or fieldset, they should all m
 
 ![Maximum width](combobox/maximum-width-30853-6788.png)
 
-_Figure: Shows combobox (dropdown, state=default, invalid=false). Text in the figure: "Content area Narrow", "Label", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc amet mauri...", "Container Width", "recommended max. width 544px"._
+_Figure: Two layouts of a combobox with a "Label", a short lorem ipsum helper text and an empty input field inside a light blue container named "Content area Narrow". In the top layout the input fills the whole container, and a purple "Container Width" arrow spans the same width as the input. In the bottom layout the container is wider, but the input stays at the width marked "recommended max. width 544px", while a longer "Container Width" arrow marks the full container._
 
 A maximum width is needed, as it keeps the **click path between the label and action short.**
 
@@ -148,7 +148,7 @@ The longer the distance to the target, the more time it will require for the mou
 
 ![Maximum width](combobox/maximum-width-9039-21484.png)
 
-_Figure: Don't example. Shows button (button text=Button, variant=ghost, state=enabled, size=medium, icon position=none, hide label=on, flush alignment=off). Text in the figure: "Label", "Input"._
+_Figure: Don't example: two comboboxes, each with the label "Label" and the text "Input" with a chevron, placed over a pink twelve-column grid. The first input spans roughly half of the grid, the second is stretched across the whole grid width, so the chevron sits far from its label. This is wrong because without a maximum width the click path between label and action becomes long and takes more time to reach (Fitts's Law)._
 
 ## Content and Assets
 
@@ -172,7 +172,7 @@ _Figure: Do example with three callouts. Callout 1 points at the horizontal radi
 
 ![Amount of items in the list](combobox/amount-of-items-in-the-list-8472-30091.png)
 
-_Figure: Don't example. Shows combobox (dropdown, state=active/focus, invalid=false). Callouts 1. Text in the figure: "Salutation", "Select", "Label", "Other"._
+_Figure: Don't example with one callout. Callout 1 points at the focused combobox "Salutation" with the placeholder "Select" and a chevron, opened to a list with only three items: "Label", "Label" and "Other". This is wrong because a combobox should not be used for such a short list of items._
 
 ### Specific placeholder copy
 
@@ -182,7 +182,7 @@ Nevertheless, it is recommended to be as specific, as possible. E.g. ‘Search m
 
 ![Specific placeholder copy](combobox/specific-placeholder-copy-9390-3252.png)
 
-_Figure: Shows combobox (dropdown, state=default, invalid=false). Callouts 1. Text in the figure: "Country", "Machine number", "Search machine", "Type to filter"._
+_Figure: Three empty-looking comboboxes in the default state. Callout 1 points at the label of the first, "Country", whose input has an empty placeholder (the default). The other two, both labelled "Machine number", show specific placeholder copy: "Search machine" and "Type to filter", which is the recommended way to word a placeholder._
 
 ### Maximum length
 
@@ -190,7 +190,7 @@ Ideally all labels fit in one line, maximum two lines.
 
 ![Maximum length](combobox/maximum-length-8196-33772.png)
 
-_Figure: Shows combobox (dropdown, state=active/focus, invalid=false). Text in the figure: "Country", "U|", "Label", "United Kingdom of Great Britain", "United States of America", "Uruguay", "Colors", "Beige", "Peanutbutter Brown", "Burgundy"._
+_Figure: Three opened comboboxes showing long labels wrapping onto a second line instead of being cut off. "Country" with typed input "U|" lists "Label", a highlighted "United Kingdom of Great Britain" (selected, two lines, orange checkmark) and "Label", each with an image icon. The second "Country" lists "Label", "United States of America" (selected, two lines) and "Uruguay". "Colors" is a multi-select with checkboxes: "Beige" and "Peanutbutter Brown" checked, "Burgundy" unchecked._
 
 ### Truncation
 
@@ -198,7 +198,7 @@ _Figure: Shows combobox (dropdown, state=active/focus, invalid=false). Text in t
 
 ![Truncation](combobox/truncation-19703-2118.png)
 
-_Figure: Don't example. Shows combobox (dropdown, state=active/focus, invalid=false). Text in the figure: "Country", "Label", "United States of...", "Uruguay", "Colors", "Beige", "Peanutbutter BronLabel", "Burgundy"._
+_Figure: Don't example: two opened comboboxes where long labels are truncated with an ellipsis. "Country" lists "Label", "United States of..." (selected, orange checkmark) and "Uruguay". "Colors" is a multi-select with checkboxes: "Beige" and a cut-off "Peanutbutter Br..." checked, "Burgundy" unchecked. This is wrong because truncated text is not legible and therefore not accessible._
 
 ### Use of icons in the dropdown
 
@@ -209,7 +209,7 @@ _Figure: Don't example. Shows combobox (dropdown, state=active/focus, invalid=fa
 
 ![Use of icons in the dropdown](combobox/use-of-icons-in-the-dropdown-8480-3195.png)
 
-_Figure: Shows combobox (dropdown, state=active/focus, invalid=false). Text in the figure: "Options", "Option 1", "Label", "Option 3"._
+_Figure: Combobox "Options" with an empty input and a chevron, opened to a dropdown list in which every item has an icon in front of its text: "Option 1" (selected, orange checkmark), "Label" and "Option 3". Icons are optional and only appear in the dropdown of a single-select combobox._
 
 ### Long lists are truncated
 
@@ -219,7 +219,7 @@ In case the list is longer, the list is cut off and truncated.
 
 ![Long lists are truncated](combobox/long-lists-are-truncated-9039-21682.png)
 
-_Figure: Shows combobox (state=active/focus, invalid=false). Text in the figure: "Label", "Label 1, Label 2, Label 3, Label 4, Lab..."._
+_Figure: Focused multi select combobox with the label "Label" and a dark border, whose selected values are shown as a comma-separated enumeration that is cut off with an ellipsis when too long: "Label 1, Label 2, Label 3, Label 4, Lab...". A clear button (X) sits at the right end of the field._
 
 ### Grouped Items
 
@@ -230,7 +230,7 @@ Items in a Combobox can be organized under group labels. To maintain clarity and
 
 ![Grouped Items](combobox/grouped-items-38133-4971.png)
 
-_Figure: Don't example. Shows list-items (varient=single-select, state=default, size=medium, selected=true, grouped=false); group-label (type=default); list-items (varient=single-select, state=default, size=medium, selected=false, grouped=true); list-items (varient=multi-select, state=default, size=medium, selected=true, grouped=false); list-items (varient=multi-select, state=default, size=medium, selected=false, grouped=true); annotation-circle (number=2, type=right, color=blue); annotation-circle (number=1, type=left, color=blue). Callouts 1, 2. Text in the figure: "Label", "Group Label (optional)"._
+_Figure: Don't example: two dropdown lists side by side, a single select list (left, selected item marked with an orange check mark) and a multi select list (right, items with checkboxes, first one checked), each mixing ungrouped and grouped items. Each list starts with an ungrouped "Label" at the top, followed by two groups headed "Group Label (optional)" with a divider line, containing three and four "Label" items. Callout 1 points at an item inside a group; callout 2 marks the ungrouped items, the "Label" above the first group and the last "Label" at the bottom of each list. Grouped and ungrouped items must not be mixed in the same list._
 
 ### Info Button
 
@@ -240,7 +240,7 @@ Popover content should be **limited to supplementary, non-critical information**
 
 ![Info Button](combobox/info-button-39621-13615.png)
 
-_Figure: Shows input-combobox (system feedback, ℹ️ info-button, label=Machine Number, clear button, state=default, size=medium, invalid=false); cursor (type=pointer). Text in the figure: "You will usually find the Machine Number in the location shown in the illustr...", "Machine Number"._
+_Figure: Combobox with the label "Machine Number", an info button (circled i) right next to it and an empty input field with a clear button (X). A mouse pointer is on the info button, which has opened a popover above the field with the text "You will usually find the Machine Number in the location shown in the illustrations" and two line drawings of a STIHL machine, a petrol power head and a long-shaft trimmer, each with a leader line to the placeholder machine number "XXXXXXXXX"._
 
 **Don’t use the popover for critical or required information**, use the hint instead as critical information should net be hidden
 
@@ -262,7 +262,7 @@ The user has to scroll a lot, in case the list exceeds the dropdown. In this cas
 
 ![Trigger to open the dropdown](combobox/trigger-to-open-the-dropdown-8196-33759.png)
 
-_Figure: Do example. Shows combobox (dropdown, state=active/focus, invalid=false). Text in the figure: "Country", "B|", "Label", "Bangladesh", "Options", "Select", "Option 3"._
+_Figure: Do example: two focused comboboxes with open dropdowns. The "Country" combobox contains the typed input "B|" with a clear button and shows a filtered list of "Label", "Label", "Bangladesh" and "Label" (type to filter, the dropdown opens after 1 character is typed). The "Options" combobox shows the placeholder "Select" with a chevron and an opened list of "Label", "Label", "Option 3" and "Label" (opens on click and shows the full list)._
 
 ### No results
 
@@ -270,7 +270,7 @@ In case the user typed something without a match, the copy “No options found�
 
 ![No results](combobox/no-results-9039-21277.png)
 
-_Figure: Shows combobox (dropdown, state=active/focus, invalid=false). Text in the figure: "Label", "Inp|"._
+_Figure: Focused combobox with the label "Label", the typed input "Inp|" and a clear button (X), with an open dropdown below that contains a single entry "Label"._
 
 ## Variations
 
@@ -296,7 +296,7 @@ Dev note: the property ‘dropdownOnFocus’ set to ‘true’, opens the dropdo
 
 ![Single select](combobox/single-select-8196-33782.png)
 
-_Figure: Shows combobox (state=active/focus, invalid=false); combobox (dropdown, state=active/focus, invalid=false). Callouts 1, 2. Text in the figure: "Options", "Type to filter", "O|", "Label", "Option 3", "Option 1", "Select"._
+_Figure: Single select comboboxes labelled "Options" in two rows of three states each. Callout 1 points at the top row, type to filter: an empty field with the placeholder "Type to filter" and a text cursor and no chevron, then typed input "O|" with an open list of "Label", "Label", "Option 3" and "Label", then the chosen value "Option 1" with a clear button. Callout 2 points at the bottom row, opens on click: the placeholder "Select" with a chevron and a pointer hand, then an empty field with chevron and the open list "Label", "Label", "Option 3", "Label", then the chosen value "Option 1" with a chevron._
 
 ### Multi select
 
@@ -312,7 +312,7 @@ _Figure: Shows combobox (state=active/focus, invalid=false); combobox (dropdown,
 
 ![Multi select](combobox/multi-select-9411-3055.png)
 
-_Figure: Shows combobox (state=active/focus, invalid=false); combobox (dropdown, state=active/focus, invalid=false). Callouts 3, 4. Text in the figure: "3d", "Options", "Select", "Option 1", "Option 3", "Option 4", "Option 1, Option 2, Option 3", "4c", "Search", "O|", "Option 2"._
+_Figure: Multi select comboboxes labelled "Options" in two rows of three states. Callout 3 points at the top row, opens on click: the placeholder "Select" with a chevron and a pointer hand, then an open list with unchecked checkboxes "Option 1", "Option 3" and "Option 4", then the chosen values "Option 1, Option 2, Option 3" with a clear button and a chevron; callout 3d points at that clear button. Callout 4 points at the bottom row, type to filter: the placeholder "Search" with a text cursor and no chevron, then typed input "O|" with an open list of unchecked checkboxes "Option 1", "Option 2" and "Option 3", then the chosen values "Option 1, Option 2, Option 3" with only a clear button; callout 4c points at that clear button._
 
 ## Building elements
 

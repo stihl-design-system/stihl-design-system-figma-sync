@@ -18,7 +18,7 @@ figmaNodeId: 8844:4923
 figmaVersion: "2418704252861676331"
 figmaVersionLabel: Components published
 figmaVersionCreatedAt: 2026-11-06T10:45:41Z
-syncedAt: 2026-11-18T15:17:59.189Z
+syncedAt: 2026-11-18T18:18:41.947Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=8844-4923
 ---
 
@@ -318,7 +318,7 @@ Components are chosen based on their level of urgency:
 
 ![Functionality & Priority](toast/functionality-priority-40483-6373.png)
 
-_Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dialog (heading, close button, viewport=desktop); footer-dialog (first button, second button, third button, viewport=desktop, direction=horizontal, primary position=left); annotation-circle (number=3, type=center, color=blue); notification (action, close button, type=info, icon=True); toast (text=All files lorem ipsum, icon, type=info); banner (variant=default, viewport=m, content=promo, close-button=true). Callouts 1, 3. Text in the figure: "Heading", "❖ Placeholder", "Button", "This is a notification message that guides the user.", "All files lorem ipsum", "Promo Banner Link"._
+_Figure: Three component types stacked from highest to lowest urgency, with blue numbered callouts. Callout 1 points at a Dialog with the heading "Heading", a close button, a purple dashed "Placeholder" content area and a footer with three buttons labelled "Button" (the first filled and primary, two outlined, one of them at the right edge). The first callout 3 points at two grey info Notifications with an info icon and close button: a wide one with the text "This is a notification message that guides the user." plus an outlined and a text "Button", and a smaller toast-style one with the text "All files lorem ipsum". The second callout 3 points at a dark Banner with an image icon, the link text "Promo Banner Link" with a chevron, and a close button._
 
 ### Use Cases
 
@@ -331,7 +331,7 @@ _Figure: Shows annotation-circle (number=1, type=center, color=blue); header-dia
 
 ![System / Mandatory](toast/system-mandatory-40483-6391.png)
 
-_Figure: Shows header-dialog (heading, viewport=desktop); placeholder: text + image; footer-dialog (first button, third button, viewport=desktop, direction=horizontal, primary position=left); notification (close button, type=info, icon=True); toast (text=Settings have been saved., icon, type=success); notification (type=warning, icon=True). Text in the figure: "Cookies help us improve your experience.", "By clicking “Accept all,” you agree to the use of cookies as described in our...", "Accept all", "Manage preferences", "The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.", "Settings have been saved.", "Recall notice: Product XY has been recalled. Please visit www.example.com for..."._
+_Figure: Examples of system and mandatory messages. On the right is a white Dialog with the heading "Cookies help us improve your experience.", the text "By clicking “Accept all,” you agree to the use of cookies as described in our Cookie Policy." (with a link) and two buttons, a filled "Accept all" and an outlined "Manage preferences". On the left are a grey info Notification with a close button reading "The system will be unavailable on Monday, October 20, from 2:00 PM to 4:00 PM.", a green success Toast with a check icon and close button reading "Settings have been saved.", and a yellow warning Notification with a warning icon reading "Recall notice: Product XY has been recalled. Please visit www.example.com for safety and return details."_
 
 #### Marketing / Engagement
 
@@ -342,7 +342,7 @@ _Figure: Shows header-dialog (heading, viewport=desktop); placeholder: text + im
 
 ![Marketing / Engagement](toast/marketing-engagement-40483-6405.png)
 
-_Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=false); banner (variant=highlight, viewport=m, content=promo, close-button=false). Text in the figure: "Join our Newsletter", "Up to 40% off all Chainsaw models", "Versandkostenfreie ab 49€", "Lieferung oder Abholung vor Ort", "30 Tage Rückgaberecht"._
+_Figure: Three full-width promo Banners without close buttons, stacked vertically. A dark default banner with an envelope icon reads "Join our Newsletter" with a chevron. An orange highlight banner with a percent icon reads "Up to 40% off all Chainsaw models" with a chevron. A light grey banner shows three USPs, each with an icon: "Versandkostenfreie ab 49€" (package), "Lieferung oder Abholung vor Ort" (delivery truck) and "30 Tage Rückgaberecht" (return arrow)._
 
 #### Informational
 
@@ -351,7 +351,7 @@ _Figure: Shows banner (variant=default, viewport=m, content=promo, close-button=
 
 ![Informational](toast/informational-40483-6413.png)
 
-_Figure: Shows banner (variant=secondary, viewport=m, content=promo, close-button=false). Text in the figure: "We’ve just rolled out something new! Check out the latest updates and improve..."._
+_Figure: Full-width light grey Banner without a close button, used for non-critical information. It shows a bell icon, the bold text "We’ve just rolled out something new!" followed by "Check out the latest updates and improvements", and a chevron at the end._
 
 ## Examples/Variants
 
