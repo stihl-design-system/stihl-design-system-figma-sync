@@ -13,20 +13,5 @@
     "nodeId": "39621:13634",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Don't example: a white popover with the text \"Select max. 3 different products\" opened from the info button next to the label \"Product Name\" of a combobox. The popover sits above the label with its arrow pointing down at the info button, the pointer cursor is on the info button, and the input below shows \"FSA 45, FSA 70, FSA 50\" with a clear button. This is wrong because required information such as the selection limit is hidden behind the info button instead of being shown as a hint."
-  },
-  "ac74bd4d88c39f1cf7243d2ead04c72ca6f2823d6400db9869c9a103291c10ec": {
-    "nodeId": "39621:13634",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Don't example: a white popover with the text \"Select max. 3 different products\" opened from the info button of a combobox with the label \"Product Name\". The popover covers most of the input, leaving only its clear button visible at the right edge, and a pointer cursor sits inside the popover. This is wrong because required information such as the selection limit is hidden behind the info button instead of being shown as a hint."
-  },
-  "c980e4db70db6b44ce1678b009af44df9b654e2f270b2b3c22faa4c327507cc0": {
-    "nodeId": "8472:30050",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Do example with three callouts. Callout 1 points at the horizontal radio group \"Form of address\" with the options \"Mr.\" (selected), \"Mrs.\" and \"other\", used for fewer than 5 items. Callout 2 points at the \"Options\" combobox with the placeholder \"Select\" and a chevron, opened to a list with \"Label\", \"Label\", \"Option 3\" and \"Label\" (5 to 20 items, opens on click). Callout 3 points at the \"Country\" combobox with typed input \"B|\" and a clear button, showing a filtered list of \"Label\", \"Label\", \"Bangladesh\", \"Label\" and \"Label\" (more than 20 items, opens after typing)."
-  },
-  "d2c0be31c1dd48a41f999bc488cbf10ab00e416d46acb64d2382156bcb623ed2": {
-    "nodeId": "9039:21450",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Do example: a form with the heading \"Legend\", a radio group with the legend \"Radio Group Legend\" and two \"Radio Label\" options, followed by a \"Select\" field with a chevron and several \"Label\" text inputs, laid over a 12-column grid. All fields stay within the left 8 columns, at most two fields share a row (a short and a long field, or a long and a short one), and the right 4 columns remain empty."
   }
 }
