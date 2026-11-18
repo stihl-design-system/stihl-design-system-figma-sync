@@ -23,3 +23,5 @@ jobs:
           CI: 'true'
       - name: Bundle the MCP worker (no upload)
         run: npm run mcp:build && npx wrangler deploy -c mcp/wrangler.jsonc --dry-run
+      - name: Build the review page and bundle its worker (no upload)
+        run: npm run review:build && npx wrangler deploy -c review/wrangler.jsonc --dry-run

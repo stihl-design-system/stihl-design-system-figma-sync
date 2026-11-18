@@ -1,0 +1,41 @@
+name: Deploy review page
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'review/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy-review.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-review
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run review:build
+      - name: Migrate the database and deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: |
+            d1 migrations apply design-review --remote -c review/wrangler.jsonc
+            deploy -c review/wrangler.jsonc
+      - name: Smoke test
+        run: review/smoke.sh https://design-review.stihl-design-system.workers.dev
+        env:
+          REVIEW_PUBLISH_TOKEN: ${{ secrets.REVIEW_PUBLISH_TOKEN }}

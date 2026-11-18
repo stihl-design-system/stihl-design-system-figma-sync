@@ -1,0 +1,62 @@
+name: Design review
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**/*.png'
+  workflow_dispatch:
+    inputs:
+      base:
+        description: Commit before the change
+        required: true
+      head:
+        description: Commit with the change (default is the current main)
+        default: ''
+
+concurrency:
+  group: design-review
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # Both commits of the comparison have to be available
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Compare the images and publish the review
+        id: review
+        run: npm run review -- --base "$BASE" --head "$HEAD" --publish
+        env:
+          BASE: ${{ inputs.base || github.event.before }}
+          HEAD: ${{ inputs.head || github.sha }}
+          REVIEW_URL: https://design-review.stihl-design-system.workers.dev
+          REVIEW_PUBLISH_TOKEN: ${{ secrets.REVIEW_PUBLISH_TOKEN }}
+
+      - name: Link the review on the merged pull request
+        # Teams and mail are sent by the review page itself once its webhook is configured
+        if: github.event_name == 'push' && steps.review.outputs.review_created == 'true'
+        run: |
+          number=$(gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/pulls" --jq '.[0].number // empty')
+          if [ -n "$number" ]; then
+            gh pr comment "$number" --body "Design review for this release ($SUMMARY): $REVIEW_LINK"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SUMMARY: ${{ steps.review.outputs.summary }}
+          REVIEW_LINK: ${{ steps.review.outputs.review_url }}
