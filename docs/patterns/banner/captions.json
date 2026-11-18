@@ -64,11 +64,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two banners illustrating character length. The dark banner holds one long text, \"Longer Banner Copy Lorem ipsum dolor sit amet, consectetur lorem\", with a link chevron and close button. The light grey banner splits the copy into three short items, \"Longer Banner Copy\", \"Lorem ipsum dolor sit\" and \"amet consectetur lorem\", each with its own icon, followed by a close button."
   },
-  "83fdb019ec041f55ea439a72d92410b8d2e20ab500109189bef9ce6fc7ae84c7": {
-    "nodeId": "9902:2911",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Three components ordered by urgency. Callout 1 marks a dialog with the heading \"Heading\", a close icon, a purple \"Placeholder\" content area and three buttons (a filled one and an outlined one on the left, an outlined one on the right). Callout 3 marks a grey info notification with the text \"This is a notification message that guides the user.\", a close icon and two buttons, below it a smaller toast with an info icon and the text \"All files lorem ipsum\", and a second callout 3 marks a dark promo banner with an image icon, \"Promo Banner Link\", a right chevron and a close icon."
-  },
   "93587928b4fb86be6928ad2187ca782a688e218af1c683f10ac505a970d56992": {
     "nodeId": "7171:11304",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -78,11 +73,6 @@
     "nodeId": "7171:11355",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Header on a desktop viewport (xl) with a yellow warning Notification above the top bar and nav bar, titled \"Important Safety Notice\" with a text and link about a product recall and a close button, shown instead of a promotional banner. The top bar has the STIHL logo, \"This is a Platform name\", a \"Search Site\" field and icon buttons labelled \"Label\", and the nav bar has seven \"Button nav\" items."
-  },
-  "b0925150ba0c1094b21eec1543b8e4e2d44377b91763943c1a9e53d668bb90ff": {
-    "nodeId": "7171:11173",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Two banners with numbered callouts. Callout 1 on the left marks the container, a light grey bar holding a purple \"Placeholder\" area for content such as text, links or buttons. Callout 2 on the right marks the optional close button (X) at the right end of a second banner with an image icon, \"Promo Banner Link\" and a right chevron."
   },
   "c04858a5b58185e3a41dcd17a9a397a3a727611e2ac22e65354d3f1d9f0bbddb": {
     "nodeId": "7171:11348",
