@@ -11,14 +11,27 @@ import styles from './Dialogs.module.scss';
 
 interface NameDialogProps {
   isOpen: boolean;
+  /** The name saved so far; empty when the page asks for the first time */
+  current: string;
   onSave: (name: string) => void;
   onClose: () => void;
 }
 
-/** The login is shared, so the page asks once who is deciding */
-export function NameDialog({ isOpen, onSave, onClose }: NameDialogProps) {
-  const [name, setName] = useState('');
+/** The login is shared, so the page asks who is deciding; the name can be changed later */
+export function NameDialog({
+  isOpen,
+  current,
+  onSave,
+  onClose,
+}: NameDialogProps) {
+  const [name, setName] = useState(current);
   const [invalid, setInvalid] = useState(false);
+  useEffect(() => {
+    if (isOpen) {
+      setName(current);
+      setInvalid(false);
+    }
+  }, [isOpen, current]);
 
   return (
     <DSDialog
@@ -26,7 +39,7 @@ export function NameDialog({ isOpen, onSave, onClose }: NameDialogProps) {
       onClose={onClose}
       header={
         <DSHeading tag='h2' size='small'>
-          Who is reviewing?
+          {current ? 'Change your name' : 'Who is reviewing?'}
         </DSHeading>
       }
       footer={
@@ -51,6 +64,8 @@ export function NameDialog({ isOpen, onSave, onClose }: NameDialogProps) {
         <DSText size='small'>
           The login is shared by the team. Your name is saved with every
           decision, so others know who to ask.
+          {current &&
+            ' Decisions you already made keep the name they were saved with.'}
         </DSText>
         <DSInput
           id='reviewer-name'

@@ -1,5 +1,25 @@
+@use '@stihl-design-system/components/styles/scss/ds';
+
 .app {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+// Aligns the actions to the right of the top bar, as in the header templates
+.account {
+  display: flex;
+  gap: ds.$spacing-16;
+  margin-inline-start: auto;
+}
+
+.loggedOut {
+  display: flex;
+  flex-direction: column;
+  gap: ds.$spacing-24;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: ds.$spacing-32 ds.$spacing-24;
 }

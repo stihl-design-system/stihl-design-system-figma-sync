@@ -3,7 +3,7 @@ import {
   DSSkeleton,
   useDSToast,
 } from '@stihl-design-system/components';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   needsDecision,
   type Decision,
@@ -15,19 +15,19 @@ import { api } from '../api.ts';
 import {
   AcceptAllDialog,
   FinishDialog,
-  NameDialog,
   RejectDialog,
 } from '../components/Dialogs.tsx';
 import { ImageViewer } from '../components/ImageViewer.tsx';
 import { Sidebar, type Filters } from '../components/Sidebar.tsx';
 import { imageTitle, undecided } from '../lib/format.ts';
 import { ignoresShortcuts } from '../lib/shortcuts.ts';
+import { useReviewer } from '../lib/reviewer.tsx';
 import { preload } from '../lib/useComparison.ts';
-import { useStored } from '../lib/useStored.ts';
+import { usePageTitle } from '../lib/usePageTitle.ts';
 import { navigate, useRoute } from '../router.ts';
 import styles from './ReviewPage.module.scss';
 
-type OpenDialog = 'name' | 'reject' | 'finish' | 'acceptAll' | null;
+type OpenDialog = 'reject' | 'finish' | 'acceptAll' | null;
 
 interface BulkAccept {
   imageIds: string[];
@@ -47,15 +47,13 @@ export function ReviewPage({ id }: { id: string }) {
     decisions: [],
     statuses: [],
   });
-  const [reviewer, setReviewer] = useStored('review.reviewer', '');
+  const { name: reviewer, withName } = useReviewer();
   const [busy, setBusy] = useState(false);
   const [dialog, setDialog] = useState<OpenDialog>(null);
   /** The images an open "accept all" question is about */
   const [bulk, setBulk] = useState<BulkAccept | null>(null);
   /** The last "accept all" that went through, so it can be undone */
   const [acceptedAll, setAcceptedAll] = useState<BulkAccept | null>(null);
-  /** What the reviewer wanted to do when the page had to ask for the name first */
-  const afterName = useRef<((name: string) => void) | null>(null);
 
   const load = useCallback(() => {
     api.getReview(id).then(
@@ -77,12 +75,6 @@ export function ReviewPage({ id }: { id: string }) {
     document.addEventListener('visibilitychange', onVisible);
     return () => document.removeEventListener('visibilitychange', onVisible);
   }, [load]);
-  useEffect(() => {
-    if (review) {
-      document.title = `${review.title} | Design review`;
-    }
-  }, [review]);
-
   const images = useMemo(() => review?.manifest.images ?? [], [review]);
   const decisions = useMemo(
     () =>
@@ -122,6 +114,14 @@ export function ReviewPage({ id }: { id: string }) {
     ? filtered.findIndex((image) => image.id === selected.id)
     : -1;
   const locked = review ? review.status !== 'open' : true;
+  // Specific to general: image, page of the documentation, review
+  usePageTitle(
+    selected && imageTitle(selected),
+    review?.manifest.documents.find(
+      (entry) => entry.key === selected?.documentKey
+    )?.title,
+    review?.title
+  );
 
   const select = useCallback(
     (imageId: string) => {
@@ -150,18 +150,6 @@ export function ReviewPage({ id }: { id: string }) {
       );
     }
   }, [review, filtered, index]);
-
-  const withName = useCallback(
-    (action: (name: string) => void) => {
-      if (reviewer) {
-        action(reviewer);
-      } else {
-        afterName.current = action;
-        setDialog('name');
-      }
-    },
-    [reviewer]
-  );
 
   const decide = useCallback(
     async (
@@ -340,19 +328,6 @@ export function ReviewPage({ id }: { id: string }) {
         )}
       </main>
 
-      <NameDialog
-        isOpen={dialog === 'name'}
-        onClose={() => {
-          afterName.current = null;
-          setDialog(null);
-        }}
-        onSave={(name) => {
-          setReviewer(name);
-          setDialog(null);
-          afterName.current?.(name);
-          afterName.current = null;
-        }}
-      />
       <RejectDialog
         isOpen={dialog === 'reject'}
         subject={selected ? imageTitle(selected) : ''}

@@ -285,7 +285,17 @@ async function route(
     return env.ASSETS.fetch(request);
   }
 
-  if (!(await hasLogin(request, env.REVIEW_USER, env.REVIEW_PASSWORD))) {
+  const loggedIn = await hasLogin(
+    request,
+    env.REVIEW_USER,
+    env.REVIEW_PASSWORD
+  );
+  // Tells the page whether the browser still sends a valid login, without asking for one
+  if (pathname === '/api/session' && method === 'GET') {
+    return json({ loggedIn });
+  }
+  // The page logs out by sending wrong credentials here; rejecting every login makes the browser forget its own
+  if (!loggedIn || pathname === '/api/logout') {
     return new Response('Login required', {
       status: 401,
       headers: {

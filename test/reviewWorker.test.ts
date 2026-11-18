@@ -194,6 +194,26 @@ describe('review worker', () => {
     expect((await call('/', { login: '' })).status).toBe(401);
   });
 
+  it('lets the page log out of the browser login', async () => {
+    // Rejects even the valid login, which makes the browser discard it
+    const logout = await call('/api/logout');
+    expect(logout.status).toBe(401);
+    expect(logout.headers.get('www-authenticate')).toContain('Basic');
+
+    // Reports the state without a challenge, so the browser shows no prompt
+    const session = async (login: string | false) => {
+      const response = await call('/api/session', { login });
+      return [
+        response.status,
+        response.headers.get('www-authenticate'),
+        await response.json(),
+      ];
+    };
+    expect(await session(PASSWORD)).toEqual([200, null, { loggedIn: true }]);
+    expect(await session('logout')).toEqual([200, null, { loggedIn: false }]);
+    expect(await session(false)).toEqual([200, null, { loggedIn: false }]);
+  });
+
   it('accepts reviews only from the pipeline and keeps them for the page', async () => {
     expect((await publish(IMAGES, 'wrong')).status).toBe(401);
     // The shared login must not be able to create reviews

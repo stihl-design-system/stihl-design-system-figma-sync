@@ -12,6 +12,7 @@ import {
 } from '../../../shared/manifest.ts';
 import { api } from '../api.ts';
 import { formatDate, REVIEW_STATUS, undecided } from '../lib/format.ts';
+import { usePageTitle } from '../lib/usePageTitle.ts';
 import { navigate } from '../router.ts';
 import styles from './ReviewList.module.scss';
 
@@ -28,9 +29,9 @@ function progress(review: ReviewSummary): string {
 export function ReviewList() {
   const [reviews, setReviews] = useState<ReviewSummary[]>();
   const [error, setError] = useState<string>();
+  usePageTitle();
 
   useEffect(() => {
-    document.title = 'Design review | STIHL Design System';
     api
       .listReviews()
       .then(setReviews, (failure: unknown) =>
