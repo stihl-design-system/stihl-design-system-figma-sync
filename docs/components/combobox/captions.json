@@ -1,4 +1,19 @@
 {
+  "0148b4c700045980f7601ff8c2f4b347f8ce4d7d60d7ef7e939fd8e4df07f560": {
+    "nodeId": "8472:30050",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example with three callouts. Callout 1 points at the horizontal radio group \"Form of address\" with the options \"Mr.\" (selected), \"Mrs.\" and \"other\", used for fewer than 5 items. Callout 2 points at the \"Options\" combobox with the placeholder \"Select\" and a chevron, opened to a list with \"Label\", \"Label\", \"Option 3\" and \"Label\" (5 to 20 items, opens on click). Callout 3 points at the \"Country\" combobox with typed input \"B|\" and a clear button, showing a filtered list of \"Label\", \"Label\", \"Bangladesh\", \"Label\" and \"Label\" (more than 20 items, opens after typing)."
+  },
+  "8047e76029ac4839e18ef1131a59e00bd7e01a95855e758d2d66fddd5812e755": {
+    "nodeId": "9039:21450",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Do example: a form with the heading \"Legend\", a radio group with the legend \"Radio Group Legend\" and two \"Radio Label\" options side by side in one row, followed by a \"Select\" field with a chevron and several \"Label\" text inputs, laid over a 12-column grid. All fields stay within the left 8 columns, at most two fields share a row (a short and a long field, or a long and a short one), and the right 4 columns remain empty."
+  },
+  "952ff07ad0a95a5af925cb1014d30e1a80bd8a407458a330a2f8d0a0b3f544cf": {
+    "nodeId": "39621:13634",
+    "model": "github-copilot/claude-sonnet-5.5",
+    "caption": "Don't example: a white popover with the text \"Select max. 3 different products\" opened from the info button next to the label \"Product Name\" of a combobox. The popover sits above the label with its arrow pointing down at the info button, the pointer cursor is on the info button, and the input below shows \"FSA 45, FSA 70, FSA 50\" with a clear button. This is wrong because required information such as the selection limit is hidden behind the info button instead of being shown as a hint."
+  },
   "ac74bd4d88c39f1cf7243d2ead04c72ca6f2823d6400db9869c9a103291c10ec": {
     "nodeId": "39621:13634",
     "model": "github-copilot/claude-sonnet-5.5",
