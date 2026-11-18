@@ -43,8 +43,23 @@ jobs:
         if: steps.check.outcome == 'failure' && steps.check.outputs.outdated == ''
         run: exit 1
 
+      - name: Skip when the open pull request already holds this state
+        id: current
+        if: steps.check.outputs.outdated == 'true' && inputs.force != true
+        # Without this every run regenerates the same pull request and uses up the Workers AI quota
+        run: |
+          body=$(gh pr list --head sync/figma --state open --json body --jq '.[0].body // ""')
+          if grep -qF "<!-- sync-key: $SYNC_KEY -->" <<<"$body"; then
+            echo "The open pull request was generated from this commit and these Figma versions"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SYNC_KEY: ${{ github.sha }} ${{ steps.check.outputs.targets }}
+
       - name: Regenerate Markdown and images
-        if: steps.check.outputs.outdated == 'true' || inputs.force == true
+        if: (steps.check.outputs.outdated == 'true' && steps.current.outputs.skip != 'true') || inputs.force == true
         run: npm run sync
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
@@ -53,7 +68,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
       - name: Open pull request
-        if: steps.check.outputs.outdated == 'true' || inputs.force == true
+        if: (steps.check.outputs.outdated == 'true' && steps.current.outputs.skip != 'true') || inputs.force == true
         uses: peter-evans/create-pull-request@v7
         with:
           # One open sync PR at a time; a newer version updates the same branch
@@ -68,4 +83,6 @@ jobs:
             - Trigger: `${{ github.event_name }}`
 
             Version ids and labels per document are in the frontmatter of the changed files. New or changed images were described by Workers AI (`captions.json` next to the images); images the quota did not cover carry a structural description and are picked up by the daily captions run.
+
+            <!-- sync-key: ${{ github.sha }} ${{ steps.check.outputs.targets || 'forced' }} -->
           labels: figma-sync

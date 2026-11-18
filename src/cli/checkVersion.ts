@@ -21,7 +21,10 @@ async function main(): Promise<void> {
   const client = createFigmaClient(requireToken());
   const resolveVersion = createVersionResolver(client, latest);
 
-  const outdatedFiles = new Map<string, TargetVersion>();
+  const outdatedFiles = new Map<
+    string,
+    { name: string; target: TargetVersion }
+  >();
   for (const document of selectDocuments(config, documents)) {
     const target = await resolveVersion(document.file);
     const local = readFrontmatter(document.output)?.figmaVersion;
@@ -30,21 +33,34 @@ async function main(): Promise<void> {
       `${document.id}: local ${local ?? 'none'}, target ${target.id} "${target.label}" from ${document.file.name} (${state})`
     );
     if (state === 'outdated') {
-      outdatedFiles.set(document.file.name, target);
+      outdatedFiles.set(document.file.fileKey, {
+        name: document.file.name,
+        target,
+      });
     }
   }
 
   const outdated = outdatedFiles.size > 0;
   if (process.env.GITHUB_OUTPUT) {
-    const summary = [...outdatedFiles]
+    const summary = [...outdatedFiles.values()]
       .map(
-        ([name, target]) =>
+        ({ name, target }) =>
           `${name}: ${target.label.replace(/\r?\n/g, ' ') || target.id}`
       )
       .join('; ');
+    // Identifies the state a sync would produce; the workflow skips the sync while its pull request holds it
+    const targets = [...outdatedFiles]
+      .map(([fileKey, { target }]) => `${fileKey}@${target.id}`)
+      .sort()
+      .join(',');
     appendFileSync(
       process.env.GITHUB_OUTPUT,
-      [`outdated=${outdated}`, `summary=${summary}`, ''].join('\n')
+      [
+        `outdated=${outdated}`,
+        `summary=${summary}`,
+        `targets=${targets}`,
+        '',
+      ].join('\n')
     );
   }
   process.exit(outdated ? 1 : 0);

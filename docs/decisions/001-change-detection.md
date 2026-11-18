@@ -20,7 +20,7 @@ Findings that changed the picture compared to the ticket text:
 
 **Poll for the latest named version, no webhook, no relay.**
 
-1. `.github/workflows/sync.yml` runs every 30 minutes. `npm run check` fetches the newest version with a label and compares its id with `figmaVersion` in the frontmatter. Only when they differ does the workflow run `npm run sync` and open a pull request (`peter-evans/create-pull-request`). One small API call per run when nothing changed.
+1. `.github/workflows/sync.yml` runs every 30 minutes. `npm run check` fetches the newest version with a label and compares its id with `figmaVersion` in the frontmatter. Only when they differ does the workflow run `npm run sync` and open a pull request (`peter-evans/create-pull-request`). One small API call per run when nothing changed. Until that pull request is merged the frontmatter on `main` stays outdated, so the pull request body records the commit on `main` and the target versions it was generated from (`sync-key`); runs that would produce the same state skip the sync instead of regenerating the branch every 30 minutes. A push to `main` or a newer named version changes the key and triggers one new sync.
 2. `npm run sync` reads nodes and renders images **pinned to that version id**. The generated Markdown therefore reflects a state a designer explicitly published, not whatever the file looked like when the cron fired.
 3. Designers publish documentation changes the same way they already publish components: File > Save to version history with a label. The label ends up in the frontmatter (`figmaVersionLabel`) and in the pull request title.
 4. `--latest` on `check` and `sync` switches to the raw file version for local debugging.
