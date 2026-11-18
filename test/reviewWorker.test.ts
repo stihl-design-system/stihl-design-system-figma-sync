@@ -182,6 +182,14 @@ describe('review worker', () => {
 
     expect(await (await call('/r/x')).text()).toBe('<html>app</html>');
 
+    // Only the favicon files and the manifest that points to them are public
+    for (const path of ['/favicon.ico', '/manifest.webmanifest']) {
+      expect((await call(path, { login: false })).status).toBe(200);
+    }
+    expect(
+      (await call('/favicon.ico', { login: false, method: 'POST' })).status
+    ).toBe(401);
+
     env.REVIEW_PASSWORD = undefined;
     expect((await call('/', { login: '' })).status).toBe(401);
   });

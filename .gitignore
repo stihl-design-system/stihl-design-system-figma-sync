@@ -5,3 +5,4 @@ mcp/public
 .wrangler
 review/public
 .dev.vars
+review/app/public

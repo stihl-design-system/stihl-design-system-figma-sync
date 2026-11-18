@@ -41,6 +41,20 @@ const MAX_NAME_LENGTH = 80;
 const MAX_IMAGES = 20_000;
 const IMAGE_STATUSES = ['changed', 'added', 'removed', 'renamed'];
 
+/**
+ * Favicon, touch icons and web manifest of the design system. Browsers request
+ * the manifest and its icons without credentials, and the files are the public
+ * brand icons, so they are the only thing served without the login.
+ */
+const META_ICONS = new Set([
+  '/favicon.ico',
+  '/icon.svg',
+  '/apple-icon.png',
+  '/icon-192.png',
+  '/icon-512.png',
+  '/manifest.webmanifest',
+]);
+
 function json(body: unknown, status = 200): Response {
   return Response.json(body, {
     status,
@@ -265,6 +279,10 @@ async function route(
       'SELECT COUNT(*) AS reviews FROM reviews'
     ).first<{ reviews: number }>();
     return json({ ok: true, reviews: row?.reviews ?? 0 });
+  }
+
+  if (META_ICONS.has(pathname) && (method === 'GET' || method === 'HEAD')) {
+    return env.ASSETS.fetch(request);
   }
 
   if (!(await hasLogin(request, env.REVIEW_USER, env.REVIEW_PASSWORD))) {

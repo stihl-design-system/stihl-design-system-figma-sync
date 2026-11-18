@@ -60,7 +60,7 @@ A review for any two commits: run the "Design review" workflow manually with `ba
 
 ### Development
 
-`review/app/` is a React app built with `@stihl-design-system/components`, `review/src/` the Worker, `review/shared/` the code both use (manifest types, pixel comparison).
+`review/app/` is a React app built with `@stihl-design-system/components` (favicon and touch icons come from its meta icons partial, `npm run review:icons` copies the files), `review/src/` the Worker, `review/shared/` the code both use (manifest types, pixel comparison).
 
 ```
 npx wrangler d1 migrations apply design-review --local -c review/wrangler.jsonc

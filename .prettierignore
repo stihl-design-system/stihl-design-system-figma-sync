@@ -8,3 +8,4 @@ docs/**/captions.json
 test/fixtures/*.json
 package-lock.json
 review/public
+review/app/public

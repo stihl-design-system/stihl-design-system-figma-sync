@@ -21,8 +21,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "review": "tsx src/cli/review.ts",
-    "review:build": "npm run build -w review",
-    "review:dev": "npm run dev -w review"
+    "review:build": "npm run review:icons && npm run build -w review",
+    "review:dev": "npm run review:icons && npm run dev -w review",
+    "review:icons": "node node_modules/@stihl-design-system/components/partials/copyAssets.js --dir=review/app"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
