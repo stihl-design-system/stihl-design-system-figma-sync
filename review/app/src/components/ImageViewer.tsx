@@ -206,6 +206,7 @@ export function ImageViewer({
               <DSLink
                 href={image.after.figmaUrl}
                 target='_blank'
+                variant='highlight'
                 iconName='arrow-out'
                 iconPosition='right'
               >
@@ -216,6 +217,7 @@ export function ImageViewer({
               <DSLink
                 href={image.before.figmaUrl}
                 target='_blank'
+                variant='highlight'
                 iconName='arrow-out'
                 iconPosition='right'
               >

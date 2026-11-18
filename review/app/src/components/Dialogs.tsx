@@ -185,3 +185,49 @@ export function FinishDialog({
     </DSDialog>
   );
 }
+
+interface AcceptAllDialogProps {
+  isOpen: boolean;
+  count: number;
+  documentTitle: string;
+  busy: boolean;
+  onAccept: () => void;
+  onClose: () => void;
+}
+
+/** Accepting several images at once skips looking at them, so it asks first */
+export function AcceptAllDialog({
+  isOpen,
+  count,
+  documentTitle,
+  busy,
+  onAccept,
+  onClose,
+}: AcceptAllDialogProps) {
+  return (
+    <DSDialog
+      isOpen={isOpen}
+      onClose={onClose}
+      header={
+        <DSHeading tag='h2' size='small'>
+          Accept {count} images in {documentTitle}?
+        </DSHeading>
+      }
+      footer={
+        <div className={styles.actions}>
+          <DSButton type='button' variant='outline' onClick={onClose}>
+            Cancel
+          </DSButton>
+          <DSButton type='button' loading={busy} onClick={onAccept}>
+            Accept {count} images
+          </DSButton>
+        </div>
+      }
+    >
+      <DSText>
+        All images of this page that have no decision yet are accepted without
+        opening them. Decisions you already made stay as they are.
+      </DSText>
+    </DSDialog>
+  );
+}

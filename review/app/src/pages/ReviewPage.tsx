@@ -13,6 +13,7 @@ import {
 } from '../../../shared/manifest.ts';
 import { api } from '../api.ts';
 import {
+  AcceptAllDialog,
   FinishDialog,
   NameDialog,
   RejectDialog,
@@ -26,7 +27,12 @@ import { useStored } from '../lib/useStored.ts';
 import { navigate, useRoute } from '../router.ts';
 import styles from './ReviewPage.module.scss';
 
-type OpenDialog = 'name' | 'reject' | 'finish' | null;
+type OpenDialog = 'name' | 'reject' | 'finish' | 'acceptAll' | null;
+
+interface BulkAccept {
+  imageIds: string[];
+  documentTitle: string;
+}
 
 function message(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
@@ -44,6 +50,10 @@ export function ReviewPage({ id }: { id: string }) {
   const [reviewer, setReviewer] = useStored('review.reviewer', '');
   const [busy, setBusy] = useState(false);
   const [dialog, setDialog] = useState<OpenDialog>(null);
+  /** The images an open "accept all" question is about */
+  const [bulk, setBulk] = useState<BulkAccept | null>(null);
+  /** The last "accept all" that went through, so it can be undone */
+  const [acceptedAll, setAcceptedAll] = useState<BulkAccept | null>(null);
   /** What the reviewer wanted to do when the page had to ask for the name first */
   const afterName = useRef<((name: string) => void) | null>(null);
 
@@ -260,16 +270,26 @@ export function ReviewPage({ id }: { id: string }) {
         filters={filters}
         onFilter={setFilters}
         onSelect={select}
-        onAcceptAll={(imageIds, title) =>
-          withName(async (name) => {
-            if (await decide(imageIds, 'accepted', '', name)) {
-              queueDSToastMessage(
-                `Accepted ${imageIds.length} images in ${title}`,
-                { variant: 'success' }
-              );
-            }
+        onAcceptAll={(imageIds, documentTitle) =>
+          withName(() => {
+            setBulk({ imageIds, documentTitle });
+            setDialog('acceptAll');
           })
         }
+        acceptedAll={
+          acceptedAll && {
+            count: acceptedAll.imageIds.length,
+            documentTitle: acceptedAll.documentTitle,
+          }
+        }
+        onUndoAcceptAll={() => {
+          if (acceptedAll) {
+            void decide(acceptedAll.imageIds, null, '', reviewer).then(
+              (saved) => saved && setAcceptedAll(null)
+            );
+          }
+        }}
+        onDismissAcceptAll={() => setAcceptedAll(null)}
         onFinish={() => {
           if (remaining > 0) {
             setFilters({ ...filters, decisions: ['open'] });
@@ -342,6 +362,25 @@ export function ReviewPage({ id }: { id: string }) {
           if (selected) {
             void decide([selected.id], 'rejected', comment, reviewer).then(
               (saved) => saved && advance()
+            );
+          }
+        }}
+      />
+      <AcceptAllDialog
+        isOpen={dialog === 'acceptAll'}
+        count={bulk?.imageIds.length ?? 0}
+        documentTitle={bulk?.documentTitle ?? ''}
+        busy={busy}
+        onClose={() => setDialog(null)}
+        onAccept={() => {
+          if (bulk) {
+            void decide(bulk.imageIds, 'accepted', '', reviewer).then(
+              (saved) => {
+                setDialog(null);
+                if (saved) {
+                  setAcceptedAll(bulk);
+                }
+              }
             );
           }
         }}

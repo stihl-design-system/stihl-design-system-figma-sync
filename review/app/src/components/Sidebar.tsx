@@ -69,6 +69,10 @@ interface SidebarProps {
   onFilter: (filters: Filters) => void;
   onSelect: (imageId: string) => void;
   onAcceptAll: (imageIds: string[], documentTitle: string) => void;
+  /** The last "accept all", offered for undo until it is dismissed */
+  acceptedAll: { count: number; documentTitle: string } | null;
+  onUndoAcceptAll: () => void;
+  onDismissAcceptAll: () => void;
   onFinish: () => void;
   onReopen: () => void;
 }
@@ -82,6 +86,9 @@ export function Sidebar({
   onFilter,
   onSelect,
   onAcceptAll,
+  acceptedAll,
+  onUndoAcceptAll,
+  onDismissAcceptAll,
   onFinish,
   onReopen,
 }: SidebarProps) {
@@ -283,6 +290,25 @@ export function Sidebar({
       </nav>
 
       <div className={styles.finish}>
+        {acceptedAll && !locked && (
+          <DSNotification
+            variant='success'
+            closeButtonProps={{ label: 'Dismiss' }}
+            onClose={onDismissAcceptAll}
+            customActionArea={
+              <DSButton
+                type='button'
+                variant='outline'
+                size='small'
+                onClick={onUndoAcceptAll}
+              >
+                Undo
+              </DSButton>
+            }
+          >
+            Accepted {acceptedAll.count} images in {acceptedAll.documentTitle}
+          </DSNotification>
+        )}
         {locked ? (
           <>
             <DSNotification
