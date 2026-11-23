@@ -1708,7 +1708,7 @@ Keywords: tooltip, hint, info bubble.
 Keywords: onboarding, introduction, process, contribution, figma file structure, getting started.
 
 - Document: [guidelines/introduction.md](guidelines/introduction.md)
-- Figma: [Onboarding](https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj?node-id=356-1729) (unpublished state, 2026-10-26)
+- Figma: [Onboarding](https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj?node-id=356-1729) (unpublished state, 2026-11-23)
 - Chapters:
   - [Introduction](guidelines/introduction.md#introduction)
     - [Introduction](guidelines/introduction.md#introduction-1)
@@ -1735,6 +1735,7 @@ Keywords: onboarding, introduction, process, contribution, figma file structure,
     - [Roles](guidelines/introduction.md#roles)
     - [Design Process Scope](guidelines/introduction.md#design-process-scope)
     - [Definition of Done & Acceptance Criteria](guidelines/introduction.md#definition-of-done-acceptance-criteria)
+    - [Design System usage rules](guidelines/introduction.md#design-system-usage-rules)
   - [Contribute](guidelines/introduction.md#contribute)
     - [Contribute](guidelines/introduction.md#contribute-1)
     - [Get involved](guidelines/introduction.md#get-involved)

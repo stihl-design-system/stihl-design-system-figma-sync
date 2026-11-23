@@ -13,10 +13,10 @@ figmaFile: Onboarding
 figmaProject: 04. Guidelines, Onboarding, Processes
 figmaFileKey: lLmw7PfIdKjFG4uT3B2Hyj
 figmaNodeId: 356:1729
-figmaVersion: "2414601641067527736"
+figmaVersion: "2425037126324865183"
 figmaVersionLabel: ""
-figmaVersionCreatedAt: 2026-10-26T09:28:34Z
-syncedAt: 2026-11-05T19:52:20.129Z
+figmaVersionCreatedAt: 2026-11-23T12:30:49Z
+syncedAt: 2026-11-23T12:31:03.572Z
 sourceUrl: https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj?node-id=356-1729
 ---
 
@@ -78,7 +78,7 @@ Platform-specific libraries with tailored components and modules designed for th
 
 ![03. Platform Libraries](introduction/03-platform-libraries-371-708.png)
 
-_Figure: Five library cover cards. Three black cards: "App Pattern Library" with a "Coming soon" tag (Components and modules tailored to app interfaces), "Web Pattern Library" (Components and modules tailored to web interfaces) and "E-Mail Patterns" with a "Visual guideline" tag (Components and modules tailored to e-mail interfaces). Two grey cards: "Archive Platform Libraries" (Archived platform libraries exploration) and "Playground Platform Libraries" (Ongoing platform libraries exploration)._
+_Figure: Six cover thumbnails representing different platform libraries and miscellaneous categories within the STIHL Design System. Each thumbnail includes a title and a brief description of its content, such as "App Pattern Library" with "Components and modules tailored to app interfaces," and "Web Pattern Library" with "Components and modules tailored to web interfaces." Additionally, there are thumbnails for "E-Mail Patterns," "App Pattern Library Beta," "Archive Platform Libraries," and "Playground Platform Libraries," each with specific icons and descriptions indicating their purpose and status, such as "Archived platform libraries exploration" and "Ongoing platform libraries exploration._
 
 ### 04. Guidelines, Onboarding, Process
 
@@ -163,6 +163,9 @@ All styles and variables currently used in the STIHL Design System libraries:
 - [Texts (styles)](https://www.figma.com/design/d9wrOp4aCplDsV9AVC87Xn/Typography-%F0%9F%85%B0%EF%B8%8F?m=auto&t=BeEhj6WvByw9x6HJ-6)
 - [Shadows (styles)](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?m=auto&t=BeEhj6WvByw9x6HJ-6)
 - [Layout grids (styles)](https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ/Grid-%26-Spacing-%F0%9F%A7%AE?m=auto&t=BeEhj6WvByw9x6HJ-6)
+- [Motion (styles)](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?node-id=1-148&p=f&t=hEJgLSckrLa72kOl-0)
+- [Radius (varaibles)](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?node-id=59-2801&p=f&t=hEJgLSckrLa72kOl-0)
+- [Border Width (tokens)](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?node-id=2106-37&p=f&t=hEJgLSckrLa72kOl-0)
 
 When selecting an object, you can adjust its properties in the **right sidebar** by changing, adding, or removing styles and variables.
 
@@ -231,27 +234,27 @@ Every sprint has **several meetings**. Some are only for the sprint team, some a
 
 #### Sprint Review
 
-- MCX makes a preselection of which tasks should be processed in the upcoming sprint.
+- PO makes a preselection of which tasks should be processed in the upcoming sprint.
 - The selection is based on the ‘Roadmap - Design System’ and priority, available resources , stakeholder needs and information content in the ticket.
 - The pre selected scope will be discussed with the sprint team and adapted if necessary.
 
 - At the end of the sprint, the status and all results of the tasks are presented by the sprint team.
-- Designer/Devs report the status of the tickets to MCX/POs on an early stage, so the agenda can be made.
-- Tasks are approved by MCX/POs and appropriate stakeholders.
+- Designer/Devs report the status of the tickets to PO on an early stage, so the agenda can be made.
+- Tasks are approved by PO and appropriate stakeholders.
    - If a task cannot be approved, then the task is moved to the next sprint or, if necessary, to the backlog.
    - If a change request is discussed, a new task is created.
 
 #### Sprint Check-In
 
-- Twice in one sprint, there is a feedback loop (if needed) called Sprint Check-In.
-- Design and Dev reports status/need for clarification to MCX at an early stage.
-- MCX plans a corresponding agenda and invites the relevant stakeholders and task creators to clarify questions and provide feedback, which is provided in the tickets.
+- One time in a sprint, there is a feedback loop (if needed) called Sprint Check-In.
+- Design and Dev reports status/need for clarification to PO at an early stage.
+- PO plans a corresponding agenda and invites the relevant stakeholders and task creators to clarify questions and provide feedback, which is provided in the tickets.
 - If stakeholders/creators cannot attend, they must seek clarification elsewhere.
-   - If this is not possible, necessary decisions are made by the MCX alone or the task is postponed.
+   - If this is not possible, necessary decisions are made by the PO alone or the task is postponed.
 
-#### Sprint Refinement
+#### Sprint / Backlog Refinement
 
-- There is a dedicated meeting for backlog refinement between POs, designers and devs and there is a continuous refinement that runs in parallel.
+- There is a dedicated meeting for backlog refinement between PO, designers and devs and there is a continuous refinement that runs in parallel.
 - Everyone who creates a task must ensure that all the necessary information for processing the task is noted in the task before the task is processed in a sprint.
 - If there are conceptual questions to be clarified, then the task creator and sprint team must clarify these before planning in order to avoid long discussions in planning.
    - Low-fidelity concept and/or example screenshots in the task before planning.
@@ -260,7 +263,7 @@ Every sprint has **several meetings**. Some are only for the sprint team, some a
 #### Sprint Work Session
 
 - Twice or three times in one sprint, there is a working meeting called Sprint Work Session.
-- Design and Dev reports status/need for clarification to MCX at an early stage.
+- Design and Dev reports status/need for clarification to PO at an early stage.
 - The entire design system team continues to work together on the topic and clarifies open points together.
 
 #### Sprint Retro
@@ -268,6 +271,13 @@ Every sprint has **several meetings**. Some are only for the sprint team, some a
 - A Sprint Retro is also held after a Sprint Review.
 - The Design System Team participates
 - Changes to the process are discussed and implemented.
+
+#### Sprint - Consultation Hour
+
+- In the sprint, there will be an open office hour where stakeholders can place their questions
+- Topics can be reported in advance
+- There are 4 slots within the hour.
+- If no topics are reported, the meeting will be canceled.
 
 #### Process
 
@@ -316,7 +326,7 @@ As part of the sprint process, there are different roles with different tasks an
 #### Not in Scope
 
 - Providing of new components as Figma Design and Code in Storybook.
-- Additions and extensions of the libraries. \>\> If required and after review by MCX, creation of component variants for special requirements possible
+- Additions and extensions of the libraries. \>\> If required and after review by the Design System PO, creation of component variants for special requirements possible
 - Addition and optimization of documentation / provision of patterns / components (e.g. modular structure, dos & don’ts, guidelines).
 
 - Project and concept work (e.g. consultant, design surveys, usability tests...etc.).
@@ -364,6 +374,29 @@ A **design task or component** is considered **Done** and **Accepted** when the 
 - **Prepare Release Notes:** Update version number, release date, and sprint name
 - **Publish Library:** Make the latest version of the Figma Pattern Library available
 - **Review and Update Deprecated Elements:** Identify outdated components and apply necessary updates
+
+#### Process
+
+### Design System usage rules
+
+#### If thes Design System can be used, it mus tbe used!
+
+**Adopt pragmatically**
+
+- Use existing components even if the fit is not yet perfect
+- 80/20 rule - 80% now, improve the remaining 20% later
+- Make it work now, make it better later
+
+**Defined excaptions**
+
+- If the used framework of the project is not provided by the Design System, then at least the Design System must be used
+- It doesn’t have to be used if the project is already (almost) finished and no redesign is pending
+
+**Governance**
+
+- Any non-use must be discussed and assessed with the Design System Team, as feedback and improvement potential
+
+#### Process
 
 ## Contribute
 

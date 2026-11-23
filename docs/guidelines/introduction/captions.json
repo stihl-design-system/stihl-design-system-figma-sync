@@ -4,6 +4,11 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Seven library cover cards in a row, each with a title and description. Five black cards: \"Color\" (Color system and tokens), \"Grid & Spacing\" (Grid styles and spacing tokens), \"Iconography\" (Icon library), \"Styles\" (Motion and shadow styles) and \"Typography\" (Typescale sytles and tokens). Two grey cards: \"Archive Fundamentals\" (Archived fundamentals exploration) and \"Playground Fundamentals\" (Ongoing fundamentals exploration)."
   },
+  "73979e97b69a9e42a036411cf4a967cfa3b2ac3f45d644f0f9cd337aa772d34a": {
+    "nodeId": "371:708",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Six cover thumbnails representing different platform libraries and miscellaneous categories within the STIHL Design System. Each thumbnail includes a title and a brief description of its content, such as \"App Pattern Library\" with \"Components and modules tailored to app interfaces,\" and \"Web Pattern Library\" with \"Components and modules tailored to web interfaces.\" Additionally, there are thumbnails for \"E-Mail Patterns,\" \"App Pattern Library Beta,\" \"Archive Platform Libraries,\" and \"Playground Platform Libraries,\" each with specific icons and descriptions indicating their purpose and status, such as \"Archived platform libraries exploration\" and \"Ongoing platform libraries exploration."
+  },
   "9f5dd60798b09a408f2b5ea71091148e5ad54ad3d570e01c15a1cd0e251727eb": {
     "nodeId": "384:1311",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -13,11 +18,6 @@
     "nodeId": "371:572",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Three library cover cards: a black card \"Core Components\" (Core components for all platforms, teams & products), a grey card \"Archive Core Components\" (Archived core components exploration) and a grey card \"Playground Core Components\" (Ongoing core components exploration)."
-  },
-  "b5f5ade9f3fdd010fcd0eec4c53f503e3a03ca6e31dad68d9e410c87126625f1": {
-    "nodeId": "371:708",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Five library cover cards. Three black cards: \"App Pattern Library\" with a \"Coming soon\" tag (Components and modules tailored to app interfaces), \"Web Pattern Library\" (Components and modules tailored to web interfaces) and \"E-Mail Patterns\" with a \"Visual guideline\" tag (Components and modules tailored to e-mail interfaces). Two grey cards: \"Archive Platform Libraries\" (Archived platform libraries exploration) and \"Playground Platform Libraries\" (Ongoing platform libraries exploration)."
   },
   "ddc5c2cbaeb6e96041604a42779b112b48bc2d781fddd491e29958500f45405a": {
     "nodeId": "371:787",
