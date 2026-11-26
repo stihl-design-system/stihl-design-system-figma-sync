@@ -16,10 +16,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 26711:8034
-figmaVersion: "2418704252861676331"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-06T10:45:41Z
-syncedAt: 2026-11-18T15:16:49.389Z
+figmaVersion: "2426221821114730086"
+figmaVersionLabel: Version 1.2.14 | 26.11.2026 | CW45/Hochdruckreiniger
+figmaVersionCreatedAt: 2026-11-26T17:19:15Z
+syncedAt: 2026-11-26T17:31:11.972Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26711-8034
 ---
 
@@ -31,7 +31,7 @@ Use links when you want the users to navigate to another internal or external pa
 
 ![Link](link/link-168-7255.png)
 
-_Figure: State matrix of the Link Default component in light and dark mode, with columns enabled, hover / pressed, focus and active and rows highlight and neutral. Each cell has three links: no icon, icon left and icon right. Highlight links are blue and neutral links are dark text (white on the black dark-mode panel); hover / pressed adds a grey background, focus adds a dark outline frame around the link and active adds an underline._
+_Figure: The link-default component in the STIHL Design System, showing its various states and icon positions for both highlight and neutral variants in light mode. The layout includes columns for enabled, hover/pressed, focus, and active states, with rows for highlight and neutral variants. Each cell within the grid shows the link-default component with the label "Link Default" and different icon positions: none, left, and right. The figure illustrates how the link-default component appears in different interactive states and with different icon placements._
 
 ## Overview
 

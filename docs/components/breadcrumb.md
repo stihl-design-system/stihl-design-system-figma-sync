@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 23527:3393
-figmaVersion: "2418704252861676331"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-06T10:45:41Z
-syncedAt: 2026-11-18T15:14:50.927Z
+figmaVersion: "2426221821114730086"
+figmaVersionLabel: Version 1.2.14 | 26.11.2026 | CW45/Hochdruckreiniger
+figmaVersionCreatedAt: 2026-11-26T17:19:15Z
+syncedAt: 2026-11-26T17:22:41.988Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=23527-3393
 ---
 

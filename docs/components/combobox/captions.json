@@ -64,11 +64,6 @@
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Multi select comboboxes labelled \"Options\" in two rows of three states. Callout 3 points at the top row, opens on click: the placeholder \"Select\" with a chevron and a pointer hand, then an open list with unchecked checkboxes \"Option 1\", \"Option 3\" and \"Option 4\", then the chosen values \"Option 1, Option 2, Option 3\" with a clear button and a chevron; callout 3d points at that clear button. Callout 4 points at the bottom row, type to filter: the placeholder \"Search\" with a text cursor and no chevron, then typed input \"O|\" with an open list of unchecked checkboxes \"Option 1\", \"Option 2\" and \"Option 3\", then the chosen values \"Option 1, Option 2, Option 3\" with only a clear button; callout 4c points at that clear button."
   },
-  "893d10e4058915c98251539b6e0faca02fa132e554a7b64c04f05193477798c8": {
-    "nodeId": "5671:19983",
-    "model": "github-copilot/claude-sonnet-5.5",
-    "caption": "Overview board of the combobox (medium size) in a grid with columns \"default\", \"hover\", \"active/focus\" and \"disabled\" and rows \"invalid false\" and \"invalid true\", each field with \"Label\" and a lorem ipsum hint above it. Row \"invalid false\": default is an empty field with a thin dark border, hover has a grey filled field, active/focus has a thick dark border with typed text \"Inp|\", a clear (X) button and an open dropdown, disabled has an empty field with a lighter grey border. Row \"invalid true\": default has a red border, a clear button and a red error icon with \"System feedback message\"; active/focus has a thick dark border, a clear button, the same message and the open dropdown. The dropdown shows two groups, each headed \"Group Label (optional)\" with a divider and three \"Label\" items, the third item of the first group outlined as the focused item. Below, two open lists: \"select-item list: single-select\" with plain \"Label\" items, and \"select-item list: multi-select\" where each item has a checkbox, the first two checked in orange and the rest unchecked."
-  },
   "952ff07ad0a95a5af925cb1014d30e1a80bd8a407458a330a2f8d0a0b3f544cf": {
     "nodeId": "39621:13634",
     "model": "github-copilot/claude-sonnet-5.5",
@@ -108,5 +103,10 @@
     "nodeId": "19703:2118",
     "model": "github-copilot/claude-sonnet-5.5",
     "caption": "Don't example: two opened comboboxes where long labels are truncated with an ellipsis. \"Country\" lists \"Label\", \"United States of...\" (selected, orange checkmark) and \"Uruguay\". \"Colors\" is a multi-select with checkboxes: \"Beige\" and a cut-off \"Peanutbutter Br...\" checked, \"Burgundy\" unchecked. This is wrong because truncated text is not legible and therefore not accessible."
+  },
+  "f3da0f11ce5b24ecb754386986a678ea5878f401b08018e1bbfc036ed2953be4": {
+    "nodeId": "5671:19983",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Combobox component in various states and configurations. It shows the input-combobox in default, hover, focus, and disabled states, with both valid and invalid entries. The combobox includes a label, hint text, and system feedback messages. The dropdown list can be single-select or multi-select, with optional group labels, and can vary in length. The figure also demonstrates the use of a clear button and specific placeholder text for better user guidance."
   }
 }

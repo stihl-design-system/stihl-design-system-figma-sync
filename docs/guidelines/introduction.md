@@ -13,10 +13,10 @@ figmaFile: Onboarding
 figmaProject: 04. Guidelines, Onboarding, Processes
 figmaFileKey: lLmw7PfIdKjFG4uT3B2Hyj
 figmaNodeId: 356:1729
-figmaVersion: "2425037126324865183"
+figmaVersion: "2425790288548972196"
 figmaVersionLabel: ""
-figmaVersionCreatedAt: 2026-11-23T12:30:49Z
-syncedAt: 2026-11-23T12:31:03.572Z
+figmaVersionCreatedAt: 2026-11-25T13:12:30Z
+syncedAt: 2026-11-26T17:36:38.846Z
 sourceUrl: https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj?node-id=356-1729
 ---
 
@@ -164,7 +164,7 @@ All styles and variables currently used in the STIHL Design System libraries:
 - [Shadows (styles)](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?m=auto&t=BeEhj6WvByw9x6HJ-6)
 - [Layout grids (styles)](https://www.figma.com/design/JyyYtoCYbtJrzqHs38OXSQ/Grid-%26-Spacing-%F0%9F%A7%AE?m=auto&t=BeEhj6WvByw9x6HJ-6)
 - [Motion (styles)](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?node-id=1-148&p=f&t=hEJgLSckrLa72kOl-0)
-- [Radius (varaibles)](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?node-id=59-2801&p=f&t=hEJgLSckrLa72kOl-0)
+- [Radius (variables)](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?node-id=59-2801&p=f&t=hEJgLSckrLa72kOl-0)
 - [Border Width (tokens)](https://www.figma.com/design/UYHZEckQObDvLuuRoMP8ps/Styles-%F0%9F%AA%AD?node-id=2106-37&p=f&t=hEJgLSckrLa72kOl-0)
 
 When selecting an object, you can adjust its properties in the **right sidebar** by changing, adding, or removing styles and variables.
@@ -200,11 +200,11 @@ In order to keep the STIHL Design System files as clean as possible and ensure t
 
 **The Dev Mode is**
 
-- a new type of fee-based licence
+- a new type of fee-based license
 - replacement for the previously free Inspect features
 - for developer to analyze the distances, dimensions, colors, design tokens, assets and code snippets in detail, making it much easier to switch from design to code
 
-Detailed information about the Dev Mode and it’s features are here [Guide to Dev Mode in Figma – Figma Learn - Help Center](https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode-in-Figma)
+Detailed information about the Dev Mode and its features are here [Guide to Dev Mode in Figma – Figma Learn - Help Center](https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode-in-Figma)
 
 [Figma Dev Mode](https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode-in-Figma)
 
@@ -379,7 +379,7 @@ A **design task or component** is considered **Done** and **Accepted** when the 
 
 ### Design System usage rules
 
-#### If thes Design System can be used, it mus tbe used!
+#### If the Design System can be used, it must be used!
 
 **Adopt pragmatically**
 
@@ -387,7 +387,7 @@ A **design task or component** is considered **Done** and **Accepted** when the 
 - 80/20 rule - 80% now, improve the remaining 20% later
 - Make it work now, make it better later
 
-**Defined excaptions**
+**Defined exceptions**
 
 - If the used framework of the project is not provided by the Design System, then at least the Design System must be used
 - It doesn’t have to be used if the project is already (almost) finished and no redesign is pending

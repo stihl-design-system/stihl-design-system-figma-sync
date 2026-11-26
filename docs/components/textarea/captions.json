@@ -4,59 +4,59 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Medium textarea with Label, \"Input\" text and \"0/100\" counter, with measurements showing the minimum height of 96px (vertical, at the right of the field) and the minimum width of 288px (horizontal, below the field)."
   },
-  "221735617e4ff2d9daeb42bec07063a1d9e1340381bbb1238f2f6ae822aebbd3": {
-    "nodeId": "8861:740",
-    "model": "github-copilot/claude-sonnet-4.5",
-    "caption": "Medium textarea with the label \"Label\" and a resize handle, filled with six lines of Lorem ipsum text and the counter \"67/200\". The text is taller than the maximum height, so a native vertical scroll bar appears on the right inside the textarea."
+  "0d3d10c60bb9d2ef8551f238ad5c918373a3859bef179d1ea0cc4a58b6ba3ff8": {
+    "nodeId": "72280:739",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A textarea component with a medium size, enabled state, and no validation errors. The component is labeled \"Label\" and includes a counter displaying the current character count out of the maximum allowed. Callout 1 points to the textarea in its initial state with minimal height, while callout 2 points to the textarea expanded to near its maximum height. The measurements 67/200 and 198/200 refer to the number of characters entered out of the maximum limit of 200 characters."
+  },
+  "13e7e521eca88b0d1920a890a7db331c661cf75a235dbcef32406707ee8b50e8": {
+    "nodeId": "72280:722",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Two variants of a text-area-medium component, both in an enabled and invalid state. The first variant has an info icon near the limit and a counter showing \"0/100,\" indicating the character count. The second variant includes a resize handle, allowing manual scaling, along with an info icon near the limit and a counter showing \"0/100.\" Callout 1 points to the info icon in the first variant, and callout 2 points to the resize handle in the second variant. Both text areas have a Label and an Input field."
+  },
+  "3c9d30b563232ad5d25ca24a932d817012e16163a9e47b1ec0043a0ad553c137": {
+    "nodeId": "72280:883",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A Textarea component with a Label above it, in a medium size, enabled state, and not invalid. The Textarea has a counter at the bottom right indicating \"0/100\", a resize handle, and is placed within a striped background. The board is marked as a \"Don't\" example, indicating that the Textarea should not be constrained to a maximum width, as it may affect usability and layout consistency."
   },
   "417835b454159b4964381bed0b4408451f4afc4e920d0b15763346b417837577": {
     "nodeId": "30568:8898",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two textareas (Label, \"Input\", \"0/100\") inside a \"Content area Narrow\" container. In the first the field fills the container width; in the second the container is wider than the field, and the field stays at the \"recommended max. width 544px\" while \"Container Width\" extends beyond it."
   },
-  "41f113c08f556a09a17fd2aabd75d4b20c6ee5dbbe6040ab2a02de986e433740": {
-    "nodeId": "5145:19986",
-    "model": "github-copilot/claude-sonnet-4.5",
-    "caption": "Do example: a medium textarea with the label \"Label\" and the placeholder \"Input\" in the invalid state, with a red border, an error icon with the \"System Feedback Message\" below it and the counter \"100/100\" at the bottom right. It shows the error mode that is correct when the character limit is reached or exceeded."
+  "53ee54e0cc3aa446cbd5ce0b2451c80456bfa1706cbca2c7ad4ec920f91d4d10": {
+    "nodeId": "72280:755",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "A text-area-medium component with the label \"Label\" and a text input that has reached near its character limit, indicated by the counter showing \"67/200\". The text area includes a native scroll bar because the text exceeds the maximum height, and it is in an enabled state without any validation errors. The component also features a resize handle."
   },
   "649daddfdf1c86d5367c5e7db530a68c6900727f982b6110d29e0ec0c353eb0b": {
     "nodeId": "8859:2884",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two medium textareas with \"Input\" and \"0/100\": the first with the label \"Label *\", where callout 1 points at the asterisk marking a required field; the second with the label \"Label (optional)\", where callout 2 points at the word \"(optional)\" marking an optional field."
   },
-  "b00b8f5188c8808ff472ec34f2f609280773120591ee3a2c7588c4fd2f7f87f3": {
-    "nodeId": "8859:525",
-    "model": "github-copilot/claude-sonnet-4.5",
-    "caption": "Don't example: a textarea (Label, \"Input\", \"0/100\") stretched across the full 12-column grid width, far beyond the recommended maximum width of 544px, which hurts scanability and readability."
+  "9e4a90785e35d639653af9d3692f19d279f834a94437fb967649a82917a56316": {
+    "nodeId": "72280:392",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The Textarea component in a UI design system, showing its various states and sizes. It includes two sizes, \"Size Medium\" and \"Size Small,\" and displays states such as \"Default,\" \"Hover,\" \"Focus,\" \"Near limit,\" \"Limit reached,\" \"Disabled,\" and \"Read-only.\" The component features a label, an input field, and system feedback messages of types \"error,\" \"info,\" and \"warning.\" The numbers indicate character counts, with \"0/100,\" \"90/100,\" and \"100/100\" representing the number of characters entered out of a 100-character limit. The \"is invalid\" text indicates an error state. The \"Label *\" denotes a required field..."
   },
   "b6fdb43afaefe57c0f0de431a3319c858fe295530f9b9e51805c0912eb95f5f2": {
     "nodeId": "40251:50514",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Medium textarea with the label \"Label\", an info button next to it (hovered with a pointer cursor), the placeholder \"Input\", a resize handle and the counter \"0/100\". Above the info button an open white popover with the text \"You will usually find the Machine Number in the location shown in the illustrations\" shows two line drawings of a STIHL engine unit and a trimmer, each with a leader line to a placeholder machine number \"xxxxxxxxx\"."
   },
-  "cad7cdaa8c5762c456c475aad0f0069bda730faf10a3c621f5b314eb2c193183": {
-    "nodeId": "8861:678",
-    "model": "github-copilot/claude-sonnet-4.5",
-    "caption": "Two medium textareas with the label \"Label\" showing automatic growth. The left one is at minimum height with two lines of \"Lorem ipsum dolor sit, consectetur adipiscing elit. Lacus vel etiam|\" and the counter \"67/200\"; the right one has grown taller to fit six lines of text and shows the counter \"200/200\". Neither has a resize handle."
+  "be12d266e5693e1761836b0ca7a6ccff7c95876cb4fabaf56cdcd2b24f19ba1b": {
+    "nodeId": "72280:698",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "Four variants of a textarea component with different states and character count indicators. Each textarea has a label, an input field, a resize handle, and a character counter. Callout 1 points to a textarea with a character count of 57/100, callout 2 points to a textarea with a character count of 161/200 and an info message indicating less than 20% of characters left, callout 3 points to a textarea at the character limit of 100/100 with a warning message, and callout 4 points to an invalid textarea required field with a system feedback message and 0/100 character count. The character count measures the number of characters entered in the textarea."
   },
   "cc961d4158df60309b0b55124560340aac50381c2c3ab94bca38e553309c5f78": {
     "nodeId": "40251:50533",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Don't example: a medium textarea with the label \"Label\", an info button (hovered), the placeholder \"Input\", a resize handle and the counter \"0/100\", with a small white popover above the info button containing only the placeholder text \"xxxx\". This is wrong because the popover must not hold critical or required information; use the hint instead."
   },
-  "dc78fa0553c161dd54d356228cc6efb49ad3ba883ee4b0fe04805e8f11d05e4d": {
-    "nodeId": "8300:14366",
-    "model": "github-copilot/claude-sonnet-4.5",
-    "caption": "Two medium textareas, each with the label \"Label\", the placeholder \"Input\" and the counter \"0/100\". Callout 1 points at the left textarea without a resize handle (automatic scaling); callout 2 points at the right textarea with a resize handle in its bottom right corner (manual scaling)."
-  },
-  "df919de960ce139956066b09216a464583ba4926a7fadcafbdab1abb053d60aa": {
-    "nodeId": "8859:463",
-    "model": "github-copilot/claude-sonnet-4.5",
-    "caption": "Anatomy of the textarea in three variants: callout 1 points at the Label, 2 at the text area, 3 at the user input text \"Input\", 4 at the character count \"0/100\". The second example adds 5 the hint text below the label and 6 the info button next to the label; the third example has a red border and 7 points at the \"System Feedback Message\" with error icon."
-  },
-  "e5ad458b770c9666bab6947a1dba538ec7f51a1605f2a9f99c9fe36d8d9541a1": {
-    "nodeId": "5145:19065",
-    "model": "github-copilot/claude-sonnet-4.5",
-    "caption": "Overview of the textarea in sizes \"Size Medium\" and \"Size Small\", each in the states Default, Hover (grey fill), Focus (thick black border), Disabled (greyed text) and Read-only (grey fill, no border). Each has a Label, hint text, an \"Input\" area with resize handle and a \"0/100\" counter; Default and Focus also have an \"is invalid\" variant with red border and the \"System Feedback Message\" with an error icon."
+  "d7972fb5526ed73466df56d89a4594b8a2b3f1c3e5fbb146fafa1ec0350b20a7": {
+    "nodeId": "72280:824",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The anatomy of a Textarea component in various states and configurations. The numbered callouts point to specific parts of the Textarea: 1 points to the Label, 3 points to the Text area where user input is entered, 2 points to the Character count/limit, 4 points to the Character count/limit in a different state, 5 points to the Hint text, and 6 points to the Info Button. The figure shows different states of the Textarea, including enabled, near limit, and limit reached, with corresponding messages and visual indicators. The character count/limit measurement indicates the number of characters entered by the user out of the allowed limit."
   }
 }

@@ -14,10 +14,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 2659:3954
-figmaVersion: "2418704252861676331"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-06T10:45:41Z
-syncedAt: 2026-11-18T18:18:26.264Z
+figmaVersion: "2426221821114730086"
+figmaVersionLabel: Version 1.2.14 | 26.11.2026 | CW45/Hochdruckreiniger
+figmaVersionCreatedAt: 2026-11-26T17:19:15Z
+syncedAt: 2026-11-26T17:28:01.952Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=2659-3954
 ---
 
@@ -36,7 +36,7 @@ Overview:
 
 ![Combobox](combobox/combobox-5671-19983.png)
 
-_Figure: Overview board of the combobox (medium size) in a grid with columns "default", "hover", "active/focus" and "disabled" and rows "invalid false" and "invalid true", each field with "Label" and a lorem ipsum hint above it. Row "invalid false": default is an empty field with a thin dark border, hover has a grey filled field, active/focus has a thick dark border with typed text "Inp|", a clear (X) button and an open dropdown, disabled has an empty field with a lighter grey border. Row "invalid true": default has a red border, a clear button and a red error icon with "System feedback message"; active/focus has a thick dark border, a clear button, the same message and the open dropdown. The dropdown shows two groups, each headed "Group Label (optional)" with a divider and three "Label" items, the third item of the first group outlined as the focused item. Below, two open lists: "select-item list: single-select" with plain "Label" items, and "select-item list: multi-select" where each item has a checkbox, the first two checked in orange and the rest unchecked._
+_Figure: The Combobox component in various states and configurations. It shows the input-combobox in default, hover, focus, and disabled states, with both valid and invalid entries. The combobox includes a label, hint text, and system feedback messages. The dropdown list can be single-select or multi-select, with optional group labels, and can vary in length. The figure also demonstrates the use of a clear button and specific placeholder text for better user guidance._
 
 ### Further guidelines
 
