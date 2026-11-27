@@ -11,13 +11,13 @@
   },
   "13e7e521eca88b0d1920a890a7db331c661cf75a235dbcef32406707ee8b50e8": {
     "nodeId": "72280:722",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Two variants of a text-area-medium component, both in an enabled and invalid state. The first variant has an info icon near the limit and a counter showing \"0/100,\" indicating the character count. The second variant includes a resize handle, allowing manual scaling, along with an info icon near the limit and a counter showing \"0/100.\" Callout 1 points to the info icon in the first variant, and callout 2 points to the resize handle in the second variant. Both text areas have a Label and an Input field."
+    "model": "claude-code/claude-opus-5.5",
+    "caption": "Two medium textareas, each with the label \"Label\", the text \"Input\" and the counter \"0/100\", with a circle highlighting the bottom right corner of each field. Callout 1 points at the left textarea, which has no resize handle (automatic scaling); callout 2 points at the right textarea, which has a resize handle in that corner (manual scaling)."
   },
   "3c9d30b563232ad5d25ca24a932d817012e16163a9e47b1ec0043a0ad553c137": {
     "nodeId": "72280:883",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A Textarea component with a Label above it, in a medium size, enabled state, and not invalid. The Textarea has a counter at the bottom right indicating \"0/100\", a resize handle, and is placed within a striped background. The board is marked as a \"Don't\" example, indicating that the Textarea should not be constrained to a maximum width, as it may affect usability and layout consistency."
+    "model": "claude-code/claude-opus-5.5",
+    "caption": "Don't example: a medium textarea (Label, \"Input\", resize handle, counter \"0/100\") stretched across the full width of the 12-column main grid. The textarea should not span the whole main grid area; it belongs in the content area narrow and should not exceed the recommended maximum width of 544px, for better scanability and readability."
   },
   "417835b454159b4964381bed0b4408451f4afc4e920d0b15763346b417837577": {
     "nodeId": "30568:8898",

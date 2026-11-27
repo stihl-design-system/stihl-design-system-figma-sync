@@ -16,7 +16,7 @@ figmaNodeId: 4937:4402
 figmaVersion: "2426221821114730086"
 figmaVersionLabel: Version 1.2.14 | 26.11.2026 | CW45/Hochdruckreiniger
 figmaVersionCreatedAt: 2026-11-26T17:19:15Z
-syncedAt: 2026-11-26T17:35:44.142Z
+syncedAt: 2026-11-27T09:25:53.673Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=4937-4402
 ---
 
@@ -85,7 +85,7 @@ _Figure: Two textareas (Label, "Input", "0/100") inside a "Content area Narrow" 
 
 ![Maximum width](textarea/maximum-width-72280-883.png)
 
-_Figure: A Textarea component with a Label above it, in a medium size, enabled state, and not invalid. The Textarea has a counter at the bottom right indicating "0/100", a resize handle, and is placed within a striped background. The board is marked as a "Don't" example, indicating that the Textarea should not be constrained to a maximum width, as it may affect usability and layout consistency._
+_Figure: Don't example: a medium textarea (Label, "Input", resize handle, counter "0/100") stretched across the full width of the 12-column main grid. The textarea should not span the whole main grid area; it belongs in the content area narrow and should not exceed the recommended maximum width of 544px, for better scanability and readability._
 
 ## Content and Assets
 
@@ -140,7 +140,7 @@ The text area can have a fixed hight or can be used dynamically and scale with t
 
 ![Scaling the area](textarea/scaling-the-area-72280-722.png)
 
-_Figure: Two variants of a text-area-medium component, both in an enabled and invalid state. The first variant has an info icon near the limit and a counter showing "0/100," indicating the character count. The second variant includes a resize handle, allowing manual scaling, along with an info icon near the limit and a counter showing "0/100." Callout 1 points to the info icon in the first variant, and callout 2 points to the resize handle in the second variant. Both text areas have a Label and an Input field._
+_Figure: Two medium textareas, each with the label "Label", the text "Input" and the counter "0/100", with a circle highlighting the bottom right corner of each field. Callout 1 points at the left textarea, which has no resize handle (automatic scaling); callout 2 points at the right textarea, which has a resize handle in that corner (manual scaling)._
 
 **Automatic**
 
