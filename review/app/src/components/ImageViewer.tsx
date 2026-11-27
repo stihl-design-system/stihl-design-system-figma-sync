@@ -12,13 +12,15 @@ import {
   DSText,
   DSTextUtility,
 } from '@stihl-design-system/components';
-import { useCallback, useEffect, useState } from 'react';
+import classNames from 'classnames';
+import { Fragment, useCallback, useEffect, useMemo, useState } from 'react';
 import type {
   Decision,
   ReviewDocument,
   ReviewImage,
   ReviewManifest,
 } from '../../../shared/manifest.ts';
+import { diffWords, type DiffPart } from '../../../shared/textDiff.ts';
 import {
   formatDate,
   formatShare,
@@ -155,9 +157,15 @@ export function ImageViewer({
   ]);
 
   const side = image.after ?? image.before;
-  const captionChanged =
-    image.before?.caption !== image.after?.caption &&
-    Boolean(image.before?.caption && image.after?.caption);
+  const beforeCaption = image.before?.caption;
+  const afterCaption = image.after?.caption;
+  const captionDiff = useMemo(
+    () =>
+      beforeCaption && afterCaption && beforeCaption !== afterCaption
+        ? diffWords(beforeCaption, afterCaption)
+        : null,
+    [beforeCaption, afterCaption]
+  );
   const versions = [document?.before, document?.after]
     .filter((version) => version !== undefined)
     .map(
@@ -346,24 +354,36 @@ export function ImageViewer({
       />
 
       {side?.caption && (
-        <div className={styles.caption}>
+        <div
+          className={classNames(
+            styles.caption,
+            captionDiff && styles.captionCompared
+          )}
+        >
           <DSAccordion
             size='x-small'
             summary={
-              captionChanged
+              captionDiff
                 ? 'Figure description (changed)'
                 : 'Figure description'
             }
           >
-            {captionChanged && (
-              <DSText size='small'>
-                <strong>Before:</strong> {image.before?.caption}
-              </DSText>
+            {captionDiff ? (
+              <div className={styles.captionVersions}>
+                <CaptionVersion
+                  label='Before'
+                  parts={captionDiff.before}
+                  Mark='del'
+                />
+                <CaptionVersion
+                  label='After'
+                  parts={captionDiff.after}
+                  Mark='ins'
+                />
+              </div>
+            ) : (
+              <DSText size='small'>{side.caption}</DSText>
             )}
-            <DSText size='small'>
-              {captionChanged && <strong>After: </strong>}
-              {side.caption}
-            </DSText>
           </DSAccordion>
         </div>
       )}
@@ -450,5 +470,33 @@ export function ImageViewer({
         </div>
       </footer>
     </section>
+  );
+}
+
+interface CaptionVersionProps {
+  label: string;
+  parts: DiffPart[];
+  /** `del` marks removed words in the previous text, `ins` new words in the next one */
+  Mark: 'del' | 'ins';
+}
+
+function CaptionVersion({ label, parts, Mark }: CaptionVersionProps) {
+  return (
+    <div className={styles.captionVersion}>
+      <DSTextUtility size='small' weight='bold'>
+        {label}
+      </DSTextUtility>
+      <DSText size='small'>
+        {parts.map((part, index) =>
+          part.changed ? (
+            <Mark key={index} className={styles[Mark]}>
+              {part.text}
+            </Mark>
+          ) : (
+            <Fragment key={index}>{part.text}</Fragment>
+          )
+        )}
+      </DSText>
+    </div>
   );
 }

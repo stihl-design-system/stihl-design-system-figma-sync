@@ -30,6 +30,8 @@ Found while building the page; feedback for the component library:
 - No progress bar. The page styles a native `progress` element with tokens.
 - No toggle button for a toolbar. "Blink" is a `DSButton` with `aria-pressed`, which has no pressed appearance.
 - `DSToast` has no error variant; failed requests use `warning`.
+- `DSAccordion` is capped at the width of the narrow content grid. The previous and new figure description side by side need more, so the page lifts the cap there.
+- No lighter red background: `background-color-feedback-error` is much darker than `background-color-feedback-success`, so the word diff mixes it half with the page background.
 - The comparison area itself (zoom, pan, swipe handle, overlay) is custom by nature.
 
 ## Consequences

@@ -113,6 +113,51 @@
   border-top: ds.$border-width-1 solid ds.$theme-light-border-color-tertiary;
 }
 
+// DSAccordion keeps to the narrow content grid; both versions side by side need the full width
+.captionCompared details {
+  max-width: none;
+}
+
+.captionVersions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 72ch));
+  gap: ds.$spacing-16 ds.$spacing-40;
+
+  @include ds.media-query-max('m') {
+    grid-template-columns: minmax(0, 72ch);
+  }
+}
+
+.captionVersion {
+  display: flex;
+  flex-direction: column;
+  gap: ds.$spacing-4;
+  color: ds.$theme-light-content-color-primary;
+}
+
+// Like a word diff in git: the column says removed or added, the colour repeats it
+.del,
+.ins {
+  padding-inline: 1px;
+  border-radius: ds.$radius-xs;
+  color: inherit;
+  text-decoration: none;
+  box-decoration-break: clone;
+}
+
+.del {
+  // The error background is much darker than the success one; halved it reads as light as the green
+  background: color-mix(
+    in srgb,
+    ds.$theme-light-background-color-feedback-error 50%,
+    ds.$theme-light-background-color-primary
+  );
+}
+
+.ins {
+  background: ds.$theme-light-background-color-feedback-success;
+}
+
 .decision {
   display: flex;
   flex-wrap: wrap;
