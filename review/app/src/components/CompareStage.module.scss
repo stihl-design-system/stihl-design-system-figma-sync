@@ -9,6 +9,11 @@ $checker: ds.$color-core-grey-light;
   flex: 1;
   min-height: 0;
   background: ds.$theme-light-border-color-tertiary;
+
+  // On small screens the page scrolls instead of squeezing the images
+  @include ds.media-query-max('l') {
+    min-height: max(320px, 55vh);
+  }
 }
 
 .pane {

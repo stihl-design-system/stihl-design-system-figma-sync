@@ -1,4 +1,5 @@
 import {
+  DSDrawer,
   DSNotification,
   DSSkeleton,
   useDSToast,
@@ -38,7 +39,20 @@ function message(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
 }
 
-export function ReviewPage({ id }: { id: string }) {
+interface ReviewPageProps {
+  id: string;
+  /** Below breakpoint l the overview is a drawer behind the menu button of the header */
+  compact: boolean;
+  menuOpen: boolean;
+  onCloseMenu: () => void;
+}
+
+export function ReviewPage({
+  id,
+  compact,
+  menuOpen,
+  onCloseMenu,
+}: ReviewPageProps) {
   const { query } = useRoute();
   const { queueDSToastMessage } = useDSToast();
   const [review, setReview] = useState<ReviewDetail>();
@@ -248,56 +262,73 @@ export function ReviewPage({ id }: { id: string }) {
   }
 
   const remaining = undecided(review);
+  const sidebar = (
+    <Sidebar
+      review={review}
+      images={filtered}
+      decisions={decisions}
+      selectedId={selected?.id}
+      filters={filters}
+      onFilter={setFilters}
+      onSelect={(imageId) => {
+        select(imageId);
+        onCloseMenu();
+      }}
+      onAcceptAll={(imageIds, documentTitle) =>
+        withName(() => {
+          setBulk({ imageIds, documentTitle });
+          setDialog('acceptAll');
+        })
+      }
+      acceptedAll={
+        acceptedAll && {
+          count: acceptedAll.imageIds.length,
+          documentTitle: acceptedAll.documentTitle,
+        }
+      }
+      onUndoAcceptAll={() => {
+        if (acceptedAll) {
+          void decide(acceptedAll.imageIds, null, '', reviewer).then(
+            (saved) => saved && setAcceptedAll(null)
+          );
+        }
+      }}
+      onDismissAcceptAll={() => setAcceptedAll(null)}
+      onFinish={() => {
+        if (remaining > 0) {
+          setFilters({ ...filters, decisions: ['open'] });
+          queueDSToastMessage(
+            `${remaining} ${remaining === 1 ? 'image still needs' : 'images still need'} a decision. The list now shows them.`,
+            { variant: 'warning' }
+          );
+        } else {
+          withName(() => setDialog('finish'));
+        }
+      }}
+      onReopen={() => {
+        api.reopen(id).then(
+          (summary) =>
+            setReview((current) => current && { ...current, ...summary }),
+          (failure: unknown) =>
+            queueDSToastMessage(message(failure), { variant: 'warning' })
+        );
+      }}
+    />
+  );
   return (
     <div className={styles.layout}>
-      <Sidebar
-        review={review}
-        images={filtered}
-        decisions={decisions}
-        selectedId={selected?.id}
-        filters={filters}
-        onFilter={setFilters}
-        onSelect={select}
-        onAcceptAll={(imageIds, documentTitle) =>
-          withName(() => {
-            setBulk({ imageIds, documentTitle });
-            setDialog('acceptAll');
-          })
-        }
-        acceptedAll={
-          acceptedAll && {
-            count: acceptedAll.imageIds.length,
-            documentTitle: acceptedAll.documentTitle,
-          }
-        }
-        onUndoAcceptAll={() => {
-          if (acceptedAll) {
-            void decide(acceptedAll.imageIds, null, '', reviewer).then(
-              (saved) => saved && setAcceptedAll(null)
-            );
-          }
-        }}
-        onDismissAcceptAll={() => setAcceptedAll(null)}
-        onFinish={() => {
-          if (remaining > 0) {
-            setFilters({ ...filters, decisions: ['open'] });
-            queueDSToastMessage(
-              `${remaining} ${remaining === 1 ? 'image still needs' : 'images still need'} a decision. The list now shows them.`,
-              { variant: 'warning' }
-            );
-          } else {
-            withName(() => setDialog('finish'));
-          }
-        }}
-        onReopen={() => {
-          api.reopen(id).then(
-            (summary) =>
-              setReview((current) => current && { ...current, ...summary }),
-            (failure: unknown) =>
-              queueDSToastMessage(message(failure), { variant: 'warning' })
-          );
-        }}
-      />
+      {compact ? (
+        <DSDrawer
+          isOpen={menuOpen}
+          position='end'
+          closeButtonProps={{ label: 'Close the review overview' }}
+          onClose={onCloseMenu}
+        >
+          {sidebar}
+        </DSDrawer>
+      ) : (
+        sidebar
+      )}
       <main id='main' className={styles.main}>
         {selected ? (
           <ImageViewer

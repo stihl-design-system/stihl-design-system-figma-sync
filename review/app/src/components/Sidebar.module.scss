@@ -6,6 +6,13 @@
   min-height: 0;
   border-right: ds.$border-width-1 solid ds.$theme-light-border-color-tertiary;
   background: ds.$theme-light-background-color-primary;
+
+  // In the drawer of small screens the drawer scrolls and frames the overview
+  dialog & {
+    width: 360px;
+    max-width: 100%;
+    border-right: 0;
+  }
 }
 
 .summary,

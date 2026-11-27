@@ -12,6 +12,7 @@ import { ReviewList } from './pages/ReviewList.tsx';
 import { ReviewPage } from './pages/ReviewPage.tsx';
 import { logOut } from './lib/logout.ts';
 import { useReviewer } from './lib/reviewer.tsx';
+import { useCompactLayout } from './lib/useCompactLayout.ts';
 import { usePageTitle } from './lib/usePageTitle.ts';
 import { useRoute } from './router.ts';
 
@@ -21,6 +22,9 @@ export function App() {
   const { name, changeName } = useReviewer();
   const { queueDSToastMessage } = useDSToast();
   const [loggedOut, setLoggedOut] = useState(false);
+  const compact = useCompactLayout();
+  // The review overview of a review page, in a drawer on small screens
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLogOut = (): void => {
     logOut().then(
@@ -75,6 +79,19 @@ export function App() {
                 >
                   Log out
                 </DSActionButton>
+                {compact && reviewId && (
+                  <DSActionButton
+                    iconName='burger'
+                    iconPosition='top'
+                    aria={{
+                      'aria-expanded': menuOpen,
+                      'aria-haspopup': 'dialog',
+                    }}
+                    onClick={() => setMenuOpen(true)}
+                  >
+                    Menu
+                  </DSActionButton>
+                )}
               </div>
             )}
           </DSTopBar.PrimaryArea>
@@ -83,7 +100,13 @@ export function App() {
       {loggedOut ? (
         <LoggedOut />
       ) : reviewId ? (
-        <ReviewPage key={reviewId} id={reviewId} />
+        <ReviewPage
+          key={reviewId}
+          id={reviewId}
+          compact={compact}
+          menuOpen={menuOpen}
+          onCloseMenu={() => setMenuOpen(false)}
+        />
       ) : (
         <ReviewList />
       )}
