@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type { D1Database, D1PreparedStatement } from '../review/src/d1.ts';
@@ -25,7 +25,9 @@ const ID = 'aaaaaaa-bbbbbbb';
 function createDatabase(): D1Database {
   const sqlite = new DatabaseSync(':memory:');
   sqlite.exec('PRAGMA foreign_keys = ON');
-  sqlite.exec(readFileSync('review/migrations/0001_init.sql', 'utf8'));
+  for (const migration of readdirSync('review/migrations').sort()) {
+    sqlite.exec(readFileSync(`review/migrations/${migration}`, 'utf8'));
+  }
   const prepare = (
     query: string,
     values: never[] = []
@@ -437,6 +439,62 @@ describe('review worker', () => {
     expect(sent.text).toContain(
       `Rejected: Button: Button › Usage (Wrong wording) ${ORIGIN}/r/${ID}?item=components%2Fbutton%23Button%20%E2%80%BA%20Usage`
     );
+  });
+
+  it('keeps edited descriptions with editor and time until the pipeline applied them', async () => {
+    await publish();
+    const edit = (body: Record<string, unknown>) =>
+      call(`/api/reviews/${ID}/captions`, {
+        json: { imageId: 'components/button/1-1', editor: 'Ada', ...body },
+      });
+
+    expect((await edit({ caption: '  ' })).status).toBe(400);
+    expect(
+      (await edit({ imageId: 'components/button/9-9', caption: 'x' })).status
+    ).toBe(400);
+    await edit({ caption: 'First   try' });
+    const saved = await edit({ caption: 'A primary button\nlabelled Save.' });
+    const { captionEdits } = (await saved.json()) as ReviewDetail;
+    expect(captionEdits).toMatchObject([
+      {
+        imageId: 'components/button/1-1',
+        caption: 'First try',
+        status: 'pending',
+      },
+      {
+        imageId: 'components/button/1-1',
+        caption: 'A primary button labelled Save.',
+        editor: 'Ada',
+        status: 'pending',
+        appliedAt: null,
+      },
+    ]);
+    expect((await detail()).captionEdits).toHaveLength(2);
+
+    // Only the pipeline reads and marks pending edits
+    expect((await call('/api/caption-edits')).status).toBe(401);
+    const pipeline = { authorization: `Bearer ${TOKEN}` };
+    const pending = (await (
+      await call('/api/caption-edits', { headers: pipeline })
+    ).json()) as { edits: { id: number; path: string; headSha: string }[] };
+    expect(pending.edits).toMatchObject([
+      { path: 'docs/components/button/figure-1-1.png', headSha: HEAD },
+      { path: 'docs/components/button/figure-1-1.png', headSha: HEAD },
+    ]);
+
+    const commit = 'c'.repeat(40);
+    const marked = await call('/api/caption-edits/status', {
+      json: { ids: pending.edits.map((e) => e.id), status: 'applied', commit },
+      headers: pipeline,
+    });
+    expect(await marked.json()).toEqual({ changed: 2 });
+    expect(
+      await (await call('/api/caption-edits', { headers: pipeline })).json()
+    ).toEqual({ edits: [] });
+    expect((await detail()).captionEdits.at(-1)).toMatchObject({
+      status: 'applied',
+      commit,
+    });
   });
 
   it('reads images of a commit from the configured repository only', async () => {

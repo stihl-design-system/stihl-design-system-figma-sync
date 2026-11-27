@@ -212,6 +212,38 @@ describe('captionImages', () => {
     expect(calls).toHaveLength(2);
   });
 
+  it('keeps a description edited on the review page as it is', async () => {
+    const options = {
+      imageDir: dir,
+      format: 'png' as const,
+      document: { title: 'Switch', category: 'component' },
+    };
+    const provider: CaptionProvider = {
+      model: 'fake',
+      async describe() {
+        return 'A switch spec.';
+      },
+    };
+    await captionImages(blocks, paths, { ...options, provider });
+    const cachePath = join(dir, 'captions.json');
+    const cache = JSON.parse(await readFile(cachePath, 'utf8')) as Record<
+      string,
+      { caption: string; editedBy?: string }
+    >;
+    const [hash, entry] = Object.entries(cache).find(([, value]) =>
+      value.caption.startsWith('A switch spec')
+    )!;
+    cache[hash] = { ...entry, caption: 'Edited by hand.', editedBy: 'Ada' };
+    await writeFile(cachePath, JSON.stringify(cache));
+
+    const captions = await captionImages(blocks, paths, {
+      ...options,
+      provider,
+    });
+    // No measurements appended and no new model call for the edited board
+    expect(captions.get('641:161')).toBe('Edited by hand.');
+  });
+
   it('falls back to structural facts when the provider fails or is absent', async () => {
     const provider: CaptionProvider = {
       model: 'broken',

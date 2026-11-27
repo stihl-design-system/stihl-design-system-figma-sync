@@ -11,6 +11,7 @@
   "scripts": {
     "sync": "tsx src/cli/sync.ts",
     "check": "tsx src/cli/checkVersion.ts",
+    "captions:apply": "tsx src/cli/applyCaptionEdits.ts",
     "fetch:fixture": "tsx src/cli/fetchFixture.ts",
     "mcp:build": "tsx src/cli/buildMcpContent.ts",
     "mcp:dev": "npm run mcp:build && wrangler dev -c mcp/wrangler.jsonc",

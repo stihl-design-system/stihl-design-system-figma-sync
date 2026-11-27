@@ -32,7 +32,7 @@ export function figmaNodeUrl(fileKey: string, nodeId: string): string {
   return `https://www.figma.com/design/${fileKey}?node-id=${nodeId.replace(':', '-')}`;
 }
 
-function escapeText(text: string): string {
+export function escapeText(text: string): string {
   return text.replace(/[\\`*_[\]<>]/g, (char) => `\\${char}`);
 }
 

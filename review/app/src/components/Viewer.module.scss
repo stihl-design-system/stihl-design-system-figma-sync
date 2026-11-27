@@ -139,3 +139,27 @@
     overflow-y: auto;
   }
 }
+
+.captionForm {
+  display: flex;
+  flex-direction: column;
+  gap: ds.$spacing-12;
+  max-width: 90ch;
+}
+
+.captionActions,
+.captionMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: ds.$spacing-8 ds.$spacing-16;
+  align-items: center;
+}
+
+.captionActions {
+  justify-content: flex-end;
+}
+
+.captionMeta {
+  margin-top: ds.$spacing-8;
+  color: ds.$theme-light-content-color-secondary;
+}

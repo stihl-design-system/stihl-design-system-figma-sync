@@ -26,6 +26,9 @@ export interface CaptionCacheEntry {
   nodeId: string;
   model: string;
   caption: string;
+  /** Set when someone edited the description on the review page; it is then used as is */
+  editedBy?: string;
+  editedAt?: string;
 }
 
 export type CaptionCache = Record<string, CaptionCacheEntry>;
@@ -245,7 +248,7 @@ export function cacheFileFor(imageDir: string): string {
 /** Providers that reported an exhausted quota in this process; later documents skip them */
 const quotaExhausted = new WeakSet<CaptionProvider>();
 
-async function readCache(path: string): Promise<CaptionCache> {
+export async function readCaptionCache(path: string): Promise<CaptionCache> {
   try {
     return JSON.parse(await readFile(path, 'utf8')) as CaptionCache;
   } catch {
@@ -294,7 +297,7 @@ export async function captionImages(
   }
 
   const cachePath = cacheFileFor(options.imageDir);
-  const previous = await readCache(cachePath);
+  const previous = await readCaptionCache(cachePath);
   const current: CaptionCache = {};
   const pending: {
     block: Extract<Block, { type: 'image' }>;
@@ -313,7 +316,13 @@ export async function captionImages(
     const cached = previous[hash];
     if (cached) {
       current[hash] = cached;
-      captions.set(block.nodeId, composeCaption(cached.caption, block.facts)!);
+      captions.set(
+        block.nodeId,
+        // An edited description already says what the editor wanted, facts are not added to it
+        cached.editedBy
+          ? cached.caption
+          : composeCaption(cached.caption, block.facts)!
+      );
     } else if (options.provider && bytes.length <= MAX_IMAGE_BYTES) {
       pending.push({ block, index, hash, bytes });
     } else {
@@ -385,13 +394,18 @@ export async function captionImages(
     }
   }
 
-  const sorted = Object.fromEntries(
-    Object.entries(current).sort(([a], [b]) => a.localeCompare(b))
-  );
-  const serialized = `${JSON.stringify(sorted, null, 2)}\n`;
+  const serialized = serializeCaptionCache(current);
   const existing = await readFile(cachePath, 'utf8').catch(() => undefined);
-  if (Object.keys(sorted).length > 0 && existing !== serialized) {
+  if (Object.keys(current).length > 0 && existing !== serialized) {
     await writeFile(cachePath, serialized);
   }
   return captions;
+}
+
+/** Sorted by image hash, so a cache only changes where an image or its description changed */
+export function serializeCaptionCache(cache: CaptionCache): string {
+  const sorted = Object.fromEntries(
+    Object.entries(cache).sort(([a], [b]) => a.localeCompare(b))
+  );
+  return `${JSON.stringify(sorted, null, 2)}\n`;
 }

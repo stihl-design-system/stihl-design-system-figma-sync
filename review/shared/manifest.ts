@@ -128,9 +128,35 @@ export interface ReviewSummary {
   rejected: number;
 }
 
+export type CaptionEditStatus = 'pending' | 'applied' | 'outdated';
+
+/** A figure description edited on the review page */
+export interface CaptionEdit {
+  id: number;
+  imageId: string;
+  caption: string;
+  editor: string;
+  editedAt: string;
+  /** pending until the workflow wrote it; outdated when the image changed before that */
+  status: CaptionEditStatus;
+  appliedAt: string | null;
+  /** The commit on main that contains the description */
+  commit: string | null;
+}
+
+/** What the workflow needs to write an edit into the repository */
+export interface PendingCaptionEdit extends CaptionEdit {
+  reviewId: string;
+  /** Repository path of the image at `headSha` */
+  path: string;
+  headSha: string;
+}
+
 export interface ReviewDetail extends ReviewSummary {
   manifest: ReviewManifest;
   decisions: Decision[];
+  /** Every edit of the review, oldest first; the last one of an image is its description */
+  captionEdits: CaptionEdit[];
 }
 
 export function reviewId(base: string, head: string): string {

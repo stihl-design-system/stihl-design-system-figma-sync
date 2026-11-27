@@ -1,4 +1,5 @@
 import type {
+  CaptionEdit,
   Decision,
   DecisionStatus,
   ReviewDetail,
@@ -40,4 +41,12 @@ export const api = {
     request<ReviewSummary>(`/api/reviews/${id}/finish`, { reviewer }),
   reopen: (id: string) =>
     request<ReviewSummary>(`/api/reviews/${id}/reopen`, {}),
+  editCaption: (
+    id: string,
+    input: { imageId: string; caption: string; editor: string }
+  ) =>
+    request<{ captionEdits: CaptionEdit[] }>(
+      `/api/reviews/${id}/captions`,
+      input
+    ),
 };

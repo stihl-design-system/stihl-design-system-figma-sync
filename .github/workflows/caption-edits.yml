@@ -1,0 +1,95 @@
+name: Apply edited figure descriptions
+
+on:
+  schedule:
+    # Between the sync runs; one request to the review page when nobody edited anything
+    - cron: '2,32 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: figma-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  # Starts the MCP deployment after the merge
+  actions: write
+
+env:
+  REVIEW_URL: https://design-review.stihl-design-system.workers.dev
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Look for edits on the review page
+        id: pending
+        run: |
+          count=$(curl -sSf -H "Authorization: Bearer $REVIEW_PUBLISH_TOKEN" "$REVIEW_URL/api/caption-edits" | jq '.edits | length')
+          echo "Pending edits: $count"
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+        env:
+          REVIEW_PUBLISH_TOKEN: ${{ secrets.REVIEW_PUBLISH_TOKEN }}
+
+      - uses: actions/checkout@v5
+        if: steps.pending.outputs.count != '0'
+        with:
+          # The edit names the commit of its review; the image there is compared with the current one
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        if: steps.pending.outputs.count != '0'
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - if: steps.pending.outputs.count != '0'
+        run: npm ci
+
+      - name: Write the descriptions into captions.json and the pages
+        id: apply
+        if: steps.pending.outputs.count != '0'
+        run: npm run captions:apply
+        env:
+          REVIEW_PUBLISH_TOKEN: ${{ secrets.REVIEW_PUBLISH_TOKEN }}
+
+      - name: Open pull request
+        id: pr
+        if: steps.apply.outputs.images > 0
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: sync/caption-edits
+          delete-branch: true
+          commit-message: 'docs: apply figure descriptions edited on the review page'
+          title: 'docs: apply figure descriptions edited on the review page'
+          body-path: .tmp/caption-edits.md
+          labels: figma-sync
+
+      - name: Merge pull request
+        # Nobody reviews the pull request (see sync.yml); the descriptions were written on the review page
+        id: merge
+        if: steps.pr.outputs.pull-request-operation == 'created' || steps.pr.outputs.pull-request-operation == 'updated'
+        run: |
+          # GitHub may still be computing whether the new pull request can be merged
+          for attempt in 1 2 3 4 5 6; do
+            gh pr merge "$PR" --squash && break
+            [ "$attempt" -lt 6 ] || exit 1
+            sleep 10
+          done
+          echo "commit=$(gh pr view "$PR" --json mergeCommit --jq .mergeCommit.oid)" >> "$GITHUB_OUTPUT"
+          # A push with the workflow token starts no workflows, so the merge does not trigger the deployment
+          gh workflow run deploy-mcp.yml --ref main
+          gh api -X DELETE "repos/$GH_REPO/git/refs/heads/sync/caption-edits"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PR: ${{ steps.pr.outputs.pull-request-number }}
+
+      - name: Mark the edits as applied on the review page
+        # Without a merge the descriptions were already on main (an edit back to the same text)
+        if: steps.apply.outputs.applied > 0 && (steps.merge.outcome == 'success' || steps.pr.outputs.pull-request-operation == 'none')
+        run: npm run captions:apply -- --mark "${MERGED:-$GITHUB_SHA}"
+        env:
+          MERGED: ${{ steps.merge.outputs.commit }}
+          REVIEW_PUBLISH_TOKEN: ${{ secrets.REVIEW_PUBLISH_TOKEN }}

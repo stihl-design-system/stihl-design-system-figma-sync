@@ -10,17 +10,20 @@ import {
   DSSegmentedControl,
   DSSlider,
   DSText,
+  DSTextarea,
   DSTextUtility,
 } from '@stihl-design-system/components';
 import classNames from 'classnames';
 import { useCallback, useEffect, useState } from 'react';
 import type {
+  CaptionEdit,
   ReviewDocument,
   ReviewImage,
   ReviewManifest,
 } from '../../../shared/manifest.ts';
 import {
   documentVersions,
+  formatDate,
   formatShare,
   IMAGE_STATUS_LABEL,
   imageTitle,
@@ -52,16 +55,36 @@ const SHORTCUTS: [keys: string, action: string][] = [
   ['0', 'Fit the image'],
 ];
 
+const MAX_CAPTION_LENGTH = 2000;
+
+/** Who edited the description and whether it is in the documentation yet */
+function editState(edit: CaptionEdit): string {
+  const edited = `Edited by ${edit.editor}, ${formatDate(edit.editedAt)}.`;
+  if (edit.status === 'applied') {
+    return `${edited} In the documentation since ${formatDate(edit.appliedAt)}.`;
+  }
+  if (edit.status === 'outdated') {
+    return `${edited} Not applied: the image changed before the next sync.`;
+  }
+  return `${edited} Reaches the documentation with the next sync.`;
+}
+
 interface ImageViewerProps extends Omit<DecisionBarProps, 'noDecision'> {
   manifest: ReviewManifest;
   image: ReviewImage;
   document: ReviewDocument | undefined;
+  /** The newest edit of the description on this page, if anyone edited it */
+  captionEdit: CaptionEdit | undefined;
+  /** Saves a new description; `saved` runs once it is stored */
+  onEditCaption: (caption: string, saved: () => void) => void;
 }
 
 export function ImageViewer({
   manifest,
   image,
   document,
+  captionEdit,
+  onEditCaption,
   ...decisionBar
 }: ImageViewerProps) {
   const comparison = useComparison(image, manifest.base.sha, manifest.head.sha);
@@ -140,11 +163,19 @@ export function ImageViewer({
   ]);
 
   const side = image.after ?? image.before;
+  // An edit on this page replaces the generated description of the new version
+  const afterCaption = image.after
+    ? (captionEdit?.caption ?? image.after.caption)
+    : undefined;
+  const caption = afterCaption ?? image.before?.caption;
   const captionChanged = Boolean(
     image.before?.caption &&
-    image.after?.caption &&
-    image.before.caption !== image.after.caption
+    afterCaption &&
+    image.before.caption !== afterCaption
   );
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState('');
+  const trimmedDraft = draft.replace(/\s+/g, ' ').trim();
   const sectionChanged = Boolean(
     image.before &&
     image.after &&
@@ -332,10 +363,10 @@ export function ImageViewer({
         blink={blink}
       />
 
-      {side?.caption && (
+      {(caption || image.after) && (
         <div
           className={classNames(styles.caption, {
-            [styles.wide as string]: captionChanged,
+            [styles.wide as string]: captionChanged && !editing,
           })}
         >
           <DSAccordion
@@ -350,13 +381,72 @@ export function ImageViewer({
             }
           >
             <div className={styles.captionContent}>
-              {captionChanged ? (
+              {editing ? (
+                <form
+                  className={styles.captionForm}
+                  onSubmit={(event) => {
+                    event.preventDefault();
+                    onEditCaption(trimmedDraft, () => setEditing(false));
+                  }}
+                >
+                  <DSTextarea
+                    id='caption-edit'
+                    label='Figure description of the new version'
+                    size='small'
+                    resize='auto'
+                    maxLength={MAX_CAPTION_LENGTH}
+                    value={draft}
+                    onChange={(event) => setDraft(event.target.value)}
+                  />
+                  <div className={styles.captionActions}>
+                    <DSButton
+                      type='button'
+                      variant='outline'
+                      size='small'
+                      onClick={() => setEditing(false)}
+                    >
+                      Cancel
+                    </DSButton>
+                    <DSButton
+                      type='submit'
+                      size='small'
+                      disabled={!trimmedDraft || trimmedDraft === afterCaption}
+                    >
+                      Save description
+                    </DSButton>
+                  </div>
+                </form>
+              ) : captionChanged ? (
                 <TextComparison
                   before={image.before?.caption}
-                  after={image.after?.caption}
+                  after={afterCaption}
                 />
               ) : (
-                <DSText size='small'>{side.caption}</DSText>
+                <DSText size='small'>
+                  {caption ?? 'This figure has no description yet.'}
+                </DSText>
+              )}
+              {!editing && image.after && (
+                <div className={styles.captionMeta}>
+                  {captionEdit && (
+                    <DSTextUtility size='small'>
+                      {editState(captionEdit)}
+                    </DSTextUtility>
+                  )}
+                  <DSButton
+                    type='button'
+                    variant='ghost'
+                    size='small'
+                    iconName='pen'
+                    isFlush
+                    onClick={() => {
+                      setDraft(afterCaption ?? '');
+                      setEditing(true);
+                    }}
+                  >
+                    Edit description
+                  </DSButton>
+                </div>
               )}
             </div>
           </DSAccordion>

@@ -7,6 +7,7 @@ import {
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   needsDecision,
+  type CaptionEdit,
   type Decision,
   type DecisionStatus,
   type ReviewDetail,
@@ -94,6 +95,36 @@ export function ReviewPage({
   const items = useMemo(
     () => (review ? reviewItems(review.manifest) : []),
     [review]
+  );
+  /** The newest edit of each image's description */
+  const captionEdits = useMemo(() => {
+    const latest = new Map<string, CaptionEdit>();
+    for (const edit of review?.captionEdits ?? []) {
+      latest.set(edit.imageId, edit);
+    }
+    return latest;
+  }, [review]);
+  const editCaption = useCallback(
+    (imageId: string, caption: string, saved: () => void) => {
+      withName((editor) => {
+        api.editCaption(id, { imageId, caption, editor }).then(
+          (result) => {
+            setReview(
+              (current) =>
+                current && { ...current, captionEdits: result.captionEdits }
+            );
+            saved();
+            queueDSToastMessage(
+              'Description saved. It reaches the documentation with the next sync.',
+              { variant: 'success' }
+            );
+          },
+          (failure: unknown) =>
+            queueDSToastMessage(message(failure), { variant: 'warning' })
+        );
+      });
+    },
+    [id, withName, queueDSToastMessage]
   );
   const decisions = useMemo(
     () =>
@@ -352,6 +383,10 @@ export function ReviewPage({
               manifest={review.manifest}
               image={selected.image}
               document={selectedDocument}
+              captionEdit={captionEdits.get(selected.id)}
+              onEditCaption={(caption, saved) =>
+                editCaption(selected.id, caption, saved)
+              }
               {...decisionBar}
             />
           ) : (

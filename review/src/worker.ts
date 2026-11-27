@@ -7,12 +7,16 @@ import {
   type NotificationInput,
 } from './notify.ts';
 import {
+  addCaptionEdit,
   finishReview,
+  getCaptionEdits,
   getDecisions,
   getReview,
   getSummary,
   latestReviewId,
   listReviews,
+  markCaptionEdits,
+  pendingCaptionEdits,
   reopenReview,
   saveReview,
   setDecisions,
@@ -37,6 +41,7 @@ export interface ExecutionContext {
 }
 
 const MAX_COMMENT_LENGTH = 2000;
+const MAX_CAPTION_LENGTH = 2000;
 const MAX_NAME_LENGTH = 80;
 const MAX_IMAGES = 20_000;
 const IMAGE_STATUSES = ['changed', 'added', 'removed', 'renamed'];
@@ -217,6 +222,83 @@ async function decide(
   return json({ decisions: await getDecisions(env.DB, id) });
 }
 
+/** A figure description edited on the page; the workflow writes it into the repository later */
+async function editCaption(
+  request: Request,
+  env: Env,
+  id: string
+): Promise<Response> {
+  const body = await readJson(request);
+  if (!isRecord(body)) {
+    return fail(400, 'Expected a JSON body');
+  }
+  const editor = reviewerName(body.editor);
+  const caption =
+    typeof body.caption === 'string'
+      ? body.caption.replace(/\s+/g, ' ').trim()
+      : '';
+  if (!editor) {
+    return fail(400, 'editor is required');
+  }
+  if (!caption || caption.length > MAX_CAPTION_LENGTH) {
+    return fail(400, `caption must have 1 to ${MAX_CAPTION_LENGTH} characters`);
+  }
+  const detail = await getReview(env.DB, id);
+  if (!detail) {
+    return fail(404, 'Review not found');
+  }
+  const image = detail.manifest.images.find(
+    (candidate) => candidate.id === body.imageId
+  );
+  if (!image?.after) {
+    return fail(
+      400,
+      'Only images that exist after the change have a description to edit'
+    );
+  }
+  await addCaptionEdit(
+    env.DB,
+    id,
+    {
+      imageId: image.id,
+      path: image.after.path,
+      headSha: detail.manifest.head.sha,
+      caption,
+      editor,
+    },
+    new Date().toISOString()
+  );
+  return json({ captionEdits: await getCaptionEdits(env.DB, id) });
+}
+
+/** The workflow reports which pending edits it wrote and which belong to an image that changed since */
+async function markEdits(request: Request, env: Env): Promise<Response> {
+  const body = await readJson(request);
+  if (!isRecord(body)) {
+    return fail(400, 'Expected a JSON body');
+  }
+  const { ids, status, commit = null } = body;
+  if (
+    !Array.isArray(ids) ||
+    !ids.every((editId) => Number.isInteger(editId)) ||
+    (status !== 'applied' && status !== 'outdated') ||
+    (commit !== null && !/^[0-9a-f]{40}$/.test(String(commit)))
+  ) {
+    return fail(
+      400,
+      'Expected ids, status applied or outdated and an optional commit'
+    );
+  }
+  const changed = await markCaptionEdits(
+    env.DB,
+    ids as number[],
+    status,
+    commit as string | null,
+    new Date().toISOString()
+  );
+  return json({ changed });
+}
+
 async function finish(
   request: Request,
   env: Env,
@@ -285,6 +367,18 @@ async function route(
       ? publishReview(request, env, ctx, origin)
       : fail(401, 'A valid publish token is required');
   }
+  if (pathname.startsWith('/api/caption-edits')) {
+    if (!(await hasToken(request, env.REVIEW_PUBLISH_TOKEN))) {
+      return fail(401, 'A valid publish token is required');
+    }
+    if (pathname === '/api/caption-edits' && method === 'GET') {
+      return json({ edits: await pendingCaptionEdits(env.DB) });
+    }
+    if (pathname === '/api/caption-edits/status' && method === 'POST') {
+      return markEdits(request, env);
+    }
+    return fail(404, 'Not found');
+  }
   if (pathname === '/api/health' && method === 'GET') {
     if (!(await hasToken(request, env.REVIEW_PUBLISH_TOKEN))) {
       return fail(401, 'A valid publish token is required');
@@ -332,7 +426,7 @@ async function route(
     return json({ reviews: await listReviews(env.DB) });
   }
   const review = pathname.match(
-    /^\/api\/reviews\/([0-9a-f-]+)(?:\/(decisions|finish|reopen))?$/
+    /^\/api\/reviews\/([0-9a-f-]+)(?:\/(decisions|finish|reopen|captions))?$/
   );
   if (review?.[1]) {
     const [, id, action] = review;
@@ -345,6 +439,9 @@ async function route(
     }
     if (action === 'finish' && method === 'POST') {
       return finish(request, env, ctx, id, origin);
+    }
+    if (action === 'captions' && method === 'POST') {
+      return editCaption(request, env, id);
     }
     if (action === 'reopen' && method === 'POST') {
       if (!(await getSummary(env.DB, id))) {

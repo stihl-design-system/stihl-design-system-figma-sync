@@ -2,11 +2,14 @@ import {
   countImages,
   needsDecision,
   reviewId,
+  type CaptionEdit,
+  type CaptionEditStatus,
   type Decision,
   type DecisionStatus,
   type ReviewCounts,
   type ReviewDetail,
   type ReviewImage,
+  type PendingCaptionEdit,
   type ReviewManifest,
   type ReviewStatus,
   type ReviewSummary,
@@ -155,11 +158,25 @@ export async function getDecisions(
   return results;
 }
 
+const CAPTION_EDITS = `SELECT id, image_id AS imageId, caption, editor, edited_at AS editedAt,
+  status, applied_at AS appliedAt, commit_sha AS "commit" FROM caption_edits`;
+
+export async function getCaptionEdits(
+  db: D1Database,
+  id: string
+): Promise<CaptionEdit[]> {
+  const { results } = await db
+    .prepare(`${CAPTION_EDITS} WHERE review_id = ?1 ORDER BY id`)
+    .bind(id)
+    .all<CaptionEdit>();
+  return results;
+}
+
 export async function getReview(
   db: D1Database,
   id: string
 ): Promise<ReviewDetail | undefined> {
-  const [reviews, parts, decisions] = await db.batch([
+  const [reviews, parts, decisions, edits] = await db.batch([
     db
       .prepare(
         `SELECT ${SUMMARY_COLUMNS}, r.header FROM reviews r WHERE r.id = ?1`
@@ -171,6 +188,7 @@ export async function getReview(
       )
       .bind(id),
     db.prepare(DECISIONS).bind(id),
+    db.prepare(`${CAPTION_EDITS} WHERE review_id = ?1 ORDER BY id`).bind(id),
   ]);
   const row = reviews?.results[0] as
     (ReviewRow & { header: string }) | undefined;
@@ -187,6 +205,7 @@ export async function getReview(
       images,
     },
     decisions: (decisions?.results ?? []) as unknown as Decision[],
+    captionEdits: (edits?.results ?? []) as unknown as CaptionEdit[],
   };
 }
 
@@ -275,4 +294,67 @@ export async function reopenReview(db: D1Database, id: string): Promise<void> {
     )
     .bind(id)
     .run();
+}
+
+export interface CaptionEditInput {
+  imageId: string;
+  path: string;
+  headSha: string;
+  caption: string;
+  editor: string;
+}
+
+export async function addCaptionEdit(
+  db: D1Database,
+  id: string,
+  input: CaptionEditInput,
+  now: string
+): Promise<void> {
+  await db
+    .prepare(
+      `INSERT INTO caption_edits (review_id, image_id, path, head_sha, caption, editor, edited_at)
+       VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)`
+    )
+    .bind(
+      id,
+      input.imageId,
+      input.path,
+      input.headSha,
+      input.caption,
+      input.editor,
+      now
+    )
+    .run();
+}
+
+/** Edits the workflow has not written into the repository yet, oldest first */
+export async function pendingCaptionEdits(
+  db: D1Database
+): Promise<PendingCaptionEdit[]> {
+  const { results } = await db
+    .prepare(
+      `SELECT id, review_id AS reviewId, image_id AS imageId, path, head_sha AS headSha, caption,
+         editor, edited_at AS editedAt, status, applied_at AS appliedAt, commit_sha AS "commit"
+       FROM caption_edits WHERE status = 'pending' ORDER BY id`
+    )
+    .all<PendingCaptionEdit>();
+  return results;
+}
+
+/** Records what the workflow did with pending edits; edits that are no longer pending stay as they are */
+export async function markCaptionEdits(
+  db: D1Database,
+  ids: number[],
+  status: Exclude<CaptionEditStatus, 'pending'>,
+  commit: string | null,
+  now: string
+): Promise<number> {
+  const result = await db
+    .prepare(
+      `UPDATE caption_edits SET status = ?2, applied_at = ?3, commit_sha = ?4
+       WHERE status = 'pending' AND id IN (SELECT value FROM json_each(?1))`
+    )
+    .bind(JSON.stringify(ids), status, now, commit)
+    .run();
+  return result.meta.changes ?? 0;
 }
