@@ -14,6 +14,11 @@ $checker: ds.$color-core-grey-light;
   @include ds.media-query-max('l') {
     min-height: max(320px, 55vh);
   }
+
+  // On wide screens the descriptions below scroll instead
+  @include ds.media-query-min('l') {
+    min-height: 35vh;
+  }
 }
 
 .pane {

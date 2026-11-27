@@ -131,15 +131,6 @@
   white-space: pre-wrap;
 }
 
-// Long descriptions and section texts scroll inside, so the images keep most of the height; small
-// screens scroll the whole page instead
-.captionContent {
-  @include ds.media-query-min('l') {
-    max-height: 25vh;
-    overflow-y: auto;
-  }
-}
-
 .captionForm {
   display: flex;
   flex-direction: column;
@@ -162,4 +153,17 @@
 .captionMeta {
   margin-top: ds.$spacing-8;
   color: ds.$theme-light-content-color-secondary;
+}
+
+// Image description and section text; on wide screens this area gives way first when the window is
+// low, so the images keep their minimum height, on small screens the page scrolls instead
+.texts {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+
+  @include ds.media-query-min('l') {
+    min-height: 0;
+    overflow-y: auto;
+  }
 }
