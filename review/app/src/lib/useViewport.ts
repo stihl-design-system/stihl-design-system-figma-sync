@@ -25,10 +25,14 @@ function fitTransform(pane: Size, board: Size): Transform {
   if (!pane.width || !pane.height || !board.width || !board.height) {
     return { scale: 1, x: 0, y: 0 };
   }
-  const scale = Math.min(
-    (pane.width - PADDING * 2) / board.width,
-    (pane.height - PADDING * 2) / board.height,
-    1
+  // A pane smaller than its padding would give a negative scale
+  const scale = Math.max(
+    Math.min(
+      (pane.width - PADDING * 2) / board.width,
+      (pane.height - PADDING * 2) / board.height,
+      1
+    ),
+    0.01
   );
   return {
     scale,
