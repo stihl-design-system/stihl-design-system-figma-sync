@@ -118,13 +118,23 @@
   max-width: none;
 }
 
+// Split like the before and after panes of the stage above: two halves divided by the same line in
+// the middle, each text inset by the padding of the caption from the edges of its pane
 .captionVersions {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 72ch));
-  gap: ds.$spacing-16 ds.$spacing-40;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: calc(2 * #{ds.$spacing-24} + #{ds.$spacing-2});
 
-  @include ds.media-query-max('m') {
-    grid-template-columns: minmax(0, 72ch);
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: ds.$spacing-2;
+    background: ds.$theme-light-border-color-tertiary;
+    content: '';
+    transform: translateX(-50%);
   }
 }
 
@@ -132,6 +142,8 @@
   display: flex;
   flex-direction: column;
   gap: ds.$spacing-4;
+  // Keeps lines readable on wide screens; the text still starts where its pane starts
+  max-width: 90ch;
   color: ds.$theme-light-content-color-primary;
 }
 
