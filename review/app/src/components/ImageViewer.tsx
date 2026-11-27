@@ -87,6 +87,7 @@ export function ImageViewer({
   const viewport = useViewport(comparison.width, comparison.height, image.id);
   const [view, setView] = useStored<View>('review.view', 'side');
   const [highlight, setHighlight] = useStored('review.highlight', true);
+  const [captionOpen, setCaptionOpen] = useStored('review.captionOpen', true);
   const [opacity, setOpacity] = useState(50);
   const [swipe, setSwipe] = useState(0.5);
   const [blink, setBlink] = useState<Blink>(null);
@@ -362,6 +363,9 @@ export function ImageViewer({
         >
           <DSAccordion
             size='x-small'
+            isFlush
+            isOpen={captionOpen}
+            onToggle={(event) => setCaptionOpen(event.currentTarget.open)}
             summary={
               captionDiff
                 ? 'Figure description (changed)'
