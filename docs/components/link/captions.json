@@ -104,11 +104,6 @@
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two highlight inline links in the enabled state at text M. \"Link Inline\" is an external link with a trailing arrow-out-of-box icon (opens a dialogue, new tab or new window), and \"Anchor Link\" is an anchor link with a trailing downward arrow icon (jumps within the same tab/page)."
   },
-  "d9159a50d4f3497b3b27b6376f794bc949589e996b00bdd05ee506c6a3079bac": {
-    "nodeId": "168:7255",
-    "model": "github-copilot/claude-sonnet-4.5",
-    "caption": "State matrix of the Link Default component in light and dark mode, with columns enabled, hover / pressed, focus and active and rows highlight and neutral. Each cell has three links: no icon, icon left and icon right. Highlight links are blue and neutral links are dark text (white on the black dark-mode panel); hover / pressed adds a grey background, focus adds a dark outline frame around the link and active adds an underline."
-  },
   "dc64c84a1ed98919de238923b9ecd19c88e15f1b1a82114df06462520252754a": {
     "nodeId": "1943:14904",
     "model": "github-copilot/claude-sonnet-4.5",
@@ -123,6 +118,11 @@
     "nodeId": "1969:5385",
     "model": "github-copilot/claude-sonnet-4.5",
     "caption": "Two highlight Link Default links side by side in the enabled state: one with the icon placed left of the label and one with the icon placed right of the label."
+  },
+  "ed53d16971d890b7d9a4a147981a8b1eaea26692e8ee6069339c9c2d72182511": {
+    "nodeId": "168:7255",
+    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "caption": "The link-default component in the STIHL Design System, showing its various states and icon positions for both highlight and neutral variants in light mode. The layout includes columns for enabled, hover/pressed, focus, and active states, with rows for highlight and neutral variants. Each cell within the grid shows the link-default component with the label \"Link Default\" and different icon positions: none, left, and right. The figure illustrates how the link-default component appears in different interactive states and with different icon placements."
   },
   "fbf0eab8e030257d9955236ec2b12fdee05beb1a2f17e8ab35431ff443082cc0": {
     "nodeId": "1943:12260",

@@ -13,10 +13,10 @@ figmaFile: Core Components
 figmaProject: 02. Core Components
 figmaFileKey: qXldpLO6gxHJNLdcXIPxYt
 figmaNodeId: 35223:10505
-figmaVersion: "2418704252861676331"
-figmaVersionLabel: Components published
-figmaVersionCreatedAt: 2026-11-06T10:45:41Z
-syncedAt: 2026-11-18T15:17:07.413Z
+figmaVersion: "2426221821114730086"
+figmaVersionLabel: Version 1.2.14 | 26.11.2026 | CW45/Hochdruckreiniger
+figmaVersionCreatedAt: 2026-11-26T17:19:15Z
+syncedAt: 2026-11-26T17:32:44.513Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=35223-10505
 ---
 
@@ -339,7 +339,7 @@ _Figure: Popover variants, each a rectangular container with a "Placeholder" con
 
 ### Further guidelines
 
-[Storybook documentation](https://main--63440bbb95889041542a5ba3.chromatic.com/?path=/docs/components-notification--documentation&globals=backgrounds.name:!undefined;backgrounds.value:!undefined)
+[Storybook documentation](https://main--63440bbb95889041542a5ba3.chromatic.com/?path=/docs/components-popover--documentation)
 
 [Decision tree](https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=26738-47603)
 
