@@ -101,7 +101,10 @@ describe('contextBefore and buildPrompt', () => {
   it('collects the text since the last heading and feeds facts into the prompt', () => {
     const context = contextBefore(blocks, 3);
     expect(context).toBe('Structure: - Switch - Label Default is left.');
-    expect(contextBefore(blocks, 5)).toBe('After.');
+    // A later board of the section (a Don't after a Do) still gets the rule stated before both
+    expect(contextBefore(blocks, 5)).toBe(
+      'Structure: - Switch - Label Default is left. After.'
+    );
     const imageBlock = blocks[3];
     const prompt = buildPrompt({
       document: { title: 'Switch', category: 'component' },
@@ -113,6 +116,23 @@ describe('contextBefore and buildPrompt', () => {
     expect(prompt).toContain('Measurement labels in the figure: 8px, 16px');
     expect(prompt).toContain('Numbered callouts: 1, 2, 3');
     expect(prompt).not.toContain('Markdown.\n');
+  });
+
+  it('keeps the heading and the text next to the image when the section is long', () => {
+    const long: Block[] = [
+      { type: 'heading', level: 3, text: 'Width', nodeId: 'h' },
+      {
+        type: 'paragraph',
+        nodeId: 'p1',
+        inlines: [{ text: 'x'.repeat(2000) }],
+      },
+      { type: 'paragraph', nodeId: 'p2', inlines: [{ text: 'Closest.' }] },
+      { type: 'image', nodeId: '1:1', alt: 'Width' },
+    ];
+    const context = contextBefore(long, 3);
+
+    expect(context.length).toBe(1000);
+    expect(context).toMatch(/^Width: \.\.\.x+ Closest\.$/);
   });
 });
 

@@ -9,7 +9,7 @@ const DEFAULT_MODEL = '@cf/mistralai/mistral-small-3.1-24b-instruct';
 const CONCURRENCY = 3;
 const MAX_ATTEMPTS = 4;
 const MAX_CAPTION_LENGTH = 700;
-const MAX_CONTEXT_LENGTH = 600;
+const MAX_CONTEXT_LENGTH = 1000;
 const MAX_IMAGE_BYTES = 8 * 1024 * 1024;
 
 export interface CaptionProvider {
@@ -125,16 +125,22 @@ function inlinesToText(inlines: Inline[]): string {
     .trim();
 }
 
-/** The text between the previous image or heading and this image, the way a reader would see it */
+/**
+ * The heading and text of the section the image sits in, up to the image. Earlier
+ * images of the section are skipped, not a boundary: in Figma the text stands next
+ * to all boards of a section, and a Don't board that follows a Do board needs the
+ * rule stated before both. When the text is too long, the part next to the image is kept.
+ */
 export function contextBefore(blocks: Block[], index: number): string {
   const parts: string[] = [];
+  let heading = '';
   for (let i = index - 1; i >= 0; i--) {
     const block = blocks[i]!;
     if (block.type === 'image') {
-      break;
+      continue;
     }
     if (block.type === 'heading') {
-      parts.unshift(`${block.text}:`);
+      heading = `${block.text}:`;
       break;
     }
     if (block.type === 'list') {
@@ -146,9 +152,10 @@ export function contextBefore(blocks: Block[], index: number): string {
     }
   }
   const text = parts.join(' ');
-  return text.length > MAX_CONTEXT_LENGTH
-    ? `${text.slice(0, MAX_CONTEXT_LENGTH - 3)}...`
-    : text;
+  const room = MAX_CONTEXT_LENGTH - heading.length - 1;
+  const kept =
+    text.length > room ? `...${text.slice(text.length - room + 3)}` : text;
+  return [heading, kept].filter(Boolean).join(' ');
 }
 
 export function buildPrompt(input: {
