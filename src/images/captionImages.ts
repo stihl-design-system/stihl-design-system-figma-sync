@@ -1,6 +1,8 @@
 import { createHash } from 'node:crypto';
-import { readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { PNG } from 'pngjs';
+import { diffImages } from '../../review/shared/pixelDiff.ts';
 import type { Block, Inline } from '../extract/collectBlocks.ts';
 import { describeFigure, type FigureFacts } from '../extract/figureFacts.ts';
 import { imageFileName } from './exportImages.ts';
@@ -39,6 +41,14 @@ export interface CaptionOptions {
   document: { title: string; category: string };
   /** Undefined: use cached captions only */
   provider?: CaptionProvider;
+  /**
+   * The document's images before this sync exported new ones (see readImages).
+   * An image without a cached caption that shows no visible change against one
+   * of them, by the comparison of the design review, keeps that image's caption:
+   * Figma renders a board a few antialiased pixels differently from time to
+   * time, and a rebuilt page gives every board a new node id.
+   */
+  previousImages?: Buffer[];
   log?: (message: string) => void;
 }
 
@@ -245,6 +255,74 @@ export function cacheFileFor(imageDir: string): string {
   return join(imageDir, 'captions.json');
 }
 
+/** Reads the images of a document folder, for `previousImages` before an export replaces them */
+export async function readImages(
+  imageDir: string,
+  format: 'png' | 'svg'
+): Promise<Buffer[]> {
+  const files = await readdir(imageDir).catch(() => [] as string[]);
+  return Promise.all(
+    files
+      .filter((file) => file.endsWith(`.${format}`))
+      .map((file) => readFile(join(imageDir, file)))
+  );
+}
+
+function contentHash(bytes: Buffer): string {
+  return createHash('sha256').update(bytes).digest('hex');
+}
+
+function decodePng(bytes: Buffer): PNG | undefined {
+  try {
+    return PNG.sync.read(bytes);
+  } catch {
+    return undefined;
+  }
+}
+
+/**
+ * Finds the cache entry of a previous image that looks the same as a new one,
+ * an image of the same node first. Previous images are decoded once, on first use.
+ */
+function unchangedImageLookup(
+  previousImages: Buffer[],
+  cache: CaptionCache
+): (bytes: Buffer, nodeId: string) => CaptionCacheEntry | undefined {
+  const candidates = previousImages.flatMap((bytes) => {
+    const entry = cache[contentHash(bytes)];
+    let image: PNG | undefined | null = null;
+    const decode = (): PNG | undefined => {
+      if (image === null) {
+        image = decodePng(bytes);
+      }
+      return image;
+    };
+    return entry ? [{ entry, decode }] : [];
+  });
+  return (bytes, nodeId) => {
+    if (candidates.length === 0) {
+      return undefined;
+    }
+    const after = decodePng(bytes);
+    if (!after) {
+      return undefined;
+    }
+    const ordered = [
+      ...candidates.filter(({ entry }) => entry.nodeId === nodeId),
+      ...candidates.filter(({ entry }) => entry.nodeId !== nodeId),
+    ];
+    return ordered.find(({ decode }) => {
+      const before = decode();
+      return (
+        before !== undefined &&
+        before.width === after.width &&
+        before.height === after.height &&
+        diffImages(before, after).changedPixels === 0
+      );
+    })?.entry;
+  };
+}
+
 /** Providers that reported an exhausted quota in this process; later documents skip them */
 const quotaExhausted = new WeakSet<CaptionProvider>();
 
@@ -305,6 +383,11 @@ export async function captionImages(
     hash: string;
     bytes: Buffer;
   }[] = [];
+  const findUnchanged = unchangedImageLookup(
+    options.format === 'png' ? (options.previousImages ?? []) : [],
+    previous
+  );
+  let carried = 0;
 
   for (const { block, index } of images) {
     const file = join(options.imageDir, imageFileName(block, options.format));
@@ -312,8 +395,15 @@ export async function captionImages(
     if (!bytes) {
       continue;
     }
-    const hash = createHash('sha256').update(bytes).digest('hex');
-    const cached = previous[hash];
+    const hash = contentHash(bytes);
+    let cached = previous[hash];
+    if (!cached) {
+      const unchanged = findUnchanged(bytes, block.nodeId);
+      if (unchanged) {
+        cached = { ...unchanged, nodeId: block.nodeId };
+        carried++;
+      }
+    }
     if (cached) {
       current[hash] = cached;
       captions.set(
@@ -331,6 +421,10 @@ export async function captionImages(
         captions.set(block.nodeId, fallback);
       }
     }
+  }
+
+  if (carried > 0) {
+    log(`  kept the caption of ${carried} images without visible change`);
   }
 
   if (pending.length > 0 && options.provider) {

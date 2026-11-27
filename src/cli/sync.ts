@@ -12,6 +12,7 @@ import { collectBlocks } from '../extract/collectBlocks.ts';
 import {
   captionImages,
   createCaptionProviderFromEnv,
+  readImages,
 } from '../images/captionImages.ts';
 import { exportImages } from '../images/exportImages.ts';
 import {
@@ -110,6 +111,13 @@ async function main(): Promise<void> {
       headingLevels: headingLevelsFor(config, file),
     });
 
+    // Same version renders identically; skip the slow re-export (delete the folder to force it)
+    const reuseExisting = previous?.figmaVersion === target.id;
+    // Read before the export overwrites or removes them, so boards without a visible change keep their captions
+    const previousImages = reuseExisting
+      ? []
+      : await readImages(document.imageDir, config.imageExport.format);
+
     const imagePaths = await exportImages(blocks, {
       client,
       fileKey: file.fileKey,
@@ -118,8 +126,7 @@ async function main(): Promise<void> {
       format: config.imageExport.format,
       scale: config.imageExport.scale,
       version: target.id,
-      // Same version renders identically; skip the slow re-export (delete the folder to force it)
-      reuseExisting: previous?.figmaVersion === target.id,
+      reuseExisting,
     });
 
     const captions = await captionImages(blocks, imagePaths, {
@@ -127,6 +134,7 @@ async function main(): Promise<void> {
       format: config.imageExport.format,
       document: { title: document.title, category: document.category },
       provider: captionProvider,
+      previousImages,
       log: console.log,
     });
 

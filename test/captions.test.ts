@@ -1,7 +1,9 @@
+import { createHash } from 'node:crypto';
 import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import type { Node } from '@figma/rest-api-spec';
+import { PNG } from 'pngjs';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import type { Block } from '../src/extract/collectBlocks.ts';
 import {
@@ -154,6 +156,98 @@ describe('cleanCaption and composeCaption', () => {
     );
     expect(composeCaption(undefined, facts)).toMatch(/^Shows switch/);
     expect(composeCaption(undefined, undefined)).toBeUndefined();
+  });
+});
+
+describe('captionImages with previous images', () => {
+  let dir: string;
+  beforeEach(async () => {
+    dir = await mkdtemp(join(tmpdir(), 'captions-previous-'));
+  });
+  afterEach(() => rm(dir, { recursive: true, force: true }));
+
+  /** Grey board with a black square; `pixel` changes one pixel by a hardly visible amount */
+  function board(
+    square: number,
+    options: { pixel?: boolean; deflateLevel?: number } = {}
+  ): Buffer {
+    const image = new PNG({ width: 60, height: 40 });
+    image.data.fill(240);
+    for (let y = 10; y < 10 + square; y++) {
+      for (let x = 10; x < 10 + square; x++) {
+        image.data.fill(0, (y * 60 + x) * 4, (y * 60 + x) * 4 + 3);
+      }
+    }
+    if (options.pixel) {
+      image.data.fill(227, (30 * 60 + 50) * 4, (30 * 60 + 50) * 4 + 3);
+    }
+    return PNG.sync.write(image, { deflateLevel: options.deflateLevel ?? 9 });
+  }
+
+  it('keeps the caption of a board without visible change under a new node id and file', async () => {
+    const reviewed = board(10);
+    const other = board(12);
+    const sha = (bytes: Buffer) =>
+      createHash('sha256').update(bytes).digest('hex');
+    await writeFile(
+      join(dir, 'captions.json'),
+      JSON.stringify({
+        [sha(reviewed)]: {
+          nodeId: '1:1',
+          model: 'reviewer',
+          caption: 'Reviewed width board.',
+        },
+        [sha(other)]: {
+          nodeId: '1:2',
+          model: 'reviewer',
+          caption: 'Reviewed other board.',
+        },
+      })
+    );
+    // The page was rebuilt in Figma: new node ids, the old files are gone after the export
+    const rebuilt: Extract<Block, { type: 'image' }>[] = [
+      { type: 'image', nodeId: '9:1', alt: 'Width' },
+      { type: 'image', nodeId: '9:2', alt: 'Other' },
+    ];
+    const unchanged = board(10, { pixel: true, deflateLevel: 1 });
+    expect(sha(unchanged)).not.toBe(sha(reviewed));
+    await writeFile(join(dir, imageFileName(rebuilt[0]!, 'png')), unchanged);
+    await writeFile(join(dir, imageFileName(rebuilt[1]!, 'png')), board(20));
+
+    const calls: string[] = [];
+    const captions = await captionImages(
+      rebuilt,
+      new Map([
+        ['9:1', 'doc/width-9-1.png'],
+        ['9:2', 'doc/other-9-2.png'],
+      ]),
+      {
+        imageDir: dir,
+        format: 'png',
+        document: { title: 'Textarea', category: 'component' },
+        previousImages: [other, reviewed],
+        provider: {
+          model: 'fake',
+          async describe(_image, _mime, prompt) {
+            calls.push(prompt);
+            return 'A new board.';
+          },
+        },
+      }
+    );
+
+    expect(captions.get('9:1')).toBe('Reviewed width board.');
+    // A visible change is described anew
+    expect(captions.get('9:2')).toBe('A new board.');
+    expect(calls).toHaveLength(1);
+    const cache = JSON.parse(
+      await readFile(join(dir, 'captions.json'), 'utf8')
+    );
+    expect(cache[sha(unchanged)]).toEqual({
+      nodeId: '9:1',
+      model: 'reviewer',
+      caption: 'Reviewed width board.',
+    });
   });
 });
 
