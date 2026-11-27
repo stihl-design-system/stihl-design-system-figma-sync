@@ -121,8 +121,8 @@
   },
   "ed53d16971d890b7d9a4a147981a8b1eaea26692e8ee6069339c9c2d72182511": {
     "nodeId": "168:7255",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The link-default component in the STIHL Design System, showing its various states and icon positions for both highlight and neutral variants in light mode. The layout includes columns for enabled, hover/pressed, focus, and active states, with rows for highlight and neutral variants. Each cell within the grid shows the link-default component with the label \"Link Default\" and different icon positions: none, left, and right. The figure illustrates how the link-default component appears in different interactive states and with different icon placements."
+    "model": "claude-code/claude-opus-5.5",
+    "caption": "State matrix of the Link Default component in light and dark mode, with the columns enabled, hover / pressed, focus and active and the rows highlight and neutral. Each cell has three links: no icon, icon left and icon right. Highlight links are blue and neutral links dark (light blue and white on the black dark-mode panel); hover / pressed adds a grey background, focus adds an outline frame around the link and active adds an underline. Both panels are labelled \"Link default: light\", also the dark one."
   },
   "fbf0eab8e030257d9955236ec2b12fdee05beb1a2f17e8ab35431ff443082cc0": {
     "nodeId": "1943:12260",

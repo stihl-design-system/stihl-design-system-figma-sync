@@ -17,7 +17,7 @@ figmaNodeId: 2659:3954
 figmaVersion: "2426221821114730086"
 figmaVersionLabel: Version 1.2.14 | 26.11.2026 | CW45/Hochdruckreiniger
 figmaVersionCreatedAt: 2026-11-26T17:19:15Z
-syncedAt: 2026-11-26T17:28:01.952Z
+syncedAt: 2026-11-27T11:33:09.546Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=2659-3954
 ---
 
@@ -36,7 +36,7 @@ Overview:
 
 ![Combobox](combobox/combobox-5671-19983.png)
 
-_Figure: The Combobox component in various states and configurations. It shows the input-combobox in default, hover, focus, and disabled states, with both valid and invalid entries. The combobox includes a label, hint text, and system feedback messages. The dropdown list can be single-select or multi-select, with optional group labels, and can vary in length. The figure also demonstrates the use of a clear button and specific placeholder text for better user guidance._
+_Figure: Overview board of the combobox in a grid with the columns "default", "hover", "active/focus" and "disabled" and the rows "invalid false" and "invalid true", each field with "Label" and a lorem ipsum hint above it. Row "invalid false": default is an empty field with a thin dark border, hover has a grey filled field, active/focus has a thick dark border with the typed text "Inp|", a clear (X) button and an open list, and disabled has an empty field with a lighter grey border. Row "invalid true": default has a red border, a clear button and an error icon with "System feedback message"; active/focus has a thick dark border, a clear button, the same message and the open list. The open lists group "Label" items under "Group Label (optional)" headings, with a focus frame around one item. Below, "select-item list: single-select" shows the list with plain items and "select-item list: multi-select" the same list with checkboxes, the first two checked._
 
 ### Further guidelines
 

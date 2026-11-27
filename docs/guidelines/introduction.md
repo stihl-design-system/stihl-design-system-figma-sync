@@ -16,7 +16,7 @@ figmaNodeId: 356:1729
 figmaVersion: "2425790288548972196"
 figmaVersionLabel: ""
 figmaVersionCreatedAt: 2026-11-25T13:12:30Z
-syncedAt: 2026-11-26T17:36:38.846Z
+syncedAt: 2026-11-27T11:33:15.452Z
 sourceUrl: https://www.figma.com/design/lLmw7PfIdKjFG4uT3B2Hyj?node-id=356-1729
 ---
 
@@ -78,7 +78,7 @@ Platform-specific libraries with tailored components and modules designed for th
 
 ![03. Platform Libraries](introduction/03-platform-libraries-371-708.png)
 
-_Figure: Six cover thumbnails representing different platform libraries and miscellaneous categories within the STIHL Design System. Each thumbnail includes a title and a brief description of its content, such as "App Pattern Library" with "Components and modules tailored to app interfaces," and "Web Pattern Library" with "Components and modules tailored to web interfaces." Additionally, there are thumbnails for "E-Mail Patterns," "App Pattern Library Beta," "Archive Platform Libraries," and "Playground Platform Libraries," each with specific icons and descriptions indicating their purpose and status, such as "Archived platform libraries exploration" and "Ongoing platform libraries exploration._
+_Figure: Six library cover cards. Three black cards: "App Pattern Library" with a "Coming soon" tag (Components and modules tailored to app interfaces), "Web Pattern Library" (Components and modules tailored to web interfaces) and "E-Mail Patterns" with a "Visual guideline" tag (Components and modules tailored to e-mail interfaces). Three grey cards: "App Pattern Library Beta" (Components and modules tailored to app interfaces - Beta), "Archive Platform Libraries" (Archived platform libraries exploration) and "Playground Platform Libraries" (Ongoing platform libraries exploration)._
 
 ### 04. Guidelines, Onboarding, Process
 

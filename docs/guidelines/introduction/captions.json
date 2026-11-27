@@ -6,8 +6,8 @@
   },
   "73979e97b69a9e42a036411cf4a967cfa3b2ac3f45d644f0f9cd337aa772d34a": {
     "nodeId": "371:708",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Six cover thumbnails representing different platform libraries and miscellaneous categories within the STIHL Design System. Each thumbnail includes a title and a brief description of its content, such as \"App Pattern Library\" with \"Components and modules tailored to app interfaces,\" and \"Web Pattern Library\" with \"Components and modules tailored to web interfaces.\" Additionally, there are thumbnails for \"E-Mail Patterns,\" \"App Pattern Library Beta,\" \"Archive Platform Libraries,\" and \"Playground Platform Libraries,\" each with specific icons and descriptions indicating their purpose and status, such as \"Archived platform libraries exploration\" and \"Ongoing platform libraries exploration."
+    "model": "claude-code/claude-opus-5.5",
+    "caption": "Six library cover cards. Three black cards: \"App Pattern Library\" with a \"Coming soon\" tag (Components and modules tailored to app interfaces), \"Web Pattern Library\" (Components and modules tailored to web interfaces) and \"E-Mail Patterns\" with a \"Visual guideline\" tag (Components and modules tailored to e-mail interfaces). Three grey cards: \"App Pattern Library Beta\" (Components and modules tailored to app interfaces - Beta), \"Archive Platform Libraries\" (Archived platform libraries exploration) and \"Playground Platform Libraries\" (Ongoing platform libraries exploration)."
   },
   "9f5dd60798b09a408f2b5ea71091148e5ad54ad3d570e01c15a1cd0e251727eb": {
     "nodeId": "384:1311",

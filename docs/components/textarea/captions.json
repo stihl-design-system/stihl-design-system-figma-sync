@@ -6,8 +6,8 @@
   },
   "0d3d10c60bb9d2ef8551f238ad5c918373a3859bef179d1ea0cc4a58b6ba3ff8": {
     "nodeId": "72280:739",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A textarea component with a medium size, enabled state, and no validation errors. The component is labeled \"Label\" and includes a counter displaying the current character count out of the maximum allowed. Callout 1 points to the textarea in its initial state with minimal height, while callout 2 points to the textarea expanded to near its maximum height. The measurements 67/200 and 198/200 refer to the number of characters entered out of the maximum limit of 200 characters."
+    "model": "claude-code/claude-opus-5.5",
+    "caption": "Two medium textareas with the label \"Label\" that grow automatically, without a resize handle. Callout 1 points at the field at its initial minimum height with two lines of text (\"Lorem ipsum dolor sit, consectetur adipiscing elit. Lacus vel etiam|\") and the counter \"67/200\"; callout 2 points at the field grown in height to six lines of text, near its maximum size, with the counter \"198/200\"."
   },
   "13e7e521eca88b0d1920a890a7db331c661cf75a235dbcef32406707ee8b50e8": {
     "nodeId": "72280:722",
@@ -26,8 +26,8 @@
   },
   "53ee54e0cc3aa446cbd5ce0b2451c80456bfa1706cbca2c7ad4ec920f91d4d10": {
     "nodeId": "72280:755",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "A text-area-medium component with the label \"Label\" and a text input that has reached near its character limit, indicated by the counter showing \"67/200\". The text area includes a native scroll bar because the text exceeds the maximum height, and it is in an enabled state without any validation errors. The component also features a resize handle."
+    "model": "claude-code/claude-opus-5.5",
+    "caption": "Medium textarea with the label \"Label\" and a resize handle, filled with six lines of Lorem ipsum text and the counter \"67/200\". The text is taller than the maximum height, so a native vertical scroll bar appears on the right inside the textarea."
   },
   "649daddfdf1c86d5367c5e7db530a68c6900727f982b6110d29e0ec0c353eb0b": {
     "nodeId": "8859:2884",
@@ -36,8 +36,8 @@
   },
   "9e4a90785e35d639653af9d3692f19d279f834a94437fb967649a82917a56316": {
     "nodeId": "72280:392",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The Textarea component in a UI design system, showing its various states and sizes. It includes two sizes, \"Size Medium\" and \"Size Small,\" and displays states such as \"Default,\" \"Hover,\" \"Focus,\" \"Near limit,\" \"Limit reached,\" \"Disabled,\" and \"Read-only.\" The component features a label, an input field, and system feedback messages of types \"error,\" \"info,\" and \"warning.\" The numbers indicate character counts, with \"0/100,\" \"90/100,\" and \"100/100\" representing the number of characters entered out of a 100-character limit. The \"is invalid\" text indicates an error state. The \"Label *\" denotes a required field..."
+    "model": "claude-code/claude-opus-5.5",
+    "caption": "Overview of the textarea in sizes \"Size Medium\" and \"Size Small\", each in the states Default, Hover (grey fill), Focus (thick black border), Near limit, Limit reached, Disabled (greyed text) and Read-only (grey fill, no border). Each has a Label, lorem ipsum hint text, an input area with resize handle and a counter. Near limit shows the info message \"Less than 20% of characters left\" with \"90/100\", Limit reached the warning \"Character limit reached\" with \"100/100\". Default and Focus also have an \"is invalid\" variant with the label \"Label *\" and the error \"System Feedback Message\"; the invalid Default field has a red border."
   },
   "b6fdb43afaefe57c0f0de431a3319c858fe295530f9b9e51805c0912eb95f5f2": {
     "nodeId": "40251:50514",
@@ -46,8 +46,8 @@
   },
   "be12d266e5693e1761836b0ca7a6ccff7c95876cb4fabaf56cdcd2b24f19ba1b": {
     "nodeId": "72280:698",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "Four variants of a textarea component with different states and character count indicators. Each textarea has a label, an input field, a resize handle, and a character counter. Callout 1 points to a textarea with a character count of 57/100, callout 2 points to a textarea with a character count of 161/200 and an info message indicating less than 20% of characters left, callout 3 points to a textarea at the character limit of 100/100 with a warning message, and callout 4 points to an invalid textarea required field with a system feedback message and 0/100 character count. The character count measures the number of characters entered in the textarea."
+    "model": "claude-code/claude-opus-5.5",
+    "caption": "Do example with four textareas, each with a resize handle. Callout 1 points at the counter \"57/100\" of a field with two lines of text; callout 2 at the info message \"Less than 20% of characters left\" of a field at \"161/200\"; callout 3 at the counter \"100/100\" of a full field with the warning \"Character limit reached\"; callout 4 at the error \"System Feedback Message\" of an empty required field (\"Label *\") with a red border and the counter \"0/100\"."
   },
   "cc961d4158df60309b0b55124560340aac50381c2c3ab94bca38e553309c5f78": {
     "nodeId": "40251:50533",
@@ -56,7 +56,7 @@
   },
   "d7972fb5526ed73466df56d89a4594b8a2b3f1c3e5fbb146fafa1ec0350b20a7": {
     "nodeId": "72280:824",
-    "model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-    "caption": "The anatomy of a Textarea component in various states and configurations. The numbered callouts point to specific parts of the Textarea: 1 points to the Label, 3 points to the Text area where user input is entered, 2 points to the Character count/limit, 4 points to the Character count/limit in a different state, 5 points to the Hint text, and 6 points to the Info Button. The figure shows different states of the Textarea, including enabled, near limit, and limit reached, with corresponding messages and visual indicators. The character count/limit measurement indicates the number of characters entered by the user out of the allowed limit."
+    "model": "claude-code/claude-opus-5.5",
+    "caption": "Anatomy of the textarea in five examples. In the first, callout 1 points at the Label, 2 at the text area, 3 at the user input text \"Input\" and 4 at the character count \"0/100\". The second adds 5, the hint text below the label, and 6, the info button next to the label. The last three show the system feedback: 7a the info message \"Less than 20% of characters left\" at \"90/100\", 7b the warning \"Character limit reached\" at \"100/100\", and 7c the error \"System Feedback Message\" under a required field (\"Label *\") with a red border."
   }
 }

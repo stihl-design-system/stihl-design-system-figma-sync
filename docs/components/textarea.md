@@ -16,7 +16,7 @@ figmaNodeId: 4937:4402
 figmaVersion: "2426221821114730086"
 figmaVersionLabel: Version 1.2.14 | 26.11.2026 | CW45/Hochdruckreiniger
 figmaVersionCreatedAt: 2026-11-26T17:19:15Z
-syncedAt: 2026-11-27T09:25:53.673Z
+syncedAt: 2026-11-27T11:33:05.611Z
 sourceUrl: https://www.figma.com/design/qXldpLO6gxHJNLdcXIPxYt?node-id=4937-4402
 ---
 
@@ -30,7 +30,7 @@ Overview:
 
 ![Textarea](textarea/textarea-72280-392.png)
 
-_Figure: The Textarea component in a UI design system, showing its various states and sizes. It includes two sizes, "Size Medium" and "Size Small," and displays states such as "Default," "Hover," "Focus," "Near limit," "Limit reached," "Disabled," and "Read-only." The component features a label, an input field, and system feedback messages of types "error," "info," and "warning." The numbers indicate character counts, with "0/100," "90/100," and "100/100" representing the number of characters entered out of a 100-character limit. The "is invalid" text indicates an error state. The "Label \*" denotes a required field..._
+_Figure: Overview of the textarea in sizes "Size Medium" and "Size Small", each in the states Default, Hover (grey fill), Focus (thick black border), Near limit, Limit reached, Disabled (greyed text) and Read-only (grey fill, no border). Each has a Label, lorem ipsum hint text, an input area with resize handle and a counter. Near limit shows the info message "Less than 20% of characters left" with "90/100", Limit reached the warning "Character limit reached" with "100/100". Default and Focus also have an "is invalid" variant with the label "Label \*" and the error "System Feedback Message"; the invalid Default field has a red border._
 
 ### Further guidelines
 
@@ -58,7 +58,7 @@ Contribute to improving this component by sharing your feedback, asking question
 
 ![Anatomy](textarea/anatomy-72280-824.png)
 
-_Figure: The anatomy of a Textarea component in various states and configurations. The numbered callouts point to specific parts of the Textarea: 1 points to the Label, 3 points to the Text area where user input is entered, 2 points to the Character count/limit, 4 points to the Character count/limit in a different state, 5 points to the Hint text, and 6 points to the Info Button. The figure shows different states of the Textarea, including enabled, near limit, and limit reached, with corresponding messages and visual indicators. The character count/limit measurement indicates the number of characters entered by the user out of the allowed limit._
+_Figure: Anatomy of the textarea in five examples. In the first, callout 1 points at the Label, 2 at the text area, 3 at the user input text "Input" and 4 at the character count "0/100". The second adds 5, the hint text below the label, and 6, the info button next to the label. The last three show the system feedback: 7a the info message "Less than 20% of characters left" at "90/100", 7b the warning "Character limit reached" at "100/100", and 7c the error "System Feedback Message" under a required field ("Label \*") with a red border._
 
 ### Sizing
 
@@ -129,7 +129,7 @@ When reaching the maximum number of usable characters, a warning message about t
 
 ![Character count](textarea/character-count-72280-698.png)
 
-_Figure: Four variants of a textarea component with different states and character count indicators. Each textarea has a label, an input field, a resize handle, and a character counter. Callout 1 points to a textarea with a character count of 57/100, callout 2 points to a textarea with a character count of 161/200 and an info message indicating less than 20% of characters left, callout 3 points to a textarea at the character limit of 100/100 with a warning message, and callout 4 points to an invalid textarea required field with a system feedback message and 0/100 character count. The character count measures the number of characters entered in the textarea._
+_Figure: Do example with four textareas, each with a resize handle. Callout 1 points at the counter "57/100" of a field with two lines of text; callout 2 at the info message "Less than 20% of characters left" of a field at "161/200"; callout 3 at the counter "100/100" of a full field with the warning "Character limit reached"; callout 4 at the error "System Feedback Message" of an empty required field ("Label \*") with a red border and the counter "0/100"._
 
 ### Scaling the area
 
@@ -148,7 +148,7 @@ The text area grows automatically in height when entering the input. **(1)** If 
 
 ![Scaling the area](textarea/scaling-the-area-72280-739.png)
 
-_Figure: A textarea component with a medium size, enabled state, and no validation errors. The component is labeled "Label" and includes a counter displaying the current character count out of the maximum allowed. Callout 1 points to the textarea in its initial state with minimal height, while callout 2 points to the textarea expanded to near its maximum height. The measurements 67/200 and 198/200 refer to the number of characters entered out of the maximum limit of 200 characters._
+_Figure: Two medium textareas with the label "Label" that grow automatically, without a resize handle. Callout 1 points at the field at its initial minimum height with two lines of text ("Lorem ipsum dolor sit, consectetur adipiscing elit. Lacus vel etiam|") and the counter "67/200"; callout 2 points at the field grown in height to six lines of text, near its maximum size, with the counter "198/200"._
 
 ### Overflow
 
@@ -156,4 +156,4 @@ More characters than max height requires a (native) scroll bar to be shown in th
 
 ![Overflow](textarea/overflow-72280-755.png)
 
-_Figure: A text-area-medium component with the label "Label" and a text input that has reached near its character limit, indicated by the counter showing "67/200". The text area includes a native scroll bar because the text exceeds the maximum height, and it is in an enabled state without any validation errors. The component also features a resize handle._
+_Figure: Medium textarea with the label "Label" and a resize handle, filled with six lines of Lorem ipsum text and the counter "67/200". The text is taller than the maximum height, so a native vertical scroll bar appears on the right inside the textarea._
