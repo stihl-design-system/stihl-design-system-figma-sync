@@ -21,6 +21,7 @@ interface ReviewRow {
   created_at: string;
   title: string;
   counts: string;
+  texts: number;
   total: number;
   status: ReviewStatus;
   finished_at: string | null;
@@ -30,13 +31,18 @@ interface ReviewRow {
 }
 
 const SUMMARY_COLUMNS = `r.id, r.created_at, r.title, r.counts, r.total, r.status, r.finished_at, r.finished_by,
+  (SELECT COUNT(*) FROM json_each(r.header, '$.texts')) AS texts,
   (SELECT COUNT(*) FROM decisions d WHERE d.review_id = r.id AND d.status = 'accepted') AS accepted,
   (SELECT COUNT(*) FROM decisions d WHERE d.review_id = r.id AND d.status = 'rejected') AS rejected`;
 
-/** Ids of the images of a review that take a decision */
-const DECIDABLE_IMAGES = `SELECT json_extract(image.value, '$.id')
+/** Ids of the images and text sections of a review that take a decision; texts live in the header */
+const DECIDABLE_ITEMS = `SELECT json_extract(image.value, '$.id')
   FROM review_images part, json_each(part.images) image
-  WHERE part.review_id = ?1 AND json_extract(image.value, '$.status') != 'renamed'`;
+  WHERE part.review_id = ?1 AND json_extract(image.value, '$.status') != 'renamed'
+  UNION ALL
+  SELECT json_extract(text.value, '$.id')
+  FROM reviews review, json_each(review.header, '$.texts') text
+  WHERE review.id = ?1`;
 
 function toSummary(row: ReviewRow): ReviewSummary {
   return {
@@ -47,6 +53,7 @@ function toSummary(row: ReviewRow): ReviewSummary {
     finishedAt: row.finished_at,
     finishedBy: row.finished_by,
     counts: JSON.parse(row.counts) as ReviewCounts,
+    texts: row.texts,
     total: row.total,
     accepted: row.accepted,
     rejected: row.rejected,
@@ -55,7 +62,7 @@ function toSummary(row: ReviewRow): ReviewSummary {
 
 /**
  * Stores a review. Publishing the same pair of commits again replaces the
- * images and keeps the decisions of the images that still exist.
+ * images and texts and keeps the decisions of the ones that still exist.
  */
 export async function saveReview(
   db: D1Database,
@@ -82,7 +89,7 @@ export async function saveReview(
         now,
         manifest.title,
         JSON.stringify(countImages(images)),
-        images.filter(needsDecision).length,
+        images.filter(needsDecision).length + (header.texts?.length ?? 0),
         JSON.stringify(header)
       ),
     db.prepare('DELETE FROM review_images WHERE review_id = ?1').bind(id),
@@ -105,7 +112,7 @@ export async function saveReview(
   statements.push(
     db
       .prepare(
-        `DELETE FROM decisions WHERE review_id = ?1 AND image_id NOT IN (${DECIDABLE_IMAGES})`
+        `DELETE FROM decisions WHERE review_id = ?1 AND image_id NOT IN (${DECIDABLE_ITEMS})`
       )
       .bind(id)
   );
@@ -213,7 +220,7 @@ export async function setDecisions(
         .prepare(
           `INSERT INTO decisions (review_id, image_id, status, comment, reviewer, updated_at)
            SELECT ?1, ids.value, ?2, ?3, ?4, ?5 FROM json_each(?6) ids
-           WHERE ids.value IN (${DECIDABLE_IMAGES})
+           WHERE ids.value IN (${DECIDABLE_ITEMS})
            ON CONFLICT (review_id, image_id) DO UPDATE SET status = excluded.status,
              comment = excluded.comment, reviewer = excluded.reviewer, updated_at = excluded.updated_at`
         )

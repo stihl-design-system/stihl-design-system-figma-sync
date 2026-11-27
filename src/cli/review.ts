@@ -5,7 +5,7 @@ import { loadConfig } from '../config.ts';
 import { buildReview } from '../review/buildReview.ts';
 import { createGitReader } from '../review/git.ts';
 import {
-  describeCounts,
+  describeChanges,
   needsDecision,
   type ReviewManifest,
 } from '../../review/shared/manifest.ts';
@@ -95,9 +95,9 @@ async function publish(
 }
 
 /**
- * Compares the documentation images of two commits and, with --publish,
- * creates the review on the review page. Exit code 0 also when nothing
- * visible changed; `changes` in the step outputs tells the workflow.
+ * Compares the documentation images and texts of two commits and, with
+ * --publish, creates the review on the review page. Exit code 0 also when
+ * nothing changed; `changes` in the step outputs tells the workflow.
  */
 async function main(): Promise<void> {
   loadEnv();
@@ -115,8 +115,9 @@ async function main(): Promise<void> {
     repository: repositoryName(),
     log: console.log,
   });
-  const changes = manifest.images.filter(needsDecision).length;
-  const counts = describeCounts(manifest.counts);
+  const texts = manifest.texts?.length ?? 0;
+  const changes = manifest.images.filter(needsDecision).length + texts;
+  const counts = describeChanges(manifest.counts, texts);
   console.log(`${manifest.title}: ${counts}`);
 
   mkdirSync(dirname(args.out), { recursive: true });
@@ -125,7 +126,9 @@ async function main(): Promise<void> {
 
   let published: PublishedReview | undefined;
   if (changes === 0) {
-    console.log('No visible changes, no review needed');
+    console.log(
+      'No visible image changes and no text changes, no review needed'
+    );
   } else if (args.publish) {
     const url = args.url ?? process.env.REVIEW_URL;
     if (!url) {
@@ -160,7 +163,7 @@ async function main(): Promise<void> {
         published
           ? `Review: ${published.url}`
           : changes === 0
-            ? 'No visible changes, no review was created.'
+            ? 'No visible image changes and no text changes, no review was created.'
             : 'Not published.',
         '',
       ].join('\n')

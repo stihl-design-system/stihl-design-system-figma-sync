@@ -1,0 +1,29 @@
+@use '@stihl-design-system/components/styles/scss/ds';
+
+.decision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: ds.$spacing-12 ds.$spacing-24;
+  align-items: center;
+  justify-content: space-between;
+  padding: ds.$spacing-12 ds.$spacing-24;
+  border-top: ds.$border-width-1 solid ds.$theme-light-border-color-tertiary;
+}
+
+.pager,
+.verdict {
+  display: flex;
+  gap: ds.$spacing-12;
+  align-items: center;
+}
+
+.verdict {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.verdictText {
+  max-width: 48ch;
+  overflow-wrap: anywhere;
+}

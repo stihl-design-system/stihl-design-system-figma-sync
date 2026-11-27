@@ -13,16 +13,14 @@ import {
   DSTextUtility,
 } from '@stihl-design-system/components';
 import classNames from 'classnames';
-import { Fragment, useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import type {
-  Decision,
   ReviewDocument,
   ReviewImage,
   ReviewManifest,
 } from '../../../shared/manifest.ts';
-import { diffWords, type DiffPart } from '../../../shared/textDiff.ts';
 import {
-  formatDate,
+  documentVersions,
   formatShare,
   IMAGE_STATUS_LABEL,
   imageTitle,
@@ -32,7 +30,9 @@ import { useComparison } from '../lib/useComparison.ts';
 import { useStored } from '../lib/useStored.ts';
 import { useViewport } from '../lib/useViewport.ts';
 import { CompareStage, type Blink, type View } from './CompareStage.tsx';
-import styles from './ImageViewer.module.scss';
+import { DecisionBar, type DecisionBarProps } from './DecisionBar.tsx';
+import { TextComparison } from './TextComparison.tsx';
+import styles from './Viewer.module.scss';
 
 const VIEWS: { label: string; value: View }[] = [
   { label: 'Side by side', value: 'side' },
@@ -52,42 +52,24 @@ const SHORTCUTS: [keys: string, action: string][] = [
   ['0', 'Fit the image'],
 ];
 
-interface ImageViewerProps {
+interface ImageViewerProps extends Omit<DecisionBarProps, 'noDecision'> {
   manifest: ReviewManifest;
   image: ReviewImage;
   document: ReviewDocument | undefined;
-  decision: Decision | undefined;
-  /** The review is finished, decisions cannot change */
-  locked: boolean;
-  /** Position in the list the sidebar shows */
-  position: { index: number; total: number };
-  busy: boolean;
-  onPrevious: () => void;
-  onNext: () => void;
-  onAccept: () => void;
-  onReject: () => void;
-  onUndo: () => void;
 }
 
 export function ImageViewer({
   manifest,
   image,
   document,
-  decision,
-  locked,
-  position,
-  busy,
-  onPrevious,
-  onNext,
-  onAccept,
-  onReject,
-  onUndo,
+  ...decisionBar
 }: ImageViewerProps) {
   const comparison = useComparison(image, manifest.base.sha, manifest.head.sha);
   const viewport = useViewport(comparison.width, comparison.height, image.id);
   const [view, setView] = useStored<View>('review.view', 'side');
   const [highlight, setHighlight] = useStored('review.highlight', true);
   const [captionOpen, setCaptionOpen] = useStored('review.captionOpen', true);
+  const [sectionOpen, setSectionOpen] = useStored('review.sectionOpen', false);
   const [opacity, setOpacity] = useState(50);
   const [swipe, setSwipe] = useState(0.5);
   const [blink, setBlink] = useState<Blink>(null);
@@ -158,21 +140,17 @@ export function ImageViewer({
   ]);
 
   const side = image.after ?? image.before;
-  const beforeCaption = image.before?.caption;
-  const afterCaption = image.after?.caption;
-  const captionDiff = useMemo(
-    () =>
-      beforeCaption && afterCaption && beforeCaption !== afterCaption
-        ? diffWords(beforeCaption, afterCaption)
-        : null,
-    [beforeCaption, afterCaption]
+  const captionChanged = Boolean(
+    image.before?.caption &&
+    image.after?.caption &&
+    image.before.caption !== image.after.caption
   );
-  const versions = [document?.before, document?.after]
-    .filter((version) => version !== undefined)
-    .map(
-      (version) =>
-        `${version.label || 'Unnamed version'} (${formatDate(version.createdAt)})`
-    );
+  const sectionChanged = Boolean(
+    image.before &&
+    image.after &&
+    image.before.sectionText !== image.after.sectionText
+  );
+  const versions = documentVersions(document);
 
   return (
     <section className={styles.viewer} aria-labelledby='image-title'>
@@ -180,7 +158,7 @@ export function ImageViewer({
         <div className={styles.titles}>
           <DSTextUtility size='small'>
             {document?.title ?? image.documentKey}
-            {versions.length > 0 && `, ${[...new Set(versions)].join(' → ')}`}
+            {versions && `, ${versions}`}
           </DSTextUtility>
           <DSHeading tag='h1' size='small' id='image-title'>
             {imageTitle(image)}
@@ -356,10 +334,9 @@ export function ImageViewer({
 
       {side?.caption && (
         <div
-          className={classNames(
-            styles.caption,
-            captionDiff && styles.captionCompared
-          )}
+          className={classNames(styles.caption, {
+            [styles.wide as string]: captionChanged,
+          })}
         >
           <DSAccordion
             size='x-small'
@@ -367,140 +344,64 @@ export function ImageViewer({
             isOpen={captionOpen}
             onToggle={(event) => setCaptionOpen(event.currentTarget.open)}
             summary={
-              captionDiff
+              captionChanged
                 ? 'Figure description (changed)'
                 : 'Figure description'
             }
           >
-            {captionDiff ? (
-              <div className={styles.captionVersions}>
-                <CaptionVersion
-                  label='Before'
-                  parts={captionDiff.before}
-                  Mark='del'
+            <div className={styles.captionContent}>
+              {captionChanged ? (
+                <TextComparison
+                  before={image.before?.caption}
+                  after={image.after?.caption}
                 />
-                <CaptionVersion
-                  label='After'
-                  parts={captionDiff.after}
-                  Mark='ins'
-                />
-              </div>
-            ) : (
-              <DSText size='small'>{side.caption}</DSText>
-            )}
+              ) : (
+                <DSText size='small'>{side.caption}</DSText>
+              )}
+            </div>
           </DSAccordion>
         </div>
       )}
 
-      <footer className={styles.decision}>
-        <div className={styles.pager}>
-          <DSButtonRound
-            iconName='chevron-left'
-            tooltip='Previous image (K)'
-            onClick={onPrevious}
+      {side?.sectionText && (
+        <div
+          className={classNames(styles.caption, {
+            [styles.wide as string]: sectionChanged,
+          })}
+        >
+          {/* Context for the figure, closed by default: the text is reviewed as its own entry */}
+          <DSAccordion
+            size='x-small'
+            isFlush
+            isOpen={sectionOpen}
+            onToggle={(event) => setSectionOpen(event.currentTarget.open)}
+            summary={sectionChanged ? 'Section text (changed)' : 'Section text'}
           >
-            Previous image
-          </DSButtonRound>
-          <DSTextUtility size='small'>
-            {position.index >= 0
-              ? `${position.index + 1} of ${position.total}`
-              : `${position.total} in the list`}
-          </DSTextUtility>
-          <DSButtonRound
-            iconName='chevron-right'
-            tooltip='Next image (J)'
-            onClick={onNext}
-          >
-            Next image
-          </DSButtonRound>
-        </div>
-        <div className={styles.verdict}>
-          {image.status === 'renamed' ? (
-            <DSText size='small'>
-              Only the file name changed, the image is identical. No decision
-              needed.
-            </DSText>
-          ) : decision ? (
-            <>
-              <DSFlag
-                color={
-                  decision.status === 'accepted'
-                    ? 'status-positive'
-                    : 'status-negative'
-                }
-              >
-                {decision.status === 'accepted' ? 'Accepted' : 'Rejected'}
-              </DSFlag>
-              <DSText size='small' className={styles.verdictText}>
-                {decision.reviewer}, {formatDate(decision.updatedAt)}
-                {decision.comment && `: “${decision.comment}”`}
-              </DSText>
-              {!locked && (
-                <DSButton
-                  type='button'
-                  variant='ghost'
-                  size='small'
-                  loading={busy}
-                  onClick={onUndo}
-                >
-                  Undo
-                </DSButton>
+            <div className={styles.captionContent}>
+              {sectionChanged ? (
+                <TextComparison
+                  before={image.before?.sectionText}
+                  after={image.after?.sectionText}
+                  preserveLines
+                />
+              ) : (
+                <DSText size='small' className={styles.sectionText}>
+                  {side.sectionText}
+                </DSText>
               )}
-            </>
-          ) : locked ? (
-            <DSText size='small'>No decision was recorded.</DSText>
-          ) : (
-            <>
-              <DSButton
-                type='button'
-                variant='outline'
-                iconName='cross'
-                tooltip='Reject (R)'
-                onClick={onReject}
-              >
-                Reject
-              </DSButton>
-              <DSButton
-                type='button'
-                iconName='check'
-                tooltip='Accept (A)'
-                loading={busy}
-                onClick={onAccept}
-              >
-                Accept
-              </DSButton>
-            </>
-          )}
+            </div>
+          </DSAccordion>
         </div>
-      </footer>
+      )}
+
+      <DecisionBar
+        {...decisionBar}
+        noDecision={
+          image.status === 'renamed'
+            ? 'Only the file name changed, the image is identical. No decision needed.'
+            : undefined
+        }
+      />
     </section>
-  );
-}
-
-interface CaptionVersionProps {
-  label: string;
-  parts: DiffPart[];
-  /** `del` marks removed words in the previous text, `ins` new words in the next one */
-  Mark: 'del' | 'ins';
-}
-
-function CaptionVersion({ label, parts, Mark }: CaptionVersionProps) {
-  return (
-    <div className={styles.captionVersion}>
-      <DSTextUtility size='small' weight='bold'>
-        {label}
-      </DSTextUtility>
-      <DSText size='small'>
-        {parts.map((part, index) =>
-          part.changed ? (
-            <Mark key={index} className={styles[Mark]}>
-              {part.text}
-            </Mark>
-          ) : (
-            <Fragment key={index}>{part.text}</Fragment>
-          )
-        )}
-      </DSText>
-    </div>
   );
 }

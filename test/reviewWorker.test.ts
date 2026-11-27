@@ -351,7 +351,7 @@ describe('review worker', () => {
     });
     expect(early.status).toBe(409);
     expect(await early.json()).toEqual({
-      error: '1 images still need a decision',
+      error: '1 change still needs a decision',
     });
 
     await decide({
@@ -390,6 +390,53 @@ describe('review worker', () => {
       json: { reviewer: 'Grace' },
     });
     expect(await approved.json()).toMatchObject({ status: 'approved' });
+  });
+
+  it('counts, decides and announces text sections like images', async () => {
+    const text = {
+      id: 'components/button#Button › Usage',
+      documentKey: 'components/button',
+      status: 'changed',
+      before: { section: 'Button › Usage', text: 'Usage\n\nOld' },
+      after: { section: 'Button › Usage', text: 'Usage\n\nNew' },
+      position: 4,
+    };
+    await call('/api/reviews', {
+      json: { ...manifest([image('1-1', 'changed')]), texts: [text] },
+      headers: { authorization: `Bearer ${TOKEN}` },
+    });
+    expect(await detail()).toMatchObject({ total: 2, texts: 1 });
+
+    await decide({ imageIds: ['components/button/1-1'], status: 'accepted' });
+    const early = await call(`/api/reviews/${ID}/finish`, {
+      json: { reviewer: 'Ada' },
+    });
+    expect(early.status).toBe(409);
+
+    await decide({
+      imageIds: [text.id, 'components/button#Unknown'],
+      status: 'rejected',
+      comment: 'Wrong wording',
+    });
+    expect((await detail()).decisions.map((d) => d.imageId).sort()).toEqual([
+      text.id,
+      'components/button/1-1',
+    ]);
+
+    env.NOTIFY_WEBHOOK_URL = 'https://flow.example.com/hook';
+    const finished = await call(`/api/reviews/${ID}/finish`, {
+      json: { reviewer: 'Ada' },
+    });
+    expect(await finished.json()).toMatchObject({
+      status: 'changes_requested',
+    });
+    await Promise.all(background);
+    const sent = JSON.parse(String(upstream.mock.calls.at(-1)?.[1]?.body)) as {
+      text: string;
+    };
+    expect(sent.text).toContain(
+      `Rejected: Button: Button › Usage (Wrong wording) ${ORIGIN}/r/${ID}?item=components%2Fbutton%23Button%20%E2%80%BA%20Usage`
+    );
   });
 
   it('reads images of a commit from the configured repository only', async () => {
@@ -444,14 +491,14 @@ describe('review worker', () => {
       latestUrl: `${ORIGIN}/latest`,
     });
     expect(sent[0]?.body.text).toContain(
-      '1 changed, 1 added, 1 renamed in Button'
+      '1 changed, 1 added, 1 renamed images in Button'
     );
     expect(sent[1]?.body).toMatchObject({
       event: 'review_finished',
       subject: 'Design review needs changes: Components published',
     });
     expect(sent[1]?.body.text).toContain(
-      `Rejected: Button: Button › Section 2-2 (Wrong icon) ${ORIGIN}/r/${ID}?image=components%2Fbutton%2F2-2`
+      `Rejected: Button: Button › Section 2-2 (Wrong icon) ${ORIGIN}/r/${ID}?item=components%2Fbutton%2F2-2`
     );
     expect(JSON.stringify(sent[1]?.body.attachments)).toContain(
       'application/vnd.microsoft.card.adaptive'

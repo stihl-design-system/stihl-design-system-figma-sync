@@ -1,9 +1,11 @@
 import type {
   ImageStatus,
+  ReviewDocument,
   ReviewImage,
   ReviewStatus,
   ReviewSummary,
 } from '../../../shared/manifest.ts';
+import type { ReviewItem } from './items.ts';
 
 export const IMAGE_STATUS_LABEL: Record<ImageStatus, string> = {
   changed: 'Changed',
@@ -49,6 +51,38 @@ export function imageTitle(image: ReviewImage): string {
     side?.path.split('/').at(-1) ??
     image.id
   );
+}
+
+/** Last heading of the section, the page title for text above the first heading */
+export function itemTitle(
+  item: ReviewItem,
+  document?: Pick<ReviewDocument, 'title'>
+): string {
+  if (item.kind === 'image') {
+    return imageTitle(item.image);
+  }
+  const side = item.text.after ?? item.text.before;
+  return side?.section.split(' › ').at(-1) || document?.title || item.id;
+}
+
+/** "Text", "Text added" or "Text removed" */
+export function textLabel(status: ImageStatus): string {
+  return status === 'changed'
+    ? 'Text'
+    : `Text ${IMAGE_STATUS_LABEL[status].toLowerCase()}`;
+}
+
+/** Figma versions of a page, "label (date) → label (date)" */
+export function documentVersions(
+  document: Pick<ReviewDocument, 'before' | 'after'> | undefined
+): string {
+  const versions = [document?.before, document?.after]
+    .filter((version) => version !== undefined)
+    .map(
+      (version) =>
+        `${version.label || 'Unnamed version'} (${formatDate(version.createdAt)})`
+    );
+  return [...new Set(versions)].join(' → ');
 }
 
 export function undecided(review: ReviewSummary): number {

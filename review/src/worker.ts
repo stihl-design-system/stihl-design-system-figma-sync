@@ -40,6 +40,7 @@ const MAX_COMMENT_LENGTH = 2000;
 const MAX_NAME_LENGTH = 80;
 const MAX_IMAGES = 20_000;
 const IMAGE_STATUSES = ['changed', 'added', 'removed', 'renamed'];
+const TEXT_STATUSES = ['changed', 'added', 'removed'];
 
 /**
  * Favicon, touch icons and web manifest of the design system. Browsers request
@@ -101,7 +102,17 @@ function isManifest(value: unknown): value is ReviewManifest {
         typeof image.id === 'string' &&
         typeof image.documentKey === 'string' &&
         IMAGE_STATUSES.includes(String(image.status))
-    )
+    ) &&
+    (value.texts === undefined ||
+      (Array.isArray(value.texts) &&
+        value.texts.length <= MAX_IMAGES &&
+        value.texts.every(
+          (text) =>
+            isRecord(text) &&
+            typeof text.id === 'string' &&
+            typeof text.documentKey === 'string' &&
+            TEXT_STATUSES.includes(String(text.status))
+        )))
   );
 }
 
@@ -171,7 +182,7 @@ async function decide(
     imageIds.length > MAX_IMAGES ||
     !imageIds.every((imageId) => typeof imageId === 'string')
   ) {
-    return fail(400, 'imageIds must list at least one image');
+    return fail(400, 'imageIds must list at least one image or text section');
   }
   if (status !== null && status !== 'accepted' && status !== 'rejected') {
     return fail(400, 'status must be accepted, rejected or null');
@@ -232,7 +243,10 @@ async function finish(
     new Date().toISOString()
   );
   if (!summary) {
-    return fail(409, `${undecided} images still need a decision`);
+    return fail(
+      409,
+      `${undecided} ${undecided === 1 ? 'change still needs' : 'changes still need'} a decision`
+    );
   }
   notify(env, ctx, 'review_finished', id, origin);
   return json(summary);

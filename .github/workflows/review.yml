@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'docs/**/*.png'
+      # Text changes of the pages are reviewed too
+      - 'docs/**/*.md'
   workflow_dispatch:
     inputs:
       base:

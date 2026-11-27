@@ -1,0 +1,63 @@
+@use '@stihl-design-system/components/styles/scss/ds';
+
+// Split like the before and after panes of the image stage: two halves divided by the same line in
+// the middle, each text inset by the 24px padding of its container from the edges of its pane
+.versions {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: calc(2 * #{ds.$spacing-24} + #{ds.$spacing-2});
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: ds.$spacing-2;
+    background: ds.$theme-light-border-color-tertiary;
+    content: '';
+    transform: translateX(-50%);
+  }
+}
+
+.version {
+  display: flex;
+  flex-direction: column;
+  gap: ds.$spacing-4;
+  // Keeps lines readable on wide screens; the text still starts where its pane starts
+  max-width: 90ch;
+  color: ds.$theme-light-content-color-primary;
+}
+
+// Like a word diff in git: the column says removed or added, the colour repeats it
+.del,
+.ins {
+  padding-inline: 1px;
+  border-radius: ds.$radius-xs;
+  color: inherit;
+  text-decoration: none;
+  box-decoration-break: clone;
+}
+
+.del {
+  // The error background is much darker than the success one; halved it reads as light as the green
+  background: color-mix(
+    in srgb,
+    ds.$theme-light-background-color-feedback-error 50%,
+    ds.$theme-light-background-color-primary
+  );
+}
+
+.ins {
+  background: ds.$theme-light-background-color-feedback-success;
+}
+
+// Section texts keep their lists and paragraphs
+.lines .text {
+  white-space: pre-wrap;
+}
+
+.empty {
+  color: ds.$theme-light-content-color-secondary;
+  font-style: italic;
+}

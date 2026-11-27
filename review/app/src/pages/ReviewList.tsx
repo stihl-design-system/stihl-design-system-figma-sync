@@ -7,7 +7,7 @@ import {
 } from '@stihl-design-system/components';
 import { useEffect, useState } from 'react';
 import {
-  describeCounts,
+  describeChanges,
   type ReviewSummary,
 } from '../../../shared/manifest.ts';
 import { api } from '../api.ts';
@@ -22,8 +22,8 @@ function progress(review: ReviewSummary): string {
   }
   const remaining = undecided(review);
   return remaining === 0
-    ? 'All images decided, ready to finish'
-    : `${remaining} of ${review.total} images to decide`;
+    ? 'All changes decided, ready to finish'
+    : `${remaining} of ${review.total} changes to decide`;
 }
 
 export function ReviewList() {
@@ -81,7 +81,7 @@ export function ReviewList() {
                         : []),
                     ]}
                     flagListAriaLabel='Status'
-                    description={`${describeCounts(review.counts)}. ${progress(review)}.`}
+                    description={`${describeChanges(review.counts, review.texts)}. ${progress(review)}.`}
                     metaData={`Created ${formatDate(review.createdAt)}`}
                     onClick={(event) => {
                       if (!event.metaKey && !event.ctrlKey && !event.shiftKey) {

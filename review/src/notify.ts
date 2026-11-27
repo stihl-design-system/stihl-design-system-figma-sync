@@ -1,16 +1,16 @@
 import {
-  describeCounts,
+  describeChanges,
   type ReviewDetail,
   type ReviewSummary,
 } from '../shared/manifest.ts';
 
 const MAX_LISTED = 10;
 
-export interface RejectedImage {
+export interface RejectedChange {
   title: string;
   comment: string;
   reviewer: string;
-  /** The image on the review page */
+  /** The image or text section on the review page */
   url: string;
   figmaUrl?: string;
 }
@@ -24,7 +24,7 @@ export interface NotificationInput {
   versions: string[];
   url: string;
   latestUrl: string;
-  rejected: RejectedImage[];
+  rejected: RejectedChange[];
 }
 
 /**
@@ -77,7 +77,44 @@ export function describeReview(
   const { manifest, decisions, ...review } = detail;
   const url = `${origin}/r/${review.id}`;
   const documents = new Map(manifest.documents.map((d) => [d.key, d]));
-  const images = new Map(manifest.images.map((image) => [image.id, image]));
+  const items = new Map<
+    string,
+    { documentKey: string; section?: string; figmaUrl?: string }
+  >([
+    ...manifest.images.map(
+      (
+        image
+      ): [
+        string,
+        { documentKey: string; section?: string; figmaUrl?: string },
+      ] => {
+        const side = image.after ?? image.before;
+        return [
+          image.id,
+          {
+            documentKey: image.documentKey,
+            section: side?.section,
+            figmaUrl: side?.figmaUrl,
+          },
+        ];
+      }
+    ),
+    ...(manifest.texts ?? []).map(
+      (
+        text
+      ): [
+        string,
+        { documentKey: string; section?: string; figmaUrl?: string },
+      ] => [
+        text.id,
+        {
+          documentKey: text.documentKey,
+          section: (text.after ?? text.before)?.section,
+          figmaUrl: documents.get(text.documentKey)?.sourceUrl,
+        },
+      ]
+    ),
+  ]);
   return {
     review,
     documents: manifest.documents.map((document) => document.title),
@@ -96,15 +133,14 @@ export function describeReview(
     rejected: decisions
       .filter((decision) => decision.status === 'rejected')
       .map((decision) => {
-        const image = images.get(decision.imageId);
-        const side = image?.after ?? image?.before;
-        const document = documents.get(image?.documentKey ?? '')?.title;
+        const item = items.get(decision.imageId);
+        const document = documents.get(item?.documentKey ?? '')?.title;
         return {
-          title: [document, side?.section].filter(Boolean).join(': '),
+          title: [document, item?.section].filter(Boolean).join(': '),
           comment: decision.comment,
           reviewer: decision.reviewer,
-          url: `${url}?image=${encodeURIComponent(decision.imageId)}`,
-          figmaUrl: side?.figmaUrl,
+          url: `${url}?item=${encodeURIComponent(decision.imageId)}`,
+          figmaUrl: item?.figmaUrl,
         };
       }),
   };
@@ -116,16 +152,16 @@ export function buildNotification(input: NotificationInput): Notification {
   const result =
     review.status === 'approved'
       ? 'approved'
-      : `changes requested (${review.rejected} of ${review.total} images rejected)`;
+      : `changes requested (${review.rejected} of ${review.total} changes rejected)`;
   const subject = created
     ? `Design review: ${review.title}`
     : `Design review ${review.status === 'approved' ? 'approved' : 'needs changes'}: ${review.title}`;
   const summary = created
-    ? `A Figma documentation release changed images: ${describeCounts(review.counts)} in ${listed(input.documents)}. Please check whether every change was intended.`
+    ? `A Figma documentation release changed the documentation: ${describeChanges(review.counts, review.texts)} in ${listed(input.documents)}. Please check whether every change was intended.`
     : `The review was finished by ${review.finishedBy ?? 'unknown'}: ${result}.`;
 
   const facts = [
-    { title: 'Changes', value: describeCounts(review.counts) },
+    { title: 'Changes', value: describeChanges(review.counts, review.texts) },
     { title: 'Pages', value: listed(input.documents) },
     ...(input.versions.length > 0
       ? [{ title: 'Figma version', value: input.versions.join('; ') }]
@@ -141,7 +177,7 @@ export function buildNotification(input: NotificationInput): Notification {
       (image) =>
         `Rejected: ${image.title}${image.comment ? ` (${image.comment})` : ''} ${image.url}`
     ),
-    ...(hidden > 0 ? [`and ${hidden} more rejected images`] : []),
+    ...(hidden > 0 ? [`and ${hidden} more rejected changes`] : []),
     `Review: ${input.url}`,
   ].join('\n');
 
@@ -150,7 +186,7 @@ export function buildNotification(input: NotificationInput): Notification {
     `<ul>${facts.map((fact) => `<li><strong>${escapeHtml(fact.title)}:</strong> ${escapeHtml(fact.value)}</li>`).join('')}</ul>`,
     ...(shown.length > 0
       ? [
-          '<p><strong>Rejected images</strong></p>',
+          '<p><strong>Rejected changes</strong></p>',
           `<ul>${shown
             .map(
               (image) =>
@@ -198,7 +234,7 @@ export function buildNotification(input: NotificationInput): Notification {
                   {
                     type: 'TextBlock',
                     wrap: true,
-                    text: `and ${hidden} more rejected images`,
+                    text: `and ${hidden} more rejected changes`,
                   },
                 ]
               : []),

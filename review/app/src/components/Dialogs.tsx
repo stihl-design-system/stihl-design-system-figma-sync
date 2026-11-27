@@ -189,8 +189,8 @@ export function FinishDialog({
       <div className={styles.form}>
         <DSText>
           {rejected > 0
-            ? `${accepted} images accepted, ${rejected} rejected. The review closes with "Changes requested".`
-            : `All ${accepted} images accepted. The review closes as "Approved".`}
+            ? `${accepted} accepted, ${rejected} rejected. The review closes with "Changes requested".`
+            : `All ${accepted} changes accepted. The review closes as "Approved".`}
         </DSText>
         <DSText size='small'>
           The team is notified about the result. Decisions are locked until the
@@ -210,7 +210,7 @@ interface AcceptAllDialogProps {
   onClose: () => void;
 }
 
-/** Accepting several images at once skips looking at them, so it asks first */
+/** Accepting several changes at once skips looking at them, so it asks first */
 export function AcceptAllDialog({
   isOpen,
   count,
@@ -225,7 +225,7 @@ export function AcceptAllDialog({
       onClose={onClose}
       header={
         <DSHeading tag='h2' size='small'>
-          Accept {count} images in {documentTitle}?
+          Accept {count} changes in {documentTitle}?
         </DSHeading>
       }
       footer={
@@ -234,14 +234,14 @@ export function AcceptAllDialog({
             Cancel
           </DSButton>
           <DSButton type='button' loading={busy} onClick={onAccept}>
-            Accept {count} images
+            Accept {count} changes
           </DSButton>
         </div>
       }
     >
       <DSText>
-        All images of this page that have no decision yet are accepted without
-        opening them. Decisions you already made stay as they are.
+        All images and texts of this page that have no decision yet are accepted
+        without opening them. Decisions you already made stay as they are.
       </DSText>
     </DSDialog>
   );

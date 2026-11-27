@@ -10,6 +10,7 @@ import {
   type ReviewDocument,
   type ReviewImage,
   type ReviewManifest,
+  type ReviewText,
 } from '../../review/shared/manifest.ts';
 import {
   compareImage,
@@ -19,6 +20,13 @@ import {
   type ComparedImage,
   type ImageSize,
 } from './compareImages.ts';
+import {
+  compareSections,
+  parseSections,
+  sectionText,
+  unescapeText,
+  type Section,
+} from './compareTexts.ts';
 import type { GitReader } from './git.ts';
 
 export interface Figure {
@@ -27,10 +35,6 @@ export interface Figure {
   caption?: string;
   /** Position in the document, for reading order */
   order: number;
-}
-
-function unescapeText(text: string): string {
-  return text.replace(/\\([\\`*_[\]<>])/g, '$1');
 }
 
 export function parseFrontmatter(
@@ -80,6 +84,9 @@ export function parseFigures(
 interface DocumentSide {
   frontmatter: Partial<Frontmatter>;
   figures: Map<string, Figure>;
+  sections: Section[];
+  /** Figure path to the line it is on and the text of its section */
+  figureSections: Map<string, { line: number; text: string }>;
 }
 
 function versionInfo(
@@ -110,6 +117,7 @@ function imageSide(
     ...size,
     section: figure?.section,
     caption: figure?.caption,
+    sectionText: side?.figureSections.get(size.path)?.text || undefined,
     // Pinned to the version the image was exported from, so "previous" shows the old board
     figmaUrl:
       figmaFileKey && /^\d+-\d+$/.test(node)
@@ -142,7 +150,7 @@ export interface BuildReviewOptions {
   log?: (message: string) => void;
 }
 
-/** Compares the documentation images of two commits and describes every visible change */
+/** Compares the documentation images and texts of two commits and describes every change */
 export function buildReview(options: BuildReviewOptions): ReviewManifest {
   const { git, docsDir, log = () => undefined } = options;
   const base = git.commitInfo(options.base);
@@ -157,12 +165,22 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
     if (!sides.has(cacheKey)) {
       const path = `${docsDir}/${documentKey}.md`;
       const markdown = git.readText(commit, path);
+      const sections = markdown ? parseSections(markdown, path) : [];
       sides.set(
         cacheKey,
         markdown
           ? {
               frontmatter: parseFrontmatter(markdown) ?? {},
               figures: parseFigures(markdown, path),
+              sections,
+              figureSections: new Map(
+                sections.flatMap((section) =>
+                  section.figures.map(({ path: figure, line }) => [
+                    figure,
+                    { line, text: sectionText(section) },
+                  ])
+                )
+              ),
             }
           : undefined
       );
@@ -170,12 +188,10 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
     return sides.get(cacheKey);
   };
 
+  const baseFiles = git.listFiles(base.sha, docsDir);
+  const headFiles = git.listFiles(head.sha, docsDir);
   const pairs = pairMovedImages(
-    pairImages(
-      git.listFiles(base.sha, docsDir),
-      git.listFiles(head.sha, docsDir),
-      docsDir
-    ),
+    pairImages(baseFiles, headFiles, docsDir),
     docsDir,
     (path, side) => {
       const documentKey = parseImagePath(path, docsDir)?.documentKey ?? '';
@@ -203,15 +219,16 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
 
   const categoryOrder: string[] = Object.values(CATEGORY_DIRS);
   const documents = new Map<string, ReviewDocument>();
-  const images: (ReviewImage & { order: number })[] = [];
-  for (const image of compared) {
-    const before = documentSide(base.sha, image.documentKey);
-    const after = documentSide(head.sha, image.documentKey);
-    if (!documents.has(image.documentKey)) {
+  const addDocument = (
+    documentKey: string,
+    before: DocumentSide | undefined,
+    after: DocumentSide | undefined
+  ): void => {
+    if (!documents.has(documentKey)) {
       const frontmatter = after?.frontmatter ?? before?.frontmatter ?? {};
-      documents.set(image.documentKey, {
-        key: image.documentKey,
-        title: frontmatter.title ?? image.documentKey,
+      documents.set(documentKey, {
+        key: documentKey,
+        title: frontmatter.title ?? documentKey,
         category: frontmatter.category ?? '',
         figmaFile: frontmatter.figmaFile,
         sourceUrl: frontmatter.sourceUrl,
@@ -219,6 +236,47 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
         after: versionInfo(after?.frontmatter),
       });
     }
+  };
+
+  // Removed images and sections follow the ones that still exist
+  const REMOVED = 100_000;
+  const texts: ReviewText[] = [];
+  for (const documentKey of changedDocuments(baseFiles, headFiles, docsDir)) {
+    const before = documentSide(base.sha, documentKey);
+    const after = documentSide(head.sha, documentKey);
+    const changes = compareSections(
+      before?.sections ?? [],
+      after?.sections ?? []
+    );
+    if (changes.length > 0) {
+      addDocument(documentKey, before, after);
+    }
+    for (const { key, status, before: previous, after: next } of changes) {
+      texts.push({
+        id: `${documentKey}#${key}`,
+        documentKey,
+        status,
+        before: previous && { section: previous.section, text: previous.text },
+        after: next && { section: next.section, text: next.text },
+        position: next?.line ?? REMOVED + (previous?.line ?? 0),
+      });
+    }
+  }
+  if (texts.length > 0) {
+    log(`${texts.length} text sections changed`);
+  }
+
+  const images: (ReviewImage & { order: number })[] = [];
+  for (const image of compared) {
+    const before = documentSide(base.sha, image.documentKey);
+    const after = documentSide(head.sha, image.documentKey);
+    addDocument(image.documentKey, before, after);
+    const position =
+      (image.after && after?.figureSections.get(image.after.path)?.line) ??
+      REMOVED +
+        ((image.before &&
+          before?.figureSections.get(image.before.path)?.line) ??
+          0);
     const order =
       (image.after && after?.figures.get(image.after.path)?.order) ??
       // Removed figures follow the ones that still exist
@@ -232,6 +290,7 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
       before: imageSide(image.before, before, docsDir),
       after: imageSide(image.after, after, docsDir),
       diff: image.diff,
+      position,
       order,
     });
   }
@@ -250,11 +309,15 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
       a.order - b.order ||
       a.id.localeCompare(b.id)
   );
+  texts.sort(
+    (a, b) =>
+      (documentOrder.get(a.documentKey) ?? 0) -
+        (documentOrder.get(b.documentKey) ?? 0) || a.position - b.position
+  );
 
   const labels = new Set(
-    images
-      .filter(needsDecision)
-      .map((image) => documents.get(image.documentKey)?.after?.label)
+    [...images.filter(needsDecision), ...texts]
+      .map((item) => documents.get(item.documentKey)?.after?.label)
       .filter((label): label is string => Boolean(label))
   );
   return {
@@ -266,5 +329,27 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
     counts: countImages(images),
     documents: sortedDocuments,
     images: images.map(({ order: _order, ...image }) => image),
+    texts,
   };
+}
+
+/** Keys of the documentation pages whose Markdown differs between the two trees */
+function changedDocuments(
+  baseFiles: Map<string, string>,
+  headFiles: Map<string, string>,
+  docsDir: string
+): string[] {
+  const categories = new Set<string>(Object.values(CATEGORY_DIRS));
+  const keys = new Set<string>();
+  for (const path of new Set([...baseFiles.keys(), ...headFiles.keys()])) {
+    const match = path.match(/^(.+)\/([^/]+)\/([^/]+)\.md$/);
+    if (
+      match?.[1] === docsDir &&
+      categories.has(match[2] ?? '') &&
+      baseFiles.get(path) !== headFiles.get(path)
+    ) {
+      keys.add(`${match[2]}/${match[3]}`);
+    }
+  }
+  return [...keys];
 }

@@ -10,7 +10,6 @@ import {
   type Decision,
   type DecisionStatus,
   type ReviewDetail,
-  type ReviewImage,
 } from '../../../shared/manifest.ts';
 import { api } from '../api.ts';
 import {
@@ -20,7 +19,9 @@ import {
 } from '../components/Dialogs.tsx';
 import { ImageViewer } from '../components/ImageViewer.tsx';
 import { Sidebar, type Filters } from '../components/Sidebar.tsx';
-import { imageTitle, undecided } from '../lib/format.ts';
+import { TextViewer } from '../components/TextViewer.tsx';
+import { itemTitle, undecided } from '../lib/format.ts';
+import { reviewItems, type ReviewItem } from '../lib/items.ts';
 import { ignoresShortcuts } from '../lib/shortcuts.ts';
 import { useReviewer } from '../lib/reviewer.tsx';
 import { preload } from '../lib/useComparison.ts';
@@ -60,6 +61,7 @@ export function ReviewPage({
   const [filters, setFilters] = useState<Filters>({
     decisions: [],
     statuses: [],
+    kinds: [],
   });
   const { name: reviewer, withName } = useReviewer();
   const [busy, setBusy] = useState(false);
@@ -89,7 +91,10 @@ export function ReviewPage({
     document.addEventListener('visibilitychange', onVisible);
     return () => document.removeEventListener('visibilitychange', onVisible);
   }, [load]);
-  const images = useMemo(() => review?.manifest.images ?? [], [review]);
+  const items = useMemo(
+    () => (review ? reviewItems(review.manifest) : []),
+    [review]
+  );
   const decisions = useMemo(
     () =>
       new Map(
@@ -102,44 +107,44 @@ export function ReviewPage({
   );
   const filtered = useMemo(
     () =>
-      images.filter(
-        (image) =>
+      items.filter(
+        (item) =>
+          (filters.kinds.length === 0 || filters.kinds.includes(item.kind)) &&
           (filters.statuses.length === 0 ||
-            filters.statuses.includes(image.status)) &&
+            filters.statuses.includes(item.status)) &&
           (filters.decisions.length === 0 ||
-            (needsDecision(image) &&
+            (needsDecision(item) &&
               filters.decisions.includes(
-                decisions.get(image.id)?.status ?? 'open'
+                decisions.get(item.id)?.status ?? 'open'
               )))
       ),
-    [images, decisions, filters]
+    [items, decisions, filters]
   );
 
-  const isOpenImage = useCallback(
-    (image: ReviewImage) => needsDecision(image) && !decisions.has(image.id),
+  const isOpenItem = useCallback(
+    (item: ReviewItem) => needsDecision(item) && !decisions.has(item.id),
     [decisions]
   );
-  const requested = query.get('image');
+  // `image` is the parameter of links from before text changes were reviewed
+  const requested = query.get('item') ?? query.get('image');
   const selected =
-    images.find((image) => image.id === requested) ??
-    images.find(isOpenImage) ??
-    images[0];
+    items.find((item) => item.id === requested) ??
+    items.find(isOpenItem) ??
+    items[0];
   const index = selected
-    ? filtered.findIndex((image) => image.id === selected.id)
+    ? filtered.findIndex((item) => item.id === selected.id)
     : -1;
   const locked = review ? review.status !== 'open' : true;
-  // Specific to general: image, page of the documentation, review
-  usePageTitle(
-    selected && imageTitle(selected),
-    review?.manifest.documents.find(
-      (entry) => entry.key === selected?.documentKey
-    )?.title,
-    review?.title
+  const selectedDocument = review?.manifest.documents.find(
+    (entry) => entry.key === selected?.documentKey
   );
+  const selectedTitle = selected && itemTitle(selected, selectedDocument);
+  // Specific to general: image or text, page of the documentation, review
+  usePageTitle(selectedTitle, selectedDocument?.title, review?.title);
 
   const select = useCallback(
-    (imageId: string) => {
-      navigate(`/r/${id}?image=${encodeURIComponent(imageId)}`, true);
+    (itemId: string) => {
+      navigate(`/r/${id}?item=${encodeURIComponent(itemId)}`, true);
     },
     [id]
   );
@@ -156,12 +161,9 @@ export function ReviewPage({
     [filtered, index, select]
   );
   useEffect(() => {
-    if (review) {
-      preload(
-        filtered[index + 1],
-        review.manifest.base.sha,
-        review.manifest.head.sha
-      );
+    const next = filtered[index + 1];
+    if (review && next?.kind === 'image') {
+      preload(next.image, review.manifest.base.sha, review.manifest.head.sha);
     }
   }, [review, filtered, index]);
 
@@ -196,17 +198,17 @@ export function ReviewPage({
     [id, load, queueDSToastMessage]
   );
 
-  /** Moves on to the next image that still needs a decision, if the list has one */
+  /** Moves on to the next image or text that still needs a decision, if the list has one */
   const advance = useCallback(() => {
     const next =
-      filtered.slice(index + 1).find(isOpenImage) ??
-      filtered.slice(0, Math.max(index, 0)).find(isOpenImage);
+      filtered.slice(index + 1).find(isOpenItem) ??
+      filtered.slice(0, Math.max(index, 0)).find(isOpenItem);
     if (next) {
       select(next.id);
     }
-  }, [filtered, index, isOpenImage, select]);
+  }, [filtered, index, isOpenItem, select]);
 
-  const canDecide = Boolean(selected && isOpenImage(selected) && !locked);
+  const canDecide = Boolean(selected && isOpenItem(selected) && !locked);
   const accept = useCallback(() => {
     if (!selected || !canDecide) {
       return;
@@ -262,16 +264,29 @@ export function ReviewPage({
   }
 
   const remaining = undecided(review);
+  const decisionBar = selected && {
+    decision: decisions.get(selected.id),
+    locked,
+    position: { index, total: filtered.length },
+    busy,
+    onPrevious: () => step(-1),
+    onNext: () => step(1),
+    onAccept: accept,
+    onReject: reject,
+    onUndo: () =>
+      withName((name) => void decide([selected.id], null, '', name)),
+  };
   const sidebar = (
     <Sidebar
       review={review}
-      images={filtered}
+      items={items}
+      listed={filtered}
       decisions={decisions}
       selectedId={selected?.id}
       filters={filters}
       onFilter={setFilters}
-      onSelect={(imageId) => {
-        select(imageId);
+      onSelect={(itemId) => {
+        select(itemId);
         onCloseMenu();
       }}
       onAcceptAll={(imageIds, documentTitle) =>
@@ -298,7 +313,7 @@ export function ReviewPage({
         if (remaining > 0) {
           setFilters({ ...filters, decisions: ['open'] });
           queueDSToastMessage(
-            `${remaining} ${remaining === 1 ? 'image still needs' : 'images still need'} a decision. The list now shows them.`,
+            `${remaining} ${remaining === 1 ? 'change still needs' : 'changes still need'} a decision. The list now shows them.`,
             { variant: 'warning' }
           );
         } else {
@@ -330,30 +345,28 @@ export function ReviewPage({
         sidebar
       )}
       <main id='main' className={styles.main}>
-        {selected ? (
-          <ImageViewer
-            key={selected.id}
-            manifest={review.manifest}
-            image={selected}
-            document={review.manifest.documents.find(
-              (document) => document.key === selected.documentKey
-            )}
-            decision={decisions.get(selected.id)}
-            locked={locked}
-            position={{ index, total: filtered.length }}
-            busy={busy}
-            onPrevious={() => step(-1)}
-            onNext={() => step(1)}
-            onAccept={accept}
-            onReject={reject}
-            onUndo={() =>
-              withName((name) => void decide([selected.id], null, '', name))
-            }
-          />
+        {selected && decisionBar ? (
+          selected.kind === 'image' ? (
+            <ImageViewer
+              key={selected.id}
+              manifest={review.manifest}
+              image={selected.image}
+              document={selectedDocument}
+              {...decisionBar}
+            />
+          ) : (
+            <TextViewer
+              key={selected.id}
+              text={selected.text}
+              title={selectedTitle ?? ''}
+              document={selectedDocument}
+              {...decisionBar}
+            />
+          )
         ) : (
           <div className={styles.message}>
             <DSNotification variant='info'>
-              This review has no images.
+              This review has no changes.
             </DSNotification>
           </div>
         )}
@@ -361,7 +374,7 @@ export function ReviewPage({
 
       <RejectDialog
         isOpen={dialog === 'reject'}
-        subject={selected ? imageTitle(selected) : ''}
+        subject={selectedTitle ?? ''}
         onClose={() => setDialog(null)}
         onReject={(comment) => {
           setDialog(null);

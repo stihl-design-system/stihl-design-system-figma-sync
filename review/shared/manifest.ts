@@ -13,6 +13,8 @@ export interface ImageSide {
   caption?: string;
   /** The node in Figma at the version this side was exported from */
   figmaUrl?: string;
+  /** Text of the section the figure sits in, as a text change shows it */
+  sectionText?: string;
 }
 
 export interface ImageDiff {
@@ -31,6 +33,30 @@ export interface ReviewImage {
   before?: ImageSide;
   after?: ImageSide;
   diff?: ImageDiff;
+  /** Reading order within the document, shared with the text changes */
+  position?: number;
+}
+
+/** A renamed heading is a change of the text, so texts are never only renamed */
+export type TextStatus = Exclude<ImageStatus, 'renamed'>;
+
+export interface TextSide {
+  /** Heading trail, for example "Button › Formatting" */
+  section: string;
+  /** Heading and body as plain text: links as "text (url)", no figures or captions */
+  text: string;
+}
+
+/** A section of a page whose text designers changed in Figma */
+export interface ReviewText {
+  /** `<category dir>/<document id>#<heading trail>` */
+  id: string;
+  documentKey: string;
+  status: TextStatus;
+  before?: TextSide;
+  after?: TextSide;
+  /** Reading order within the document, shared with the images */
+  position: number;
 }
 
 export interface FigmaVersionInfo {
@@ -69,11 +95,14 @@ export interface ReviewManifest {
   counts: ReviewCounts;
   documents: ReviewDocument[];
   images: ReviewImage[];
+  /** Changed text sections; reviews created before text changes were compared have none */
+  texts?: ReviewText[];
 }
 
 export type DecisionStatus = 'accepted' | 'rejected';
 
 export interface Decision {
+  /** Id of the image or the text section */
   imageId: string;
   status: DecisionStatus;
   comment: string;
@@ -91,7 +120,9 @@ export interface ReviewSummary {
   finishedAt: string | null;
   finishedBy: string | null;
   counts: ReviewCounts;
-  /** Images that need a decision (everything but renamed) */
+  /** Text sections that changed */
+  texts: number;
+  /** Images and text sections that need a decision (everything but renamed images) */
   total: number;
   accepted: number;
   rejected: number;
@@ -118,6 +149,20 @@ export function countImages(
     counts[image.status]++;
   }
   return counts;
+}
+
+/** Images and text sections, for example "2 changed, 1 added images; 3 text sections" */
+export function describeChanges(counts: ReviewCounts, texts: number): string {
+  const images = (['changed', 'added', 'removed', 'renamed'] as const).some(
+    (status) => counts[status] > 0
+  )
+    ? `${describeCounts(counts)} ${Object.values(counts).reduce((sum, count) => sum + count, 0) === 1 ? 'image' : 'images'}`
+    : '';
+  const sections =
+    texts > 0
+      ? `${texts} ${texts === 1 ? 'text section' : 'text sections'}`
+      : '';
+  return [images, sections].filter(Boolean).join('; ') || 'no changes';
 }
 
 export function describeCounts(counts: ReviewCounts): string {

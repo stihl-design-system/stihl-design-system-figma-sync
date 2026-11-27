@@ -17,15 +17,16 @@ import {
   type DecisionStatus,
   type ImageStatus,
   type ReviewDetail,
-  type ReviewImage,
 } from '../../../shared/manifest.ts';
 import {
   formatDate,
   IMAGE_STATUS_LABEL,
-  imageTitle,
+  itemTitle,
   REVIEW_STATUS,
+  textLabel,
   undecided,
 } from '../lib/format.ts';
+import type { ItemKind, ReviewItem } from '../lib/items.ts';
 import styles from './Sidebar.module.scss';
 
 export type DecisionFilter = DecisionStatus | 'open';
@@ -33,6 +34,7 @@ export type DecisionFilter = DecisionStatus | 'open';
 export interface Filters {
   decisions: DecisionFilter[];
   statuses: ImageStatus[];
+  kinds: ItemKind[];
 }
 
 const DECISION_FILTERS: { id: DecisionFilter; label: string }[] = [
@@ -43,26 +45,33 @@ const DECISION_FILTERS: { id: DecisionFilter; label: string }[] = [
 
 const STATUSES: ImageStatus[] = ['changed', 'added', 'removed', 'renamed'];
 
+const KINDS: { id: ItemKind; label: string }[] = [
+  { id: 'image', label: 'Images' },
+  { id: 'text', label: 'Texts' },
+];
+
 function decisionState(
-  image: ReviewImage,
+  item: ReviewItem,
   decisions: Map<string, Decision>
 ): { icon: React.ComponentProps<typeof DSIcon>['name']; label: string } {
-  const status = decisions.get(image.id)?.status;
+  const status = decisions.get(item.id)?.status;
   if (status === 'accepted') {
     return { icon: 'circle-check-colored', label: 'Accepted' };
   }
   if (status === 'rejected') {
     return { icon: 'diamond-exclamationmark-colored', label: 'Rejected' };
   }
-  return needsDecision(image)
+  return needsDecision(item)
     ? { icon: 'circle-stroke', label: 'To decide' }
     : { icon: 'minus', label: 'No decision needed' };
 }
 
 interface SidebarProps {
   review: ReviewDetail;
-  /** The images the filters leave, in review order */
-  images: ReviewImage[];
+  /** All images and texts of the review, in reading order */
+  items: ReviewItem[];
+  /** The ones the filters leave */
+  listed: ReviewItem[];
   decisions: Map<string, Decision>;
   selectedId: string | undefined;
   filters: Filters;
@@ -79,7 +88,8 @@ interface SidebarProps {
 
 export function Sidebar({
   review,
-  images,
+  items,
+  listed,
   decisions,
   selectedId,
   filters,
@@ -95,8 +105,8 @@ export function Sidebar({
   const { manifest } = review;
   const locked = review.status !== 'open';
   const remaining = undecided(review);
-  const selectedDocument = manifest.images.find(
-    (image) => image.id === selectedId
+  const selectedDocument = items.find(
+    (item) => item.id === selectedId
   )?.documentKey;
   const [open, setOpen] = useState<Set<string>>(
     () => new Set(selectedDocument ? [selectedDocument] : [])
@@ -118,14 +128,17 @@ export function Sidebar({
   }, [selectedId, open]);
 
   const count = (filter: DecisionFilter): number =>
-    manifest.images.filter(
-      (image) =>
-        needsDecision(image) &&
-        (decisions.get(image.id)?.status ?? 'open') === filter
+    items.filter(
+      (item) =>
+        needsDecision(item) &&
+        (decisions.get(item.id)?.status ?? 'open') === filter
     ).length;
-  const presentStatuses = STATUSES.filter(
-    (status) => manifest.counts[status] > 0
-  );
+  const statusCount = (status: ImageStatus): number =>
+    items.filter((item) => item.status === status).length;
+  const presentStatuses = STATUSES.filter((status) => statusCount(status) > 0);
+  const kindCount = (kind: ItemKind): number =>
+    items.filter((item) => item.kind === kind).length;
+  const presentKinds = KINDS.filter(({ id }) => kindCount(id) > 0);
 
   return (
     <aside className={styles.sidebar} aria-label='Review overview'>
@@ -140,7 +153,7 @@ export function Sidebar({
           <progress
             max={review.total}
             value={review.total - remaining}
-            aria-label='Decided images'
+            aria-label='Decided changes'
           />
           <DSTextUtility size='small'>
             {review.total - remaining} of {review.total} decided
@@ -170,6 +183,28 @@ export function Sidebar({
             })
           }
         />
+        {presentKinds.length > 1 && (
+          <DSChipGroup
+            id='filter-kind'
+            label='Content'
+            size='small'
+            selectionMode='multiple'
+            disableTooltips
+            chips={presentKinds.map(({ id, label }) => ({
+              id,
+              label: `${label} (${kindCount(id)})`,
+              isSelected: filters.kinds.includes(id),
+            }))}
+            onChipsChange={(chips) =>
+              onFilter({
+                ...filters,
+                kinds: chips
+                  .filter((chip) => chip.isSelected)
+                  .map((chip) => chip.id as ItemKind),
+              })
+            }
+          />
+        )}
         {presentStatuses.length > 1 && (
           <DSChipGroup
             id='filter-status'
@@ -179,7 +214,7 @@ export function Sidebar({
             disableTooltips
             chips={presentStatuses.map((status) => ({
               id: status,
-              label: `${IMAGE_STATUS_LABEL[status]} (${manifest.counts[status]})`,
+              label: `${IMAGE_STATUS_LABEL[status]} (${statusCount(status)})`,
               isSelected: filters.statuses.includes(status),
             }))}
             onChipsChange={(chips) =>
@@ -194,22 +229,22 @@ export function Sidebar({
         )}
       </div>
 
-      <nav className={styles.documents} aria-label='Changed images by page'>
-        {images.length === 0 && (
+      <nav className={styles.documents} aria-label='Changes by page'>
+        {listed.length === 0 && (
           <DSText size='small' className={styles.empty}>
-            No image matches the filters.
+            No change matches the filters.
           </DSText>
         )}
         {manifest.documents.map((document) => {
-          const listed = images.filter(
-            (image) => image.documentKey === document.key
+          const inDocument = listed.filter(
+            (item) => item.documentKey === document.key
           );
-          if (listed.length === 0) {
+          if (inDocument.length === 0) {
             return null;
           }
-          const toDecide = listed
-            .filter((image) => needsDecision(image) && !decisions.has(image.id))
-            .map((image) => image.id);
+          const toDecide = inDocument
+            .filter((item) => needsDecision(item) && !decisions.has(item.id))
+            .map((item) => item.id);
           const isOpen = open.has(document.key);
           return (
             <DSAccordion
@@ -223,7 +258,7 @@ export function Sidebar({
               numberIndicatorValue={
                 toDecide.length > 0 ? String(toDecide.length) : undefined
               }
-              numberIndicatorAriaLabel='images to decide'
+              numberIndicatorAriaLabel='changes to decide'
               isOpen={isOpen}
               onToggle={(event) => {
                 const next = new Set(open);
@@ -250,11 +285,11 @@ export function Sidebar({
                     </DSButton>
                   )}
                   <ul className={styles.images}>
-                    {listed.map((image) => {
-                      const state = decisionState(image, decisions);
-                      const selected = image.id === selectedId;
+                    {inDocument.map((item) => {
+                      const state = decisionState(item, decisions);
+                      const selected = item.id === selectedId;
                       return (
-                        <li key={image.id}>
+                        <li key={item.id}>
                           <button
                             type='button'
                             ref={selected ? selectedRow : undefined}
@@ -262,7 +297,7 @@ export function Sidebar({
                               [styles.rowSelected as string]: selected,
                             })}
                             aria-current={selected ? 'true' : undefined}
-                            onClick={() => onSelect(image.id)}
+                            onClick={() => onSelect(item.id)}
                           >
                             <DSIcon
                               name={state.icon}
@@ -270,12 +305,18 @@ export function Sidebar({
                               aria={{ 'aria-label': state.label }}
                             />
                             <span className={styles.rowTitle}>
-                              {imageTitle(image)}
+                              {itemTitle(item, document)}
                             </span>
-                            {image.status !== 'changed' && (
+                            {item.kind === 'text' ? (
                               <DSFlag color='status-info'>
-                                {IMAGE_STATUS_LABEL[image.status]}
+                                {textLabel(item.status)}
                               </DSFlag>
+                            ) : (
+                              item.status !== 'changed' && (
+                                <DSFlag color='status-info'>
+                                  {IMAGE_STATUS_LABEL[item.status]}
+                                </DSFlag>
+                              )
                             )}
                           </button>
                         </li>
@@ -306,7 +347,9 @@ export function Sidebar({
               </DSButton>
             }
           >
-            Accepted {acceptedAll.count} images in {acceptedAll.documentTitle}
+            Accepted {acceptedAll.count}{' '}
+            {acceptedAll.count === 1 ? 'change' : 'changes'} in{' '}
+            {acceptedAll.documentTitle}
           </DSNotification>
         )}
         {locked ? (
@@ -334,8 +377,8 @@ export function Sidebar({
             {remaining > 0 && (
               <DSTextUtility size='small'>
                 {remaining}{' '}
-                {remaining === 1 ? 'image still needs' : 'images still need'} a
-                decision
+                {remaining === 1 ? 'change still needs' : 'changes still need'}{' '}
+                a decision
               </DSTextUtility>
             )}
           </>

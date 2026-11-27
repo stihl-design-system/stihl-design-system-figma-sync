@@ -470,4 +470,90 @@ describe('buildReview', () => {
       },
     });
   });
+
+  it('reviews text changes, also when no image changed', () => {
+    const withText = (version: string, label: string, text: string) =>
+      markdown(version, label, []) +
+      ['## Usage', '', text, '', '![x](button/usage-1-2.png)', ''].join('\n');
+    const manifest = buildReview({
+      git: fakeGit({
+        [BASE]: {
+          'docs/components/button.md': withText(
+            '100',
+            'Old release',
+            'Use one primary button.'
+          ),
+          'docs/components/button/usage-1-2.png': png(60, 40),
+          // Not a documentation page: decision records are written by hand
+          'docs/decisions/001-x.md': 'Old',
+        },
+        [HEAD]: {
+          'docs/components/button.md': withText(
+            '200',
+            'Text update',
+            'Use one primary button per [view](https://example.com/views).'
+          ),
+          'docs/components/button/usage-1-2.png': png(60, 40),
+          'docs/decisions/001-x.md': 'New',
+        },
+      }),
+      base: BASE,
+      head: HEAD,
+      docsDir: 'docs',
+      repository: 'owner/repo',
+    });
+
+    expect(manifest.title).toBe('Text update');
+    expect(manifest.images).toEqual([]);
+    expect(manifest.documents.map((document) => document.key)).toEqual([
+      'components/button',
+    ]);
+    expect(manifest.texts).toEqual([
+      {
+        id: 'components/button#Usage',
+        documentKey: 'components/button',
+        status: 'changed',
+        before: {
+          section: 'Usage',
+          text: 'Usage\n\nUse one primary button.',
+        },
+        after: {
+          section: 'Usage',
+          text: 'Usage\n\nUse one primary button per view (https://example.com/views).',
+        },
+        position: expect.any(Number),
+      },
+    ]);
+  });
+
+  it('gives every image the text of its section', () => {
+    const manifest = buildReview({
+      git: fakeGit({
+        [BASE]: {
+          'docs/components/button.md': markdown('100', 'Old', [
+            'usage-1-2.png',
+          ]),
+          'docs/components/button/usage-1-2.png': png(60, 40),
+        },
+        [HEAD]: {
+          'docs/components/button.md': markdown('200', 'New', [
+            'usage-1-2.png',
+          ]).replace('## Button\n', '## Button\n\nPrimary actions only.\n'),
+          'docs/components/button/usage-1-2.png': png(60, 40, [[4, 4, 8, 8]]),
+        },
+      }),
+      base: BASE,
+      head: HEAD,
+      docsDir: 'docs',
+      repository: 'owner/repo',
+    });
+
+    expect(manifest.images[0]?.before?.sectionText).toBe('Button');
+    expect(manifest.images[0]?.after?.sectionText).toBe(
+      'Button\n\nPrimary actions only.'
+    );
+    expect(manifest.texts?.map((text) => text.id)).toEqual([
+      'components/button#Button',
+    ]);
+  });
 });
