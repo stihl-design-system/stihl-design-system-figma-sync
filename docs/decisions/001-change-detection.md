@@ -20,7 +20,7 @@ Findings that changed the picture compared to the ticket text:
 
 **Poll for the latest named version, no webhook, no relay.**
 
-1. `.github/workflows/sync.yml` runs every 30 minutes. `npm run check` fetches the newest version with a label and compares its id with `figmaVersion` in the frontmatter. Only when they differ does the workflow run `npm run sync` and open a pull request (`peter-evans/create-pull-request`). One small API call per run when nothing changed. Until that pull request is merged the frontmatter on `main` stays outdated, so the pull request body records the commit on `main` and the target versions it was generated from (`sync-key`); runs that would produce the same state skip the sync instead of regenerating the branch every 30 minutes. A push to `main` or a newer named version changes the key and triggers one new sync.
+1. `.github/workflows/sync.yml` runs every 30 minutes. `npm run check` fetches the newest version with a label and compares its id with `figmaVersion` in the frontmatter. Only when they differ does the workflow run `npm run sync`, open a pull request (`peter-evans/create-pull-request`) and squash-merge it. One small API call per run when nothing changed. The pull request is not reviewed: Design reviews the images on the review page after the merge ([005](005-visual-review.md)), and text changes are not read in pull requests. It is not approved either, because the workflow token opened it and GitHub does not let an author approve their own pull request; `main` does not require an approval. A push with the workflow token starts no workflows, so after the merge the workflow starts the design review and the MCP deployment with `workflow_dispatch`. If the merge fails the pull request stays open, and until it is merged the frontmatter on `main` stays outdated, so the pull request body records the commit on `main` and the target versions it was generated from (`sync-key`); runs that would produce the same state skip the sync instead of regenerating the branch every 30 minutes. A push to `main` or a newer named version changes the key and triggers one new sync.
 2. `npm run sync` reads nodes and renders images **pinned to that version id**. The generated Markdown therefore reflects a state a designer explicitly published, not whatever the file looked like when the cron fired.
 3. Designers publish documentation changes the same way they already publish components: File > Save to version history with a label. The label ends up in the frontmatter (`figmaVersionLabel`) and in the pull request title.
 4. `--latest` on `check` and `sync` switches to the raw file version for local debugging.
@@ -35,7 +35,8 @@ If near-real-time becomes a requirement later, the path is: a dependency-free `f
 
 ## Consequences
 
-- Worst-case delay between "designer saves a named version" and "pull request exists" is about 30 minutes plus the workflow runtime.
+- Worst-case delay between "designer saves a named version" and "documentation on `main`" is about 30 minutes plus the workflow runtime.
+- Every named version reaches `main` and the MCP server without a human check. A wrong change is found in the design review and corrected with a new Figma version.
 - Edits that are not saved as a named version never reach the documentation. This is intended, but designers need to know it.
 - GitHub Actions minutes: about 48 short runs per day, well within the private repository budget.
 - A file without any named version makes `check` and `sync` fail with a clear message instead of silently falling back to the unpublished state.

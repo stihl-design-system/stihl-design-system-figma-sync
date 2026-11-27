@@ -13,6 +13,9 @@ on:
       head:
         description: Commit with the change (default is the current main)
         default: ''
+      pull_request:
+        description: Pull request to link the review on (set by the sync workflow)
+        default: ''
 
 concurrency:
   group: design-review
@@ -49,14 +52,18 @@ jobs:
 
       - name: Link the review on the merged pull request
         # Teams and mail are sent by the review page itself once its webhook is configured
-        if: github.event_name == 'push' && steps.review.outputs.review_created == 'true'
+        if: steps.review.outputs.review_created == 'true' && (github.event_name == 'push' || inputs.pull_request != '')
         run: |
-          number=$(gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/pulls" --jq '.[0].number // empty')
+          number=$PR_NUMBER
+          if [ -z "$number" ]; then
+            number=$(gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/pulls" --jq '.[0].number // empty')
+          fi
           if [ -n "$number" ]; then
             gh pr comment "$number" --body "Design review for this release ($SUMMARY): $REVIEW_LINK"
           fi
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ inputs.pull_request }}
           SUMMARY: ${{ steps.review.outputs.summary }}
           REVIEW_LINK: ${{ steps.review.outputs.review_url }}

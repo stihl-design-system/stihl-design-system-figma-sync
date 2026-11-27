@@ -13,6 +13,8 @@ concurrency:
 permissions:
   contents: write
   pull-requests: write
+  # Starts the MCP deployment after the merge
+  actions: write
 
 jobs:
   captions:
@@ -37,6 +39,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
       - name: Open pull request
+        id: pr
         uses: peter-evans/create-pull-request@v7
         with:
           branch: sync/captions
@@ -48,3 +51,21 @@ jobs:
 
             - Trigger: `${{ github.event_name }}`
           labels: figma-sync
+
+      - name: Merge pull request
+        # Nobody reviews the pull request (see sync.yml); captions change no image, so there is no design review
+        if: steps.pr.outputs.pull-request-operation == 'created' || steps.pr.outputs.pull-request-operation == 'updated'
+        run: |
+          # GitHub may still be computing whether the new pull request can be merged
+          for attempt in 1 2 3 4 5 6; do
+            gh pr merge "$PR" --squash && break
+            [ "$attempt" -lt 6 ] || exit 1
+            sleep 10
+          done
+          # A push with the workflow token starts no workflows, so the merge does not trigger the deployment
+          gh workflow run deploy-mcp.yml --ref main
+          gh api -X DELETE "repos/$GH_REPO/git/refs/heads/sync/captions"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PR: ${{ steps.pr.outputs.pull-request-number }}
