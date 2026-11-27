@@ -464,7 +464,11 @@ export function ImageViewer({
             isFlush
             isOpen={sectionOpen}
             onToggle={(event) => setSectionOpen(event.currentTarget.open)}
-            summary={sectionChanged ? 'Section text (changed)' : 'Section text'}
+            summary={
+              sectionChanged
+                ? 'Section Text in Figma (changed)'
+                : 'Section Text in Figma'
+            }
           >
             <div className={styles.captionContent}>
               {sectionChanged ? (
