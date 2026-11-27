@@ -4,6 +4,7 @@ import { buildReview, parseFigures } from '../src/review/buildReview.ts';
 import {
   compareImage,
   pairImages,
+  pairMovedImages,
   type ImagePair,
 } from '../src/review/compareImages.ts';
 import type { GitReader } from '../src/review/git.ts';
@@ -85,6 +86,73 @@ describe('pairImages', () => {
         documentKey: 'components/link',
         after: { path: 'docs/components/link/usage-1-2.png', blob: 'd' },
       },
+    ]);
+  });
+});
+
+describe('pairMovedImages', () => {
+  it('matches figures of a page rebuilt in Figma by identical files, then by place in their section', () => {
+    const dir = 'docs/components/textarea';
+    const base = new Map([
+      [`${dir}/overview-1-1.png`, 'a'],
+      [`${dir}/width-1-2.png`, 'b'],
+      [`${dir}/width-1-3.png`, 'c'],
+      [`${dir}/scaling-1-4.png`, 'd'],
+      [`${dir}/scaling-1-5.png`, 'e'],
+      [`${dir}/gone-1-6.png`, 'f'],
+    ]);
+    const head = new Map([
+      [`${dir}/overview-9-1.png`, 'a2'],
+      // Identical file, although it now comes second in the section
+      [`${dir}/width-9-3.png`, 'b'],
+      [`${dir}/width-9-2.png`, 'c2'],
+      [`${dir}/scaling-9-4.png`, 'd2'],
+      [`${dir}/scaling-9-5.png`, 'e2'],
+      [`${dir}/new-9-6.png`, 'g'],
+      [`docs/components/link/overview-9-1.png`, 'a'],
+    ]);
+    // Reading order in the documents; node ids do not follow it
+    const order = new Map([
+      [`${dir}/scaling-1-4.png`, 1],
+      [`${dir}/scaling-1-5.png`, 2],
+      [`${dir}/scaling-9-4.png`, 2],
+      [`${dir}/scaling-9-5.png`, 1],
+    ]);
+
+    const pairs = pairMovedImages(
+      pairImages(base, head, 'docs'),
+      'docs',
+      (path) => order.get(path)
+    );
+    const summary = pairs.map(({ id, before, after }) => [
+      id,
+      before?.path.slice(dir.length + 1),
+      after?.path.split('/').slice(-2).join('/'),
+    ]);
+
+    expect(summary).toEqual([
+      ['components/textarea/1-6', 'gone-1-6.png', undefined],
+      [
+        'components/textarea/9-1',
+        'overview-1-1.png',
+        'textarea/overview-9-1.png',
+      ],
+      ['components/textarea/9-3', 'width-1-2.png', 'textarea/width-9-3.png'],
+      ['components/textarea/9-2', 'width-1-3.png', 'textarea/width-9-2.png'],
+      // Paired by reading order, not by node id
+      [
+        'components/textarea/9-4',
+        'scaling-1-5.png',
+        'textarea/scaling-9-4.png',
+      ],
+      [
+        'components/textarea/9-5',
+        'scaling-1-4.png',
+        'textarea/scaling-9-5.png',
+      ],
+      ['components/textarea/9-6', undefined, 'textarea/new-9-6.png'],
+      // Never across documents, even with identical files
+      ['components/link/9-1', undefined, 'link/overview-9-1.png'],
     ]);
   });
 });
@@ -259,29 +327,9 @@ describe('buildReview', () => {
     ].join('\n');
   }
 
-  function fakeGit(): GitReader {
-    const trees: Record<string, Record<string, Buffer | string>> = {
-      [BASE]: {
-        'docs/components/button.md': markdown('100', 'Old release', [
-          'usage-1-2.png',
-          'sizes-3-4.png',
-          'gone-7-8.png',
-        ]),
-        'docs/components/button/usage-1-2.png': png(60, 40),
-        'docs/components/button/sizes-3-4.png': png(60, 40),
-        'docs/components/button/gone-7-8.png': png(60, 40),
-      },
-      [HEAD]: {
-        'docs/components/button.md': markdown('200', 'Components published', [
-          'new-5-6.png',
-          'usage-1-2.png',
-          'sizes-3-4.png',
-        ]),
-        'docs/components/button/new-5-6.png': png(60, 40),
-        'docs/components/button/usage-1-2.png': png(60, 40, [[4, 4, 8, 8]]),
-        'docs/components/button/sizes-3-4.png': png(60, 40),
-      },
-    };
+  type Trees = Record<string, Record<string, Buffer | string>>;
+
+  function fakeGit(trees: Trees = defaultTrees()): GitReader {
     const blobs = new Map<string, Buffer>();
     return {
       listFiles(commit) {
@@ -302,6 +350,32 @@ describe('buildReview', () => {
         subject: 'docs: sync Figma documentation',
         date: '2026-11-18T12:00:00Z',
       }),
+    };
+  }
+
+  function defaultTrees(): Trees {
+    return {
+      [BASE]: {
+        'docs/components/button.md': markdown('100', 'Old release', [
+          'usage-1-2.png',
+          'sizes-3-4.png',
+          'gone-7-8.png',
+        ]),
+        'docs/components/button/usage-1-2.png': png(60, 40),
+        'docs/components/button/sizes-3-4.png': png(60, 40),
+        'docs/components/button/gone-7-8.png': png(60, 40),
+      },
+      [HEAD]: {
+        'docs/components/button.md': markdown('200', 'Components published', [
+          'new-5-6.png',
+          'usage-1-2.png',
+          'sizes-3-4.png',
+        ]),
+        // Different pixels than the removed figure, or the two would be paired as one
+        'docs/components/button/new-5-6.png': png(60, 40, [[0, 0, 2, 2]]),
+        'docs/components/button/usage-1-2.png': png(60, 40, [[4, 4, 8, 8]]),
+        'docs/components/button/sizes-3-4.png': png(60, 40),
+      },
     };
   }
 
@@ -357,6 +431,43 @@ describe('buildReview', () => {
           'https://www.figma.com/design/FILEKEY?node-id=1-2&version-id=200',
       },
       diff: { changedPixels: 64 },
+    });
+  });
+
+  it('compares a board rebuilt in Figma with its previous node and links both', () => {
+    const manifest = buildReview({
+      git: fakeGit({
+        [BASE]: {
+          'docs/components/button.md': markdown('100', 'Old release', [
+            'usage-1-2.png',
+          ]),
+          'docs/components/button/usage-1-2.png': png(60, 40),
+        },
+        [HEAD]: {
+          'docs/components/button.md': markdown('200', 'Rebuilt', [
+            'usage-9-2.png',
+          ]),
+          'docs/components/button/usage-9-2.png': png(60, 40, [[4, 4, 8, 8]]),
+        },
+      }),
+      base: BASE,
+      head: HEAD,
+      docsDir: 'docs',
+      repository: 'owner/repo',
+    });
+
+    expect(manifest.images).toHaveLength(1);
+    expect(manifest.images[0]).toMatchObject({
+      id: 'components/button/9-2',
+      status: 'changed',
+      before: {
+        figmaUrl:
+          'https://www.figma.com/design/FILEKEY?node-id=1-2&version-id=100',
+      },
+      after: {
+        figmaUrl:
+          'https://www.figma.com/design/FILEKEY?node-id=9-2&version-id=200',
+      },
     });
   });
 });

@@ -14,6 +14,8 @@ import {
 import {
   compareImage,
   pairImages,
+  pairMovedImages,
+  parseImagePath,
   type ComparedImage,
   type ImageSize,
 } from './compareImages.ts';
@@ -94,12 +96,14 @@ function versionInfo(
 
 function imageSide(
   size: ImageSize | undefined,
-  node: string,
-  side: DocumentSide | undefined
+  side: DocumentSide | undefined,
+  docsDir: string
 ): ImageSide | undefined {
   if (!size) {
     return undefined;
   }
+  // Per side: a figure whose board was rebuilt in Figma has a different node before and after
+  const node = parseImagePath(size.path, docsDir)?.node ?? '';
   const figure = side?.figures.get(size.path);
   const { figmaFileKey, figmaVersion } = side?.frontmatter ?? {};
   return {
@@ -144,22 +148,6 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
   const base = git.commitInfo(options.base);
   const head = git.commitInfo(options.head);
 
-  const pairs = pairImages(
-    git.listFiles(base.sha, docsDir),
-    git.listFiles(head.sha, docsDir),
-    docsDir
-  );
-  const compared: ComparedImage[] = [];
-  for (const pair of pairs) {
-    const image = compareImage(pair, (blob) => git.readBlob(blob));
-    if (image) {
-      compared.push(image);
-    }
-  }
-  log(
-    `${pairs.length} image files differ between ${base.sha.slice(0, 7)} and ${head.sha.slice(0, 7)}, ${compared.length} with a visible change or a new name`
-  );
-
   const sides = new Map<string, DocumentSide | undefined>();
   const documentSide = (
     commit: string,
@@ -182,13 +170,43 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
     return sides.get(cacheKey);
   };
 
+  const pairs = pairMovedImages(
+    pairImages(
+      git.listFiles(base.sha, docsDir),
+      git.listFiles(head.sha, docsDir),
+      docsDir
+    ),
+    docsDir,
+    (path, side) => {
+      const documentKey = parseImagePath(path, docsDir)?.documentKey ?? '';
+      const commit = side === 'before' ? base.sha : head.sha;
+      return documentSide(commit, documentKey)?.figures.get(path)?.order;
+    }
+  );
+  const compared: ComparedImage[] = [];
+  for (const pair of pairs) {
+    const image = compareImage(pair, (blob) => git.readBlob(blob));
+    if (image) {
+      compared.push(image);
+    }
+  }
+  const moved = pairs.filter(
+    ({ before, after }) =>
+      before &&
+      after &&
+      parseImagePath(before.path, docsDir)?.node !==
+        parseImagePath(after.path, docsDir)?.node
+  ).length;
+  log(
+    `${pairs.length} image files differ between ${base.sha.slice(0, 7)} and ${head.sha.slice(0, 7)}, ${compared.length} with a visible change or a new name${moved > 0 ? `; ${moved} matched to the previous figure of their section because the Figma node changed` : ''}`
+  );
+
   const categoryOrder: string[] = Object.values(CATEGORY_DIRS);
   const documents = new Map<string, ReviewDocument>();
   const images: (ReviewImage & { order: number })[] = [];
   for (const image of compared) {
     const before = documentSide(base.sha, image.documentKey);
     const after = documentSide(head.sha, image.documentKey);
-    const node = image.id.slice(image.documentKey.length + 1);
     if (!documents.has(image.documentKey)) {
       const frontmatter = after?.frontmatter ?? before?.frontmatter ?? {};
       documents.set(image.documentKey, {
@@ -211,8 +229,8 @@ export function buildReview(options: BuildReviewOptions): ReviewManifest {
       documentKey: image.documentKey,
       status: image.status,
       resized: image.resized,
-      before: imageSide(image.before, node, before),
-      after: imageSide(image.after, node, after),
+      before: imageSide(image.before, before, docsDir),
+      after: imageSide(image.after, after, docsDir),
       diff: image.diff,
       order,
     });
